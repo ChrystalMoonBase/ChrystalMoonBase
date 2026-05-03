@@ -1,114 +1,59 @@
 # Contributing to Chrystal Moon Base
 
-Thank you for considering a contribution. This project is built on the conviction that the Moon belongs to all of us — and so does everything built to reach it.
+**Welcome. Every contribution matters.**
 
-There are no barriers to contribution. No credentials required. No institutional affiliation needed. If you can make one thing more accurate, more complete, or more honest — that contribution has value.
-
----
-
-## What We Need
-
-### Engineers and Scientists
-- Review the technical documents and find errors
-- Provide better numbers with sources
-- Answer the open questions listed at the bottom of each specification document
-- Propose alternative approaches to unsolved problems
-
-### Mathematicians and Physicists
-- Validate or correct the calculations in the phase documents
-- Model systems that are currently described qualitatively
-
-### Writers and Translators
-- Improve the clarity of existing documents
-- Translate documents into additional languages
-- Help make technical content accessible to non-specialists
-
-### Coders and Simulators
-- Build simulations of the robot swarm coordination
-- Model the sintering energy budget
-- Create tools that help visualise the mission architecture
-
-### Anyone
-- Find a factual error — open an Issue
-- Find a broken link — open an Issue
-- Have a question — open an Issue
+This repository is organised in small, independent modules so that anyone can help — even with just one small part. You do not need to understand the whole project to improve one document.
 
 ---
 
-## How to Contribute
+## Ways to Contribute
 
-### Option 1 — GitHub Issue (easiest)
-Open an Issue describing:
-- What you found or want to contribute
-- Your source or reasoning
-- Any questions you have
+### Find an Error
+The most valuable thing you can do is find something wrong and say so clearly.
 
-### Option 2 — Pull Request
-1. Fork the repository
-2. Make your changes
-3. Submit a Pull Request with a clear description of what you changed and why
-4. Include sources for any numerical claims
+Open a GitHub Issue with:
+- The document name and section
+- What the current text says
+- What the correct value or statement should be
+- A reference to the source (published paper, measurement, calculation)
 
-### Option 3 — Direct contact
-Email: info@chrystalmoonbase.com  
-X: @chrystalbase
+### Improve a Document
+If a document is unclear, incomplete, or missing context:
+- Fork the repository
+- Edit the document
+- Submit a pull request with a clear description of what you changed and why
 
----
+### Write a New Document
+The repository structure lists many documents that do not yet exist. If you have expertise relevant to one of them, write it. Follow the format of existing documents: clear sections, honest uncertainty, open questions at the end.
 
-## How We Handle Contributions
+### Run a Simulation
+Many open questions in this repository are answerable by simulation — sintering energy models, robot locomotion on 1/6 g terrain, laser beam propagation, dome structural analysis. If you run one, publish your method, your data, and your results in a pull request.
 
-- Every contributor is credited in CREDITS.md — no exceptions
-- All contributions are reviewed against published sources before being merged
-- Corrections are welcomed equally with additions — finding an error is a contribution
-- Negative results are as valuable as positive ones
-
----
-
-## What We Do Not Accept
-
-- Contributions that introduce proprietary restrictions on the content
-- Claims without sources
-- Content that contradicts the core philosophy: open source, no patents, no flags
+### Translate
+The website at chrystalmoonbase.com supports 26 languages. If you can improve or add translations, contact us via the Issues page.
 
 ---
 
-## Repository Structure
+## Standards
 
-```
-ChrystalMoonBase/
-├── README.md                          — Project overview
-├── CONTRIBUTING.md                    — This file
-├── CREDITS.md                         — All contributors
-├── LICENSE                            — GPL-3.0
-├── docs/
-│   ├── 01_mission-architecture/       — Phase overview documents
-│   │   ├── PHASE-0-Earth-Demonstrators.md
-│   │   ├── PHASE-02-The-Pod.md
-│   │   ├── PHASE-11-Foundation.md
-│   │   ├── PHASE-12-Resource-Processing.md
-│   │   └── PHASE-2-The-City.md
-│   ├── 02_robots/                     — Robot specifications
-│   │   ├── CHASSIS.md
-│   │   ├── HEAD-Sintering.md          — (planned)
-│   │   ├── HEAD-Inspector.md          — (planned)
-│   │   ├── HEAD-Bulldozer.md          — (planned)
-│   │   └── HEAD-Stabiliser.md         — (planned)
-│   ├── 03_mast-pod/                   — MAST-POD specifications (planned)
-│   ├── 04_processing-modules/         — Phase 1.2 module specs (planned)
-│   └── 05_open-questions/             — Consolidated open questions (planned)
-```
+**Be specific.** "This number seems wrong" is not useful. "This number should be X based on source Y" is.
+
+**Cite your sources.** Claims without references are not improvements — they are new uncertainties.
+
+**Be humble.** This project was started by a non-engineer. Everyone here is working at the edge of what is known. Be patient with each other.
+
+**Keep it open.** All contributions to this repository are made under the project licence (GPL-3.0). By contributing, you agree that your work becomes part of the open commons.
 
 ---
 
-## Philosophy
+## Credit
 
-This project follows the Linux model: small, modular contributions from many people, each improving one piece. You do not need to understand the whole system to improve one part of it.
-
-If you are an expert in regolith mechanics and you can answer Question 1 in the Phase 0.2 document — that single contribution matters. If you are a student who spots a unit error in a calculation — that matters too.
-
-No contribution is too small. No contributor is too inexperienced.
+Every contributor is named in CREDITS.md. No contribution is absorbed anonymously. If you submit a correction or a new document, your name and contribution are recorded.
 
 ---
 
-*Chrystal Moon Base · chrystalmoonbase.com · github.com/ChrystalMoonBase*  
-*The Moon belongs to all of us.*
+## Contact
+
+- GitHub Issues — preferred for technical questions and corrections
+- Email: info@chrystalmoonbase.com
+- Website: https://chrystalmoonbase.com

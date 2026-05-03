@@ -1,82 +1,109 @@
 # Chrystal Moon Base
+## Official Open-Source Repository
 
-**Official open-source conceptual blueprint for a permanent lunar base built from local lunar materials by autonomous robots.**
+**A concept proposal for a permanent Moon base built from local lunar materials by autonomous robots.**  
+No flags. No patents. Built for all of humanity.
 
-**No flags. No patents. Built for all of humanity.**
-
-[🌐 Visit the Website](https://chrystalmoonbase.com)
-
----
-
-## Vision
-
-The Moon belongs to no one — therefore it belongs to all of us.
-
-Instead of sending everything from Earth, we aim to build a self-sustaining base using the Moon’s own resources: regolith, sunlight, and water ice. Autonomous robots would sinter basalt, extract metals, and construct habitats.
-
-This project is a detailed, openly shared concept that invites scrutiny, improvement, and collaboration from engineers, scientists and enthusiasts worldwide.
+**Website:** https://chrystalmoonbase.com  
+**Licence:** GPL-3.0  
+**Status:** Phase 0 — Earth demonstrators (concept and planning stage)
 
 ---
 
-## Current Status
+## What This Is
 
-- This repository contains the **conceptual design, technical documentation, and planning** of the project.
-- Phase 0 (Earth-based demonstrators) is still in the **preparation and design phase**.
-- No physical hardware has been built yet.
-- The current focus is to document the vision clearly, ground it in existing science, and continuously improve it with community input.
-- Once sufficient funding is secured and a legal structure (foundation) is established, development of the first physical demonstrators can begin.
+Chrystal Moon Base is an open-source concept for building a permanent human settlement on the lunar north pole (Peary Crater rim, 88.63°N) using:
 
-We strive for full transparency: this is still a work in progress. Honest feedback and improvements are strongly encouraged.
+- **Autonomous hexapod robots** (CMB-R1) powered by laser beamed from a 100-metre solar mast
+- **In-situ laser sintering** — fusing lunar regolith into structural basalt floors, walls, and dome foundations
+- **Local material processing** — 13 processing modules extracting glass, titanium, aluminium, oxygen, water, and other materials from the Moon itself
+- **Multi-layer glass domes** — titanium-reinforced, self-sealing, water-shielded habitats for permanent human residents
+- **Maglev transport** — connecting all base facilities and eventually all lunar provinces
+
+This is not an engineering specification. It is a feasibility concept — every number is an estimate, every design is a starting point. The purpose of publishing it openly is so that people who do know what they are talking about can review it, correct it, and improve it.
 
 ---
 
-## Open Source & Commercial Use
+## The Founder
 
-Most of the technical documentation, designs, and concepts in this repository are **open source**. 
+**Berechja Kerkdijk**  
+Truck driver, 42 years old, Sittard / Hegelsom, Netherlands.  
+No PhD. No laboratory. No investors.  
+Just a question that refused to stop being asked.
 
-However, certain future components (such as specific proprietary implementations, high-value intellectual property, or commercial spin-offs) may be developed under commercial licenses to support long-term growth and sustainability of the project.
+---
 
-The core vision and fundamental knowledge will remain open and accessible to everyone.
+## Repository Structure
+
+```
+00_PHILOSOPHY/          Core principles, governance philosophy, civilisation vision
+01_LOCATION/            Why Peary Crater — site selection rationale and data
+02_PHASE-0-EARTH/       Earth-based validation programme — five demonstrators
+03_PHASE-02-THE-POD/    First lunar mission concept — mast, robots, sintering
+04_ROBOT-CMB-R1/        Robot system — chassis, legs, heads, AI, swarm logic
+05_SINTERING/           Laser sintering physics, methods, quality control
+06_PROCESSING-MODULES/  All 13 resource extraction modules (M-Glass to M-He3)
+07_DOMES/               Habitat dome architecture, types, construction method
+08_UNDERGROUND-NETWORK/ Tunnel network, maglev system, decontamination
+09_SURFACE-ACCESS/      Arrival/departure pads, decontamination sequence
+10_LIFE-SUPPORT/        Atmosphere, water, food, radiation, gravity countermeasures
+11_AI-AND-MONITORING/   Base AI, safety systems, privacy policy
+12_GOVERNANCE/          CMB authority, tenant model, Earth relationship
+13_PHASE-1-FOUNDATION/  Phase 1 concept — scaling up
+14_PHASE-2-THE-CITY/    Phase 2 concept — first permanent human community
+15_PHASE-3-SPACEPORT/   Phase 3 concept — lunar spaceport
+16_PHASE-4-BEYOND/      Phase 4 concept — the Chrystal Method applied elsewhere
+17_CIVILISATION-BLUEPRINT/ The Moon as a world of four provinces
+```
 
 ---
 
 ## How to Contribute
 
-You don’t need to be a rocket scientist. Everyone can help:
+**Find an error:** Open a GitHub Issue. Specify the document, the incorrect claim, the correct value, and the source. This is the most valuable contribution possible.
 
-- **Engineering & Science** — Review calculations, suggest improvements, point out issues
-- **Documentation** — Improve texts, add references, translate
-- **Visuals** — Create diagrams, renders or infographics
-- **Research** — Find relevant papers and data
-- **Feedback** — Critical and constructive input is extremely valuable
+**Improve a document:** Fork, edit, pull request. Explain what you changed and why.
 
-Please read the **[CONTRIBUTING.md](CONTRIBUTING.md)** file for details on how to contribute.
+**Write a missing document:** The structure lists many documents not yet written. Write one.
+
+**Run a simulation:** Many open questions can be answered by simulation. Publish your method and results.
+
+**You are an engineer or scientist:** Review the MAST-POD concept. Find the problems. Say so clearly.
+
+**You represent a university, lab, or institution:** Phase 0 demonstrators need facilities, equipment, and expertise. The repository is the place to start that conversation.
+
+Read CONTRIBUTING.md for full guidelines.
+
+---
+
+## Current Status
+
+| Phase | Status |
+|---|---|
+| Phase 0 — Earth demonstrators | **Planning** — no hardware exists yet |
+| Phase 0.2 — The Pod (first Moon mission) | Concept proposal |
+| Phase 1+ | Long-term concept |
 
 ---
 
 ## Philosophy
 
-- Transparency and honesty first
-- Collaboration over competition
-- Modular development
-- Credit to all contributors
+The ISS proved that former rivals can build what neither could alone.  
+CERN proved that 23 nations can discover what one never would.  
+Chrystal Moon Base aspires to that same principle.
 
----
-
-## License
-
-- **Documentation & Content**: Creative Commons CC BY 4.0 (where not otherwise specified)
-- **Software / Code**: GNU General Public License v3.0 (GPL-3.0)
-
-See the [LICENSE](LICENSE) file for full details.
+The Moon belongs to all of us.  
+This repository is our invitation to build it right.
 
 ---
 
 ## Contact
 
-- **Email**: info@chrystalmoonbase.com
-- **X (Twitter)**: [@chrystalbase](https://x.com/chrystalbase)
+- **Email:** info@chrystalmoonbase.com
+- **Website:** https://chrystalmoonbase.com
+- **X:** @chrystalbase
 
 ---
 
-**Let’s build the Moon together — step by step, honestly and openly.**
+*No flags. No patents. No false promises.*  
+*Just a question worth asking honestly.*
