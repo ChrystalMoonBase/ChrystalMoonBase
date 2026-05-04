@@ -7,11 +7,9 @@ This file records every person who has contributed to the Chrystal Moon Base pro
 
 ## Founder
 
-**Berechja Kerkdijk**  
-Sittard / Hegelsom, Netherlands  
-Truck driver, 42 years old  
-Founder and originating author of the Chrystal Moon Base concept  
-All initial documents — concept, vision, phase structure, robot design, dome architecture, governance framework
+**Berechja Kerkdijk** 
+Founder and originating author of the Chrystal Moon Base concept. 
+All initial documents — concept, vision, phase structure, robot design, dome architecture, governance framework.
 
 ---
 
@@ -31,4 +29,4 @@ The open-source software community — particularly the Linux project — provid
 
 ---
 
-*All contributions are made under GPL-3.0. Contributors retain attribution for their work while it becomes part of the open commons.*
+*Hardware contributions are made under CERN-OHL-S-2.0. Document contributions are released under CC0 (Public Domain). Software is proprietary and not open for external contribution. Contributors retain attribution for their work in all cases.*

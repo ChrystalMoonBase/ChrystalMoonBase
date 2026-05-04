@@ -30,7 +30,7 @@ The repository structure lists many documents that do not yet exist. If you have
 Many open questions in this repository are answerable by simulation — sintering energy models, robot locomotion on 1/6 g terrain, laser beam propagation, dome structural analysis. If you run one, publish your method, your data, and your results in a pull request.
 
 ### Translate
-The website at chrystalmoonbase.com supports 26 languages. If you can improve or add translations, contact us via the Issues page.
+The website at chrystalmoonbase. com supports 26 languages. If you can improve or add translations, contact us via the Issues page.
 
 ---
 
@@ -42,18 +42,22 @@ The website at chrystalmoonbase.com supports 26 languages. If you can improve or
 
 **Be humble.** This project was started by a non-engineer. Everyone here is working at the edge of what is known. Be patient with each other.
 
-**Keep it open.** All contributions to this repository are made under the project licence (GPL-3.0). By contributing, you agree that your work becomes part of the open commons.
+**Keep it open.** Contributions to this repository are made under the following licences:
+
+- **Hardware designs** — contributed under CERN-OHL-S-2.0. By submitting hardware design contributions, you agree your work is released under CERN-OHL-S-2.0 and must be attributed accordingly.
+- **Documents and written content** — contributed under CC0 (Public Domain). No attribution required, though always appreciated.
+- **Software** — the software (flight systems, AI, swarm coordination) is proprietary and is not open for external contribution at this time. If you have relevant software expertise and wish to collaborate, contact info@chrystalmoonbase. com directly.
 
 ---
 
 ## Credit
 
-Every contributor is named in CREDITS.md. No contribution is absorbed anonymously. If you submit a correction or a new document, your name and contribution are recorded.
+Every contributor is named in CREDITS. md. No contribution is absorbed anonymously. If you submit a correction or a new document, your name and contribution are recorded.
 
 ---
 
 ## Contact
 
 - GitHub Issues — preferred for technical questions and corrections
-- Email: info@chrystalmoonbase.com
-- Website: https://chrystalmoonbase.com
+- Email: info@chrystalmoonbase. com
+- Website: https://chrystalmoonbase. com
