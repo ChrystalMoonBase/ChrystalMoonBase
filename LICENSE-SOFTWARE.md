@@ -1,8 +1,10 @@
 # Software Licence — Proprietary
 ## Chrystal Moon Base
 
-Copyright 2026 Stichting Chrystal Moon Base (intended — not yet incorporated) 
-Founder: Berechja Kerkdijk
+SPDX-License-Identifier: LicenseRef-ChrystalMoonBase-Proprietary
+Copyright 2026 Berechja Kerkdijk
+
+All rights are currently held by Berechja Kerkdijk and will be transferred to Stichting Chrystal Moon Base upon its formal incorporation.
 
 ---
 
@@ -21,14 +23,16 @@ This notice applies to all **software** associated with the Chrystal Moon Base p
 
 ## Rights Reserved
 
-All software listed above is proprietary and all rights are reserved by Stichting Chrystal Moon Base.
+All software listed above is proprietary. All rights are reserved.
 
 **You may not:**
 - Copy, distribute, or share this software
 - Reverse engineer, decompile, or disassemble this software
-- Use this software for any purpose without explicit written permission from Stichting Chrystal Moon Base
+- Use this software for any purpose without explicit written permission from the rights holder
 
 **This repository contains no software source code.** Only hardware designs and documentation are published here.
+
+**Note:** Nothing in the hardware licences (CERN-OHL-S-2.0) or the CC0 document licence grants any rights to this proprietary software.
 
 ---
 
@@ -36,7 +40,7 @@ All software listed above is proprietary and all rights are reserved by Stichtin
 
 The hardware designs of this project are open source. The software is not. This is a deliberate decision explained fully in LEGAL-STRUCTURE. md.
 
-In brief: the software represents the primary means by which the Stichting sustains itself financially over a very long development timeframe. Making it proprietary is not intended to restrict the field — it is intended to ensure this specific project can continue to operate.
+In brief: the hardware being open allows anyone to build their own robot. The software being proprietary protects the organisation's ability to sustain itself financially over a very long development timeframe. This is not intended to restrict the field — it is intended to ensure this specific project can continue to operate.
 
 This position may change only by public board resolution, published in this repository with 90 days notice.
 
@@ -46,8 +50,14 @@ This position may change only by public board resolution, published in this repo
 
 If you represent a research institution, space agency, or organisation interested in software access or collaboration, contact:
 
-**Email:** info@chrystalmoonbase. com 
+**Email:** info@chrystalmoonbase. com
 **Subject:** Software Licence Enquiry
+
+---
+
+## Governing Law
+
+This licence shall be governed by the laws of the Netherlands.
 
 ---
 
