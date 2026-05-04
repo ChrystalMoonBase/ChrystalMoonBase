@@ -181,3 +181,80 @@ The founder's position: whatever works, works. The constraints are the principle
 3. What is the minimum cover plate actuation time for the coupling interfaces — and does this create operational delays during head swapping?
 4. Can the same optical surface serve both power reception and data communication simultaneously, or does this require optical separation?
 5. What is the actual mass of a flight-quality chassis at these specifications?
+
+---
+
+## Power Architecture — Distributed Solid-State Energy Storage
+
+The CMB-R1 uses a fully distributed solid-state battery system. There is no single central battery. Instead, energy storage is distributed across every structural segment of the robot — chassis and all eight legs.
+
+**Why solid-state:**
+- No liquid electrolyte — no freezing risk at −150°C, no boiling risk at +130°C
+- No leakage or outgassing in vacuum
+- Operates across the full lunar surface temperature range without thermal management of the cells themselves
+- Mechanically robust — solid-state cells tolerate vibration and impact better than liquid electrolyte cells
+- Can be encapsulated completely inside structural components
+
+**Distribution — 25 units total:**
+
+| Location | Units | Primary function |
+|---|---|---|
+| Foot segment × 8 | 8 | Local sensor power, foot pad force sensing |
+| Lower leg segment × 8 | 8 | Knee actuator power, local electronics |
+| Upper leg segment × 8 | 8 | Hip actuator power, primary leg energy storage |
+| Chassis central | 1 | Main computer, AI, communication optics, head interface |
+| **Total** | **25** | Fully distributed across entire robot |
+
+**Why distributed:**
+
+Weight is spread evenly across the entire robot rather than concentrated in one location. This lowers the centre of mass, improves stability on uneven terrain, and means no single point concentrates significant mass.
+
+Redundancy is built in automatically — if a leg segment is damaged and discarded, only the energy stored in that segment is lost. The remaining 24 units continue operating without interruption. The AI adjusts power routing instantly.
+
+Each solid-state unit is sized to contribute a proportional share of the total energy budget. The chassis unit is the largest — it powers the most critical systems. The foot units are the smallest — they power only local sensors.
+
+---
+
+## Hibernation System
+
+During shadow periods — when the Peary rim site loses solar illumination — the laser power system shuts down and the robots enter hibernation. The distributed solid-state energy system sustains the robot through these periods on minimal power draw.
+
+**Hibernation sequence:**
+1. Laser power drops below operational threshold
+2. AI detects power loss and initiates hibernation protocol
+3. All non-essential systems shut down immediately — sintering, locomotion, active sensors
+4. Robot halts at current position and locks all leg joints in place
+5. Low-power heating activates across all 25 solid-state units and critical electronics — just enough to prevent temperature dropping below minimum operating threshold
+6. AI enters minimal monitoring mode — checking power levels and temperature only
+7. Communication laser remains active at minimal power for contact with mast
+
+**On power restoration:**
+1. Solar curtain generates first power as illumination returns
+2. Mast detects power and sends wake signal via communication laser
+3. AI exits hibernation — systems initialise sequentially
+4. Temperature check across all segments before locomotion resumes
+5. Robot resumes task from exact position where it halted
+
+The hibernation heating draw is a small fraction of operational power — the distributed solid-state units across 25 locations provide enough reserve for the longest expected shadow periods at Peary, estimated at a few days based on published illumination data.
+
+---
+
+## Full Layer Architecture — "Everything Inside the Bone"
+
+Every structural segment of the CMB-R1 — all eight leg segments (foot, lower leg, upper leg) and the chassis body — follows identical layered construction from inside out:
+
+**Layer 1 — The Bone (structural core):**
+Non-ferromagnetic structural alloy — titanium, aluminium, or combination. Hollow tube or shell. Houses all electronics, solid-state battery cell, actuator controller, heater, and sensors for that segment. Everything electronic lives inside the structural material, protected from the outside by the structure itself.
+
+**Layer 2 — The Gel (protective surround):**
+Thermally conductive, mechanically damping gel completely surrounding the bone. Absorbs shock and vibration. Conducts heat from electronics to the outer shell for passive radiation. Must remain stable across the full lunar temperature range in vacuum — specific formulation is an open engineering question.
+
+**Layer 3 — The Armour (basalt composite exterior):**
+Sintered basalt composite outer shell. Non-magnetic. Thermally stable. Radiation resistant. Manufacturable from lunar resources in later phases. This is the surface that contacts the lunar environment — dust, temperature extremes, micrometeorite flux, radiation.
+
+**The principle:** nothing electronic or sensitive is ever exposed to the lunar environment. The bone protects the electronics. The gel protects the bone. The basalt protects the gel. Three layers between the electronics and the Moon.
+
+**Frictionless where possible:**
+All moving interfaces — leg joints, cover plates, coupling mechanisms — use electromagnetic principles to eliminate or minimise mechanical friction. No lubricants that could fail in vacuum or temperature extremes. No mechanical wear surfaces exposed to lunar dust. Where friction cannot be avoided, dry film coatings rated for vacuum and the full temperature range are used.
+
+---

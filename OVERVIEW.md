@@ -1,115 +1,108 @@
-# CMB-R1 Construction Robot — Overview
-## Chrystal Moon Base — Robot System Concept
+# The Pod — Phase 0.2 Overview
+## Chrystal Moon Base — First Lunar Mission Concept
 
-**Status:** Concept proposal — not yet prototyped  
+**Status:** Concept proposal — feasibility not yet demonstrated  
 **Author:** Berechja Kerkdijk  
-**Licence:** CC0
+**Licence:** CC0  
+**Last updated:** 2026
 
-> This document describes a concept robot system. No physical prototype exists. All specifications are estimates and starting points for engineering. Corrections and improvements are actively sought.
-
----
-
-## Design Philosophy
-
-The CMB-R1 is designed around one principle: **no single failure should stop the mission.**
-
-Every component that can fail has a fallback. Every robot that breaks can be compensated for by its teammates. Every leg that is damaged can be discarded. Every tool head can be swapped by another robot. The AI continuously recalculates around whatever is still working.
-
-This is not over-engineering — it is the minimum acceptable standard for a system that must operate autonomously for years, 384,000 km from the nearest repair facility, in one of the most hostile environments in the solar system.
+> Every number in this document is an estimate based on publicly available data and physics. This is a concept sketch, not an engineering specification. If you find an error, please open an issue or submit a correction. That is the entire point of publishing this openly.
 
 ---
 
-## Core Concept: One Chassis, Many Roles
+## What the Pod Is
 
-All 8 CMB-R1 robots share an **identical chassis**. There is no specialised hardware at the body level. The same legs, the same power receiver, the same compute unit, the same arm-limbs appear on every robot.
+The Pod is the proposed first physical mission of Chrystal Moon Base to the lunar surface. It is a single launch — one Falcon Heavy rocket — carrying everything needed to begin autonomous construction of a sintered basalt floor on the rim of Peary Crater at the lunar north pole.
 
-Specialisation is achieved entirely through **interchangeable tool heads** — modular attachments that connect to the robot's front interface and define its role. Four head types are carried to the Moon. Any robot can carry any head. Any idle robot can pick up a spare head from the Pod storage chambers and contribute to the current task.
+The Pod does not carry humans. It does not need to return. It is designed to land, deploy, and operate indefinitely — for as long as the sun shines on the Peary rim, which is approximately 89% of the year.
 
-This approach provides:
-- **Manufacturing simplicity** — one chassis design, one parts inventory
-- **Operational flexibility** — roles reassigned in real time by the AI
-- **Redundancy** — no single robot is irreplaceable
-- **Scalability** — future missions can add new head types without redesigning the chassis
+If the Pod concept works, three more pods would follow, each building on what the first established. If it does not work, the failure modes will be documented openly so that the next attempt — by CMB or by anyone else — can avoid them.
 
 ---
 
-## Physical Description
+## Contents
 
-The CMB-R1 is a octopod — eight legs in the standard walking configuration. The front two legs are dual-function limbs capable of operating as arms when the robot lowers its body and transfers weight to the remaining six legs.
+The Pod carries:
 
-**Estimated dimensions (concept):**
-- Body length: ~1.2 m
-- Body width: ~0.8 m
-- Standing height (variable): ~0.4–1.0 m
-- Mass (without head): ~250–350 kg estimate
-- Payload capacity: TBD by engineering
-
-The robot's ride height is variable. The body can be raised for maximum ground clearance over rough terrain, or lowered to a stable resting position when the front limbs need to function as arms. This variable height is achieved through the leg joint geometry — like a spider adjusting its stance.
-
----
-
-## The Four Tool Heads
-
-### 1. Sintering Head
-Carries the laser nozzle and focusing optics that concentrate the received laser power onto the regolith surface. This is the primary construction tool — it melts and fuses lunar soil into solid basalt.
-
-### 2. Thermal Buddy Head
-Carries infrared lamps and a high-resolution thermal camera. This robot follows directly behind the sintering robot, monitoring the freshly sintered material, controlling the cooling rate, and preventing thermal shock cracking. Sintering quality depends as much on controlled cooling as on the initial melt.
-
-### 3. Bulldozer Head
-Carries curved regolith blades for clearing, levelling, and compacting the surface ahead of the sintering robots. Raw regolith must be prepared — loose material moved, surface graded — before sintering can produce a structurally sound result.
-
-### 4. Watcher Head
-Carries a comprehensive sensor suite for quality control, terrain mapping, structural inspection, and system monitoring. See HEAD-WATCHER.md for full specification.
+| Item | Quantity | Notes |
+|---|---|---|
+| CMB-R1 robots | 8 | Identical chassis, 4 pre-configured head types |
+| 100-metre telescoping mast | 1 | Carbon-fibre reinforced PEEK, 10 segments |
+| GaAs solar curtain | 1 | ~100 m², vertical, azimuth-tracking |
+| Fibre laser system | 1 | ~13.5 kW optical output from ~30 kW electrical |
+| Beam and Sensor Modules (BSM) | 5 | Mounted at 20m intervals on mast |
+| Tool heads (full set, all types) | 8 sets | Stored in pod chambers during launch |
+| Ka-band communications antenna | 1 | Mounted on mast |
+| Base computer and power electronics | 1 | Buried in pod base container |
 
 ---
 
-## Operational Teams
+## Mission Sequence — Proposed
 
-The 8 robots operate in two teams of 4, working simultaneously on opposite halves of the sintering ring. Each team contains one of each head type. The two teams rotate in opposite directions — like the two hands of a clock moving away from each other — completing each ring simultaneously before advancing outward.
+### 1. Transit and Approach
+The Pod launches on a Falcon Heavy on a Trans-Lunar Injection trajectory. Transit time approximately 3–5 days depending on trajectory optimisation. No crew. Full autonomous operation from separation.
 
-This pattern means:
-- The full ring circumference is always being worked in both directions
-- No robot is ever blocked by another
-- If one team loses a robot, the other team can redistribute to compensate
+### 2. Lunar Orbit Insertion and Descent
+The lander system performs autonomous powered descent to the Peary Crater rim. Terrain Relative Navigation (TRN) targets a pre-selected flat zone within the high-illumination area. Landing accuracy is estimated at 5–10 metres CEP based on current TRN technology — this uncertainty is a known risk factor. See LANDING-ZONE-CRITERIA.md for full analysis.
 
----
+### 3. Bloom Deployment
+On confirmed surface contact, the Pod's 8 structural leaves unfold downward and outward — the "bloom." Each leaf becomes a ramp to the surface. Vectran cloth tensioned between leaves creates a dust-sealed working enclosure around the pod base. Robots remain inside and unpowered during this phase.
 
-## The Front Limbs — Dual Function
+### 4. Mast Deployment
+The telescoping mast extends from the pod base upward. Full deployment to 100 metres takes an estimated 2–4 hours. The solar curtain unfurls as the mast rises. On first contact with sunlight, the curtain begins generating power.
 
-The front two legs of every CMB-R1 can operate as either legs or arms. When arm mode is needed:
+### 5. First Power
+As soon as the solar curtain generates sufficient voltage to activate the power bus, the base computer initialises. Robot charging begins. This is the first moment the Pod is operational on the Moon.
 
-1. The robot approaches the target (Pod storage chamber, another robot, a piece of equipment)
-2. The body lowers onto the remaining six legs, which spread for maximum stability
-3. The front two legs lift clear of the ground and their end-effectors engage
-4. The robot can now grip, lift, carry, and place objects while walking on six legs
+### 6. Leaf Sintering — First Task
+Before any other construction begins, the robots' first task is to sinter the bloom leaves permanently to the lunar regolith. This anchors the Pod structure, levels the working platform if needed (v2.5 configuration), and creates the first sintered surface on the Moon. Estimated time: 48–72 hours for full leaf sintering.
 
-This capability serves several critical functions:
-- **Head swapping** — robots change their own tool heads autonomously from Pod storage
-- **Module carrying** — multiple robots can cooperate to carry processing modules from the landing site to their operational position
-- **Maintenance** — robots can handle small equipment, move obstacles, and assist other robots
+The Pod is a permanent installation. It is never designed to be moved, retracted, or returned to Earth. Once the leaves are sintered to the regolith, the Pod becomes part of the lunar surface — a fixed foundation from which all subsequent construction radiates outward. In later phases, the Pod structure will be enclosed and integrated into the growing base, with the mast remaining as the highest point of the entire installation.
 
-A robot carrying a module with its front limbs while walking on six legs is within the designed capability. Multiple robots carrying a single large module simultaneously — coordinated by the swarm AI — is also a design goal, though it has not been demonstrated and carries significant coordination complexity.
+### 7. Continuous Construction
+With the Pod anchored and operational, robots begin sintering the basalt floor outward in concentric rings. Construction is continuous for as long as the system operates. There is no defined end point — the floor grows ring by ring, indefinitely.
 
 ---
 
-## Fault Tolerance
+## Power Budget — Estimated
 
-### Leg Loss
-If any leg is damaged beyond recovery, the AI executes the following sequence:
+| Parameter | Value | Notes |
+|---|---|---|
+| Solar curtain area | ~100 m² | Vertical, azimuth-tracking |
+| Solar constant at Moon | 1,361 W/m² | |
+| Sun elevation at Peary | 1.5°–6.5° | Varies over lunar year |
+| Incidence on vertical panel | ~1,352–1,361 W/m² | cos(elevation) ≈ 1 |
+| Cell efficiency (GaAs) | ~30% | Conservative commercial figure |
+| Gross electrical output | ~40 kW peak | |
+| System losses (dust, cable, thermal) | ~10% | Estimate |
+| Annual availability | ~89% | Based on SELENE illumination data |
+| **Working power estimate** | **~32–36 kW** | Central estimate: 32 kW |
+| Laser optical output | ~13.5 kW | 45% wall-plug efficiency |
+| Base computer and comms | ~2 kW | Estimate |
+| Robot charging (8 units) | ~10–15 kW | Estimate |
 
-1. Damage assessment — sensors confirm leg is non-functional
-2. Discard command — the damaged leg is released at the body joint and left on the surface
-3. Gait recalculation — AI computes a stable gait for the remaining legs (minimum 6 legs required for continued operation)
-4. Work resumption — robot continues its assigned task on the recalculated gait
+The power budget is the most important single uncertainty in the Pod concept. It depends on solar curtain performance in the actual Peary illumination geometry, dust accumulation rates on the curtain, and thermal effects on GaAs cell efficiency at lunar temperatures. Ground validation (Phase 0 Demonstrator 2) must address these uncertainties before the Pod concept can progress to hardware.
 
-A robot operating on 5, 4, or even 5 legs may move more slowly and carry less load, but it does not stop. The mission continues.
+---
 
-### Head Failure
-If a tool head fails, the robot returns to the Pod, deposits the failed head, and retrieves a spare from storage. If no spare of that type is available, the AI reassigns roles across the remaining functional robots.
+## Operational Radius
 
-### Power Interruption
-If laser power beaming is interrupted — due to mast pointing failure, dust on optics, or other causes — each robot has onboard solid-state battery capacity for several hours of autonomous operation. The robot continues reduced-power operations (locomotion, sensing) while awaiting power restoration.
+The laser power beaming system can reach robots within an estimated **1–2 km radius** from the mast base. This defines the maximum extent of the sintered floor that the first Pod can build. Beyond this radius, a second mast — delivered on a future mission — would be required to extend operations.
+
+The 5 Beam and Sensor Modules at 20-metre intervals on the mast provide multiple aiming points. The AI selects the optimal BSM for each robot based on current position and terrain. At 100 metres height on the near-flat Peary rim terrain, line-of-sight to any point within the operational radius is expected to be unobstructed for a well-chosen landing site.
+
+---
+
+## What the Pod Does Not Do
+
+The Pod does not:
+- Carry humans or life support
+- Process lunar resources (that begins in Phase 1.2)
+- Build domes or enclosed structures
+- Require any resupply from Earth
+- Need to return to Earth
+
+The Pod's single purpose is to prove that a robot system can land autonomously, deploy a mast, receive laser power, and sinter lunar regolith into a usable surface — and to do so continuously, openly, with all data transmitted to Earth in real time.
 
 ---
 
@@ -117,22 +110,22 @@ If laser power beaming is interrupted — due to mast pointing failure, dust on 
 
 | Document | Description |
 |---|---|
-| CHASSIS.md | Body structure, materials, and dimensions |
-| LEG-ARCHITECTURE.md | Three-segment leg design overview |
-| LEG-SEGMENT-FOOT.md | Foot design and surface contact |
-| LEG-SEGMENT-LOWER.md | Lower leg segment internals |
-| LEG-SEGMENT-UPPER.md | Upper leg segment internals |
-| FRONT-LIMBS-ARM-MODE.md | Dual-function limb design and operation |
-| FAULT-TOLERANCE-LEG-LOSS.md | Leg discard and gait recalculation |
-| HEAD-SINTERING.md | Sintering head specification |
-| HEAD-THERMAL-BUDDY.md | Thermal monitoring head specification |
-| HEAD-BULLDOZER.md | Regolith clearing head specification |
-| HEAD-WATCHER.md | Sensor and quality control head specification |
-| HEAD-ATTACHMENT-MECHANISM.md | Modular connection interface |
-| HEAD-STORAGE-IN-POD.md | Storage arrangement in Pod chambers |
-| SWARM-LOGIC.md | Multi-robot coordination concept |
-| AI-ONBOARD.md | Onboard AI architecture |
-| POWER-RECEPTION-LASER.md | Laser power reception system |
-| THERMAL-MANAGEMENT.md | Robot thermal control |
-| DUST-PROTECTION.md | Dust mitigation design |
-| CARGO-CARRYING-PROTOCOL.md | Module transport by robot teams |
+| POD-STRUCTURE.md | Physical description of the pod container |
+| POD-BLOOM-DEPLOYMENT.md | Leaf deployment sequence and dust containment |
+| POD-LANDING-SEQUENCE.md | Descent, TRN, and touchdown |
+| MAST-OVERVIEW.md | Mast architecture and deployment |
+| MAST-SOLAR-CURTAIN.md | GaAs curtain design and power generation |
+| MAST-ANCHOR-*.md | Four anchor variant concepts |
+| LASER-SYSTEM.md | Fibre laser and BSM architecture |
+| LASER-POWER-BEAMING.md | Power delivery to robots |
+| POWER-BUDGET.md | Full power budget analysis |
+
+---
+
+## Key References
+
+- Bussey et al. (2005) Nature 434:842 — Clementine illumination mapping of Peary rim
+- Noda et al. (2008) Geophysical Research Letters — SELENE topographic illumination data
+- Fateri et al. (2019) Scientific Reports — Laser sintering of lunar regolith simulant
+- PowerLight Technologies (2022) — Laser power beaming ground demonstration
+- SpaceX Falcon Heavy — User's Guide, payload specifications
