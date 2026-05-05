@@ -1,0 +1,22 @@
+# Basic .gitignore
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# Node
+node_modules/
+dist/
+
+# Build
+build/
+*.o
+*.log
+
+# VS Code
+.vscode/
+
