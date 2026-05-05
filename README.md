@@ -4,7 +4,7 @@
 **A concept proposal for a permanent Moon base built from local lunar materials by autonomous robots.** 
 No flags. No patents. Built for all of humanity.
 
-**Website:** https://chrystalmoonbase. com 
+**Website:** https://chrystalmoonbase.com 
 **Licence:** See [LICENSE. md](./LICENSE. md) — hardware: CERN-OHL-S-2.0 · software: proprietary · documents: CC0 
 **Status:** Phase 0 — Earth demonstrators (concept and planning stage)
 
@@ -99,8 +99,8 @@ This repository is our invitation to build it right.
 
 ## Contact
 
-- **Email:** info@chrystalmoonbase. com
-- **Website:** https://chrystalmoonbase. com
+- **Email:** info@chrystalmoonbase.com
+- **Website:** https://chrystalmoonbase.com
 - **X:** @chrystalbase
 
 ---
