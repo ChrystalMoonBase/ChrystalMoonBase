@@ -1,8 +1,8 @@
 # CMB-R1 Swarm Logic
 ## Chrystal Moon Base — Robot Coordination Concept
 
-**Status:** Concept proposal — no software implementation exists  
-**Author:** Berechja Kerkdijk  
+**Status:** Concept proposal — no software implementation exists 
+**Author:** Berechja Kerkdijk 
 **Licence:** CC0
 
 ---
@@ -185,3 +185,26 @@ The goal of Phase 0 Demonstrators 3, 4, and 5 is to discover as many unforeseen 
 3. How does the swarm coordinator prioritise competing task demands when resources are limited?
 4. What is the minimum number of functional robots that still allows meaningful construction progress?
 5. How are configuration change commands validated before execution — to prevent accidental or erroneous reconfigurations from Earth?
+
+---
+
+## The Road First — Operational Sequence from Pod
+
+Before any construction of the main floor begins, the swarm executes a specific preparatory sequence:
+
+**Step 1 — Path creation:**
+Bulldozer robots create a prepared path from the Pod to the intended centre of the 20-hectare floor. This path is graded, levelled, and cleared of loose regolith and obstacles.
+
+**Step 2 — Path sintering:**
+Sintering robots follow the bulldozers, fusing the prepared path into hard sintered basalt. This becomes the permanent access road — the first sintered surface beyond the Pod bloom leaves.
+
+**Step 3 — Protected locomotion:**
+From this point, all robots travel to and from the construction site on the hard sintered road. Never on loose regolith. This protects leg joints, coupling points, and sensors from dust ingress and abrasive wear — dramatically extending robot operational life.
+
+**Step 4 — Floor expansion:**
+From the road, construction expands outward. The Watcher scans terrain, the bulldozer prepares sections, the sintering robots fuse them. Ring by ring, the 20-hectare floor grows — always with robots moving on hard sintered surface, never on loose dust.
+
+**Why this order matters:**
+Robots that walk on loose regolith accumulate dust in every joint, every coupling point, every sensor aperture. The road-first approach means the most dust-sensitive period — early operations before any sintered surface exists — is minimised to only what is absolutely necessary for the bulldozers doing their initial work.
+
+The bulldozer bears the dust burden so the rest of the fleet does not have to.
