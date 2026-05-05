@@ -1,157 +1,148 @@
-# The Pod — Phase 0.2 Overview
-## Chrystal Moon Base — First Lunar Mission Concept
+# Governance
+## Chrystal Moon Base — Governance Framework
 
-**Status:** Concept proposal — feasibility not yet demonstrated 
+**Status:** Founding concept document 
 **Author:** Berechja Kerkdijk 
-**Licence:** CC0 
-**Last updated:** 2026
-
-> Every number in this document is an estimate based on publicly available data and physics. This is a concept sketch, not an engineering specification. If you find an error, please open an issue or submit a correction. That is the entire point of publishing this openly.
+**Licence:** CC0
 
 ---
 
-## What the Pod Is
+## Overview
 
-The Pod is the proposed first physical mission of Chrystal Moon Base to the lunar surface. It is a single launch — one Falcon Heavy rocket — carrying everything needed to begin autonomous construction of a sintered basalt floor on the rim of Peary Crater at the lunar north pole.
-
-The Pod does not carry humans. It does not need to return. It is designed to land, deploy, and operate indefinitely — for as long as the sun shines on the Peary rim, which is approximately 89% of the year.
-
-If the Pod concept works, three more pods would follow, each building on what the first established. If it does not work, the failure modes will be documented openly so that the next attempt — by CMB or by anyone else — can avoid them.
+This document describes the proposed governance structure for Chrystal Moon Base — both during the development phase on Earth and, speculatively, during eventual operations on the Moon. The lunar governance sections are long-term thinking, not near-term planning. They are published now so that legal scholars, space policy experts, and institutional partners can engage with them early.
 
 ---
 
-## Contents
+## Phase 0 — Earth Phase Governance
 
-The Pod carries:
+During Phase 0, CMB is a founder-led open-source project. Berechja Kerkdijk holds final authority on project direction. A growing advisory group of contributors, scientists, and institutional partners will inform decisions without formal voting rights during this phase.
 
-| Item | Quantity | Notes |
-|---|---|---|
-| CMB-R1 robots | 8 | Identical chassis, 4 pre-configured head types |
-| 100-metre telescoping mast | 1 | Carbon-fibre reinforced PEEK, 10 segments |
-| GaAs solar curtain | 1 | ~100 m², vertical, azimuth-tracking |
-| Fibre laser system | 1 | ~13.5 kW optical output from ~30 kW electrical |
-| Beam and Sensor Modules (BSM) | 5 | Mounted at 20m intervals on mast |
-| Tool heads (full set, all types) | 8 sets | Stored in pod chambers during launch |
-| Ka-band communications antenna | 1 | Mounted on mast |
-| Base computer and power electronics | 1 | Buried in pod base container |
+This structure is intentionally simple. Complex governance is appropriate for complex organisations. At this stage, CMB is a concept document and a Phase 0 demonstrator programme. It does not yet require a board of directors.
+
+As the project grows — when institutional partnerships form, when funding reaches a scale that requires accountability structures, when the first physical demonstrators are operational — governance will evolve accordingly. That evolution will be documented openly in this file.
 
 ---
 
-## Mission Sequence — Proposed
+## Lunar Base Governance — Two-Layer Model
 
-### 1. Transit and Approach
-The Pod launches on a Falcon Heavy on a Trans-Lunar Injection trajectory. Transit time approximately 3–5 days depending on trajectory optimisation. No crew. Full autonomous operation from separation.
+The proposed governance model for the operational lunar base separates two distinct domains of authority: **base-wide safety and infrastructure**, and **tenant autonomy within leased domains**.
 
-### 2. Lunar Orbit Insertion and Descent
-The lander system performs autonomous powered descent to the Peary Crater rim. Terrain Relative Navigation (TRN) targets a pre-selected flat zone within the high-illumination area. Landing accuracy is estimated at 5–10 metres CEP based on current TRN technology — this uncertainty is a known risk factor. See LANDING-ZONE-CRITERIA. md for full analysis.
+### Layer 1 — CMB Authority (Non-Negotiable)
 
-### 3. Bloom Deployment
-On confirmed surface contact, the Pod's 8 structural leaves unfold downward and outward — the "bloom." Each leaf becomes a ramp to the surface. Vectran cloth tensioned between leaves creates a dust-sealed working enclosure around the pod base. Robots remain inside and unpowered during this phase.
+CMB holds absolute authority over:
 
-### 4. Mast Deployment
-The telescoping mast extends from the pod base upward. Full deployment to 100 metres takes an estimated 2–4 hours. The solar curtain unfurls as the mast rises. On first contact with sunlight, the curtain begins generating power.
+- **Safety systems** — AI monitoring, atmospheric integrity, radiation alerts, emergency protocols. These cannot be overridden by any tenant for any reason.
+- **Structural integrity** — No drilling, cutting, modification, or attachment to any dome, tunnel, or shared structure without CMB engineering approval.
+- **Underground network** — All utility conduits, transport tunnels, and restricted zones are CMB infrastructure. Access is granted by CMB only.
+- **Power grid** — The base power system is shared infrastructure. No tenant may draw power beyond their allocated quota without agreement.
+- **Environmental systems** — Atmosphere, water cycle, and waste processing are base-wide systems. No tenant action may compromise them.
 
-### 5. First Power
-As soon as the solar curtain generates sufficient voltage to activate the power bus, the base computer initialises. Robot charging begins. This is the first moment the Pod is operational on the Moon.
+CMB authority in these domains is enforced by AI monitoring systems that operate continuously. Human override of safety-critical AI decisions requires a formal emergency protocol, not individual judgment.
 
-### 6. Leaf Sintering — First Task
-Before any other construction begins, the robots' first task is to sinter the bloom leaves permanently to the lunar regolith. This anchors the Pod structure, levels the working platform if needed (v2.5 configuration), and creates the first sintered surface on the Moon. Estimated time: 48–72 hours for full leaf sintering.
+The founder and an advisory council hold authority on base-wide policy decisions. As the base grows, this council is expected to evolve into a more formal representative body — the composition and selection process of which will be defined in a future governance revision.
 
-The Pod is a permanent installation. It is never designed to be moved, retracted, or returned to Earth. Once the leaves are sintered to the regolith, the Pod becomes part of the lunar surface — a fixed foundation from which all subsequent construction radiates outward. In later phases, the Pod structure will be enclosed and integrated into the growing base, with the mast remaining as the highest point of the entire installation.
+### Layer 2 — Tenant Autonomy
 
-### 7. Continuous Construction
-With the Pod anchored and operational, robots begin sintering the basalt floor outward in concentric rings. Construction is continuous for as long as the system operates. There is no defined end point — the floor grows ring by ring, indefinitely.
+Organisations — companies, universities, national space agencies, research institutions — may lease dome clusters on the lunar base. Within their leased domain, tenants govern themselves as they choose, subject to Layer 1 constraints.
 
----
+Tenants may:
+- Conduct their own research programmes
+- Maintain their own internal rules and culture
+- Control access to their domes
+- Use their allocated resources as they see fit
 
-## Power Budget — Estimated
+Tenants may not:
+- Modify shared infrastructure without CMB approval
+- Override base-wide safety systems
+- Claim ownership of any part of the lunar surface
+- Patent any technology developed using CMB infrastructure
 
-| Parameter | Value | Notes |
-|---|---|---|
-| Solar curtain area | ~100 m² | Vertical, azimuth-tracking |
-| Solar constant at Moon | 1,361 W/m² | |
-| Sun elevation at Peary | 1.5°–6.5° | Varies over lunar year |
-| Incidence on vertical panel | ~1,352–1,361 W/m² | cos(elevation) ≈ 1 |
-| Cell efficiency (GaAs) | ~30% | Conservative commercial figure |
-| Gross electrical output | ~40 kW peak | |
-| System losses (dust, cable, thermal) | ~10% | Estimate |
-| Annual availability | ~89% | Based on SELENE illumination data |
-| **Working power estimate** | **~32–36 kW** | Central estimate: 32 kW |
-| Laser optical output | ~13.5 kW | 45% wall-plug efficiency |
-| Base computer and comms | ~2 kW | Estimate |
-| Robot charging (8 units) | ~10–15 kW | Estimate |
-
-The power budget is the most important single uncertainty in the Pod concept. It depends on solar curtain performance in the actual Peary illumination geometry, dust accumulation rates on the curtain, and thermal effects on GaAs cell efficiency at lunar temperatures. Ground validation (Phase 0 Demonstrator 2) must address these uncertainties before the Pod concept can progress to hardware.
+The lease model is intentionally similar to how the International Space Station operates — each module has a responsible party, but station-wide rules override all module-level decisions when safety is at stake.
 
 ---
 
-## Operational Radius
+## Privacy on the Base
 
-The laser power beaming system can reach robots within an estimated **1–2 km radius** from the mast base. This defines the maximum extent of the sintered floor that the first Pod can build. Beyond this radius, a second mast — delivered on a future mission — would be required to extend operations.
+The lunar base operates under continuous AI monitoring. Every corridor, every shared space, every utility system is monitored in real time. This is not optional and is not subject to tenant override.
 
-The 5 Beam and Sensor Modules at 20-metre intervals on the mast provide multiple aiming points. The AI selects the optimal BSM for each robot based on current position and terrain. At 100 metres height on the near-flat Peary rim terrain, line-of-sight to any point within the operational radius is expected to be unobstructed for a well-chosen landing site.
+The reason is physical: on the Moon, a small fire, a slow gas leak, a microcrack in a dome layer, or a malfunctioning robot can cascade into a lethal emergency within minutes. Detection must be immediate and automatic. Human monitoring alone is insufficient.
 
----
+The only spaces where AI monitoring does not apply are individual sleeping quarters. This boundary is absolute.
 
-## What the Pod Does Not Do
-
-The Pod does not:
-- Carry humans or life support
-- Process lunar resources (that begins in Phase 1.2)
-- Build domes or enclosed structures
-- Require any resupply from Earth
-- Need to return to Earth
-
-The Pod's single purpose is to prove that a robot system can land autonomously, deploy a mast, receive laser power, and sinter lunar regolith into a usable surface — and to do so continuously, openly, with all data transmitted to Earth in real time.
+Residents of the base accept continuous monitoring as a condition of residence. This is disclosed clearly before any person travels to the Moon. It is not surveillance for control — it is the immune system of a habitat where every resident depends on every system functioning correctly.
 
 ---
 
-## Document Index
+## Relationship with Earth
 
-| Document | Description |
-|---|---|
-| POD-STRUCTURE. md | Physical description of the pod container |
-| POD-BLOOM-DEPLOYMENT. md | Leaf deployment sequence and dust containment |
-| POD-LANDING-SEQUENCE. md | Descent, TRN, and touchdown |
-| MAST-OVERVIEW. md | Mast architecture and deployment |
-| MAST-SOLAR-CURTAIN. md | GaAs curtain design and power generation |
-| MAST-ANCHOR-*. md | Four anchor variant concepts |
-| LASER-SYSTEM. md | Fibre laser and BSM architecture |
-| LASER-POWER-BEAMING. md | Power delivery to robots |
-| POWER-BUDGET. md | Full power budget analysis |
+CMB is not a nation. It does not claim sovereignty over any part of the lunar surface. Its legal foundation is the Outer Space Treaty (1967), which prohibits national appropriation of the Moon and establishes it as the province of all mankind.
+
+CMB's relationship with Earth-based authorities:
+- CMB complies with all applicable space law and launch regulations
+- CMB does not recognise the authority of any single nation over its operations
+- CMB cooperates with international bodies including ESA, NASA, JAXA, and the UN Committee on the Peaceful Uses of Outer Space
+- Disputes between tenants that cannot be resolved internally are referred to an agreed international arbitration body — the specific body to be defined in partnership agreements
+
+The base is intentionally designed to be politically neutral. No national flag flies over CMB infrastructure. No national anthem is played. The base belongs to everyone who contributed to building it, and to all of humanity by extension.
 
 ---
 
-## Key References
+## A Note on Humility
 
-- Bussey et al. (2005) Nature 434:842 — Clementine illumination mapping of Peary rim
-- Noda et al. (2008) Geophysical Research Letters — SELENE topographic illumination data
-- Fateri et al. (2019) Scientific Reports — Laser sintering of lunar regolith simulant
-- PowerLight Technologies (2022) — Laser power beaming ground demonstration
-- SpaceX Falcon Heavy — User's Guide, payload specifications
+This governance document describes a vision, not a legal framework. The people who will actually govern a lunar base with 500 residents have not been born yet. The legal instruments that will apply to permanent lunar habitation do not yet exist in their final form.
+
+This document is a starting point for a conversation — with space lawyers, with policy experts, with the institutions that will eventually partner on this project, and with the public who will ultimately decide whether this kind of open, shared lunar future is worth pursuing.
+
+Corrections, challenges, and alternative proposals are welcome.
 
 ---
 
-## Beyond Pod 1 — Four Peaks, Four Masts
+## Zero Tolerance Policy
 
-Pod 1 is the proof of concept. If it works, the waiting period before Pod 2 will not be long.
+The zero tolerance policy is the single non-negotiable rule of the base. It is written into the founding statutes of Stichting Chrystal Base and cannot be changed by any individual, including the founder.
 
-The Peary crater rim has four distinct illumination peaks — locations where near-continuous sunlight has been measured. The long-term vision is one Pod and one mast on each of these four peaks, creating a network of four independent power and construction nodes across the Peary rim.
+**What zero tolerance means:**
+Any serious violation of base rules — endangering other residents, sabotage, deliberate deception that creates safety risk, or any action that threatens the survival of the community — results in permanent removal from the base on the next available flight to Earth. The person may never return.
 
-**What four masts provide:**
-- 4× the solar energy collection capacity of a single Pod
-- Combined laser operational radius covering the entire planned 20-hectare base floor and beyond
-- Full redundancy — if one mast fails, three others continue operating
-- Robots can move between mast coverage zones without ever losing laser power
-- The construction rate scales with every additional Pod
+**Why permanent:**
+On a base 384,000 km from Earth, with 500 people completely dependent on every system functioning correctly, there is no appropriate punishment other than removal. There is no prison. There is no rehabilitation programme. There is removal and permanent exclusion.
 
-**Pod 2 is also a resupply mission:**
-Each subsequent Pod brings fresh heads, spare components, and potentially new robot chassis. The concern about head wear over a 5–10 year operational period becomes less critical when Pod 2 arrives within a few years of Pod 1's success.
+**The AI provides facts. Humans decide.**
+The AI monitoring system records everything in shared spaces. It does not judge — it presents data. A democratically composed council of all tenant representatives reviews the evidence, hears the accused, and decides by majority vote. No single person has veto power — including the founder. The zero tolerance rule itself cannot be overridden, but whether a specific situation constitutes a violation is always decided collectively.
 
-**The sequence:**
-- Pod 1 → prove the concept, build the first sintered path and floor area
-- Pod 2 → second peak, fresh supplies, doubled construction capacity
-- Pod 3 → third peak, network begins to form
-- Pod 4 → fourth peak, full Peary rim network operational
+**Everyone knows before they go:**
+The zero tolerance policy is disclosed completely before any person departs for the Moon. They sign acknowledgement of it as a condition of travel. No surprises. No "I didn't know." The rules are published openly and accepted voluntarily.
 
-At this point the construction capacity is sufficient to begin the 20-hectare floor in earnest, and the base transitions from Phase 0.2 to Phase 1.
+---
+
+## No Money
+
+No financial transactions of any kind occur on the base. No currency, no digital tokens, no barter, no informal exchange of value.
+
+Everything a resident needs — food, housing, medical care, entertainment, use of all facilities — is covered by the tenant organisation's lease agreement with CMB. The individual resident pays nothing and receives nothing in return for anything.
+
+**Why:**
+Money creates hierarchy. Hierarchy creates resentment. Resentment in a closed community of 500 people with no escape creates conflict. Conflict on the Moon can kill people.
+
+The absence of money is not an ideological statement. It is a safety measure.
+
+---
+
+## No Religion in Shared Spaces
+
+Religious practice in personal sleeping quarters is a private matter. In all shared spaces — domes, passages, work areas, entertainment facilities — no religious activity, symbols, or proselytising is permitted.
+
+This is disclosed before departure and accepted as a condition of travel. It is not negotiable.
+
+**Why:**
+In a community where every person's psychological stability affects everyone's safety, activities that historically divide people along lines of belief have no place in shared spaces. This is not a statement about the validity of any belief — it is a statement about the requirements of community safety in extreme isolation.
+
+---
+
+## Governance Council
+
+All decisions affecting the base community are made by a council consisting of one representative from each active tenant organisation. CMB holds one seat — equal to all others.
+
+No veto power exists for any party. Majority vote decides. The founding statutes — including zero tolerance, no money, no religion in shared spaces, and the open science commitment — cannot be changed by the council. Everything else can.
+
+The council meets regularly and as needed for emergency decisions. All council decisions are published openly to all base residents and to Earth.
