@@ -12,7 +12,7 @@ The hardware is open. The software is not. The documents are public domain. The 
 
 ---
 
-## 1. The Organisation — Stichting Chrystal Moon Base
+## 1. The Organisation — Stichting Chrystal Base
 
 **Planned legal form:** Stichting (Dutch foundation), to be incorporated under Dutch law.
 
@@ -46,7 +46,7 @@ The following are intended to be open source under the CERN Open Hardware Licenc
 - All dome architecture designs
 - All processing module concepts (M-Glass, M-Ti, M-O2, and all others)
 
-**In practice:** You may build a CMB-R1 chassis. You may modify and sell hardware based on these designs. You must credit "Stichting Chrystal Moon Base / Berechja Kerkdijk" and share modifications under the same licence.
+**In practice:** You may build a CMB-R1 chassis. You may modify and sell hardware based on these designs. You must credit "Stichting Chrystal Base / Berechja Kerkdijk" and share modifications under the same licence.
 
 Full licence text: [LICENSE-HARDWARE. md](./LICENSE-HARDWARE. md)
 

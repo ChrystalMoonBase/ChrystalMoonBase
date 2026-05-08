@@ -1,16 +1,63 @@
-Thank you for your interest in contributing.
+# Contributing to Chrystal Moon Base
 
-Please read the repository CODE_OF_CONDUCT.md before contributing.
+**Welcome. Every contribution matters.**
 
-How to propose a change
-- Open an issue describing the change.
-- Fork the repository, make changes on a branch, and open a pull request.
-- Reference the issue number and explain the reasoning.
+This repository is organised in small, independent modules so that anyone can help — even with just one small part. You do not need to understand the whole project to improve one document.
 
-Documentation standards
-- Prefer Markdown (*.md) with clear headings.
-- Cite sources where numerical claims or scientific facts are made.
+---
 
-Maintainer review process
-- PRs are reviewed for technical accuracy, clarity, and citation.
-- Major design changes may require a design review and/or simulation evidence.
+## Ways to Contribute
+
+### Find an Error
+The most valuable thing you can do is find something wrong and say so clearly.
+
+Open a GitHub Issue with:
+- The document name and section
+- What the current text says
+- What the correct value or statement should be
+- A reference to the source (published paper, measurement, calculation)
+
+### Improve a Document
+If a document is unclear, incomplete, or missing context:
+- Fork the repository
+- Edit the document
+- Submit a pull request with a clear description of what you changed and why
+
+### Write a New Document
+The repository structure lists many documents that do not yet exist. If you have expertise relevant to one of them, write it. Follow the format of existing documents: clear sections, honest uncertainty, open questions at the end.
+
+### Run a Simulation
+Many open questions in this repository are answerable by simulation — sintering energy models, robot locomotion on 1/6 g terrain, laser beam propagation, dome structural analysis. If you run one, publish your method, your data, and your results in a pull request.
+
+### Translate
+The website at chrystalmoonbase. com supports 26 languages. If you can improve or add translations, contact us via the Issues page.
+
+---
+
+## Standards
+
+**Be specific.** "This number seems wrong" is not useful. "This number should be X based on source Y" is.
+
+**Cite your sources.** Claims without references are not improvements — they are new uncertainties.
+
+**Be humble.** This project was started by a non-engineer. Everyone here is working at the edge of what is known. Be patient with each other.
+
+**Keep it open.** Contributions to this repository are made under the following licences:
+
+- **Hardware designs** — contributed under CERN-OHL-S-2.0. By submitting hardware design contributions, you agree your work is released under CERN-OHL-S-2.0 and must be attributed accordingly.
+- **Documents and written content** — contributed under CC0 (Public Domain). No attribution required, though always appreciated.
+- **Software** — the software (flight systems, AI, swarm coordination) is proprietary and is not open for external contribution at this time. If you have relevant software expertise and wish to collaborate, contact info@chrystalmoonbase. com directly.
+
+---
+
+## Credit
+
+Every contributor is named in CREDITS. md. No contribution is absorbed anonymously. If you submit a correction or a new document, your name and contribution are recorded.
+
+---
+
+## Contact
+
+- GitHub Issues — preferred for technical questions and corrections
+- Email: info@chrystalmoonbase. com
+- Website: https://chrystalmoonbase. com
