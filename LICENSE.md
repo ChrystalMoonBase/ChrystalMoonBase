@@ -11,14 +11,16 @@ All mechanical designs, structural concepts, and physical documentation are lice
 
 **CERN Open Hardware Licence Version 2 — Strongly Reciprocal (CERN-OHL-S-2.0)**
 
-You may build, modify, and distribute hardware based on these designs.
-You must attribute and share modifications under the same licence.
+**You may build, modify, and distribute hardware based on these designs — for any purpose, including commercially.**
+You must attribute Stichting Chrystal Base / Berechja Kerkdijk and share any modifications under the same licence.
+
+In plain language: build the robot, build the mast, build the domes. The designs are yours to use freely. The only condition is that you share your improvements openly too.
 
 → Full details: [LICENSE-HARDWARE. md](./LICENSE-HARDWARE. md)
 → Full licence text: https://spdx. org/licenses/CERN-OHL-S-2.0. html
 
 **Attribution required:**
-*"Based on hardware designs by Stichting Chrystal Moon Base / Berechja Kerkdijk, licensed under CERN-OHL-S-2.0. Source: https://github. com/ChrystalMoonBase/ChrystalMoonBase"*
+*"Based on hardware designs by Stichting Chrystal Base / Berechja Kerkdijk, licensed under CERN-OHL-S-2.0. Source: https://github. com/ChrystalMoonBase/ChrystalMoonBase"*
 
 ---
 
@@ -26,7 +28,7 @@ You must attribute and share modifications under the same licence.
 
 All flight software, AI algorithms, swarm coordination software, and operational procedures are proprietary.
 
-All rights reserved — Berechja Kerkdijk (to be transferred to Stichting Chrystal Moon Base upon formal incorporation).
+All rights reserved — Berechja Kerkdijk (to be transferred to Stichting Chrystal Base upon formal incorporation).
 No software source code is published in this repository.
 
 **Note:** Nothing in the hardware licence or the CC0 document licence grants any rights to the proprietary software.
@@ -52,7 +54,7 @@ Nothing in this repository, and no licence granted here, confers any claim to an
 
 ## Legal Status
 
-Stichting Chrystal Moon Base has not yet been formally incorporated. All intellectual property is currently held by Berechja Kerkdijk and will be transferred to the Stichting upon incorporation. These licences represent intended future legal structures. See [LEGAL-STRUCTURE. md](./LEGAL-STRUCTURE. md) for full transparency.
+Stichting Chrystal Base has not yet been formally incorporated. All intellectual property is currently held by Berechja Kerkdijk and will be transferred to the Stichting upon incorporation. These licences represent intended future legal structures. See [LEGAL-STRUCTURE. md](./LEGAL-STRUCTURE. md) for full transparency.
 
 *Last updated: 4 May 2026 | Dutch law applies (ownership matters) | Swiss law applies (CERN-OHL-S-2.0 licence terms)*
 *Not legal advice. Consult a qualified IP lawyer before making decisions based on these documents.*
