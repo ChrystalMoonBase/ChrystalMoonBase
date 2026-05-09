@@ -1678,7 +1678,7 @@
       </div>
       <div class="codex-search">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0"/></svg>
-        <input type="text" id="cx-q" placeholder="Search the Codex..." oninput="filterCodex(this.value)"/>
+        <input type="text" id="cx-q" placeholder="Search the Codex..." data-i18n-placeholder="cx.search" oninput="filterCodex(this.value)"/>
       </div>
     </div>
     <div class="codex-alpha sr" id="codex-alpha"></div>
@@ -2907,6 +2907,9 @@ NL:{
 'bp.open.sub':'Geen masterplan. Een open uitnodiging.',
 'bp.open.p1':'Dit is geen masterplan van een natie of bedrijf. Het is een open-source conceptschets, gepubliceerd zodat mensen die daadwerkelijk weten waarover ze praten het kunnen beoordelen, corrigeren en verbeteren.',
 'bp.open.p2':'Één vrachtwagenchauffeur schreef dit op. Dat is alles. Als ingenieurs, wetenschappers of instellingen er ooit iets nuttigs in vinden, is dat meer dan genoeg.',
+'cx.search':'Zoek in de Codex...',
+'cx.noresults':'// GEEN RESULTATEN GEVONDEN',
+'cx.refs':'Bronnen',
 'sup.btn.donate':'Word een Pioneer — Doneer Nu',
 'pnr.l1':'<strong style="color:var(--off-white);font-weight:500">Gegarandeerd:</strong> Jouw naam permanent vastgelegd in het publieke Pioneer Register — toegeschreven, gepubliceerd en bewaard voor de levensduur van het project.',
 'pnr.l2':'<strong style="color:var(--off-white);font-weight:500">Gegarandeerd:</strong> Transparante voortgangsrapporten na elke mijlpaal — het goede, het vertraagde, en het mislukte.',
@@ -7062,6 +7065,10 @@ EL:{
 
 function T(k){return(I18[CL]&&I18[CL][k])||(I18.EN[k])||k}
 function applyLang(){
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+    var v=T(el.getAttribute('data-i18n-placeholder'));
+    if(v)el.placeholder=v;
+  });
   document.querySelectorAll('[data-i18n]').forEach(function(el){
     var v=T(el.getAttribute('data-i18n'));
     if(v.includes('<'))el.innerHTML=v;else el.textContent=v;
@@ -7530,11 +7537,19 @@ var CX_ICONS={
   'CONCEPT':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21h6"/><path d="M10 18h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.7.6 1 1.4 1 2.3v1h6v-1c0-.9.3-1.7 1-2.3A7 7 0 0 0 12 2z"/></svg>'
 };
 function cxIcon(cat){return CX_ICONS[cat]||CX_ICONS['CONCEPT']}
+
+var CX_CATS={
+  EN:{TECHNOLOGY:'TECHNOLOGY',PROCESS:'PROCESS',ROBOT:'ROBOT',MISSION:'MISSION',MODULE:'MODULE',PRODUCT:'PRODUCT',MATERIAL:'MATERIAL',INFRASTRUCTURE:'INFRASTRUCTURE',LOCATION:'LOCATION',CONCEPT:'CONCEPT'},
+  NL:{TECHNOLOGY:'TECHNOLOGIE',PROCESS:'PROCES',ROBOT:'ROBOT',MISSION:'MISSIE',MODULE:'MODULE',PRODUCT:'PRODUCT',MATERIAL:'MATERIAAL',INFRASTRUCTURE:'INFRASTRUCTUUR',LOCATION:'LOCATIE',CONCEPT:'CONCEPT'},
+  DE:{TECHNOLOGY:'TECHNOLOGIE',PROCESS:'PROZESS',ROBOT:'ROBOTER',MISSION:'MISSION',MODULE:'MODUL',PRODUCT:'PRODUKT',MATERIAL:'MATERIAL',INFRASTRUCTURE:'INFRASTRUKTUR',LOCATION:'STANDORT',CONCEPT:'KONZEPT'},
+  FR:{TECHNOLOGY:'TECHNOLOGIE',PROCESS:'PROCESSUS',ROBOT:'ROBOT',MISSION:'MISSION',MODULE:'MODULE',PRODUCT:'PRODUIT',MATERIAL:'MATÉRIAU',INFRASTRUCTURE:'INFRASTRUCTURE',LOCATION:'EMPLACEMENT',CONCEPT:'CONCEPT'}
+};
+function cxCat(cat){var t=CX_CATS[CL];return(t&&t[cat])||cat;}
 function cxT(d,field){if(CL!=='EN'&&d.i18n&&d.i18n[CL]&&d.i18n[CL][field]){return d.i18n[CL][field]}return d[field]}
 function renderCodex(data){
   var g=document.getElementById('cx-grid');
-  if(!data||!data.length){g.innerHTML='<div class="cx-empty">// NO RESULTS FOUND</div>';return}
-  g.innerHTML=data.map(function(d,i){return '<div class="cx-card" onclick="openModal('+d.id+')"><div class="cx-icon">'+cxIcon(d.cat)+'</div><div class="cx-num">// '+String(i+1).padStart(2,'0')+' \u00B7 '+d.letter+' \u00B7 '+d.cat+'</div><div class="cx-name">'+cxT(d,'name')+'</div><div class="cx-tag">'+cxT(d,'tag')+'</div><p class="cx-desc">'+cxT(d,'sum')+'</p><div class="cx-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10"/></svg></div></div>';}).join('');
+  if(!data||!data.length){g.innerHTML='<div class="cx-empty">'+(T('cx.noresults')||'// NO RESULTS FOUND')+'</div>';return}
+  g.innerHTML=data.map(function(d,i){return '<div class="cx-card" onclick="openModal('+d.id+')"><div class="cx-icon">'+cxIcon(d.cat)+'</div><div class="cx-num">// '+String(i+1).padStart(2,'0')+' \u00B7 '+d.letter+' \u00B7 '+cxCat(d.cat)+'</div><div class="cx-name">'+cxT(d,'name')+'</div><div class="cx-tag">'+cxT(d,'tag')+'</div><p class="cx-desc">'+cxT(d,'sum')+'</p><div class="cx-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10"/></svg></div></div>';}).join('');
 }
 function filterCodex(q){
   var v=(q||'').toLowerCase().trim();
@@ -7554,7 +7569,7 @@ function openModal(id){
   document.getElementById('m-title').textContent=cxT(d,'name');
   document.getElementById('m-sub').textContent=cxT(d,'sum');
   document.getElementById('m-desc').textContent=cxT(d,'desc');
-  document.getElementById('m-ref').textContent=d.ref?'References: '+d.ref:'';
+  document.getElementById('m-ref').textContent=d.ref?(T('cx.refs')||'References')+': '+d.ref:'';
   var specsWrap=document.querySelector('.m-specs');
   if(d.specs&&Object.keys(d.specs).length){
     document.getElementById('m-specs').innerHTML=Object.entries(d.specs).map(function(e){return '<div><div class="m-sk">'+e[0]+'</div><div class="m-sv">'+e[1]+'</div></div>';}).join('');
