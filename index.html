@@ -225,7 +225,7 @@
     .sr{opacity:0;transform:translateY(22px);transition:opacity 0.7s ease,transform 0.7s ease}
     .sr.in{opacity:1;transform:translateY(0)}
     .sd1{transition-delay:0.1s}.sd2{transition-delay:0.2s}.sd3{transition-delay:0.3s}
-    .hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.35;z-index:0}
+    .hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.35;z-index:0;pointer-events:none}
     .hero-video-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom,rgba(8,10,14,0.3) 0%,rgba(8,10,14,0.7) 100%);z-index:1}
     .hero-content{position:relative;z-index:2}
     .hero-status{position:relative;z-index:2}
@@ -1101,11 +1101,11 @@
     <div class="hero-status-text">UTC <span id="utctime">--:--:--</span><br>MISSION ACTIVE<br><span class="status-dot"></span>UPLINK ACTIVE</div>
   </div>
 </section>
-<section id="vision" style="position:relative;overflow:hidden">
-  <video style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.25;z-index:0" autoplay muted loop playsinline>
+<section id="vision" style="position:relative">
+  <video style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.25;z-index:0" autoplay muted loop playsinline style="pointer-events:none">
     <source src="assets/videos/video-moonfly.mp4" type="video/mp4">
   </video>
-  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom,rgba(8,10,14,0.6),rgba(8,10,14,0.85));z-index:1"></div>
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom,rgba(8,10,14,0.6),rgba(8,10,14,0.85));z-index:1;pointer-events:none"></div>
   <div class="wrap" style="position:relative;z-index:2">
     <div class="sr">
       <div class="sec-label"><span class="c">// Founding Vision</span> &middot; <span data-i18n="vis.sub">The Man Behind the Mission</span></div>
@@ -1328,11 +1328,11 @@
   </div>
 </section>
 
-<section id="phases" style="position:relative;overflow:hidden">
+<section id="phases" style="position:relative">
   <video style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.25;z-index:0" autoplay muted loop playsinline>
     <source src="assets/videos/video-landing.mp4" type="video/mp4">
   </video>
-  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom,rgba(8,10,14,0.6),rgba(8,10,14,0.85));z-index:1"></div>
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom,rgba(8,10,14,0.6),rgba(8,10,14,0.85));z-index:1;pointer-events:none"></div>
   <div class="wrap" style="position:relative;z-index:2">
     <div class="sr">
       <div class="sec-label"><span class="c">// Mission Architecture</span> &middot; <span data-i18n="ph.sub">A Concept in Progress</span></div>
