@@ -11513,5 +11513,68 @@ if(codexSection) {
   renderCodex(codexData);
 }
 </script>
+
+<!-- VISITOR COUNTER -->
+<section style="padding:4rem 1.5rem 3rem;text-align:center;border-top:1px solid rgba(255,255,255,0.06);">
+  <div style="max-width:400px;margin:0 auto;">
+    <div class="sec-label" style="margin-bottom:1.2rem"><span class="c">// Bereik · Unieke Bezoekers</span></div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:2rem 2rem 1.5rem;backdrop-filter:blur(8px);">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:0.8rem">Unieke Bezoekers</div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:3.5rem;font-weight:700;letter-spacing:0.04em;color:var(--off-white);line-height:1" id="visitor-count">—</div>
+      <div style="font-size:0.78rem;color:var(--muted);margin-top:0.6rem;margin-bottom:1.4rem">mensen hebben deze site bezocht</div>
+      <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin-bottom:1.2rem">
+        <div style="text-align:center">
+          <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:600;color:var(--cyan)" id="visit-today">—</div>
+          <div style="font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)">Vandaag</div>
+        </div>
+        <div style="text-align:center">
+          <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:600;color:var(--accent)" id="visit-week">—</div>
+          <div style="font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted)">Deze Week</div>
+        </div>
+      </div>
+      <div style="font-size:0.65rem;color:rgba(255,255,255,0.2);letter-spacing:0.08em">Privacy-vriendelijk · Geen cookies · GoatCounter</div>
+    </div>
+  </div>
+</section>
+
+<script data-goatcounter="https://chrystalmoonbase.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+<script>
+// Fetch visitor stats from GoatCounter API
+fetch('https://chrystalmoonbase.goatcounter.com/api/v0/stats/total?start=2020-01-01&end=2099-01-01', {
+  headers: {'Content-Type': 'application/json'}
+})
+.then(r => r.json())
+.then(data => {
+  if(data && data.total !== undefined) {
+    document.getElementById('visitor-count').textContent = data.total.toLocaleString();
+  }
+}).catch(() => {});
+
+// Today's count
+var today = new Date().toISOString().split('T')[0];
+fetch('https://chrystalmoonbase.goatcounter.com/api/v0/stats/total?start=' + today + '&end=' + today, {
+  headers: {'Content-Type': 'application/json'}
+})
+.then(r => r.json())
+.then(data => {
+  if(data && data.total !== undefined) {
+    document.getElementById('visit-today').textContent = data.total.toLocaleString();
+  }
+}).catch(() => {});
+
+// This week
+var weekAgo = new Date(Date.now() - 7*24*60*60*1000).toISOString().split('T')[0];
+fetch('https://chrystalmoonbase.goatcounter.com/api/v0/stats/total?start=' + weekAgo + '&end=' + today, {
+  headers: {'Content-Type': 'application/json'}
+})
+.then(r => r.json())
+.then(data => {
+  if(data && data.total !== undefined) {
+    document.getElementById('visit-week').textContent = data.total.toLocaleString();
+  }
+}).catch(() => {});
+</script>
+
 </body>
 </html>
