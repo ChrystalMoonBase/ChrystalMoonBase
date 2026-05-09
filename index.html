@@ -1737,7 +1737,7 @@
   <div class="wrap">
     <div class="sr">
       <div class="sec-label"><span class="c">// Pioneer Registry</span></div>
-      <h2 class="sec-title">Join the <span class="accent">Pioneer Registry</span></h2>
+      <h2 class="sec-title" data-i18n="acc.h">Join the <span class="accent">Pioneer Registry</span></h2>
       <p class="sec-desc">Register your name. Stay updated on the project. Be part of the history being written.</p>
     </div>
     <div class="account-grid sr sd1">
@@ -1745,11 +1745,11 @@
         <div id="accLogged" class="acc-logged">
           <div style="font-family:'JetBrains Mono',monospace;font-size:1.2rem;color:var(--cyan)">&#9672;</div>
           <div class="aname" id="accName"></div>
-          <p>You are registered as a Pioneer. Your name is reserved in the system.</p>
+          <p data-i18n="acc.registered">You are registered as a Pioneer. Your name is reserved in the system.</p>
           <button class="logout-btn" onclick="doLogout()">Sign out</button>
         </div>
         <div id="accForms">
-          <div class="sec-label" style="margin-bottom:1.2rem">Register as Pioneer</div>
+          <div class="sec-label" style="margin-bottom:1.2rem" data-i18n="acc.reg.label">Register as Pioneer</div>
           <div class="form-row2">
             <div class="form-g"><label class="form-lbl">First Name</label><input type="text" class="form-inp" id="r-first" placeholder="Neil"></div>
             <div class="form-g"><label class="form-lbl">Last Name</label><input type="text" class="form-inp" id="r-last" placeholder="Armstrong"></div>
@@ -1757,12 +1757,12 @@
           <div class="form-g"><label class="form-lbl">Email</label><input type="email" class="form-inp" id="r-email" placeholder="you@example.com"></div>
           <div class="form-g"><label class="form-lbl">Country</label><input type="text" class="form-inp" id="r-country" placeholder="Netherlands"></div>
           <div class="form-g"><label class="form-lbl">Password</label><input type="password" class="form-inp" id="r-pass" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"></div>
-          <button class="btn-primary" style="width:100%;justify-content:center;margin-top:0.4rem" onclick="doRegister()">Register as Pioneer</button>
+          <button class="btn-primary" style="width:100%;justify-content:center;margin-top:0.4rem" onclick="doRegister()" data-i18n="acc.reg.btn">Register as Pioneer</button>
           <div class="divider"><div class="divider-ln"></div><div class="divider-txt">OR</div><div class="divider-ln"></div></div>
-          <div class="sec-label" style="margin-bottom:1.2rem">Existing Pioneer</div>
+          <div class="sec-label" style="margin-bottom:1.2rem" data-i18n="acc.login.label">Existing Pioneer</div>
           <div class="form-g"><label class="form-lbl">Email</label><input type="email" class="form-inp" id="l-email" placeholder="you@example.com"></div>
           <div class="form-g"><label class="form-lbl">Password</label><input type="password" class="form-inp" id="l-pass" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"></div>
-          <button class="btn-ghost" style="width:100%;padding:0.72rem;font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;cursor:pointer;margin-top:0.4rem" onclick="doLogin()">Access Pioneer Portal</button>
+          <button class="btn-ghost" style="width:100%;padding:0.72rem;font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;cursor:pointer;margin-top:0.4rem" onclick="doLogin()" data-i18n="acc.login.btn">Access Pioneer Portal</button>
           <div class="form-msg" id="form-msg"></div>
         </div>
       </div>
@@ -1960,8 +1960,8 @@
   <div class="wrap">
     <div class="sr">
       <div class="sec-label"><span class="c">// Legal</span> &middot; Licences &middot; What is open and what is not</div>
-      <h2 class="sec-title">Two Licences. <span class="accent">Full Transparency.</span></h2>
-      <p class="sec-desc">This project uses two separate licences — one for hardware, one for software. Neither is hidden. Both are explained here in full. If something is unclear, open a GitHub Issue or email us.</p>
+      <h2 class="sec-title" data-i18n="lic.h">Two Licences. <span class="accent">Full Transparency.</span></h2>
+      <p class="sec-desc" data-i18n="lic.d">This project uses two separate licences — one for hardware, one for software. Neither is hidden. Both are explained here in full. If something is unclear, open a GitHub Issue or email us.</p>
     </div>
 
     <div class="license-grid sr sd1">
@@ -1972,10 +1972,10 @@
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
           </svg>
         </div>
-        <div class="license-card-label">Hardware Designs &amp; Documentation</div>
+        <div class="license-card-label" data-i18n="lic.hw.label">Hardware Designs &amp; Documentation</div>
         <div class="license-card-title">CERN-OHL-S-2.0</div>
-        <p class="license-card-text">All mechanical designs, structural concepts, and physical documentation — the CMB-R1 robot chassis, the mast, the pod, the domes, the processing modules — are open source under the <strong>CERN Open Hardware Licence Version 2 — Strongly Reciprocal</strong>. You may build it, modify it, and distribute it. You must attribute <em>Stichting Chrystal Base / Berechja Kerkdijk</em> and share modifications under the same licence. All written documents are CC0 — public domain, no attribution required.</p>
-        <a href="https://ohwr.org/cernohls_v2.txt" target="_blank" rel="noopener" class="license-badge">CERN-OHL-S-2.0 &rarr;</a>
+        <p class="license-card-text" data-i18n="lic.hw.text">All mechanical designs, structural concepts, and physical documentation — the CMB-R1 robot chassis, the mast, the pod, the domes, the processing modules — are open source under the <strong>CERN Open Hardware Licence Version 2 — Strongly Reciprocal</strong>. You may build it, modify it, and distribute it. You must attribute <em>Stichting Chrystal Base / Berechja Kerkdijk</em> and share modifications under the same licence. All written documents are CC0 — public domain, no attribution required.</p>
+        <a href="https://ohwr.org/cernohls_v2.txt" target="_blank" rel="noopener" class="license-badge" data-i18n="lic.hw.badge">CERN-OHL-S-2.0 &rarr;</a>
       </div>
 
       <div class="license-card">
@@ -1984,10 +1984,10 @@
             <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
           </svg>
         </div>
-        <div class="license-card-label">Flight Software &amp; AI Algorithms</div>
-        <div class="license-card-title">Proprietary — All Rights Reserved</div>
-        <p class="license-card-text">The software that runs on the robots — sintering AI, swarm coordination, flight-critical guidance — is proprietary. No source code is published. This is a deliberate decision: the hardware being open allows anyone to build their own robot. The software being proprietary protects the organisation's ability to sustain itself over a very long development timeframe. This position may only change by public board resolution with 90 days notice.</p>
-        <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LICENSE-SOFTWARE.md" target="_blank" rel="noopener" class="license-badge">Full notice &rarr;</a>
+        <div class="license-card-label" data-i18n="lic.sw.label">Flight Software &amp; AI Algorithms</div>
+        <div class="license-card-title" data-i18n="lic.sw.title">Proprietary — All Rights Reserved</div>
+        <p class="license-card-text" data-i18n="lic.sw.text">The software that runs on the robots — sintering AI, swarm coordination, flight-critical guidance — is proprietary. No source code is published. This is a deliberate decision: the hardware being open allows anyone to build their own robot. The software being proprietary protects the organisation's ability to sustain itself over a very long development timeframe. This position may only change by public board resolution with 90 days notice.</p>
+        <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LICENSE-SOFTWARE.md" target="_blank" rel="noopener" class="license-badge" data-i18n="lic.sw.badge">Full notice &rarr;</a>
       </div>
 
       <div class="license-card license-card-commercial">
@@ -1996,10 +1996,10 @@
             <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
           </svg>
         </div>
-        <div class="license-card-label">Legal Structure</div>
-        <div class="license-card-title">Stichting — Dutch Non-Profit (Planned)</div>
-        <p class="license-card-text">Chrystal Moon Base intends to operate as a <strong>Stichting</strong> under Dutch law — a non-profit foundation with no shareholders and no profit distribution. All revenue goes back into the mission. The founder receives a fixed published salary. No dividend. No equity. Future commercial leasing of lunar infrastructure may operate through a separate BV, with revenue flowing back to the Stichting. All of this will be published annually.</p>
-        <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LEGAL-STRUCTURE.md" target="_blank" rel="noopener" class="license-badge">Full legal structure &rarr;</a>
+        <div class="license-card-label" data-i18n="lic.leg.label">Legal Structure</div>
+        <div class="license-card-title" data-i18n="lic.leg.title">Stichting — Dutch Non-Profit (Planned)</div>
+        <p class="license-card-text" data-i18n="lic.leg.text">Chrystal Moon Base intends to operate as a <strong>Stichting</strong> under Dutch law — a non-profit foundation with no shareholders and no profit distribution. All revenue goes back into the mission. The founder receives a fixed published salary. No dividend. No equity. Future commercial leasing of lunar infrastructure may operate through a separate BV, with revenue flowing back to the Stichting. All of this will be published annually.</p>
+        <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LEGAL-STRUCTURE.md" target="_blank" rel="noopener" class="license-badge" data-i18n="lic.leg.badge">Full legal structure &rarr;</a>
       </div>
 
       <div class="license-card license-card-rights">
@@ -2008,19 +2008,19 @@
             <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
           </svg>
         </div>
-        <div class="license-card-label">No Territory Claims</div>
-        <div class="license-card-title">We Own Hardware. Not Ground.</div>
-        <p class="license-card-text">This project claims no ownership of any part of the lunar surface. The Outer Space Treaty (1967) Article II prohibits national appropriation of the Moon — CMB interprets this as applying to private entities as well. No licence granted here, and no hardware built from these designs, confers any claim to lunar territory. The Moon belongs to everyone. That is not a slogan. It is a legal and ethical boundary this project will never cross.</p>
-        <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LEGAL-STRUCTURE.md" target="_blank" rel="noopener" class="license-badge">Read LEGAL-STRUCTURE.md &rarr;</a>
+        <div class="license-card-label" data-i18n="lic.ter.label">No Territory Claims</div>
+        <div class="license-card-title" data-i18n="lic.ter.title">We Own Hardware. Not Ground.</div>
+        <p class="license-card-text" data-i18n="lic.ter.text">This project claims no ownership of any part of the lunar surface. The Outer Space Treaty (1967) Article II prohibits national appropriation of the Moon — CMB interprets this as applying to private entities as well. No licence granted here, and no hardware built from these designs, confers any claim to lunar territory. The Moon belongs to everyone. That is not a slogan. It is a legal and ethical boundary this project will never cross.</p>
+        <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LEGAL-STRUCTURE.md" target="_blank" rel="noopener" class="license-badge" data-i18n="lic.ter.badge">Read LEGAL-STRUCTURE.md &rarr;</a>
       </div>
 
     </div>
 
     <div class="license-notice sr sd3">
       <div class="license-notice-inner">
-        <span class="license-notice-label">// Important</span>
-        <p>These licence documents describe intended future structures. The Stichting has not yet been formally incorporated. Nothing here constitutes legal advice. If you are making decisions based on these documents, consult a qualified IP lawyer. If you see something that should be done differently, <a href="mailto:info@chrystalmoonbase.com">tell us</a>.</p>
-        <div class="license-notice-meta">4 May 2026 &middot; Dutch law applies &middot; <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LICENSE.md" target="_blank" rel="noopener">View all licence files on GitHub &rarr;</a></div>
+        <span class="license-notice-label" data-i18n="lic.imp.label">// Important</span>
+        <p data-i18n="lic.imp.text">These licence documents describe intended future structures. The Stichting has not yet been formally incorporated. Nothing here constitutes legal advice. If you are making decisions based on these documents, consult a qualified IP lawyer. If you see something that should be done differently, <a href="mailto:info@chrystalmoonbase.com">tell us</a>.</p>
+        <div class="license-notice-meta" data-i18n="lic.imp.meta">4 May 2026 &middot; Dutch law applies &middot; <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LICENSE.md" target="_blank" rel="noopener">View all licence files on GitHub &rarr;</a></div>
       </div>
     </div>
 
@@ -2035,15 +2035,15 @@
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
           </svg>
         </div>
-        <div class="license-card-label">Written Content &amp; Documentation</div>
-        <div class="license-card-title">CC0 — Public Domain</div>
-        <p class="license-card-text">All written documents — concept papers, technical overviews, one-pagers, governance documents — are CC0. No attribution required. Use freely.</p>
-        <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener" class="license-badge">CC0 &rarr;</a>
+        <div class="license-card-label" data-i18n="lic.doc.label">Written Content &amp; Documentation</div>
+        <div class="license-card-title" data-i18n="lic.doc.title">CC0 — Public Domain</div>
+        <p class="license-card-text" data-i18n="lic.doc.text">All written documents — concept papers, technical overviews, one-pagers, governance documents — are CC0. No attribution required. Use freely.</p>
+        <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener" class="license-badge" data-i18n="lic.doc.badge">CC0 &rarr;</a>
       </div>
 
     </div>
 
-    <p class="license-footer">Questions about licensing? <a href="mailto:info@chrystalmoonbase.com">info@chrystalmoonbase.com</a> &middot; This page does not constitute legal advice.</p>
+    <p class="license-footer" data-i18n="lic.footer">Questions about licensing? <a href="mailto:info@chrystalmoonbase.com">info@chrystalmoonbase.com</a> &middot; This page does not constitute legal advice.</p>
   </div>
 </section>
 
@@ -2165,6 +2165,37 @@ EN:{
 'con.r6.p':'That is enough. Write.',
 'con.social.sub':'Mission updates &middot; Open-source progress &middot; Occasional truck driver observations',
 'con.footer':'// One person &middot; One question &middot; Open science &middot; No filters &middot; Hegelsom, Netherlands',
+'acc.h':'Join the <span class=\'accent\'>Pioneer Registry</span>',
+'acc.reg.label':'Register as Pioneer',
+'acc.reg.btn':'Register as Pioneer',
+'acc.login.label':'Existing Pioneer',
+'acc.login.btn':'Access Pioneer Portal',
+'acc.registered':'You are registered as a Pioneer. Your name is reserved in the system.',
+'lic.h':'Two Licences. <span class=\'accent\'>Full Transparency.</span>',
+'lic.d':'This project uses two separate licences — one for hardware, one for software. Neither is hidden. Both are explained here in full. If something is unclear, open a GitHub Issue or email us.',
+'lic.hw.label':'Hardware Designs &amp; Documentation',
+'lic.hw.text':'All mechanical designs, structural concepts, and physical documentation — the CMB-R1 robot chassis, the mast, the pod, the domes, the processing modules — are open source under the CERN Open Hardware Licence Version 2 — Strongly Reciprocal. You may build it, modify it, and distribute it. You must attribute Stichting Chrystal Base / Berechja Kerkdijk and share modifications under the same licence. All written documents are CC0 — public domain.',
+'lic.hw.badge':'CERN-OHL-S-2.0 &rarr;',
+'lic.sw.label':'Flight Software &amp; AI Algorithms',
+'lic.sw.title':'Proprietary — All Rights Reserved',
+'lic.sw.text':'The software that runs on the robots — sintering AI, swarm coordination, flight-critical guidance — is proprietary. No source code is published. This protects the organisation&#39;s ability to sustain itself over a very long development timeframe. This position may only change by public board resolution with 90 days notice.',
+'lic.sw.badge':'Full notice &rarr;',
+'lic.leg.label':'Legal Structure',
+'lic.leg.title':'Stichting — Dutch Non-Profit (Planned)',
+'lic.leg.text':'Chrystal Moon Base intends to operate as a Stichting under Dutch law — a non-profit foundation with no shareholders and no profit distribution. All revenue goes back into the mission. The founder receives a fixed published salary. No dividend. No equity. Future commercial leasing may operate through a separate BV, with revenue flowing back to the Stichting.',
+'lic.leg.badge':'Full legal structure &rarr;',
+'lic.ter.label':'No Territory Claims',
+'lic.ter.title':'We Own Hardware. Not Ground.',
+'lic.ter.text':'This project claims no ownership of any part of the lunar surface. The Outer Space Treaty (1967) Article II prohibits national appropriation of the Moon — CMB interprets this as applying to private entities as well. The Moon belongs to everyone. That is not a slogan. It is a legal and ethical boundary this project will never cross.',
+'lic.ter.badge':'Read LEGAL-STRUCTURE.md &rarr;',
+'lic.doc.label':'Written Content &amp; Documentation',
+'lic.doc.title':'CC0 — Public Domain',
+'lic.doc.text':'All written documents — concept papers, technical overviews, one-pagers, governance documents — are CC0. No attribution required. Use freely.',
+'lic.doc.badge':'CC0 &rarr;',
+'lic.imp.label':'// Important',
+'lic.imp.text':'These licence documents describe intended future structures. The Stichting has not yet been formally incorporated. Nothing here constitutes legal advice. If you are making decisions based on these documents, consult a qualified IP lawyer.',
+'lic.imp.meta':'4 May 2026 &middot; Dutch law applies &middot; <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LICENSE.md" target="_blank" rel="noopener">View all licence files on GitHub &rarr;</a>',
+'lic.footer':'Questions about licensing? <a href="mailto:info@chrystalmoonbase.com">info@chrystalmoonbase.com</a> &middot; This page does not constitute legal advice.',
 'nav.github':'GitHub','gh.desc':'An open-source concept document for a proposed Moon base. No flags. No patents. Open to review, correction, and improvement by anyone.',
 'gh.repo.desc':'Open-source concept repository for Chrystal Moon Base. A detailed feasibility proposal for building a Moon base from local lunar materials using autonomous robots. Every number is an estimate. Corrections are welcome.',
 'gh.way1.title':'You are an engineer or scientist',
@@ -2957,6 +2988,37 @@ NL:{
 'con.r6.p':'Dat is genoeg. Schrijf.',
 'con.social.sub':'Missie-updates &middot; Open-source voortgang &middot; Af en toe vrachtwagenchauffeur-observaties',
 'con.footer':'// Één persoon &middot; Één vraag &middot; Open wetenschap &middot; Geen filters &middot; Hegelsom, Nederland',
+'acc.h':'Word lid van het <span class=\'accent\'>Pioneer Register</span>',
+'acc.reg.label':'Registreer als Pioneer',
+'acc.reg.btn':'Registreer als Pioneer',
+'acc.login.label':'Bestaande Pioneer',
+'acc.login.btn':'Toegang Pioneer Portaal',
+'acc.registered':'Je bent geregistreerd als Pioneer. Jouw naam is gereserveerd in het systeem.',
+'lic.h':'Twee Licenties. <span class=\'accent\'>Volledige Transparantie.</span>',
+'lic.d':'Dit project gebruikt twee afzonderlijke licenties — één voor hardware, één voor software. Geen van beiden is verborgen. Beide worden hier volledig uitgelegd. Als iets onduidelijk is, open een GitHub Issue of stuur ons een e-mail.',
+'lic.hw.label':'Hardware Ontwerpen &amp; Documentatie',
+'lic.hw.text':'Alle mechanische ontwerpen, structurele concepten en fysieke documentatie — het CMB-R1 robotchassis, de mast, de pod, de domes, de verwerkingsmodules — zijn open source onder de CERN Open Hardware Licentie Versie 2 — Sterk Wederkerig. Je mag het bouwen, aanpassen en distribueren. Je moet Stichting Chrystal Base / Berechja Kerkdijk vermelden en wijzigingen onder dezelfde licentie delen. Alle geschreven documenten zijn CC0 — publiek domein.',
+'lic.hw.badge':'CERN-OHL-S-2.0 &rarr;',
+'lic.sw.label':'Vlichtsoftware &amp; AI-Algoritmen',
+'lic.sw.title':'Proprietary — Alle Rechten Voorbehouden',
+'lic.sw.text':'De software die op de robots draait — sinter-AI, zwermcoördinatie, vluchtessentiële besturing — is proprietary. Er wordt geen broncode gepubliceerd. Dit beschermt het vermogen van de organisatie om zichzelf te onderhouden over een zeer lange ontwikkelingstijdlijn. Dit standpunt kan alleen worden gewijzigd door een publiek bestuursbesluit met 90 dagen kennisgeving.',
+'lic.sw.badge':'Volledige kennisgeving &rarr;',
+'lic.leg.label':'Juridische Structuur',
+'lic.leg.title':'Stichting — Nederlandse Non-Profit (Gepland)',
+'lic.leg.text':'Chrystal Moon Base is van plan te opereren als een Stichting naar Nederlands recht — een non-profit stichting zonder aandeelhouders en zonder winstuitkering. Alle inkomsten gaan terug naar de missie. De oprichter ontvangt een vast gepubliceerd salaris. Geen dividend. Geen aandelen. Toekomstige commerciële verhuur kan via een aparte BV verlopen, met inkomsten die terugvloeien naar de Stichting.',
+'lic.leg.badge':'Volledige juridische structuur &rarr;',
+'lic.ter.label':'Geen Territoriumclaims',
+'lic.ter.title':'Wij Bezitten Hardware. Geen Grond.',
+'lic.ter.text':'Dit project claimt geen eigendom van enig deel van het maanoppervlak. Het Buitenruimteverdrag (1967) Artikel II verbiedt nationale toe-eigening van de Maan — CMB interpreteert dit als van toepassing op private entiteiten. De Maan behoort iedereen toe. Dat is geen slogan. Het is een juridische en ethische grens die dit project nooit zal overschrijden.',
+'lic.ter.badge':'Lees LEGAL-STRUCTURE.md &rarr;',
+'lic.doc.label':'Geschreven Inhoud &amp; Documentatie',
+'lic.doc.title':'CC0 — Publiek Domein',
+'lic.doc.text':'Alle geschreven documenten — conceptpapers, technische overzichten, samenvattingen, bestuursdocumenten — zijn CC0. Geen naamsvermelding vereist. Vrij te gebruiken.',
+'lic.doc.badge':'CC0 &rarr;',
+'lic.imp.label':'// Belangrijk',
+'lic.imp.text':'Deze licentiedocumenten beschrijven beoogde toekomstige structuren. De Stichting is nog niet formeel opgericht. Niets hier vormt juridisch advies. Als je beslissingen neemt op basis van deze documenten, raadpleeg dan een gekwalificeerde IP-advocaat.',
+'lic.imp.meta':'4 mei 2026 &middot; Nederlands recht is van toepassing &middot; <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LICENSE.md" target="_blank" rel="noopener">Bekijk alle licentiebestanden op GitHub &rarr;</a>',
+'lic.footer':'Vragen over licenties? <a href="mailto:info@chrystalmoonbase.com">info@chrystalmoonbase.com</a> &middot; Deze pagina vormt geen juridisch advies.',
 'sup.btn.donate':'Word een Pioneer — Doneer Nu',
 'pnr.l1':'<strong style="color:var(--off-white);font-weight:500">Gegarandeerd:</strong> Jouw naam permanent vastgelegd in het publieke Pioneer Register — toegeschreven, gepubliceerd en bewaard voor de levensduur van het project.',
 'pnr.l2':'<strong style="color:var(--off-white);font-weight:500">Gegarandeerd:</strong> Transparante voortgangsrapporten na elke mijlpaal — het goede, het vertraagde, en het mislukte.',
