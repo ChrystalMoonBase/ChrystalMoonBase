@@ -1736,9 +1736,9 @@
 <section id="account">
   <div class="wrap">
     <div class="sr">
-      <div class="sec-label"><span class="c">// Pioneer Registry</span></div>
+      <div class="sec-label"><span class="c">// <span data-i18n="acc.label">Pioneer Registry</span></span></div>
       <h2 class="sec-title" data-i18n="acc.h">Join the <span class="accent">Pioneer Registry</span></h2>
-      <p class="sec-desc">Register your name. Stay updated on the project. Be part of the history being written.</p>
+      <p class="sec-desc" data-i18n="acc.sub">Register your name. Stay updated on the project. Be part of the history being written.</p>
     </div>
     <div class="account-grid sr sd1">
       <div>
@@ -1751,8 +1751,8 @@
         <div id="accForms">
           <div class="sec-label" style="margin-bottom:1.2rem" data-i18n="acc.reg.label">Register as Pioneer</div>
           <div class="form-row2">
-            <div class="form-g"><label class="form-lbl">First Name</label><input type="text" class="form-inp" id="r-first" placeholder="Neil"></div>
-            <div class="form-g"><label class="form-lbl">Last Name</label><input type="text" class="form-inp" id="r-last" placeholder="Armstrong"></div>
+            <div class="form-g"><label class="form-lbl" data-i18n="acc.first">First Name</label><input type="text" class="form-inp" id="r-first" placeholder="Neil"></div>
+            <div class="form-g"><label class="form-lbl" data-i18n="acc.last">Last Name</label><input type="text" class="form-inp" id="r-last" placeholder="Armstrong"></div>
           </div>
           <div class="form-g"><label class="form-lbl">Email</label><input type="email" class="form-inp" id="r-email" placeholder="you@example.com"></div>
           <div class="form-g"><label class="form-lbl">Country</label><input type="text" class="form-inp" id="r-country" placeholder="Netherlands"></div>
@@ -1781,7 +1781,7 @@
           <img class="section-img" src="https://www.nasa.gov/wp-content/uploads/2023/03/apollo08_earthrise.jpg"
                alt="Earthrise — Apollo 8, 1968 (NASA)"
                onerror="this.parentElement.style.display='none'">
-          <div class="img-credit">NASA / William Anders, Apollo 8 &mdash; December 24, 1968</div>
+          <div class="img-credit" data-i18n="acc.img.credit">NASA / William Anders, Apollo 8 &mdash; December 24, 1968</div>
         </div>
       </div>
     </div>
@@ -1792,8 +1792,8 @@
 <section id="github">
   <div class="wrap">
     <div class="sr">
-      <div class="sec-label"><span class="c">// Open Source</span> &middot; GitHub &middot; No flags. No patents. Built for all humanity.</div>
-      <h2 class="sec-title">Build With <span class="accent">Us</span></h2>
+      <div class="sec-label"><span class="c">// Open Source</span> &middot; <span data-i18n="gh.label">GitHub &middot; No flags. No patents. Built for all humanity.</span></div>
+      <h2 class="sec-title" data-i18n="gh.h">Build With <span class="accent">Us</span></h2>
       <p class="sec-desc" data-i18n="ms.p.507">This project only works if more people join it. Every engineer who spots a flaw, every scientist who can validate a number, every student who wants to contribute a calculation &mdash; this is where that happens. The hardware designs are open under CERN-OHL-S-2.0. Documents are CC0. The software is proprietary. Everything that can be open, is.</p>
     </div>
 
@@ -1808,7 +1808,7 @@
         <div class="github-main-body">
           <div class="github-repo-name">ChrystalMoonBase / ChrystalMoonBase</div>
           <div class="github-repo-desc" data-i18n="gh.repo.desc">Official open-source master repository for Chrystal Moon Base. A complete blueprint for building a permanent Moon base from local lunar materials using autonomous robots.</div>
-          <div class="github-main-cta">View on GitHub &rarr;</div>
+          <div class="github-main-cta" data-i18n="gh.btn">View on GitHub &rarr;</div>
         </div>
       </a>
 
@@ -1858,7 +1858,7 @@
         </div>
         <div>
           <div class="github-license-title" data-i18n="gh.license.title">GNU General Public License v3.0</div>
-          <div class="github-license-text">Use it. Improve it. Share it. Keep it open. The Moon belongs to all of us &mdash; and so does everything built to reach it.</div>
+          <div class="github-license-text" data-i18n="gh.license.text">Use it. Improve it. Share it. Keep it open. The Moon belongs to all of us &mdash; and so does everything built to reach it.</div>
         </div>
       </div>
 
@@ -2112,7 +2112,7 @@ function doLogin(){
 function doLogout(){localStorage.removeItem('cmb_s');hideAcc();toast('// Signed out')}
 (function(){var e=getSess();if(e){var u=getUsers()[e];if(u)showAcc(u)}})();
 
-var LANGS=['EN','NL','DE','FR','ES','ZH','JA','AR','PT','RU','FIL','IT','PL','RO','SV','CS','HI','ID','TR','KO','VI','UK','FA','TH','HE','EL'];
+var LANGS=['EN','NL','DE','FR','ES','ZH','JA','AR','PT','RU','FIL','IT','PL','RO','SV','CS','HI','ID','TR','KO','VI','UK','FA','TH','HE','EL','UR','BN','SW'];
 var CL='EN';
 var I18={
 EN:{
@@ -2196,6 +2196,14 @@ EN:{
 'lic.imp.text':'These licence documents describe intended future structures. The Stichting has not yet been formally incorporated. Nothing here constitutes legal advice. If you are making decisions based on these documents, consult a qualified IP lawyer.',
 'lic.imp.meta':'4 May 2026 &middot; Dutch law applies &middot; <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LICENSE.md" target="_blank" rel="noopener">View all licence files on GitHub &rarr;</a>',
 'lic.footer':'Questions about licensing? <a href="mailto:info@chrystalmoonbase.com">info@chrystalmoonbase.com</a> &middot; This page does not constitute legal advice.',
+'acc.label':'Pioneer Registry',
+'acc.sub':'Register your name. Stay updated on the project. Be part of the history being written.',
+'acc.first':'First Name',
+'acc.last':'Last Name',
+'acc.img.credit':'NASA / William Anders, Apollo 8 &mdash; December 24, 1968',
+'gh.label':'// Open Source &middot; GitHub &middot; No flags. No patents. Built for all humanity.',
+'gh.h':'Build With Us',
+'gh.btn':'View on GitHub &rarr;',
 'nav.github':'GitHub','gh.desc':'An open-source concept document for a proposed Moon base. No flags. No patents. Open to review, correction, and improvement by anyone.',
 'gh.repo.desc':'Open-source concept repository for Chrystal Moon Base. A detailed feasibility proposal for building a Moon base from local lunar materials using autonomous robots. Every number is an estimate. Corrections are welcome.',
 'gh.way1.title':'You are an engineer or scientist',
@@ -3019,6 +3027,14 @@ NL:{
 'lic.imp.text':'Deze licentiedocumenten beschrijven beoogde toekomstige structuren. De Stichting is nog niet formeel opgericht. Niets hier vormt juridisch advies. Als je beslissingen neemt op basis van deze documenten, raadpleeg dan een gekwalificeerde IP-advocaat.',
 'lic.imp.meta':'4 mei 2026 &middot; Nederlands recht is van toepassing &middot; <a href="https://github.com/ChrystalMoonBase/ChrystalMoonBase/blob/main/LICENSE.md" target="_blank" rel="noopener">Bekijk alle licentiebestanden op GitHub &rarr;</a>',
 'lic.footer':'Vragen over licenties? <a href="mailto:info@chrystalmoonbase.com">info@chrystalmoonbase.com</a> &middot; Deze pagina vormt geen juridisch advies.',
+'acc.label':'Pioneer Register',
+'acc.sub':'Registreer je naam. Blijf op de hoogte van het project. Maak deel uit van de geschiedenis die geschreven wordt.',
+'acc.first':'Voornaam',
+'acc.last':'Achternaam',
+'acc.img.credit':'NASA / William Anders, Apollo 8 &mdash; 24 december 1968',
+'gh.label':'// Open Source &middot; GitHub &middot; Geen vlaggen. Geen patenten. Gebouwd voor de gehele mensheid.',
+'gh.h':'Bouw Met Ons',
+'gh.btn':'Bekijk op GitHub &rarr;',
 'sup.btn.donate':'Word een Pioneer — Doneer Nu',
 'pnr.l1':'<strong style="color:var(--off-white);font-weight:500">Gegarandeerd:</strong> Jouw naam permanent vastgelegd in het publieke Pioneer Register — toegeschreven, gepubliceerd en bewaard voor de levensduur van het project.',
 'pnr.l2':'<strong style="color:var(--off-white);font-weight:500">Gegarandeerd:</strong> Transparante voortgangsrapporten na elke mijlpaal — het goede, het vertraagde, en het mislukte.',
@@ -7169,7 +7185,31 @@ EL:{
 'loc.e.m1':'• <strong>Κύρια (95%+):</strong> Φωτοβολταϊκές συστοιχίες στην όχθη Peary — τοπικά κατασκευασμένα κελιά Si + πλαίσια Al',
 'loc.e.m2':'• <strong>Αποθήκευση:</strong> Υβριδική θερμική (θερμική αποθήκευση μπλοκ βασάλτη) + ηλεκτροχημική (Li-ion, αναβαθμίσιμη σε τοπικά προερχόμενο Na-ion)',
 'loc.e.m3':'• <strong>Εφεδρεία (&lt;5%):</strong> 1× μονάδα Kilopower KRUSTY (10 kW) μόνο για κρίσιμα για την ασφάλεια συστήματα — υποστήριξη ζωής, επικοινωνίες',
-'loc.e.m4':'• <strong>Μεταφορά Ενέργειας με Λέιζερ:</strong> διανομή επιφάνεια-προς-επιφάνεια, χωρίς καλώδια, χωρίς χαντάκια'
+'loc.e.m4':'• <strong>Μεταφορά Ενέργειας με Λέιζερ:</strong> διανομή επιφάνεια-προς-επιφάνεια, χωρίς καλώδια, χωρίς χαντάκια',
+UR:{
+'hero.l1':'چاند تعلق رکھتا ہے',
+'hero.l2':'ہم سب کو',
+'hero.desc':'یہ چاند کا بیس بنانے کا ایک کھلا تصور ہے — چاند کے اپنے مواد سے، خودمختار روبوٹوں کے ذریعے — تمام انسانیت کے لیے غیر جانبدار زمین کے طور پر۔',
+'hero.t1':'چاند سے بنائیں','hero.t2':'کوئی جھنڈے نہیں — کوئی پیٹنٹ نہیں','hero.t3':'کھلی سائنس',
+'hero.b1':'وژن دریافت کریں','hero.b2':'مشن کی حمایت کریں',
+'nav.vision':'وژن','nav.phases':'مراحل','nav.codex':'کوڈیکس','nav.support':'ہماری حمایت','nav.join':'مشن میں شامل ہوں','nav.location':'مقام','nav.github':'GitHub'
+},
+BN:{
+'hero.l1':'চাঁদ সবার',
+'hero.l2':'এটি আমাদের সকলের',
+'hero.desc':'এটি একটি উন্মুক্ত ধারণা — চাঁদের নিজস্ব উপকরণ থেকে স্বায়ত্তশাসিত রোবট দ্বারা নির্মিত — সমগ্র মানবতার জন্য নিরপেক্ষ ভূমি হিসেবে।',
+'hero.t1':'চাঁদ থেকে নির্মাণ','hero.t2':'কোনো পতাকা নেই — কোনো পেটেন্ট নেই','hero.t3':'উন্মুক্ত বিজ্ঞান',
+'hero.b1':'দর্শন আবিষ্কার করুন','hero.b2':'মিশন সমর্থন করুন',
+'nav.vision':'দর্শন','nav.phases':'পর্যায়','nav.codex':'কোডেক্স','nav.support':'আমাদের সমর্থন করুন','nav.join':'মিশনে যোগ দিন','nav.location':'অবস্থান','nav.github':'GitHub'
+},
+SW:{
+'hero.l1':'Mwezi ni Mali',
+'hero.l2':'Ya Wote Wetu',
+'hero.desc':'Hii ni dhana ya wazi ya msingi wa mwezi — uliojengwa kutoka kwa nyenzo za mwezi na roboti za kujitegemea — kama ardhi ya upande wowote kwa ubinadamu wote.',
+'hero.t1':'Jenga kutoka kwa Mwezi','hero.t2':'Hakuna Bendera — Hakuna Hataza','hero.t3':'Sayansi Wazi',
+'hero.b1':'Gundua Maono','hero.b2':'Unga Mkono Dhamira',
+'nav.vision':'Maono','nav.phases':'Awamu','nav.codex':'Kodeksi','nav.support':'Tuuunge Mkono','nav.join':'Jiunge na Dhamira','nav.location':'Mahali','nav.github':'GitHub'
+}
 }}
 
 function T(k){return(I18[CL]&&I18[CL][k])||(I18.EN[k])||k}
