@@ -5,7 +5,7 @@
 No flags. No patents. Built for all of humanity.
 
 **Website:** https://chrystalmoonbase.com 
-**Licence:** See [LICENSE. md](./LICENSE. md) — hardware: CERN-OHL-S-2.0 · software: proprietary · documents: CC0 
+**Licence:** See [LICENSE.md](./LICENSE.md) — hardware: CERN-OHL-S-2.0 · software: proprietary · documents: CC0 
 **Status:** Phase 0 — Earth demonstrators (concept and planning stage)
 
 ---
@@ -72,7 +72,7 @@ Just a question that refused to stop being asked.
 
 **You represent a university, lab, or institution:** Phase 0 demonstrators need facilities, equipment, and expertise. The repository is the place to start that conversation.
 
-Read CONTRIBUTING. md for full guidelines.
+Read CONTRIBUTING.md for full guidelines.
 
 ---
 
