@@ -1,12 +1,13 @@
 # Chrystal Moon Base
 ## Official Open-Source Repository
 
-**A concept proposal for a permanent Moon base built from local lunar materials by autonomous robots.** 
+**A concept proposal for a permanent Moon base built from local lunar materials by autonomous robots.**  
 No flags. No patents. Built for all of humanity.
 
-**Website:** https://chrystalmoonbase.com 
-**Licence:** See [LICENSE.md](./LICENSE.md) — hardware: CERN-OHL-S-2.0 · software: proprietary · documents: CC0 
-**Status:** Phase 0 — Earth demonstrators (concept and planning stage)
+**Website:** https://chrystalmoonbase.com  
+**Licence:** See [LICENSE.md](./LICENSE.md) — hardware: CERN-OHL-S-2.0 · software: proprietary · documents: CC0  
+**Status:** Phase 0 — Earth demonstrators (concept and planning stage)  
+**ESA OSIP:** Qualified — Open for Discussion · 2026
 
 ---
 
@@ -14,8 +15,9 @@ No flags. No patents. Built for all of humanity.
 
 Chrystal Moon Base is an open-source concept for building a permanent human settlement on the lunar north pole (Peary Crater rim, 88.63°N) using:
 
-- **Autonomous hexapod robots** (CMB-R1) powered by laser beamed from a 100-metre solar mast
+- **Autonomous octopod robots** (CMB-R1) — 4 double-sided chassis providing 8 simultaneous builders, powered by laser beamed from a 55-metre solar mast
 - **In-situ laser sintering** — fusing lunar regolith into structural basalt floors, walls, and dome foundations
+- **880 m² roll-out solar system** — two GaAs film arms (10 m × 44 m each) providing ~280 kW continuous power
 - **Local material processing** — 13 processing modules extracting glass, titanium, aluminium, oxygen, water, and other materials from the Moon itself
 - **Multi-layer glass domes** — titanium-reinforced, self-sealing, water-shielded habitats for permanent human residents
 - **Maglev transport** — connecting all base facilities and eventually all lunar provinces
@@ -26,34 +28,62 @@ This is not an engineering specification. It is a feasibility concept — every 
 
 ## The Founder
 
-**Berechja Kerkdijk** 
-Truck driver, 42 years old, Sittard / Hegelsom, Netherlands. 
-No PhD. No laboratory. No investors. 
+**Berechja Kerkdijk**  
+Truck driver, 42 years old, Sittard / Hegelsom, Netherlands.  
+No PhD. No laboratory. No investors.  
 Just a question that refused to stop being asked.
+
+---
+
+## Key Specifications — Phase 0.2 Pod
+
+| Parameter | Value |
+|---|---|
+| Launch vehicle | SpaceX Falcon Heavy |
+| Pod diameter | 4.5 m |
+| Pod height (stowed) | 11 m |
+| Mast height (deployed) | 55 m (5 telescopic segments) |
+| Solar film | 2 × 10 m × 44 m roll-out GaAs = **880 m²** |
+| Continuous power | **~280 kW** |
+| Laser output | ~67.5 kW |
+| Robot fleet | 8 CMB-R1 octopods (4 double-sided chassis) |
+| BSM count | 5 (one per segment, at 11/22/33/44/55 m) |
+| Operational radius | **2+ km** from mast |
+| Build method | Concentric sintered basalt rings |
 
 ---
 
 ## Repository Structure
 
 ```
-00_PHILOSOPHY/ Core principles, governance philosophy, civilisation vision
-01_LOCATION/ Why Peary Crater — site selection rationale and data
-02_PHASE-0-EARTH/ Earth-based validation programme — five demonstrators
-03_PHASE-02-THE-POD/ First lunar mission concept — mast, robots, sintering
-04_ROBOT-CMB-R1/ Robot system — chassis, legs, heads, AI, swarm logic
-05_SINTERING/ Laser sintering physics, methods, quality control
-06_PROCESSING-MODULES/ All 13 resource extraction modules (M-Glass to M-He3)
-07_DOMES/ Habitat dome architecture, types, construction method
-08_UNDERGROUND-NETWORK/ Tunnel network, maglev system, decontamination
-09_SURFACE-ACCESS/ Arrival/departure pads, decontamination sequence
-10_LIFE-SUPPORT/ Atmosphere, water, food, radiation, gravity countermeasures
-11_AI-AND-MONITORING/ Base AI, safety systems, privacy policy
-12_GOVERNANCE/ CMB authority, tenant model, Earth relationship
-13_PHASE-1-FOUNDATION/ Phase 1 concept — scaling up
-14_PHASE-2-THE-CITY/ Phase 2 concept — first permanent human community
-15_PHASE-3-SPACEPORT/ Phase 3 concept — lunar spaceport
-16_PHASE-4-BEYOND/ Phase 4 concept — the Chrystal Method applied elsewhere
-17_CIVILISATION-BLUEPRINT/ The Moon as a world of four provinces
+foundation/
+  governance/       CMB authority, tenant model, Earth relationship
+  location/         Why Peary Crater — site selection and data
+  philosophy/       Open-source principles, civilisation blueprint
+
+media/              Pitch, technical, and vision one-pagers
+
+roadmap/
+  phase-0-earth/    Five Earth demonstrators (validation programme)
+  phase-0.2-the-pod.md  First lunar mission concept
+  phase-1-foundation.md Phase 1 — scaling up
+  phase-2-the-city/ Phase 2 — first permanent human community
+  phase-3-spaceport.md  Phase 3 — lunar spaceport
+  phase-4-beyond.md     Phase 4 — beyond the Moon
+  civilisation-blueprint/ Four provinces of a lunar civilisation
+
+systems/
+  pod/              MAST-POD — mast, solar, laser, anchoring
+  robot-cmb-r1/     CMB-R1 robot — chassis, legs, heads, AI, swarm
+  sintering/        Laser sintering physics and quality control
+  processing-modules/ All 13 resource extraction modules
+  domes/            Habitat dome architecture and construction
+  life-support/     Atmosphere, water, food, radiation, gravity
+  ai-and-monitoring/ Base AI, safety, privacy
+  underground-network/ Tunnels, maglev, emergency shelters
+  surface-access/   Decontamination sequence
+
+public/             Website source (chrystalmoonbase.com)
 ```
 
 ---
@@ -72,7 +102,7 @@ Just a question that refused to stop being asked.
 
 **You represent a university, lab, or institution:** Phase 0 demonstrators need facilities, equipment, and expertise. The repository is the place to start that conversation.
 
-Read CONTRIBUTING.md for full guidelines.
+Read [CONTRIBUTING.md](./CONTRIBUTING.md) for full guidelines.
 
 ---
 
@@ -88,11 +118,11 @@ Read CONTRIBUTING.md for full guidelines.
 
 ## Philosophy
 
-The ISS proved that former rivals can build what neither could alone. 
-CERN proved that 23 nations can discover what one never would. 
+The ISS proved that former rivals can build what neither could alone.  
+CERN proved that 23 nations can discover what one never would.  
 Chrystal Moon Base aspires to that same principle.
 
-The Moon belongs to all of us. 
+The Moon belongs to all of us.  
 This repository is our invitation to build it right.
 
 ---
@@ -105,5 +135,5 @@ This repository is our invitation to build it right.
 
 ---
 
-*No flags. No patents. No false promises.* 
+*No flags. No patents. No false promises.*  
 *Just a question worth asking honestly.*

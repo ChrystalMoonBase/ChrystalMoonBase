@@ -16,26 +16,20 @@ For CMB's purposes, the target is dense, crack-free basalt — strong enough to 
 
 ## Why Sintering, Not Casting
 
-The Moon has abundant silicate rock (basalt and anorthosite) that could theoretically be melted and cast into building shapes. Sintering is preferred over casting for the following reasons:
-
 - **Lower energy requirement** — sintering requires less energy per unit volume than full melting and casting
-- **No mould required** — sintered material is built up layer by layer in place; casting requires a mould that must be fabricated, positioned, and removed
-- **In-situ capability** — the laser system can sinter directly on the surface without transporting material to a processing facility
-- **Scalability** — the sintering area can expand continuously as the robot works; casting is limited by mould size
-
-The trade-off is that sintered material is generally weaker than cast material of the same composition. Whether sintered basalt achieves the structural performance required for dome foundations is the core question that Demonstrator 1 must answer.
+- **No mould required** — sintered material is built up layer by layer in place
+- **In-situ capability** — the laser system can sinter directly on the surface without transporting material
+- **Scalability** — the sintering area can expand continuously as the robot works
 
 ---
 
 ## Published Research Basis
 
-Laser sintering of lunar simulant has been demonstrated in laboratory conditions:
+- Fateri et al. (2019) — solar-sintered simulant samples with compressive strengths up to 200 MPa
+- Taylor et al. — laser sintering with CO₂ laser at various energy densities
+- Meurisse et al. (2018) — solar 3D printing of lunar simulant patches
 
-- Fateri et al. (2019) demonstrated solar-sintered simulant samples with compressive strengths up to 200 MPa — significantly higher than the CMB structural target
-- Taylor et al. demonstrated laser sintering with a CO₂ laser at various energy densities
-- Meurisse et al. demonstrated solar 3D printing of lunar simulant patches up to ~25 cm²
-
-The challenge is scaling these results to the construction-relevant areas (square metres to hectares) while maintaining consistent quality. This is the central engineering challenge of the sintering concept.
+The challenge is scaling these results to construction-relevant areas (square metres to hectares) while maintaining consistent quality.
 
 ---
 
@@ -43,9 +37,6 @@ The challenge is scaling these results to the construction-relevant areas (squar
 
 | Document | Description |
 |---|---|
-| LASER-SINTERING-PHYSICS.md | Physical principles of laser sintering |
-| RING-PATTERN-METHOD.md | Concentric ring construction pattern |
-| THERMAL-CONTROL-DURING-SINTERING.md | Cooling rate management |
-| CRACK-PREVENTION.md | Strategies to prevent thermal cracking |
-| ENERGY-BUDGET-PER-M2.md | Energy required per square metre |
-| QUALITY-CONTROL-WATCHER.md | Quality verification methods |
+| laser-sintering-physics.md | Physical principles of laser sintering |
+| crack-prevention.md | Strategies to prevent thermal cracking |
+| energy-budget-per-m2.md | Energy required per square metre |

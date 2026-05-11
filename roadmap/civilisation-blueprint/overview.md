@@ -25,12 +25,11 @@ This section describes the four proposed provinces of a potential lunar civilisa
 
 ---
 
-## Documents
+## Document Index
 
 | Document | Description |
 |---|---|
-| CIVILISATION-BLUEPRINT.md | Full vision document (in 00_PHILOSOPHY) |
-| PEARY-SOLAR-CAPITAL.md | North pole province detail |
-| SOUTH-POLE-WATER-TREASURY.md | South pole province detail |
-| EQUATORIAL-SPACEPORT.md | Equatorial province detail |
-| FARSIDE-DEPARTURE-GATE.md | Far-side province detail |
+| peary-solar-capital.md | North pole province detail |
+| south-pole-water-treasury.md | South pole province detail |
+| equatorial-spaceport.md | Equatorial province detail |
+| farside-departure-gate.md | Far-side province detail |
