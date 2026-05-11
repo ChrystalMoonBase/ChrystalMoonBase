@@ -11489,58 +11489,5 @@ if(codexSection) {
 }
 </script>
 
-<!-- VISITOR COUNTER -->
-<section style="padding:4rem 1.5rem 3rem;text-align:center;border-top:1px solid rgba(255,255,255,0.06);">
-  <div style="max-width:400px;margin:0 auto;">
-    <div class="sec-label" style="margin-bottom:1.2rem"><span class="c" data-i18n="ctr.sec">// Bereik · Unieke Bezoekers</span></div>
-    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:2rem 2rem 1.5rem;backdrop-filter:blur(8px);">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:0.8rem" data-i18n="ctr.label">Unieke Bezoekers</div>
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:3.5rem;font-weight:700;letter-spacing:0.04em;color:var(--off-white);line-height:1" id="visitor-count">—</div>
-      <div style="font-size:0.78rem;color:var(--muted);margin-top:0.6rem;margin-bottom:1.4rem" data-i18n="ctr.desc">mensen hebben deze site bezocht</div>
-      <div style="font-size:0.65rem;color:rgba(255,255,255,0.2);letter-spacing:0.08em" data-i18n="ctr.privacy">Privacy-vriendelijk · Geen cookies · GoatCounter</div>
-    </div>
-  </div>
-</section>
-
-<script data-goatcounter="https://chrystalmoonbase.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-
-<script>
-// GoatCounter counter endpoint — specifiek gemaakt voor browser-gebruik
-// Werkt zodra "Allow adding visitor counts" aan staat in GoatCounter settings
-(function(){
-  var paths = ['/', '/index.html', ''];
-  var tried = 0;
-  function tryNext() {
-    if (tried >= paths.length) {
-      // Alle paden geprobeerd — toon link naar publieke stats
-      var el = document.getElementById('visitor-count');
-      if (el) {
-        el.innerHTML = '<a href="https://chrystalmoonbase.goatcounter.com" target="_blank" rel="noopener" style="color:var(--cyan);font-size:1rem;letter-spacing:0.05em;text-decoration:none">View stats ↗</a>';
-      }
-      return;
-    }
-    var path = paths[tried++];
-    fetch('https://chrystalmoonbase.goatcounter.com/counter/' + encodeURIComponent(path) + '.json')
-      .then(function(r) {
-        if (!r.ok) { tryNext(); return null; }
-        return r.json();
-      })
-      .then(function(data) {
-        if (!data) return;
-        var count = data.count || data.total;
-        if (count !== undefined && count !== null && count !== '0' && count !== 0) {
-          var el = document.getElementById('visitor-count');
-          if (el) el.textContent = String(count).replace(/,/g, '').replace(/\./g, '').replace(/\s/g, '');
-        } else {
-          tryNext();
-        }
-      })
-      .catch(function() { tryNext(); });
-  }
-  // Kleine vertraging zodat GoatCounter script eerst laadt
-  setTimeout(tryNext, 800);
-})();
-</script>
-
 </body>
 </html>
