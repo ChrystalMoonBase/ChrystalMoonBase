@@ -78,7 +78,7 @@
   }
   </script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&family=Barlow+Condensed:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&amp;family=Barlow+Condensed:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@300;400&amp;display=swap" rel="stylesheet"/>
   <style>
     :root{--cyan:#00e5cc;--cyan-dim:rgba(0,229,204,0.65);--white:#ffffff;--off-white:#e8edf2;--muted:#a8b8c8;--muted-2:#3e4f60;--bg:#000000;--bg-card:#07090c;--border:rgba(255,255,255,0.055)}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -1211,7 +1211,7 @@
     </div>
     <!-- YOUR PHOTO: place your photo as images/berechja.jpg -->
     <div class="section-img-wrap sr sd1">
-      <img class="section-img" src="images/berechja.jpg"
+      <img class="section-img" alt="Berechja, founder of Chrystal Moon Base" src="images/berechja.jpg"
            alt="Berechja Kerkdijk — Founder, Chrystal Moon Base"
            onerror="this.parentElement.style.display='none'">
     </div>
@@ -2029,7 +2029,7 @@
         <!-- IMAGE: Add community / inspiration image here -->
         <!-- NASA IMAGE: earthrise.jpg — see images/DOWNLOAD_IMAGES.txt for download link -->
         <div class="section-img-wrap" style="margin-top:2rem">
-          <img class="section-img" src="https://www.nasa.gov/wp-content/uploads/2023/03/apollo08_earthrise.jpg"
+          <img class="section-img" alt="Earthrise — Apollo 8, NASA 1968 (public domain)" src="https://www.nasa.gov/wp-content/uploads/2023/03/apollo08_earthrise.jpg"
                alt="Earthrise — Apollo 8, 1968 (NASA)"
                onerror="this.parentElement.style.display='none'">
           <div class="img-credit" data-i18n="acc.img.credit">NASA / William Anders, Apollo 8 &mdash; December 24, 1968</div>
@@ -11432,7 +11432,7 @@ function applyLang(){
   });
   document.querySelectorAll('[data-i18n]').forEach(function(el){
     var v=T(el.getAttribute('data-i18n'));
-    if(v.includes('<'))el.innerHTML=v;else el.textContent=v;
+    if(v)el.innerHTML=v;
   });
   document.dir=(CL==='AR'||CL==='HE'||CL==='FA')?'rtl':'ltr';
 }
