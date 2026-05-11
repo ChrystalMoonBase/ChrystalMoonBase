@@ -11505,21 +11505,17 @@ if(codexSection) {
 <script data-goatcounter="https://chrystalmoonbase.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 <script>
-// GoatCounter public counter endpoint — werkt zonder API token.
-// Vereiste instelling: GoatCounter → Settings → Allow adding visitor counts on your website → aan
-fetch('https://chrystalmoonbase.goatcounter.com/counter//.json')
+fetch('https://chrystalmoonbase.goatcounter.com/api/v0/stats/total?start=2020-01-01&end=2099-01-01', {
+  headers: {'Authorization': 'Bearer qgdyfnbxtu1dtjnm06uz74cl1e2esn8qwr7l8lkdnnq13pzjq'}
+})
   .then(function(r){ return r.json(); })
   .then(function(data){
     var el = document.getElementById('visitor-count');
-    if(el && data && data.count !== undefined){
-      el.textContent = parseInt(data.count.replace(/,/g,'')).toLocaleString();
+    if(el && data && data.total !== undefined){
+      el.textContent = data.total.toLocaleString();
     }
   })
-  .catch(function(){
-    // Instelling nog niet aan? Toon een fallback.
-    var el = document.getElementById('visitor-count');
-    if(el) el.textContent = '—';
-  });
+  .catch(function(){});
 </script>
 
 </body>
