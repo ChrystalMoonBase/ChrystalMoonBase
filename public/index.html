@@ -11505,17 +11505,41 @@ if(codexSection) {
 <script data-goatcounter="https://chrystalmoonbase.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 <script>
-fetch('https://chrystalmoonbase.goatcounter.com/api/v0/stats/total?start=2020-01-01&end=2099-01-01', {
-  headers: {'Authorization': 'Bearer qgdyfnbxtu1dtjnm06uz74cl1e2esn8qwr7l8lkdnnq13pzjq'}
-})
-  .then(function(r){ return r.json(); })
-  .then(function(data){
-    var el = document.getElementById('visitor-count');
-    if(el && data && data.total !== undefined){
-      el.textContent = data.total.toLocaleString();
+// GoatCounter counter endpoint — specifiek gemaakt voor browser-gebruik
+// Werkt zodra "Allow adding visitor counts" aan staat in GoatCounter settings
+(function(){
+  var paths = ['/', '/index.html', ''];
+  var tried = 0;
+  function tryNext() {
+    if (tried >= paths.length) {
+      // Alle paden geprobeerd — toon link naar publieke stats
+      var el = document.getElementById('visitor-count');
+      if (el) {
+        el.innerHTML = '<a href="https://chrystalmoonbase.goatcounter.com" target="_blank" rel="noopener" style="color:var(--cyan);font-size:1rem;letter-spacing:0.05em;text-decoration:none">View stats ↗</a>';
+      }
+      return;
     }
-  })
-  .catch(function(){});
+    var path = paths[tried++];
+    fetch('https://chrystalmoonbase.goatcounter.com/counter/' + encodeURIComponent(path) + '.json')
+      .then(function(r) {
+        if (!r.ok) { tryNext(); return null; }
+        return r.json();
+      })
+      .then(function(data) {
+        if (!data) return;
+        var count = data.count || data.total;
+        if (count !== undefined && count !== null && count !== '0' && count !== 0) {
+          var el = document.getElementById('visitor-count');
+          if (el) el.textContent = String(count).replace(/,/g, '').replace(/\./g, '').replace(/\s/g, '');
+        } else {
+          tryNext();
+        }
+      })
+      .catch(function() { tryNext(); });
+  }
+  // Kleine vertraging zodat GoatCounter script eerst laadt
+  setTimeout(tryNext, 800);
+})();
 </script>
 
 </body>
