@@ -8,7 +8,7 @@
 
 ## Role
 
-Five Beam and Sensor Modules are mounted on the mast at 20-metre intervals (at 20 m, 40 m, 60 m, 80 m, and 100 m height). Each BSM redirects laser power from the mast's internal fibre optic cable to a working robot anywhere within line of sight, and simultaneously acts as a tracking and sensing node.
+Five Beam and Sensor Modules are mounted on the mast at 11-metre intervals (at 11 m, 22 m, 33 m, 44 m, and 55 m height). Each BSM redirects laser power from the mast's internal fibre optic cable to a working robot anywhere within line of sight, and simultaneously acts as a tracking and sensing node.
 
 ---
 
@@ -51,6 +51,6 @@ Mast vibration compensation is a specific engineering challenge. The compensatio
 
 ## Operational Range
 
-Estimated operational radius: **1–2 km from mast base.**
+Estimated operational radius: **2+ km from mast base.**
 
 Beyond this range, laser power losses (beam divergence, pointing errors) reduce received power below the robot's minimum operating threshold. A second mast, delivered on a future mission, would be required to extend the operational area beyond this radius.
