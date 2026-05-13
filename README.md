@@ -17,21 +17,21 @@ Chrystal Moon Base is an open-source concept for building a permanent human sett
 
 - **Autonomous octopod robots** (CMB-R1) — 4 double-sided chassis providing 8 simultaneous builders, powered by laser beamed from a 55-metre solar mast
 - **In-situ laser sintering** — fusing lunar regolith into structural basalt floors, walls, and dome foundations
-- **880 m² roll-out solar system** — two GaAs film arms (10 m × 44 m each) providing ~280 kW continuous power
+- **880 m² roll-out GaAs solar system** — two arms (10 m × 44 m each) providing ~280 kW continuous power
 - **Local material processing** — 13 processing modules extracting glass, titanium, aluminium, oxygen, water, and other materials from the Moon itself
 - **Multi-layer glass domes** — titanium-reinforced, self-sealing, water-shielded habitats for permanent human residents
 - **Maglev transport** — connecting all base facilities and eventually all lunar provinces
 
-This is not an engineering specification. It is a feasibility concept — every number is an estimate, every design is a starting point. The purpose of publishing it openly is so that people who do know what they are talking about can review it, correct it, and improve it.
+This is not an engineering specification. It is a feasibility concept — every number is an estimate, every design is a starting point. The purpose of publishing it openly is so that people who know what they are talking about can review it, correct it, and improve it.
 
 ---
 
 ## The Founder
 
 **Berechja Kerkdijk**  
-Truck driver, 42 years old, Sittard / Hegelsom, Netherlands.  
+Sittard / Hegelsom, Netherlands.  
 No PhD. No laboratory. No investors.  
-Just a question that refused to stop being asked.
+Just a man with a dream — researched and grounded in current science and technology.
 
 ---
 
@@ -40,16 +40,16 @@ Just a question that refused to stop being asked.
 | Parameter | Value |
 |---|---|
 | Launch vehicle | SpaceX Falcon Heavy |
-| Pod diameter | 4.5 m |
+| Pod diameter | 4.5 m (octagonal inner frame, cylindrical outer shell) |
 | Pod height (stowed) | 11 m |
 | Mast height (deployed) | 55 m (5 telescopic segments) |
 | Solar film | 2 × 10 m × 44 m roll-out GaAs = **880 m²** |
 | Continuous power | **~280 kW** |
 | Laser output | ~67.5 kW |
 | Robot fleet | 8 CMB-R1 octopods (4 double-sided chassis) |
-| BSM count | 5 (one per segment, at 11/22/33/44/55 m) |
+| BSM count | 5 (one per segment, at 11 / 22 / 33 / 44 / 55 m) |
 | Operational radius | **2+ km** from mast |
-| Build method | Concentric sintered basalt rings |
+| Build method | Concentric sintered basalt rings, outward from mast |
 
 ---
 
@@ -57,34 +57,44 @@ Just a question that refused to stop being asked.
 
 ```
 foundation/
-  governance/       CMB authority, tenant model, Earth relationship
-  location/         Why Peary Crater — site selection and data
-  philosophy/       Open-source principles, civilisation blueprint
+  governance/           CMB authority, tenant model, Earth relationship
+  location/             Why Peary Crater — site selection and data
+  philosophy/           Open-source principles, civilisation blueprint
 
-media/              Pitch, technical, and vision one-pagers
+media/                  Pitch, technical, and vision one-pagers
 
 roadmap/
-  phase-0-earth/    Five Earth demonstrators (validation programme)
+  phase-0-earth/        Five Earth demonstrators (validation programme)
   phase-0.2-the-pod.md  First lunar mission concept
   phase-1-foundation.md Phase 1 — scaling up
-  phase-2-the-city/ Phase 2 — first permanent human community
+  phase-2-the-city/     Phase 2 — first permanent human community
   phase-3-spaceport.md  Phase 3 — lunar spaceport
   phase-4-beyond.md     Phase 4 — beyond the Moon
   civilisation-blueprint/ Four provinces of a lunar civilisation
 
 systems/
-  pod/              MAST-POD — mast, solar, laser, anchoring
-  robot-cmb-r1/     CMB-R1 robot — chassis, legs, heads, AI, swarm
-  sintering/        Laser sintering physics and quality control
-  processing-modules/ All 13 resource extraction modules
-  domes/            Habitat dome architecture and construction
-  life-support/     Atmosphere, water, food, radiation, gravity
-  ai-and-monitoring/ Base AI, safety, privacy
-  underground-network/ Tunnels, maglev, emergency shelters
-  surface-access/   Decontamination sequence
+  pod/                  MAST-POD — mast, solar, laser, anchoring
+  robot-cmb-r1/         CMB-R1 robot — chassis, legs, heads, AI, swarm
+  sintering/            Laser sintering physics and quality control
+  processing-modules/   All 13 resource extraction modules
+  domes/                Habitat dome architecture and construction
+  life-support/         Atmosphere, water, food, radiation, gravity
+  ai-and-monitoring/    Base AI, safety systems, privacy policy
+  underground-network/  Tunnels, maglev, emergency shelters
+  surface-access/       Decontamination sequence
 
-public/             Website source (chrystalmoonbase.com)
+public/                 Website source (chrystalmoonbase.com)
 ```
+
+---
+
+## Current Status
+
+| Phase | Status |
+|---|---|
+| Phase 0 — Earth demonstrators | **Planning** — no hardware exists yet |
+| Phase 0.2 — The Pod (first Moon mission) | Concept proposal |
+| Phase 1+ | Long-term concept |
 
 ---
 
@@ -96,23 +106,14 @@ public/             Website source (chrystalmoonbase.com)
 
 **Write a missing document:** The structure lists many documents not yet written. Write one.
 
-**Run a simulation:** Many open questions can be answered by simulation. Publish your method and results.
+**Run a simulation:** Many open questions can be answered by simulation. Publish your method and results openly.
 
 **You are an engineer or scientist:** Review the MAST-POD concept. Find the problems. Say so clearly.
 
 **You represent a university, lab, or institution:** Phase 0 demonstrators need facilities, equipment, and expertise. The repository is the place to start that conversation.
 
-Read [CONTRIBUTING.md](./CONTRIBUTING.md) for full guidelines.
-
----
-
-## Current Status
-
-| Phase | Status |
-|---|---|
-| Phase 0 — Earth demonstrators | **Planning** — no hardware exists yet |
-| Phase 0.2 — The Pod (first Moon mission) | Concept proposal |
-| Phase 1+ | Long-term concept |
+Read [CONTRIBUTING.md](./CONTRIBUTING.md) for full guidelines.  
+All contributors are credited in [CREDITS.md](./CREDITS.md).
 
 ---
 
@@ -131,9 +132,10 @@ This repository is our invitation to build it right.
 
 - **Email:** info@chrystalmoonbase.com
 - **Website:** https://chrystalmoonbase.com
-- **X:** @chrystalbase
+- **X:** [@chrystalbase](https://x.com/chrystalbase)
 
 ---
 
 *No flags. No patents. No false promises.*  
-*Just a question worth asking honestly.*
+*Just a question worth asking honestly — and a Moon worth building together.*  
+🌙
