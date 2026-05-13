@@ -1,8 +1,10 @@
 # Chrystal Moon Base — Partnership Proposal
 
-**An open research concept exploring autonomous lunar construction using in-situ resources, robotic systems, and distributed laser energy.**
+An open research concept exploring autonomous lunar construction using in-situ resources, robotic systems, and distributed laser energy.
 
 The goal is not to propose a finished system. It is to define a structured research programme that can be independently validated — and to do so openly, without exclusivity, without IP barriers, and without overstating what is currently known.
+
+**ESA OSIP:** Qualified — Open for Discussion · 2026
 
 ---
 
@@ -36,16 +38,16 @@ An institution can engage with one demonstrator without committing to the others
 
 We are looking for distributed contributions, not a single large funder.
 
-**Universities and research institutions:** 
+**Universities and research institutions:**
 Materials testing, robotics algorithm development, structural modelling, sintering characterisation, swarm AI simulation. Real open questions, real publication credit, real contribution to a field that does not yet have answers.
 
-**Space agencies:** 
+**Space agencies:**
 Technical review of open documents, data sharing where possible, ISRU programme alignment, formal engagement with Phase 0 results. No funding required to begin a conversation.
 
-**Industry:** 
+**Industry:**
 Component testing in representative conditions, subsystem validation, technical advisory with full publication credit. In-kind contributions valued and documented.
 
-**Research funders:** 
+**Research funders:**
 Demonstrator 1 alone is estimated at €150,000–300,000. Full Phase 0 programme: €1.5–3 million over 3–5 years. All results published openly. Every euro publicly documented.
 
 ---
@@ -61,9 +63,9 @@ Demonstrator 1 alone is estimated at €150,000–300,000. Full Phase 0 programm
 
 ## Three Constraints — Non-Negotiable
 
-1. **No exclusivity agreements** — with any partner, ever
-2. **No patenting of results** — all outputs remain open
-3. **Full transparency** — all experimental outcomes published, including failures
+- No exclusivity agreements — with any partner, ever
+- No patenting of results — all outputs remain open
+- Full transparency — all experimental outcomes published, including failures
 
 ---
 
@@ -71,13 +73,13 @@ Demonstrator 1 alone is estimated at €150,000–300,000. Full Phase 0 programm
 
 The full concept is publicly available and open for correction:
 
-**Repository:** github. com/ChrystalMoonBase/ChrystalMoonBase 
-**Website:** chrystalmoonbase. com 
-**Contact:** info@chrystalmoonbase. com
+**Repository:** [github.com/ChrystalMoonBase/ChrystalMoonBase](https://github.com/ChrystalMoonBase/ChrystalMoonBase)  
+**Website:** [chrystalmoonbase.com](https://chrystalmoonbase.com)  
+**Contact:** info@chrystalmoonbase.com
 
 We are looking for the first conversation, not the first commitment. If any element of this work is relevant to your institution's programme, that conversation is worth having.
 
 ---
 
-*No flags. No patents. No exclusivity.* 
+*No flags. No patents. No exclusivity.*  
 *Open research for all of humanity — conducted by whoever wants to help conduct it.*

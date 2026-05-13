@@ -21,16 +21,20 @@ Earth visibility from the near-side rim appears continuous based on published or
 ## Proposed System Architecture
 
 **1. Energy Subsystem**
-- Vertical GaAs solar curtain (~100 m², estimated) on a 100-metre telescoping mast
-- Azimuth-tracking drive rotates mast at ~0.5°/hour — intended to maintain continuous sun-facing
-- Estimated net electrical output: ~32–36 kW after assumed ~10% system losses
+- 55-metre telescoping mast (5 segments, stowed at 11 m — Falcon Heavy fairing compatible)
+- Two roll-out GaAs solar film arms (10 m × 44 m each = **880 m² total**), hanging vertically from the top segment
+- Arms are parallel to the sun at all times — no inter-arm shadowing
+- Azimuth-tracking drive rotates mast at ~0.5°/hour — maintains continuous sun-facing
+- Estimated net electrical output: **~280 kW** after assumed ~10% system losses
 - This estimate is the most important uncertainty in the concept — the actual power budget has not been validated
-- Ytterbium fibre laser at assumed ~45% wall-plug efficiency → estimated ~13.5 kW optical output
-- Five Beam and Sensor Modules (BSMs) at 20m mast intervals would distribute power to robots via steered laser beam
-- Estimated operational robot radius: ~1–2 km from mast base, assuming unobstructed line of sight
+- Ytterbium fibre laser at assumed ~45% wall-plug efficiency → estimated **~67.5 kW optical output**
+- Five Beam and Sensor Modules (BSMs) at 11 m mast intervals (11 m, 22 m, 33 m, 44 m, 55 m) distribute power to robots via steered laser beam
+- AI selects optimal BSM per robot based on position; robot receiver panels tilt to optimise angle
+- Estimated operational robot radius: **2+ km** from mast base in vacuum (no atmospheric losses)
 
 **2. Robotic Execution Layer — CMB-R1 (concept only)**
-- 8 hexapod robots, identical chassis (~250–350 kg, rough estimate)
+- 8 octopod robots on 4 double-sided chassis (~250–350 kg each, rough estimate)
+- Double-sided chassis: each unit provides two simultaneous working ends — 8 effective builders from 4 physical units
 - Four interchangeable tool heads: sintering, thermal buddy, bulldozer, watcher
 - Front two limbs intended as dual-function: legs in transit, arms for head swapping and cargo handling
 - Leg-loss fault tolerance proposed: damaged leg discarded, AI recalculates gait for remaining legs
@@ -42,7 +46,7 @@ Earth visibility from the near-side rim appears continuous based on published or
 - Laser sintering proposed to fuse regolith grains into glass-ceramic basalt solid
 - Controlled cooling via thermal buddy robot — intended to prevent thermal cracking
 - Estimated energy requirement: 5,000–15,000 kWh/m³ (derived from Fateri et al. 2019 at small scale; uncertainty is very high)
-- First platform timeline (8m diameter, 25cm depth): estimated 4–18 months. Central estimate ~10 months — this range reflects genuine uncertainty in sintering energy at scale
+- First platform timeline (8 m diameter, 25 cm depth): estimated 2–11 months at ~25 kW sintering power. Central estimate ~5 months — this range reflects genuine uncertainty in sintering energy at scale
 - All sintering data comes from terrestrial laboratory experiments using simulants. Peary rim regolith is highland anorthosite composition — behaviour may differ significantly
 
 **4. Habitat Formation (long-term concept)**
@@ -57,12 +61,13 @@ Earth visibility from the near-side rim appears continuous based on published or
 
 | Assumption | Basis | What Is Needed |
 |---|---|---|
-| ~89% annual illumination at landing zone | SELENE data, 10–50m resolution | High-resolution orbital survey of specific zone |
+| ~89% annual illumination at landing zone | SELENE data, 10–50 m resolution | High-resolution orbital survey of specific zone |
 | Sintering viable at scale in vacuum | Small-scale lab demos only | Phase 0 Demonstrator 1 at construction scale |
-| ~32 kW net power achievable | Physics calculation, estimated losses | Phase 0 Demonstrator 2, dust accumulation model |
+| ~280 kW net power achievable | Physics calculation, estimated losses | Phase 0 Demonstrator 2, dust accumulation model |
 | Swarm coordination at construction scale | Algorithm concept only, no software | Phase 0 Demonstrators 3–5 |
 | Self-sealing gel viable in lunar conditions | Concept based on terrestrial research | Dedicated materials science programme |
 | Regolith composition matches simulants | Assumed based on orbital data | Direct sample or in-situ measurement |
+| 2+ km laser range achievable | Vacuum physics; no atmospheric loss | Phase 0 Demonstrator 2 at extended range |
 
 ---
 
@@ -82,8 +87,8 @@ Earth visibility from the near-side rim appears continuous based on published or
 | # | Subsystem | Success Criteria |
 |---|---|---|
 | D1 | Laser sintering at scale | Crack-free 1 m² patch, depth ≥10 cm, compressive strength ≥50 MPa |
-| D2 | Laser power beaming | ≥40% end-to-end efficiency at 100m, tracking at robot walking speed |
-| D3 | CMB-R1 locomotion | Stable gait on simulant, leg-loss recovery <60s, head swap success ≥90% |
+| D2 | Laser power beaming | ≥40% end-to-end efficiency at 100 m, tracking at robot walking speed |
+| D3 | CMB-R1 locomotion | Stable gait on simulant, leg-loss recovery <60 s, head swap success ≥90% |
 | D4 | 4-robot swarm coordination | Autonomous ring completion, fault recovery without human intervention |
 | D5 | Full integration, 72-hour run | Measurable sintered area produced, no human intervention required |
 
@@ -99,8 +104,10 @@ Estimated Phase 0 cost: €1.5–3 million across 3–5 years. Each demonstrator
 - Carrier, Olhoeft & Mendell (1991) Lunar Sourcebook — regolith properties
 - PowerLight Technologies (2022) — laser power beaming ground demonstration
 - Li et al. (2018) PNAS — polar water ice confirmation
+- Speyerer & Robinson (2005) Nature — Peaks of Eternal Light illumination mapping
 
 ---
 
-**Full documentation:** github. com/ChrystalMoonBase/ChrystalMoonBase 
-**Contact:** info@chrystalmoonbase. com
+**Full documentation:** [github.com/ChrystalMoonBase/ChrystalMoonBase](https://github.com/ChrystalMoonBase/ChrystalMoonBase)  
+**Contact:** info@chrystalmoonbase.com  
+**ESA OSIP:** Qualified — Open for Discussion · 2026

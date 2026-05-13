@@ -24,7 +24,7 @@ The materials and energy may be there. Whether they are accessible, in sufficien
 
 ## The Concept
 
-One possible architecture: a single rocket delivers a 100-metre solar mast and eight autonomous hexapod robots to the Peary rim. The mast unfurls a vertical solar curtain — estimated ~32 kW, if the design assumptions hold. That power would drive a laser, beamed to the robots below. The robots would attempt to fuse lunar dust into solid basalt. Ring by ring, if it works, the floor might grow outward.
+One possible architecture: a single rocket delivers a 55-metre solar mast and eight autonomous octopod robots to the Peary rim. The mast carries two roll-out GaAs solar film arms — 880 m² in total, hanging vertically, tracking the sun as it circles the horizon — estimated ~280 kW, if the design assumptions hold. That power would drive a laser, beamed to the robots below. The robots would attempt to fuse lunar dust into solid basalt. Ring by ring, if it works, the floor might grow outward — reaching 2 km or more from the mast base, with no cables, no tethers, no resupply.
 
 No imports. No resupply. No flags.
 
@@ -50,6 +50,7 @@ The Moon belongs to everyone. This is one attempt to think seriously about what 
 
 ---
 
-**Website:** chrystalmoonbase. com 
-**Repository:** github. com/ChrystalMoonBase/ChrystalMoonBase 
-**Contact:** info@chrystalmoonbase. com
+**Website:** [chrystalmoonbase.com](https://chrystalmoonbase.com)  
+**Repository:** [github.com/ChrystalMoonBase/ChrystalMoonBase](https://github.com/ChrystalMoonBase/ChrystalMoonBase)  
+**Contact:** info@chrystalmoonbase.com  
+**ESA OSIP:** Qualified — Open for Discussion · 2026
