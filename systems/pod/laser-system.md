@@ -1,57 +1,89 @@
 # Laser System
 ## Chrystal Moon Base — Phase 0.2 Power Architecture
 
-**Status:** Concept proposal  
+**Status:** Concept proposal — all figures are estimates requiring engineering validation  
 **Licence:** CC0
 
 ---
 
 ## Overview
 
-The laser system converts electrical power from the solar curtain into a laser beam distributed to working robots via the BSMs. It is the link between power generation and power consumption — the grid of the Pod.
+The laser system converts a portion of the electrical power from the CIGS solar film into a laser beam distributed to working robots via the Beam and Sensor Modules (BSMs). It is the link between power generation and power consumption — the wireless grid of the Pod.
 
 ---
 
 ## Laser Type
 
-**Ytterbium fibre laser**, wavelength approximately 1070 nm (near-infrared).
+**High-power diode laser**, wavelength approximately 800–980 nm (near-infrared).
 
-Ytterbium fibre lasers are selected because:
-- Wall-plug efficiency of ~45% is among the highest of any high-power laser type
-- Multi-kilowatt commercial systems are available and flight-heritage-adjacent (similar technology used in satellite optical communications)
-- The 1070 nm wavelength is well-matched to the GaAs photovoltaic cells used on robot receivers
-- Fibre delivery to BSMs via optical fibre is straightforward at this wavelength
+Diode lasers are selected for this concept because:
+- Wall-plug efficiency of 50–65% — higher than ytterbium fibre lasers at lower power levels
+- Compact, no moving parts, long operational life
+- The 800–980 nm wavelength range is well-matched to GaAs photovoltaic receiver cells on robots
+- Direct electrical-to-optical conversion without intermediate fibre amplification
+
+> **Note:** The receiver cells on the robots are GaAs — not CIGS. The CIGS change applies only to the mast solar film, which must be rolled. Robot receiver panels do not need to be flexible and GaAs offers superior efficiency at the laser wavelength.
 
 ---
 
 ## Power Budget
 
-| Parameter | Value |
-|---|---|
-| Input electrical power | ~150 kW |
-| Wall-plug efficiency | ~45% |
-| Laser optical output | ~67.5 kW |
-| Distribution to 5 BSMs | Fibre splitter, ~2.7 kW per BSM |
-| Delivery efficiency (pointing, dust) | ~80% estimated |
-| Power at robot receiver | ~2.2 kW per robot served |
-| Robot electrical conversion efficiency | ~30% (GaAs at laser wavelength) |
-| Electrical power at robot | ~0.66 kW per robot |
+| Parameter | Value | Notes |
+|---|---|---|
+| Total system power (conservative) | ~104 kW | 600 m² CIGS at 15.7% efficiency |
+| Total system power (optimistic) | ~143 kW | 600 m² CIGS at 21.5% efficiency |
+| Laser system allocation | ~20 kW electrical input | ~19% of conservative total |
+| Wall-plug efficiency (diode) | ~55% estimated | Literature range 50–65% |
+| **Laser optical output** | **~10–11 kW** | Starting point for engineering |
+| Distribution to 5 BSMs | Optical fibre splitter | ~2 kW per BSM nominal |
+| Delivery efficiency (pointing, dust) | ~80% estimated | Highly uncertain |
+| Power at robot receiver | ~0.4–1.6 kW per robot | Depends on distance and BSM |
+| GaAs receiver efficiency at wavelength | ~30–40% | Literature range |
+| **Electrical power at robot** | **~0.12–0.64 kW per robot** | Wide uncertainty range |
 
-These estimates have significant uncertainty, particularly in delivery efficiency (which depends on pointing accuracy and dust accumulation) and receiver conversion efficiency (which depends on cell temperature and wavelength match). The figures are starting points for engineering analysis, not specifications.
+These estimates carry significant uncertainty. The actual operating point requires detailed optical modelling, thermal analysis, and ground testing. These figures are starting points, not specifications.
 
-At 0.66 kW per robot, 8 robots simultaneously receive approximately 5.3 kW total. This is within the available laser output of 67.5 kW, suggesting headroom for either more robots, higher per-robot power, or losses higher than estimated. The actual operating point requires detailed modelling.
+---
+
+## Why Not a Larger Laser?
+
+The total available power budget is ~104–143 kW. Most of this is needed for:
+- Robot charging (16 robots staggered): ~15 kW
+- Base computer, comms, BSM actuators: ~5 kW
+- Mast rotation and magnetic bearing: ~1 kW
+- Battery reserve charging: ~60+ kW surplus
+
+Allocating ~20 kW to the laser is a deliberate conservative choice. The laser does not need to be large — robots spend most of their time sintering (which uses their locally stored charge), not receiving real-time laser power. The laser tops up robot batteries continuously while they work.
+
+If engineering analysis shows the power budget allows a larger laser allocation, the optical output can scale proportionally.
 
 ---
 
 ## Location
 
-The laser system is housed in the Pod base container — the buried, thermally insulated central unit below the mast base. This protects the laser from the extreme surface thermal environment and from dust. Optical fibre carries the beam up through the mast interior to each BSM.
+The laser system is housed in the Pod base — the central, thermally insulated unit below the mast base. Optical fibre carries the beam up through the ~35-metre mast interior to each BSM. The interior of the mast provides natural thermal protection for the fibre.
+
+---
+
+## BSM Distribution
+
+Five BSMs at approximately 7 / 14 / 21 / 28 / 35 m serve 16 robots across a 2+ km operational radius. The mast AI selects the optimal BSM for each robot based on position and line-of-sight geometry. Robots with steerable GaAs receiver panels actively optimise angle of incidence as they move.
 
 ---
 
 ## Open Questions
 
-1. What is the actual wall-plug efficiency of a flight-qualified ytterbium fibre laser at the relevant power level and temperature range?
-2. What fibre type and routing are required for the 55-metre mast interior, including the thermal cycling loads during deployment?
-3. What is the actual GaAs conversion efficiency at 1070 nm and at robot operating temperatures?
-4. How is the laser power split between 5 BSMs — fixed split or dynamic allocation based on current robot positions?
+1. What diode laser configuration achieves the required power at flight-qualified reliability and mass?
+2. What fibre type and routing are required for the ~35-metre mast interior, including thermal cycling loads?
+3. What is the actual GaAs conversion efficiency at the chosen wavelength and at robot operating temperatures?
+4. How is laser power split between 5 BSMs — fixed split or dynamic allocation?
+5. What is the actual dust accumulation rate on BSM optics, and how does this degrade delivery efficiency over months of operation?
+6. At what robot-to-mast distance does the power delivery become insufficient for meaningful battery charging?
+
+---
+
+## Reference
+
+- NASA VSAT study (2024) — surface-to-surface laser power beaming, 300 W at 10 km
+- PowerLight Technologies (2022) — ground demonstration of laser power beaming
+- Fafaul et al. — GaAs receiver efficiency at laser wavelengths
