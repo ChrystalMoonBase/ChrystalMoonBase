@@ -5,7 +5,7 @@
 No flags. No patents. Built for all of humanity.
 
 **Website:** https://chrystalmoonbase.com  
-**Licence:** See [LICENSE.md](./LICENSE.md) — hardware: CERN-OHL-S-2.0 · software: proprietary · documents: CC0  
+**Licence:** Hardware: CERN-OHL-S-2.0 · Documents: CC0 · Software: proprietary  
 **Status:** Phase 0 — Earth demonstrators (concept and planning stage)  
 **ESA OSIP:** Qualified — Open for Discussion · 2026
 
@@ -15,9 +15,9 @@ No flags. No patents. Built for all of humanity.
 
 Chrystal Moon Base is an open-source concept for building a permanent human settlement on the lunar north pole (Peary Crater rim, 88.63°N) using:
 
-- **Autonomous octopod robots** (CMB-R1) — 4 double-sided chassis providing 8 simultaneous builders, powered by laser beamed from a 55-metre solar mast
+- **Autonomous octopod robots** (CMB-R1) — 16 robots with fully integrated sensors, powered by laser beamed from a ~35-metre solar mast
 - **In-situ laser sintering** — fusing lunar regolith into structural basalt floors, walls, and dome foundations
-- **880 m² roll-out GaAs solar system** — two arms (10 m × 44 m each) providing ~280 kW continuous power
+- **600 m² roll-out CIGS solar system** — two arms (9 m × 30 m each) providing ~104–143 kW continuous power
 - **Local material processing** — 13 processing modules extracting glass, titanium, aluminium, oxygen, water, and other materials from the Moon itself
 - **Multi-layer glass domes** — titanium-reinforced, self-sealing, water-shielded habitats for permanent human residents
 - **Maglev transport** — connecting all base facilities and eventually all lunar provinces
@@ -40,16 +40,23 @@ Just a man with a dream — researched and grounded in current science and techn
 | Parameter | Value |
 |---|---|
 | Launch vehicle | SpaceX Falcon Heavy |
-| Pod diameter | 4.5 m (octagonal inner frame, cylindrical outer shell) |
-| Pod height (stowed) | 11 m |
-| Mast height (deployed) | 55 m (5 telescopic segments) |
-| Solar film | 2 × 10 m × 44 m roll-out GaAs = **880 m²** |
-| Continuous power | **~280 kW** |
-| Laser output | ~67.5 kW |
-| Robot fleet | 8 CMB-R1 octopods (4 double-sided chassis) |
-| BSM count | 5 (one per segment, at 11 / 22 / 33 / 44 / 55 m) |
+| Pod diameter | ~4.6 m (octagonal inner frame) |
+| Pod height (stowed) | ~11 m |
+| Base plate | 1.0 m thick Al-Li 2099 isogrid |
+| Fuel | MMH/NTO hypergolic |
+| Mast height (deployed) | ~35 m (5 segments · 6th segment: open engineering question) |
+| Mast material | Toray M55J CFRP + cyanate ester resin |
+| Mast rotation | Magnetically levitated bearing (AMB/PMB) |
+| Solar film | 2 × 9 m × 30 m roll-out CIGS = **600 m²** |
+| Continuous power | **~104 kW** (conservative) — **~143 kW** (optimistic) |
+| Laser output | ~10–20 kW class diode laser |
+| Robot fleet | **16 CMB-R1 octopods** (2 per garage) |
+| Garages | 8 × 2.0 m × 2.0 m × 1.5 m |
+| BSM count | 5 (one per segment, at ~7 / 14 / 21 / 28 / 35 m) |
 | Operational radius | **2+ km** from mast |
-| Build method | Concentric sintered basalt rings, outward from mast |
+| Total mass (excl. robots) | **~4,200 kg** |
+| Falcon Heavy TLI capacity | ~15,000 kg |
+| **Mass margin** | **~10,800 kg** |
 
 ---
 
@@ -65,7 +72,7 @@ media/                  Pitch, technical, and vision one-pagers
 
 roadmap/
   phase-0-earth/        Five Earth demonstrators (validation programme)
-  phase-0.2-the-pod.md  First lunar mission concept
+  phase-0_2-the-pod.md  First lunar mission concept
   phase-1-foundation.md Phase 1 — scaling up
   phase-2-the-city/     Phase 2 — first permanent human community
   phase-3-spaceport.md  Phase 3 — lunar spaceport
@@ -74,7 +81,7 @@ roadmap/
 
 systems/
   pod/                  MAST-POD — mast, solar, laser, anchoring
-  robot-cmb-r1/         CMB-R1 robot — chassis, legs, heads, AI, swarm
+  robot-cmb-r1/         CMB-R1 robot — chassis, legs, AI, swarm
   sintering/            Laser sintering physics and quality control
   processing-modules/   All 13 resource extraction modules
   domes/                Habitat dome architecture and construction
