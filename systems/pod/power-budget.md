@@ -1,8 +1,10 @@
 # Power Budget — Phase 0.2 Pod
 ## Chrystal Moon Base — Phase 0.2 Systems
 
-**Status:** Updated estimate — significant uncertainties remain  
+**Status:** Revised estimate — significant uncertainties remain  
 **Licence:** CC0
+
+> All figures are estimates based on published data and physics calculations. None have been validated experimentally. The power budget is the single most important uncertainty in the Pod concept.
 
 ---
 
@@ -10,82 +12,110 @@
 
 | Parameter | Value |
 |---|---|
-| Mast height (deployed) | 55 m |
-| Number of arms | 2 (top segment only) |
-| Arm length | 10 m each |
-| Film per arm | 10 m × 44 m roll-out GaAs thin-film |
-| **Total solar area** | **880 m²** |
-| Solar constant at Moon | 1,357 W/m² |
-| GaAs efficiency | 30% |
+| Mast height (deployed) | ~35 m (5 segments · 6th segment: open engineering question) |
+| Mast material | Toray M55J CFRP with cyanate ester resin |
+| Mast base | Magnetically levitated rotation bearing (AMB/PMB) |
+| Number of arms | 2 (segment 1 — lowest, above garages) |
+| Arm length | ~9 m each |
+| Film per arm | ~9 m × 30 m roll-out CIGS thin-film |
+| **Total solar area** | **~600 m²** |
+| Solar cell type | CIGS (Copper Indium Gallium Selenide) — flexible, rollable |
+| Solar constant at Moon | ~1,370 W/m² |
+| CIGS efficiency (conservative) | 15.7% |
+| CIGS efficiency (realistic growth) | 21.5% |
 | Peary illumination fraction | ~89% |
 | System losses (dust, cable, thermal) | ~10% |
-| **Continuous electrical output** | **~280 kW** |
+| **Continuous output (conservative)** | **~104 kW** |
+| **Continuous output (optimistic)** | **~143 kW** |
 
-**Calculation:** 880 m² × 1,357 W/m² × 0.30 × 0.89 × 0.90 ≈ 287 kW → conservative estimate: **280 kW**
+**Calculation (conservative):**
+600 m² × 1,370 W/m² × 0.157 × 0.89 × 0.90 ≈ **104 kW**
+
+**Calculation (optimistic):**
+600 m² × 1,370 W/m² × 0.215 × 0.89 × 0.90 ≈ **143 kW**
 
 ---
 
-## Power Distribution
+## Why CIGS, Not GaAs
+
+GaAs (Gallium Arsenide) offers higher efficiency (~30%) but is crystalline and brittle — it cannot be rolled. The roll-out deployment architecture requires a flexible thin-film cell. CIGS on a flexible titanium or polyimide substrate is the appropriate choice:
+
+- Flexible and rollable ✓
+- Demonstrated in space applications ✓
+- Specific power ~1,900 W/kg ✓
+- Efficiency improving (15.7% → 21.5% realistic growth path) ✓
+
+---
+
+## Power Distribution (Conservative Estimate: 104 kW)
 
 | Consumer | Estimated Draw | Notes |
 |---|---|---|
-| Laser system (fibre laser input) | ~150 kW | Primary consumer |
-| Laser optical output | ~67.5 kW | 45% wall-plug efficiency |
-| Base computer + comms | ~3 kW | Mission AI, comms processing |
+| Laser power beaming system | ~20 kW input | 10–20 kW class diode laser |
+| Laser optical output | ~10–15 kW | To BSMs and robots |
+| Base computer + avionics | ~2 kW | Mission AI, communications |
 | Ka-band transmitter | ~1 kW | Varies with data rate |
-| BSM actuators and electronics (5) | ~0.5 kW | One per segment |
-| Mast thermal management | ~2 kW | Heaters during shadow periods |
-| Robot charging (8 units, staggered) | ~15 kW | Max 4 charging simultaneously |
-| **Total estimated draw** | **~171.5 kW** | |
-| **Available from solar system** | **~280 kW** | |
-| **Reserve / battery charging** | **~108.5 kW** | Large surplus for storage |
+| BSM actuators × 5 | ~0.5 kW | One per mast segment |
+| Mast rotation drive | ~0.2 kW | ~0.5°/hour — very slow |
+| Magnetic bearing (AMB) | ~0.5 kW | Active stabilisation |
+| Mast thermal management | ~1 kW | Heaters during shadow |
+| Robot charging (16 units, staggered) | ~15 kW | Max 4–6 charging simultaneously |
+| **Total estimated draw** | **~40 kW** | |
+| **Available (conservative)** | **~104 kW** | |
+| **Reserve / battery charging** | **~64 kW** | Substantial surplus |
 
----
-
-## The Power Surplus
-
-Unlike the previous 100 m² / 32 kW configuration — which had a power deficit — the 880 m² system produces **~108 kW of surplus power** under normal operations. This surplus is used for:
-
-1. **Battery charging** — building up reserve for shadow periods
-2. **Burst sintering capacity** — more laser power when needed
-3. **Future expansion** — powering additional modules as the base grows
-
-The power balance problem is **completely resolved** by the new solar configuration.
+The power balance is **strongly positive** even at conservative CIGS efficiency. The surplus charges the battery reserve for shadow periods.
 
 ---
 
 ## Shadow Period Management
 
-During the ~11% of the year when the Peary site is in shadow, the solar film produces no power. Survival protocol:
+During the ~11% of the year when the Peary site is in reduced illumination, the solar film produces little or no power. Survival protocol:
 
 **Shadow period protocol (proposed):**
-- Laser system shuts down — no construction
+- Laser power beaming shuts down — no construction
 - Robots hibernate at current positions (minimal power draw)
 - Base computer reduces to keep-alive mode
-- Mast heaters draw from battery reserve
+- Mast heaters and magnetic bearing draw from battery reserve
 
-**Battery reserve requirement:**
-The ~108 kW surplus during illuminated periods (89% of year) charges a battery bank capable of sustaining mast heaters and minimal base computer through the longest expected shadow period (estimated several days).
-
-**Battery sizing:** With 108 kW surplus × 89% availability, and a maximum shadow period of ~7 days:
-- Survival power needed: ~5 kW (heaters + minimal compute)
-- Duration: ~7 days = 168 hours
+**Battery reserve sizing:**
+- Survival power needed: ~5 kW (heaters + minimal compute + AMB)
+- Longest expected shadow: ~7 days = 168 hours
 - Energy needed: ~840 kWh
-- This is readily achievable with solid-state battery technology at this scale.
+- Available from ~64 kW surplus × 89% illumination: ample charging capacity
+
+**Storage type:** Hybrid — electrochemical (Li-ion primary, upgradeable to locally-sourced Na-ion) + thermal (basalt block heat storage for passive thermal management).
 
 ---
 
-## Previous Configuration (for reference)
+## Mass Budget (Electrical System)
 
-The earlier concept used a 100 m² wrapped curtain producing ~32 kW — which created a power deficit when all consumers were active simultaneously. That configuration has been superseded by the 880 m² roll-out film system described above.
+| Component | Estimated Mass |
+|---|---|
+| CIGS solar film (600 m²) | ~110 kg (at ~1,900 W/kg specific power) |
+| Mast arms and deployment mechanism | ~100 kg |
+| Magnetic bearing (AMB/PMB) | ~100 kg |
+| Laser power beaming system | ~50 kg |
+| BSMs × 5 | ~50 kg |
+| Battery storage | ~200 kg |
+| Power electronics, cabling, avionics | ~150 kg |
+| **Total electrical system** | **~760 kg** |
 
 ---
 
 ## Key Uncertainties
 
-1. Actual GaAs conversion efficiency in the Peary thermal environment (cells cool significantly in shadow and may briefly underperform on wake)
-2. Dust accumulation rate on the vertically hanging film
-3. Exact illumination geometry at the specific landing site within the Peary rim
-4. Robot actual power draw under operational lunar conditions
+1. CIGS efficiency under actual Peary thermal cycling (cells cool significantly in shadow)
+2. Dust accumulation rate on vertically hanging film — cleaning frequency unknown
+3. Exact illumination geometry at specific landing zone — requires high-resolution orbital survey
+4. Magnetic bearing performance over multi-year operation in lunar thermal environment
+5. Robot actual power draw under operational lunar conditions
+6. Battery degradation rate over years of deep thermal cycling
 
-Ground validation (Phase 0 Demonstrator 2) addresses items 1, 2, and 4.
+Ground validation (Phase 0 Demonstrator 2) addresses items 1, 2, and 5 directly.
+
+---
+
+## Previous Configuration (for reference)
+
+Earlier concept iterations used GaAs film (not rollable) and a 55-metre mast, producing estimated ~280 kW. Those figures assumed incorrect material properties (GaAs cannot be rolled) and did not account for the structural height consumed by the pod's base systems. The current configuration is more conservative and more realistic.
