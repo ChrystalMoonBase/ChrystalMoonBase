@@ -1,4 +1,4 @@
-# The Mast — Overview
+# The MAST-POD Mast — Overview
 ## Chrystal Moon Base — Phase 0.2 Concept
 
 **Status:** Concept proposal  
@@ -10,8 +10,8 @@
 
 The mast is the central infrastructure element of the Pod. It serves three simultaneous functions:
 
-1. **Power generation** — two CIGS solar film arms (600 m² total) generate ~104–143 kW of electrical power
-2. **Power distribution** — five Beam and Sensor Modules (BSMs), one per segment, deliver laser power to working robots up to 2+ km away
+1. **Power generation** — two roll-out CIGS solar film arms on the mast generate ~129–177 kW of continuous electrical power
+2. **Power distribution** — five Beam and Sensor Modules (BSMs) on the mast deliver this power as a laser beam to working robots up to 2+ km away
 3. **Communications** — a Ka-band antenna at the mast top maintains continuous contact with Earth
 
 Everything else in the Pod concept depends on the mast being operational. If the mast fails to deploy, the mission ends before it begins. Mast deployment reliability is therefore the highest priority single engineering challenge in the Phase 0.2 concept.
@@ -20,81 +20,90 @@ Everything else in the Pod concept depends on the mast being operational. If the
 
 ## Physical Description
 
-The mast is a **5-segment telescoping structure** of Toray M55J carbon-fibre with cyanate ester resin matrix. This composite was selected for:
-- Ultra-high modulus (540 GPa) — approximately twice as stiff as steel
-- Near-zero thermal expansion coefficient (CTE) achievable — critical for stability under lunar thermal cycling
-- Radiation resistance
-- Excellent strength-to-weight ratio
+The mast is a 5-segment telescoping structure of Toray M55J carbon-fibre reinforced polymer with cyanate ester resin matrix. This material was selected for its stiffness-to-mass ratio, thermal stability across the lunar surface temperature range (−200°C to +130°C), radiation resistance, and minimal outgassing in vacuum.
 
-**Base bearing:** The mast sits on a **magnetically levitated rotation bearing** (Active Magnetic Bearing — AMB, or Passive Magnetic Bearing — PMB). The rotor (mast) floats contactlessly above the stator — no friction, no lubrication, no wear. Designed for axial load of ~2,000 kg. Rotation: ~0.5°/hour for azimuth sun-tracking.
+**Stowed configuration:** The 5 segments are nested inside each other — the innermost (smallest diameter) at the top, the outermost (largest diameter) at the bottom, like a collapsed telescope. Total stowed height fits within the Pod upper section, within Falcon Heavy payload fairing constraints.
 
-**Stowed configuration:** The 5 segments are nested inside each other. Total stowed height: approximately 9.7 metres — fitting within the Falcon Heavy payload fairing with margin. The pod base systems (tanks, thrusters, actuators, avionics) occupy the lower portion of the 11 m fairing height.
+**Deployed configuration:** Each segment extends and locks sequentially, driven by a single Dyneema tension band running through all segments from a drive motor at the base. Total deployed height: approximately 35 metres.
 
-**Deployed configuration:** Each segment extends sequentially via central ball-screw spindles driven by brushless DC motors. Sliding surfaces are coated with dry-film lubricant (MoS₂). Segment overlap at full extension: ~45 cm per interface.
+> **Open engineering question:** A 6th segment has been discussed. Whether a 6th segment is structurally viable and adds meaningful value is an open question for qualified engineers. The current baseline is 5 segments / ~35 metres.
 
-| Segment | Cross-section | Wall thickness | Length |
-|---|---|---|---|
-| 1 (base) | 50.0 × 50.0 cm | 5 mm | 9.70 m |
-| 2 | 48.7 × 48.7 cm | 5 mm | 9.25 m |
-| 3 | 47.4 × 47.4 cm | 5 mm | 8.80 m |
-| 4 | 46.1 × 46.1 cm | 5 mm | 8.35 m |
-| 5 (top) | 44.8 × 44.8 cm | 5 mm | 7.90 m |
+**Segment locking:** A passive collet mechanism at each segment interface locks automatically when the segment reaches full extension. No active locking is required — the collets engage mechanically under the tension of the Dyneema band. This eliminates a class of potential failures at the cost of making deliberate retraction impossible, which is acceptable since the mast is not designed to be retracted.
 
-**Total deployed height:** ~35 m
-
-**Optional 6th segment:** Whether a 6th segment is structurally and mechanically feasible is an open engineering question. If added, it would increase mast height and BSM coverage. The founder has no strong preference — this decision belongs to engineers with structural and deployment analysis.
-
-**Segment locking:** Passive collet mechanisms engage automatically when each segment reaches full extension. No active locking required. Retraction is not possible after locking — the mast is a permanent installation.
-
-**Estimated mast mass:** ~200 kg
+**Rotation system:** The entire mast rotates in azimuth on a magnetically levitated bearing (hybrid AMB/PMB) to track the sun continuously. This keeps the CIGS solar arms oriented perpendicular to incoming sunlight throughout the ~89% illuminated lunar year at Peary latitude.
 
 ---
 
-## Solar Film Arms
+## Solar Power System
 
-Two arms are mounted on **segment 1 — the lowest segment**, positioned just above the pod garages:
+Two roll-out CIGS thin-film solar arms extend horizontally from the mast, one on each side.
 
-- Arm length: ~9 m each
-- Film: 9 m × 30 m CIGS thin-film per arm = ~600 m² total
-- Arms fold flat against segment 1 during launch
-- Arms deploy outward when segment 1 is in position
-- Film unrolls upward via pulley-and-cable system as mast extends
-- Top segment carries precision pulleys — cables guide film evenly
-- No separate unfurling motor required
+| Parameter | Value |
+|---|---|
+| Solar film technology | CIGS thin-film (roll-out) |
+| Total solar area | 2 × 9 m × 30 m = **600 m²** |
+| Solar constant at Moon | ~1,361 W/m² |
+| Conservative efficiency | 15.7% → **~129 kW** continuous |
+| Optimistic efficiency | 21.5% → **~177 kW** continuous |
+| Illumination availability | ~89% of lunar year at Peary rim |
 
-The top segment (segment 5) carries **only** the Ka-band antenna and BSM 5. No arms. No moving parts beyond sensors and beamer optics.
-
----
-
-## Deployment Sequence
-
-1. Pod lands — bloom deploys — pod anchored
-2. Arms on segment 1 fold out horizontally (spring-loaded)
-3. Film spools locked — film not yet extended
-4. Mast begins telescoping upward — segment 1 first
-5. Cables from film edges run through pulleys on rising top segment
-6. Film pulls upward off spools as top segment rises
-7. All 5 segments lock sequentially
-8. Film fully extended and tensioned at ~30 m
-9. Ka-band antenna and BSM 5 activate
-10. Solar power established — base computer initialises
-11. BSMs 1–4 activate
-12. Mast begins slow azimuth rotation to face sun
-
-Estimated deployment time: 2–4 hours. Slow and controlled — rapid deployment risks dynamic loads.
+These are estimates based on published CIGS efficiency ranges. Actual output depends on film degradation under UV and particle radiation, dust accumulation rate, pointing accuracy, and thermal effects. All are open engineering questions.
 
 ---
 
 ## Beam and Sensor Modules (BSMs)
 
-Five BSMs, one per segment, at approximately:
-- BSM 1: ~7 m
-- BSM 2: ~14 m
-- BSM 3: ~21 m
-- BSM 4: ~28 m
-- BSM 5: ~35 m (top — also carries Ka-band antenna)
+Five BSMs are pre-mounted on the mast — one per segment — at approximately 7, 14, 21, 28, and 35 metres height. Each BSM:
 
-The AI selects the optimal BSM for each robot based on position. Lower BSMs serve nearby robots at steep angles; higher BSMs serve distant robots at shallow angles. Robots 2+ km away are reached via BSM 5 in vacuum — no atmospheric losses.
+- Receives electrical power from the solar arms
+- Converts it to a directed laser beam (~10–20 kW class diode laser)
+- Tracks a moving robot receiver autonomously
+- Delivers usable power to the CMB-R1 robot at up to 2+ km range
+
+Multiple BSMs can operate simultaneously, powering multiple robots at once. If one BSM fails, the others continue operation.
+
+---
+
+## Deployment Sequence
+
+1. Pod lands autonomously at selected high-illumination peak on Peary Crater rim
+2. Pod stabilises and anchors (see Anchoring section)
+3. Mast base motor activates, pulling Dyneema tension band
+4. Innermost (top) segment rises first; collet locks at full extension
+5. Sequence continues upward until all 5 segments are locked
+6. CIGS solar arms, rolled around the mast during transit, unfurl as segments extend
+7. Ka-band antenna at mast top deploys last
+8. BSMs activate after solar power is confirmed
+9. Garage doors open; CMB-R1 robots walk out
+
+Estimated deployment time: 2–4 hours. Deployment is slow and controlled — rapid deployment risks dynamic loads that could damage the structure in lunar vacuum and 1/6 g.
+
+---
+
+## Anchoring
+
+After extensive evaluation of four anchor concepts (Spike, Pure Bloom, Adaptive Bloom, Rooted Hybrid), the **Rooted Hybrid** has been selected as the baseline design.
+
+The Rooted Hybrid combines:
+- An initial mechanical spike for immediate landing stability
+- Expanding anchor elements that engage the regolith progressively
+- A hardened basalt foundation sintered by the CMB-R1 robots around the base over the first operational days
+
+This approach provides immediate stability at landing while building toward permanent anchorage as construction proceeds. It is the most resilient of the four variants against unknown surface conditions at the specific landing site.
+
+Full specification: [`systems/pod/mast-anchor-rooted-hybrid.md`](mast-anchor-rooted-hybrid.md)
+
+---
+
+## Key Open Engineering Questions
+
+| Question | Why it matters |
+|---|---|
+| Mast deployment dynamics in lunar vacuum and 1/6 g | Thermal cycling stress on collet locks; dynamic loads during extension |
+| BSM pointing accuracy over 2+ km | Beam divergence limits vs. receiver panel area on robot |
+| CIGS film degradation rate | UV, particle radiation, micrometeorite flux over multi-year mission |
+| Mast structural resonance | Solar wind particle pressure and thermal expansion cycles |
+| Regolith bearing capacity at exact landing site | Determines anchor spike penetration depth and bloom engagement |
 
 ---
 
@@ -102,10 +111,6 @@ The AI selects the optimal BSM for each robot based on position. Lower BSMs serv
 
 | Document | Description |
 |---|---|
-| mast-solar-curtain.md | CIGS solar film — arms, deployment, power output |
-| mast-bsm-beam-sensor-module.md | BSM design and laser power delivery |
-| mast-anchor-spike.md | Anchor variant 1 |
-| mast-anchor-pure-bloom.md | Anchor variant 2 |
-| mast-anchor-adaptive-bloom.md | Anchor variant 3 |
-| mast-anchor-rooted-hybrid.md | Anchor variant 4 (preferred) |
-| power-budget.md | Full power budget analysis |
+| [`mast-solar-curtain.md`](mast-solar-curtain.md) | CIGS solar arm — power generation detail |
+| [`mast-bsm-beam-sensor-module.md`](mast-bsm-beam-sensor-module.md) | BSM — laser power delivery detail |
+| [`mast-anchor-rooted-hybrid.md`](mast-anchor-rooted-hybrid.md) | Anchor system — Rooted Hybrid (selected) |
