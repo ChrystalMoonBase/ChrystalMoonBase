@@ -1,0 +1,677 @@
+<svg width="841mm" height="1189mm" viewBox="0 0 1682 2378" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    text{font-family:'Courier New',Courier,monospace}
+    .title{font-size:52px;font-weight:700;fill:#c8e8ff;letter-spacing:6px}
+    .sub{font-size:16px;fill:#2a4a6a;letter-spacing:2px}
+    .lbl{font-size:14px;font-weight:700;fill:#ddeeff}
+    .small{font-size:11px;fill:#557799}
+    .tiny{font-size:9px;fill:#334455}
+    .warn{font-size:10px;fill:#ff7733}
+    .arm{font-size:13px;font-weight:700;fill:#cc66ff}
+    .spec{font-size:13px;fill:#4488aa}
+    .specval{font-size:13px;font-weight:700;fill:#88ccee}
+    .lgd{font-size:12px;fill:#6899b9}
+  </style>
+
+  <!-- Glow filters -->
+  <filter id="glow7" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow6" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowB" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowP" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <!-- Subtle hex grid pattern -->
+  <pattern id="hex" width="60" height="52" patternUnits="userSpaceOnUse">
+    <polygon points="15,0 45,0 60,26 45,52 15,52 0,26"
+             fill="none" stroke="#0c1a2a" stroke-width="0.8"/>
+  </pattern>
+
+  <!-- Circuit trace pattern -->
+  <pattern id="circuit" width="120" height="120" patternUnits="userSpaceOnUse">
+    <path d="M0,60 L40,60 L40,30 L80,30 L80,60 L120,60" fill="none" stroke="#091825" stroke-width="1.2"/>
+    <path d="M60,0 L60,40 L90,40 L90,80 L60,80 L60,120" fill="none" stroke="#091825" stroke-width="1.2"/>
+    <circle cx="40" cy="60" r="3" fill="#091825"/>
+    <circle cx="80" cy="30" r="3" fill="#091825"/>
+    <circle cx="90" cy="80" r="3" fill="#091825"/>
+  </pattern>
+
+  <!-- Radial glow for robot body -->
+  <radialGradient id="bodyGrad" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#1a3060" stop-opacity="0.9"/>
+    <stop offset="60%"  stop-color="#0d1a30" stop-opacity="0.95"/>
+    <stop offset="100%" stop-color="#060c18" stop-opacity="1"/>
+  </radialGradient>
+  <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"  stop-color="#2244aa" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#060c18" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- Arrow markers -->
+  <marker id="a7" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <polygon points="0,0 8,4 0,8" fill="#ff8c00" opacity="0.9"/>
+  </marker>
+  <marker id="a6" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <polygon points="0,0 8,4 0,8" fill="#00cc44" opacity="0.9"/>
+  </marker>
+  <marker id="ai" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <polygon points="0,0 8,4 0,8" fill="#aa33ff" opacity="0.9"/>
+  </marker>
+  <marker id="a5" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <polygon points="0,0 8,4 0,8" fill="#2288ff" opacity="0.9"/>
+  </marker>
+</defs>
+
+<!-- ── BACKGROUND ─────────────────────────────────────────────────── -->
+<rect width="1682" height="2378" fill="#04090f"/>
+<rect width="1682" height="2378" fill="url(#hex)"/>
+<rect width="1682" height="2378" fill="url(#circuit)" opacity="0.6"/>
+
+
+<!-- ambient glow -->
+<ellipse cx="841" cy="1020" rx="500" ry="450" fill="url(#centerGlow)"/>
+<ellipse cx="841" cy="1020" rx="300" ry="270" fill="#0a1830" opacity="0.4"/>
+
+
+<!-- ── HEADER ────────────────────────────────────────────────────── -->
+<rect x="0" y="0" width="1682" height="110" fill="#04090f"/>
+<rect x="0" y="108" width="1682" height="2" fill="#1a3560"/>
+<rect x="0" y="0" width="10" height="110" fill="#1a4080"/>
+<rect x="1672" y="0" width="10" height="110" fill="#1a4080"/>
+<text x="841" y="56" text-anchor="middle" class="title">CMB8LF v1</text>
+<text x="841" y="82" text-anchor="middle" class="sub">CHRYSTAL MOON BASE · 8-LEGGED FREAKS · SCALE 1:3.5 · GRAPHICAL SYSTEM OVERVIEW</text>
+<text x="841" y="100" text-anchor="middle" class="tiny" style="fill:#1e3a52;letter-spacing:3px">24 SERVOS · RASPBERRY PI 5 8GB · 2× PICO W · DUAL-USE ARMS · 2026 · CC0</text>
+
+
+<!-- ── POWER BUS RINGS around body ───────────────────────────────── -->
+<ellipse cx="841" cy="1020" rx="160" ry="210" fill="none" stroke="#ff8c00"
+         stroke-width="2.5" stroke-dasharray="12,8" opacity="0.4" filter="url(#glow7)"/>
+<ellipse cx="841" cy="1020" rx="155" ry="205" fill="none" stroke="#00cc44"
+         stroke-width="1.5" stroke-dasharray="8,12" opacity="0.3" filter="url(#glow6)"/>
+
+
+<!-- Leg 1 (ARM·L) -->
+<line x1="792.3" y1="857.7" x2="736.1" y2="718.7"
+      stroke="#ff8c00" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#glow7)"/>
+<line x1="792.3" y1="857.7" x2="736.1" y2="718.7"
+      stroke="#ffaa44" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+
+<line x1="736.1" y1="718.7" x2="707.1" y2="602.2"
+      stroke="#ff8c00" stroke-width="4.5" stroke-linecap="round" opacity="0.8" filter="url(#glow7)"/>
+<line x1="736.1" y1="718.7" x2="707.1" y2="602.2"
+      stroke="#ffaa44" stroke-width="1.5" opacity="0.5"/>
+
+
+<line x1="707.1" y1="602.2" x2="700.5" y2="507.5"
+      stroke="#00cc44" stroke-width="4" stroke-linecap="round" opacity="0.85" filter="url(#glow6)"/>
+<line x1="707.1" y1="602.2" x2="700.5" y2="507.5"
+      stroke="#44ff88" stroke-width="1.2" opacity="0.4"/>
+
+
+<polyline points="792.3,857.7 736.1,718.7 707.1,602.2 700.5,507.5" fill="none"
+          stroke="#22ddaa" stroke-width="1" stroke-dasharray="6,6" opacity="0.35"/>
+
+<circle cx="736.1" cy="718.7" r="8" fill="#ff8c00" opacity="0.9"/>
+<circle cx="736.1" cy="718.7" r="11" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="707.1" cy="602.2" r="6" fill="#ff8c00" opacity="0.9"/>
+<circle cx="707.1" cy="602.2" r="9" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="700.5" cy="507.5" r="5" fill="#00cc44" opacity="0.9"/>
+<circle cx="700.5" cy="507.5" r="8" fill="none" stroke="#00cc44" stroke-width="1" opacity="0.3"/>
+
+<circle cx="700.5" cy="507.5" r="14" fill="#1a0828" stroke="#cc66ff" stroke-width="2.5" filter="url(#glowP)"/>
+<circle cx="700.5" cy="507.5" r="7" fill="#cc66ff" opacity="0.7"/>
+<circle cx="700.5" cy="507.5" r="20" fill="none" stroke="#cc66ff" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+
+
+<text x="692.2" y="487.1" text-anchor="middle" class="lbl"
+      style="font-size:12px;fill:#cc66ff">1·ARM·L 🦾</text>
+<text x="692.2" y="501.1" text-anchor="middle" style="font-size:9px;fill:#335566">PCA-A Ch0/1/2</text>
+
+
+<!-- Leg 2 (ARM·R) -->
+<line x1="889.7" y1="857.7" x2="945.9" y2="718.7"
+      stroke="#ff8c00" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#glow7)"/>
+<line x1="889.7" y1="857.7" x2="945.9" y2="718.7"
+      stroke="#ffaa44" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+
+<line x1="945.9" y1="718.7" x2="1005.9" y2="614.7"
+      stroke="#ff8c00" stroke-width="4.5" stroke-linecap="round" opacity="0.8" filter="url(#glow7)"/>
+<line x1="945.9" y1="718.7" x2="1005.9" y2="614.7"
+      stroke="#ffaa44" stroke-width="1.5" opacity="0.5"/>
+
+
+<line x1="1005.9" y1="614.7" x2="1067.0" y2="542.0"
+      stroke="#00cc44" stroke-width="4" stroke-linecap="round" opacity="0.85" filter="url(#glow6)"/>
+<line x1="1005.9" y1="614.7" x2="1067.0" y2="542.0"
+      stroke="#44ff88" stroke-width="1.2" opacity="0.4"/>
+
+
+<polyline points="889.7,857.7 945.9,718.7 1005.9,614.7 1067.0,542.0" fill="none"
+          stroke="#22ddaa" stroke-width="1" stroke-dasharray="6,6" opacity="0.35"/>
+
+<circle cx="945.9" cy="718.7" r="8" fill="#ff8c00" opacity="0.9"/>
+<circle cx="945.9" cy="718.7" r="11" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="1005.9" cy="614.7" r="6" fill="#ff8c00" opacity="0.9"/>
+<circle cx="1005.9" cy="614.7" r="9" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="1067.0" cy="542.0" r="5" fill="#00cc44" opacity="0.9"/>
+<circle cx="1067.0" cy="542.0" r="8" fill="none" stroke="#00cc44" stroke-width="1" opacity="0.3"/>
+
+<circle cx="1067.0" cy="542.0" r="14" fill="#1a0828" stroke="#cc66ff" stroke-width="2.5" filter="url(#glowP)"/>
+<circle cx="1067.0" cy="542.0" r="7" fill="#cc66ff" opacity="0.7"/>
+<circle cx="1067.0" cy="542.0" r="20" fill="none" stroke="#cc66ff" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+
+
+<text x="1075.2" y="521.6" text-anchor="middle" class="lbl"
+      style="font-size:12px;fill:#cc66ff">2·ARM·R 🦾</text>
+<text x="1075.2" y="535.6" text-anchor="middle" style="font-size:9px;fill:#335566">PCA-A Ch3/4/5</text>
+
+
+<!-- Leg 3 (LEG·3) -->
+<line x1="721.3" y1="951.6" x2="583.3" y2="893.0"
+      stroke="#ff8c00" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#glow7)"/>
+<line x1="721.3" y1="951.6" x2="583.3" y2="893.0"
+      stroke="#ffaa44" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+
+<line x1="583.3" y1="893.0" x2="480.4" y2="831.2"
+      stroke="#ff8c00" stroke-width="4.5" stroke-linecap="round" opacity="0.8" filter="url(#glow7)"/>
+<line x1="583.3" y1="893.0" x2="480.4" y2="831.2"
+      stroke="#ffaa44" stroke-width="1.5" opacity="0.5"/>
+
+
+<line x1="480.4" y1="831.2" x2="408.7" y2="768.9"
+      stroke="#00cc44" stroke-width="4" stroke-linecap="round" opacity="0.85" filter="url(#glow6)"/>
+<line x1="480.4" y1="831.2" x2="408.7" y2="768.9"
+      stroke="#44ff88" stroke-width="1.2" opacity="0.4"/>
+
+
+<polyline points="721.3,951.6 583.3,893.0 480.4,831.2 408.7,768.9" fill="none"
+          stroke="#22ddaa" stroke-width="1" stroke-dasharray="6,6" opacity="0.35"/>
+
+<circle cx="583.3" cy="893.0" r="8" fill="#ff8c00" opacity="0.9"/>
+<circle cx="583.3" cy="893.0" r="11" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="480.4" cy="831.2" r="6" fill="#ff8c00" opacity="0.9"/>
+<circle cx="480.4" cy="831.2" r="9" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="408.7" cy="768.9" r="5" fill="#00cc44" opacity="0.9"/>
+<circle cx="408.7" cy="768.9" r="8" fill="none" stroke="#00cc44" stroke-width="1" opacity="0.3"/>
+
+<polygon points="408.7,759.9 414.7,768.9 408.7,777.9 402.7,768.9"
+         fill="#ff8c00" opacity="0.8"/>
+
+
+<text x="388.5" y="760.3" text-anchor="middle" class="lbl"
+      style="font-size:12px;fill:#88aac8">3·LEG·3</text>
+<text x="388.5" y="774.3" text-anchor="middle" style="font-size:9px;fill:#335566">PCA-A Ch6/7/8</text>
+
+
+<!-- Leg 4 (LEG·4) -->
+<line x1="960.7" y1="951.6" x2="1098.7" y2="893.0"
+      stroke="#ff8c00" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#glow7)"/>
+<line x1="960.7" y1="951.6" x2="1098.7" y2="893.0"
+      stroke="#ffaa44" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+
+<line x1="1098.7" y1="893.0" x2="1214.7" y2="862.0"
+      stroke="#ff8c00" stroke-width="4.5" stroke-linecap="round" opacity="0.8" filter="url(#glow7)"/>
+<line x1="1098.7" y1="893.0" x2="1214.7" y2="862.0"
+      stroke="#ffaa44" stroke-width="1.5" opacity="0.5"/>
+
+
+<line x1="1214.7" y1="862.0" x2="1309.3" y2="853.7"
+      stroke="#00cc44" stroke-width="4" stroke-linecap="round" opacity="0.85" filter="url(#glow6)"/>
+<line x1="1214.7" y1="862.0" x2="1309.3" y2="853.7"
+      stroke="#44ff88" stroke-width="1.2" opacity="0.4"/>
+
+
+<polyline points="960.7,951.6 1098.7,893.0 1214.7,862.0 1309.3,853.7" fill="none"
+          stroke="#22ddaa" stroke-width="1" stroke-dasharray="6,6" opacity="0.35"/>
+
+<circle cx="1098.7" cy="893.0" r="8" fill="#ff8c00" opacity="0.9"/>
+<circle cx="1098.7" cy="893.0" r="11" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="1214.7" cy="862.0" r="6" fill="#ff8c00" opacity="0.9"/>
+<circle cx="1214.7" cy="862.0" r="9" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="1309.3" cy="853.7" r="5" fill="#00cc44" opacity="0.9"/>
+<circle cx="1309.3" cy="853.7" r="8" fill="none" stroke="#00cc44" stroke-width="1" opacity="0.3"/>
+
+<polygon points="1309.3,844.7 1315.3,853.7 1309.3,862.7 1303.3,853.7"
+         fill="#ff8c00" opacity="0.8"/>
+
+
+<text x="1329.5" y="845.1" text-anchor="middle" class="lbl"
+      style="font-size:12px;fill:#88aac8">4·LEG·4</text>
+<text x="1329.5" y="859.1" text-anchor="middle" style="font-size:9px;fill:#335566">PCA-A Ch9/10/11</text>
+
+
+<!-- Leg 5 (LEG·5) -->
+<line x1="721.3" y1="1088.4" x2="583.3" y2="1147.0"
+      stroke="#ff8c00" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#glow7)"/>
+<line x1="721.3" y1="1088.4" x2="583.3" y2="1147.0"
+      stroke="#ffaa44" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+
+<line x1="583.3" y1="1147.0" x2="467.3" y2="1178.0"
+      stroke="#ff8c00" stroke-width="4.5" stroke-linecap="round" opacity="0.8" filter="url(#glow7)"/>
+<line x1="583.3" y1="1147.0" x2="467.3" y2="1178.0"
+      stroke="#ffaa44" stroke-width="1.5" opacity="0.5"/>
+
+
+<line x1="467.3" y1="1178.0" x2="372.7" y2="1186.3"
+      stroke="#00cc44" stroke-width="4" stroke-linecap="round" opacity="0.85" filter="url(#glow6)"/>
+<line x1="467.3" y1="1178.0" x2="372.7" y2="1186.3"
+      stroke="#44ff88" stroke-width="1.2" opacity="0.4"/>
+
+
+<polyline points="721.3,1088.4 583.3,1147.0 467.3,1178.0 372.7,1186.3" fill="none"
+          stroke="#22ddaa" stroke-width="1" stroke-dasharray="6,6" opacity="0.35"/>
+
+<circle cx="583.3" cy="1147.0" r="8" fill="#ff8c00" opacity="0.9"/>
+<circle cx="583.3" cy="1147.0" r="11" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="467.3" cy="1178.0" r="6" fill="#ff8c00" opacity="0.9"/>
+<circle cx="467.3" cy="1178.0" r="9" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="372.7" cy="1186.3" r="5" fill="#00cc44" opacity="0.9"/>
+<circle cx="372.7" cy="1186.3" r="8" fill="none" stroke="#00cc44" stroke-width="1" opacity="0.3"/>
+
+<polygon points="372.7,1177.3 378.7,1186.3 372.7,1195.3 366.7,1186.3"
+         fill="#ff8c00" opacity="0.8"/>
+
+
+<text x="352.5" y="1194.9" text-anchor="middle" class="lbl"
+      style="font-size:12px;fill:#88aac8">5·LEG·5</text>
+<text x="352.5" y="1208.9" text-anchor="middle" style="font-size:9px;fill:#335566">PCA-B Ch0/1/2</text>
+
+
+<!-- Leg 6 (LEG·6) -->
+<line x1="960.7" y1="1088.4" x2="1098.7" y2="1147.0"
+      stroke="#ff8c00" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#glow7)"/>
+<line x1="960.7" y1="1088.4" x2="1098.7" y2="1147.0"
+      stroke="#ffaa44" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+
+<line x1="1098.7" y1="1147.0" x2="1201.6" y2="1208.8"
+      stroke="#ff8c00" stroke-width="4.5" stroke-linecap="round" opacity="0.8" filter="url(#glow7)"/>
+<line x1="1098.7" y1="1147.0" x2="1201.6" y2="1208.8"
+      stroke="#ffaa44" stroke-width="1.5" opacity="0.5"/>
+
+
+<line x1="1201.6" y1="1208.8" x2="1273.3" y2="1271.1"
+      stroke="#00cc44" stroke-width="4" stroke-linecap="round" opacity="0.85" filter="url(#glow6)"/>
+<line x1="1201.6" y1="1208.8" x2="1273.3" y2="1271.1"
+      stroke="#44ff88" stroke-width="1.2" opacity="0.4"/>
+
+
+<polyline points="960.7,1088.4 1098.7,1147.0 1201.6,1208.8 1273.3,1271.1" fill="none"
+          stroke="#22ddaa" stroke-width="1" stroke-dasharray="6,6" opacity="0.35"/>
+
+<circle cx="1098.7" cy="1147.0" r="8" fill="#ff8c00" opacity="0.9"/>
+<circle cx="1098.7" cy="1147.0" r="11" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="1201.6" cy="1208.8" r="6" fill="#ff8c00" opacity="0.9"/>
+<circle cx="1201.6" cy="1208.8" r="9" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="1273.3" cy="1271.1" r="5" fill="#00cc44" opacity="0.9"/>
+<circle cx="1273.3" cy="1271.1" r="8" fill="none" stroke="#00cc44" stroke-width="1" opacity="0.3"/>
+
+<polygon points="1273.3,1262.1 1279.3,1271.1 1273.3,1280.1 1267.3,1271.1"
+         fill="#ff8c00" opacity="0.8"/>
+
+
+<text x="1293.5" y="1279.7" text-anchor="middle" class="lbl"
+      style="font-size:12px;fill:#88aac8">6·LEG·6</text>
+<text x="1293.5" y="1293.7" text-anchor="middle" style="font-size:9px;fill:#335566">PCA-B Ch3/4/5</text>
+
+
+<!-- Leg 7 (LEG·7) -->
+<line x1="772.1" y1="1168.4" x2="692.6" y2="1295.6"
+      stroke="#ff8c00" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#glow7)"/>
+<line x1="772.1" y1="1168.4" x2="692.6" y2="1295.6"
+      stroke="#ffaa44" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+
+<line x1="692.6" y1="1295.6" x2="615.5" y2="1387.5"
+      stroke="#ff8c00" stroke-width="4.5" stroke-linecap="round" opacity="0.8" filter="url(#glow7)"/>
+<line x1="692.6" y1="1295.6" x2="615.5" y2="1387.5"
+      stroke="#ffaa44" stroke-width="1.5" opacity="0.5"/>
+
+
+<line x1="615.5" y1="1387.5" x2="542.7" y2="1448.6"
+      stroke="#00cc44" stroke-width="4" stroke-linecap="round" opacity="0.85" filter="url(#glow6)"/>
+<line x1="615.5" y1="1387.5" x2="542.7" y2="1448.6"
+      stroke="#44ff88" stroke-width="1.2" opacity="0.4"/>
+
+
+<polyline points="772.1,1168.4 692.6,1295.6 615.5,1387.5 542.7,1448.6" fill="none"
+          stroke="#22ddaa" stroke-width="1" stroke-dasharray="6,6" opacity="0.35"/>
+
+<circle cx="692.6" cy="1295.6" r="8" fill="#ff8c00" opacity="0.9"/>
+<circle cx="692.6" cy="1295.6" r="11" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="615.5" cy="1387.5" r="6" fill="#ff8c00" opacity="0.9"/>
+<circle cx="615.5" cy="1387.5" r="9" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="542.7" cy="1448.6" r="5" fill="#00cc44" opacity="0.9"/>
+<circle cx="542.7" cy="1448.6" r="8" fill="none" stroke="#00cc44" stroke-width="1" opacity="0.3"/>
+
+<polygon points="542.7,1439.6 548.7,1448.6 542.7,1457.6 536.7,1448.6"
+         fill="#ff8c00" opacity="0.8"/>
+
+
+<text x="531.1" y="1467.3" text-anchor="middle" class="lbl"
+      style="font-size:12px;fill:#88aac8">7·LEG·7</text>
+<text x="531.1" y="1481.3" text-anchor="middle" style="font-size:9px;fill:#335566">PCA-B Ch6/7/8</text>
+
+
+<!-- Leg 8 (LEG·8) -->
+<line x1="909.9" y1="1168.4" x2="989.4" y2="1295.6"
+      stroke="#ff8c00" stroke-width="6" stroke-linecap="round" opacity="0.9" filter="url(#glow7)"/>
+<line x1="909.9" y1="1168.4" x2="989.4" y2="1295.6"
+      stroke="#ffaa44" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+
+<line x1="989.4" y1="1295.6" x2="1038.2" y2="1405.2"
+      stroke="#ff8c00" stroke-width="4.5" stroke-linecap="round" opacity="0.8" filter="url(#glow7)"/>
+<line x1="989.4" y1="1295.6" x2="1038.2" y2="1405.2"
+      stroke="#ffaa44" stroke-width="1.5" opacity="0.5"/>
+
+
+<line x1="1038.2" y1="1405.2" x2="1061.2" y2="1497.4"
+      stroke="#00cc44" stroke-width="4" stroke-linecap="round" opacity="0.85" filter="url(#glow6)"/>
+<line x1="1038.2" y1="1405.2" x2="1061.2" y2="1497.4"
+      stroke="#44ff88" stroke-width="1.2" opacity="0.4"/>
+
+
+<polyline points="909.9,1168.4 989.4,1295.6 1038.2,1405.2 1061.2,1497.4" fill="none"
+          stroke="#22ddaa" stroke-width="1" stroke-dasharray="6,6" opacity="0.35"/>
+
+<circle cx="989.4" cy="1295.6" r="8" fill="#ff8c00" opacity="0.9"/>
+<circle cx="989.4" cy="1295.6" r="11" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="1038.2" cy="1405.2" r="6" fill="#ff8c00" opacity="0.9"/>
+<circle cx="1038.2" cy="1405.2" r="9" fill="none" stroke="#ff8c00" stroke-width="1" opacity="0.3"/>
+<circle cx="1061.2" cy="1497.4" r="5" fill="#00cc44" opacity="0.9"/>
+<circle cx="1061.2" cy="1497.4" r="8" fill="none" stroke="#00cc44" stroke-width="1" opacity="0.3"/>
+
+<polygon points="1061.2,1488.4 1067.2,1497.4 1061.2,1506.4 1055.2,1497.4"
+         fill="#ff8c00" opacity="0.8"/>
+
+
+<text x="1072.8" y="1516.1" text-anchor="middle" class="lbl"
+      style="font-size:12px;fill:#88aac8">8·LEG·8</text>
+<text x="1072.8" y="1530.1" text-anchor="middle" style="font-size:9px;fill:#335566">PCA-B Ch9/10/11</text>
+
+
+<!-- ── ROBOT BODY ────────────────────────────────────────────────── -->
+<polygon points="791.3,858.3 890.7,858.3 961.1,953.0 961.1,1087.0 890.7,1181.7 791.3,1181.7 720.9,1087.0 720.9,953.0" fill="url(#bodyGrad)" stroke="#2244aa"
+         stroke-width="3" filter="url(#glowB)"/>
+<polygon points="806.6,909.1 875.4,909.1 924.1,974.1 924.1,1065.9 875.4,1130.9 806.6,1130.9 757.9,1065.9 757.9,974.1" fill="none" stroke="#1a3060" stroke-width="1.5" opacity="0.6"/>
+<!-- body center cross -->
+<line x1="801" y1="1020" x2="881" y2="1020" stroke="#1a3060" stroke-width="1" opacity="0.5"/>
+<line x1="841" y1="965" x2="841" y2="1075" stroke="#1a3060" stroke-width="1" opacity="0.5"/>
+
+
+<!-- Internal component positions -->
+<!-- Pi5 label inside body (top) -->
+<rect x="781" y="905" width="120" height="36" rx="4" fill="#080f1c" stroke="#1e3878" stroke-width="1.5"/>
+<text x="841" y="920" text-anchor="middle" style="font-size:10px;font-weight:700;fill:#88bbff">RASPBERRY Pi 5</text>
+<text x="841" y="934" text-anchor="middle" style="font-size:8px;fill:#3a5878">8GB RAM · OS · ROS2</text>
+
+<!-- Pico W labels -->
+<rect x="736" y="982" width="78" height="28" rx="3" fill="#070e14" stroke="#1a4060" stroke-width="1"/>
+<text x="775" y="995" text-anchor="middle" style="font-size:8px;font-weight:700;fill:#44ddaa">PICO W #1</text>
+<text x="775" y="1006" text-anchor="middle" style="font-size:7px;fill:#336655">SERVO CTRL</text>
+
+<rect x="868" y="982" width="78" height="28" rx="3" fill="#070e14" stroke="#1a3060" stroke-width="1"/>
+<text x="907" y="995" text-anchor="middle" style="font-size:8px;font-weight:700;fill:#44aaff">PICO W #2</text>
+<text x="907" y="1006" text-anchor="middle" style="font-size:7px;fill:#334466">MONITORING</text>
+
+<!-- PCA9685 labels -->
+<rect x="733" y="1030" width="82" height="26" rx="3" fill="#070e0a" stroke="#1a4030" stroke-width="1"/>
+<text x="774" y="1042" text-anchor="middle" style="font-size:8px;font-weight:700;fill:#33ee99">PCA9685-A</text>
+<text x="774" y="1052" text-anchor="middle" style="font-size:7px;fill:#224433">0x40 · Legs 1–4</text>
+
+<rect x="867" y="1030" width="82" height="26" rx="3" fill="#070e0a" stroke="#1a4030" stroke-width="1"/>
+<text x="908" y="1042" text-anchor="middle" style="font-size:8px;font-weight:700;fill:#33ee99">PCA9685-B</text>
+<text x="908" y="1052" text-anchor="middle" style="font-size:7px;fill:#224433">0x41 · Legs 5–8</text>
+
+<!-- Battery indicator bottom of body -->
+<rect x="791" y="1080" width="100" height="40" rx="4" fill="#120810" stroke="#701808" stroke-width="1.5"/>
+<text x="841" y="1095" text-anchor="middle" style="font-size:8px;font-weight:700;fill:#ff7744">⚡ 2× LiPo 3S</text>
+<text x="841" y="1107" text-anchor="middle" style="font-size:7px;fill:#884422">5000mAh · 11.1V · 10Ah</text>
+<text x="841" y="1118" text-anchor="middle" style="font-size:7px;fill:#663311">~45 min runtime</text>
+
+<!-- Center dot -->
+<circle cx="841" cy="1020" r="5" fill="#2244aa" opacity="0.9"/>
+<circle cx="841" cy="1020" r="12" fill="none" stroke="#2244aa" stroke-width="1" opacity="0.4"/>
+
+
+<!-- ── HEAD SENSORS ──────────────────────────────────────────────── -->
+<!-- LIDAR sweep arc -->
+<path d="M 661,610 A 180,180 0 0,1 1021,610"
+      fill="#001510" stroke="#22ddaa" stroke-width="1" opacity="0.3"/>
+<path d="M 721,605 A 120,120 0 0,1 961,605"
+      fill="none" stroke="#22ddaa" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+<path d="M 781,600 A 60,60 0 0,1 901,600"
+      fill="none" stroke="#22ddaa" stroke-width="0.6" stroke-dasharray="3,5" opacity="0.4"/>
+<!-- LIDAR sweep lines -->
+<line x1="841" y1="590" x2="661" y2="610" stroke="#22ddaa" stroke-width="0.8" opacity="0.25"/>
+<line x1="841" y1="590" x2="1021" y2="610" stroke="#22ddaa" stroke-width="0.8" opacity="0.25"/>
+
+<!-- Head sensor block -->
+<rect x="641" y="535" width="400" height="90" rx="6" fill="#080e1c" stroke="#1a3860" stroke-width="2"/>
+<rect x="641" y="535" width="400" height="6" rx="2" fill="#1a3860"/>
+<text x="841" y="556" text-anchor="middle" class="lbl" style="fill:#88ccff">◉ HEAD SENSOR SUITE</text>
+<text x="841" y="572" text-anchor="middle" class="small">RPLIDAR A1M8 · BNO055 IMU · VL53L1X ×2 · Pi Camera Module 3</text>
+<text x="841" y="586" text-anchor="middle" style="font-size:9px;fill:#224455">UART0 · I2C1 (0x28, 0x29, 0x2A) · CSI-2 CAM0</text>
+<text x="841" y="602" text-anchor="middle" style="font-size:9px;fill:#1a3850">360° LIDAR 12m · 9-DOF IMU · Dual ToF 4m · 12MP HDR Camera</text>
+
+<!-- Connection line: head to body -->
+<line x1="841" y1="625" x2="841" y2="845"
+      stroke="#aa33ff" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.5" marker-end="url(#ai)"/>
+<text x="849" y="670" class="tiny" style="fill:#552299">I2C1 + UART0</text>
+
+
+<!-- ── POWER SYSTEM (left) ───────────────────────────────────────── -->
+<rect x="10" y="900" width="190" height="300" rx="6"
+      fill="#100810" stroke="#701808" stroke-width="2"/>
+<rect x="10" y="900" width="190" height="6" rx="2" fill="#701808"/>
+<text x="105" y="922" text-anchor="middle" class="lbl" style="fill:#ff7744">⚡ POWER</text>
+<text x="105" y="938" text-anchor="middle" class="small">2× LiPo 3S 5Ah</text>
+<text x="105" y="953" text-anchor="middle" class="small">2× BMS 40A</text>
+<text x="105" y="970" text-anchor="middle" style="font-size:9px;fill:#884422">E-Stop → relay → bucks</text>
+
+<rect x="20" y="982" width="170" height="20" rx="2" fill="#0d0808" stroke="#701808" stroke-width="0.8"/>
+<rect x="20" y="982" width="10" height="20" fill="#ff3333" rx="1"/>
+<text x="110" y="996" style="font-size:8px;fill:#ff6655">11.1V RAW → bucks</text>
+
+<rect x="20" y="1008" width="170" height="20" rx="2" fill="#0d0d08" stroke="#604010" stroke-width="0.8"/>
+<rect x="20" y="1008" width="10" height="20" fill="#ff8c00" rx="1"/>
+<text x="110" y="1022" style="font-size:8px;fill:#ff9944">7.4V/20A ×4 → HIP+UPPER</text>
+
+<rect x="20" y="1034" width="170" height="20" rx="2" fill="#080d08" stroke="#104010" stroke-width="0.8"/>
+<rect x="20" y="1034" width="10" height="20" fill="#00cc44" rx="1"/>
+<text x="110" y="1048" style="font-size:8px;fill:#44dd88">6.0V/10A ×2 → LOWER</text>
+
+<rect x="20" y="1060" width="170" height="20" rx="2" fill="#08080d" stroke="#102040" stroke-width="0.8"/>
+<rect x="20" y="1060" width="10" height="20" fill="#2288ff" rx="1"/>
+<text x="110" y="1074" style="font-size:8px;fill:#66aaff">5.0V/10A ×1 → Logic</text>
+
+<text x="105" y="1100" text-anchor="middle" style="font-size:9px;fill:#884422">PTC/ATC fused · star GND</text>
+<text x="105" y="1115" text-anchor="middle" class="warn">≈87W avg · 45 min run</text>
+<text x="105" y="1135" text-anchor="middle" class="warn">ARM mode: ≈74W (6-pod)</text>
+<text x="105" y="1155" text-anchor="middle" style="font-size:8px;fill:#552211">INA226 ×4 current mon.</text>
+<text x="105" y="1170" text-anchor="middle" style="font-size:8px;fill:#552211">TMP117 ×2 temp alerts</text>
+
+<!-- Power lines to robot -->
+<line x1="200" y1="1022" x2="666" y2="1020"
+      stroke="#ff8c00" stroke-width="3" opacity="0.6" filter="url(#glow7)" marker-end="url(#a7)"/>
+<line x1="200" y1="1048" x2="669" y2="1040"
+      stroke="#00cc44" stroke-width="2.5" opacity="0.5" filter="url(#glow6)" marker-end="url(#a6)"/>
+<line x1="200" y1="1074" x2="671" y2="940"
+      stroke="#2288ff" stroke-width="2" opacity="0.5" marker-end="url(#a5)"/>
+
+
+<!-- ── MONITORING BUS (right) ────────────────────────────────────── -->
+<rect x="1492" y="940" width="190" height="240" rx="6"
+      fill="#08081a" stroke="#2a1060" stroke-width="2"/>
+<rect x="1492" y="940" width="190" height="6" rx="2" fill="#2a1060"/>
+<text x="1587" y="962" text-anchor="middle" class="lbl" style="fill:#aa55ff">I2C MONITORING</text>
+<text x="1587" y="978" text-anchor="middle" class="small">Pico W #2 · I2C1</text>
+
+<text x="1587" y="1000" text-anchor="middle" style="font-size:9px;fill:#cc66ff">INA226 #1 · 0x44</text>
+<text x="1587" y="1013" text-anchor="middle" class="tiny">7.4V Side-A · 0–20A</text>
+<text x="1587" y="1030" text-anchor="middle" style="font-size:9px;fill:#cc66ff">INA226 #2 · 0x45</text>
+<text x="1587" y="1043" text-anchor="middle" class="tiny">7.4V Side-B · 0–20A</text>
+<text x="1587" y="1060" text-anchor="middle" style="font-size:9px;fill:#cc66ff">INA226 #3 · 0x46</text>
+<text x="1587" y="1073" text-anchor="middle" class="tiny">6.0V bus · 0–15A</text>
+<text x="1587" y="1090" text-anchor="middle" style="font-size:9px;fill:#cc66ff">INA226 #4 · 0x47  // 5V logic rail</text>
+<text x="1587" y="1103" text-anchor="middle" class="tiny">5.0V logic rail</text>
+<text x="1587" y="1123" text-anchor="middle" style="font-size:9px;fill:#cc66ff">TMP117 ×2 · 0x48/0x49</text>
+<text x="1587" y="1136" text-anchor="middle" class="tiny">±0.1°C · alert 70°C/45°C</text>
+<text x="1587" y="1160" text-anchor="middle" class="warn">ARM: verify &lt;5A/leg</text>
+<text x="1587" y="1175" text-anchor="middle" class="warn">before arm deploy!</text>
+
+<!-- I2C line to robot -->
+<line x1="1492" y1="1060" x2="1016" y2="1020"
+      stroke="#aa33ff" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.5" marker-end="url(#ai)"/>
+
+
+<!-- ── ARM MODE CALLOUT ───────────────────────────────────────────── -->
+<rect x="310" y="340" width="200" height="88" rx="6"
+      fill="#0a0818" stroke="#cc66ff" stroke-width="2" filter="url(#glowP)"/>
+<text x="410" y="360" text-anchor="middle" class="arm">🦾 ARM MODE</text>
+<text x="410" y="376" text-anchor="middle" style="font-size:10px;fill:#aa55cc">Legs 1+2 → manipulators</text>
+<text x="410" y="391" text-anchor="middle" style="font-size:9px;fill:#7733aa">Gripper: PCA-A Ch12+13</text>
+<text x="410" y="406" text-anchor="middle" style="font-size:9px;fill:#7733aa">Robot walks on Legs 3–8</text>
+<text x="410" y="420" text-anchor="middle" style="font-size:8px;fill:#551188">Quick-release ≥15A · ≥20N</text>
+
+<!-- Docking symbol between arms -->
+<circle cx="841" cy="730" r="18" fill="none" stroke="#cc66ff" stroke-width="1.5"
+        stroke-dasharray="5,3" opacity="0.6"/>
+<text x="841" y="734" text-anchor="middle" style="font-size:9px;fill:#aa44ff">DOCK</text>
+
+
+<!-- ── LIGHTING ──────────────────────────────────────────────────── -->
+<rect x="1200" y="350" width="200" height="80" rx="6"
+      fill="#0a0a08" stroke="#ffcc44" stroke-width="1.5"/>
+<text x="1300" y="370" text-anchor="middle" class="lbl" style="fill:#ffcc44">◈ LIGHTING</text>
+<text x="1300" y="386" text-anchor="middle" class="small">WS2812B · 5V · Pico GP14</text>
+<text x="1300" y="401" text-anchor="middle" class="small">3W LED · GP20 MOSFET</text>
+<text x="1300" y="416" text-anchor="middle" class="small">10W Spot · GP21 · heatsink</text>
+
+
+<!-- ── SPEC PANEL ───────────────────────────────────────────────── -->
+<rect x="18" y="1620" width="780" height="310" rx="6" fill="#060c18" stroke="#1a3050" stroke-width="1.5"/>
+<rect x="18" y="1620" width="780" height="6" rx="2" fill="#1a3050"/>
+<text x="408" y="1644" text-anchor="middle" class="lbl" style="fill:#88bbff">SERVO SPECIFICATION</text>
+
+<!-- Column headers -->
+<text x="50"  y="1668" class="tiny" style="fill:#1a3a5a">JOINT</text>
+<text x="200" y="1668" class="tiny" style="fill:#1a3a5a">MODEL</text>
+<text x="380" y="1668" class="tiny" style="fill:#1a3a5a">TORQUE</text>
+<text x="510" y="1668" class="tiny" style="fill:#1a3a5a">VOLTAGE</text>
+<text x="620" y="1668" class="tiny" style="fill:#1a3a5a">STALL</text>
+<line x1="36" y1="1672" x2="780" y2="1672" stroke="#1a3050" stroke-width="0.8"/>
+
+<text x="50"  y="1690" class="spec">HIP (×8)</text>
+<text x="200" y="1690" class="specval">DS3240</text>
+<text x="380" y="1690" class="specval">35 kg·cm</text>
+<text x="510" y="1690" class="specval" style="fill:#ff9933">7.4V</text>
+<text x="620" y="1690" class="spec">3.5A</text>
+
+<text x="50"  y="1712" class="spec">UPPER (×8)</text>
+<text x="200" y="1712" class="specval">DS3225</text>
+<text x="380" y="1712" class="specval">25 kg·cm</text>
+<text x="510" y="1712" class="specval" style="fill:#ff9933">7.4V ✓</text>
+<text x="620" y="1712" class="spec">2.5A</text>
+
+<text x="50"  y="1734" class="spec">LOWER (×8)</text>
+<text x="200" y="1734" class="specval">DS3218</text>
+<text x="380" y="1734" class="specval">20 kg·cm</text>
+<text x="510" y="1734" class="specval" style="fill:#44dd88">6.0V</text>
+<text x="620" y="1734" class="spec">2.0A</text>
+
+<text x="50"  y="1756" class="spec" style="fill:#cc66ff">GRIPPER (×2)</text>
+<text x="200" y="1756" class="specval" style="fill:#cc66ff">DS3225/MG996R</text>
+<text x="380" y="1756" class="specval" style="fill:#cc66ff">25 kg·cm</text>
+<text x="510" y="1756" class="specval" style="fill:#ff9933">7.4V</text>
+<text x="620" y="1756" class="spec" style="fill:#cc66ff">Ch 12/13</text>
+<line x1="36" y1="1760" x2="780" y2="1760" stroke="#1a3050" stroke-width="0.8"/>
+
+<text x="50"  y="1780" class="spec" style="fill:#ffcc44">TOTAL</text>
+<text x="200" y="1780" class="specval" style="fill:#ffcc44">26 servos</text>
+<text x="380" y="1780" class="specval" style="fill:#ffcc44">24 + 2 grip</text>
+<text x="510" y="1780" class="specval" style="fill:#ffcc44">50Hz PWM</text>
+<text x="620" y="1780" class="spec" style="fill:#ffcc44">~87W avg</text>
+
+<line x1="36" y1="1795" x2="780" y2="1795" stroke="#1a3050" stroke-width="0.5"/>
+
+<!-- I2C address map -->
+<text x="408" y="1818" text-anchor="middle" class="lbl" style="fill:#aa55ff;font-size:11px">I2C ADDRESS MAP</text>
+<text x="50"  y="1838" class="tiny">Pi5 I2C1:</text>
+<text x="150" y="1838" style="font-size:10px;fill:#cc66ff">0x28 BNO055  0x29 VL53L1X-1  0x2A VL53L1X-2</text>
+<text x="50"  y="1856" class="tiny">Pico#1 I2C0:</text>
+<text x="150" y="1856" style="font-size:10px;fill:#33ee99">0x40 PCA9685-A  0x41 PCA9685-B</text>
+<text x="50"  y="1874" class="tiny">Pico#2 I2C1:</text>
+<text x="150" y="1874" style="font-size:10px;fill:#cc66ff">0x44 INA226-A  0x45 INA226-B  0x46 INA226-6V  0x47 INA226-5V  0x48/49 TMP117</text>
+
+<line x1="36" y1="1886" x2="780" y2="1886" stroke="#1a3050" stroke-width="0.5"/>
+<text x="50"  y="1903" class="warn">⚠  PCA9685 V+ pin: UNCONNECTED  ·  DS3218 MAX 6.8V  ·  Star-point GND only</text>
+<text x="50"  y="1920" class="warn">⚠  ARM MODE: tripod stance lock before deploy  ·  Quick-release ≥15A/pin ≥20N pull</text>
+
+
+<!-- ── LEGEND ───────────────────────────────────────────────────── -->
+<rect x="818" y="1620" width="846" height="310" rx="6" fill="#060c18" stroke="#1a3050" stroke-width="1.5"/>
+<rect x="818" y="1620" width="846" height="6" rx="2" fill="#1a3050"/>
+<text x="1241" y="1644" text-anchor="middle" class="lbl" style="fill:#88bbff">WIRING LEGEND</text>
+
+<!-- Line type examples -->
+<line x1="840" y1="1668" x2="920" y2="1668" stroke="#ff3333" stroke-width="4" filter="url(#glow7)"/>
+<text x="930" y="1672" class="lgd">11.1V — Raw LiPo → buck inputs · 18AWG</text>
+
+<line x1="840" y1="1692" x2="920" y2="1692" stroke="#ff8c00" stroke-width="5" filter="url(#glow7)"/>
+<text x="930" y="1696" class="lgd">7.4V — DS3240 HIP + DS3225 UPPER · 18AWG orange</text>
+
+<line x1="840" y1="1716" x2="920" y2="1716" stroke="#00cc44" stroke-width="4" filter="url(#glow6)"/>
+<text x="930" y="1720" class="lgd">6.0V — DS3218 LOWER ONLY · max 6.8V · 18AWG green</text>
+
+<line x1="840" y1="1740" x2="920" y2="1740" stroke="#2288ff" stroke-width="3"/>
+<text x="930" y="1744" class="lgd">5.0V — Logic, Pi5, sensors · 22AWG blue</text>
+
+<line x1="840" y1="1764" x2="920" y2="1764" stroke="#aa33ff" stroke-width="2" stroke-dasharray="8,4" filter="url(#glowP)"/>
+<text x="930" y="1768" class="lgd">I2C Bus — SDA/SCL · 4.7kΩ pull-up · ferrite · &lt;15cm</text>
+
+<line x1="840" y1="1788" x2="920" y2="1788" stroke="#22ddaa" stroke-width="1.5" stroke-dasharray="6,6"/>
+<text x="930" y="1792" class="lgd">PWM Signal — PCA9685 to servo signal · 22AWG · 50Hz</text>
+
+<circle cx="880" cy="1812" r="12" fill="#1a0828" stroke="#cc66ff" stroke-width="2.5" filter="url(#glowP)"/>
+<circle cx="880" cy="1812" r="6" fill="#cc66ff" opacity="0.7"/>
+<text x="930" y="1816" class="lgd" style="fill:#cc66ff">ARM END-EFFECTOR — Gripper · quick-release · Leg 1+2</text>
+
+<polygon points="880,1827 886,1836 880,1845 874,1836" fill="#ff8c00" opacity="0.8"/>
+<text x="930" y="1840" class="lgd">FOOT — Standard walking end-effector · Legs 3–8</text>
+
+<line x1="840" y1="1862" x2="920" y2="1862" stroke="#44bb88" stroke-width="1.5" stroke-dasharray="10,4"/>
+<text x="930" y="1866" class="lgd">USB-CDC — Pico W ↔ Pi5 · 12Mbps full-speed</text>
+
+<line x1="840" y1="1886" x2="920" y2="1886" stroke="#ccaa00" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="930" y="1890" class="lgd">UART — RPLIDAR A1M8 · GPIO14/15 · 115200 baud</text>
+
+<line x1="840" y1="1910" x2="920" y2="1910" stroke="#ff8c00" stroke-width="3" stroke-dasharray="12,6" opacity="0.4" filter="url(#glow7)"/>
+<text x="930" y="1914" class="lgd">7.4V POWER BUS RING — around body perimeter</text>
+
+
+<!-- ── FOOTER ───────────────────────────────────────────────────── -->
+<line x1="0" y1="1950" x2="1682" y2="1950" stroke="#1a3060" stroke-width="1.5"/>
+<rect x="0" y="1950" width="1682" height="35" fill="#04090f"/>
+<rect x="0" y="1950" width="10" height="35" fill="#1a4080"/>
+<text x="841" y="1966" text-anchor="middle" style="font-size:9px;font-family:Courier New;fill:#1e3a5a;letter-spacing:2px">CMB8LF v1 · CHRYSTAL MOON BASE 8-LEGGED FREAKS · GRAPHICAL SYSTEM OVERVIEW · A0 · CC0 2026</text>
+<text x="841" y="1980" text-anchor="middle" style="font-size:8px;font-family:Courier New;fill:#0e2030">Verify all voltages before power-up · Star-point GND · E-Stop test mandatory · See technical diagram for full BOM and checklist</text>
+
+</svg>

@@ -1,0 +1,753 @@
+<svg width="841mm" height="1189mm" viewBox="0 0 1682 2378" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    text{font-family:'Courier New',Courier,monospace}
+    .h1{font-size:30px;font-weight:700;fill:#b8d8ff;letter-spacing:4px}
+    .h2{font-size:12px;fill:#3a5878}
+    .sh{font-size:9px;fill:#1e3a52;letter-spacing:4px}
+    .bl{font-size:11px;font-weight:700;fill:#cce8ff}
+    .bm{font-size:9px;fill:#6898b8}
+    .bs{font-size:8px;fill:#3a6080}
+    .bw{font-size:8px;fill:#dd7744}
+    .lh{font-size:11px;font-weight:700;fill:#ddeeff}
+    .ls{font-size:8px;fill:#557799}
+    .lt{font-size:7px;fill:#2a5070}
+    .sv{font-size:8px;fill:#6a9ab8}
+    .svw{font-size:8px;font-weight:700;fill:#aacce0}
+    .lgd{font-size:9px;fill:#6898b8}
+  </style>
+  <pattern id="g1" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40,0L0,0L0,40" fill="none" stroke="#0b1726" stroke-width="0.6"/>
+  </pattern>
+  <pattern id="g2" width="200" height="200" patternUnits="userSpaceOnUse">
+    <path d="M200,0L0,0L0,200" fill="none" stroke="#0d1e32" stroke-width="1.2"/>
+  </pattern>
+  <marker id="m7" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#ff8c00"/></marker>
+  <marker id="m6" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#00cc44"/></marker>
+  <marker id="m5" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#2288ff"/></marker>
+  <marker id="mi" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#aa33ff"/></marker>
+  <marker id="mu" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#ccaa00"/></marker>
+  <marker id="mp" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#22ddaa"/></marker>
+  <marker id="ms" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#44bb88"/></marker>
+</defs>
+
+<!-- BACKGROUND -->
+<rect width="1682" height="2378" fill="#050c18"/>
+<rect width="1682" height="2378" fill="url(#g2)"/>
+<rect width="1682" height="2378" fill="url(#g1)"/>
+
+<!-- HEADER -->
+<rect x="0" y="0" width="1682" height="88" fill="#070e1e"/>
+<rect x="0" y="0" width="8" height="88" fill="#1a4080"/>
+<rect x="0" y="86" width="1682" height="2" fill="#1a3560"/>
+<text x="841" y="43" text-anchor="middle" class="h1">CMB8LF v1 — COMPLETE WIRING DIAGRAM</text>
+<text x="841" y="67" text-anchor="middle" class="h2">Chrystal Moon Base · 8-Legged Freaks · Scale 1:3.5 · 24 Servos · VACUUM-RATED · PC Space Grade · DS3240/DS3225/DS3218 · Raspberry Pi 5 8GB + 2× Pico W · CC0 2026</text>
+
+<!-- SECTION A -->
+<text x="28" y="104" class="sh">A — BRAIN, SENSORS &amp; CONTROL SYSTEM</text>
+<line x1="18" y1="109" x2="1664" y2="109" stroke="#0d1e32" stroke-width="1"/>
+
+<!-- POWER SYSTEM -->
+<rect x="18" y="116" width="234" height="714" fill="#100810" stroke="#701808" stroke-width="2" rx="4"/>
+<rect x="18" y="116" width="234" height="6" fill="#701808" rx="2"/>
+<text x="135" y="140" text-anchor="middle" class="bl" style="fill:#ff7744">⚡ POWER SYSTEM</text>
+<line x1="28" y1="147" x2="242" y2="147" stroke="#501206" stroke-width="0.8"/>
+<text x="135" y="162" text-anchor="middle" class="bm" style="fill:#ff8855">BATTERIES</text>
+<text x="30" y="177" class="bs">Pack 1: LiPo 3S · 5000mAh · 18.5Wh</text>
+<text x="30" y="190" class="bs">Pack 2: LiPo 3S · 5000mAh · 18.5Wh</text>
+<text x="30" y="203" class="bs">Voltage: 9.0–12.6V (nom. 11.1V)</text>
+<text x="30" y="216" class="bw">Anti-spark XT60 both packs</text>
+<text x="30" y="229" class="bs">2× BMS 40A (over-current+balance)</text>
+<line x1="28" y1="239" x2="242" y2="239" stroke="#401010" stroke-width="0.5"/>
+<text x="135" y="253" text-anchor="middle" class="bm" style="fill:#ff8855">E-STOP</text>
+<text x="30" y="268" class="bs">NC mushroom button (red)</text>
+<text x="30" y="281" class="bs">30A relay — battery+ → relay → buck inputs</text>
+<text x="30" y="294" class="bw">Pico W #1 GP15: relay monitor</text>
+<text x="30" y="307" class="bw">Pico W #1 GP16: relay trigger</text>
+<line x1="28" y1="317" x2="242" y2="317" stroke="#401010" stroke-width="0.5"/>
+<text x="135" y="331" text-anchor="middle" class="bm" style="fill:#ff8855">BUCK CONVERTERS</text>
+<rect x="30" y="339" width="10" height="10" fill="#ff3333" rx="1"/>
+<text x="46" y="348" class="bs" style="fill:#ff6666">11.1V RAW → buck inputs</text>
+<rect x="30" y="357" width="10" height="10" fill="#ff8c00" rx="1"/>
+<text x="46" y="366" class="bs" style="fill:#ffaa55">7.4V/20A × 4 (XL4016)</text>
+<text x="46" y="378" class="bs">  Side-A: 2× → Legs 1–4</text>
+<text x="46" y="390" class="bs">  Side-B: 2× → Legs 5–8</text>
+<rect x="30" y="400" width="10" height="10" fill="#00cc44" rx="1"/>
+<text x="46" y="409" class="bs" style="fill:#44dd88">6.0V/10A × 2 (XL4016)</text>
+<text x="46" y="421" class="bs">  8–9A cont · DS3218 only</text>
+<rect x="30" y="431" width="10" height="10" fill="#2288ff" rx="1"/>
+<text x="46" y="440" class="bs" style="fill:#66aaff">5.0V/10A × 1 → Pi5+logic</text>
+<line x1="28" y1="450" x2="242" y2="450" stroke="#401010" stroke-width="0.5"/>
+<text x="135" y="464" text-anchor="middle" class="bm" style="fill:#ff8855">FUSING</text>
+<text x="30" y="479" class="bs">ATC 50A: battery main leads</text>
+<text x="30" y="492" class="bs">PTC 30A: after each 7.4V buck · before servo rail</text>
+<text x="30" y="505" class="bs">PTC 15A: after each 6.0V buck · before servo rail</text>
+<text x="30" y="518" class="bs">PTC 15A: 5.0V output</text>
+<line x1="28" y1="528" x2="242" y2="528" stroke="#401010" stroke-width="0.5"/>
+<text x="135" y="542" text-anchor="middle" class="bm" style="fill:#ff8855">GROUNDING</text>
+<text x="30" y="557" class="bs">Single star-point (this block)</text>
+<text x="30" y="570" class="bs">Power: 18AWG silicone</text>
+<text x="30" y="583" class="bs">Signal/I2C: 22AWG shielded</text>
+<text x="30" y="596" class="bw">ALL buck GNDs → star-point</text>
+<line x1="28" y1="606" x2="242" y2="606" stroke="#401010" stroke-width="0.5"/>
+<text x="135" y="620" text-anchor="middle" class="bm" style="fill:#ff8855">RUNTIME</text>
+<text x="30" y="635" class="bs">Total: 2×5Ah = 10Ah @ 11.1V</text>
+<text x="30" y="648" class="bs">Avg draw ~14A → ~45 min</text>
+<text x="30" y="661" class="bw">Cut-off: 9.0V (3.0V/cell)</text>
+<text x="30" y="674" class="bw">NEVER parallel packs directly</text>
+<text x="30" y="687" class="bw">Balance-charge separately</text>
+<text x="30" y="700" class="bs">Max charge: 1C = 5A/pack</text>
+<!-- Rail taps right edge -->
+<line x1="252" y1="363" x2="268" y2="363" stroke="#ff3333" stroke-width="3"/>
+<line x1="252" y1="377" x2="268" y2="377" stroke="#ff8c00" stroke-width="3"/>
+<line x1="252" y1="407" x2="268" y2="407" stroke="#00cc44" stroke-width="2.5"/>
+<line x1="252" y1="437" x2="268" y2="437" stroke="#2288ff" stroke-width="2.5"/>
+
+<!-- HEAD SENSORS -->
+<rect x="268" y="116" width="910" height="120" fill="#080e1c" stroke="#1a3860" stroke-width="2" rx="4"/>
+<rect x="268" y="116" width="910" height="6" fill="#1a3860" rx="2"/>
+<text x="723" y="140" text-anchor="middle" class="bl">◉ HEAD SENSOR SUITE</text>
+<line x1="278" y1="146" x2="1168" y2="146" stroke="#0e2840" stroke-width="0.8"/>
+<rect x="280" y="152" width="200" height="76" fill="#070c18" stroke="#112030" rx="3"/>
+<text x="380" y="168" text-anchor="middle" class="bm" style="fill:#22ddaa">RPLIDAR A1M8</text>
+<text x="380" y="181" text-anchor="middle" class="bs">UART0 · GPIO14/15 · 115200</text>
+<text x="380" y="194" text-anchor="middle" class="bs">5V · 500mA · 360° · 12m</text>
+<text x="380" y="207" text-anchor="middle" class="bs">8000 pts/s · rplidar-sdk</text>
+<text x="380" y="220" text-anchor="middle" class="bs">Pi5 separate UART from Picos</text>
+<rect x="492" y="152" width="200" height="76" fill="#070c18" stroke="#1a0e30" rx="3"/>
+<text x="592" y="168" text-anchor="middle" class="bm" style="fill:#aa44ff">BNO055 IMU</text>
+<text x="592" y="181" text-anchor="middle" class="bs">I2C1 · Addr 0x28</text>
+<text x="592" y="194" text-anchor="middle" class="bs">GPIO2(SDA)/GPIO3(SCL)</text>
+<text x="592" y="207" text-anchor="middle" class="bs">3.3V · 12.3mA · 9-DOF</text>
+<text x="592" y="220" text-anchor="middle" class="bs">Euler + Quaternion fusion</text>
+<rect x="704" y="152" width="200" height="76" fill="#070c18" stroke="#1a0e30" rx="3"/>
+<text x="804" y="168" text-anchor="middle" class="bm" style="fill:#aa44ff">VL53L1X × 2 (ToF)</text>
+<text x="804" y="181" text-anchor="middle" class="bs">I2C1 · 0x29 / 0x2A</text>
+<text x="804" y="194" text-anchor="middle" class="bs">XSHUT for addr remap</text>
+<text x="804" y="207" text-anchor="middle" class="bs">3.3V · ~20mA ea · 4m</text>
+<text x="804" y="220" text-anchor="middle" class="bs">Front + downward mount</text>
+<rect x="916" y="152" width="254" height="76" fill="#070c18" stroke="#201a08" rx="3"/>
+<text x="1043" y="168" text-anchor="middle" class="bm" style="fill:#ffcc22">Pi Camera Module 3</text>
+<text x="1043" y="181" text-anchor="middle" class="bs">CSI-2 · Pi5 CAM0 ribbon</text>
+<text x="1043" y="194" text-anchor="middle" class="bs">12MP IMX708 · AF · HDR</text>
+<text x="1043" y="207" text-anchor="middle" class="bs">5V · ~250mA · FOV 66°</text>
+<text x="1043" y="220" text-anchor="middle" class="bs">4608×2592 px max</text>
+
+<!-- PI 5 -->
+<rect x="434" y="252" width="600" height="240" fill="#060c1a" stroke="#1e3878" stroke-width="2.5" rx="6"/>
+<rect x="434" y="252" width="600" height="8" fill="#1e3878" rx="3"/>
+<text x="734" y="277" text-anchor="middle" class="bl" style="fill:#88bbff;font-size:13px">🧠 RASPBERRY PI 5 · 8GB RAM</text>
+<line x1="444" y1="283" x2="1024" y2="283" stroke="#1a3060" stroke-width="0.8"/>
+<text x="450" y="301" class="bm" style="fill:#5588cc">GPIO / Interfaces:</text>
+<text x="450" y="316" class="bs">I2C1 (GPIO 2/3): BNO055 + VL53L1X×2</text>
+<text x="450" y="329" class="bs">UART0 (GPIO 14/15): RPLIDAR A1M8</text>
+<text x="450" y="342" class="bs">CSI-2 CAM0: Pi Camera Module 3</text>
+<text x="450" y="355" class="bs">USB-A ×2: Pico W #1 + Pico W #2</text>
+<text x="450" y="368" class="bs">3.3V GPIO: 16mA/pin · 50mA total</text>
+<text x="760" y="301" class="bm" style="fill:#5588cc">Power + OS:</text>
+<text x="760" y="316" class="bs">USB-C IN: 5V@5A typ / 8A peak</text>
+<text x="760" y="329" class="bs">Source: 5.0V/10A buck (direct)</text>
+<text x="760" y="342" class="bs">OS: Raspberry Pi OS 64-bit</text>
+<text x="760" y="355" class="bs">Stack: ROS2 / custom Python</text>
+<text x="760" y="368" class="bs">Libs: smbus2 · pyserial · rplidar</text>
+<text x="760" y="381" class="bs">I2C scan on boot: i2cdetect -y 1</text>
+<text x="444" y="415" class="bw" style="font-size:7.5px">★ Pico W via USB-CDC (no UART conflict with RPLIDAR) · 3.3V GPIO cannot power servos</text>
+<text x="444" y="428" class="bw" style="font-size:7.5px">★ I2C1 pull-up 4.7kΩ to 3.3V on SDA+SCL · ferrite bead 100Ω@100MHz at GPIO header</text>
+<text x="444" y="441" class="bw" style="font-size:7.5px">★ Expected I2C1 devices: 0x28 (BNO055) · 0x29 · 0x2A (VL53L1X) · PCA9685 via Pico</text>
+<text x="444" y="454" class="bw" style="font-size:7.5px">★ Pi5 PCIe port available for future NVMe SSD or AI accelerator (Hailo-8L etc.)</text>
+<text x="444" y="467" class="bw" style="font-size:7.5px">★ Active cooling recommended under servo load · Pi5 throttles at 85°C</text>
+
+<!-- PICO W #1 -->
+<rect x="268" y="508" width="278" height="196" fill="#080e1c" stroke="#1a4060" stroke-width="2" rx="4"/>
+<rect x="268" y="508" width="278" height="6" fill="#1a6040" rx="2"/>
+<text x="407" y="531" text-anchor="middle" class="bl" style="fill:#44ddaa">Pico W #1 — SERVO CTRL</text>
+<line x1="278" y1="536" x2="536" y2="536" stroke="#1a3050" stroke-width="0.8"/>
+<text x="278" y="551" class="bs">USB-CDC → Pi5 · powered FROM Pi5 USB</text>
+<text x="278" y="564" class="bs">I2C0 GP4/GP5 → PCA9685-A 0x40</text>
+<text x="278" y="577" class="bs">I2C0 GP4/GP5 → PCA9685-B 0x41</text>
+<text x="278" y="590" class="bs">GP13: PCA OE (active-low)</text>
+<text x="278" y="603" class="bs">GP14: WS2812B LED data · 330Ω series</text>
+<text x="278" y="616" class="bs">GP15: E-Stop monitor (NC input)</text>
+<text x="278" y="629" class="bs">GP16: E-Stop relay trigger out</text>
+<text x="278" y="648" class="bs" style="fill:#cc66ff">GP17: Arm-L RED laser 650nm · 33Ω · 5mW</text>
+<text x="278" y="661" class="bs" style="fill:#cc66ff">GP18: Arm-L GREEN laser 520nm · 33Ω · 5mW</text>
+<text x="278" y="674" class="bs" style="fill:#cc66ff">GP19: Arm-R RED laser 650nm · 33Ω · 5mW</text>
+<text x="278" y="687" class="bs" style="fill:#cc66ff">GP20: Arm-R GREEN laser 520nm · 33Ω · 5mW</text>
+<text x="278" y="642" class="bs">I2C0: 400kHz · both PCAs shared</text>
+<text x="278" y="661" class="bw">Ferrite on I2C · &lt;15cm to PCAs</text>
+<text x="278" y="674" class="bw">OE low=enabled · high=tristate</text>
+<text x="278" y="703" class="bw">Lasers: RED=smelten · GROEN=temp OK</text>
+<text x="278" y="714" class="bw">PWM knipperen via Pico · 3.3V direct</text>
+<text x="278" y="687" class="bw">I2C0: PCA boards have 10kΩ pull-ups onboard.</text>
+<text x="278" y="698" class="bw">If I2C errors: add 2.2kΩ on Pico W #1 SDA/SCL</text>
+<text x="278" y="687" class="bw">PWM freq: 50Hz (20ms period)</text>
+<text x="278" y="697" class="bw">Pulse: 500µs–2500µs (0°–180°)</text>
+
+<!-- PICO W #2 -->
+<rect x="1184" y="508" width="278" height="196" fill="#080e1c" stroke="#1a3060" stroke-width="2" rx="4"/>
+<rect x="1184" y="508" width="278" height="6" fill="#103060" rx="2"/>
+<text x="1323" y="531" text-anchor="middle" class="bl" style="fill:#44aaff">Pico W #2 — MONITORING</text>
+<line x1="1194" y1="536" x2="1452" y2="536" stroke="#1a3050" stroke-width="0.8"/>
+<text x="1194" y="551" class="bs">USB-CDC → Pi5 (telemetry tx)</text>
+<text x="1194" y="564" class="bs">I2C1 GP6/GP7 → INA226×4</text>
+<text x="1194" y="577" class="bs">I2C1 GP6/GP7 → TMP117×2</text>
+<text x="1194" y="590" class="bs">GP20: 3W LED MOSFET gate</text>
+<text x="1194" y="603" class="bs">GP21: 10W Spotlight MOSFET</text>
+<text x="1194" y="616" class="bs">GP22: Fan / aux PWM</text>
+<text x="1194" y="629" class="bs">GP26-28: ADC aux sensors</text>
+<text x="1194" y="642" class="bs">I2C1: 400kHz</text>
+<text x="1194" y="661" class="bw">Streams V·I·T data to Pi5</text>
+<text x="1194" y="674" class="bw">Alert thresholds per INA226</text>
+<text x="1194" y="687" class="bw">TMP117 alert: 70°C buck/45°C bat</text>
+
+<!-- I2C MONITORING BUS -->
+<rect x="564" y="508" width="604" height="152" fill="#08081a" stroke="#2a1060" stroke-width="1.5" rx="4"/>
+<rect x="564" y="508" width="604" height="6" fill="#2a1060" rx="2"/>
+<text x="866" y="530" text-anchor="middle" class="bl" style="fill:#aa55ff">I2C MONITORING BUS · Pico W #2 · I2C1 GP6/GP7</text>
+<line x1="574" y1="535" x2="1158" y2="535" stroke="#1a0840" stroke-width="0.8"/>
+<rect x="574" y="541" width="136" height="110" fill="#060612" stroke="#1a0840" rx="2"/>
+<text x="642" y="557" text-anchor="middle" class="bs" style="fill:#cc66ff">INA226 #1 · 0x44</text>
+<text x="642" y="570" text-anchor="middle" class="bs">7.4V Side-A bus</text>
+<text x="642" y="583" text-anchor="middle" class="bs" style="fill:#dd7744">R_shunt: verify!</text>
+<text x="642" y="596" text-anchor="middle" class="bs">Range: 0–20A</text>
+<text x="642" y="609" text-anchor="middle" class="bs">±0.1% FS acc.</text>
+<text x="642" y="622" text-anchor="middle" class="bs">Alert GP18</text>
+<text x="642" y="642" text-anchor="middle" class="bs">LSB: 1.25mA</text>
+<rect x="722" y="541" width="136" height="110" fill="#060612" stroke="#1a0840" rx="2"/>
+<text x="790" y="557" text-anchor="middle" class="bs" style="fill:#cc66ff">INA226 #2 · 0x45</text>
+<text x="790" y="570" text-anchor="middle" class="bs">7.4V Side-B bus</text>
+<text x="790" y="583" text-anchor="middle" class="bs" style="fill:#dd7744">check board!</text>
+<text x="790" y="596" text-anchor="middle" class="bs">Range: 0–20A</text>
+<text x="790" y="609" text-anchor="middle" class="bs">±0.1% FS acc.</text>
+<text x="790" y="622" text-anchor="middle" class="bs">Alert GP19</text>
+<text x="790" y="642" text-anchor="middle" class="bs">LSB: 1.25mA</text>
+<rect x="870" y="541" width="136" height="110" fill="#060612" stroke="#1a0840" rx="2"/>
+<text x="938" y="557" text-anchor="middle" class="bs" style="fill:#cc66ff">INA226 #3 · 0x46</text>
+<text x="938" y="570" text-anchor="middle" class="bs">6.0V combined</text>
+<text x="938" y="583" text-anchor="middle" class="bs" style="fill:#dd7744">10mΩ or 2mΩ?</text>
+<text x="938" y="596" text-anchor="middle" class="bs">Range: 0–15A</text>
+<text x="938" y="609" text-anchor="middle" class="bs">Lower legs only</text>
+<text x="938" y="622" text-anchor="middle" class="bs">Alert GP20</text>
+<text x="938" y="642" text-anchor="middle" class="bs">LSB: 0.8mA</text>
+<rect x="1018" y="541" width="136" height="110" fill="#060612" stroke="#1a0840" rx="2"/>
+<text x="1086" y="557" text-anchor="middle" class="bs" style="fill:#cc66ff">TMP117 × 2</text>
+<text x="1086" y="570" text-anchor="middle" class="bs">0x48: Buck area</text>
+<text x="1086" y="583" text-anchor="middle" class="bs">0x49: Battery area</text>
+<text x="1086" y="596" text-anchor="middle" class="bs">±0.1°C accuracy</text>
+<text x="1086" y="609" text-anchor="middle" class="bs">−55 to +150°C</text>
+<text x="1086" y="622" text-anchor="middle" class="bs">Alert 70°C (buck)</text>
+<text x="1086" y="642" text-anchor="middle" class="bs">Alert 45°C (batt)</text>
+
+<!-- PCA9685-A -->
+<rect x="268" y="678" width="278" height="128" fill="#07100e" stroke="#1a4030" stroke-width="1.5" rx="4"/>
+<rect x="268" y="678" width="278" height="5" fill="#1a5030" rx="2"/>
+<text x="407" y="700" text-anchor="middle" class="bl" style="fill:#33ee99">PCA9685-A · Addr 0x40</text>
+<line x1="278" y1="705" x2="536" y2="705" stroke="#0e2820" stroke-width="0.8"/>
+<text x="278" y="720" class="bs">I2C0 ← Pico W #1 GP4/GP5</text>
+<text x="278" y="733" class="bs">Ch 0–2: Leg 1 · Ch 3–5: Leg 2</text>
+<text x="278" y="746" class="bs">Ch 6–8: Leg 3 · Ch 9–11: Leg 4</text>
+<text x="278" y="759" class="bs">Ch 12: Leg1 GRIPPER · Ch 13: Leg2 GRIPPER · OE: GP13</text>
+<text x="278" y="777" class="bw">V+ pin: LEAVE UNCONNECTED</text>
+<text x="278" y="790" class="bw">Servo power: direct from bucks</text>
+<text x="278" y="803" class="bs">50Hz PWM · 4096 steps/cycle</text>
+
+<!-- PCA9685-B -->
+<rect x="1184" y="678" width="278" height="128" fill="#07100e" stroke="#1a4030" stroke-width="1.5" rx="4"/>
+<rect x="1184" y="678" width="278" height="5" fill="#1a5030" rx="2"/>
+<text x="1323" y="700" text-anchor="middle" class="bl" style="fill:#33ee99">PCA9685-B · Addr 0x41</text>
+<line x1="1194" y1="705" x2="1452" y2="705" stroke="#0e2820" stroke-width="0.8"/>
+<text x="1194" y="720" class="bs">I2C0 ← Pico W #1 (shared bus)</text>
+<text x="1194" y="733" class="bs">Ch 0–2: Leg 5 · Ch 3–5: Leg 6</text>
+<text x="1194" y="746" class="bs">Ch 6–8: Leg 7 · Ch 9–11: Leg 8</text>
+<text x="1194" y="759" class="bs">Ch 12–15: spare · OE: GP13 parallel with PCA-A</text>
+<text x="1194" y="777" class="bw">V+ pin: LEAVE UNCONNECTED</text>
+<text x="1194" y="790" class="bw">Servo power: direct from bucks</text>
+<text x="1194" y="803" class="bs">50Hz PWM · 4096 steps/cycle</text>
+
+<!-- LIGHTING -->
+<rect x="564" y="678" width="604" height="108" fill="#0a0a08" stroke="#2a2008" stroke-width="1.5" rx="4"/>
+<rect x="564" y="678" width="604" height="5" fill="#2a2808" rx="2"/>
+<text x="866" y="700" text-anchor="middle" class="bl" style="fill:#ffcc44">◈ LIGHTING SYSTEM</text>
+<line x1="574" y1="705" x2="1158" y2="705" stroke="#181808" stroke-width="0.8"/>
+<rect x="574" y="710" width="184" height="66" fill="#080808" stroke="#202008" rx="2"/>
+<text x="666" y="726" text-anchor="middle" class="bs" style="fill:#ffee44">WS2812B RGB Strip</text>
+<text x="666" y="740" text-anchor="middle" class="bs">Power: 5V/10A buck · Data: Pico GP14</text>
+<text x="666" y="753" text-anchor="middle" class="bs">60mA/LED · common GND required</text>
+<text x="666" y="767" text-anchor="middle" class="bs" style="fill:#dd7744">NOT from Pico USB — kills Pi5!</text>
+<rect x="770" y="710" width="184" height="66" fill="#100808" stroke="#301008" rx="2"/>
+<text x="862" y="726" text-anchor="middle" class="bs" style="fill:#ff9955">3W White LED</text>
+<text x="862" y="740" text-anchor="middle" class="bs">MOSFET: IRLZ44N</text>
+<text x="862" y="753" text-anchor="middle" class="bs">Gate: Pico W #2 · GP20</text>
+<text x="862" y="767" text-anchor="middle" class="bs">R_gate 10Ω · PWM dimmable</text>
+<rect x="966" y="710" width="192" height="66" fill="#120808" stroke="#401008" rx="2"/>
+<text x="1062" y="726" text-anchor="middle" class="bs" style="fill:#ff5533">10W Spotlight</text>
+<text x="1062" y="740" text-anchor="middle" class="bs">MOSFET: IRLZ44N + heatsink</text>
+<text x="1062" y="753" text-anchor="middle" class="bs">Gate: Pico W #2 · GP21</text>
+<text x="1062" y="767" text-anchor="middle" class="bs">7.4V rail · heatsink required</text>
+
+<!-- SIGNAL CONNECTIONS -->
+<path d="M592,252 L592,236" stroke="#aa33ff" stroke-width="1.5" stroke-dasharray="5,2.5" fill="none" marker-end="url(#mi)"/>
+<path d="M804,252 L804,236" stroke="#aa33ff" stroke-width="1.5" stroke-dasharray="5,2.5" fill="none" marker-end="url(#mi)"/>
+<text x="596" y="246" class="lt" style="fill:#882abb">I2C1</text>
+<path d="M380,252 L380,236" stroke="#ccaa00" stroke-width="1.5" stroke-dasharray="4,2" fill="none" marker-end="url(#mu)"/>
+<text x="384" y="246" class="lt" style="fill:#ccaa00">UART0</text>
+<path d="M538,492 L538,500 L546,500 L546,508" stroke="#44bb88" stroke-width="1.5" stroke-dasharray="7,3" fill="none" marker-end="url(#ms)"/>
+<text x="550" y="497" class="lt" style="fill:#44bb88">USB CDC</text>
+<path d="M930,492 L930,500 L1184,500 L1184,508" stroke="#44bb88" stroke-width="1.5" stroke-dasharray="7,3" fill="none" marker-end="url(#ms)"/>
+<text x="1010" y="497" class="lt" style="fill:#44bb88">USB CDC</text>
+<path d="M407,678 L407,662" stroke="#aa33ff" stroke-width="1.5" stroke-dasharray="5,2.5" fill="none" marker-end="url(#mi)"/>
+<text x="411" y="673" class="lt" style="fill:#882abb">I2C0</text>
+<path d="M546,742 L556,742 L556,670 L1176,670 L1176,742 L1184,742" stroke="#aa33ff" stroke-width="1.5" stroke-dasharray="5,2.5" fill="none" marker-end="url(#mi)"/>
+<circle cx="546" cy="742" r="4" fill="#aa33ff"/>
+<text x="860" y="665" class="lt" style="fill:#882abb" text-anchor="middle">I2C0 shared bus · PCA-A (0x40) + PCA-B (0x41) different addresses same 2 wires</text>
+<path d="M1184,574 L1168,574" stroke="#aa33ff" stroke-width="1.5" stroke-dasharray="5,2.5" fill="none" marker-end="url(#mi)"/>
+<text x="1170" y="569" class="lt" style="fill:#882abb">I2C1</text>
+<path d="M252,437 L434,437 L434,370" stroke="#2288ff" stroke-width="2" fill="none" marker-end="url(#m5)"/>
+<circle cx="252" cy="437" r="4" fill="#2288ff"/>
+<text x="330" y="433" class="lt" style="fill:#4499ff" text-anchor="middle">5.0V / 10A</text>
+
+<!-- POWER BUS BARS top row (legs 1-4) -->
+<line x1="252" y1="840" x2="1664" y2="840" stroke="#ff8c00" stroke-width="3.5"/>
+<text x="264" y="835" class="lt" style="fill:#ff8c00">7.4V BUS — DS3240 (HIP) + DS3225 (UPPER)</text>
+<line x1="252" y1="855" x2="1664" y2="855" stroke="#00cc44" stroke-width="2.5"/>
+<text x="264" y="866" class="lt" style="fill:#00cc44">6.0V BUS — DS3218 (LOWER) ONLY · MAX 6.8V</text>
+<line x1="252" y1="377" x2="252" y2="840" stroke="#ff8c00" stroke-width="2.5"/>
+<circle cx="252" cy="377" r="5" fill="#ff8c00"/>
+<line x1="244" y1="407" x2="244" y2="855" stroke="#00cc44" stroke-width="2.2"/>
+<circle cx="244" cy="407" r="4" fill="#00cc44"/>
+<path d="M407,806 L407,840" stroke="#22ddaa" stroke-width="1.5" fill="none" marker-end="url(#mp)"/>
+<text x="411" y="830" class="lt" style="fill:#22ddaa">PWM Ch0–11</text>
+
+<!-- SECTION B -->
+<line x1="18" y1="876" x2="1664" y2="876" stroke="#0d1e32" stroke-width="1"/>
+<text x="28" y="892" class="sh">B — LEGS 1–4 · PCA9685-A · ADDR 0x40 · CH 0–11 + CH 12–13 (ARM GRIPPERS LEG 1+2)</text>
+
+<g transform="translate(18,900)">
+  <rect x="0" y="0" width="398" height="238" fill="#080e18" stroke="#1a3050" stroke-width="1.5" rx="4"/>
+  <rect x="0" y="0" width="398" height="6" fill="#1a3050" rx="2"/>
+  <text x="199" y="22" text-anchor="middle" class="lh">LEG 1 · FRONT-LEFT 🦾 ARM MODE</text>
+  <text x="199" y="36" text-anchor="middle" class="ls">PCA9685-A · Ch 0 · 1 · 2 · 12(gripper)</text>
+  <line x1="8" y1="42" x2="390" y2="42" stroke="#0e2030" stroke-width="0.8"/>
+  <rect x="8" y="47" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="63" class="svw" style="fill:#66dd77">HIP — DS3240</text>
+  <text x="200" y="63" text-anchor="middle" class="sv">Ch 0 · PCA9685-A</text>
+  <text x="385" y="63" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V</text>
+  <text x="14" y="77" class="sv">35kg·cm @ 7.4V · Stall 3.5A · Vop 4.8–8.4V</text>
+  <text x="14" y="89" class="sv">Speed 0.16s/60° · All-metal gear</text>
+  <text x="14" y="101" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="111" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="127" class="svw" style="fill:#66dd77">UPPER LEG — DS3225</text>
+  <text x="200" y="127" text-anchor="middle" class="sv">Ch 1 · PCA9685-A</text>
+  <text x="385" y="127" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V ✓</text>
+  <text x="14" y="141" class="sv">25kg·cm @ 7.4V · Stall 2.5A · Vop 4.8–8.4V safe</text>
+  <text x="14" y="153" class="sv">Speed 0.18s/60° · Metal gear</text>
+  <text x="14" y="165" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="175" width="382" height="57" fill="#080e10" stroke="#1a3028" rx="3"/>
+  <text x="14" y="191" class="svw" style="fill:#33cc77">LOWER LEG — DS3218</text>
+  <text x="200" y="191" text-anchor="middle" class="sv">Ch 2 · PCA9685-A</text>
+  <text x="385" y="191" text-anchor="end" class="sv" style="fill:#22cc55;font-weight:bold">6.0V</text>
+  <text x="14" y="205" class="sv">20kg·cm @ 6.0V · Stall 2.0A</text>
+  <text x="14" y="217" class="sv" style="fill:#dd7744">Vop 4.8–6.8V ABSOLUTE MAX · buck set 6.0V</text>
+  <text x="14" y="229" class="sv">JST-SM 3-pin [6.0V | GND | PWM-signal]</text>
+</g>
+<g transform="translate(430,900)">
+  <rect x="0" y="0" width="398" height="238" fill="#080e18" stroke="#1a3050" stroke-width="1.5" rx="4"/>
+  <rect x="0" y="0" width="398" height="6" fill="#1a3050" rx="2"/>
+  <text x="199" y="22" text-anchor="middle" class="lh">LEG 2 · FRONT-RIGHT 🦾 ARM MODE</text>
+  <text x="199" y="36" text-anchor="middle" class="ls">PCA9685-A · Ch 3 · 4 · 5 · 13(gripper)</text>
+  <line x1="8" y1="42" x2="390" y2="42" stroke="#0e2030" stroke-width="0.8"/>
+  <rect x="8" y="47" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="63" class="svw" style="fill:#66dd77">HIP — DS3240</text>
+  <text x="200" y="63" text-anchor="middle" class="sv">Ch 3 · PCA9685-A</text>
+  <text x="385" y="63" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V</text>
+  <text x="14" y="77" class="sv">35kg·cm @ 7.4V · Stall 3.5A · Vop 4.8–8.4V</text>
+  <text x="14" y="89" class="sv">Speed 0.16s/60° · All-metal gear</text>
+  <text x="14" y="101" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="111" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="127" class="svw" style="fill:#66dd77">UPPER LEG — DS3225</text>
+  <text x="200" y="127" text-anchor="middle" class="sv">Ch 4 · PCA9685-A</text>
+  <text x="385" y="127" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V ✓</text>
+  <text x="14" y="141" class="sv">25kg·cm @ 7.4V · Stall 2.5A · Vop 4.8–8.4V safe</text>
+  <text x="14" y="153" class="sv">Speed 0.18s/60° · Metal gear</text>
+  <text x="14" y="165" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="175" width="382" height="57" fill="#080e10" stroke="#1a3028" rx="3"/>
+  <text x="14" y="191" class="svw" style="fill:#33cc77">LOWER LEG — DS3218</text>
+  <text x="200" y="191" text-anchor="middle" class="sv">Ch 5 · PCA9685-A</text>
+  <text x="385" y="191" text-anchor="end" class="sv" style="fill:#22cc55;font-weight:bold">6.0V</text>
+  <text x="14" y="205" class="sv">20kg·cm @ 6.0V · Stall 2.0A</text>
+  <text x="14" y="217" class="sv" style="fill:#dd7744">Vop 4.8–6.8V ABSOLUTE MAX · buck set 6.0V</text>
+  <text x="14" y="229" class="sv">JST-SM 3-pin [6.0V | GND | PWM-signal]</text>
+</g>
+<g transform="translate(842,900)">
+  <rect x="0" y="0" width="398" height="238" fill="#080e18" stroke="#1a3050" stroke-width="1.5" rx="4"/>
+  <rect x="0" y="0" width="398" height="6" fill="#1a3050" rx="2"/>
+  <text x="199" y="22" text-anchor="middle" class="lh">LEG 3 · REAR-LEFT</text>
+  <text x="199" y="36" text-anchor="middle" class="ls">PCA9685-A · Ch 6 · 7 · 8</text>
+  <line x1="8" y1="42" x2="390" y2="42" stroke="#0e2030" stroke-width="0.8"/>
+  <rect x="8" y="47" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="63" class="svw" style="fill:#66dd77">HIP — DS3240</text>
+  <text x="200" y="63" text-anchor="middle" class="sv">Ch 6 · PCA9685-A</text>
+  <text x="385" y="63" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V</text>
+  <text x="14" y="77" class="sv">35kg·cm @ 7.4V · Stall 3.5A · Vop 4.8–8.4V</text>
+  <text x="14" y="89" class="sv">Speed 0.16s/60° · All-metal gear</text>
+  <text x="14" y="101" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="111" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="127" class="svw" style="fill:#66dd77">UPPER LEG — DS3225</text>
+  <text x="200" y="127" text-anchor="middle" class="sv">Ch 7 · PCA9685-A</text>
+  <text x="385" y="127" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V ✓</text>
+  <text x="14" y="141" class="sv">25kg·cm @ 7.4V · Stall 2.5A · Vop 4.8–8.4V safe</text>
+  <text x="14" y="153" class="sv">Speed 0.18s/60° · Metal gear</text>
+  <text x="14" y="165" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="175" width="382" height="57" fill="#080e10" stroke="#1a3028" rx="3"/>
+  <text x="14" y="191" class="svw" style="fill:#33cc77">LOWER LEG — DS3218</text>
+  <text x="200" y="191" text-anchor="middle" class="sv">Ch 8 · PCA9685-A</text>
+  <text x="385" y="191" text-anchor="end" class="sv" style="fill:#22cc55;font-weight:bold">6.0V</text>
+  <text x="14" y="205" class="sv">20kg·cm @ 6.0V · Stall 2.0A</text>
+  <text x="14" y="217" class="sv" style="fill:#dd7744">Vop 4.8–6.8V ABSOLUTE MAX · buck set 6.0V</text>
+  <text x="14" y="229" class="sv">JST-SM 3-pin [6.0V | GND | PWM-signal]</text>
+</g>
+<g transform="translate(1254,900)">
+  <rect x="0" y="0" width="398" height="238" fill="#080e18" stroke="#1a3050" stroke-width="1.5" rx="4"/>
+  <rect x="0" y="0" width="398" height="6" fill="#1a3050" rx="2"/>
+  <text x="199" y="22" text-anchor="middle" class="lh">LEG 4 · REAR-RIGHT</text>
+  <text x="199" y="36" text-anchor="middle" class="ls">PCA9685-A · Ch 9 · 10 · 11</text>
+  <line x1="8" y1="42" x2="390" y2="42" stroke="#0e2030" stroke-width="0.8"/>
+  <rect x="8" y="47" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="63" class="svw" style="fill:#66dd77">HIP — DS3240</text>
+  <text x="200" y="63" text-anchor="middle" class="sv">Ch 9 · PCA9685-A</text>
+  <text x="385" y="63" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V</text>
+  <text x="14" y="77" class="sv">35kg·cm @ 7.4V · Stall 3.5A · Vop 4.8–8.4V</text>
+  <text x="14" y="89" class="sv">Speed 0.16s/60° · All-metal gear</text>
+  <text x="14" y="101" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="111" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="127" class="svw" style="fill:#66dd77">UPPER LEG — DS3225</text>
+  <text x="200" y="127" text-anchor="middle" class="sv">Ch 10 · PCA9685-A</text>
+  <text x="385" y="127" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V ✓</text>
+  <text x="14" y="141" class="sv">25kg·cm @ 7.4V · Stall 2.5A · Vop 4.8–8.4V safe</text>
+  <text x="14" y="153" class="sv">Speed 0.18s/60° · Metal gear</text>
+  <text x="14" y="165" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="175" width="382" height="57" fill="#080e10" stroke="#1a3028" rx="3"/>
+  <text x="14" y="191" class="svw" style="fill:#33cc77">LOWER LEG — DS3218</text>
+  <text x="200" y="191" text-anchor="middle" class="sv">Ch 11 · PCA9685-A</text>
+  <text x="385" y="191" text-anchor="end" class="sv" style="fill:#22cc55;font-weight:bold">6.0V</text>
+  <text x="14" y="205" class="sv">20kg·cm @ 6.0V · Stall 2.0A</text>
+  <text x="14" y="217" class="sv" style="fill:#dd7744">Vop 4.8–6.8V ABSOLUTE MAX · buck set 6.0V</text>
+  <text x="14" y="229" class="sv">JST-SM 3-pin [6.0V | GND | PWM-signal]</text>
+</g>
+<!-- 7.4V drops legs 1-4 -->
+<line x1="217" y1="840" x2="217" y2="947" stroke="#ff8c00" stroke-width="2"/><circle cx="217" cy="840" r="4" fill="#ff8c00"/>
+<line x1="629" y1="840" x2="629" y2="947" stroke="#ff8c00" stroke-width="2"/><circle cx="629" cy="840" r="4" fill="#ff8c00"/>
+<line x1="1041" y1="840" x2="1041" y2="947" stroke="#ff8c00" stroke-width="2"/><circle cx="1041" cy="840" r="4" fill="#ff8c00"/>
+<line x1="1459" y1="840" x2="1459" y2="947" stroke="#ff8c00" stroke-width="2"/><circle cx="1459" cy="840" r="4" fill="#ff8c00"/>
+<!-- 6.0V drops legs 1-4 to lower servos -->
+<line x1="223" y1="855" x2="223" y2="1075" stroke="#00cc44" stroke-width="2"/><circle cx="223" cy="855" r="4" fill="#00cc44"/>
+<line x1="635" y1="855" x2="635" y2="1075" stroke="#00cc44" stroke-width="2"/><circle cx="635" cy="855" r="4" fill="#00cc44"/>
+<line x1="1047" y1="855" x2="1047" y2="1075" stroke="#00cc44" stroke-width="2"/><circle cx="1047" cy="855" r="4" fill="#00cc44"/>
+<line x1="1465" y1="855" x2="1465" y2="1075" stroke="#00cc44" stroke-width="2"/><circle cx="1465" cy="855" r="4" fill="#00cc44"/>
+<!-- PWM fan-out indicators -->
+<line x1="407" y1="840" x2="217" y2="900" stroke="#22ddaa" stroke-width="1" stroke-dasharray="3,2"/>
+<line x1="407" y1="840" x2="629" y2="900" stroke="#22ddaa" stroke-width="1" stroke-dasharray="3,2"/>
+<line x1="407" y1="840" x2="1041" y2="900" stroke="#22ddaa" stroke-width="1" stroke-dasharray="3,2"/>
+<line x1="407" y1="840" x2="1459" y2="900" stroke="#22ddaa" stroke-width="1" stroke-dasharray="3,2"/>
+
+<!-- POWER BUS BARS bottom row (legs 5-8) -->
+<line x1="252" y1="1156" x2="1664" y2="1156" stroke="#ff8c00" stroke-width="3.5"/>
+<text x="264" y="1151" class="lt" style="fill:#ff8c00">7.4V BUS — DS3240 (HIP) + DS3225 (UPPER)</text>
+<line x1="252" y1="1171" x2="1664" y2="1171" stroke="#00cc44" stroke-width="2.5"/>
+<text x="264" y="1183" class="lt" style="fill:#00cc44">6.0V BUS — DS3218 (LOWER) ONLY</text>
+<line x1="252" y1="840" x2="252" y2="1156" stroke="#ff8c00" stroke-width="2"/>
+<line x1="244" y1="855" x2="244" y2="1171" stroke="#00cc44" stroke-width="2"/>
+<path d="M1323,806 L1323,1156" stroke="#22ddaa" stroke-width="1.5" fill="none" marker-end="url(#mp)"/>
+<text x="1327" y="990" class="lt" style="fill:#22ddaa">PWM Ch0–11</text>
+
+<!-- SECTION C -->
+<line x1="18" y1="1192" x2="1664" y2="1192" stroke="#0d1e32" stroke-width="1"/>
+<text x="28" y="1208" class="sh">C — LEGS 5–8 · PCA9685-B · ADDR 0x41 · CHANNELS 0–11</text>
+
+<g transform="translate(18,1218)">
+  <rect x="0" y="0" width="398" height="238" fill="#080e18" stroke="#1a3050" stroke-width="1.5" rx="4"/>
+  <rect x="0" y="0" width="398" height="6" fill="#1a3050" rx="2"/>
+  <text x="199" y="22" text-anchor="middle" class="lh">LEG 5 · MID-LEFT-FWD</text>
+  <text x="199" y="36" text-anchor="middle" class="ls">PCA9685-B · Ch 0 · 1 · 2</text>
+  <line x1="8" y1="42" x2="390" y2="42" stroke="#0e2030" stroke-width="0.8"/>
+  <rect x="8" y="47" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="63" class="svw" style="fill:#66dd77">HIP — DS3240</text>
+  <text x="200" y="63" text-anchor="middle" class="sv">Ch 0 · PCA9685-B</text>
+  <text x="385" y="63" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V</text>
+  <text x="14" y="77" class="sv">35kg·cm @ 7.4V · Stall 3.5A · Vop 4.8–8.4V</text>
+  <text x="14" y="89" class="sv">Speed 0.16s/60° · All-metal gear</text>
+  <text x="14" y="101" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="111" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="127" class="svw" style="fill:#66dd77">UPPER LEG — DS3225</text>
+  <text x="200" y="127" text-anchor="middle" class="sv">Ch 1 · PCA9685-B</text>
+  <text x="385" y="127" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V ✓</text>
+  <text x="14" y="141" class="sv">25kg·cm @ 7.4V · Stall 2.5A · Vop 4.8–8.4V safe</text>
+  <text x="14" y="153" class="sv">Speed 0.18s/60° · Metal gear</text>
+  <text x="14" y="165" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="175" width="382" height="57" fill="#080e10" stroke="#1a3028" rx="3"/>
+  <text x="14" y="191" class="svw" style="fill:#33cc77">LOWER LEG — DS3218</text>
+  <text x="200" y="191" text-anchor="middle" class="sv">Ch 2 · PCA9685-B</text>
+  <text x="385" y="191" text-anchor="end" class="sv" style="fill:#22cc55;font-weight:bold">6.0V</text>
+  <text x="14" y="205" class="sv">20kg·cm @ 6.0V · Stall 2.0A</text>
+  <text x="14" y="217" class="sv" style="fill:#dd7744">Vop 4.8–6.8V ABSOLUTE MAX · buck set 6.0V</text>
+  <text x="14" y="229" class="sv">JST-SM 3-pin [6.0V | GND | PWM-signal]</text>
+</g>
+<g transform="translate(430,1218)">
+  <rect x="0" y="0" width="398" height="238" fill="#080e18" stroke="#1a3050" stroke-width="1.5" rx="4"/>
+  <rect x="0" y="0" width="398" height="6" fill="#1a3050" rx="2"/>
+  <text x="199" y="22" text-anchor="middle" class="lh">LEG 6 · MID-LEFT-AFT</text>
+  <text x="199" y="36" text-anchor="middle" class="ls">PCA9685-B · Ch 3 · 4 · 5</text>
+  <line x1="8" y1="42" x2="390" y2="42" stroke="#0e2030" stroke-width="0.8"/>
+  <rect x="8" y="47" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="63" class="svw" style="fill:#66dd77">HIP — DS3240</text>
+  <text x="200" y="63" text-anchor="middle" class="sv">Ch 3 · PCA9685-B</text>
+  <text x="385" y="63" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V</text>
+  <text x="14" y="77" class="sv">35kg·cm @ 7.4V · Stall 3.5A · Vop 4.8–8.4V</text>
+  <text x="14" y="89" class="sv">Speed 0.16s/60° · All-metal gear</text>
+  <text x="14" y="101" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="111" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="127" class="svw" style="fill:#66dd77">UPPER LEG — DS3225</text>
+  <text x="200" y="127" text-anchor="middle" class="sv">Ch 4 · PCA9685-B</text>
+  <text x="385" y="127" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V ✓</text>
+  <text x="14" y="141" class="sv">25kg·cm @ 7.4V · Stall 2.5A · Vop 4.8–8.4V safe</text>
+  <text x="14" y="153" class="sv">Speed 0.18s/60° · Metal gear</text>
+  <text x="14" y="165" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="175" width="382" height="57" fill="#080e10" stroke="#1a3028" rx="3"/>
+  <text x="14" y="191" class="svw" style="fill:#33cc77">LOWER LEG — DS3218</text>
+  <text x="200" y="191" text-anchor="middle" class="sv">Ch 5 · PCA9685-B</text>
+  <text x="385" y="191" text-anchor="end" class="sv" style="fill:#22cc55;font-weight:bold">6.0V</text>
+  <text x="14" y="205" class="sv">20kg·cm @ 6.0V · Stall 2.0A</text>
+  <text x="14" y="217" class="sv" style="fill:#dd7744">Vop 4.8–6.8V ABSOLUTE MAX · buck set 6.0V</text>
+  <text x="14" y="229" class="sv">JST-SM 3-pin [6.0V | GND | PWM-signal]</text>
+</g>
+<g transform="translate(842,1218)">
+  <rect x="0" y="0" width="398" height="238" fill="#080e18" stroke="#1a3050" stroke-width="1.5" rx="4"/>
+  <rect x="0" y="0" width="398" height="6" fill="#1a3050" rx="2"/>
+  <text x="199" y="22" text-anchor="middle" class="lh">LEG 7 · MID-RIGHT-FWD</text>
+  <text x="199" y="36" text-anchor="middle" class="ls">PCA9685-B · Ch 6 · 7 · 8</text>
+  <line x1="8" y1="42" x2="390" y2="42" stroke="#0e2030" stroke-width="0.8"/>
+  <rect x="8" y="47" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="63" class="svw" style="fill:#66dd77">HIP — DS3240</text>
+  <text x="200" y="63" text-anchor="middle" class="sv">Ch 6 · PCA9685-B</text>
+  <text x="385" y="63" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V</text>
+  <text x="14" y="77" class="sv">35kg·cm @ 7.4V · Stall 3.5A · Vop 4.8–8.4V</text>
+  <text x="14" y="89" class="sv">Speed 0.16s/60° · All-metal gear</text>
+  <text x="14" y="101" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="111" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="127" class="svw" style="fill:#66dd77">UPPER LEG — DS3225</text>
+  <text x="200" y="127" text-anchor="middle" class="sv">Ch 7 · PCA9685-B</text>
+  <text x="385" y="127" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V ✓</text>
+  <text x="14" y="141" class="sv">25kg·cm @ 7.4V · Stall 2.5A · Vop 4.8–8.4V safe</text>
+  <text x="14" y="153" class="sv">Speed 0.18s/60° · Metal gear</text>
+  <text x="14" y="165" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="175" width="382" height="57" fill="#080e10" stroke="#1a3028" rx="3"/>
+  <text x="14" y="191" class="svw" style="fill:#33cc77">LOWER LEG — DS3218</text>
+  <text x="200" y="191" text-anchor="middle" class="sv">Ch 8 · PCA9685-B</text>
+  <text x="385" y="191" text-anchor="end" class="sv" style="fill:#22cc55;font-weight:bold">6.0V</text>
+  <text x="14" y="205" class="sv">20kg·cm @ 6.0V · Stall 2.0A</text>
+  <text x="14" y="217" class="sv" style="fill:#dd7744">Vop 4.8–6.8V ABSOLUTE MAX · buck set 6.0V</text>
+  <text x="14" y="229" class="sv">JST-SM 3-pin [6.0V | GND | PWM-signal]</text>
+</g>
+<g transform="translate(1254,1218)">
+  <rect x="0" y="0" width="398" height="238" fill="#080e18" stroke="#1a3050" stroke-width="1.5" rx="4"/>
+  <rect x="0" y="0" width="398" height="6" fill="#1a3050" rx="2"/>
+  <text x="199" y="22" text-anchor="middle" class="lh">LEG 8 · MID-RIGHT-AFT</text>
+  <text x="199" y="36" text-anchor="middle" class="ls">PCA9685-B · Ch 9 · 10 · 11</text>
+  <line x1="8" y1="42" x2="390" y2="42" stroke="#0e2030" stroke-width="0.8"/>
+  <rect x="8" y="47" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="63" class="svw" style="fill:#66dd77">HIP — DS3240</text>
+  <text x="200" y="63" text-anchor="middle" class="sv">Ch 9 · PCA9685-B</text>
+  <text x="385" y="63" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V</text>
+  <text x="14" y="77" class="sv">35kg·cm @ 7.4V · Stall 3.5A · Vop 4.8–8.4V</text>
+  <text x="14" y="89" class="sv">Speed 0.16s/60° · All-metal gear</text>
+  <text x="14" y="101" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="111" width="382" height="58" fill="#0d180c" stroke="#2a4020" rx="3"/>
+  <text x="14" y="127" class="svw" style="fill:#66dd77">UPPER LEG — DS3225</text>
+  <text x="200" y="127" text-anchor="middle" class="sv">Ch 10 · PCA9685-B</text>
+  <text x="385" y="127" text-anchor="end" class="sv" style="fill:#ff9933;font-weight:bold">7.4V ✓</text>
+  <text x="14" y="141" class="sv">25kg·cm @ 7.4V · Stall 2.5A · Vop 4.8–8.4V safe</text>
+  <text x="14" y="153" class="sv">Speed 0.18s/60° · Metal gear</text>
+  <text x="14" y="165" class="sv">JST-SM 3-pin [7.4V | GND | PWM-signal]</text>
+  <rect x="8" y="175" width="382" height="57" fill="#080e10" stroke="#1a3028" rx="3"/>
+  <text x="14" y="191" class="svw" style="fill:#33cc77">LOWER LEG — DS3218</text>
+  <text x="200" y="191" text-anchor="middle" class="sv">Ch 11 · PCA9685-B</text>
+  <text x="385" y="191" text-anchor="end" class="sv" style="fill:#22cc55;font-weight:bold">6.0V</text>
+  <text x="14" y="205" class="sv">20kg·cm @ 6.0V · Stall 2.0A</text>
+  <text x="14" y="217" class="sv" style="fill:#dd7744">Vop 4.8–6.8V ABSOLUTE MAX · buck set 6.0V</text>
+  <text x="14" y="229" class="sv">JST-SM 3-pin [6.0V | GND | PWM-signal]</text>
+</g>
+<!-- 7.4V drops legs 5-8 -->
+<line x1="217" y1="1156" x2="217" y2="1263" stroke="#ff8c00" stroke-width="2"/><circle cx="217" cy="1156" r="4" fill="#ff8c00"/>
+<line x1="629" y1="1156" x2="629" y2="1263" stroke="#ff8c00" stroke-width="2"/><circle cx="629" cy="1156" r="4" fill="#ff8c00"/>
+<line x1="1041" y1="1156" x2="1041" y2="1263" stroke="#ff8c00" stroke-width="2"/><circle cx="1041" cy="1156" r="4" fill="#ff8c00"/>
+<line x1="1459" y1="1156" x2="1459" y2="1263" stroke="#ff8c00" stroke-width="2"/><circle cx="1459" cy="1156" r="4" fill="#ff8c00"/>
+<!-- 6.0V drops legs 5-8 -->
+<line x1="223" y1="1171" x2="223" y2="1391" stroke="#00cc44" stroke-width="2"/><circle cx="223" cy="1171" r="4" fill="#00cc44"/>
+<line x1="635" y1="1171" x2="635" y2="1391" stroke="#00cc44" stroke-width="2"/><circle cx="635" cy="1171" r="4" fill="#00cc44"/>
+<line x1="1047" y1="1171" x2="1047" y2="1391" stroke="#00cc44" stroke-width="2"/><circle cx="1047" cy="1171" r="4" fill="#00cc44"/>
+<line x1="1465" y1="1171" x2="1465" y2="1391" stroke="#00cc44" stroke-width="2"/><circle cx="1465" cy="1171" r="4" fill="#00cc44"/>
+<line x1="1323" y1="1156" x2="217" y2="1218" stroke="#22ddaa" stroke-width="1" stroke-dasharray="3,2"/>
+<line x1="1323" y1="1156" x2="629" y2="1218" stroke="#22ddaa" stroke-width="1" stroke-dasharray="3,2"/>
+<line x1="1323" y1="1156" x2="1041" y2="1218" stroke="#22ddaa" stroke-width="1" stroke-dasharray="3,2"/>
+<line x1="1323" y1="1156" x2="1459" y2="1218" stroke="#22ddaa" stroke-width="1" stroke-dasharray="3,2"/>
+
+<!-- SECTION D - LEGEND -->
+<line x1="18" y1="1472" x2="1664" y2="1472" stroke="#0d1e32" stroke-width="1"/>
+<text x="28" y="1488" class="sh">D — WIRING LEGEND, CRITICAL NOTES &amp; POWER BUDGET</text>
+<rect x="18" y="1496" width="1646" height="684" fill="#060c18" stroke="#1a3050" stroke-width="1.5" rx="4"/>
+
+<!-- LINE TYPES -->
+<text x="36" y="1522" class="bl" style="fill:#cce8ff">LINE TYPES</text>
+<line x1="36" y1="1542" x2="110" y2="1542" stroke="#ff3333" stroke-width="4"/>
+<text x="120" y="1546" class="lgd">11.1V — Raw LiPo to buck inputs · 18AWG red · high current</text>
+<line x1="36" y1="1562" x2="110" y2="1562" stroke="#ff8c00" stroke-width="3.5"/>
+<text x="120" y="1566" class="lgd">7.4V — DS3240 HIP + DS3225 UPPER servo power · 18AWG orange</text>
+<line x1="36" y1="1582" x2="110" y2="1582" stroke="#00cc44" stroke-width="2.5"/>
+<text x="120" y="1586" class="lgd">6.0V — DS3218 LOWER servo power ONLY · 18AWG green · MAX 6.8V!</text>
+<line x1="36" y1="1602" x2="110" y2="1602" stroke="#2288ff" stroke-width="2.5"/>
+<text x="120" y="1606" class="lgd">5.0V — Pi5 logic, sensors, camera · 22AWG blue</text>
+<line x1="36" y1="1622" x2="110" y2="1622" stroke="#aa33ff" stroke-width="2" stroke-dasharray="5,2.5"/>
+<text x="120" y="1626" class="lgd">I2C Bus — SDA/SCL · 22AWG shielded · 4.7kΩ pull-up · ferrite bead · &lt;15cm</text>
+<line x1="36" y1="1642" x2="110" y2="1642" stroke="#ccaa00" stroke-width="2" stroke-dasharray="4,2"/>
+<text x="120" y="1646" class="lgd">UART — TX/RX · 115200 baud · RPLIDAR A1M8</text>
+<line x1="36" y1="1662" x2="110" y2="1662" stroke="#22ddaa" stroke-width="1.5"/>
+<text x="120" y="1666" class="lgd">PWM Signal — PCA9685 to servo signal pins · 22AWG yellow/white</text>
+<line x1="36" y1="1682" x2="110" y2="1682" stroke="#44bb88" stroke-width="1.5" stroke-dasharray="7,3"/>
+<text x="120" y="1686" class="lgd">USB-CDC — Pico W ↔ Pi5 · full-speed 12Mbps</text>
+<circle cx="73" cy="1706" r="6" fill="#ff8c00"/>
+<text x="120" y="1710" class="lgd">Junction dot — electrical connection (not just crossing)</text>
+<circle cx="73" cy="1730" r="6" fill="#888888"/>
+<text x="120" y="1744" class="lgd">GND return: all servo GND → star-point · 18AWG black · NEVER via chassis!</text>
+
+<!-- CRITICAL NOTES -->
+<text x="860" y="1522" class="bl" style="fill:#ff8844">⚠ CRITICAL RULES</text>
+<text x="860" y="1542" class="lgd" style="fill:#dd7744">1. PCA9685 V+ pin: UNCONNECTED or tied 100Ω to GND.</text>
+<text x="860" y="1557" class="lgd">   Servo power goes DIRECT from buck converters to servos.</text>
+<text x="860" y="1572" class="lgd">   Connecting servo power to V+ destroys the chip instantly.</text>
+<text x="860" y="1592" class="lgd" style="fill:#dd7744">2. DS3218 Vop MAX: 6.8V absolute. Buck target: 6.0V. No flex!</text>
+<text x="860" y="1607" class="lgd">   DS3225 @ 7.4V: safe (Vop 4.8–8.4V). DS3240 @ 7.4V: safe.</text>
+<text x="860" y="1622" class="lgd" style="fill:#dd7744">3. GND star-point: ALL grounds at power system block only.</text>
+<text x="860" y="1637" class="lgd">   No ground loops. Chassis GND separate from signal GND.</text>
+<text x="860" y="1652" class="lgd" style="fill:#dd7744">4. E-Stop: relay between battery+ and buck inputs (not on output!).</text>
+<text x="860" y="1667" class="lgd" style="fill:#dd7744">5. I2C: twisted pair · ferrite 100Ω@100MHz at each PCA · 15cm max.</text>
+<text x="860" y="1682" class="lgd" style="fill:#dd7744">6. INA226 shunt: most breakout boards = 2mΩ NOT 10mΩ. Measure yours!</text>
+<text x="860" y="1697" class="lgd">   At 2mΩ: set current_lsb for 0–10A · else readings are 5× too low.</text>
+<text x="860" y="1712" class="lgd" style="fill:#dd7744">7. JST-SM 3-pin: Red=Power · Black=GND · Yellow/White=PWM signal.</text>
+<text x="860" y="1729" class="lgd" style="fill:#cc66ff">8. ARM MODE (Leg 1+2): grippers on PCA9685-A Ch12+13 ONLY — PCA9685-B Ch12-15 spare.</text>
+<text x="860" y="1744" class="lgd" style="fill:#dd7744">   Quick-release connector: ≥15A/pin rating required — standard servo JST melts at peak!</text>
+<text x="860" y="1759" class="lgd" style="fill:#cc66ff">9. ARM MODE walking: Legs 1+2 deployed → robot walks on Legs 3–8 (6-pod mode).</text>
+<text x="860" y="1774" class="lgd" style="fill:#dd7744">10. MODE SWITCH SAFETY: Lock Legs 3–8 tripod stance before deploying arms.</text>
+<text x="860" y="1789" class="lgd" style="fill:#dd7744">11. ARM LASERS: Class 3R · nooit direct in oog · 33Ω weerstand verplicht op elke lijn.</text>
+<text x="860" y="1804" class="lgd">    RED=smelten actief · GREEN=temp OK · beide uit in veilige stand (OE hoog).</text>
+<text x="860" y="1789" class="lgd">    Verify INA226 current &lt;5A per leg before arm release. Software fault = fall risk.</text>
+<text x="860" y="1744" class="lgd">   DS3240 hip on Legs 3–8 carries full weight — check torque margin at 1:3.5 scale.</text>
+<text x="860" y="1759" class="lgd">   Gripper servo Ch12/Ch13 on PCA-A: 50Hz PWM same as leg servos.</text>
+<text x="860" y="1697" class="lgd">   Verify polarity with multimeter before every new connector.</text>
+
+<!-- POWER BUDGET -->
+<text x="36" y="1742" class="bl" style="fill:#cce8ff">POWER BUDGET (1 robot · worst-case avg.)</text>
+<text x="36" y="1762" class="bs">Rail  │ Device          │ Qty │ Each  │ Total</text>
+<line x1="36" y1="1766" x2="500" y2="1766" stroke="#1a3050" stroke-width="0.5"/>
+<text x="36" y="1780" class="bs">7.4V  │ DS3240 HIP      │ ×8  │ 0.5A  │  4.0A = 29.6W</text>
+<text x="36" y="1793" class="bs">7.4V  │ DS3225 UPPER    │ ×8  │ 0.4A  │  3.2A = 23.7W</text>
+<text x="36" y="1806" class="bs">6.0V  │ DS3218 LOWER    │ ×8  │ 0.4A  │  3.2A = 19.2W</text>
+<text x="36" y="1819" class="bs">5.0V  │ Pi5+cam+sensors │  1  │ 3.0A  │  3.0A = 15.0W</text>
+<line x1="36" y1="1823" x2="500" y2="1823" stroke="#1a3050" stroke-width="0.5"/>
+<text x="36" y="1837" class="bs" style="fill:#ffcc44">TOTAL │ avg running     │     │ ~14A  │ ~87.5W</text>
+<text x="36" y="1850" class="bs">STALL │ all locked      │     │ ~56A  │ BMS trips</text>
+<text x="36" y="1870" class="bw">Runtime: 2×5Ah=10Ah / ~14A avg = ~45 min</text>
+<text x="36" y="1883" class="bw">Cut-off: 9.0V · Charge each pack separately · Max 1C = 5A</text>
+
+<!-- CHECKLIST -->
+<text x="860" y="1742" class="bl" style="fill:#44ddaa">PRE-POWER CHECKLIST</text>
+<text x="860" y="1762" class="bs">☐  Measure all buck outputs BEFORE connecting servos</text>
+<text x="860" y="1775" class="bs">☐  Confirm PCA9685 V+ pins unconnected (BOTH boards)</text>
+<text x="860" y="1788" class="bs">☐  E-Stop: measure 0V on ALL buck outputs within 1s of press</text>
+<text x="860" y="1801" class="bs">☐  GND continuity: all blocks → star-point</text>
+<text x="860" y="1814" class="bs">☐  i2cdetect -y 1: expect 0x28 0x29 0x2A</text>
+<text x="860" y="1827" class="bs">☐  Pico W #1 I2C0 scan: expect 0x40 0x41</text>
+<text x="860" y="1840" class="bs">☐  Pico W #2 I2C1 scan: expect 0x44 0x45 0x46 0x48 0x49</text>
+<text x="860" y="1853" class="bs">☐  Measure 6.0V buck HOT under 2A load · if &gt;6.5V → STOP immediately</text>
+<text x="860" y="1866" class="bs">☐  Boot Pi5 · verify GPIO 3.3V · zero servo power</text>
+<text x="860" y="1866" class="bs">☐  Connect servos one leg at a time · watch INA226</text>
+<text x="860" y="1879" class="bs">☐  Home all joints before gait routine</text>
+<text x="860" y="1892" class="bs">☐  Monitor TMP117 first 10 min operation</text>
+<text x="860" y="1905" class="bs">☐  ARM MODE: test quick-release pull force ≥20N before first swap operation</text>
+<text x="860" y="1918" class="bs">☐  ARM MODE: verify tripod stance lock before deploying Leg 1+2 as arms</text>
+
+<!-- SECTION E - BOM -->
+<line x1="18" y1="2000" x2="1664" y2="2000" stroke="#0d1e32" stroke-width="1"/>
+<text x="28" y="2016" class="sh">E — BILL OF MATERIALS (CMB8LF v1 · ONE ROBOT)</text>
+<rect x="18" y="2024" width="800" height="314" fill="#060c18" stroke="#1a3050" stroke-width="1.5" rx="4"/>
+<text x="36" y="2046" class="bl" style="fill:#cce8ff">QTY · COMPONENT · NOTES</text>
+<line x1="36" y1="2050" x2="800" y2="2050" stroke="#1a3050" stroke-width="0.5"/>
+<text x="36" y="2064" class="bs"> 1 · Raspberry Pi 5 8GB · SBC main brain</text>
+<text x="36" y="2077" class="bs"> 2 · Raspberry Pi Pico W · servo ctrl + monitoring</text>
+<text x="36" y="2090" class="bs"> 2 · PCA9685 16-ch servo driver · I2C · 0x40 + 0x41</text>
+<text x="36" y="2103" class="bs"> 8 · DS3240 servo 35kg·cm · HIP joints · 7.4V</text>
+<text x="36" y="2116" class="bs"> 8 · DS3225 servo 25kg·cm · UPPER joints · 7.4V</text>
+<text x="36" y="2129" class="bs"> 8 · DS3218 servo 20kg·cm · LOWER joints · 6.0V</text>
+<text x="36" y="2142" class="bs"> 2 · LiPo 3S 5000mAh · 11.1V nominal</text>
+<text x="36" y="2155" class="bs"> 2 · BMS 40A 3S · over-current + balance</text>
+<text x="36" y="2168" class="bs"> 4 · Buck 7.4V/20A XL4016 · HIP+UPPER servos</text>
+<text x="36" y="2181" class="bs"> 2 · Buck 6.0V/10A XL4016 · LOWER servos</text>
+<text x="36" y="2188" class="bs"> 1 · Buck 5.0V/10A · logic + Pi5 + sensors</text>
+<text x="36" y="2201" class="bs"> 4 · INA226 current sensor · I2C · 0x44 0x45 0x46 0x47</text>
+<text x="36" y="2214" class="bs"> 2 · TMP117 temp sensor · I2C · 0x48 0x49</text>
+<text x="36" y="2227" class="bs"> 1 · BNO055 9-DOF IMU · I2C 0x28</text>
+<text x="36" y="2240" class="bs"> 2 · VL53L1X ToF rangefinder · I2C 0x29 0x2A</text>
+<text x="36" y="2253" class="bs"> 1 · RPLIDAR A1M8 · UART · 360° lidar</text>
+<text x="36" y="2266" class="bs"> 1 · Pi Camera Module 3 · CSI-2 · 12MP</text>
+<text x="36" y="2279" class="bs"> 2 · IRLZ44N MOSFET · lighting control</text>
+<text x="36" y="2292" class="bs"> 1 · WS2812B RGB strip · addressable LED</text>
+<text x="36" y="2305" class="bs"> 2 · Anti-spark XT60 connectors · packs</text>
+<text x="36" y="2318" class="bs">24 · JST-SM 3-pin pairs · one per servo</text>
+<text x="36" y="2331" class="bs"> 1 · 30A relay NC · E-Stop circuit</text>
+<text x="36" y="2344" class="bs"> 2 · Gripper servo DS3225/MG996R · Ch12+13 · Leg1+2 arm end-effector</text>
+<text x="36" y="2357" class="bs"> 2 · Quick-release connector · bajonet/magnetic + mechanical lock · ≥15A/pin · 3-pole min · test ≥20N pull</text>
+<text x="36" y="2370" class="bs"> 2 · Modified foot plate · walk mode + docking receiver for peer robot</text>
+<text x="36" y="2383" class="bs"> 4 · Laser module 6mm RED 650nm 5mW 3V · GP17+GP19 · amazon.nl B0982CYKYV</text>
+<text x="36" y="2396" class="bs"> 4 · Laser module 6mm GREEN 520nm 5mW 3V · GP18+GP20 · ebay 203590420513</text>
+<text x="36" y="2409" class="bs"> 8 · Resistor 33Ω · laser current limiting (3.3V Pico → laser module)</text>
+
+<rect x="840" y="2024" width="824" height="314" fill="#060c18" stroke="#1a3050" stroke-width="1.5" rx="4"/>
+<text x="858" y="2046" class="bl" style="fill:#cce8ff">QTY · COMPONENT · NOTES (cont.)</text>
+<line x1="858" y1="2050" x2="1650" y2="2050" stroke="#1a3050" stroke-width="0.5"/>
+<text x="858" y="2064" class="bs"> 1 · NC emergency stop button · mushroom red</text>
+<text x="858" y="2077" class="bs"> 4 · PTC fuse 30A · each 7.4V buck output</text>
+<text x="858" y="2090" class="bs"> 3 · PTC fuse 15A · 6V outputs + 5V output</text>
+<text x="858" y="2103" class="bs"> 2 · ATC fuse 50A · battery main leads</text>
+<text x="858" y="2116" class="bs"> 6 · Ferrite bead 100Ω@100MHz · I2C lines</text>
+<text x="858" y="2129" class="bs"> 4 · Resistor 4.7kΩ · I2C1 pull-up (SDA+SCL)</text>
+<text x="858" y="2142" class="bs"> 2 · Resistor 10Ω · MOSFET gate resistors</text>
+<text x="858" y="2155" class="bs"> 1 · Resistor 330Ω · WS2812B data line</text>
+<text x="858" y="2168" class="bs"> 3m · Wire 18AWG silicone · power rails</text>
+<text x="858" y="2181" class="bs"> 2m · Wire 22AWG shielded · I2C + signal</text>
+<text x="858" y="2194" class="bs"> 1 · 3W white LED + heatsink · front light</text>
+<text x="858" y="2207" class="bs"> 1 · 10W spotlight + Al heatsink · 7.4V</text>
+<text x="858" y="2220" class="bs"> 1 · LiPo balance charger · 1C max/pack</text>
+<text x="36" y="2357" class="bs">26 · DS18B20 sensor · 1-Wire per servo · thermische cutoff 70°C</text>
+<text x="36" y="2370" class="bs"> 1 · Aeroglaze Z306 · matte zwart · ε=0.95 · radiatieve koeling</text>
+<text x="36" y="2383" class="bs"> 1 · Master Bond EP21TDCHT · vac-rated lijm · -196°C tot +177°C</text>
+<text x="858" y="2233" class="bs"> 1 · Multimeter · verify voltages first!</text>
+<text x="858" y="2260" class="bw">★ All servo PWM: 50Hz · 500µs–2500µs</text>
+<text x="858" y="2273" class="bw">★ Servo center position: 1500µs pulse</text>
+<text x="858" y="2286" class="bw">★ PCA9685 prescaler for 50Hz: value 121</text>
+<text x="858" y="2299" class="bw">★ RPLIDAR motor speed: setMotorPWM(255)</text>
+<text x="858" y="2312" class="bw">★ VL53L1X XSHUT: boot low, then high for addr assign</text>
+<text x="858" y="2325" class="bw">★ Pi5 I2C speed: dtparam=i2c_arm=on,i2c_arm_baudrate=400000</text>
+<text x="858" y="2338" class="bm" style="fill:#cc66ff">★ FASE 1: Earth demo · 50+ swap cycli · film · funding pitch</text>
+<text x="858" y="2351" class="bm" style="fill:#cc66ff">★ FASE 2: Vacuum test 10⁻⁵ mbar · zelfde hardware · geen rebuild</text>
+<text x="858" y="2364" class="bm" style="fill:#cc66ff">★ FASE 3: TRL 5-6 · pitch ESA · DLR · private space</text>
+<text x="858" y="2338" class="bw">★ PWM fan-out: 24× 22AWG individual wires per servo · keep &lt;20cm each</text>
+<text x="858" y="2351" class="bw">★ GND return: 18AWG black per servo to star-point · NEVER use chassis as GND</text>
+<text x="858" y="2377" class="bw" style="fill:#cc44ff">★ VACUUM: Prusament PC Space Grade · MoS₂ droog · EP21TDCHT · GAP PADs · Z306</text>
+<text x="858" y="2364" class="bw" style="fill:#cc66ff">★ ARM MODE: Legs 1+2 = dual-function · walking foot OR robot arm/gripper</text>
+<text x="858" y="2377" class="bw" style="fill:#cc66ff">★ Docking protocol: Robot A holds still · Robot B arm-poot grijpt + verwisselt been</text>
+
+<!-- FOOTER -->
+<line x1="0" y1="2356" x2="1682" y2="2356" stroke="#1a3060" stroke-width="1.5"/>
+<rect x="0" y="2356" width="1682" height="22" fill="#070e1e"/>
+<rect x="0" y="2356" width="8" height="22" fill="#1a4080"/>
+<text x="841" y="2372" text-anchor="middle" class="bs" style="fill:#3a5880">CMB8LF v1 · Chrystal Moon Base 8-Legged Freaks · Scale 1:3.5 · A0 · CC0 2026 · Verify all voltages before power-up · Star-point GND only · E-Stop test mandatory</text>
+</svg>

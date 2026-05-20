@@ -1,0 +1,224 @@
+<svg width="841mm" height="1189mm" viewBox="0 0 1682 2378" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    text{font-family:'Courier New',Courier,monospace}
+    .title{font-size:38px;font-weight:700;fill:#c8e8ff;letter-spacing:4px}
+    .sub{font-size:14px;fill:#2a4a6a;letter-spacing:1px}
+    .lbl{font-size:12px;font-weight:700;fill:#ddeeff}
+    .sm{font-size:10px;fill:#557799}
+    .zone{font-size:11px;font-weight:700}
+    .note{font-size:9px;fill:#445566}
+    .code{font-size:8px;fill:#558877;font-family:Courier New}
+  </style>
+  <filter id="glow_red" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow_soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow_body" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="12" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <radialGradient id="belly_glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#cc0000" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#cc0000" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="hex" width="60" height="52" patternUnits="userSpaceOnUse">
+    <polygon points="15,0 45,0 60,26 45,52 15,52 0,26"
+             fill="none" stroke="#0c1a2a" stroke-width="0.8"/>
+  </pattern>
+</defs>
+
+<!-- BACKGROUND -->
+<rect width="1682" height="2378" fill="#030810"/>
+<rect width="1682" height="2378" fill="url(#hex)"/>
+
+<!-- Ambient glow around robot -->
+<ellipse cx="841" cy="780" rx="550" ry="480"
+         fill="url(#belly_glow)" opacity="0.6"/>
+<ellipse cx="841" cy="830" rx="300" ry="260"
+         fill="#cc0000" opacity="0.04"/>
+
+<!-- HEADER -->
+<rect x="0" y="0" width="1682" height="100" fill="#040810"/>
+<rect x="0" y="98" width="1682" height="2" fill="#330000"/>
+<rect x="0" y="0" width="10" height="100" fill="#660000"/>
+<rect x="1672" y="0" width="10" height="100" fill="#660000"/>
+<text x="841" y="52" text-anchor="middle" class="title">CMB8LF v1 — AMBIENT LIGHTING ZONES</text>
+<text x="841" y="78" text-anchor="middle" class="sub">ROG Strix Breathing Effect · Deep Red · 54× WS2812B · Pico W #1 GP14 Chain</text>
+
+<line x1="792.3" y1="617.7" x2="736.1" y2="478.7" stroke="#1a2030" stroke-width="8" stroke-linecap="round"/>
+<line x1="736.1" y1="478.7" x2="707.1" y2="362.2" stroke="#1a2030" stroke-width="6" stroke-linecap="round"/>
+<line x1="707.1" y1="362.2" x2="700.5" y2="267.5" stroke="#1a2030" stroke-width="5" stroke-linecap="round"/>
+<circle cx="721.6" cy="420.4" r="18" fill="#cc0000" opacity="0.35" filter="url(#glow_soft)"/>
+<circle cx="721.6" cy="420.4" r="6" fill="#ff2200" opacity="0.8" filter="url(#glow_red)"/>
+<circle cx="703.8" cy="314.8" r="14" fill="#cc0000" opacity="0.30" filter="url(#glow_soft)"/>
+<circle cx="703.8" cy="314.8" r="5" fill="#ff2200" opacity="0.7" filter="url(#glow_red)"/>
+<circle cx="792.3" cy="617.7" r="22" fill="#cc0000" opacity="0.25" filter="url(#glow_soft)"/>
+<circle cx="792.3" cy="617.7" r="7" fill="#ff1100" opacity="0.85" filter="url(#glow_red)"/>
+<circle cx="700.5" cy="267.5" r="6" fill="#0d1520" stroke="#1a2530" stroke-width="1"/>
+<line x1="889.7" y1="617.7" x2="945.9" y2="478.7" stroke="#1a2030" stroke-width="8" stroke-linecap="round"/>
+<line x1="945.9" y1="478.7" x2="1005.9" y2="374.7" stroke="#1a2030" stroke-width="6" stroke-linecap="round"/>
+<line x1="1005.9" y1="374.7" x2="1067.0" y2="302.0" stroke="#1a2030" stroke-width="5" stroke-linecap="round"/>
+<circle cx="975.9" cy="426.7" r="18" fill="#cc0000" opacity="0.35" filter="url(#glow_soft)"/>
+<circle cx="975.9" cy="426.7" r="6" fill="#ff2200" opacity="0.8" filter="url(#glow_red)"/>
+<circle cx="1036.4" cy="338.4" r="14" fill="#cc0000" opacity="0.30" filter="url(#glow_soft)"/>
+<circle cx="1036.4" cy="338.4" r="5" fill="#ff2200" opacity="0.7" filter="url(#glow_red)"/>
+<circle cx="889.7" cy="617.7" r="22" fill="#cc0000" opacity="0.25" filter="url(#glow_soft)"/>
+<circle cx="889.7" cy="617.7" r="7" fill="#ff1100" opacity="0.85" filter="url(#glow_red)"/>
+<circle cx="1067.0" cy="302.0" r="6" fill="#0d1520" stroke="#1a2530" stroke-width="1"/>
+<line x1="721.3" y1="711.6" x2="583.3" y2="653.0" stroke="#1a2030" stroke-width="8" stroke-linecap="round"/>
+<line x1="583.3" y1="653.0" x2="480.4" y2="591.2" stroke="#1a2030" stroke-width="6" stroke-linecap="round"/>
+<line x1="480.4" y1="591.2" x2="408.7" y2="528.9" stroke="#1a2030" stroke-width="5" stroke-linecap="round"/>
+<circle cx="531.8" cy="622.1" r="18" fill="#cc0000" opacity="0.35" filter="url(#glow_soft)"/>
+<circle cx="531.8" cy="622.1" r="6" fill="#ff2200" opacity="0.8" filter="url(#glow_red)"/>
+<circle cx="444.5" cy="560.0" r="14" fill="#cc0000" opacity="0.30" filter="url(#glow_soft)"/>
+<circle cx="444.5" cy="560.0" r="5" fill="#ff2200" opacity="0.7" filter="url(#glow_red)"/>
+<circle cx="721.3" cy="711.6" r="22" fill="#cc0000" opacity="0.25" filter="url(#glow_soft)"/>
+<circle cx="721.3" cy="711.6" r="7" fill="#ff1100" opacity="0.85" filter="url(#glow_red)"/>
+<circle cx="408.7" cy="528.9" r="6" fill="#0d1520" stroke="#1a2530" stroke-width="1"/>
+<line x1="960.7" y1="711.6" x2="1098.7" y2="653.0" stroke="#1a2030" stroke-width="8" stroke-linecap="round"/>
+<line x1="1098.7" y1="653.0" x2="1214.7" y2="622.0" stroke="#1a2030" stroke-width="6" stroke-linecap="round"/>
+<line x1="1214.7" y1="622.0" x2="1309.3" y2="613.7" stroke="#1a2030" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1156.7" cy="637.5" r="18" fill="#cc0000" opacity="0.35" filter="url(#glow_soft)"/>
+<circle cx="1156.7" cy="637.5" r="6" fill="#ff2200" opacity="0.8" filter="url(#glow_red)"/>
+<circle cx="1262.0" cy="617.8" r="14" fill="#cc0000" opacity="0.30" filter="url(#glow_soft)"/>
+<circle cx="1262.0" cy="617.8" r="5" fill="#ff2200" opacity="0.7" filter="url(#glow_red)"/>
+<circle cx="960.7" cy="711.6" r="22" fill="#cc0000" opacity="0.25" filter="url(#glow_soft)"/>
+<circle cx="960.7" cy="711.6" r="7" fill="#ff1100" opacity="0.85" filter="url(#glow_red)"/>
+<circle cx="1309.3" cy="613.7" r="6" fill="#0d1520" stroke="#1a2530" stroke-width="1"/>
+<line x1="721.3" y1="848.4" x2="583.3" y2="907.0" stroke="#1a2030" stroke-width="8" stroke-linecap="round"/>
+<line x1="583.3" y1="907.0" x2="467.3" y2="938.0" stroke="#1a2030" stroke-width="6" stroke-linecap="round"/>
+<line x1="467.3" y1="938.0" x2="372.7" y2="946.3" stroke="#1a2030" stroke-width="5" stroke-linecap="round"/>
+<circle cx="525.3" cy="922.5" r="18" fill="#cc0000" opacity="0.35" filter="url(#glow_soft)"/>
+<circle cx="525.3" cy="922.5" r="6" fill="#ff2200" opacity="0.8" filter="url(#glow_red)"/>
+<circle cx="420.0" cy="942.2" r="14" fill="#cc0000" opacity="0.30" filter="url(#glow_soft)"/>
+<circle cx="420.0" cy="942.2" r="5" fill="#ff2200" opacity="0.7" filter="url(#glow_red)"/>
+<circle cx="721.3" cy="848.4" r="22" fill="#cc0000" opacity="0.25" filter="url(#glow_soft)"/>
+<circle cx="721.3" cy="848.4" r="7" fill="#ff1100" opacity="0.85" filter="url(#glow_red)"/>
+<circle cx="372.7" cy="946.3" r="6" fill="#0d1520" stroke="#1a2530" stroke-width="1"/>
+<line x1="960.7" y1="848.4" x2="1098.7" y2="907.0" stroke="#1a2030" stroke-width="8" stroke-linecap="round"/>
+<line x1="1098.7" y1="907.0" x2="1201.6" y2="968.8" stroke="#1a2030" stroke-width="6" stroke-linecap="round"/>
+<line x1="1201.6" y1="968.8" x2="1273.3" y2="1031.1" stroke="#1a2030" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1150.2" cy="937.9" r="18" fill="#cc0000" opacity="0.35" filter="url(#glow_soft)"/>
+<circle cx="1150.2" cy="937.9" r="6" fill="#ff2200" opacity="0.8" filter="url(#glow_red)"/>
+<circle cx="1237.5" cy="1000.0" r="14" fill="#cc0000" opacity="0.30" filter="url(#glow_soft)"/>
+<circle cx="1237.5" cy="1000.0" r="5" fill="#ff2200" opacity="0.7" filter="url(#glow_red)"/>
+<circle cx="960.7" cy="848.4" r="22" fill="#cc0000" opacity="0.25" filter="url(#glow_soft)"/>
+<circle cx="960.7" cy="848.4" r="7" fill="#ff1100" opacity="0.85" filter="url(#glow_red)"/>
+<circle cx="1273.3" cy="1031.1" r="6" fill="#0d1520" stroke="#1a2530" stroke-width="1"/>
+<line x1="772.1" y1="928.4" x2="692.6" y2="1055.6" stroke="#1a2030" stroke-width="8" stroke-linecap="round"/>
+<line x1="692.6" y1="1055.6" x2="615.5" y2="1147.5" stroke="#1a2030" stroke-width="6" stroke-linecap="round"/>
+<line x1="615.5" y1="1147.5" x2="542.7" y2="1208.6" stroke="#1a2030" stroke-width="5" stroke-linecap="round"/>
+<circle cx="654.1" cy="1101.6" r="18" fill="#cc0000" opacity="0.35" filter="url(#glow_soft)"/>
+<circle cx="654.1" cy="1101.6" r="6" fill="#ff2200" opacity="0.8" filter="url(#glow_red)"/>
+<circle cx="579.1" cy="1178.1" r="14" fill="#cc0000" opacity="0.30" filter="url(#glow_soft)"/>
+<circle cx="579.1" cy="1178.1" r="5" fill="#ff2200" opacity="0.7" filter="url(#glow_red)"/>
+<circle cx="772.1" cy="928.4" r="22" fill="#cc0000" opacity="0.25" filter="url(#glow_soft)"/>
+<circle cx="772.1" cy="928.4" r="7" fill="#ff1100" opacity="0.85" filter="url(#glow_red)"/>
+<circle cx="542.7" cy="1208.6" r="6" fill="#0d1520" stroke="#1a2530" stroke-width="1"/>
+<line x1="909.9" y1="928.4" x2="989.4" y2="1055.6" stroke="#1a2030" stroke-width="8" stroke-linecap="round"/>
+<line x1="989.4" y1="1055.6" x2="1038.2" y2="1165.2" stroke="#1a2030" stroke-width="6" stroke-linecap="round"/>
+<line x1="1038.2" y1="1165.2" x2="1061.2" y2="1257.4" stroke="#1a2030" stroke-width="5" stroke-linecap="round"/>
+<circle cx="1013.8" cy="1110.4" r="18" fill="#cc0000" opacity="0.35" filter="url(#glow_soft)"/>
+<circle cx="1013.8" cy="1110.4" r="6" fill="#ff2200" opacity="0.8" filter="url(#glow_red)"/>
+<circle cx="1049.7" cy="1211.3" r="14" fill="#cc0000" opacity="0.30" filter="url(#glow_soft)"/>
+<circle cx="1049.7" cy="1211.3" r="5" fill="#ff2200" opacity="0.7" filter="url(#glow_red)"/>
+<circle cx="909.9" cy="928.4" r="22" fill="#cc0000" opacity="0.25" filter="url(#glow_soft)"/>
+<circle cx="909.9" cy="928.4" r="7" fill="#ff1100" opacity="0.85" filter="url(#glow_red)"/>
+<circle cx="1061.2" cy="1257.4" r="6" fill="#0d1520" stroke="#1a2530" stroke-width="1"/>
+<polygon points="791.3,618.3 890.7,618.3 961.1,713.0 961.1,847.0 890.7,941.7 791.3,941.7 720.9,847.0 720.9,713.0" fill="#080e18" stroke="#1a2030" stroke-width="2"/>
+<ellipse cx="841" cy="790" rx="145" ry="195" fill="none" stroke="#cc0000" stroke-width="3" opacity="0.5" filter="url(#glow_red)" stroke-dasharray="8,6"/>
+<ellipse cx="841" cy="790" rx="145" ry="195" fill="none" stroke="#ff2200" stroke-width="1" opacity="0.4"/>
+<ellipse cx="841" cy="780" rx="110" ry="150" fill="#cc0000" opacity="0.06" filter="url(#glow_body)"/>
+<line x1="806.6" y1="669.1" x2="818.0" y2="706.1" stroke="#1a2535" stroke-width="1"/>
+<line x1="875.4" y1="669.1" x2="864.0" y2="706.1" stroke="#1a2535" stroke-width="1"/>
+<line x1="924.1" y1="734.1" x2="896.4" y2="749.4" stroke="#1a2535" stroke-width="1"/>
+<line x1="924.1" y1="825.9" x2="896.4" y2="810.6" stroke="#1a2535" stroke-width="1"/>
+<line x1="875.4" y1="890.9" x2="864.0" y2="853.9" stroke="#1a2535" stroke-width="1"/>
+<line x1="806.6" y1="890.9" x2="818.0" y2="853.9" stroke="#1a2535" stroke-width="1"/>
+<line x1="757.9" y1="825.9" x2="785.6" y2="810.6" stroke="#1a2535" stroke-width="1"/>
+<line x1="757.9" y1="734.1" x2="785.6" y2="749.4" stroke="#1a2535" stroke-width="1"/>
+<ellipse cx="841" cy="585" rx="52" ry="14" fill="none" stroke="#cc0000" stroke-width="3" opacity="0.7" filter="url(#glow_red)"/>
+<ellipse cx="841" cy="585" rx="52" ry="14" fill="#cc0000" opacity="0.12"/>
+<rect x="776" y="380" width="130" height="80" rx="18" fill="#080e18" stroke="#1a2030" stroke-width="1.5"/>
+<circle cx="819" cy="425" r="28" fill="#cc0000" opacity="0.20" filter="url(#glow_red)"/>
+<circle cx="819" cy="425" r="14" fill="#dd0000" opacity="0.45" filter="url(#glow_soft)"/>
+<circle cx="819" cy="425" r="8" fill="#ff1100" opacity="0.9" filter="url(#glow_red)"/>
+<circle cx="819" cy="425" r="3" fill="#200000"/>
+<circle cx="863" cy="425" r="28" fill="#cc0000" opacity="0.20" filter="url(#glow_red)"/>
+<circle cx="863" cy="425" r="14" fill="#dd0000" opacity="0.45" filter="url(#glow_soft)"/>
+<circle cx="863" cy="425" r="8" fill="#ff1100" opacity="0.9" filter="url(#glow_red)"/>
+<circle cx="863" cy="425" r="3" fill="#200000"/>
+<ellipse cx="841" cy="360" rx="38" ry="22" fill="#060c14" stroke="#151f2e" stroke-width="1.5"/>
+<rect x="833" y="405" width="16" height="10" rx="3" fill="#050a10" stroke="#1a2535" stroke-width="0.8"/>
+<rect x="791" y="400" width="8" height="32" rx="2" fill="#060c14" stroke="#111820" stroke-width="0.8"/>
+<rect x="791" y="400" width="8" height="32" rx="2" fill="#cc0000" opacity="0.08"/>
+<rect x="881" y="400" width="8" height="32" rx="2" fill="#060c14" stroke="#111820" stroke-width="0.8"/>
+<rect x="881" y="400" width="8" height="32" rx="2" fill="#cc0000" opacity="0.08"/>
+<line x1="931" y1="425" x2="1021" y2="425" stroke="#cc0000" stroke-width="1" opacity="0.6"/>
+<text x="1026" y="420" class="zone" style="fill:#ff2200">ZONE 1 — OGEN</text>
+<text x="1026" y="434" class="note">2× WS2812B · index 0-1</text>
+<text x="1026" y="446" class="note">Deepest red · ROG breathing</text>
+<line x1="916" y1="585" x2="1021" y2="585" stroke="#cc0000" stroke-width="1" opacity="0.6"/>
+<text x="1026" y="579" class="zone" style="fill:#ff2200">ZONE 4 — NEKRING</text>
+<text x="1026" y="593" class="note">8× WS2812B · index 38-45</text>
+<text x="1026" y="605" class="note">Circumferential glow</text>
+<line x1="970.6656309488172" y1="711.6220525143771" x2="1271" y2="711.6220525143771" stroke="#cc0000" stroke-width="1" opacity="0.6"/>
+<text x="1276" y="705.6220525143771" class="zone" style="fill:#ff4400">ZONE 5 — HEUPGEWRICHTEN</text>
+<text x="1276" y="719.6220525143771" class="note">8× WS2812B · index 46-53</text>
+<text x="1276" y="731.6220525143771" class="note">1 LED per hip · sijpelt door armor</text>
+<line x1="1166.6969085440273" y1="637.4832405348347" x2="1271" y2="637.4832405348347" stroke="#cc0000" stroke-width="1" opacity="0.6"/>
+<text x="1276" y="631.4832405348347" class="zone" style="fill:#ff4400">ZONE 2 — BEEN ARMOR VENTS</text>
+<text x="1276" y="645.4832405348347" class="note">8×3=24× WS2812B · index 2-25</text>
+<text x="1276" y="657.4832405348347" class="note">PEBA diffuser · gloeit door slots</text>
+<line x1="696" y1="860" x2="501" y2="900" stroke="#cc0000" stroke-width="1" opacity="0.6"/>
+<text x="281" y="888" class="zone" style="fill:#ff4400">ZONE 3 — BODY ONDERKANT</text>
+<text x="281" y="902" class="note">12× WS2812B · index 26-37</text>
+<text x="281" y="916" class="note">Ring · schijnt naar de vloer</text>
+
+<rect x="290" y="1140" width="1100" height="280" rx="8" fill="#080e18" stroke="#330000" stroke-width="1.5"/>
+<rect x="290" y="1140" width="1100" height="6" rx="4" fill="#660000"/>
+<text x="841" y="1170" text-anchor="middle" class="lbl" style="fill:#ff2200;font-size:13px">❤ ROG STRIX BREATHING EFFECT</text>
+<line x1="310" y1="1180" x2="1370" y2="1180" stroke="#220000" stroke-width="0.8"/>
+
+<text x="360" y="1202" class="lbl" style="fill:#cc6655">KLEUR</text>
+<text x="360" y="1218" class="sm">RGB(180, 0, 0) — diep rood</text>
+<text x="360" y="1232" class="sm">Nooit wit · nooit blauw · nooit oranje</text>
+
+<text x="560" y="1202" class="lbl" style="fill:#cc6655">HELDERHEID</text>
+<text x="560" y="1218" class="sm">Basis:  3%  (nooit volledig uit)</text>
+<text x="560" y="1232" class="sm">Piek:  18%  (niet feller)</text>
+<text x="560" y="1246" class="sm">Periode: 5 seconden per ademhaling</text>
+
+<text x="800" y="1202" class="lbl" style="fill:#cc6655">DIFFUSER</text>
+<text x="800" y="1218" class="sm">PEBA Shore 85 naturel/translucent</text>
+<text x="800" y="1232" class="sm">Achter bestaande armor ventslots</text>
+<text x="800" y="1246" class="sm">Geen harde LED-punten zichtbaar</text>
+
+<text x="1050" y="1202" class="lbl" style="fill:#cc6655">CHAIN</text>
+<text x="1050" y="1218" class="sm">54× WS2812B op 1 datakabel</text>
+<text x="1050" y="1232" class="sm">Pico W #1 · GP14 · 5V rail</text>
+<text x="1050" y="1246" class="sm">330Ω series · 100µF cap op 5V</text>
+
+<line x1="310" y1="1262" x2="1370" y2="1262" stroke="#220000" stroke-width="0.5"/>
+<text x="360" y="1282" class="lbl" style="fill:#cc6655">FIRMWARE (CircuitPython)</text>
+<text x="360" y="1298" class="code">import board, neopixel, math, time</text>
+<text x="360" y="1312" class="code">pixels = neopixel.NeoPixel(board.GP14, 54, auto_write=False)</text>
+<text x="360" y="1326" class="code">BASE, PEAK, PERIOD = 0.03, 0.18, 5.0</text>
+<text x="360" y="1340" class="code">t = 0.0</text>
+<text x="360" y="1354" class="code">while True:</text>
+<text x="400" y="1368" class="code">b = BASE + (PEAK-BASE) * (math.sin(2*math.pi*t/PERIOD)+1)/2</text>
+<text x="400" y="1382" class="code">pixels.fill((int(180*b), 0, 0))  ;  pixels.show()</text>
+<text x="400" y="1396" class="code">t += 0.05  ;  time.sleep(0.05)</text>
+
+
+<line x1="0" y1="2340" x2="1682" y2="2340" stroke="#220000" stroke-width="1.5"/>
+<rect x="0" y="2340" width="1682" height="38" fill="#030810"/>
+<rect x="0" y="2340" width="10" height="38" fill="#660000"/>
+<text x="841" y="2356" text-anchor="middle" style="font-size:9px;font-family:Courier New;fill:#331111;letter-spacing:2px">CMB8LF v1 · AMBIENT LIGHTING · ROG STRIX BREATHING EFFECT · CC0 2026 · CHRYSTAL MOON BASE</text>
+<text x="841" y="2370" text-anchor="middle" style="font-size:8px;font-family:Courier New;fill:#220a0a">Alle zones op 1 WS2812B chain · PEBA Shore 85 diffusers · RGB(180,0,0) · nooit volledig uit</text>
+</svg>
