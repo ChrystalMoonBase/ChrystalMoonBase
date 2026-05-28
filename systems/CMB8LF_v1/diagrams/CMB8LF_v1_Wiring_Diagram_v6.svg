@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #07090c; }
+      .panel { fill: #0d1117; stroke: #1a2535; stroke-width: 1; }
+      .label { font-family: 'JetBrains Mono', monospace; fill: #dce8f5; }
+      .label-sm { font-size: 10px; }
+      .label-md { font-size: 12px; font-weight: bold; }
+      .label-lg { font-size: 14px; font-weight: bold; }
+      .orange { fill: #ff6b2b; stroke: #ff6b2b; }
+      .blue   { fill: #2b9fff; stroke: #2b9fff; }
+      .green  { fill: #2bff8f; stroke: #2bff8f; }
+      .red    { fill: #ff3b3b; stroke: #ff3b3b; }
+      .yellow { fill: #ffc72b; stroke: #ffc72b; }
+      .purple { fill: #b06bff; stroke: #b06bff; }
+      .gray   { fill: #6b8099; stroke: #6b8099; }
+      .wire-can    { stroke: #2b9fff; stroke-width: 2; fill: none; }
+      .wire-power  { stroke: #ffc72b; stroke-width: 3; fill: none; }
+      .wire-usb    { stroke: #b06bff; stroke-width: 2; fill: none; }
+      .wire-uart   { stroke: #2bff8f; stroke-width: 1.5; fill: none; }
+      .wire-gpio   { stroke: #ff6b2b; stroke-width: 1.5; fill: none; }
+      .wire-i2c    { stroke: #6b8099; stroke-width: 1.5; fill: none; stroke-dasharray: 4,2; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="1200" height="800"/>
+
+  <!-- Title -->
+  <text class="label label-lg orange" x="600" y="30" text-anchor="middle">CMB8LF v1 — Wiring Diagram v6</text>
+  <text class="label label-sm gray" x="600" y="46" text-anchor="middle">CAN bus · Power · Data · Spectroscopy — CC0 · Chrystal Moon Base · 2026</text>
+
+  <!-- ── BODY CORE ─────────────────────────────────────── -->
+  <rect class="panel" x="440" y="60" width="320" height="220" rx="8"/>
+  <text class="label label-md orange" x="600" y="82" text-anchor="middle">BODY</text>
+
+  <!-- Pi5 -->
+  <rect class="panel purple" x="460" y="90" width="130" height="50" rx="4" fill="#1a0d2e"/>
+  <text class="label label-sm" x="525" y="110" text-anchor="middle" fill="#b06bff">Raspberry Pi 5</text>
+  <text class="label label-sm" x="525" y="126" text-anchor="middle" fill="#8896a8">8GB · Strategic AI</text>
+
+  <!-- Pico W 1 -->
+  <rect class="panel" x="460" y="152" width="60" height="40" rx="3" fill="#0d1a12"/>
+  <text class="label label-sm" x="490" y="168" text-anchor="middle" fill="#2bff8f">Pico W</text>
+  <text class="label label-sm" x="490" y="182" text-anchor="middle" fill="#6b8099">#1 CAN</text>
+
+  <!-- Pico W 2 -->
+  <rect class="panel" x="530" y="152" width="60" height="40" rx="3" fill="#1a0a0a"/>
+  <text class="label label-sm" x="560" y="168" text-anchor="middle" fill="#ff6b2b">Pico W</text>
+  <text class="label label-sm" x="560" y="182" text-anchor="middle" fill="#6b8099">#2 Safety</text>
+
+  <!-- Body battery -->
+  <rect class="panel" x="460" y="202" width="120" height="30" rx="3" fill="#1a1400"/>
+  <text class="label label-sm" x="520" y="221" text-anchor="middle" fill="#ffc72b">4S 5000mAh Body Battery</text>
+
+  <!-- USB-CAN -->
+  <rect class="panel" x="600" y="152" width="60" height="40" rx="3" fill="#0a0d1a"/>
+  <text class="label label-sm" x="630" y="168" text-anchor="middle" fill="#2b9fff">USB</text>
+  <text class="label label-sm" x="630" y="182" text-anchor="middle" fill="#6b8099">CAN</text>
+
+  <!-- ── HEAD ─────────────────────────────────────────── -->
+  <rect class="panel" x="440" y="310" width="320" height="160" rx="8"/>
+  <text class="label label-md green" x="600" y="332" text-anchor="middle">HEAD MODULE</text>
+  <text class="label label-sm gray" x="600" y="348" text-anchor="middle">Tussen been 1 en 2 · pan+tilt · alle sensoren</text>
+
+  <!-- Sensors -->
+  <rect x="455" y="356" width="90" height="25" rx="3" fill="#0d1a12"/>
+  <text class="label label-sm" x="500" y="373" text-anchor="middle" fill="#2bff8f">RPLIDAR A1M8</text>
+
+  <rect x="555" y="356" width="90" height="25" rx="3" fill="#0d1a12"/>
+  <text class="label label-sm" x="600" y="373" text-anchor="middle" fill="#2bff8f">Pi Cam 3 NoIR</text>
+
+  <rect x="655" y="356" width="90" height="25" rx="3" fill="#0d1a12"/>
+  <text class="label label-sm" x="700" y="373" text-anchor="middle" fill="#2bff8f">FLIR Lepton 3.5</text>
+
+  <rect x="455" y="390" width="60" height="25" rx="3" fill="#0a0d1a"/>
+  <text class="label label-sm" x="485" y="407" text-anchor="middle" fill="#2b9fff">BNO055</text>
+
+  <rect x="525" y="390" width="80" height="25" rx="3" fill="#0a0d1a"/>
+  <text class="label label-sm" x="565" y="407" text-anchor="middle" fill="#2b9fff">VL53L1X ×2</text>
+
+  <rect x="615" y="390" width="90" height="25" rx="3" fill="#0a0d1a"/>
+  <text class="label label-sm" x="660" y="407" text-anchor="middle" fill="#2b9fff">HSI Camera USB3</text>
+
+  <rect x="455" y="425" width="130" height="25" rx="3" fill="#1a0d1a"/>
+  <text class="label label-sm" x="520" y="442" text-anchor="middle" fill="#b06bff">Pan moteus 91 · Tilt moteus 92</text>
+
+  <!-- ── LEGS (schematic) ──────────────────────────────── -->
+  <!-- Left legs -->
+  <rect class="panel" x="60" y="60" width="340" height="400" rx="8"/>
+  <text class="label label-md blue" x="230" y="82" text-anchor="middle">BENEN 1·3·5·7 (links)</text>
+
+  <!-- Leg 1 gripper -->
+  <rect x="75" y="94" width="310" height="75" rx="4" fill="#1a0d00"/>
+  <text class="label label-sm" x="100" y="110" fill="#ff6b2b">BEEN 1 — GRIJPER LINKS</text>
+  <text class="label label-sm" x="100" y="126" fill="#6b8099">Coxa: moteus 11 · Femur: moteus 12 · Tibia: moteus 13</text>
+  <text class="label label-sm" x="100" y="142" fill="#ff3b3b">Palm: 808nm + 976nm laser · SWIR · LIBS · RP2350</text>
+  <text class="label label-sm" x="100" y="158" fill="#ffc72b">Batterij: 3× 6S 16340 (coxa+femur+tibia)</text>
+
+  <!-- Leg 3 -->
+  <rect x="75" y="178" width="310" height="55" rx="4" fill="#0d1117"/>
+  <text class="label label-sm" x="100" y="196" fill="#2b9fff">BEEN 3 — STANDAARD</text>
+  <text class="label label-sm" x="100" y="212" fill="#6b8099">Coxa: moteus 31 · Femur: moteus 32 · Tibia: moteus 33</text>
+  <text class="label label-sm" x="100" y="228" fill="#ffc72b">Batterij: 3× 6S 16340 · Zonnecel femur buitenwand</text>
+
+  <!-- Leg 5 -->
+  <rect x="75" y="242" width="310" height="55" rx="4" fill="#0d1117"/>
+  <text class="label label-sm" x="100" y="260" fill="#2b9fff">BEEN 5 — STANDAARD</text>
+  <text class="label label-sm" x="100" y="276" fill="#6b8099">Coxa: moteus 51 · Femur: moteus 52 · Tibia: moteus 53</text>
+  <text class="label label-sm" x="100" y="292" fill="#ffc72b">Batterij: 3× 6S 16340 · Zonnecel femur buitenwand</text>
+
+  <!-- Leg 7 -->
+  <rect x="75" y="306" width="310" height="55" rx="4" fill="#0d1117"/>
+  <text class="label label-sm" x="100" y="324" fill="#2b9fff">BEEN 7 — STANDAARD</text>
+  <text class="label label-sm" x="100" y="340" fill="#6b8099">Coxa: moteus 71 · Femur: moteus 72 · Tibia: moteus 73</text>
+  <text class="label label-sm" x="100" y="356" fill="#ffc72b">Batterij: 3× 6S 16340</text>
+
+  <!-- Right legs -->
+  <rect class="panel" x="800" y="60" width="340" height="400" rx="8"/>
+  <text class="label label-md blue" x="970" y="82" text-anchor="middle">BENEN 2·4·6·8 (rechts)</text>
+
+  <rect x="815" y="94" width="310" height="75" rx="4" fill="#1a0d00"/>
+  <text class="label label-sm" x="840" y="110" fill="#ff6b2b">BEEN 2 — GRIJPER RECHTS</text>
+  <text class="label label-sm" x="840" y="126" fill="#6b8099">Coxa: moteus 21 · Femur: moteus 22 · Tibia: moteus 23</text>
+  <text class="label label-sm" x="840" y="142" fill="#ff3b3b">Palm: 808nm + 976nm laser · SWIR · LIBS · RP2350</text>
+  <text class="label label-sm" x="840" y="158" fill="#ffc72b">Batterij: 3× 6S 16340</text>
+
+  <rect x="815" y="178" width="310" height="55" rx="4" fill="#0d1117"/>
+  <text class="label label-sm" x="840" y="196" fill="#2b9fff">BEEN 4 — STANDAARD</text>
+  <text class="label label-sm" x="840" y="212" fill="#6b8099">Coxa: moteus 41 · Femur: moteus 42 · Tibia: moteus 43</text>
+  <text class="label label-sm" x="840" y="228" fill="#ffc72b">Batterij: 3× 6S 16340 · Zonnecel femur buitenwand</text>
+
+  <rect x="815" y="242" width="310" height="55" rx="4" fill="#0d1117"/>
+  <text class="label label-sm" x="840" y="260" fill="#2b9fff">BEEN 6 — STANDAARD</text>
+  <text class="label label-sm" x="840" y="276" fill="#6b8099">Coxa: moteus 61 · Femur: moteus 62 · Tibia: moteus 63</text>
+  <text class="label label-sm" x="840" y="292" fill="#ffc72b">Batterij: 3× 6S 16340 · Zonnecel femur buitenwand</text>
+
+  <rect x="815" y="306" width="310" height="55" rx="4" fill="#0d1117"/>
+  <text class="label label-sm" x="840" y="324" fill="#2b9fff">BEEN 8 — STANDAARD</text>
+  <text class="label label-sm" x="840" y="340" fill="#6b8099">Coxa: moteus 81 · Femur: moteus 82 · Tibia: moteus 83</text>
+  <text class="label label-sm" x="840" y="356" fill="#ffc72b">Batterij: 3× 6S 16340</text>
+
+  <!-- ── CAN BUS VERBINDINGEN ──────────────────────────── -->
+  <!-- Links naar body -->
+  <line class="wire-can" x1="400" y1="200" x2="440" y2="200"/>
+  <text class="label label-sm" x="420" y="196" text-anchor="middle" fill="#2b9fff">CAN</text>
+
+  <!-- Rechts naar body -->
+  <line class="wire-can" x1="760" y1="200" x2="800" y2="200"/>
+  <text class="label label-sm" x="780" y="196" text-anchor="middle" fill="#2b9fff">CAN</text>
+
+  <!-- Head naar body -->
+  <line class="wire-can" x1="600" y1="280" x2="600" y2="310"/>
+
+  <!-- USB3 HSI naar Pi5 -->
+  <line class="wire-usb" x1="615" y1="407" x2="555" y2="407" stroke-dasharray="4,2"/>
+  <text class="label label-sm" x="585" y="420" text-anchor="middle" fill="#b06bff">USB3</text>
+
+  <!-- ── LEGEND ─────────────────────────────────────────── -->
+  <rect class="panel" x="60" y="500" width="1080" height="80" rx="6"/>
+  <text class="label label-md orange" x="600" y="522" text-anchor="middle">LEGENDA</text>
+
+  <line class="wire-can"   x1="80"  y1="545" x2="130" y2="545"/>
+  <text class="label label-sm" x="140" y="549" fill="#2b9fff">CAN bus 1Mbit/s</text>
+
+  <line class="wire-power" x1="260" y1="545" x2="310" y2="545"/>
+  <text class="label label-sm" x="320" y="549" fill="#ffc72b">22V Power rail</text>
+
+  <line class="wire-usb"   x1="440" y1="545" x2="490" y2="545"/>
+  <text class="label label-sm" x="500" y="549" fill="#b06bff">USB3 / USB-CAN</text>
+
+  <line class="wire-uart"  x1="620" y1="545" x2="670" y2="545"/>
+  <text class="label label-sm" x="680" y="549" fill="#2bff8f">UART</text>
+
+  <line class="wire-i2c"   x1="750" y1="545" x2="800" y2="545"/>
+  <text class="label label-sm" x="810" y="549" fill="#6b8099">I2C / SPI</text>
+
+  <line class="wire-gpio"  x1="880" y1="545" x2="930" y2="545"/>
+  <text class="label label-sm" x="940" y="549" fill="#ff6b2b">GPIO / Interlock</text>
+
+  <!-- Node ID schema -->
+  <rect class="panel" x="60" y="610" width="1080" height="100" rx="6"/>
+  <text class="label label-md orange" x="600" y="632" text-anchor="middle">CAN NODE ID SCHEMA</text>
+  <text class="label label-sm" x="100" y="656" fill="#dce8f5">Node ID: XY  |  X = been (1-8) of hoofd (9)  |  Y = segment (1=coxa/pan · 2=femur/tilt · 3=tibia · 4=palm AI)</text>
+  <text class="label label-sm" x="100" y="676" fill="#6b8099">Voorbeelden: 11=been1-coxa · 23=been2-tibia · 91=hoofd-pan · 92=hoofd-tilt</text>
+  <text class="label label-sm" x="100" y="696" fill="#ffc72b">Spectroscopie data: Palm RP2350 verwerkt lokaal → stuurt alleen mineraalpercentages via CAN (nooit ruwe spectra)</text>
+
+  <!-- Footer -->
+  <text class="label label-sm gray" x="600" y="780" text-anchor="middle">
+    CMB8LF v1 · Wiring Diagram v6 · CC0 2026 · Chrystal Moon Base · github.com/ChrystalMoonBase
+  </text>
+</svg>

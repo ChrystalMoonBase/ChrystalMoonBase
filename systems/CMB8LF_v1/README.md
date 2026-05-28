@@ -1,98 +1,155 @@
-# CMB8LF v1 — Chrystal Moon Base 8-Legged Freaks
+# CMB8LF v1 — Chrystal Moon Base 8 Legged Freaks
+## Scale 1:3.5 · Vacuum-Rated · Brushless · CAN Bus · Full Revision v6
 
-**Vacuum-Rated Dual-Master Self-Repair Robot · Scale 1:3.5**
+**Status:** Active development — build one leg at a time
+**Author:** Berechja Kerkdijk
+**Licence:** Hardware: CERN-OHL-S-2.0 · Software: GPL-3.0 · Docs: CC0
 
-## Concept
+> **The prototype is the door.** Without a working robot, no door opens.
+> Build it one leg per month. Two years if needed. But build it.
 
-8-legged modular robot for autonomous self-repair. Two identical robots swap legs without human intervention. First print = flight print.
+---
 
-## Specs
+## What This Robot Does
 
-| Property | Value |
-|---|---|
-| Scale | 1:3.5 |
-| Servos | 26 (24 legs + 2 grippers) |
-| Brain | Raspberry Pi 5 8GB + 2× Pico W |
-| Material | Prusament PC Space Grade Black |
-| Certification | ESA TML 0.25% · CVCM 0.00% |
-| Printer | Voron 2.4 |
-| Hotend | **Phaetus Rapido HF 2 UHF** |
-| Board | **BTT Manta M8P / Octopus Pro (Klipper)** |
-| Nozzle | 400°C · hardened steel 0.4mm |
-| Lube | MoS₂ dry only — no grease in vacuum |
-| Target | TRL 5-6 · ESA / DLR / private space |
+- Walks on 8 legs using wave gait (7 always grounded — maximum stability)
+- Sinters real glass powder / regolith simulant using dual lasers (808nm + 976nm)
+- Grips objects in 3 modes: box grip · pincer · foot pad
+- Operates in vacuum (MoS₂ dry film · ceramic bearings · no lubricants)
+- Swaps its own legs with help from a second robot
+- Communicates via laser (FSO) externally · CAN bus internally
+- Runs 3-layer AI: Pi5 strategic · Pico W coordination · RP2350 reflexes
 
-## Print Setup — Voron 2.4 + Rapido HF 2 UHF
+---
+
+## Specifications
 
 | Parameter | Value |
 |---|---|
-| Hotend | Phaetus Rapido HF 2 UHF (max 500°C) |
-| Board | BTT Manta M8P or BTT Octopus Pro |
-| Firmware | Klipper |
-| Nozzle temp | 400°C |
-| Bed temp | 110°C (PEI + glue stick / Magigoo PC) |
-| Chamber | Enclosed · min 55°C ambient |
-| Fan | OFF during print |
-| Structural | 0.2mm · 40-60% gyroid |
-| Detail | 0.15mm · 20-30% gyroid |
-| Pressure advance | ~0.035 (calibrate!) |
+| Scale | 1:3.5 |
+| Legs | 8 (octopod) |
+| Gripper legs | 2 (leg 1 + leg 2, front) |
+| Joints | 26 (24 leg + 2 head) |
+| Motors | 26× BLDC brushless |
+| Motor controllers | 26× mjbots moteus r4.11 |
+| System voltage | 22.2V (6S Li-Ion) |
+| Battery nodes | 25 (distributed — one per segment) |
+| Body battery | 4S 5000mAh LiPo |
+| CAN bus speed | 1 Mbit/s |
+| Gait | Wave gait (1 leg at a time) |
+| Material structure | PEEK-CF |
+| Bearing type | Si₃N₄ ceramic (vacuum-proof) |
+| Lubrication | MoS₂ dry film only |
+| Printer required | PEEK-capable (Voron 2.4 + Rapido UHF or Intamsys FUNMAT HT) |
+| Total cost estimate | ~€7.300 excl. printer |
+| Build time | 10–14 months (one leg/month) |
 
-See `cad/CMB8LF_v1_klipper_config.cfg` for full Klipper setup.
+---
 
-## Structure
+## Build Order (one leg per month)
+
+```
+Month 1     Tools + printer + compute hardware
+Month 2     Leg 3 (first standard leg — learn the system)
+Month 3     Leg 1 (first gripper leg — laser palm)
+Month 4     Leg 4
+Month 5     Leg 2 (second gripper leg)
+Month 6     Leg 5
+Month 7     Leg 6
+Month 8     Leg 7
+Month 9     Leg 8
+Month 10    Head module + all sensors
+Month 11    Body + 9 coupling interfaces
+Month 12+   Calibration · wave gait tuning · laser test · demo
+```
+
+---
+
+## File Structure
 
 ```
 CMB8LF_v1/
-├── README.md
-├── diagrams/
-│   ├── CMB8LF_v1_Wiring_Diagram.svg       ← Complete wiring (A0)
-│   ├── CMB8LF_v1_Graphical_Overview.svg   ← System overview (A0)
-│   └── CMB8LF_v1_Lighting_Overview.svg    ← Ambient lighting (A0)
+├── README.md               ← You are here
+├── BOM_v6.md               ← Complete bill of materials
+├── PRINT_SETTINGS.md       ← PEEK-CF print settings
+├── VACUUM_PREP.md          ← Vacuum chamber preparation guide
+├── SUPPLIER_MAILS_v6.md    ← Supplier contact templates
+│
+├── software/
+│   ├── README.md
+│   ├── main_v6.py          ← Pico W #1 — CAN master (start here)
+│   ├── safety_pico.py      ← Pico W #2 — safety + web
+│   ├── config_v6.py        ← All parameters and node IDs
+│   ├── wave_gait_v6.py     ← Wave gait controller
+│   ├── sinter_seq_v6.py    ← Laser sinter sequencer
+│   ├── can_bus.py          ← CAN bus communication layer
+│   ├── moteus_ctrl.py      ← moteus r4.11 controller interface
+│   ├── rp2350_segment.py   ← Per-segment mini AI (runs on RP2350)
+│   ├── laser_palm_v6.py    ← Laser palm driver (runs on palm RP2350)
+│   ├── pi5_main.py         ← Pi5 — strategic AI + navigation
+│   └── web_v6.py           ← Web dashboard (runs on Pico W #2)
+│
 ├── cad/
-│   ├── CMB8LF_v1_vacuum_config.scad       ← Central config (include in all)
-│   ├── CMB8LF_v1_klipper_config.cfg       ← Klipper macros + PC settings
-│   ├── CMB8LF_v1_leg_complete.scad
-│   ├── CMB8LF_v1_arm_leg_combined.scad
-│   ├── CMB8LF_v1_head_module.scad
-│   ├── CMB8LF_v1_body_chassis.scad
-│   └── CMB8LF_v1_ambient_lighting.scad
-└── docs/
-    ├── CMB8LF_v1_Complete_Documentation.pdf
-    ├── CMB8LF_v1_BOM_vacuum.md
-    └── CMB8LF_v1_shopping_list.md
+│   ├── CMB8LF_v1_vacuum_config.scad      ← Central dimensions (include first)
+│   ├── CMB8LF_v1_leg_standard.scad       ← Standard leg (×6)
+│   ├── CMB8LF_v1_leg_gripper.scad        ← Gripper leg (×2)
+│   ├── CMB8LF_v1_palm_laser.scad         ← Laser palm assembly
+│   ├── CMB8LF_v1_coupling_interface.scad ← Bistable magnetic coupling
+│   ├── CMB8LF_v1_head_module.scad        ← Head with pan+tilt
+│   ├── CMB8LF_v1_body_chassis.scad       ← Spider body
+│   └── CMB8LF_v1_klipper_config.cfg      ← Printer config (Voron 2.4)
+│
+├── docs/
+│   ├── CMB8LF_v1_BOM_vacuum.md
+│   └── CMB8LF_v1_shopping_list.md
+│
+└── diagrams/
+    ├── CMB8LF_v1_Wiring_Diagram.svg
+    ├── CMB8LF_v1_Graphical_Overview.svg
+    └── CMB8LF_v1_Lighting_Overview.svg
 ```
 
-## I2C Addresses
+---
 
-| Bus | Device | Address |
-|---|---|---|
-| Pi5 I2C1 | BNO055 · VL53L1X ×2 | 0x28–0x2A |
-| Pico #1 I2C0 | PCA9685 ×2 | 0x40–0x41 |
-| Pico #2 I2C1 | INA226 ×4 · TMP117 ×2 | 0x44–0x49 |
-| Pi5 1-Wire | DS18B20 ×26 | — |
+## I2C / CAN Bus Address Map
 
-## Ambient Lighting — ROG Breathing
+| Bus | Device | Address / Node ID | Notes |
+|---|---|---|---|
+| Pi5 I2C1 | BNO055 IMU | 0x28 | Head |
+| Pi5 I2C1 | VL53L1X left | 0x29 | Head |
+| Pi5 I2C1 | VL53L1X right | 0x2A | Head |
+| Pi5 SPI | FLIR Lepton 3.5 | SPI0 | Head |
+| Pi5 UART | RPLIDAR A1M8 | UART | Head |
+| Pi5 CSI | Pi Camera 3 NoIR | CSI | Head |
+| Pi5 USB | USB-CAN (Canable) | — | CAN master |
+| CAN | Leg 1 coxa moteus | Node 11 | Gripper leg L |
+| CAN | Leg 1 femur moteus | Node 12 | Gripper leg L |
+| CAN | Leg 1 tibia moteus | Node 13 | Gripper leg L |
+| CAN | Leg 2 coxa moteus | Node 21 | Gripper leg R |
+| CAN | Legs 3-8 | Node 3X-8X | Standard legs |
+| CAN | Head pan moteus | Node 91 | Head |
+| CAN | Head tilt moteus | Node 92 | Head |
+| Pico W #2 I2C | INA226 ×4 | 0x44-0x47 | Power monitoring |
+| Pico W #2 I2C | TMP117 body | 0x48 | Body temp |
+| Pico W #2 GPIO | Hall sensors ×9 | GPIO 0-8 | Coupling status |
 
-54× WS2812B · GP14 · `RGB(180,0,0)` · never off
+---
 
-| Zone | Where | LEDs |
-|---|---|---|
-| 1 | Eyes | 2 |
-| 2 | Leg armor vents | 24 |
-| 3 | Body underside | 12 |
-| 4 | Neck ring | 8 |
-| 5 | Hip joints | 8 |
+## Safety Rules — Always
 
-## Roadmap
+1. **OD4+ laser goggles** rated for 808nm AND 976nm — always when lasers could activate
+2. **E-stop button** within reach at all times during operation
+3. **Never power lasers** unless gripper closed (hardware interlock enforces this)
+4. **Never walk and sinter** simultaneously — these are separate modes
+5. **MoS₂ only** — never oil, grease, or wet lubricant anywhere on the robot
 
-1. Earth demo — 50+ swap cycles · film it
-2. Vacuum test — 10⁻⁵ mbar · ~€5000
-3. Field prep — TRL 5-6 · ESA / DLR
-
-> **First print = Flight print.**
+---
 
 ## License
 
-CC0 2026 — Chrystal Moon Base — No rights reserved.
+- Hardware designs: CERN-OHL-S-2.0
+- Software: GPL-3.0
+- Documentation: CC0
 
-*Multi-AI: Claude · ChatGPT · Meta · DeepSeek · Human (all decisions)*
+*CMB8LF v1 · CC0 2026 · Chrystal Moon Base · No rights reserved*
+*Multi-AI: Claude · ChatGPT · Meta · DeepSeek · Gemini · Human decisions: Berechja Kerkdijk*
