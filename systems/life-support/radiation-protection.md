@@ -48,3 +48,41 @@ For planning purposes, the target is to keep annual dose below the current NASA 
 3. What is the dose rate in the underground network at 3-metre depth?
 4. What SEP event magnitude defines the threshold for storm shelter evacuation?
 5. What are the long-term health effects of the residual dose after shielding, and what monitoring and mitigation are required?
+
+---
+
+## Complementary and Emerging Approaches (under review)
+
+The passive mass shielding above does the primary work. The following are reviewed honestly: some are usable complements now, some are open research, and none replaces sufficient mass.
+
+**The transparency-versus-shielding tension.** A core design wish is that residents live *under open, transparent domes* — not only underground — for psychological health. This collides with physics. Shielding against the galactic cosmic-ray background needs thick mass; transparency needs thinness and light transmission. These are opposing requirements. Transparent shielding does exist (lead glass is used for reactor viewing windows), but it works against reactor-type gamma/neutron radiation using heavy metals — and heavy metals are *poor* against high-energy cosmic rays, producing a secondary-particle shower. A patent on transparent shielding states the trap directly: high-energy radiation requires either much heavier mass (reducing transparency) or higher heavy-metal concentration (also reducing transparency). Reviews confirm there is, as yet, no universal transparent shield. The honest conclusion: transparent layers can fully handle solar/UV/thermal load and a partly-transparent water layer moderates some cosmic secondaries, but full cosmic-background protection requires opaque mass. The resolution is layered living: open transparent domes for waking life at an accepted, non-zero dose, and heavily-shielded or underground zones for sleeping.
+
+**Layering — materials, not thickness.** Splitting one thick shield into several thin layers of the *same* material gives no benefit (what matters is total mass per area), and thin layers with gaps between them can be *worse* by letting secondary radiation reach occupied space. What *does* help is **multi-material** layering in the right order: a heavier outer layer (basalt) to slow the primaries, a light hydrogen-rich inner layer to absorb the secondary neutrons created in the first. Research recommends exactly this two-layer combination. The existing dome stack (basalt outer, water middle) already approximates the right ordering.
+
+**Hydrogen-rich inner lining.** Lining the interior of the regolith shell with a hydrogen-rich material gives complementary protection (hydrogen is highly effective against neutrons) *and* separates the interior from the slightly hazardous raw regolith. Simulation work finds lithium hydride among the best performers in combination with regolith. To bring interior radiation near zero with regolith alone takes a ~6 m wall; ~12 m for total elimination — useful target numbers for the heavily-shielded sleeping zone.
+
+**Buildings within domes.** Structures inside a dome add a second mass layer above occupants and lower the average dose for those inside — useful especially against solar events. But two thin layers (dome + building) still do not meet the cosmic-background requirement, and mid-thickness layers can generate secondaries. The constructive reading: shielding that *increases inward* (dome -> building -> shielded sleeping core) concentrates protection where people lie still longest, while the open dome serves waking life.
+
+**Radiotrophic fungi (open research).** Melanised fungi (e.g. *Cladosporium sphaerospermum*) survive and even grow in high radiation, apparently converting some radiation to chemical energy via melanin ("radiosynthesis"). Tested aboard the ISS, a ~1.7 mm fungal lawn reduced radiation by ~2% — small, but a melanin/regolith composite is projected to need only ~9 cm for a meaningful reduction that would otherwise need ~21 cm of pure fungus. Its appeal for CMB is specific: it is ISRU-compatible, self-regenerating, grows from a tiny starter culture, and fits the base's closed-loop biology. It is a **complement, not a replacement** — melanin offers only partial shielding versus mass. Open questions: habitat-scale performance, growth control in 1/6 g, and keeping a living layer safely separated from occupants.
+
+**Active (magnetic/plasma) shielding (open research).** Deflecting charged particles with a magnetic or plasma field is the one route that bypasses mass — and is precisely why it remains unproven: the magnetic variants are heavy, power-hungry, and need cooling. Of electromagnetic concepts studied, only a cold-plasma field-expansion approach was recommended for further study. Listed here as a long-term research direction, not something this design relies on.
+
+---
+
+## Updated Open Questions (additional)
+
+6. What multi-material layer ordering (basalt / water / hydrogen-rich liner) minimises *total* dose including secondaries, by Monte-Carlo transport modelling?
+7. Which hydrogen-rich inner-lining material (lithium hydride, polyethylene, water) is best for the lunar interior environment?
+8. Can radiotrophic-fungus / regolith composites contribute meaningfully at habitat scale, and grow safely in 1/6 g?
+9. What annual dose do residents accept for living under open domes, versus time spent in shielded/underground zones — a medical and ethical decision, not purely technical?
+
+---
+
+## References (for verification and contribution)
+
+- Matthia et al., *Space Weather* (2024) — regolith shielding thicknesses for SEP and GCR.
+- Multi-material / two-layer shielding against secondary neutrons — *ScienceDirect* (FLUKA study).
+- Hydrogen-rich materials with regolith (OLTARIS / MULASSIS studies) — ~6 m regolith near-zero, ~12 m total; lithium hydride best performer.
+- Radiotrophic fungi aboard the ISS — bioRxiv (Cladosporium sphaerospermum, ~2% at 1.7 mm; ~9 cm melanin/regolith composite projection).
+- CREW HaT magnetic shielding concept — arXiv 2209.13624.
+- Transparent radiation shielding limits — USPTO 3,937,970; Frontiers in Materials (2025).
