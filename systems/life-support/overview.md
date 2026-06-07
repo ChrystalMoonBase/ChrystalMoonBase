@@ -29,6 +29,7 @@
 | food-production.md | Hydroponics and nutrition |
 | waste-processing.md | Solid and liquid waste management |
 | radiation-protection.md | Passive and active radiation mitigation |
+| energy-and-thermal.md | Power continuity and passive thermal management |
 | medical.md | Healthcare in isolation |
 | gravity-countermeasures.md | Three-layer gravity countermeasure system |
 | gravity-countermeasure-maglev-beds.md | Maglev sleeping ring specification |

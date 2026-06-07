@@ -86,6 +86,8 @@ During the ~11% of the year when the Peary site is in reduced illumination, the 
 
 **Storage type:** Hybrid — electrochemical (Li-ion primary, upgradeable to locally-sourced Na-ion) + thermal (basalt block heat storage for passive thermal management).
 
+> Note: this protocol applies to the **Phase 0.2 pod** (robots hibernate when power beaming stops). The base-wide energy-continuity strategy for a populated base — where living systems can never be switched off — is described separately in `systems/life-support/energy-and-thermal.md`.
+
 ---
 
 ## Mass Budget (Electrical System)
