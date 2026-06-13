@@ -131,11 +131,15 @@ Peary rim maximum dark interval: ~7 days. Comfortable margin.
 The robot's outer protective skin is made of sintered regolith — the same material the robots produce — in a combination of large rigid plates on flat surfaces and articulated tiles over joints.
 
 **Research basis:**
-Spark plasma sintering of andesite-basalt (lunar regolith analogue) has produced:
+Spark plasma sintering of andesite-basalt (a **mare-type** lunar regolith analogue) has produced:
 - Compressive strength up to **566 MPa** (exceeds structural steel at ~250–500 MPa)
 - Vickers hardness up to **650 HV** (harder than many tool steels)
 
-Hawaiian basalt — chemically similar to lunar highland regolith — has been sintered at 1,120–1,180°C, producing structural ceramics suitable for construction. Maximum strength achieved at grain sizes below a few hundred micrometres.
+Hawaiian basalt has been sintered at 1,120–1,180°C, producing structural ceramics suitable for construction. Maximum strength achieved at grain sizes below a few hundred micrometres.
+
+**Correction (self-flagged):** An earlier version of this document described Hawaiian basalt as "chemically similar to lunar highland regolith." That is wrong, and is corrected here rather than left standing. Basalt is **mafic** (iron/magnesium-rich, pyroxene-dominated); lunar highland regolith at Peary is **anorthosite — felsic** (calcium/aluminium-rich, plagioclase-dominated). They are different rock types with different melting points, viscosity, and sintered properties. Basalt sintering results are therefore a **mare-analogue** reference, not a highland one. They demonstrate that *regolith-class material can be sintered into strong ceramic* — a valid and useful proof of principle — but the specific strength/hardness numbers above should not be assumed to transfer directly to Peary highland anorthosite.
+
+**Better highland references exist and should be used in Phase 0:** NASA's **NU-LHT** series (Lunar Highlands Type, e.g. NU-LHT-2M / -3M) and the European **EAC-1A** are anorthosite-bearing highland simulants far closer to Peary composition than basalt. Phase 0 sintering tests should use a highland simulant of this class, not a mare basalt simulant, to produce numbers that actually apply to the chosen site.
 
 **What this enables:**
 The robot carries its own repair material. Another CMB-R1 can use its sintering laser to fuse replacement tiles onto a damaged unit from regolith collected at site. This is a self-healing capability no other lunar rover concept has proposed.

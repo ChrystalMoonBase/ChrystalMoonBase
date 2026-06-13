@@ -55,6 +55,6 @@
 - Power architecture: strict domain separation, dual 3S packs
 - PTC fuses, E-stop, EMI ferrite cores added
 - Prusament PC Space Grade as primary material
-- QIDI Tech Plus4 as target printer
+- CreatBot PEEK-300 as primary printer (Voron 2.4 / Intamsys as DIY alternatives)
 - Tripod gait, PCA9685 servo control
 - 650nm symbolic laser (visual effect only)

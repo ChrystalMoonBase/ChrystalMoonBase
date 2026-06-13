@@ -134,7 +134,7 @@ The Pod's single purpose is to prove that a robot system can land autonomously, 
 
 ## Beyond Pod 1 — Four Peaks, Four Masts
 
-Pod 1 is the proof of concept. If it works, the waiting period before Pod 2 will not be long.
+Pod 1 is the proof of concept. Whether, and how quickly, further Pods follow depends on what Pod 1 demonstrates and on factors outside this project's control — funding, launch availability, and external interest. Resupply and follow-on Pods are treated as **possible, not assumed**. The cadence is unknown; time will decide it.
 
 The Peary crater rim has four candidate illumination peaks — locations where high annual illumination (~89% at the best peak) has been measured. The long-term vision is one Pod and one mast on each of these four peaks, creating a network of four independent power and construction nodes across the Peary rim.
 
@@ -146,12 +146,17 @@ The Peary crater rim has four candidate illumination peaks — locations where h
 - Construction rate scales with every additional Pod
 
 **Pod 2 is also a resupply mission:**
-Each subsequent Pod brings fresh heads, spare components, and potentially new robot chassis. The concern about head wear over a 5–10 year operational period becomes less critical when Pod 2 arrives within a few years of Pod 1's success.
+If and when subsequent Pods fly, each can bring fresh heads, spare components, and potentially new robot chassis. But the fleet is **not designed to depend on this**. Because resupply timing cannot be guaranteed, the fleet must be able to operate independently for the full head-wear lifetime (5–10 years) using only what it already has, with in-field repair and head-swap (see `systems/robot-cmb-r1/failure-modes-and-degradation.md`). Any resupply that does arrive is a bonus, not a requirement.
 
-**The sequence:**
-- Pod 1 → prove the concept, build the first sintered path and floor area
-- Pod 2 → second peak, fresh supplies, doubled construction capacity
-- Pod 3 → third peak, network begins to form
-- Pod 4 → fourth peak, full Peary rim network operational
+**The sequence (expansion scenario — if it works and the project continues):**
 
-At this point the construction capacity is sufficient to begin the main base floor in earnest, and the base transitions from Phase 0.2 to Phase 1.
+| Stage | Masts | Fleet | Construction capacity |
+|---|---|---|---|
+| Pod 1 | 1 | ~16 robots | Prove the concept; first sintered path and floor area |
+| Pod 2 | 2 | ~32 robots | Second peak; network begins; roughly double the rate |
+| Pod 3 | 3 | ~48 robots | Third peak; redundant network forming |
+| Pod 4 | 4 | ~64 robots | Full Peary rim network; build accelerates with each Pod |
+
+As the fleet grows, construction does not just add up — it speeds up, because more robots, more masts, and more line-of-sight coverage compound. By the four-Pod stage the capacity is sufficient to begin the main base floor in earnest, and the base transitions from Phase 0.2 to Phase 1.
+
+**A deliberate note on tone.** The baseline assumption of this project remains the sober one stated above: one Pod, operating independently, with no follow-on guaranteed (see "Beyond Pod 1" opening and `failure-modes-and-degradation.md`). The 16 → 32 → 48 → 64 expansion is **not** a planned certainty and nothing in the base's survival depends on it. It is presented as the natural scenario *if* Pod 1 succeeds and the work continues — the conclusion any reader can reasonably draw for themselves, that a thing which demonstrably works tends to get continued. CMB states the floor (survive alone) and lets the reader see the ceiling (a growing network); it promises only the floor.

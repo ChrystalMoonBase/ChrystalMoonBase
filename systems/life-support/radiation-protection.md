@@ -28,16 +28,74 @@ The water layer (Layer 4) provides additional shielding — water is the best sh
 **Secondary shielding — underground:**
 The underground network provides additional shielding from the regolith overburden. Residents spending significant time underground during major SEP events dramatically reduce their exposure.
 
-**Storm shelter:**
-A dedicated radiation shelter at sufficient underground depth is planned for SEP events. During a major solar storm, all residents move to the storm shelter. The shelter must be identified and signed before the first human arrives.
+**Storm shelter and SEP response:**
+A dedicated radiation shelter at sufficient underground depth is planned for SEP events (see `systems/underground-network/emergency-shelters.md` for the shelter hardware, 60-day survival provisioning, and hermetic-sealing rules). The shelter must be identified, signed, and rehearsed before the first human arrives. What follows is the *response system* that gets people into it in time — described as fully as current knowledge allows, with the parts that require validation flagged as open questions rather than asserted.
+
+### Why timing is the whole problem
+
+A solar particle event is fundamentally different from the GCR background. GCR is a steady drizzle you manage with mass over months. An SEP is a flood that arrives in a window of minutes to hours and can deliver a dangerous — potentially acute-sickness or lethal — dose to an unshielded person in that short time. Depth does not have to be greater than for GCR (SEP particles are lower-energy and easier to stop), so the storm shelter is not about *more* shielding than the sleeping zones — it is about getting everyone behind sufficient mass *fast enough*. The entire SEP strategy is therefore a race between warning time and evacuation time. Everything below serves that race.
+
+### The warning chain — detection to people-behind-mass
+
+The response is a layered cascade, each layer faster but less certain than the last:
+
+1. **Upstream space-weather data (hours of lead time, lower certainty).** Solar observatories and space-weather services (e.g. NOAA SWPC-class data, and any L1/solar-monitoring assets available at mission time) flag active regions, flares, and CMEs before the particle flux reaches the Moon. This gives the longest warning but the least certainty — not every flagged event produces a dangerous flux at the lunar surface. Used to raise readiness, not to trigger evacuation by itself.
+
+2. **Flare electromagnetic flash (minutes of lead time, high certainty an event occurred).** The light/X-ray flash from a flare travels at light speed and arrives ~8 minutes after emission — *ahead* of the slower, more damaging protons. Onboard and orbital X-ray/optical sensors detecting this flash give a short but high-confidence "particles may be inbound" trigger.
+
+3. **Local particle detectors (immediate, definitive).** CMB carries its own radiation/particle detectors at the surface and in the domes. When the measured particle flux crosses a defined threshold, this is the definitive, no-ambiguity trigger: the event is here, now. This is the layer that must never be missed, because it does not depend on any external service.
+
+4. **Automated alert and response (no human decision required to start).** Crossing the local-detector threshold automatically: sounds the alarm in every dome and work zone, displays evacuation routing, begins safing of surface operations, and recalls any robots/personnel on the surface. The system is designed to act without waiting for a human to interpret the data — a human can *escalate* or *stand down*, but the protective action starts automatically.
+
+### Graded response levels
+
+A single on/off alarm is too blunt. The intended model is graded, so normal life is not constantly interrupted by false alarms while real events still trigger hard action:
+
+| Level | Trigger (illustrative — thresholds TBD) | Response |
+|---|---|---|
+| **Watch** | Upstream data flags a capable active region / CME | Readiness check; shelters confirmed stocked and sealed-ready; surface excursions kept short and close to entries |
+| **Warning** | Flare flash detected; elevated but sub-threshold flux | Surface work stops; non-essential personnel move toward shelter entries; robots begin recall |
+| **Evacuate** | Local flux crosses the action threshold | Automated alarm everywhere; all residents to storm shelter / deep zones immediately; surface fully safed |
+| **All-clear** | Measured flux sustained below threshold for a defined period | Controlled return; dose reconstruction logged per person |
+
+### The evacuation architecture — why the base layout already serves this
+
+The response time is set by the base's physical design, not by willpower:
+
+- **Every dome connects to the underground network**, never to another dome at the surface. There is always a route *down* and behind mass from any occupied space. There are no dead-end surface rooms.
+- **Rapid descent routes.** Each dome cluster needs fast routes (sized for the peak number of occupants) into the shielded underground — the same network that carries the maglev and utilities. The storm shelters sit on this network.
+- **Distributed, multiple shelters.** Because shelters are multiple and distributed (see emergency-shelters.md), no resident is ever far from one. The design target is that the *farthest* occupant from a shelter can reach sufficient mass within the available warning time — which is exactly the number Phase 0 must pin down.
+- **Sleeping already shielded.** Residents sleep in the heavily-shielded/underground zone, so an SEP during the sleep period requires little or no movement — the most vulnerable hours are already covered.
+- **Robots are expendable, but recalled where possible.** Robots tolerate far higher doses than people; the priority order is always people first. Robots are recalled to garages when time allows, but a robot lost to a storm is an acceptable loss a human never is.
+
+### Honest open questions (Phase 0 must resolve these)
+
+1. **What flux threshold defines each response level?** This is a quantitative radiation-biology and instrumentation decision (which particle energies, what integrated-dose trigger), not something CMB sets by guess. Tied to the compliance-standard commitment above.
+2. **What is the actual available warning time distribution?** SEP onset times vary enormously event to event; the design must be sized against the *fast* events, not the average.
+3. **What is the maximum evacuation time for the worst-placed occupant**, and does the base layout guarantee they beat the fast-event warning time? If not, the layout (shelter spacing, route width) must change.
+4. **How reliable is the automated trigger, and what is the false-alarm rate** that residents will tolerate before they start ignoring it (a real human-factors failure mode)?
+5. **What external space-weather feeds are actually available at the Moon**, with what latency, and what is the fallback when the link to Earth is degraded during the very solar activity that threatens the crew?
+6. **Dose reconstruction:** how is each individual's received dose during an event measured and logged against their cumulative limit?
+
+The principle is fixed and simple: **fast routes from every dome to distributed shelters, an automated graded warning chain that acts without waiting for a human, and sleeping already behind mass.** The exact numbers — thresholds, times, route capacities — are open Phase 0 work, stated here as questions rather than invented answers.
 
 ---
 
-## Dose Target
+## Dose Target — Compliance Standard
 
-The annual dose limit for CMB residents has not been formally set. It is a medical and ethical decision that requires input from radiation biologists, physicians, and the residents themselves.
+CMB does not set its own radiation dose limit in isolation, and deliberately so. A single number invented by this project would be both arbitrary and quickly outdated.
 
-For planning purposes, the target is to keep annual dose below the current NASA career dose limits (which are based on age and sex). This is challenging to achieve with passive shielding alone at full lunar surface depth — the underground design partially addresses this.
+**The standard CMB commits to:** residents' radiation exposure will meet — and aim to better — the limits and guidelines set by all relevant authorities and bodies applicable at the time of operation. This includes, as applicable: the space-agency occupational limits (e.g. NASA / ESA career and annual dose standards), national radiation-protection regulators, the ICRP (International Commission on Radiological Protection) framework, the ALARA principle (As Low As Reasonably Achievable), and any medical-ethical requirements established for long-duration human spaceflight. Where these standards differ, CMB applies the **most protective** of them.
+
+**Reference figures (context, not the CMB limit):**
+- Earth average background: ~2–3 mSv/year
+- Typical occupational limit for radiation workers: ~20 mSv/year
+- Unshielded lunar surface: ~380 mSv/year (≈19× the worker limit)
+- NASA career limits: age- and sex-dependent, on the order of several hundred mSv to ~1 Sv lifetime
+
+These are given so the reader can see the scale of the problem. The governing requirement is not any one of them but the compliance commitment above: **meet or beat whatever the responsible authorities require.**
+
+**What this commits the design to:** the shielding and operational architecture (phased regolith depth, underground sleeping, storm shelter, duty-cycle, dose monitoring) must be sized to satisfy the applicable standards for the intended population and stay — adult, time-limited, informed-consent crew for Generation 1; progressively stricter, Earth-comparable targets for any permanent or multigenerational habitation. Setting the *exact* operating limit is a medical and regulatory decision made with radiation biologists, physicians, the relevant agencies, and the residents — not a number CMB fixes unilaterally.
 
 ---
 

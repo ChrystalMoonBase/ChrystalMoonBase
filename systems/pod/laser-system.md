@@ -65,9 +65,21 @@ The laser system is housed in the Pod base — the central, thermally insulated 
 
 ---
 
-## BSM Distribution
+## BSM Distribution and Line-of-Sight Strategy
 
 Five BSMs at approximately 7 / 14 / 21 / 28 / 35 m serve 16 robots across a 2+ km operational radius. The mast AI selects the optimal BSM for each robot based on position and line-of-sight geometry. Robots with steerable GaAs receiver panels actively optimise angle of incidence as they move.
+
+Power beaming is line-of-sight: a BSM can only power a robot it can "see." On the eroded, uneven Peary rim — ridges, slopes, debris — a clear line to every point inside a 2 km circle is **not** guaranteed. The strategy addresses this in three layers, of which the first two are design features and the third is a deliberate honest limit.
+
+**Layer 1 — Height diversity across five BSMs.** The five BSMs sit at different heights (7–35 m). A point hidden from a low BSM by a ridge may be in clear view of a higher one, because raising the source over an obstacle is exactly what extends the visible horizon. Multiple aiming points at multiple heights give sightlines that a single emitter could never have, and the AI picks the BSM with the best geometry for each robot in real time. This is the primary mitigation.
+
+**Layer 2 — Robot-to-robot power relay (optical relay / "prism" concept).** Where terrain still blocks a direct sightline, a robot that *does* have line-of-sight to a BSM can act as a relay for a robot that does not. Two physical implementations are possible:
+- *Optical pass-through (the "prism"/mirror variant):* the relay robot carries a steerable reflective/optical element that redirects the incoming beam toward the shadowed robot. Purely optical, no conversion — elegant, but it demands an actively-steered reflector and each redirection costs some energy and adds pointing error.
+- *Receive-and-reissue (energy-hub variant):* the relay robot captures the beam on its own receiver, converts it to electricity, and passes power to its neighbour via a short direct beam or a physical link. Less elegant, but far more tolerant of pointing error and the more robust of the two.
+
+CMB already plans robot-to-robot **laser communication** (`systems/robot-cmb-r1/laser-communication.md`); the step from a steered data-laser to a power relay is conceptually small, because the pointing and line-of-sight infrastructure is shared. Relay is intended as a *gap-filler for points just behind a ridge*, not as a backbone — every relay hop costs energy and adds a failure point (lose the relay robot and the shadowed robot loses power), so the construction sequence should not depend on long relay chains.
+
+**Layer 3 — Honest limit: occlusion shrinks the real build area.** Even with height diversity and relay, some points are simply behind too much terrain to reach economically. The true reachable construction area from a single mast is therefore **smaller and more irregular than a smooth 2 km circle** — it is a line-of-sight footprint shaped by the actual local topography. Quantifying it (a viewshed analysis from the BSM heights over real LRO/LOLA terrain of the chosen peak) is a specific Phase 0 task. This is also part of the justification for the four-mast network: each mast's line-of-sight footprint covers terrain the others cannot.
 
 ---
 

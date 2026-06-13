@@ -69,3 +69,53 @@ Datum: 2026-06-13
 - systems/pod/archive/ BEWUST behouden (documenteert afgewezen ankerontwerpen — open science)
 - Geen junk/lege/verouderde bestanden aangetroffen
 - Telling: 143 markdown-bestanden; totaal 194 (begonnen 194, −2 duplicaten, +1 nieuw landingsdoc, +1 changelog)
+
+==================================================
+## VRAGENRONDE — UPDATES Q1-Q13 (sessie 13 juni)
+==================================================
+Q1  sintering/laser-sintering-physics.md: smelt basalt(~1200°C) vs anorthosiet(~1550°C) tabel + gevolgen (laser/tip/koeling); pointer-noten in robot README + thermal-buddy
+Q1  +Open Questions laservermogen-toereikendheid (langere tijd vs upgrade vs pre-heating; fleet-brede koppeling)
+Q2  chassis.md: 'basalt composite' → mineral-fibre composite met feedstock-noot; stray NL 'gevoelige'→sensitive gefixt
+Q3  feasibility-analysis.md: Hawaiian-basalt~hoogland claim GECORRIGEERD (self-flagged) + echte hoogland-simulanten NU-LHT-2M/3M, EAC-1A
+Q4  radiation-protection.md: Dose Target → compliance-met-alle-normen kader (NASA/ESA/ICRP/ALARA, 'meet or beat', strengste bij verschil)
+Q5  radiation-protection.md: uitgebreide SEP-stormrespons (waarschuwingsketen 4 lagen, graded levels Watch/Warning/Evacuate/All-clear, evacuatie-architectuur, 6 open vragen)
+Q6  mast-overview.md: lager-stofbescherming gekoppeld aan bloom-skirt+garages (3 lagen) + eerlijke open punten
+Q7  laser-system.md: BSM line-of-sight strategie — hoogtevariatie + robot-relay/prism-concept + occlusiegrens (viewshed Phase 0)
+Q8  NIEUW failure-modes-and-degradation.md: faalmatrix (laser/power/benen/vastzitten/head/sensor/comms/thermisch/batterij/totaal), 3 herstellagen, relay=nice-to-have
+Q9  phase-0.2 + failure-modes: resupply NUCHTER ('mogelijk, niet aangenomen'; vloot 5-10jr zelfstandig)
+Q10 crack-prevention.md: dual-laser annealing (smelt+anneal per robot) + Thermal Buddy koppeling + lange-termijn vloer-cycli als apart open punt; BSM-hoogtes robot overview 11/22/33/44/55→7/14/21/28/35
+Q12 NIEUW ai-and-monitoring/cybersecurity.md: 4 lagen (fysiek/command-auth/hardware-binding/whitelist-default-deny), update-sleutel als kroonjuweel, open vragen
+Q13 phase-0.2: opschaling 16→32→48→64 als nuchter scenario (niet baseline), 'promises only the floor'
+
+## OVERSTATEMENT-SCAN: schoon — sterke woorden staan in eerlijke/ontkende context
+## Eindtelling na Q-ronde: 145 markdown-bestanden (+2 nieuw: failure-modes, cybersecurity)
+
+## DIEPE DUIK — CMB8LF_v1 printer/versie opschoning (sessie 13 juni)
+- VERWIJDERD CMB8LF-v1-PRINT_SETTINGS.md (orphan, QIDI-printer, conflicteerde met v6)
+- VERWIJDERD BOM_v5.md (vervangen door CMB8LF_v1_BOM_v6.md)
+- VERWIJDERD SUPPLIER_MAILS_v5.md (vervangen door SUPPLIER_MAILS_v6.md)
+- PRINT_SETTINGS.md: printer → CreatBot PEEK-300 primair; kalibratie gemarkeerd als opnieuw-te-valideren (QIDI/Voron-specifieke waarden vervielen)
+- README.md spec-tabel + klipper-config noot → CreatBot primair, Voron/Intamsys DIY-alt
+- BOM_v6 + BOM_vacuum: printer-opties → CreatBot primair, Voron/Intamsys als DIY-alternatief
+- repo CHANGELOG.md: QIDI target → CreatBot PEEK-300
+- shopping_list: CreatBot primair genoemd
+
+## DIEPE DUIK — VERIFICATIE (alles schoon)
+- Geen kapotte markdown-links
+- Geen verwijzingen naar verwijderde bestanden
+- Mast (~35m), power (104-143kW), solar (CIGS 600m²), robots (16) volledig consistent
+- Resterende 55m/280kW correct gelabeld als 'earlier concept'; 10m mast = NASA VSAT-referentie (extern)
+- Bewonersaantal 500 consistent (40 = maglev-ring capaciteit, legitiem)
+- Overstatement-scan schoon (sterke woorden in eerlijke/ontkende context)
+- Stof-op-panelen, mentale gezondheid, hibernatie, zwaartekracht-tegenmaatregelen: allemaal gedekt
+
+## EINDTELLING
+- 142 markdown-bestanden (3 verwijderd: orphan QIDI print-settings, BOM_v5, SUPPLIER_MAILS_v5)
+
+## PRINTER-CORRECTIE (vervolg) — CreatBot PEEK-300 correct geplaatst
+- FOUT HERSTELD: CreatBot stond abusievelijk als €699 'kan PEEK NIET printen' optie. Nu correct: primaire printer ~€14.999, print PEEK-CF direct
+- Ingebouwde annealing toegevoegd: hete kamer doet in-situ annealing, geen aparte oven nodig (eerlijke nuance: hoogste kristalliniteit kan alsnog langere anneal vragen)
+- Dubbele rationale: Nexus Ignis revenue-machine + prototype-bot printer; geen aparte oven = simpeler/goedkoper productieworkflow
+- 'Waarom niet goedkoper': budgetmachines kunnen PEEK technisch maar niet verstandig; mislukte print kost meer dan betrouwbare machine
+- Alternatieven (Intamsys/Voron/budget-non-PEEK) behouden als DIY-opties voor bijdragers
+- BOM_v6 + BOM_vacuum beide consistent

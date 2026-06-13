@@ -1,6 +1,8 @@
 # CMB8LF v1 — Print Instellingen v6
-## PEEK-CF · Voron 2.4 + Phaetus Rapido HF 2 UHF
+## PEEK-CF · CreatBot PEEK-300 (primary) · Voron 2.4 / Intamsys FUNMAT HT (DIY alternatives)
 **CC0 · Chrystal Moon Base · 2026**
+
+> **Primary printer: CreatBot PEEK-300.** The settings below are starting points. Calibration values must be **re-validated on the CreatBot PEEK-300** before relied upon — earlier QIDI/Voron-specific calibration has been removed. DIY contributors using a Voron 2.4 or Intamsys FUNMAT HT should re-tune for their own machine.
 
 ---
 

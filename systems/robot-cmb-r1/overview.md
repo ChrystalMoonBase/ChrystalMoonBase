@@ -73,7 +73,7 @@ The CMB-R1 is an **octopod** — eight legs. The front two legs are dual-functio
 
 ## Laser Power Reception
 
-Each robot receives power wirelessly via laser from the mast BSMs. Distributed GaAs receiver panels on the chassis and upper leg segments convert the laser beam to electricity. The AI selects the optimal BSM (at 11 m, 22 m, 33 m, 44 m, or 55 m) for each robot based on its current position. Receiver panels tilt automatically to optimise angle of incidence. Operational range: **2+ km** from mast base in vacuum.
+Each robot receives power wirelessly via laser from the mast BSMs. Distributed GaAs receiver panels on the chassis and upper leg segments convert the laser beam to electricity. The AI selects the optimal BSM (at ~7 m, 14 m, 21 m, 28 m, or 35 m) for each robot based on its current position. Receiver panels tilt automatically to optimise angle of incidence. Operational range: **2+ km** from mast base in vacuum.
 
 ---
 

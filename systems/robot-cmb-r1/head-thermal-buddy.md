@@ -14,7 +14,10 @@ The thermal buddy robot follows directly behind the sintering robot, monitoring 
 
 ## Why Controlled Cooling Matters
 
-When laser sintering heats regolith to melting point (~1200°C for basalt composition), a thin layer of glass-ceramic material forms. As this material cools, it contracts. If it cools too quickly — as it would in vacuum, where there is no atmosphere to conduct heat away gradually — the contraction creates thermal stress that exceeds the material's tensile strength, causing cracks.
+When laser sintering heats regolith to melting point (~1200°C for basalt composition), a thin layer of glass-ceramic material forms.
+
+> **Feedstock note:** The ~1,200 °C figure is *basalt-referenced* (from published experiments and simulants). The actual Peary feedstock is highland anorthosite, which melts hotter (~1,550 °C), raising laser-energy demand and tightening forming-tip and cooling margins. See `systems/sintering/laser-sintering-physics.md` → "Melt Temperature — Basalt versus Highland Anorthosite".
+ As this material cools, it contracts. If it cools too quickly — as it would in vacuum, where there is no atmosphere to conduct heat away gradually — the contraction creates thermal stress that exceeds the material's tensile strength, causing cracks.
 
 On Earth, glassworkers call this problem annealing — and they solve it by controlling the cooling rate in a carefully temperature-managed oven. On the Moon, there is no oven. The thermal buddy robot IS the annealing system.
 

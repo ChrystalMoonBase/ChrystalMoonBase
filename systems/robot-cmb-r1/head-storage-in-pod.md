@@ -45,7 +45,7 @@ Each head is stowed in a dedicated chamber within the Pod structure. Chambers ar
 
 **Chamber orientation:** Each chamber opens outward from the Pod wall, at a height and angle accessible to a robot standing on the deployed bloom leaves. No human assistance required for any head retrieval or storage operation.
 
-**Chamber door:** Protected by the same electromagnetic cover principle as the chassis coupling points — a basalt composite cover that moves aside only during access and closes again automatically. The gevoelige interfaces inside are never exposed to the lunar environment unnecessarily.
+**Chamber door:** Protected by the same electromagnetic cover principle as the chassis coupling points — a basalt composite cover that moves aside only during access and closes again automatically. The sensitive interfaces inside are never exposed to the lunar environment unnecessarily.
 
 ---
 

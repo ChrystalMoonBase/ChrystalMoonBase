@@ -53,6 +53,9 @@ In vacuum there is no convective cooling. Molten basalt at 1200C in lunar vacuum
 
 This is, in essence, robotic glassblowing on the Moon. With basalt.
 
+> **Feedstock note:** The ~1,200 °C figure is *basalt-referenced* (from published experiments and simulants). The actual Peary feedstock is highland anorthosite, which melts hotter (~1,550 °C), raising laser-energy demand and tightening forming-tip and cooling margins. See `systems/sintering/laser-sintering-physics.md` → "Melt Temperature — Basalt versus Highland Anorthosite".
+
+
 **Why W-Re:**
 
 | Property | Value | Significance |

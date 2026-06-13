@@ -32,6 +32,18 @@ The mast is a 5-segment telescoping structure of Toray M55J carbon-fibre reinfor
 
 **Rotation system:** The entire mast rotates in azimuth on a magnetically levitated bearing (hybrid AMB/PMB) to track the sun continuously. This keeps the CIGS solar arms oriented perpendicular to incoming sunlight throughout the ~89% illuminated lunar year at Peary latitude.
 
+**Why the rotating bearing survives lunar dust — by location, not just by type.** Lunar dust (fine, abrasive, electrostatically charged) is the classic enemy of any moving mechanism, so the bearing's dust strategy is deliberate and layered:
+
+1. **Contactless by principle.** A magnetically levitated bearing has no rubbing mechanical surfaces in its load path — the mast floats on a magnetic field. There is no contact interface for dust to grind between, which removes the single worst failure mode that a conventional roller or sleeve bearing would have on the Moon.
+
+2. **Placed inside the dust-controlled zone.** The bearing sits at the mast base, *within* the Vectran dust-containment skirt formed by the deployed bloom (see `pod-bloom-deployment.md`). That skirt is specifically there to exclude regolith dust from the working area around the pod base — so the bearing is not exposed to the open surface dust environment at all; it operates inside the protected footprint.
+
+3. **Ringed by the garages.** The 8 robot garages are arranged around the pod base, forming an additional physical barrier between the bearing region and the surrounding terrain. They block line-of-sight dust transport (thrown by robot movement or electrostatic transport) toward the rotation axis.
+
+Together these mean the bearing is protected three ways: it has no contact surface to foul, it lives inside the bloom's dust skirt, and it is shielded by the garage ring. (Note: the ~9 m solar arms and their ~24 m horizontal span sit high on the mast and are a separate matter from the dust skirt at the base — the skirt protects the base/bearing, not the elevated solar curtain.)
+
+**Remaining honest open questions:** even a contactless bearing is not automatically dust-proof. Its position sensors, the control electronics, and the gap between rotating and fixed structure can still admit fine or charged dust over years of operation. A labyrinth or active seal at the rotation gap, and dust-tolerant sensor placement, remain open engineering questions for Phase 0 — the architecture reduces the dust *reaching* the bearing, but long-duration sealing of the gap itself must still be validated.
+
 ---
 
 ## Solar Power System

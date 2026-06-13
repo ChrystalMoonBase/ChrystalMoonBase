@@ -25,7 +25,7 @@ Zie `BOM_v6.md` voor volledige specificaties en prijzen.
 - Canable USB-CAN adapter ×1
 
 **Printer:**
-Zie PRINT_SETTINGS.md — kies optie A/B/C op basis van budget
+Zie PRINT_SETTINGS.md — primaire printer CreatBot PEEK-300; DIY-alternatieven (Voron/Intamsys) op basis van budget
 
 ---
 

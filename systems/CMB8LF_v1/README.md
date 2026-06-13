@@ -40,7 +40,7 @@
 | Material structure | PEEK-CF |
 | Bearing type | Si₃N₄ ceramic (vacuum-proof) |
 | Lubrication | MoS₂ dry film only |
-| Printer required | PEEK-capable (Voron 2.4 + Rapido UHF or Intamsys FUNMAT HT) |
+| Printer required | CreatBot PEEK-300 (primary) · Voron 2.4 + Rapido UHF or Intamsys FUNMAT HT (DIY alternatives) |
 | Total cost estimate | ~€7.300 excl. printer |
 | Build time | 10–14 months (one leg/month) |
 
@@ -97,7 +97,7 @@ CMB8LF_v1/
 │   ├── CMB8LF_v1_coupling_interface.scad ← Bistable magnetic coupling
 │   ├── CMB8LF_v1_head_module.scad        ← Head with pan+tilt
 │   ├── CMB8LF_v1_body_chassis.scad       ← Spider body
-│   └── CMB8LF_v1_klipper_config.cfg      ← Printer config (Voron 2.4)
+│   └── CMB8LF_v1_klipper_config.cfg      ← Printer config (Voron 2.4 DIY alt; CreatBot PEEK-300 uses its own slicer)
 │
 ├── docs/
 │   ├── CMB8LF_v1_BOM_vacuum.md

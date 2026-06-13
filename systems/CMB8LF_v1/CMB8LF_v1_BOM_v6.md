@@ -245,28 +245,31 @@ Per maand (1 been)   ~€365-520
 
 ---
 
-## 13. 3D PRINTER — KIES ÉÉN OPTIE
+## 13. 3D PRINTER
 
-### OPTIE A — Snelste start (€699)
-**QIDI Tech Q1 Pro** of **Bambu Lab P1S**
-- Kan PEEK-CF NIET printen
-- Wel PA12-CF en PC-CF
-- Gebruik printservice voor PEEK onderdelen (Xometry: €20-60 per onderdeel)
-- Prima voor prototype start
+### PRIMARY (selected) — CreatBot PEEK-300 (~€14.999)
+**CreatBot PEEK-300** — dedicated high-temperature PEEK printer
+- Prints PEEK-CF directly (high stable chamber temperature, high-temp hotend, reliable thermal control)
+- **Built-in annealing — no separate oven needed.** The heated chamber holds the part at temperature during and after printing (in-situ annealing). PEEK must cool slowly and be held at temperature for correct crystallinity (strength, dimensional stability) — normally a separate oven step. Building it in removes that step: less equipment, less handling, no distortion from moving the part. (Most demanding crystallinity may still use a longer dedicated anneal; for the prototype and most Nexus Ignis parts the built-in annealing suffices.)
+- Purpose-built for PEEK — not a marginal/budget machine pushed to its limits
+- **Dual-purpose rationale:** this is also the Nexus Ignis B.V. production printer. The same investment serves two functions — it generates revenue as the Nexus Ignis PEEK/polymer printing service, *and* it prints the CMB8LF prototype robot. The commercial entity's machine is what physically makes the open-source robot possible. One investment, two purposes.
 
-### OPTIE B — Correct voor dit project (€3.500-4.500)
-**Intamsys FUNMAT HT Enhanced**
-- Echte PEEK printer
-- Chamber tot 90°C (functioneel voor PEEK)
-- Nozzle 450°C
-- Kant-en-klaar — geen mods nodig
+**Why not a cheaper printer:** budget machines can technically attempt PEEK-CF, but it is not wise — PEEK-CF demands high stable chamber temperatures, a true high-temp hotend, and reliable thermal control. A failed PEEK print on a borderline machine costs more in time and material than the reliability of a machine built for it. Quality and commercial use coincide here, so the dedicated printer is the sensible choice rather than the cheapest.
 
-### OPTIE C — Beste prijs/kwaliteit (€1.800-2.500)
-**Voron 2.4 self-build + Phaetus Rapido HF 2 UHF**
-- Zelf bouwen (3-4 weekenden)
-- Met chamber heater mod: 80-100°C
-- Kan PEEK printen na calibratie
-- Grote community support
+---
+
+**DIY ALTERNATIVES (for open-source contributors without a CreatBot):**
+
+### Alt 1 — Intamsys FUNMAT HT Enhanced (€3.500-4.500)
+- Real PEEK printer; chamber to 90°C; nozzle 450°C; ready out of the box
+
+### Alt 2 — Voron 2.4 self-build + Phaetus Rapido HF 2 UHF (€1.800-2.500)
+- Self-build (3-4 weekends); with chamber heater mod 80-100°C; can print PEEK after calibration; large community support
+
+### Alt 3 — Budget non-PEEK (€699, e.g. QIDI Q1 Pro / Bambu P1S)
+- Cannot print PEEK-CF; only PA12-CF / PC-CF
+- Use a print service for PEEK parts (e.g. Xometry €20-60 per part)
+- Only suitable for a non-PEEK prototype start, not the final vacuum-rated build
 
 ---
 

@@ -13,7 +13,9 @@
 
 The chassis is the structural and computational core of the CMB-R1. Every design decision follows three principles:
 
-1. **Materials from the Moon** — no material may be used in the chassis that cannot eventually be sourced from lunar resources. This means no carbon-fibre reinforced polymer (CFRP), no exotic Earth-only composites. Titanium, aluminium, basalt composite, and glass are the candidate materials. The specific selection is an engineering decision.
+1. **Materials from the Moon** — no material may be used in the chassis that cannot eventually be sourced from lunar resources. This means no carbon-fibre reinforced polymer (CFRP), no exotic Earth-only composites. Titanium, aluminium, mineral-fibre composite, and glass are the candidate materials. The specific selection is an engineering decision.
+
+**Feedstock note (stated as fact, not resolved):** The mineral-fibre composite is referred to elsewhere in this project as "basalt composite," because basalt fibre is the well-characterised terrestrial reference material. The actual Peary feedstock is highland **anorthosite**, not basalt — so the real armour would be an anorthosite/regolith-derived mineral fibre, whose properties differ from terrestrial basalt fibre and are not yet characterised. Both terms describe the same intent (a locally-sourced mineral-fibre composite skin); the reader should read "basalt composite" in the robot documents as feedstock-referenced shorthand. See `systems/sintering/laser-sintering-physics.md` for the basalt-vs-anorthosite distinction and `systems/processing-modules/m-basalt.md` for the fibre-production feedstock question.
 
 2. **No ferromagnetic materials on exterior surfaces** — lunar dust is electrostatically charged and behaves like fine magnetic particles in the presence of ferromagnetic materials. Iron and steel are therefore excluded from all exterior-facing components. Titanium and aluminium are non-magnetic and preferred.
 
