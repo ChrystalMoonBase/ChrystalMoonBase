@@ -16,7 +16,7 @@ The bulldozer robot leads the construction team, preparing the regolith surface 
 
 **Blade configuration:** Two curved blades mounted at the front of the head, angled outward in a V-pattern. The V-shape directs material to the sides of the robot's path rather than piling it up ahead. This is the same principle as a road grader.
 
-**Blade material:** The blades contact the regolith continuously and will experience significant wear. Candidate materials: sintered basalt composite (replaceable, made from local material in later phases), tungsten carbide-tipped steel (Earth-supplied, high wear resistance).
+**Blade material:** The blades contact the regolith continuously and will experience significant wear. Candidate materials: sintered regolith composite (replaceable, made from local material in later phases), tungsten carbide-tipped steel (Earth-supplied, high wear resistance).
 
 **Compaction plate:** Behind the blades, a flat compaction plate vibrates at low frequency to compact the graded regolith. Compaction improves the density and uniformity of the surface, which affects sintering quality.
 

@@ -4,7 +4,7 @@
 SPDX-License-Identifier: CERN-OHL-S-2.0
 Copyright 2026 Berechja Kerkdijk
 
-All rights in these hardware designs are currently held by Berechja Kerkdijk and will be transferred to Stichting Chrystal Base upon its formal incorporation. The licence grant herein is made by the current rights holder and is intended to bind any future successor.
+All rights in these hardware designs are currently held by Berechja Kerkdijk and is held by Nexus Ignis B.V. and published under the open licences below. The licence grant herein is made by the current rights holder and is intended to bind any future successor.
 
 *Copyright and ownership matters are governed by Dutch law. The licence terms themselves are governed by Swiss law as per CERN-OHL-S-2.0.*
 
@@ -39,7 +39,7 @@ You are free to:
 
 If you distribute or manufacture hardware based on these designs, you must:
 
-1. **Attribute** — credit "Stichting Chrystal Base / Berechja Kerkdijk" clearly and prominently
+1. **Attribute** — credit "Chrystal Moon Base / Nexus Ignis B.V. / Berechja Kerkdijk" clearly and prominently
 2. **Share alike** — publish any modifications under the same CERN-OHL-S-2.0 licence
 3. **Notice** — include this licence notice with any distribution
 4. **Source** — make the complete design source available to anyone who receives your hardware
@@ -50,7 +50,7 @@ If you distribute or manufacture hardware based on these designs, you must:
 
 When using or distributing designs from this repository, use the following attribution:
 
-> *"Based on hardware designs by Stichting Chrystal Base / Berechja Kerkdijk, licensed under CERN-OHL-S-2.0. Source: https://github. com/ChrystalMoonBase/ChrystalMoonBase"*
+> *"Based on hardware designs by Chrystal Moon Base / Nexus Ignis B.V. / Berechja Kerkdijk, licensed under CERN-OHL-S-2.0. Source: https://github. com/ChrystalMoonBase/ChrystalMoonBase"*
 
 ---
 

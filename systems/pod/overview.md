@@ -12,7 +12,7 @@
 
 ## What the Pod Is
 
-The Pod is the proposed first physical mission of Chrystal Moon Base to the lunar surface. It is a single launch — one Falcon Heavy rocket — carrying everything needed to begin autonomous construction of a sintered basalt floor on the rim of Peary Crater at the lunar north pole.
+The Pod is the proposed first physical mission of Chrystal Moon Base to the lunar surface. It is a single launch — one Falcon Heavy rocket — carrying everything needed to begin autonomous construction of a sintered regolith floor on the rim of Peary Crater at the lunar north pole.
 
 The Pod does not carry humans. It does not need to return. It is intended to land, deploy, and operate indefinitely — for as long as the sun shines on the Peary rim, which is approximately 89% of the year.
 

@@ -35,7 +35,7 @@ The leg system follows the same core philosophy as the entire robot: **everythin
 - Terminal segment — contacts the lunar surface
 - Contains: ankle joint actuator, solid-state battery cell, local controller, force-torque sensor array, surface detection sensors
 - Ankle joint provides pitch and roll adjustment — foot stays level on the surface regardless of leg angle
-- Foot pad design is left to engineering — the founder notes that a snowshoe-like design may suit loose regolith, but once the sintered basalt floor exists, robots walk on hard surface almost exclusively, making this less critical
+- Foot pad design is left to engineering — the founder notes that a snowshoe-like design may suit loose regolith, but once the sintered regolith floor exists, robots walk on hard surface almost exclusively, making this less critical
 
 ---
 
@@ -81,7 +81,7 @@ Structural core of non-ferromagnetic alloy — titanium, aluminium, or a combina
 Thermally conductive, mechanically damping gel surrounding the bone completely. Absorbs shock and vibration from surface operations. Conducts heat from electronics to the outer shell for passive radiation management. Must maintain properties across the full operational temperature range (−150°C to +130°C) in vacuum — specific formulation is an open engineering question.
 
 **Layer 3 — The Armour:**
-Sintered basalt composite outer shell. Non-magnetic. Thermally stable. Radiation resistant. The same material the robot builds with — the robot is armoured by the Moon itself. Manufacturable from lunar resources in later phases, reducing Earth dependency over time.
+Sintered regolith composite outer shell. Non-magnetic. Thermally stable. Radiation resistant. The same material the robot builds with — the robot is armoured by the Moon itself. Manufacturable from lunar resources in later phases, reducing Earth dependency over time.
 
 ---
 
@@ -112,7 +112,7 @@ Every component, every joint, every segment has dedicated sensors. The philosoph
 
 **Per foot (additional):**
 - Force-torque sensor array — measures contact force and direction
-- Surface contact sensor — detects whether foot is on hard sintered basalt or loose regolith
+- Surface contact sensor — detects whether foot is on hard sintered regolith or loose regolith
 - Slip detection — detects if the foot is sliding on the surface
 
 All sensor data is processed locally by the segment's own controller. Summary data is passed up to the chassis AI. The chassis AI decides what is significant enough to share with the swarm coordinator or transmit to Earth.
@@ -150,7 +150,7 @@ If any leg is damaged beyond recovery, the AI executes a controlled discard:
 
 A robot on 7, 6, or even 5 legs moves more slowly and carries less load but does not stop. The mission continues.
 
-**Minimum operational leg count:** estimated 5 legs for continued useful operation on the sintered basalt surface. Below this, the robot is assigned stationary tasks only — operating its head while remaining in one location — until a Watcher robot can assist or a head swap changes its role.
+**Minimum operational leg count:** estimated 5 legs for continued useful operation on the sintered regolith surface. Below this, the robot is assigned stationary tasks only — operating its head while remaining in one location — until a Watcher robot can assist or a head swap changes its role.
 
 ---
 
@@ -160,5 +160,5 @@ A robot on 7, 6, or even 5 legs moves more slowly and carries less load but does
 2. What specific titanium or aluminium alloy provides the optimal combination of flexure bearing performance, mass, and thermal stability?
 3. What gel formulation maintains required properties across −150°C to +130°C in vacuum over 5+ years?
 4. What is the minimum heating power required to maintain critical components above operating temperature during the longest expected Peary shadow period?
-5. What foot pad geometry provides the best performance across both loose regolith (early operations) and hard sintered basalt (ongoing operations)?
+5. What foot pad geometry provides the best performance across both loose regolith (early operations) and hard sintered regolith (ongoing operations)?
 6. What is the actual mass of a complete leg assembly at flight-quality design?

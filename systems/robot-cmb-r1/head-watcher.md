@@ -119,7 +119,7 @@ Suggestions for a more formal designation are welcome via GitHub Issues.
 
 ## Open Questions
 
-1. **GPR frequency selection** — what frequency optimally penetrates sintered basalt at the expected densities?
+1. **GPR frequency selection** — what frequency optimally penetrates sintered regolith at the expected densities?
 2. **Data volume management** — what compression ratio is achievable for the sensor suite within Ka-band bandwidth constraints?
 3. **Acoustic sensor contact force** — how much force does the tap sensor apply, and does this risk damaging freshly sintered surfaces?
 4. **Multi-robot thermal imaging range** — at what distance can the thermal imager detect meaningful anomalies on other robots?

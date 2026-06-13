@@ -20,7 +20,7 @@ Layers are listed from outside to inside — from the lunar environment toward t
 
 ---
 
-### Layer 1 — Sintered Basalt Shell
+### Layer 1 — Sintered Regolith Shell (Highland Anorthosite)
 
 **Material:** Sintered lunar basalt  
 **Thickness:** TBD by structural engineering  
@@ -28,14 +28,14 @@ Layers are listed from outside to inside — from the lunar environment toward t
 
 The outermost layer is sintered directly from the lunar regolith by CMB-R1 robots. It is not a manufactured component delivered from Earth — it is grown in place from the Moon's own material.
 
-Sintered basalt provides:
-- **Mass shielding against radiation** — the primary defence against galactic cosmic rays and solar energetic particles. The required thickness to achieve Mars-equivalent radiation levels inside is a function of basalt density and composition — this requires calculation with actual Peary regolith composition data, which is not yet available. Estimates suggest 2–5 metres of regolith equivalent for adequate shielding, though thinner layers combined with the water layer (Layer 4) provide substantial additional protection.
+The sintered highland-anorthosite shell provides:
+- **Mass shielding against radiation** — the primary defence against galactic cosmic rays and solar energetic particles. The required thickness to achieve Mars-equivalent radiation levels inside is a function of sintered-regolith density and composition — this requires calculation with actual Peary regolith composition data, which is not yet available. Estimates suggest 2–5 metres of regolith equivalent for adequate shielding, though thinner layers combined with the water layer (Layer 4) provide substantial additional protection.
 - **Micrometeorite protection** — the impact flux at the lunar surface is well characterised. The sintered shell must be thick enough that the largest expected impact within the dome's operational lifetime does not penetrate to Layer 2.
-- **Structural load bearing** — the dome geometry distributes compressive loads efficiently. Basalt in compression is strong. The dome must also withstand internal pressure from the habitat atmosphere pressing outward.
+- **Structural load bearing** — the dome geometry distributes compressive loads efficiently. Sintered regolith (glass-ceramic) in compression is strong. The dome must also withstand internal pressure from the habitat atmosphere pressing outward.
 
 **Critical design constraint:** All connections — power, data, water, air — pass through the floor, never through the dome wall or the shell. The shell has no penetrations. This is non-negotiable. Every penetration is a potential failure point. A dome with zero wall penetrations is structurally stronger and more reliable than one with cable entries, pipe fittings, or windows.
 
-The dome is printed by robots using a moulding and sintering process. Molten glass (from Layer 3 printing, which happens simultaneously from inside) is not yet involved at this stage — the basalt shell is printed first as the structural form, then the inner layers are added.
+The dome is printed by robots using a moulding and sintering process. Molten glass (from Layer 3 printing, which happens simultaneously from inside) is not yet involved at this stage — the regolith shell is printed first as the structural form, then the inner layers are added.
 
 ---
 
@@ -53,7 +53,7 @@ The concept is based on self-healing materials research — materials that conta
 
 **Interpenetrating polymer network:** A two-component system where components are kept separate until a crack or hole brings them into contact, triggering a chemical reaction that forms a solid seal. This approach has been demonstrated in laboratory settings.
 
-**Honest assessment:** Neither approach has been demonstrated at the scale, temperature range, and vacuum conditions required for a lunar dome application. This layer is the most speculative element of the dome architecture. It is included because the concept is scientifically plausible and because the engineering questions it raises are specific and answerable through ground research. If no viable self-sealing material can be validated before dome construction begins, this layer may need to be replaced with an alternative approach — for example, a second sintered basalt layer or a Kevlar-based ballistic barrier.
+**Honest assessment:** Neither approach has been demonstrated at the scale, temperature range, and vacuum conditions required for a lunar dome application. This layer is the most speculative element of the dome architecture. It is included because the concept is scientifically plausible and because the engineering questions it raises are specific and answerable through ground research. If no viable self-sealing material can be validated before dome construction begins, this layer may need to be replaced with an alternative approach — for example, a second sintered regolith layer or a Kevlar-based ballistic barrier.
 
 This is flagged as a priority research question. Contributions from materials scientists are specifically invited.
 
@@ -63,11 +63,13 @@ This is flagged as a priority research question. Contributions from materials sc
 
 **Material:** High-purity glass with titanium fibre reinforcement and exterior gold coating  
 **Thickness:** TBD  
-**Function:** Radiation reflection, UV blocking, primary transparent barrier
+**Function:** Thermal/optical control (infrared and partial UV reflection), primary transparent barrier
 
 This layer performs three functions simultaneously:
 
-**Gold coating (exterior surface):** A thin-film gold coating on the outer glass surface reflects infrared and a portion of ultraviolet radiation — the same principle as the gold visor on astronaut helmets. Gold is chemically stable in vacuum, does not degrade under radiation, and has been used in spacecraft thermal control for decades. The coating is thin enough to remain partially transparent to visible light while significantly reducing the solar radiation load on the interior.
+**Gold coating (exterior surface):** A thin-film gold coating on the outer glass surface reflects infrared and a portion of ultraviolet radiation — the same principle as the gold visor on astronaut helmets. Gold is chemically stable in vacuum, does not degrade under radiation, and has been used in spacecraft thermal control for decades. The coating is thin enough to remain partially transparent to visible light while significantly reducing the solar (thermal/UV) load on the interior.
+
+**Important — what gold does NOT do:** The gold coating is a thermal and optical measure, not an ionising-radiation shield. Against galactic cosmic rays (high-energy charged particles), thin high-Z layers like gold provide no meaningful protection and can even generate secondary particles. GCR shielding is the job of the passive mass (regolith shell + water layer) and the underground/sleep zones — see `systems/life-support/radiation-protection.md`. Listing gold here under thermal/optical control keeps that distinction honest.
 
 **Glass structure:** High-purity glass, manufactured from lunar silicon by the M-Glass processing module. The glass is printed in its molten state, inside-out, for maximum homogeneity and minimum defects. This printing method — starting from the inner surface and building outward — ensures that the optical quality of the interior face (which residents will look through) is the highest quality.
 
@@ -111,9 +113,9 @@ The innermost layer is the surface that residents see and breathe against. It mu
 
 ## Dome Construction Sequence
 
-1. Robots sinter the basalt foundation ring and floor in the dome location
+1. Robots sinter the sintered-regolith foundation ring and floor in the dome location
 2. All underground connections (power, data, water, air) are routed and sealed before dome construction begins
-3. The sintered basalt outer shell (Layer 1) is printed by robots, starting at the foundation ring and building upward
+3. The sintered regolith outer shell (Layer 1) is printed by robots, starting at the foundation ring and building upward
 4. Simultaneously, from inside, the inner glass (Layer 5) is printed molten, inside-out, with titanium fibre being laid in continuously
 5. Layer 3 (gold-coated glass with titanium reinforcement) is printed as a separate shell inside Layer 1
 6. The gap between Layer 3 and Layer 5 is sealed to form the water cavity (Layer 4)

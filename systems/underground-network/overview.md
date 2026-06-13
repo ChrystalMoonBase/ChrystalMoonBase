@@ -23,7 +23,7 @@ The dome is strong because it has no penetrations. The base is safe because noth
 
 ## The 20-Hectare Sintered Floor
 
-The entire base sits on a single continuous sintered basalt floor of approximately 20 hectares — 505 metres in diameter. One unbroken surface. No seams, no joints, no weak points.
+The entire base sits on a single continuous sintered regolith floor of approximately 20 hectares — 505 metres in diameter. One unbroken surface. No seams, no joints, no weak points.
 
 ---
 

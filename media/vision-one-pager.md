@@ -24,7 +24,7 @@ The materials and energy may be there. Whether they are accessible, in sufficien
 
 ## The Concept
 
-One possible architecture: a single rocket delivers a 55-metre solar mast and eight autonomous octopod robots to the Peary rim. The mast carries two roll-out GaAs solar film arms — 880 m² in total, hanging vertically, tracking the sun as it circles the horizon — estimated ~280 kW, if the design assumptions hold. That power would drive a laser, beamed to the robots below. The robots would attempt to fuse lunar dust into solid basalt. Ring by ring, if it works, the floor might grow outward — reaching 2 km or more from the mast base, with no cables, no tethers, no resupply.
+One possible architecture: a single rocket delivers a ~35-metre solar mast and sixteen autonomous octopod robots to the Peary rim. The mast carries two roll-out CIGS thin-film solar arms — ~600 m² in total, hanging vertically, tracking the sun as it circles the horizon — estimated ~104–143 kW, if the design assumptions hold. That power would drive a laser, beamed to the robots below. The robots would attempt to fuse lunar dust into a solid glass-ceramic floor. Ring by ring, if it works, the floor might grow outward — reaching 2 km or more from the mast base, with no cables, no tethers, no resupply.
 
 No imports. No resupply. No flags.
 

@@ -4,7 +4,7 @@
 SPDX-License-Identifier: LicenseRef-ChrystalMoonBase-Proprietary
 Copyright 2026 Berechja Kerkdijk
 
-All rights are currently held by Berechja Kerkdijk and will be transferred to Stichting Chrystal Base upon its formal incorporation.
+All rights are currently held by Berechja Kerkdijk and is held by Nexus Ignis B.V. and published under the open licences below.
 
 ---
 

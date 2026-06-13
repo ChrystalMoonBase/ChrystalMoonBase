@@ -66,7 +66,7 @@ Maglev is the only technology that meets all four requirements simultaneously. A
 
 ## The Ring Structure
 
-**Tunnel:** A circular sintered basalt tunnel, 20 metre radius, built underground adjacent to the sleep habitat dome cluster. Cross-section sufficient for the sleeping pod plus clearance. The tunnel is not pressurised to habitat standard — it is pressurised to a safe intermediate level, since the pods themselves are sealed.
+**Tunnel:** A circular sintered regolith tunnel, 20 metre radius, built underground adjacent to the sleep habitat dome cluster. Cross-section sufficient for the sleeping pod plus clearance. The tunnel is not pressurised to habitat standard — it is pressurised to a safe intermediate level, since the pods themselves are sealed.
 
 **Track:** Maglev track runs around the inner circumference of the tunnel. Same standard as the base transport network.
 

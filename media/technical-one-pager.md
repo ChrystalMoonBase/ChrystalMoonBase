@@ -21,36 +21,35 @@ Earth visibility from the near-side rim appears continuous based on published or
 ## Proposed System Architecture
 
 **1. Energy Subsystem**
-- 55-metre telescoping mast (5 segments, stowed at 11 m — Falcon Heavy fairing compatible)
-- Two roll-out GaAs solar film arms (10 m × 44 m each = **880 m² total**), hanging vertically from the top segment
+- ~35-metre telescoping mast (Toray M55J CFRP, 5 segments, stowed ~9.7 m — Falcon Heavy fairing compatible)
+- Two roll-out CIGS thin-film solar arms (9 m × 30 m each = **600 m² total**), hanging vertically, deployed from segment 1 (lowest)
 - Arms are parallel to the sun at all times — no inter-arm shadowing
 - Azimuth-tracking drive rotates mast at ~0.5°/hour — maintains continuous sun-facing
-- Estimated net electrical output: **~280 kW** after assumed ~10% system losses
+- Estimated net electrical output: **~104 kW (conservative) to ~143 kW (optimistic)** after ~10% system losses and ~89% availability
 - This estimate is the most important uncertainty in the concept — the actual power budget has not been validated
-- Ytterbium fibre laser at assumed ~45% wall-plug efficiency → estimated **~67.5 kW optical output**
-- Five Beam and Sensor Modules (BSMs) at 11 m mast intervals (11 m, 22 m, 33 m, 44 m, 55 m) distribute power to robots via steered laser beam
+- Diode laser (10–20 kW class) → estimated **~10–15 kW optical output**
+- Five Beam and Sensor Modules (BSMs) at ~7 / 14 / 21 / 28 / 35 m distribute power to robots via steered laser beam
 - AI selects optimal BSM per robot based on position; robot receiver panels tilt to optimise angle
 - Estimated operational robot radius: **2+ km** from mast base in vacuum (no atmospheric losses)
 
 **2. Robotic Execution Layer — CMB-R1 (concept only)**
-- 8 octopod robots on 4 double-sided chassis (~250–350 kg each, rough estimate)
-- Double-sided chassis: each unit provides two simultaneous working ends — 8 effective builders from 4 physical units
+- 16 octopod robots (CMB-R1), 2 per garage, ~250–350 kg each (rough estimate)
 - Four interchangeable tool heads: sintering, thermal buddy, bulldozer, watcher
 - Front two limbs intended as dual-function: legs in transit, arms for head swapping and cargo handling
 - Leg-loss fault tolerance proposed: damaged leg discarded, AI recalculates gait for remaining legs
-- Two 4-robot teams working simultaneously in opposing directions on concentric sintering rings
+- Multiple robot teams working simultaneously on concentric sintering rings
 - Three-level AI proposed: onboard (locomotion), mast-based (swarm coordination), Earth-uplinked (strategic oversight)
 - No prototype exists. No swarm coordination software exists.
 
 **3. Construction Process**
-- Laser sintering proposed to fuse regolith grains into glass-ceramic basalt solid
+- Laser sintering proposed to fuse regolith grains into a glass-ceramic solid
 - Controlled cooling via thermal buddy robot — intended to prevent thermal cracking
 - Estimated energy requirement: 5,000–15,000 kWh/m³ (derived from Fateri et al. 2019 at small scale; uncertainty is very high)
 - First platform timeline (8 m diameter, 25 cm depth): estimated 2–11 months at ~25 kW sintering power. Central estimate ~5 months — this range reflects genuine uncertainty in sintering energy at scale
 - All sintering data comes from terrestrial laboratory experiments using simulants. Peary rim regolith is highland anorthosite composition — behaviour may differ significantly
 
 **4. Habitat Formation (long-term concept)**
-- Five-layer dome proposed: sintered basalt shell / self-sealing gel / gold-coated titanium-reinforced glass / water layer / inner glass
+- Multi-layer dome proposed: sintered regolith (highland anorthosite) shell / self-sealing gel / titanium-reinforced glass (gold coating for thermal/optical control, not radiation shielding) / water layer / inner glass
 - Self-sealing gel: no validated material meeting the temperature, vacuum, and activation requirements has been identified
 - No wall penetrations intended — all utilities and access through floor via underground network
 - Target: ~90–100 domes, 500 permanent residents. This is a directional goal, not a plan.
@@ -63,7 +62,7 @@ Earth visibility from the near-side rim appears continuous based on published or
 |---|---|---|
 | ~89% annual illumination at landing zone | SELENE data, 10–50 m resolution | High-resolution orbital survey of specific zone |
 | Sintering viable at scale in vacuum | Small-scale lab demos only | Phase 0 Demonstrator 1 at construction scale |
-| ~280 kW net power achievable | Physics calculation, estimated losses | Phase 0 Demonstrator 2, dust accumulation model |
+| ~104–143 kW net power achievable | Physics calculation, estimated losses | Phase 0 Demonstrator 2, dust accumulation model |
 | Swarm coordination at construction scale | Algorithm concept only, no software | Phase 0 Demonstrators 3–5 |
 | Self-sealing gel viable in lunar conditions | Concept based on terrestrial research | Dedicated materials science programme |
 | Regolith composition matches simulants | Assumed based on orbital data | Direct sample or in-situ measurement |
@@ -104,7 +103,7 @@ Estimated Phase 0 cost: €1.5–3 million across 3–5 years. Each demonstrator
 - Carrier, Olhoeft & Mendell (1991) Lunar Sourcebook — regolith properties
 - PowerLight Technologies (2022) — laser power beaming ground demonstration
 - Li et al. (2018) PNAS — polar water ice confirmation
-- Speyerer & Robinson (2005) Nature — Peaks of Eternal Light illumination mapping
+- Bussey et al. (2005) Nature 434:842 — north polar illumination mapping (Peary rim)
 
 ---
 

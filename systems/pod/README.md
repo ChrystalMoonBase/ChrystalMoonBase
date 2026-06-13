@@ -18,7 +18,7 @@ Three design principles make it the most defensible choice:
 
 **Immediate stability** — A central titanium penetrator (120–150 kg) drives 0.5–0.8 metres into the regolith at landing. No waiting. The structure is mechanically locked from the first seconds.
 
-**Permanent bonding** — Sintered basalt root plugs and beams, produced by the CMB-R1 robots using the mast's own laser, chemically and mechanically fuse the anchor to the regolith over 6–8 weeks. Unlike pure mechanical anchors, this cannot loosen.
+**Permanent bonding** — Sintered regolith root plugs and beams, produced by the CMB-R1 robots using the mast's own laser, chemically and mechanically fuse the anchor to the regolith over 6–8 weeks. Unlike pure mechanical anchors, this cannot loosen.
 
 **Layered redundancy** — Neither the mechanical penetrator nor the sintered roots depends entirely on the other. If one system is weaker than expected due to regolith variability, the other provides backup. This is how serious aerospace structures are designed.
 

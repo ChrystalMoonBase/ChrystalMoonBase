@@ -8,7 +8,7 @@
 
 ## Role
 
-The sintering head is the primary construction tool of the CMB system. One sintering-head robot leads each 4-robot construction team, converting loose lunar regolith into solid basalt by focused laser energy.
+The sintering head is the primary construction tool of the CMB system. One sintering-head robot leads each 4-robot construction team, converting loose lunar regolith into solid sintered regolith by focused laser energy.
 
 ---
 

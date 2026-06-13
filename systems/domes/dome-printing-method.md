@@ -8,7 +8,7 @@
 
 ## Overview
 
-Domes are not assembled from pre-manufactured components. They are printed in place by CMB-R1 robots from local materials, in a sequence that builds each layer outward from the center, starting with the innermost glass layer and ending with the outer sintered basalt shell.
+Domes are not assembled from pre-manufactured components. They are printed in place by CMB-R1 robots from local materials, in a sequence that builds each layer outward from the center, starting with the innermost glass layer and ending with the outer sintered regolith shell.
 
 The "inside-out" printing approach — starting from the inner glass surface and working outward — was chosen because the optical quality of the inner glass surface (which residents will see and which must be smooth and clear) is highest when it is printed first, before the mechanical disturbance of outer layer construction.
 
@@ -18,7 +18,7 @@ The "inside-out" printing approach — starting from the inner glass surface and
 
 Before any dome is printed, the following must be complete:
 
-1. **Sintered basalt foundation ring** — a ring of sintered floor at the dome perimeter, to the exact diameter of the dome. This is the base on which the dome walls will be printed.
+1. **Sintered regolith foundation ring** — a ring of sintered floor at the dome perimeter, to the exact diameter of the dome. This is the base on which the dome walls will be printed.
 
 2. **Underground connections installed** — all power, data, water, gas, and access connections are routed through the floor and terminated at their connection points inside the dome footprint. All floor penetrations are sealed.
 
@@ -46,7 +46,7 @@ The gold coating is applied to the exterior surface of Layer 3 before the next l
 The self-sealing gel is applied to the exterior of Layer 3. The specific application method depends on the gel formulation selected — spray, extrusion, or injection into a pre-formed cavity are all possible.
 
 ### Step 4 — Outer Basalt Shell (Layer 1)
-Robots on the outside of the dome begin sintering the outer basalt shell. They work upward from the foundation ring, sintering layer by layer, using local regolith. The dome is built from the outside while the glass is already complete inside.
+Robots on the outside of the dome begin sintering the outer regolith shell. They work upward from the foundation ring, sintering layer by layer, using local regolith. The dome is built from the outside while the glass is already complete inside.
 
 The outer shell is sintered thick enough for the required radiation shielding. Thickness varies with position — thicker at the top (maximum radiation exposure), potentially thinner on the sides where the underground tunnel connections are made.
 

@@ -8,7 +8,7 @@
 
 ## What the Pod Needs to Land Safely
 
-The Pod is a large, heavy structure deploying a 100-metre mast. Its landing zone must meet specific criteria, or the mission fails before it begins.
+The Pod is a large, heavy structure deploying a ~35-metre mast. Its landing zone must meet specific criteria, or the mission fails before it begins.
 
 ---
 
@@ -35,6 +35,16 @@ Larger rocks would prevent leaves from lying flat on the surface and could damag
 
 ### Bearing Capacity
 The regolith must support the Pod's weight distributed across the landing legs and deployed bloom leaves. Regolith bearing capacity at the Peary rim is not directly measured. Estimates based on Apollo sample data and general highland regolith models suggest adequate bearing capacity for the Pod's ground pressure, but this must be verified.
+
+### Foundation — From Bearing to Levelling
+
+Bearing capacity (can the ground hold the weight?) is not the same problem as *evenness* (does it hold the weight uniformly?). For a low, wide lander these are nearly the same. For a tall, slender mast they are not.
+
+Every lander to date — Apollo through the recent robotic missions — has stayed on the surface without sinking. Below the loose top few centimetres, lunar regolith is surprisingly dense and well-compacted; bearing strength rises quickly with depth. Sinking is therefore not the real risk. The real risks for a ~35 m mast are **differential settlement** and **tilt**: if the regolith under one footing compacts slightly more than under another, a tall mast leans, and a small tilt at the base becomes a large displacement at the top.
+
+This matters most because the chosen sites are crater-rim peaks. The Peary rim is described in the literature as worn and eroded — rugged ridges, loose impact debris, possibly unstable talus, and variable regolith depth. On a rim, bearing capacity can vary sharply over short distances: bedrock just under the surface in one spot, loose slope material a few metres away. The general "regolith is firm" rule is *least* reliable on precisely the terrain CMB wants to build on.
+
+**The solution is already in the toolkit: a sintered foundation pad.** Before the mast is raised, the robots sinter a regolith foundation pad under the Pod footprint — converting loose regolith into a solid, load-spreading, levelled base. This neutralises both differential settlement and local slope, and it is fully ISRU (no imported foundation material). Leaf sintering (see `phase-0.2-the-pod.md`, "Leaf Sintering") is effectively the first stage of this pad. The pad does not assume the ground is good enough; it *makes* the ground good enough.
 
 ### Illumination
 The landing zone must be within an area receiving at minimum **85% annual illumination** based on published SELENE/LRO data, with the specific landing point preferably above 89%.

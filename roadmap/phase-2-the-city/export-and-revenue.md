@@ -67,10 +67,10 @@ The longer-term question of whether a mass driver, space elevator, or other expo
 - Infrastructure lease income from tenants
 - Licensing of manufacturing capacity to Earth companies
 
-**Revenue flows to the Stichting:**
-All BV profits — after operational costs and market-rate founder compensation — flow to Stichting Chrystal Base. The Stichting uses these funds exclusively for mission expansion: new pods, base extensions, new projects.
+**Revenue flows through the commercial entity:**
+Commercial profits — after operational costs and market-rate founder compensation — fund the open CMB initiative: new pods, base extensions, new projects. CMB itself earns no profit; it is funded by the commercial entities.
 
-**The Stichting never accumulates wealth:**
+**The initiative never accumulates wealth:**
 Revenue is reinvested continuously. Pod 2, Pod 3, Pod 4. Mars eventually. The mission does not end — it expands.
 
 ---
@@ -80,7 +80,7 @@ Revenue is reinvested continuously. Pod 2, Pod 3, Pod 4. Mars eventually. The mi
 From the first sintering ring of Pod 1, the world watches. A paid livestream accessible globally shows the base being built and lived in. Every milestone — first robot, first sintered ring, first dome, first human landing — is a global event with commercial value.
 
 The livestream does several things simultaneously:
-- Generates revenue for the BV → flows to Stichting → funds next pod
+- Generates revenue for the commercial entity → funds the open initiative → funds next pod
 - Creates global awareness and support for the mission
 - Provides transparency — anyone can watch what is being built and how
 - Builds the community of people who care about this project before the base exists

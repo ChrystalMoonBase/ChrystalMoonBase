@@ -10,11 +10,11 @@
 
 **Input:** Regolith (particularly anorthosite) plus extracted calcium and aluminium compounds
 
-**Output:** Cementitious binder for construction applications where sintered basalt is not appropriate
+**Output:** Cementitious binder for construction applications where sintered regolith is not appropriate
 
 **Process:** Anorthosite contains calcium and aluminium silicates that can be processed into geopolymer cements without the high-temperature firing of Portland cement. Research by Alexiadis et al. and others has demonstrated lunar simulant geopolymer cements in laboratory conditions.
 
-**Note:** Cement provides a lower-temperature construction option compared to sintering. It can be used for gap filling, surface coatings, and fabricating shapes that are difficult to sinter directly. It is not a replacement for sintered basalt foundations — it is a complement.
+**Note:** Cement provides a lower-temperature construction option compared to sintering. It can be used for gap filling, surface coatings, and fabricating shapes that are difficult to sinter directly. It is not a replacement for sintered regolith foundations — it is a complement.
 
 **Key challenge:** Geopolymer cement requires water as the activating agent. The water availability at the construction site determines whether cement is practical in early phases.
 

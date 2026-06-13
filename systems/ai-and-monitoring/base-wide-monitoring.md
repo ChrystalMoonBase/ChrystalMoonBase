@@ -19,7 +19,7 @@ Every physical system in the base is monitored continuously. Monitoring is not o
 - Particulate count (dust, smoke)
 
 **Structural monitoring (dome shells and tunnel walls):**
-- Strain gauges embedded in sintered basalt during construction
+- Strain gauges embedded in sintered regolith during construction
 - Acoustic emission sensors (detect crack propagation)
 - Pressure differential across dome shell
 

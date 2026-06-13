@@ -102,6 +102,6 @@ The round-trip communication delay to Earth is 2.6 to 5.2 seconds depending on o
 ## Open Questions
 
 1. What specific laser wavelengths optimally serve both power delivery and data communication on the same optical path with practical separation hardware?
-2. What is the maximum direct robot-to-robot laser communication range across the sintered basalt work surface with typical Peary rim illumination geometry?
+2. What is the maximum direct robot-to-robot laser communication range across the sintered regolith work surface with typical Peary rim illumination geometry?
 3. What optical transceiver design allows a robot to communicate with multiple other robots and the mast simultaneously?
 4. Can direct robot-to-Earth laser communication be practically achieved within the robot power budget, and what pointing accuracy is required?

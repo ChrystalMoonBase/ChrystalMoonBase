@@ -10,7 +10,7 @@
 
 The mast is the central infrastructure element of the Pod. It serves three simultaneous functions:
 
-1. **Power generation** — two roll-out CIGS solar film arms on the mast generate ~129–177 kW of continuous electrical power
+1. **Power generation** — two roll-out CIGS solar film arms on the mast generate ~104–143 kW of continuous electrical power
 2. **Power distribution** — five Beam and Sensor Modules (BSMs) on the mast deliver this power as a laser beam to working robots up to 2+ km away
 3. **Communications** — a Ka-band antenna at the mast top maintains continuous contact with Earth
 
@@ -42,9 +42,9 @@ Two roll-out CIGS thin-film solar arms extend horizontally from the mast, one on
 |---|---|
 | Solar film technology | CIGS thin-film (roll-out) |
 | Total solar area | 2 × 9 m × 30 m = **600 m²** |
-| Solar constant at Moon | ~1,361 W/m² |
-| Conservative efficiency | 15.7% → **~129 kW** continuous |
-| Optimistic efficiency | 21.5% → **~177 kW** continuous |
+| Solar constant at Moon | ~1,370 W/m² |
+| Conservative efficiency | 15.7% → **~104 kW** continuous |
+| Optimistic efficiency | 21.5% → **~143 kW** continuous |
 | Illumination availability | ~89% of lunar year at Peary rim |
 
 These are estimates based on published CIGS efficiency ranges. Actual output depends on film degradation under UV and particle radiation, dust accumulation rate, pointing accuracy, and thermal effects. All are open engineering questions.
@@ -87,7 +87,7 @@ After extensive evaluation of four anchor concepts (Spike, Pure Bloom, Adaptive 
 The Rooted Hybrid combines:
 - An initial mechanical spike for immediate landing stability
 - Expanding anchor elements that engage the regolith progressively
-- A hardened basalt foundation sintered by the CMB-R1 robots around the base over the first operational days
+- A hardened sintered-regolith foundation sintered by the CMB-R1 robots around the base over the first operational days
 
 This approach provides immediate stability at landing while building toward permanent anchorage as construction proceeds. It is the most resilient of the four variants against unknown surface conditions at the specific landing site.
 

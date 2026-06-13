@@ -76,4 +76,4 @@ Saltwater is produced by dissolving extracted lunar salt in base-produced water.
 
 The dome uses the standard five-layer construction. For aquaculture domes, the inner glass layer must withstand the humidity and chemical environment of a saltwater ecosystem — the anti-decay coating is particularly important here, as salt water is corrosive to many materials over time.
 
-All water connections (supply, return, waste) pass through the floor via the underground network. The floor itself is sintered basalt — impermeable, chemically resistant to saltwater, and easy to clean.
+All water connections (supply, return, waste) pass through the floor via the underground network. The floor itself is sintered regolith — impermeable, chemically resistant to saltwater, and easy to clean.

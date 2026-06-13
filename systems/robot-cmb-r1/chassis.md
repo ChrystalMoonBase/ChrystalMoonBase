@@ -131,7 +131,7 @@ The mast communicates to Earth via Ka-band radio — laser-to-Earth links are no
 
 **Battery:** Solid-state battery cells distributed through the chassis structure. Total onboard energy storage provides an estimated 2–4 hours of reduced-power autonomous operation during laser power interruptions — sufficient to survive shadow periods and communication outages.
 
-**Exterior:** Sintered basalt composite panels — the same material the robot builds with. Non-magnetic, thermally stable, radiation-resistant, and manufacturable from lunar resources in later phases.
+**Exterior:** Sintered regolith composite panels — the same material the robot builds with. Non-magnetic, thermally stable, radiation-resistant, and manufacturable from lunar resources in later phases.
 
 ---
 
@@ -250,7 +250,7 @@ Non-ferromagnetic structural alloy — titanium, aluminium, or combination. Holl
 Thermally conductive, mechanically damping gel completely surrounding the bone. Absorbs shock and vibration. Conducts heat from electronics to the outer shell for passive radiation. Must remain stable across the full lunar temperature range in vacuum — specific formulation is an open engineering question.
 
 **Layer 3 — The Armour (basalt composite exterior):**
-Sintered basalt composite outer shell. Non-magnetic. Thermally stable. Radiation resistant. Manufacturable from lunar resources in later phases. This is the surface that contacts the lunar environment — dust, temperature extremes, micrometeorite flux, radiation.
+Sintered regolith composite outer shell. Non-magnetic. Thermally stable. Radiation resistant. Manufacturable from lunar resources in later phases. This is the surface that contacts the lunar environment — dust, temperature extremes, micrometeorite flux, radiation.
 
 **The principle:** nothing electronic or sensitive is ever exposed to the lunar environment. The bone protects the electronics. The gel protects the bone. The basalt protects the gel. Three layers between the electronics and the Moon.
 

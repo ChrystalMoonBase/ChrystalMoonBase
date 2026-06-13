@@ -99,7 +99,7 @@ Corrections, challenges, and alternative proposals are welcome.
 
 ## Zero Tolerance Policy
 
-The zero tolerance policy is the single non-negotiable rule of the base. It is written into the founding statutes of Stichting Chrystal Base and cannot be changed by any individual, including the founder.
+The zero tolerance policy is the single non-negotiable rule of the base. It is written into the founding principles of the Chrystal Moon Base initiative and cannot be changed by any individual, including the founder.
 
 **What zero tolerance means:**
 Any serious violation of base rules — endangering other residents, sabotage, deliberate deception that creates safety risk, or any action that threatens the survival of the community — results in permanent removal from the base on the next available flight to Earth. The person may never return.

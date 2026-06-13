@@ -28,7 +28,7 @@ A single large central shelter for all 500 people would be:
 
 The emergency shelter network consists of **multiple independent shelter units** distributed at strategic locations throughout the underground network. Each unit is completely self-sufficient. A failure in one unit does not affect the others.
 
-The size of each unit and the total number are engineering decisions based on the population, the structural limits of sintered basalt vaulted construction, and the logistics of maintenance. The principle is fixed: multiple, independent, distributed.
+The size of each unit and the total number are engineering decisions based on the population, the structural limits of sintered regolith vaulted construction, and the logistics of maintenance. The principle is fixed: multiple, independent, distributed.
 
 ---
 
@@ -200,7 +200,7 @@ The training shelter is maintained to operational standard. If a real shelter is
 
 ## Structural Design
 
-Shelter units are among the most heavily sintered structures on the base. Walls, floor, and ceiling are sintered to greater depth than standard tunnel sections. The vaulted geometry distributes loads efficiently in compression — sintered basalt's strongest direction.
+Shelter units are among the most heavily sintered structures on the base. Walls, floor, and ceiling are sintered to greater depth than standard tunnel sections. The vaulted geometry distributes loads efficiently in compression — sintered regolith's strongest direction.
 
 No penetrations through shelter walls except:
 - Atmosphere management intake and exhaust — sealed, valve-controlled
@@ -214,7 +214,7 @@ The access hatch is designed to be openable from inside at all times — residen
 
 ## Open Questions
 
-1. What is the optimal number of shelter units and the capacity of each, given the structural limits of sintered basalt vaulted construction and the 500-person population?
+1. What is the optimal number of shelter units and the capacity of each, given the structural limits of sintered regolith vaulted construction and the 500-person population?
 2. What independent oxygen generation technology is most appropriate for a sealed shelter unit — electrolysis from stored water, chemical oxygen generation, or biological (algae)?
 3. What is the minimum power draw of all critical shelter systems simultaneously, and what battery capacity is required for 30-day independence?
 4. What communication technology — laser or radio — provides the most reliable direct Earth link from a shelter positioned underground on the Peary rim?

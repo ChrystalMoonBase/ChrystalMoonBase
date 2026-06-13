@@ -30,7 +30,7 @@ For a sintered layer 10 cm deep (0.1 m³ per m² of surface):
 
 The first milestone target is a circular platform 8 metres in diameter (area ~50 m²), sintered to a depth of 25 cm.
 
-The laser system delivers **~67.5 kW optical output**. Assuming 20–30 kW is allocated to sintering at any given moment (the rest distributed to robots and reserves):
+The diode laser system delivers **~10–15 kW optical output**. Assuming most of this is allocated to sintering at any given moment (with some distributed to robots and reserves), the working sintering power is on the order of ~10–15 kW. The timeline below uses ~25 kW as an upper-bound illustrative figure for a multi-laser or future configuration; at the current single-laser ~10–15 kW the timelines scale proportionally longer:
 
 **At 25 kW sintering power and central energy estimate (800 kWh/m²):**
 
@@ -46,7 +46,7 @@ The laser system delivers **~67.5 kW optical output**. Assuming 20–30 kW is al
 
 **Realistic honest range: 2–11 months** for the first 8-metre platform at 25 cm depth.
 
-This is significantly faster than the previous estimate (based on 13.5 kW laser output), thanks to the 880 m² solar system providing ~67.5 kW laser output vs the former 13.5 kW.
+These timelines assume the current ~600 m² CIGS solar system (~104–143 kW continuous), of which the diode laser delivers ~10–15 kW optical output to the sintering process. Earlier iterations assumed different power figures; the range above reflects the genuine uncertainty in sintering energy at scale rather than any single power number.
 
 ---
 

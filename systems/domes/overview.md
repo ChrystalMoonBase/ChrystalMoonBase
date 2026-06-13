@@ -8,7 +8,7 @@
 
 ## The Dome as the Basic Unit of Habitation
 
-Every pressurised space on the Chrystal Moon Base is a dome. There are no corridors connecting domes at ground level. There are no windows. There are no doors in the dome walls. Every dome is a sealed, self-contained pressure vessel sitting on the sintered basalt floor, connected to everything else exclusively through the underground network.
+Every pressurised space on the Chrystal Moon Base is a dome. There are no corridors connecting domes at ground level. There are no windows. There are no doors in the dome walls. Every dome is a sealed, self-contained pressure vessel sitting on the sintered regolith floor, connected to everything else exclusively through the underground network.
 
 This design is the logical result of three requirements taken seriously simultaneously:
 

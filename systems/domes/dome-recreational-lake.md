@@ -21,11 +21,11 @@ A swimming lake on the Moon is the most powerful psychological wellbeing investm
 
 ## Design
 
-**The lake:** A body of freshwater, roughly circular or naturally shaped, set into the sintered basalt floor of the dome. Depth: 1.5–3 metres — deep enough to swim freely, not so deep as to require complex structural engineering of the sintered floor base. Surface area: as large as the dome diameter allows — target 200–500 m².
+**The lake:** A body of freshwater, roughly circular or naturally shaped, set into the sintered regolith floor of the dome. Depth: 1.5–3 metres — deep enough to swim freely, not so deep as to require complex structural engineering of the sintered floor base. Surface area: as large as the dome diameter allows — target 200–500 m².
 
 **The water:** Freshwater. Maintained at a comfortable swimming temperature — approximately 28–30°C. Heated by the base thermal management system. Chemically maintained to swimming pool quality standards without chlorine where possible — UV sterilisation and biological filtration are preferred.
 
-**The bottom and banks:** Sintered basalt, smoothed and shaped. The banks can be shaped to create shallow areas, steps, and natural-feeling contours. No sharp edges. No loose material that would contaminate the water.
+**The bottom and banks:** Sintered regolith, smoothed and shaped. The banks can be shaped to create shallow areas, steps, and natural-feeling contours. No sharp edges. No loose material that would contaminate the water.
 
 **In 1/6g:** Swimming in 1/6g is a different experience from Earth. The water still supports the body — water density does not change. But the effective weight of the swimmer is lower, so buoyancy feels stronger. Jumping from the bank produces a slow, floating arc. Diving is gentler. The experience is closer to weightlessness than Earth swimming — which may be precisely what residents need as a contrast to the rest of their environment.
 

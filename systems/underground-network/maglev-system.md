@@ -36,7 +36,7 @@ The Moon provides conditions that make maglev more practical there than almost a
 The maglev network is conceived at three scales:
 
 ### Scale 1 — Within-Base Network (underground)
-Connects all domes, processing modules, medical facilities, farm domes, aquaculture domes, and terminal stations within a single base location. Runs entirely underground in pressurised sintered basalt tunnels. Carries people and cargo silently between all base facilities without any surface exposure.
+Connects all domes, processing modules, medical facilities, farm domes, aquaculture domes, and terminal stations within a single base location. Runs entirely underground in pressurised sintered regolith tunnels. Carries people and cargo silently between all base facilities without any surface exposure.
 
 ### Scale 2 — Base to Surface Facilities (short surface routes)
 Connects the underground base network to the arrival pad, departure pad, and any surface installations. Transitions from underground to elevated surface track. Pods remain pressurised throughout — passengers never need suits for this transit.
@@ -49,19 +49,19 @@ Eventually connects the four provinces of the lunar civilisation:
 
 At 1,000–2,000 km/h in vacuum, Peary to the equatorial zone takes 1.5–3 hours. The lack of atmosphere makes these speeds achievable without enormous energy cost.
 
-**Long-distance track construction:** Built by CMB-R1 robots from local sintered basalt and locally produced aluminium and steel. Support pillars at regular intervals elevate the track above the dust layer. The track is built incrementally — first the route to the nearest facility, then extended over decades as the network grows.
+**Long-distance track construction:** Built by CMB-R1 robots from local sintered regolith and locally produced aluminium and steel. Support pillars at regular intervals elevate the track above the dust layer. The track is built incrementally — first the route to the nearest facility, then extended over decades as the network grows.
 
 ---
 
 ## Track Design
 
-**Elevated, not ground-level:** All surface tracks are elevated on sintered basalt pillars. Elevation height: minimum 0.5 metres, preferably 1 metre above the local surface. This clears the electrostatic dust layer and provides better thermal stability than ground contact.
+**Elevated, not ground-level:** All surface tracks are elevated on sintered regolith pillars. Elevation height: minimum 0.5 metres, preferably 1 metre above the local surface. This clears the electrostatic dust layer and provides better thermal stability than ground contact.
 
-**Pillar material:** Sintered basalt — produced in situ by CMB-R1 robots. The track infrastructure is built from the Moon itself.
+**Pillar material:** Sintered regolith — produced in situ by CMB-R1 robots. The track infrastructure is built from the Moon itself.
 
 **Track standard:** A single published interface standard for the track geometry, magnetic field configuration, and power supply. Any maglev pod built to this standard can run on any section of the network. This is the open infrastructure principle applied to transport.
 
-**Underground sections:** Within the base, tracks run in pressurised sintered basalt tunnels. The tunnel cross-section is sized to accommodate the largest cargo pod in the network, with clearance for maintenance robots.
+**Underground sections:** Within the base, tracks run in pressurised sintered regolith tunnels. The tunnel cross-section is sized to accommodate the largest cargo pod in the network, with clearance for maintenance robots.
 
 ---
 

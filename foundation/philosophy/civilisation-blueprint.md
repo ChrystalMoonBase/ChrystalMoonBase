@@ -91,6 +91,6 @@ The open infrastructure principle means: **publish the interfaces. Any qualified
 
 This is not a master plan. There is no schedule. There is no budget. There is no organisation currently capable of building any of this.
 
-It is a direction — a way of thinking about the Moon as a world rather than as a mission destination. If the first sintered basalt floor is ever built at Peary, and if the people who built it are honest about what they did and did not learn, and if they publish everything openly so that the next step can be taken by anyone — then this document will have served its purpose.
+It is a direction — a way of thinking about the Moon as a world rather than as a mission destination. If the first sintered regolith floor is ever built at Peary, and if the people who built it are honest about what they did and did not learn, and if they publish everything openly so that the next step can be taken by anyone — then this document will have served its purpose.
 
 The Moon belongs to all of us. This is one attempt to think about what that actually means.

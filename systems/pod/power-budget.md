@@ -84,7 +84,7 @@ During the ~11% of the year when the Peary site is in reduced illumination, the 
 - Energy needed: ~840 kWh
 - Available from ~64 kW surplus × 89% illumination: ample charging capacity
 
-**Storage type:** Hybrid — electrochemical (Li-ion primary, upgradeable to locally-sourced Na-ion) + thermal (basalt block heat storage for passive thermal management).
+**Storage type:** Hybrid — electrochemical (Li-ion primary, upgradeable to locally-sourced Na-ion) + thermal (regolith block heat storage for passive thermal management).
 
 > Note: this protocol applies to the **Phase 0.2 pod** (robots hibernate when power beaming stops). The base-wide energy-continuity strategy for a populated base — where living systems can never be switched off — is described separately in `systems/life-support/energy-and-thermal.md`.
 

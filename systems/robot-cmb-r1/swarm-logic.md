@@ -196,7 +196,7 @@ Before any construction of the main floor begins, the swarm executes a specific 
 Bulldozer robots create a prepared path from the Pod to the intended centre of the 20-hectare floor. This path is graded, levelled, and cleared of loose regolith and obstacles.
 
 **Step 2 — Path sintering:**
-Sintering robots follow the bulldozers, fusing the prepared path into hard sintered basalt. This becomes the permanent access road — the first sintered surface beyond the Pod bloom leaves.
+Sintering robots follow the bulldozers, fusing the prepared path into hard sintered regolith. This becomes the permanent access road — the first sintered surface beyond the Pod bloom leaves.
 
 **Step 3 — Protected locomotion:**
 From this point, all robots travel to and from the construction site on the hard sintered road. Never on loose regolith. This protects leg joints, coupling points, and sensors from dust ingress and abrasive wear — dramatically extending robot operational life.

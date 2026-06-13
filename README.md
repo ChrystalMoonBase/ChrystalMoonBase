@@ -16,7 +16,7 @@ No flags. No patents. Built for all of humanity.
 Chrystal Moon Base is an open-source concept for building a permanent human settlement on the lunar north pole (Peary Crater rim, 88.63°N) using:
 
 - **Autonomous octopod robots** (CMB-R1) — 16 robots powered by laser beamed from a ~35-metre solar mast
-- **In-situ laser sintering** — fusing Peary highland regolith into structural basalt floors, walls, and dome foundations
+- **In-situ laser sintering** — fusing Peary highland regolith (anorthosite) into structural sintered glass-ceramic floors, walls, and dome foundations
 - **600 m² roll-out CIGS solar system** — ~104–143 kW continuous power
 - **Local material processing** — 13 processing modules extracting glass, titanium, aluminium, oxygen, water from the Moon
 - **Multi-layer glass domes** — titanium-reinforced, self-sealing habitats for permanent human residents

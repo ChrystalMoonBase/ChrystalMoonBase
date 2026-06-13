@@ -86,7 +86,7 @@ From the first sintering ring of Pod 1, the entire world can watch. A paid lives
 
 The first human landing on the CMB base will be watched by more people than any event in history. Not because a government organised it — but because a community built something extraordinary and invited the world to watch.
 
-Revenue from the livestream flows to the BV and from there to the Stichting — funding the next pod, the next expansion, the next phase. The people watching are not just spectators. They are, in a small way, participants.
+Revenue from the livestream flows to the commercial entity and funds the open initiative — the next pod, the next expansion, the next phase. The people watching are not just spectators. They are, in a small way, participants.
 
 ---
 

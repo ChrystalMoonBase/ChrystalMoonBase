@@ -23,7 +23,7 @@ This mechanism is called the Bloom. It was designed to solve four problems simul
 
 ## Leaf Structure
 
-Each of the 8 leaves is a rigid composite panel, approximately trapezoidal in shape — wider at the base (ground end) than at the top (pod attachment end). The inner face carries a textured anti-slip surface for robot traction. The outer face is thermal-coated sintered basalt composite.
+Each of the 8 leaves is a rigid composite panel, approximately trapezoidal in shape — wider at the base (ground end) than at the top (pod attachment end). The inner face carries a textured anti-slip surface for robot traction. The outer face is thermal-coated sintered-regolith composite.
 
 Each leaf is hinged at its attachment point to the central pod column. The hinge is a passive spring-loaded mechanism: on ground contact and structural release, springs drive the leaves downward. No powered actuator is required for deployment. Redundancy is built in — if one leaf fails to deploy fully, the remaining 7 still provide access and stability.
 
@@ -85,7 +85,7 @@ This is intentional. Retraction mechanisms add mass, complexity, and failure mod
 The sintered leaf-to-regolith bond provides:
 - Resistance to toppling from robot vibration, cargo loading, or seismic events
 - A permanent level platform for ongoing operations
-- The first demonstration that sintered basalt can bond structural hardware to the lunar surface — a proof of concept for all future construction
+- The first demonstration that sintered regolith can bond structural hardware to the lunar surface — a proof of concept for all future construction
 
 ---
 

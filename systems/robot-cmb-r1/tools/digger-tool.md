@@ -141,7 +141,7 @@ This sequence is speculative and requires testing:
 3. The front arm-legs lower the drum assembly to the ground.
 4. Counter-rotating drums engage, breaking up regolith and collecting it in the scoops.
 5. The robot reverses periodically to dump collected regolith to the side.
-6. A sintering robot follows, fusing tunnel walls and ceiling into solid basalt.
+6. A sintering robot follows, fusing tunnel walls and ceiling into solid sintered regolith.
 
 ---
 

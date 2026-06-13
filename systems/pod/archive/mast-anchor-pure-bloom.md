@@ -22,7 +22,7 @@ The Pure Bloom relies entirely on the sintered pod leaves for anchoring. No subs
 
 ## Disadvantages and Risks
 
-- **Uplift resistance** — the sintered bond between the leaf underside and the regolith must resist vertical uplift forces. The bond strength of sintered basalt-to-regolith contact has not been measured at the relevant scale.
+- **Uplift resistance** — the sintered bond between the leaf underside and the regolith must resist vertical uplift forces. The bond strength of sintered regolith-to-regolith contact has not been measured at the relevant scale.
 - **Bond quality uncertainty** — sintering quality across the full leaf area depends on robot execution. Gaps or voids in the sintered bond reduce the effective anchoring area.
 - **Regolith bearing** — the leaf foundation spreads load, but if the underlying regolith is weak, the whole foundation can sink or tilt.
 

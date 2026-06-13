@@ -8,7 +8,7 @@
 
 ## Objective
 
-Demonstrate that a lunar regolith simulant can be laser-sintered into structurally solid basalt at the energy density achievable with the Phase 0.2 laser system, producing a sample suitable for structural load testing.
+Demonstrate that a lunar regolith simulant can be laser-sintered into structurally solid sintered regolith at the energy density achievable with the Phase 0.2 laser system, producing a sample suitable for structural load testing.
 
 ---
 

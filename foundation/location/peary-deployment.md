@@ -9,9 +9,9 @@
 
 ## Overview
 
-Peary Crater (88.6°N, ⌀ 73.1 km) is the primary candidate location for the first Chrystal Moon Base infrastructure cluster. Four elevated points on its rim receive near-continuous solar illumination — these **Peaks of Eternal Light (PELs)** are the anchor positions for the first four infrastructure pods.
+Peary Crater (88.6°N, ⌀ ~79 km) is the primary candidate location for the first Chrystal Moon Base infrastructure cluster. Four elevated points on its rim are candidate high-illumination peaks — the best of which receives sunlight for ~89% of the lunar year (Noda et al. 2008), among the highest values measured anywhere on the Moon. These peaks (historically called "peaks of eternal light", though no lunar point is lit 100% of the year) are the anchor positions for the first four infrastructure pods.
 
-Each pod sits on a PEL, harvesting solar power and relaying communications. Sintered basalt roads lead from each pod down into the crater, converging on a central **⌀ 505 m communications zone** positioned to minimise total path length variance across all four routes.
+Each pod sits on a PEL, harvesting solar power and relaying communications. Sintered regolith roads (highland anorthosite) lead from each pod down into the crater, converging on a central **⌀ 505 m communications zone** positioned to minimise total path length variance across all four routes.
 
 ---
 
@@ -19,21 +19,21 @@ Each pod sits on a PEL, harvesting solar power and relaying communications. Sint
 
 ![Peary Crater Pod Deployment Map](peary-deployment-map.svg)
 
-*Deployment schematic — four PEL pods on the crater rim, basalt road network, central ⌀ 505 m convergence zone.*  
+*Deployment schematic — four peak pods on the crater rim, sintered regolith road network, central ⌀ 505 m convergence zone.*  
 *Hosted interactive version: [chrystalmoonbase.com/peary-deployment](https://chrystalmoonbase.com/peary-deployment)*
 
 ---
 
 ## Pod Positions
 
-All four pods are positioned at Peaks of Eternal Light on the Peary rim, based on Speyerer & Robinson (2005) and Mazarico et al. (2011) illumination data.
+All four pods are positioned at candidate high-illumination peaks on the Peary rim, based on Bussey et al. (2005), Noda et al. (2008) and Mazarico et al. (2011) illumination data. The ~89% figure is the best measured peak; the four candidate peaks range roughly 86–94% depending on peak and study.
 
 | Pod   | Peak (informal)  | Rim azimuth | Illumination |
 |-------|------------------|-------------|--------------|
-| POD 1 | Pk. Aldrin       | ~338°       | > 90%        |
-| POD 2 | Pk. Shackleton   | ~42°        | > 90%        |
-| POD 3 | Pk. Nobile       | ~88°        | > 90%        |
-| POD 4 | Pk. Haworth      | ~162°       | > 90%        |
+| POD 1 | Pk. Aldrin       | ~338°       | ~86–94% (TBD) |
+| POD 2 | Pk. Shackleton   | ~42°        | ~86–94% (TBD) |
+| POD 3 | Pk. Nobile       | ~88°        | ~86–94% (TBD) |
+| POD 4 | Pk. Haworth      | ~162°       | ~86–94% (TBD) |
 
 > **Note:** Peak names are informal working labels. Official nomenclature pending IAU review.
 
@@ -43,10 +43,10 @@ All four pods are positioned at Peaks of Eternal Light on the Peary rim, based o
 
 ### Design Principle
 
-Each basalt road runs from its pod at the crater rim to the edge of the central convergence circle. Roads are:
+Each sintered road runs from its pod at the crater rim to the edge of the central convergence circle. Roads are:
 
 - **Tapered** — 18 m wide at the pod anchor, narrowing to 4 m at the circle edge
-- **Sintered** — compacted and laser-sintered regolith surface using the Phase 0 robot fleet
+- **Sintered** — compacted and laser-sintered regolith surface (highland anorthosite) using the Phase 0 robot fleet
 - **Equal-length** — the convergence circle is positioned at the **least-squares circumcenter** of the four pod positions, minimising length variance across all four routes
 
 ### Equal-Length Geometry
@@ -76,7 +76,7 @@ The central communications and coordination platform is a circular zone of 505 m
 | Centre (display)  | 451.6, 446.9 (schematic units) |
 | Function          | Communications hub, coordination platform, resupply staging |
 | Surface           | Sintered regolith pad          |
-| Access            | 4 × basalt roads from PEL pods |
+| Access            | 4 × sintered regolith roads from the peak pods |
 
 ---
 
@@ -86,9 +86,9 @@ The central communications and coordination platform is a circular zone of 505 m
 |------------------|-------------------------|
 | Crater           | Peary                   |
 | Location         | 88.6°N, lunar north pole |
-| Crater diameter  | 73.1 km                 |
+| Crater diameter  | ~79 km                  |
 | Rim height       | ~ 2–3 km above floor    |
-| PEL illumination | > 90% of lunar year     |
+| Peak illumination | ~89% of lunar year (best peak; range ~86–94%) |
 | Coord. system    | LOLA / LRO 2024         |
 | Phase            | 0 · Prototype & planning |
 
@@ -97,9 +97,13 @@ The central communications and coordination platform is a circular zone of 505 m
 ## References
 
 ```
-[1] Speyerer, E.J. & Robinson, M.S. (2005).
-    Persistently illuminated regions at the lunar poles.
-    Nature, 434, 842–844. https://doi.org/10.1038/nature03479
+[1] Bussey, D.B.J., Fristad, K.E., Schenk, P.M., Robinson, M.S. & Spudis, P.D. (2005).
+    Constant illumination at the lunar north pole.
+    Nature, 434, 842. https://doi.org/10.1038/434842a
+
+[1b] Noda, H., et al. (2008).
+    Illumination conditions at the lunar polar regions by KAGUYA (SELENE) laser altimeter.
+    Geophysical Research Letters, 35, L24203. https://doi.org/10.1029/2008GL035692
 
 [2] Mazarico, E., et al. (2011).
     Illumination conditions of the lunar polar regions using LOLA topography.

@@ -1,0 +1,71 @@
+CHANGELOG — Fase A consistentie + opschoning
+Datum: 2026-06-13
+
+## DUPLICATEN VERWIJDERD
+- VERWIJDERD systems/pod/pod-overview.md (identiek aan systems/pod/overview.md)
+- VERWIJDERD systems/robot-cmb-r1/robot-cmb-r1-overview.md (identiek aan systems/robot-cmb-r1/overview.md)
+
+## VOLLEDIG HERSCHREVEN (achterhaalde configuratie)
+- roadmap/phase-0.2-the-pod.md: 100m→35m mast, GaAs→CIGS, 880→600m², 280→104-143kW, 8→16 robots, PEEK→M55J CFRP, 10→5 segmenten, TRN-map met LOLA/altimetrie toegevoegd
+
+## MEDIA ONE-PAGERS GECORRIGEERD
+- media/technical-one-pager.md: 55m→35m, GaAs→CIGS, 880→600m², 280→104-143kW, laser 67.5→10-15kW, BSM-hoogtes, 8→16 robots, dome-goud thermisch, basalt→regolith/anorthosite, referentie Speyerer&Robinson(2005)→Bussey(2005)
+- media/vision-one-pager.md: 55m→35m, 8→16 robots, GaAs→CIGS, 880→600m², 280→104-143kW, 'solid basalt'→glass-ceramic floor
+
+## POWER + LOCATIE GECORRIGEERD
+- systems/pod/mast-overview.md: power 129-177→104-143 kW, solar constant 1361→1370
+- foundation/location/peary-deployment.md: kraterdiameter 73.1→79 km; illuminatie >90%→~89% (best peak, range 86-94%, eerlijke nuance 'geen 100%'); referentie Speyerer&Robinson(2005) gecorrigeerd naar juiste Bussey et al.(2005)+Noda(2008); 'sintered basalt roads'→sintered regolith (highland anorthosite)
+
+## GOUD-FUNCTIE GECORRIGEERD
+- systems/domes/dome-layer-architecture.md: Layer 3 functie 'Radiation reflection'→'Thermal/optical control'; eerlijke noot toegevoegd dat goud GEEN GCR-schild is (kan zelfs secundaire deeltjes geven). Overige goud-vermeldingen waren al correct (warmtefiltering/optisch).
+
+## BASALT → ANORTHOSIET / REGOLIET (geologische correctie; Peary = hoogland)
+- 'sintered basalt' → 'sintered regolith' globaal over 34 bestanden (structureel product, altijd correct)
+- README, dome-layer Layer 1, peary-deployment roads, radiation shield, thermal buffers
+- m-basalt.md: eerlijke feedstock-noot — basaltvezel vraagt mare-basalt; Peary-hoogland is anorthosiet (~1550°C smelt). Lokale optie = anorthosiet/mineraalvezel. GEFLAGD als vraag.
+
+## GEFLAGD VOOR VRAGEN (echte techniek, niet auto-gecorrigeerd)
+- Robot vorm/sinterfysica geparametriseerd op basalt (~1200°C); anorthosiet smelt ~1550°C → raakt laservermogen, vormtip-materiaal (W-Re/HfC), koelvenster. Mag NIET cosmetisch vervangen worden.
+- 'basalt composite' robot-chassisarmor: materiaalkeuze bij hooglandfeedstock
+- feasibility-analysis: 'Hawaiian basalt ~ highland regolith' analogie is chemisch discutabel (basalt mafisch vs anorthosiet felsisch)
+
+## MAST/POWER RESTPUNTEN
+- foundation/location/landing-zone-criteria.md: 100m mast → ~35m
+- systems/sintering/energy-budget-per-m2.md: 880m²/67.5kW/13.5kW → ~600m²/~104-143kW systeem, ~10-15kW laser optisch (timelines proportioneel aangepast)
+
+## LEGAL VOLLEDIG HERSCHREVEN
+- LEGAL-STRUCTURE.md: CMB = open-source non-profit initiatief, GEEN aparte rechtspersoon, gedragen door Nexus Ignis B.V. (+ toekomstige robotica-entiteit). Eerlijke caveat: openheid = bedrijfsbeleid, niet onomkeerbare lock; reeds gepubliceerde open licenties zijn wél onherroepelijk. ANBI-noot. Geen winst op CMB; winst bij de BV's.
+- LICENSE.md, LICENSE-HARDWARE.md, LICENSE-SOFTWARE.md: 'Stichting Chrystal Base' → 'Nexus Ignis B.V.' in attributie en IP-houderschap
+- foundation/governance/overview.md: zero-tolerance statuten → 'founding principles'; Raad van Toezicht → company supervisory arrangement
+- roadmap/phase-2-the-city/export-and-revenue.md + social-structure.md: revenue flow Stichting → commerciële entiteit/open initiatief
+
+## NETTO RESULTAAT FASE A
+- 2 duplicaten verwijderd (194→192 bestanden)
+- Mast overal ~35m, power overal 104-143kW, solar overal CIGS/600m², robots overal 16
+- Kraterdiameter 79km, illuminatie ~89% eerlijk, referentie Bussey gecorrigeerd
+- Goud = thermisch/optisch (niet GCR-schild)
+- 'sintered basalt' → 'sintered regolith' (34 bestanden); anorthosiet-correctie
+- Legal volledig op Nexus Ignis B.V. constructie
+- 3 echte techniek-punten GEFLAGD voor vragen (smeltfysica basalt 1200 vs anorthosiet 1550°C; chassis-armor; analogie)
+
+==================================================
+## FASE B — INHOUDELIJKE VERRIJKING
+==================================================
+1. systems/life-support/radiation-protection.md
+   - NIEUWE sectie "Phased Shielding Depth": 5m gen-1 (volwassenen, ≤1jr, informed consent, geen kinderen) vs 10m+/lavatunnel voor permanente generaties; tabel; GCR bepaalt diepte, micrometeoriet+SEP gratis meegedekt
+   - ISRU-constraint toegevoegd: waterstoflaag = water/ijs uit PSR (NIET geïmporteerd PE/LiH); gekoppeld aan geen-plastic regel; eigen watercircuit
+   - NIEUWE alinea BNNT: anorganisch (geen plastic), boor vangt neutronen, TRL 3-4, voor kritieke dunne secties/import, niet bulk
+
+2. foundation/location/landing-and-precision-targeting.md (NIEUW BESTAND, 80 regels)
+   - Map-first-then-match strategie: laseraltimetrie (LOLA + eigen survey) → TRN tijdens afdaling
+   - Onafhankelijke verificatie-flybys als bewuste redundantie (1 bron = 1 faalpunt; verse data; kosten verwaarloosbaar bij dit budget)
+   - Sequence, open vragen, referenties (Bussey, Noda, LOLA, Mars2020 TRN)
+
+3. foundation/location/landing-zone-criteria.md
+   - NIEUWE sectie "Foundation — From Bearing to Levelling": draagkracht ≠ gelijkmatigheid; tilt/zetting bij 35m mast; geërodeerde rand = variabele draagkracht; gesinterde funderingsplaat (ISRU) als oplossing
+
+## OPSCHONING
+- 2 exacte duplicaten verwijderd (pod-overview.md, robot-cmb-r1-overview.md)
+- systems/pod/archive/ BEWUST behouden (documenteert afgewezen ankerontwerpen — open science)
+- Geen junk/lege/verouderde bestanden aangetroffen
+- Telling: 143 markdown-bestanden; totaal 194 (begonnen 194, −2 duplicaten, +1 nieuw landingsdoc, +1 changelog)

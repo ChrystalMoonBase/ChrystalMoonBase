@@ -29,3 +29,15 @@
 5. How does this module connect to the underground utility network for power, feedstock, and product output?
 
 *Engineers with relevant process chemistry or ISRU experience are invited to review and improve this document via GitHub Issues.*
+
+---
+
+## Feedstock note (highland site) — flagged for review
+
+**Important:** True basalt fibre is drawn from *basalt* melt — a mafic, iron/magnesium-rich rock found in the lunar **mare** plains. The Peary rim is **highland** terrain, where the regolith is **anorthosite** (calcium/aluminium-rich, feldspar-dominated). Anorthosite melt has different viscosity and a higher melting point (~1,550 °C for anorthite vs ~1,200 °C for basalt), so "basalt fibre" specifically is not directly producible from local Peary feedstock.
+
+Two honest options, to be decided:
+1. **Anorthosite/regolith mineral fibre** — draw mineral fibre from the locally available highland melt, accepting different (and not-yet-characterised) fibre properties. This keeps the no-import, ISRU-first principle.
+2. **Import mare-basalt feedstock or basalt fibre** — only if a specific structural need cannot be met by local anorthosite fibre. This breaks the ISRU principle and should be avoided.
+
+This document currently describes the *terrestrial* basalt-fibre process as a reference. Adapting it to highland anorthosite feedstock is an open engineering question (see project questions list).

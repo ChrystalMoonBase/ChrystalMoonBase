@@ -27,7 +27,7 @@ On Earth, glassworkers call this problem annealing — and they solve it by cont
 **Thermal camera:** A high-resolution thermal camera continuously monitors the surface temperature of the sintered material. The thermal buddy AI uses this data to adjust lamp power in real time — more heat when cooling is too fast, less when temperature is adequate.
 
 **Temperature targets (estimated):**
-- Freshly sintered basalt: ~1200°C at sintering point
+- Freshly sintered regolith: ~1200°C at sintering point
 - Target cooling rate: < 50°C/minute (this figure needs experimental validation in Demonstrator 1)
 - Minimum temperature before lamps can be reduced: ~600°C (below which thermal stress risk is greatly reduced — requires experimental validation)
 - Final surface temperature: ambient lunar surface temperature

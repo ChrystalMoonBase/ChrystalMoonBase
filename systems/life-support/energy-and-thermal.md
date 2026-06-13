@@ -46,7 +46,7 @@ A fission surface reactor would solve the darkness problem outright — it produ
 
 It is **not** part of this design, and the honest reason is not the one often assumed. Nuclear power in space is **not** prohibited — the 1967 Outer Space Treaty bans nuclear *weapons*, not nuclear *power*, and radioisotope and fission systems have a long spaceflight history. The real reason an open-source, individually-led project cannot use one is practical: an individual cannot obtain fissile material, cannot obtain a launch licence for radioactive payload, and has no regulator willing to cooperate.
 
-The consequence is a **double gap**: losing the reactor means losing both its electricity *and* its free waste heat. This is precisely why the passive thermal strategy below is not optional but load-bearing — the basalt and water buffers must do the heat-retention work a reactor would otherwise have done.
+The consequence is a **double gap**: losing the reactor means losing both its electricity *and* its free waste heat. This is precisely why the passive thermal strategy below is not optional but load-bearing — the regolith and water buffers must do the heat-retention work a reactor would otherwise have done.
 
 ---
 
@@ -54,7 +54,7 @@ The consequence is a **double gap**: losing the reactor means losing both its el
 
 The order of priority is: reduce heat loss passively, then supply the remainder with solar electricity.
 
-- **Passive retention.** The sintered basalt of the dome structure provides thermal mass that damps temperature swings. The water layer between the dome glass layers (`dome-layer-architecture.md`, Layer 4) is a second thermal buffer — and, being hydrogen-rich, also contributes to radiation moderation. These buffers help hold the interior near the target ~18–20 °C with less active input. They reduce, but do not eliminate, the heating demand: a dome on the lunar surface loses heat by radiation to the extreme cold and the vacuum, so active heating is still required to make up the loss.
+- **Passive retention.** The sintered regolith of the dome structure provides thermal mass that damps temperature swings. The water layer between the dome glass layers (`dome-layer-architecture.md`, Layer 4) is a second thermal buffer — and, being hydrogen-rich, also contributes to radiation moderation. These buffers help hold the interior near the target ~18–20 °C with less active input. They reduce, but do not eliminate, the heating demand: a dome on the lunar surface loses heat by radiation to the extreme cold and the vacuum, so active heating is still required to make up the loss.
 - **Active heating via circulating water, not the structure.** Heat is added to the water that already circulates for biological reasons (against thermal/oxygen stratification) and distributed through the dome. This deliberately keeps heating *separate from the load-bearing structure.*
 
 ### Why heating is not run through the titanium reinforcement

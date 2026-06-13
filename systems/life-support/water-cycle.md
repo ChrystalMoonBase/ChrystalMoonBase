@@ -37,7 +37,7 @@ In farm domes, plants release water vapour. This is collected by the dome atmosp
 
 ## Underground Storage
 
-All water is stored in underground sintered basalt cisterns. Storage underground protects against:
+All water is stored in underground sintered regolith cisterns. Storage underground protects against:
 - Evaporative loss (none in sealed cisterns, but underground location provides redundant protection)
 - Radiation damage to water chemistry (underground shielding is significant)
 - Temperature extremes (underground temperature is stable)

@@ -64,7 +64,7 @@ Every CMB-R1 carries the following at all times — no swapping, no configuratio
 - Infrared lamps (for controlled post-sintering cooling — crack prevention)
 
 **Protection:**
-- Sintered basalt outer armour (see Section 7)
+- Sintered regolith outer armour (see Section 7)
 - Aerogel thermal insulation (see Section 8)
 
 ---
@@ -128,7 +128,7 @@ Peary rim maximum dark interval: ~7 days. Comfortable margin.
 
 ## 7. Sintered Basalt Armour
 
-The robot's outer protective skin is made of sintered basalt — the same material the robots produce — in a combination of large rigid plates on flat surfaces and articulated tiles over joints.
+The robot's outer protective skin is made of sintered regolith — the same material the robots produce — in a combination of large rigid plates on flat surfaces and articulated tiles over joints.
 
 **Research basis:**
 Spark plasma sintering of andesite-basalt (lunar regolith analogue) has produced:
@@ -209,8 +209,8 @@ The VOILA instrument (developed for LUVMI-X lunar rover) uses LIBS at 300–500 
 |---|---|---|---|---|
 | Solid-state batteries | Space-qualified production | **3–4** | 5–6 | Conservative |
 | EPM leg locks | Structural joints in lunar dust | **2–3** | 5 | Conservative |
-| Sintered basalt armour (material) | 566 MPa compressive strength | **4–5** | 4–5 | Agree |
-| Sintered basalt armour (repair) | Robot-to-robot spot sintering | **2** | Not assessed | New |
+| Sintered regolith armour (material) | 566 MPa compressive strength | **4–5** | 4–5 | Agree |
+| Sintered regolith armour (repair) | Robot-to-robot spot sintering | **2** | Not assessed | New |
 | Laser communication | Lunar mesh network | **4** (network) | 7–8 | Conservative |
 | Laser power beaming | NASA VSAT sub-scale demo | **5–6** | 5–6 | Agree |
 | LIBS regolith analysis | VOILA instrument | **6–7** | 6–7 | Agree |
@@ -226,7 +226,7 @@ The VOILA instrument (developed for LUVMI-X lunar rover) uses LIBS at 300–500 
 
 1. The combination of laser power beaming + laser communication + laser sintering in a single integrated system — each laser serves multiple purposes, reducing total mass and complexity.
 
-2. Sintered basalt armour produced from the same material the robots construct — enabling robot-assisted repair from in-situ resources. No other lunar rover concept has proposed this.
+2. Sintered regolith armour produced from the same material the robots construct — enabling robot-assisted repair from in-situ resources. No other lunar rover concept has proposed this.
 
 3. The distributed battery architecture across 24 limb segments — genuine N+1 redundancy with physical fault isolation built into the structure.
 
