@@ -1,4 +1,4 @@
-# CMB-R1 — Autonomous Octopod Construction Robot
+# CMB8LF-L1 — Autonomous Octopod Construction Robot
 
 **Chrystal Moon Base · Phase 0.2**
 **Status:** Concept proposal — no prototype exists. Open question, not a specification.
@@ -9,7 +9,7 @@
 
 ## Design philosophy: sixteen identical, fully capable
 
-There are no specialists. There is no dependency between robots. Every CMB-R1 is identical to every other CMB-R1, and every CMB-R1 can do everything.
+There are no specialists. There is no dependency between robots. Every CMB8LF-L1 is identical to every other CMB8LF-L1, and every CMB8LF-L1 can do everything.
 
 This is not a choice driven by elegance. It is driven by reliability. On the Moon there is no repair crew. With sixteen identical chassis, loss of one robot means loss of one-sixteenth of capacity — nothing more. The other fifteen continue unchanged.
 
@@ -24,11 +24,11 @@ This is not a choice driven by elegance. It is driven by reliability. On the Moo
 | Configuration | 6 stance · 2 arm-legs | Front pair — each carries a separate module |
 | Foot type | Snowshoe flat plate | 400 × 150 mm — no sinkage in 1/6 g regolith |
 | Frame | Ti-6Al-4V | Titanium alloy structural skeleton |
-| Armour | Basalt fibre + MgAl2O4 ceramic | Multi-layer thermal and impact protection |
+| Armour | Mineral fibre (anorthosite) + MgAl2O4 ceramic | Multi-layer thermal and impact protection |
 | Power | Laser beaming | GaAs PV receiver, quadrant beam tracking |
 | Battery | Solid-state LiPON | One cell per leg segment — local motor power |
 | Left arm module | Sintering laser | 10-20 cm compact unit, EPM-swappable |
-| Right arm module | W-Re alloy forming tip | Direct basalt shaping, EPM-swappable |
+| Right arm module | W-Re alloy forming tip | Direct regolith shaping, EPM-swappable |
 | Heavy tool interface | EPM electropermanent magnet | less than 5 W pulse to lock, 0 W to hold |
 | Temperature range | -180C to +130C | Full Peary crater rim operational envelope |
 | AI system | Triple Modular Redundancy TMR | Fault-tolerant autonomous control |
@@ -39,7 +39,7 @@ This is not a choice driven by elegance. It is driven by reliability. On the Moo
 
 ## The two-arm system: melt and form
 
-This is the core of what the CMB-R1 does. Two arm-legs. Two functions. One continuous motion.
+This is the core of what the CMB8LF-L1 does. Two arm-legs. Two functions. One continuous motion.
 
 ### Left arm — laser module
 
@@ -47,11 +47,11 @@ A compact laser unit (10-20 cm) connects to the left arm-leg via EPM. It melts l
 
 ### Right arm — W-Re forming tip
 
-A tungsten-rhenium alloy tip connects to the right arm-leg via EPM. While the left arm melts the surface, the right arm presses, shapes, and holds the molten basalt as it cools from ~1200C toward ~800C. The result is a formed, smooth, solid surface.
+A tungsten-rhenium alloy tip connects to the right arm-leg via EPM. While the left arm melts the surface, the right arm presses, shapes, and holds the molten regolith as it cools from ~1200C toward ~800C. The result is a formed, smooth, solid surface.
 
 In vacuum there is no convective cooling. Molten basalt at 1200C in lunar vacuum cools significantly slower than on Earth, giving the forming tip time to work. The viscosity of molten basalt at this temperature is comparable to thick syrup — a few newtons of steady pressure is enough to shape it.
 
-This is, in essence, robotic glassblowing on the Moon. With basalt.
+This is, in essence, robotic glassblowing on the Moon — with melted regolith (anorthosite).
 
 > **Feedstock note:** The ~1,200 °C figure is *basalt-referenced* (from published experiments and simulants). The actual Peary feedstock is highland anorthosite, which melts hotter (~1,550 °C), raising laser-energy demand and tightening forming-tip and cooling margins. See `systems/sintering/laser-sintering-physics.md` → "Melt Temperature — Basalt versus Highland Anorthosite".
 
@@ -88,7 +88,7 @@ One robot can operate both arms on a single patch. Two robots can also collabora
 
 ## All sensors integrated in the chassis
 
-No sensor specialist. Every CMB-R1 carries the full suite permanently:
+No sensor specialist. Every CMB8LF-L1 carries the full suite permanently:
 
 - Terrain scanner — continuous surface mapping
 - Temperature sensors — monitoring sintered surface temperature in real time
@@ -134,7 +134,7 @@ The swap is the same motion as swapping a laser module or forming tip. Walk to r
 | Question | Why it matters |
 |---|---|
 | Does molten basalt adhere to HfC-coated W-Re? | Core feasibility of the forming tip |
-| Optimal W-Re tip geometry for basalt shaping | Flat press? Curved blade? Requires physical test |
+| Optimal W-Re tip geometry for molten-regolith shaping | Flat press? Curved blade? Requires physical test |
 | Thermal break performance under -150C to +1200C cycling | Ceramic standoffs must survive repeated thermal shock |
 | Laser module thermal management in arm-leg | Heat routing within confined arm structure |
 | Molten basalt cooling rate in lunar vacuum | Determines working window for the forming tip |

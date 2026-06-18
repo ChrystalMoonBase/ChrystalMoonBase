@@ -8,7 +8,7 @@
 
 ## Overview
 
-**Input:** Metal powders and filaments from M-Al, M-Ti, M-Fe, M-Si; glass from M-Glass
+**Input:** Metal powders and filaments — primarily aluminium (M-Aluminium) and silicon/ferrosilicon (M-Silicon, M-Iron); alumina ceramic (M-Ceramics); glass (M-Glass). Titanium only where imported stock is available (not a local Peary metal).
 
 **Output:** Precision-manufactured components in metal, glass, and composites
 

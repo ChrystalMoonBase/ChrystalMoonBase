@@ -1,4 +1,4 @@
-# CMB-R1 Head Attachment Mechanism
+# CMB8LF-L1 Head Attachment Mechanism
 ## Chrystal Moon Base — Robot System Concept
 
 **Status:** Concept proposal  

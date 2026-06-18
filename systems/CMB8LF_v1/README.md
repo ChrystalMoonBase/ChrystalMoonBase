@@ -1,4 +1,4 @@
-# CMB8LF v1 — Chrystal Moon Base 8 Legged Freaks
+# CMB8LF-S1 — Chrystal Moon Base 8 Legged Freaks
 ## Scale 1:3.5 · Vacuum-Rated · Brushless · CAN Bus · Full Revision v6
 
 **Status:** Active development — build one leg at a time
@@ -151,5 +151,5 @@ CMB8LF_v1/
 - Software: GPL-3.0
 - Documentation: CC0
 
-*CMB8LF v1 · CC0 2026 · Chrystal Moon Base · No rights reserved*
+*CMB8LF-S1 · CC0 2026 · Chrystal Moon Base · No rights reserved*
 *Multi-AI: Claude · ChatGPT · Meta · DeepSeek · Gemini · Human decisions: Berechja Kerkdijk*

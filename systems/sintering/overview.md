@@ -10,7 +10,7 @@
 
 Sintering is the process of fusing loose granular material into a solid mass by applying heat below the material's full melting point. At sufficient temperature, the grains bond at their contact points without liquefying — producing a solid, porous material. At higher temperatures approaching the melting point, the bonds become denser and the material approaches a glass-ceramic solid.
 
-For CMB's purposes, the target is dense, crack-free basalt — strong enough to serve as a structural floor for dome foundations, robot operations, and eventually human habitation.
+For CMB's purposes, the target is dense, crack-free sintered regolith (highland anorthosite) — strong enough to serve as a structural floor for dome foundations, robot operations, and eventually human habitation.
 
 ---
 

@@ -70,7 +70,7 @@ Five BSMs are pre-mounted on the mast — one per segment — at approximately 7
 - Receives electrical power from the solar arms
 - Converts it to a directed laser beam (~10–20 kW class diode laser)
 - Tracks a moving robot receiver autonomously
-- Delivers usable power to the CMB-R1 robot at up to 2+ km range
+- Delivers usable power to the CMB8LF-L1 robot at up to 2+ km range
 
 Multiple BSMs can operate simultaneously, powering multiple robots at once. If one BSM fails, the others continue operation.
 
@@ -86,7 +86,7 @@ Multiple BSMs can operate simultaneously, powering multiple robots at once. If o
 6. CIGS solar arms, rolled around the mast during transit, unfurl as segments extend
 7. Ka-band antenna at mast top deploys last
 8. BSMs activate after solar power is confirmed
-9. Garage doors open; CMB-R1 robots walk out
+9. Garage doors open; CMB8LF-L1 robots walk out
 
 Estimated deployment time: 2–4 hours. Deployment is slow and controlled — rapid deployment risks dynamic loads that could damage the structure in lunar vacuum and 1/6 g.
 
@@ -99,7 +99,7 @@ After extensive evaluation of four anchor concepts (Spike, Pure Bloom, Adaptive 
 The Rooted Hybrid combines:
 - An initial mechanical spike for immediate landing stability
 - Expanding anchor elements that engage the regolith progressively
-- A hardened sintered-regolith foundation sintered by the CMB-R1 robots around the base over the first operational days
+- A hardened sintered-regolith foundation sintered by the CMB8LF-L1 robots around the base over the first operational days
 
 This approach provides immediate stability at landing while building toward permanent anchorage as construction proceeds. It is the most resilient of the four variants against unknown surface conditions at the specific landing site.
 

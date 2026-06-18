@@ -7,17 +7,17 @@
 
 ## Why the T8
 
-The Robugtix T8 is an 8-legged robot platform with 3 degrees of freedom per leg, sold commercially as a development and demonstration platform. Its architecture — 8 legs, 3-DOF each, centralised body, servo actuation at each joint — is exactly what the CMB-R1 requires.
+The Robugtix T8 is an 8-legged robot platform with 3 degrees of freedom per leg, sold commercially as a development and demonstration platform. Its architecture — 8 legs, 3-DOF each, centralised body, servo actuation at each joint — is exactly what the CMB8LF-L1 requires.
 
 It was selected as the kinematic reference because:
 
 1. **It exists.** It has been physically built, tested, and sold. The 8-leg, 3-DOF architecture is not theoretical.
 2. **The leg arrangement is verified.** The T8 demonstrates that 8 legs with 3 joints each can produce stable locomotion, terrain adaptation, and tool-carrying postures.
-3. **It is documented.** The T8's servo specifications, joint ranges, and gait parameters provide a starting point for CMB-R1 scaling analysis.
+3. **It is documented.** The T8's servo specifications, joint ranges, and gait parameters provide a starting point for CMB8LF-L1 scaling analysis.
 
 ---
 
-## What the CMB-R1 keeps from the T8
+## What the CMB8LF-L1 keeps from the T8
 
 - 8-leg architecture
 - 3-DOF per leg (coxa, femur, tibia)
@@ -26,11 +26,11 @@ It was selected as the kinematic reference because:
 
 ---
 
-## What the CMB-R1 changes
+## What the CMB8LF-L1 changes
 
-| T8 feature | CMB-R1 equivalent | Reason |
+| T8 feature | CMB8LF-L1 equivalent | Reason |
 |---|---|---|
-| ABS/nylon 3D-printed body | Ti-6Al-4V + basalt fibre + MgAl₂O₄ armour | Thermal and impact protection, −180°C to +130°C |
+| ABS/nylon 3D-printed body | Ti-6Al-4V (imported) + mineral-fibre + MgAl₂O₄ armour | Thermal and impact protection, −180°C to +130°C |
 | Standard hobby servos | Sealed harmonic drives with triple-ring dust seals | Lunar dust is sharp and electrostatically charged |
 | Pointed feet | Snowshoe flat plates (400 × 150 mm) | Prevents sinkage in loose regolith at 1/6 g |
 | 2 front legs = legs | 2 front legs = arm-legs (EPM tool mount) | Tool carrying without dedicated manipulator arms |
@@ -50,7 +50,7 @@ The T8 is a kinematic reference only. It does not inform:
 - Armour material selection
 - Tool EPM interface
 
-These are addressed in the main CMB-R1 specification.
+These are addressed in the main CMB8LF-L1 specification.
 
 ---
 

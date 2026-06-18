@@ -68,4 +68,4 @@ The 505-metre diameter floor is not an arbitrary number. It is calculated from t
 **The floor is one continuous unbroken surface.** No sections, no phases, no seams. One 20-hectare piece of sintered regolith — the largest structure ever built on another world. Dust cannot infiltrate between sections because there are no sections.
 
 **Luminescent algae throughout:**
-The underground passages connecting all domes are lined with luminescent algae pillars — the same living organisms that process atmosphere in the domes. They provide soft, organic blue-green light throughout the entire underground network. The base never has a dark corridor. Every passage glows with life.
+The underground passages connecting all domes are lined with luminescent algae pillars — the same living organisms that process atmosphere in the domes. They add soft, organic blue-green ambience. (Honest note: bioluminescent/algae light is far too dim to actually illuminate a corridor — primary lighting is LED; the algae are for atmosphere processing and ambience, not as a light source.)

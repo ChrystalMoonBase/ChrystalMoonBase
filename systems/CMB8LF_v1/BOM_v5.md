@@ -1,4 +1,4 @@
-# CMB8LF v1 — Definitieve Boodschappenlijst v5 (Ultimate)
+# CMB8LF-S1 — Definitieve Boodschappenlijst v5 (Ultimate)
 **Hardware-veilig · EMI-gescheiden · Vacuümklaar · Thermisch bewust**
 **Alle bekende ontwerprisico's geadresseerd**
 **CC0 — Chrystal Moon Base 2026**
@@ -367,6 +367,6 @@ def check_domain_isolation():
 
 ---
 
-*CMB8LF v1 — Boodschappenlijst v5 — Ultimate*
+*CMB8LF-S1 — Boodschappenlijst v5 — Ultimate*
 *Meta · DeepSeek · Gemini · ChatGPT · Claude — alle input verwerkt*
 *CC0 — Chrystal Moon Base 2026*

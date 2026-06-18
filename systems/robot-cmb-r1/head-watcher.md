@@ -1,4 +1,4 @@
-# CMB-R1 Head — Watcher (Quality Control and Monitoring)
+# CMB8LF-L1 Head — Watcher (Quality Control and Monitoring)
 ## Chrystal Moon Base — Robot System Concept
 
 **Status:** Concept proposal  
@@ -37,7 +37,7 @@ The Watcher head carries a comprehensive sensor package. The specific instrument
 
 ### Thermal Monitoring
 - **Wide-field thermal camera** — monitors the full sintering work area, tracking heat distribution patterns and cooling gradients
-- **Point infrared pyrometer** — precise temperature measurement of specific surface points, calibrated for basalt emissivity
+- **Point infrared pyrometer** — precise temperature measurement of specific surface points, calibrated for regolith (anorthosite) emissivity
 
 ### Structural Assessment
 - **Ground-penetrating radar (GPR)** — subsurface imaging to detect voids, density variations, and crack networks below the visible sintered surface. Frequency range TBD by engineering — lunar regolith GPR has been demonstrated by LPR on the Chang'e 4 and 5 missions.

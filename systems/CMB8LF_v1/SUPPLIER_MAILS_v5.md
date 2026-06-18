@@ -1,4 +1,4 @@
-# CMB8LF v1 — Definitieve Offertemails v5
+# CMB8LF-S1 — Definitieve Offertemails v5
 **Goedgekeurd door Meta · DeepSeek · Gemini · ChatGPT · Claude**
 **CC0 — Chrystal Moon Base 2026**
 
@@ -240,6 +240,6 @@ info@chrystalmoonbase.com
 
 ---
 
-*CMB8LF v1 — Definitieve Offertemails v5*
+*CMB8LF-S1 — Definitieve Offertemails v5*
 *Goedgekeurd: Meta · DeepSeek · Gemini · ChatGPT · Claude*
 *CC0 — Chrystal Moon Base 2026*

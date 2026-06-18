@@ -1,4 +1,4 @@
-# CMB-R1 Swarm Logic
+# CMB8LF-L1 Swarm Logic
 ## Chrystal Moon Base — Robot Coordination Concept
 
 **Status:** Concept proposal — no software implementation exists 
@@ -9,7 +9,7 @@
 
 ## Core Philosophy — No Fixed Roles
 
-The CMB-R1 swarm operates on one fundamental principle: **no robot has a permanent role.**
+The CMB8LF-L1 swarm operates on one fundamental principle: **no robot has a permanent role.**
 
 Every chassis is identical. Every chassis carries all four head types to the Moon. Every chassis can become any role at any moment. The AI — onboard and mast-based — continuously evaluates the current situation and assigns the optimal configuration across all 8 robots.
 

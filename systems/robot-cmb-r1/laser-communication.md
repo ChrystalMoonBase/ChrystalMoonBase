@@ -9,7 +9,7 @@
 
 ## Philosophy — Laser Only
 
-The CMB-R1 communicates exclusively via laser. No radio systems are used between robots or between robots and the mast. This is a deliberate architectural decision based on the specific advantages of the lunar environment.
+The CMB8LF-L1 communicates exclusively via laser. No radio systems are used between robots or between robots and the mast. This is a deliberate architectural decision based on the specific advantages of the lunar environment.
 
 ---
 
@@ -21,7 +21,7 @@ The Moon provides ideal conditions for laser communication that do not exist on 
 
 **No interference:** Multiple robots operating laser links simultaneously do not interfere with each other — laser beams are directional and do not create the radio frequency congestion that would occur with multiple radio transmitters in close proximity.
 
-**High bandwidth:** Laser communication carries vastly more data than radio at equivalent power levels. The CMB-R1 sensor suite — particularly the Watcher head — generates large data volumes. Laser is the only practical way to transmit this data efficiently.
+**High bandwidth:** Laser communication carries vastly more data than radio at equivalent power levels. The CMB8LF-L1 sensor suite — particularly the Watcher head — generates large data volumes. Laser is the only practical way to transmit this data efficiently.
 
 **Low power:** A communication laser operates at milliwatts. The sintering laser operates at kilowatts. The same physical principle, a factor of one million difference in power. Communication laser power is negligible in the overall robot power budget.
 

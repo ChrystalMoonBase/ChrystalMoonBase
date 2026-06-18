@@ -23,10 +23,17 @@ For permanent residents who never return to Earth, the long-term consequences of
 
 CMB proposes three complementary countermeasures that together aim to provide sufficient mechanical loading to prevent the worst physiological effects:
 
-### Layer 1 — Maglev Sleeping Ring (passive, nightly)
-A circular maglev track carrying sleeping pods at ~2.1 rpm at 20-metre radius, generating 1g centrifugal acceleration at the sleeping surface. Residents sleep at 1g every night — 8 hours of full gravitational loading, automatically, without any time or effort cost beyond normal sleep.
+### Layer 1 — Maglev Sleeping Ring (passive, nightly) — **geometry unresolved**
+A circular maglev track carrying sleeping pods, intended to generate
+centrifugal "gravity" at the sleeping surface during sleep. **Note:** the original
+"20 m radius at 2.1 rpm = 1 g" figure was a calculation error — that combination
+gives only ~0.10 g (less than lunar gravity). A real 1 g ring at a comfortable
+rotation rate (~2 rpm) needs a radius near 200 m; a buildable ~20–30 m ring must
+spin fast enough (~5–7 rpm) to risk motion sickness. A realistic *target g* must be
+chosen, or this layer dropped in favour of Layers 2–3. Treat as an unproven concept
+until resolved.
 
-See GRAVITY-COUNTERMEASURE-MAGLEV-BEDS.md for full specification.
+See GRAVITY-COUNTERMEASURE-MAGLEV-BEDS.md for the corrected physics and the trade.
 
 ### Layer 2 — Compression Suit (passive, daytime)
 A thin elastic suit applying continuous axial and peripheral compression to the body during waking hours. Based on the Russian Penguin suit concept but updated with modern elastic materials and potentially pneumatic or shape-memory alloy elements. Target: 20–60% of 1g equivalent loading on the skeleton.
@@ -46,7 +53,7 @@ This is the only countermeasure that requires deliberate time and effort from th
 
 | Period | Layer | Duration | G-equivalent |
 |---|---|---|---|
-| Sleep | Maglev ring | 8 hours | 1.0g |
+| Sleep | Maglev ring | 8 hours | partial-g (TBD) |
 | Waking — wearing suit | Compression suit | ~15 hours | 0.2–0.6g |
 | Exercise | Resistance training | 1 hour | Variable, high |
 

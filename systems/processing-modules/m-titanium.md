@@ -1,31 +1,58 @@
-# Titanium Extraction (M-TITANIUM)
+# Titanium (M-TITANIUM)
 ## Chrystal Moon Base — Processing Module Concept
 
-**Status:** Concept proposal — no hardware exists  
+**Status:** Concept proposal — **not a local ISRU product at Peary**
 **Licence:** CC0
+**Ground truth:** `PEARY-MATERIALS-REFERENCE.md`
 
 ---
 
-## Overview
+## Why this module is re-scoped
 
-**Input:** Ilmenite (FeTiO₃) from regolith — a titanium-bearing mineral present in lunar basalt at 1–10% by mass
+Earlier versions listed titanium as a co-first priority for dome reinforcement,
+with ilmenite (FeTiO₃) as feedstock. **That assumption does not hold at Peary.**
+Ilmenite is a *mare* mineral. Highland anorthosite — the Peary terrain — contains
+only ~0.4 wt % TiO₂ and no ilmenite ore worth concentrating. Titanium is
+therefore **not a viable local extraction target at this site.**
 
-**Output:** Titanium metal in wire, sheet, and structural form
+Dome reinforcement shifts to **aluminium** (see `m-aluminium.md`), which the
+local feedstock supplies in abundance.
 
-**Process:** Ilmenite is separated from bulk regolith by magnetic and electrostatic separation. The titanium is extracted by a reduction process — several candidate processes exist (hydrogen reduction, molten salt electrolysis, carbothermal reduction). The specific process for the lunar environment requires selection based on energy efficiency and feedstock availability.
+---
 
-**Why first:** Titanium fibre is embedded in the dome glass during printing, creating a titanium-reinforced glass composite. Without titanium, domes rely on glass alone for structural integrity. M-Titanium is co-priority with M-Glass.
+## Overview (titanium as an import / long-term option)
 
-**Key challenge:** The energy requirement for titanium extraction is high. The specific extraction process that best balances energy consumption, processing rate, and feedstock availability in the lunar environment has not been selected.
+**If titanium is needed**, the realistic routes are:
+1. **Import** finished titanium components from Earth for the few applications
+   where its specific strength-to-weight or temperature performance is genuinely
+   required and no aluminium or composite substitute works.
+2. **Long-term local sourcing** only if a future survey identifies a
+   titanium-bearing deposit accessible from the base (not expected in highland
+   terrain). This is speculative and not a base assumption.
+
+**Extraction (reference only, not local):** where ilmenite *is* available
+(mare sites), titanium is produced by magnetic/electrostatic separation followed
+by reduction (hydrogen, molten-salt electrolysis, or carbothermal). Documented
+here for completeness, not as a Peary process.
+
+---
+
+## Honest verdict
+
+Titanium is an **import item** for Chrystal Moon Base, not an ISRU output. Any
+design that depends on locally produced titanium at Peary is unsupported by the
+site's geochemistry. Where the old documents implied local titanium production,
+read aluminium instead.
 
 ---
 
 ## Open Questions
 
-1. What is the optimal processing rate for this module given the available power budget?
-2. What is the module mass and volume, and does it fit within the planned delivery vehicle constraints?
-3. What feedstock pre-processing is required before input to this module?
-4. What are the failure modes and how are they detected and managed autonomously?
-5. How does this module connect to the underground utility network for power, feedstock, and product output?
+1. Which specific components, if any, genuinely require titanium rather than
+   aluminium, steel/ferrosilicon, or local composites?
+2. What is the imported mass of those components, and does it justify any local
+   processing at all?
+3. Is there any credible titanium source within the base's operating radius?
 
-*Engineers with relevant process chemistry or ISRU experience are invited to review and improve this document via GitHub Issues.*
+*Engineers with relevant process chemistry or ISRU experience are invited to
+review and improve this document via GitHub Issues.*

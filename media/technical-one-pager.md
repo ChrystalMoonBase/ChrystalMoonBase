@@ -32,8 +32,8 @@ Earth visibility from the near-side rim appears continuous based on published or
 - AI selects optimal BSM per robot based on position; robot receiver panels tilt to optimise angle
 - Estimated operational robot radius: **2+ km** from mast base in vacuum (no atmospheric losses)
 
-**2. Robotic Execution Layer — CMB-R1 (concept only)**
-- 16 octopod robots (CMB-R1), 2 per garage, ~250–350 kg each (rough estimate)
+**2. Robotic Execution Layer — CMB8LF-L1 (concept only)**
+- 16 octopod robots (CMB8LF-L1), 2 per garage, ~250–350 kg each (rough estimate)
 - Four interchangeable tool heads: sintering, thermal buddy, bulldozer, watcher
 - Front two limbs intended as dual-function: legs in transit, arms for head swapping and cargo handling
 - Leg-loss fault tolerance proposed: damaged leg discarded, AI recalculates gait for remaining legs
@@ -87,7 +87,7 @@ Earth visibility from the near-side rim appears continuous based on published or
 |---|---|---|
 | D1 | Laser sintering at scale | Crack-free 1 m² patch, depth ≥10 cm, compressive strength ≥50 MPa |
 | D2 | Laser power beaming | ≥40% end-to-end efficiency at 100 m, tracking at robot walking speed |
-| D3 | CMB-R1 locomotion | Stable gait on simulant, leg-loss recovery <60 s, head swap success ≥90% |
+| D3 | CMB8LF-L1 locomotion | Stable gait on simulant, leg-loss recovery <60 s, head swap success ≥90% |
 | D4 | 4-robot swarm coordination | Autonomous ring completion, fault recovery without human intervention |
 | D5 | Full integration, 72-hour run | Measurable sintered area produced, no human intervention required |
 

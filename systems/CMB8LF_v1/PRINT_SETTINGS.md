@@ -1,4 +1,4 @@
-# CMB8LF v1 — Print Instellingen v6
+# CMB8LF-S1 — Print Instellingen v6
 ## PEEK-CF · CreatBot PEEK-300 (primary) · Voron 2.4 / Intamsys FUNMAT HT (DIY alternatives)
 **CC0 · Chrystal Moon Base · 2026**
 

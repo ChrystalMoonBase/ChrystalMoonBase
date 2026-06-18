@@ -73,7 +73,7 @@ These are stated as open facts, not resolved positions. The reader can weigh the
    - **More likely:** the same laser still works, but the scan speed drops and the build takes longer (energy = power × time — you pay in time, not watts). Sintering-time estimates would then be longer than the basalt-referenced figures.
    - **Possible:** the current power cannot reach the required peak temperature at the depth desired within a single pass, in which case a power upgrade, multi-pass sintering, or pre-heating would be needed.
 
-2. **If a power upgrade is required, it affects every robot, not one.** Each CMB-R1 carries the same sintering laser. A change to the minimum laser specification propagates to the whole fleet, the per-robot power draw, the mast power budget, and the charging schedule. This is a fleet-wide coupling, documented here so the dependency is visible.
+2. **If a power upgrade is required, it affects every robot, not one.** Each CMB8LF-L1 carries the same sintering laser. A change to the minimum laser specification propagates to the whole fleet, the per-robot power draw, the mast power budget, and the charging schedule. This is a fleet-wide coupling, documented here so the dependency is visible.
 
 3. **Pre-heating as an alternative to raw power.** Raising the feedstock temperature before the main sintering pass (e.g. a broad low-power pass, or using residual heat from an adjacent pass) reduces the peak power needed to reach full melt. This is a known technique and may avoid a hardware upgrade entirely. Unvalidated for this application.
 

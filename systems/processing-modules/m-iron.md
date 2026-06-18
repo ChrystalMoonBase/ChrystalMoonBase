@@ -1,31 +1,91 @@
-# Iron Production (M-IRON)
-## Chrystal Moon Base — Processing Module Concept
+# M-Iron — Iron & Ferrosilicon
 
-**Status:** Concept proposal — no hardware exists  
+**Status:** Concept proposal, sourced. Tentative where noted.
 **Licence:** CC0
+**Role:** Stage 3. A **co-product**, not a primary target — highland Peary is iron-poor
+(~5 wt% FeO). The realistic product is **ferrosilicon alloy**, useful as-is.
+**Ground truth:** Peary highland / anorthosite (`PEARY-MATERIALS-REFERENCE.md`).
 
 ---
 
-## Overview
+## What it does
 
-**Input:** Iron-bearing minerals from regolith (ilmenite, pyroxene, olivine) — iron content of lunar basalt: 5–25% FeO by mass
-
-**Output:** Iron and steel-equivalent alloys in structural form
-
-**Process:** Hydrogen reduction of iron oxides — hydrogen reacts with FeO at high temperature to produce Fe metal and H₂O. The water is electrolysed to recover the hydrogen for reuse. This process is well-understood and has been studied extensively for lunar ISRU. The hydrogen must either be imported (from Earth or from M-Water electrolysis) or produced locally.
-
-**Note:** Iron is primarily useful for heavy construction and machinery in later phases. It is lower priority than glass, titanium, and aluminium for the initial construction sequence.
-
-**Key challenge:** Hydrogen availability. If local hydrogen must come from water electrolysis, then M-Iron is dependent on M-Water, which creates a supply chain dependency that must be managed.
+Captures the iron- and silicon-bearing alloy fraction from M-MRE / metal separation. At
+a highland site this is modest in quantity and naturally comes out as an **Fe/Si alloy
+(ferrosilicon)** rather than pure iron — and that alloy is itself a useful product.
 
 ---
 
-## Open Questions
+## Input → Output
 
-1. What is the optimal processing rate for this module given the available power budget?
-2. What is the module mass and volume, and does it fit within the planned delivery vehicle constraints?
-3. What feedstock pre-processing is required before input to this module?
-4. What are the failure modes and how are they detected and managed autonomously?
-5. How does this module connect to the underground utility network for power, feedstock, and product output?
+- **Input:** the Fe/Si(±Ti/Al) alloy fraction from M-MRE / M-Metal-Separation.
+- **Output:** **ferrosilicon** (alloy is the product), and — only if needed — purer iron
+  via further refining.
 
-*Engineers with relevant process chemistry or ISRU experience are invited to review and improve this document via GitHub Issues.*
+---
+
+## The science (grounded)
+
+MRE on regolith yields, among its alloys, an **Fe/Si** family. Reported highland MRE
+concepts give ferrosilicon plus oxygen as co-products. Because highland FeO is low,
+**iron is never abundant here** — which is *fine*, because:
+- **Ferrosilicon is the product:** for many uses (magnetic cores, certain tools,
+  feedstock for further alloys) the alloy is wanted, and chasing "99 % pure iron" would
+  be counter-productive (it would mean *removing* the silicon you deliberately have).
+- Pure iron, if ever needed, comes from further electrorefining (see metal separation).
+
+> Honest framing: this is a **by-product line**, not a steel mill. Structural metal at
+> Peary is **aluminium**; iron plays a supporting role. Trying to make Peary an
+> iron-producer fights the geology.
+
+---
+
+## Conceptual schematic
+
+```
+   M-MRE alloy ──► Fe/Si fraction ──► ferrosilicon (USE AS-IS)
+                                          │
+                                          └─(only if pure Fe needed)─► electrorefine
+```
+*Conceptual; how much (if any) pure iron is needed is an open question.*
+
+---
+
+## Lunar-specific factors
+
+- **Magnetic separation** can also pull native/nanophase iron and iron-bearing grains
+  from raw regolith — a simple, reagent-free pre-concentration (also used to clean FeO
+  out of glass; see M-Glass).
+- Low quantity means iron is **rationed to where it matters**, not used freely.
+
+---
+
+## Earth-dependence
+
+**None** for ferrosilicon (it rides on MRE). Pure-iron refining would share the
+electrorefining electrolyte dependence (see `m-metal-separation.md`).
+
+---
+
+## Maturity (honest)
+
+Ferrosilicon as an MRE co-product is grounded; the honest point is **availability, not
+process** — there simply is not much iron at Peary, so plan around aluminium.
+
+---
+
+## Open questions
+
+1. Does the base ever need *pure* iron, or is ferrosilicon always sufficient?
+2. Is magnetic pre-concentration of iron from raw regolith worth the step at low FeO?
+3. Where is iron genuinely irreplaceable by aluminium (e.g. magnetics)?
+
+---
+
+## References (verify and extend)
+
+- arXiv 2408.05823 — MRE alloy families incl. Fe/Si.
+- Highland MRE concepts — ferrosilicon + oxygen co-products from anorthosite.
+- `PEARY-MATERIALS-REFERENCE.md` — ~5 wt% FeO at highland Peary.
+
+*Lunar performance unproven. This is a proposal, not a settled design.*

@@ -1,4 +1,4 @@
-# Types Dome
+# Dome Types
 ## Chrystal Moon Base — Habitat Concept
 
 **Status:** Concept proposal  

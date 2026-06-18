@@ -1,4 +1,4 @@
-# CMB8LF v1 — Supplier Contact Templates v6
+# CMB8LF-S1 — Supplier Contact Templates v6
 ## Bestelmails voor alle kritieke componenten
 **CC0 · Chrystal Moon Base · 2026**
 

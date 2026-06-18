@@ -8,13 +8,13 @@
 
 ## Overview
 
-Processing modules, spare equipment, and construction materials must be transported from the arrival landing pad to their operational positions entirely by CMB-R1 robots — underground, without any separate transport vehicle. This document describes the proposed protocol for multi-robot cooperative cargo transport.
+Processing modules, spare equipment, and construction materials must be transported from the arrival landing pad to their operational positions entirely by CMB8LF-L1 robots — underground, without any separate transport vehicle. This document describes the proposed protocol for multi-robot cooperative cargo transport.
 
 ---
 
 ## Single Robot Carrying
 
-A single CMB-R1 robot can carry objects up to its estimated payload capacity using its front limbs in arm mode. The robot walks on four legs while carrying the object with its front two limbs.
+A single CMB8LF-L1 robot can carry objects up to its estimated payload capacity using its front limbs in arm mode. The robot walks on four legs while carrying the object with its front two limbs.
 
 Estimated single-robot payload: the robot's own mass minus the leg structure mass. A rough estimate is 50–150 kg for comfortable carrying (precise figure depends on leg joint actuator torque ratings not yet determined).
 

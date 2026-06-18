@@ -1,4 +1,4 @@
-# CMB8LF v1 — Print Settings & Tolerances
+# CMB8LF-S1 — Print Settings & Tolerances
 
 **Printer:** QIDI Tech Plus4 (305×305×280mm, 65°C chamber, 370°C hotend)  
 **Slicer:** OrcaSlicer / QIDI Print  
@@ -152,7 +152,7 @@ Apply these in CAD before exporting to slicer. Non-negotiable.
 
 ---
 
-## Print Order — CMB8LF v1
+## Print Order — CMB8LF-S1
 
 Print in this order. Each step validates the previous.
 

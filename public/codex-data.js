@@ -21,18 +21,16 @@ var codexData = [
    ref:'Stern (1999) Rev. Geophys.; Benna et al. (2015) Geophys. Res. Lett.'},
 
   // ── B ──────────────────────────────────────────────────────────────────
-  {id:'ba',  cat:'Rock',     letter:'B', tag:'Primary regolith',
-   name:'Basalt',
-   sum:'Mare volcanic rock — the primary sintering feedstock.',
+  {id:'ba',  cat:'Rock',     letter:'B', tag:'Mare rock — not at Peary', name:'Basalt', sum:'Mare volcanic rock. NOT the CMB feedstock: highland Peary uses anorthosite regolith, not basalt.',
    desc:'Lunar mare basalts cover roughly 17% of the Moon\'s surface. Rich in pyroxene, olivine, and ilmenite, they are the direct feedstock for CMB\'s laser-sintering process. Basalt melts at 1100–1200 °C and resolidifies into a dense, load-bearing ceramic. Phase 0 Demonstrator 1 tests laser sintering of basalt simulant at operational depth. The sintered floor is the foundation of everything else.',
    specs:{'Coverage':'~17% of lunar surface','Composition':'Pyroxene 50%, olivine 20%, ilmenite 15%, plagioclase 15%','Melting point':'1100–1200 °C','Sintered density':'~2.8 g/cm³','Compressive strength':'~150 MPa (sintered)','Key uses':'Sintered floor, road network, dome base'},
    ref:'Heiken, Vaniman & French (1991) Lunar Sourcebook; Fateri et al. (2019) Sci. Rep.'},
 
   {id:'bf',  cat:'Material', letter:'B', tag:'Structural fibre',
    name:'Basalt Fibre',
-   sum:'High-strength fibre spun from molten basalt — no Earth imports needed.',
+   sum:'High-strength mineral fibre. On Earth it is spun from basalt; at highland Peary it would be drawn from local anorthosite, not basalt.',
    desc:'Basalt fibre is produced by melting basalt rock and extruding it through bushings, similar to fibreglass production. Lunar basalt\'s composition makes it well-suited: tensile strength ~3 GPa, chemical resistance, stable from −260 °C to +700 °C. Used in CMB for composite structural panels, rope, and reinforcing sintered surfaces. The entire feedstock is available on-site.',
-   specs:{'Tensile strength':'~3,000 MPa','Density':'~2.7 g/cm³','Temperature range':'−260 to +700 °C','Production method':'Melt + bushing extrusion','Feedstock':'Local mare basalt','Key uses':'Composite panels, structural rope, surface reinforcement'},
+   specs:{'Tensile strength':'~3,000 MPa','Density':'~2.7 g/cm³','Temperature range':'−260 to +700 °C','Production method':'Melt + bushing extrusion','Feedstock':'Local anorthosite (mare basalt is not present at highland Peary)','Key uses':'Composite panels, structural rope, surface reinforcement'},
    ref:'Kamenny Vek (2018) — basalt fibre properties; Benaroya (2018) Building Lunar Habitats'},
 
   // ── C ──────────────────────────────────────────────────────────────────
@@ -89,8 +87,7 @@ var codexData = [
    ref:'Colaprete et al. (2010) Science 330; Sunshine et al. (2009) Science 326'},
 
   // ── I ──────────────────────────────────────────────────────────────────
-  {id:'il',  cat:'Mineral',  letter:'I', tag:'Primary ore',
-   name:'Ilmenite',
+  {id:'il',  cat:'Mineral',  letter:'I', tag:'Mare ore — scarce at Peary', name:'Ilmenite',
    sum:'The Moon\'s most important ore — source of iron, titanium, and oxygen.',
    desc:'Ilmenite (FeTiO₃) is the primary metallic ore of the Moon, concentrated in mare basalts at up to 15 wt% in titanium-rich regions. It is the feedstock for the CMB M-Fe and M-Ti modules. Hydrogen reduction of ilmenite also produces water (H₂O), which is then electrolysed for oxygen and recycled hydrogen. One tonne of ilmenite yields approximately 290 kg iron, 155 kg titanium (as TiO₂), and 360 kg oxygen — making it the most resource-efficient ore on the Moon.',
    specs:{'Formula':'FeTiO₃','Abundance (Ti-rich mare)':'Up to 15 wt%','Fe yield per tonne':'~290 kg','Ti yield per tonne':'~155 kg (as TiO₂)','O yield per tonne':'~360 kg','Reduction reaction':'FeTiO₃ + H₂ → Fe + TiO₂ + H₂O'},
@@ -187,9 +184,7 @@ var codexData = [
    ref:'Grugel (2012) Icarus — lunar sulphur concrete; Fabes & Poison (2002) — sulphur properties'},
 
   // ── T ──────────────────────────────────────────────────────────────────
-  {id:'ti',  cat:'Metal',    letter:'T', tag:'M-Ti Module',
-   name:'Titanium',
-   sum:'High-strength, low-density structural metal — up to 7 wt% in Ti-rich mare.',
+  {id:'ti',  cat:'Metal',    letter:'T', tag:'Mare metal — imported at Peary', name:'Titanium', sum:'High-strength structural metal, up to 7 wt% in Ti-rich mare. NOT locally available at highland Peary (no ilmenite) — imported.',
    desc:'Titanium is concentrated in titanium-rich mare basalts at up to 7 wt% TiO₂, extractable from ilmenite (FeTiO₃) as a co-product of iron extraction. Metallic titanium is 45% lighter than steel with comparable strength, and uniquely resistant to temperature extremes. The CMB solar mast, dome framework, and robot chassis components use titanium alloy (Ti-6Al-4V) for their load-bearing elements. It is also biocompatible, relevant for future medical applications on the base.',
    specs:{'Abundance (Ti-rich mare)':'Up to 7 wt% TiO₂','Primary source':'Ilmenite (FeTiO₃)','Density':'4.5 g/cm³ (60% of steel)','Tensile strength':'~900 MPa (Ti-6Al-4V)','Melting point':'1668 °C','Key uses':'Mast, dome frame, robot chassis, pressure vessels'},
    ref:'Schwandt et al. (2012) Planet. Space Sci.; Papike et al. (1991) Lunar Sourcebook'},

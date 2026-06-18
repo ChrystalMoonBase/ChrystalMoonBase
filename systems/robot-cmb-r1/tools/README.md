@@ -1,4 +1,4 @@
-# CMB-R1 Tool Interface — EPM Standard & Spare Parts
+# CMB8LF-L1 Tool Interface — EPM Standard & Spare Parts
 
 **Chrystal Moon Base · Phase 0.2**
 **Licence:** CC0
@@ -7,12 +7,12 @@
 
 ## What the EPM rack holds
 
-Every CMB-R1 tool — including the arm modules themselves — connects via the same EPM interface. The rack in each garage holds everything:
+Every CMB8LF-L1 tool — including the arm modules themselves — connects via the same EPM interface. The rack in each garage holds everything:
 
 | Item | Type | Phase | Purpose |
 |---|---|---|---|
 | Sintering laser module | Arm module (left) | 0.2 | Melts regolith to ~1200C |
-| W-Re forming tip | Arm module (right) | 0.2 | Shapes and smooths molten basalt |
+| W-Re forming tip | Arm module (right) | 0.2 | Shapes and smooths molten regolith |
 | Bulldozer blade | Heavy tool | 0.2 | Grades loose regolith |
 | Digger tool | Heavy tool | 1.2+ | Excavates underground tunnels |
 

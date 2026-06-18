@@ -20,7 +20,7 @@ Phase 0 is a ground-based validation programme consisting of five demonstrators.
 |---|---|---|
 | D1 | Laser Sintering | Can lunar regolith simulant be laser-sintered to structural quality? |
 | D2 | Laser Power Beaming | Can laser power be delivered to a moving robot at the required efficiency? |
-| D3 | Robot Locomotion | Can a CMB-R1 prototype operate reliably in simulated lunar conditions? |
+| D3 | Robot Locomotion | Can a CMB8LF-L1 prototype operate reliably in simulated lunar conditions? |
 | D4 | Swarm Coordination | Can 2–4 robots coordinate autonomously to sinter a defined area? |
 | D5 | Full Integration | Can all systems operate together in a single test? |
 

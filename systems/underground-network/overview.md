@@ -29,7 +29,7 @@ The entire base sits on a single continuous sintered regolith floor of approxima
 
 ## Human Movement — Walking
 
-Within the 20-hectare base, people walk. Maximum distance across: 505 m — a comfortable 5-minute walk. The underground walking network connects all domes via passages wide enough for two-way traffic, lit throughout by luminescent algae pillars.
+Within the 20-hectare base, people walk. Maximum distance across: 505 m — a comfortable 5-minute walk. The underground walking network connects all domes via passages wide enough for two-way traffic, lit by LED, with luminescent algae pillars for ambience and atmosphere processing (algae are not bright enough to serve as primary lighting).
 
 ---
 

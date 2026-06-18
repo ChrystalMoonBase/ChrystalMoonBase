@@ -1,4 +1,4 @@
-# CMB-R1 Gait Recalculation After Leg Loss
+# CMB8LF-L1 Gait Recalculation After Leg Loss
 ## Chrystal Moon Base — Robot Fault Tolerance
 
 **Status:** Concept proposal  
@@ -8,7 +8,7 @@
 
 ## Overview
 
-When a CMB-R1 robot loses a leg — whether through mechanical failure, damage, or deliberate discard — the onboard AI must immediately compute a stable new walking pattern for the remaining legs. The robot must resume useful operation within a short time, without human intervention.
+When a CMB8LF-L1 robot loses a leg — whether through mechanical failure, damage, or deliberate discard — the onboard AI must immediately compute a stable new walking pattern for the remaining legs. The robot must resume useful operation within a short time, without human intervention.
 
 ---
 
@@ -46,4 +46,4 @@ Losing two legs — particularly if they are adjacent — can make stable locomo
 
 ## Contribution Needed
 
-A working implementation of this algorithm, tested in simulation with a realistic octopod model on terrain representative of the Peary rim, would be a significant contribution to this project. The algorithm does not need to be novel — adapting published octopod fault-tolerance research to the CMB-R1 configuration is entirely appropriate.
+A working implementation of this algorithm, tested in simulation with a realistic octopod model on terrain representative of the Peary rim, would be a significant contribution to this project. The algorithm does not need to be novel — adapting published octopod fault-tolerance research to the CMB8LF-L1 configuration is entirely appropriate.

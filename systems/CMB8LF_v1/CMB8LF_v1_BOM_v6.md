@@ -1,4 +1,4 @@
-# CMB8LF v1 — Bill of Materials v6
+# CMB8LF-S1 — Bill of Materials v6
 ## Chrystal Moon Base · 8 Legged Freaks · Volledige Revisie
 **Brushless · 24V Gedistribueerd · CAN Bus · Vacuum-Proof**
 **CC0 · Berechja Kerkdijk · 2026**
@@ -352,7 +352,7 @@ MAAND 11-12   Kalibratie + software
 
 ---
 
-*CMB8LF v1 · BOM v6 · Volledige Revisie*
+*CMB8LF-S1 · BOM v6 · Volledige Revisie*
 *Multi-AI: Claude · ChatGPT · Gemini · DeepSeek · Meta*
 *Human decisions: Berechja Kerkdijk*
 *CC0 2026 — Chrystal Moon Base — No rights reserved*

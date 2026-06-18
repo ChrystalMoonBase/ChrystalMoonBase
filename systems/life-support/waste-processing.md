@@ -22,7 +22,7 @@ Solid waste → anaerobic digestion → biogas (CO₂ and methane) → farm atmo
 Plant material not used for food → compost or biogas → soil amendment or farm atmosphere
 
 **Manufacturing waste:**
-Metal scrap → remelted by M-Al, M-Fe, M-Ti modules
+Metal scrap → remelted by M-Aluminium and M-Glass (and ferrosilicon recovery); titanium is not locally processed at Peary
 Glass offcuts → remelted by M-Glass
 Polymer waste → most polymers cannot be locally recycled; managed as a slow-accumulating waste stream
 

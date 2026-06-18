@@ -1,4 +1,4 @@
-# CMB8LF v1 — Dimensie Overzicht v2
+# CMB8LF-S1 — Dimensie Overzicht v2
 ## Alle maten berekend van binnen naar buiten
 **CC0 · Chrystal Moon Base · 2026**
 

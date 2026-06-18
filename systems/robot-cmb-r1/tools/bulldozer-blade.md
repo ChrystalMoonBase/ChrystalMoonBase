@@ -1,4 +1,4 @@
-# CMB-R1 — Bulldozer Blade Tool Concept
+# CMB8LF-L1 — Bulldozer Blade Tool Concept
 
 **Chrystal Moon Base · Phase 0.2**
 **Status:** Concept proposal — no prototype exists. This is an open question, not a specification.
@@ -8,19 +8,19 @@
 
 ## Context
 
-The CMB-R1 sintering laser is integrated directly into the arm-legs — no EPM swap required. The bulldozer blade is one of only two EPM-swapped tools (the other being the digger). When the blade is not attached, the arm-legs operate with their W-Re alloy tips for direct basalt forming. When the blade is attached, the robot shifts to heavy regolith grading.
+The CMB8LF-L1 sintering laser is integrated directly into the arm-legs — no EPM swap required. The bulldozer blade is one of only two EPM-swapped tools (the other being the digger). When the blade is not attached, the arm-legs operate with their W-Re alloy tips for direct molten-regolith forming. When the blade is attached, the robot shifts to heavy regolith grading.
 
 ---
 
 ## 1. What this document is
 
-This document describes one possible approach to a bulldozer blade for the CMB-R1 octopod robot. It is not an engineering specification. Everything here is an estimate based on publicly available information. We publish it openly so that qualified engineers can tell us what is wrong, what is missing, and what could be improved.
+This document describes one possible approach to a bulldozer blade for the CMB8LF-L1 octopod robot. It is not an engineering specification. Everything here is an estimate based on publicly available information. We publish it openly so that qualified engineers can tell us what is wrong, what is missing, and what could be improved.
 
 ---
 
 ## 2. Why a separate blade?
 
-The CMB-R1 is a universal chassis, not a specialised bulldozer. Adding a permanent blade to every robot would compromise its primary role as a mobile sensor, communication node, and sintering platform. Instead, the blade is a detachable tool, stored in the garage and picked up when needed.
+The CMB8LF-L1 is a universal chassis, not a specialised bulldozer. Adding a permanent blade to every robot would compromise its primary role as a mobile sensor, communication node, and sintering platform. Instead, the blade is a detachable tool, stored in the garage and picked up when needed.
 
 This approach follows three design principles:
 
@@ -59,11 +59,11 @@ We do not know how this material will perform long-term under lunar dust abrasio
 
 ## 5. Stability during blade use
 
-A key concern for any wheeled or legged robot doing bulldozer work is reaction forces: the blade pushes the regolith, and the regolith pushes back. Here is how the CMB-R1 addresses this structurally.
+A key concern for any wheeled or legged robot doing bulldozer work is reaction forces: the blade pushes the regolith, and the regolith pushes back. Here is how the CMB8LF-L1 addresses this structurally.
 
 ### Wide-foot snowshoe design
 
-The CMB-R1 feet use a broad, flat contact plate — analogous to a snowshoe — rather than a narrow spike or point. On loose lunar regolith, a pointed foot sinks. A wide foot distributes the robot's weight over a larger area, reducing ground pressure and preventing sinkage. In 1/6 g, the robot already weighs roughly six times less than on Earth, so ground pressure is inherently low; the wide-foot design ensures this advantage is not lost to point loading.
+The CMB8LF-L1 feet use a broad, flat contact plate — analogous to a snowshoe — rather than a narrow spike or point. On loose lunar regolith, a pointed foot sinks. A wide foot distributes the robot's weight over a larger area, reducing ground pressure and preventing sinkage. In 1/6 g, the robot already weighs roughly six times less than on Earth, so ground pressure is inherently low; the wide-foot design ensures this advantage is not lost to point loading.
 
 ### Six-leg positioning for maximum ground reaction
 
@@ -83,7 +83,7 @@ The companion [digger tool](./digger-tool.md) uses counter-rotating drums that c
 
 ## 6. Attachment to the robot
 
-The blade attaches to the robot's front two arm-legs via the same electropermanent magnet (EPM) interface used for all CMB-R1 tools.
+The blade attaches to the robot's front two arm-legs via the same electropermanent magnet (EPM) interface used for all CMB8LF-L1 tools.
 
 - Two EPM-compatible plates are built into the back of the blade.
 - The robot walks up to the blade, docks its arm-legs onto the plates, and activates the magnets.

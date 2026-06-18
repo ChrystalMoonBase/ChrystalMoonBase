@@ -57,15 +57,15 @@ The order of priority is: reduce heat loss passively, then supply the remainder 
 - **Passive retention.** The sintered regolith of the dome structure provides thermal mass that damps temperature swings. The water layer between the dome glass layers (`dome-layer-architecture.md`, Layer 4) is a second thermal buffer — and, being hydrogen-rich, also contributes to radiation moderation. These buffers help hold the interior near the target ~18–20 °C with less active input. They reduce, but do not eliminate, the heating demand: a dome on the lunar surface loses heat by radiation to the extreme cold and the vacuum, so active heating is still required to make up the loss.
 - **Active heating via circulating water, not the structure.** Heat is added to the water that already circulates for biological reasons (against thermal/oxygen stratification) and distributed through the dome. This deliberately keeps heating *separate from the load-bearing structure.*
 
-### Why heating is not run through the titanium reinforcement
+### Why heating is not run through the structural reinforcing fibre
 
-An earlier idea was to pass current through the titanium fibre already embedded in the glass, using it as a heating element. This is **rejected** on safety grounds:
+An earlier idea was to pass current through the reinforcing fibre embedded in the glass (originally specified as titanium), using it as a heating element. This is **rejected** on safety grounds:
 
-1. Titanium loses tensile strength when heated — heating the reinforcement weakens it exactly where the dome is under outward pressure load.
-2. Thermal expansion mismatch between heated titanium and surrounding glass creates interface stress — a crack-initiation mechanism in a pressure vessel holding vacuum at bay.
+1. Many candidate fibres lose tensile strength when heated — heating the reinforcement weakens it exactly where the dome is under outward pressure load.
+2. Thermal expansion mismatch between the heated fibre and surrounding glass creates interface stress — a crack-initiation mechanism in a pressure vessel holding vacuum at bay.
 3. Coupling a structural function to a heating function makes a heater fault a structural risk. These functions must stay decoupled.
 
-Heating is therefore done with **separate, non-structural elements** (or transparent conductive coatings of the kind used in heated aircraft windows), never the reinforcement. The titanium fibre remains purely structural.
+Heating is therefore done with **separate, non-structural elements** (or transparent conductive coatings of the kind used in heated aircraft windows), never the reinforcement. The reinforcing fibre remains purely structural. (Note: the reinforcement material itself is an open question — see dome-layer-architecture.md — but the principle of decoupling heating from structure holds regardless of the fibre chosen.)
 
 ---
 

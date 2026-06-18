@@ -1,19 +1,19 @@
-# CMB-R1 Chassis
+# CMB8LF-L1 Chassis
 ## Chrystal Moon Base — Robot System Concept
 
 **Status:** Concept proposal — not yet prototyped  
 **Author:** Berechja Kerkdijk  
 **Licence:** CC0
 
-> This document describes the founder's vision for the CMB-R1 chassis in detail. Engineering decisions — materials, exact dimensions, specific mechanisms — remain open for expert input. The vision sets the direction. Engineers determine the execution.
+> This document describes the founder's vision for the CMB8LF-L1 chassis in detail. Engineering decisions — materials, exact dimensions, specific mechanisms — remain open for expert input. The vision sets the direction. Engineers determine the execution.
 
 ---
 
 ## Design Philosophy
 
-The chassis is the structural and computational core of the CMB-R1. Every design decision follows three principles:
+The chassis is the structural and computational core of the CMB8LF-L1. Every design decision follows three principles:
 
-1. **Materials from the Moon** — no material may be used in the chassis that cannot eventually be sourced from lunar resources. This means no carbon-fibre reinforced polymer (CFRP), no exotic Earth-only composites. Titanium, aluminium, mineral-fibre composite, and glass are the candidate materials. The specific selection is an engineering decision.
+1. **Materials from the Moon** — no material may be used in the chassis that cannot eventually be sourced from lunar resources. This means no carbon-fibre reinforced polymer (CFRP), no exotic Earth-only composites. Aluminium, mineral-fibre composite, and glass are the leading *locally-sourceable* candidates at highland Peary. Titanium is excellent but is NOT locally available here (no ilmenite) — so imported robots may use it, but the "from the Moon" goal points to aluminium/regolith composites for any locally-built robots. The specific selection is an engineering decision.
 
 **Feedstock note (stated as fact, not resolved):** The mineral-fibre composite is referred to elsewhere in this project as "basalt composite," because basalt fibre is the well-characterised terrestrial reference material. The actual Peary feedstock is highland **anorthosite**, not basalt — so the real armour would be an anorthosite/regolith-derived mineral fibre, whose properties differ from terrestrial basalt fibre and are not yet characterised. Both terms describe the same intent (a locally-sourced mineral-fibre composite skin); the reader should read "basalt composite" in the robot documents as feedstock-referenced shorthand. See `systems/sintering/laser-sintering-physics.md` for the basalt-vs-anorthosite distinction and `systems/processing-modules/m-basalt.md` for the fibre-production feedstock question.
 
@@ -72,15 +72,15 @@ The tool head coupling point uses the same electromagnetic locking mechanism as 
 
 ---
 
-## Coupling Interface — Electromagnetic Lock with Basalt Protective Cover
+## Coupling Interface — Electromagnetic Lock with Regolith-Composite Protective Cover
 
 Every coupling point — for legs and for the tool head — uses the same interface mechanism:
 
 **Electromagnetic locking:**
 The coupling is held by an electromagnet that requires current to release. When current is present and the release command is given, the magnet releases and the component can be decoupled. When current is absent or no release command is given, the component is locked in place. This is a fail-safe design: power loss means the leg or head stays attached, not that it falls off.
 
-**Basalt protective cover:**
-Every unused or active coupling point is protected by a small basalt composite cover plate. When a leg or head is attached, the cover plate moves aside to expose the interface. When the leg or head is removed, the cover plate returns to protect the exposed interface from dust, temperature extremes, and micrometeorite impact.
+**Regolith-composite protective cover:**
+Every unused or active coupling point is protected by a small sintered-regolith composite cover plate. When a leg or head is attached, the cover plate moves aside to expose the interface. When the leg or head is removed, the cover plate returns to protect the exposed interface from dust, temperature extremes, and micrometeorite impact.
 
 The cover plate movement is frictionless where possible — the same electromagnetic principle used in the maglev transport system, applied at small scale. The cover requires power only to move, not to stay in position (held by mechanical detent when closed, held by the attached component when open).
 
@@ -90,7 +90,7 @@ This means that at no point is any electrical or optical connector exposed to th
 
 ## Laser Power Receivers — Distributed Across Entire Body
 
-Rather than a single central laser power receiver that must track the mast BSM, the CMB-R1 uses **distributed receivers across the entire upper chassis surface and potentially the upper leg segments**.
+Rather than a single central laser power receiver that must track the mast BSM, the CMB8LF-L1 uses **distributed receivers across the entire upper chassis surface and potentially the upper leg segments**.
 
 Many small GaAs photovoltaic cells — optimised for the laser wavelength — are distributed across all upper-facing surfaces. Each receiver has a small independent pointing adjustment, driven by voice coil actuators, allowing the AI to optimise the angle of each cell individually for maximum power capture.
 
@@ -108,7 +108,7 @@ All receiver adjustments are small — a few degrees at most. The cells do not t
 
 ## All-Laser Communication
 
-The CMB-R1 communicates exclusively by laser — no radio systems are used.
+The CMB8LF-L1 communicates exclusively by laser — no radio systems are used.
 
 **Robot to mast:** Laser link to the nearest BSM on the mast. Power delivery and data communication share the same optical path — different wavelengths, separated by the onboard optics.
 
@@ -144,7 +144,7 @@ Peary rim surface temperatures range from approximately −50°C to +10°C — m
 - Multi-layer insulation on all exterior surfaces reduces heat loss during cold periods
 - Embedded heaters maintain minimum operating temperatures during shadow periods
 - Passive thermal coupling between electronics and chassis wall manages heat during high-power operations
-- The basalt composite exterior acts as a thermal buffer
+- The regolith-composite exterior acts as a thermal buffer
 
 ---
 
@@ -188,7 +188,7 @@ The founder's position: whatever works, works. The constraints are the principle
 
 ## Power Architecture — Distributed Solid-State Energy Storage
 
-The CMB-R1 uses a fully distributed solid-state battery system. There is no single central battery. Instead, energy storage is distributed across every structural segment of the robot — chassis and all eight legs.
+The CMB8LF-L1 uses a fully distributed solid-state battery system. There is no single central battery. Instead, energy storage is distributed across every structural segment of the robot — chassis and all eight legs.
 
 **Why solid-state:**
 - No liquid electrolyte — no freezing risk at −150°C, no boiling risk at +130°C
@@ -243,7 +243,7 @@ The hibernation heating draw is a small fraction of operational power — the di
 
 ## Full Layer Architecture — "Everything Inside the Bone"
 
-Every structural segment of the CMB-R1 — all eight leg segments (foot, lower leg, upper leg) and the chassis body — follows identical layered construction from inside out:
+Every structural segment of the CMB8LF-L1 — all eight leg segments (foot, lower leg, upper leg) and the chassis body — follows identical layered construction from inside out:
 
 **Layer 1 — The Bone (structural core):**
 Non-ferromagnetic structural alloy — titanium, aluminium, or combination. Hollow tube or shell. Houses all electronics, solid-state battery cell, actuator controller, heater, and sensors for that segment. Everything electronic lives inside the structural material, protected from the outside by the structure itself.
@@ -251,10 +251,10 @@ Non-ferromagnetic structural alloy — titanium, aluminium, or combination. Holl
 **Layer 2 — The Gel (protective surround):**
 Thermally conductive, mechanically damping gel completely surrounding the bone. Absorbs shock and vibration. Conducts heat from electronics to the outer shell for passive radiation. Must remain stable across the full lunar temperature range in vacuum — specific formulation is an open engineering question.
 
-**Layer 3 — The Armour (basalt composite exterior):**
+**Layer 3 — The Armour (sintered-regolith composite exterior):**
 Sintered regolith composite outer shell. Non-magnetic. Thermally stable. Radiation resistant. Manufacturable from lunar resources in later phases. This is the surface that contacts the lunar environment — dust, temperature extremes, micrometeorite flux, radiation.
 
-**The principle:** nothing electronic or sensitive is ever exposed to the lunar environment. The bone protects the electronics. The gel protects the bone. The basalt protects the gel. Three layers between the electronics and the Moon.
+**The principle:** nothing electronic or sensitive is ever exposed to the lunar environment. The bone protects the electronics. The gel protects the bone. The regolith composite protects the gel. Three layers between the electronics and the Moon.
 
 **Frictionless where possible:**
 All moving interfaces — leg joints, cover plates, coupling mechanisms — use electromagnetic principles to eliminate or minimise mechanical friction. No lubricants that could fail in vacuum or temperature extremes. No mechanical wear surfaces exposed to lunar dust. Where friction cannot be avoided, dry film coatings rated for vacuum and the full temperature range are used.

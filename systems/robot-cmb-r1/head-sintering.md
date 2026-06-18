@@ -1,4 +1,4 @@
-# CMB-R1 Head — Sintering
+# CMB8LF-L1 Head — Sintering
 ## Chrystal Moon Base — Robot System Concept
 
 **Status:** Concept proposal  

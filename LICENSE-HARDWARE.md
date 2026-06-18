@@ -4,7 +4,7 @@
 SPDX-License-Identifier: CERN-OHL-S-2.0
 Copyright 2026 Berechja Kerkdijk
 
-All rights in these hardware designs are currently held by Berechja Kerkdijk and is held by Nexus Ignis B.V. and published under the open licences below. The licence grant herein is made by the current rights holder and is intended to bind any future successor.
+All rights in these hardware designs are held by Berechja Kerkdijk and Nexus Ignis B.V., and are published under the open licence below. The licence grant herein is made by the current rights holder and is intended to bind any future successor.
 
 *Copyright and ownership matters are governed by Dutch law. The licence terms themselves are governed by Swiss law as per CERN-OHL-S-2.0.*
 
@@ -14,13 +14,13 @@ All rights in these hardware designs are currently held by Berechja Kerkdijk and
 
 This licence applies to all **hardware designs** in this repository, including:
 
-- CMB-R1 robot chassis — mechanical design, leg architecture, tool head interfaces
+- CMB8LF-L1 robot chassis — mechanical design, leg architecture, tool head interfaces
 - The MAST-POD structure — mast segments, bloom deployment, anchoring variants
 - All dome architecture designs — layer specifications, construction concepts
 - All processing module concepts — M-Glass, M-Ti, M-O2, and all others
 - All mechanical drawings, schematics, and physical design documents
 
-This licence does **not** cover software, firmware, algorithms, test data, or operational procedures. See LICENSE-SOFTWARE. md.
+This licence does **not** cover software, firmware, algorithms, test data, or operational procedures. See LICENSE-SOFTWARE.md.
 
 ---
 
@@ -50,7 +50,7 @@ If you distribute or manufacture hardware based on these designs, you must:
 
 When using or distributing designs from this repository, use the following attribution:
 
-> *"Based on hardware designs by Chrystal Moon Base / Nexus Ignis B.V. / Berechja Kerkdijk, licensed under CERN-OHL-S-2.0. Source: https://github. com/ChrystalMoonBase/ChrystalMoonBase"*
+> *"Based on hardware designs by Chrystal Moon Base / Nexus Ignis B.V. / Berechja Kerkdijk, licensed under CERN-OHL-S-2.0. Source: https://github.com/ChrystalMoonBase/ChrystalMoonBase"*
 
 ---
 
@@ -68,7 +68,7 @@ Manufacturing hardware based on these designs confers no claim to any part of th
 
 ## Full CERN-OHL-S-2.0 Licence Text
 
-The following is the complete, unmodified text of the CERN Open Hardware Licence Version 2 — Strongly Reciprocal, reproduced here for convenience. The canonical version is maintained at https://spdx. org/licenses/CERN-OHL-S-2.0. html
+The following is the complete, unmodified text of the CERN Open Hardware Licence Version 2 — Strongly Reciprocal, reproduced here for convenience. The canonical version is maintained at https://spdx.org/licenses/CERN-OHL-S-2.0.html
 
 ```
 CERN Open Hardware Licence Version 2 - Strongly Reciprocal

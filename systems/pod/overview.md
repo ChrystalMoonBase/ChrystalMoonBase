@@ -22,7 +22,7 @@ The Pod does not carry humans. It does not need to return. It is intended to lan
 
 | Item | Quantity | Notes |
 |---|---|---|
-| CMB-R1 octopod robots | 16 | 2 per garage, fully integrated sensors |
+| CMB8LF-L1 octopod robots | 16 | 2 per garage, fully integrated sensors |
 | Telescoping mast | 1 | Toray M55J CFRP, 5 segments, stowed ~9.7 m, deployed ~35 m |
 | Magnetic rotation bearing | 1 | AMB/PMB — frictionless azimuth tracking |
 | CIGS roll-out solar film | 1 | ~600 m² (2 arms × 9 m × 30 m), vertical, azimuth-tracking |
@@ -102,9 +102,6 @@ The laser power beaming system is estimated to reach robots within **2+ km** fro
 | mast-overview.md | Mast architecture, segments, magnetic bearing |
 | mast-solar-curtain.md | CIGS roll-out film — arms, deployment, power |
 | mast-bsm-beam-sensor-module.md | BSM design and laser power delivery |
-| mast-anchor-spike.md | Anchor variant 1 |
-| mast-anchor-pure-bloom.md | Anchor variant 2 |
-| mast-anchor-adaptive-bloom.md | Anchor variant 3 |
-| mast-anchor-rooted-hybrid.md | Anchor variant 4 (preferred) |
+| mast-anchor-rooted-hybrid.md | Mast anchor — Rooted Hybrid (preferred; only anchor variant currently written) |
 | laser-system.md | Laser power beaming architecture |
 | power-budget.md | Full power budget analysis |

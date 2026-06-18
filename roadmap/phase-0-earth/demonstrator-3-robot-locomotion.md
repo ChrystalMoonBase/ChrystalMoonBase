@@ -8,13 +8,13 @@
 
 ## Objective
 
-Demonstrate that a CMB-R1 prototype chassis can walk reliably on simulated lunar regolith terrain under representative thermal and dust conditions, including fault-tolerance scenarios (leg loss, head swap).
+Demonstrate that a CMB8LF-L1 prototype chassis can walk reliably on simulated lunar regolith terrain under representative thermal and dust conditions, including fault-tolerance scenarios (leg loss, head swap).
 
 ---
 
 ## Test Protocol (Proposed)
 
-**Test robot:** A CMB-R1 prototype chassis — not necessarily flight-quality, but representative of the leg architecture, variable ride height, and front-limb dual-function capability.
+**Test robot:** A CMB8LF-L1 prototype chassis — not necessarily flight-quality, but representative of the leg architecture, variable ride height, and front-limb dual-function capability.
 
 **Test surface:** A regolith simulant bed of at least 5 × 5 metres, filled with MMS-1 or equivalent to a depth of 30 cm. Surface prepared with representative rock obstacles and slope variations.
 

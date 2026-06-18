@@ -45,11 +45,11 @@ Connects the underground base network to the arrival pad, departure pad, and any
 Eventually connects the four provinces of the lunar civilisation:
 - Peary Solar Capital (88.6°N) → Equatorial Gateway Plains (~2,600 km)
 - Equatorial Gateway Plains → Far-Side Departure Gate
-- Peary Solar Capital → Water Treasury (South Pole, ~4,000 km via surface)
+- Peary Solar Capital → Water Treasury (South Pole, ~5,460 km pole-to-pole via surface — a long-term province, not the base's own water source)
 
 At 1,000–2,000 km/h in vacuum, Peary to the equatorial zone takes 1.5–3 hours. The lack of atmosphere makes these speeds achievable without enormous energy cost.
 
-**Long-distance track construction:** Built by CMB-R1 robots from local sintered regolith and locally produced aluminium and steel. Support pillars at regular intervals elevate the track above the dust layer. The track is built incrementally — first the route to the nearest facility, then extended over decades as the network grows.
+**Long-distance track construction:** Built by CMB8LF-L1 robots from local sintered regolith and locally produced aluminium and steel. Support pillars at regular intervals elevate the track above the dust layer. The track is built incrementally — first the route to the nearest facility, then extended over decades as the network grows.
 
 ---
 
@@ -57,7 +57,7 @@ At 1,000–2,000 km/h in vacuum, Peary to the equatorial zone takes 1.5–3 hour
 
 **Elevated, not ground-level:** All surface tracks are elevated on sintered regolith pillars. Elevation height: minimum 0.5 metres, preferably 1 metre above the local surface. This clears the electrostatic dust layer and provides better thermal stability than ground contact.
 
-**Pillar material:** Sintered regolith — produced in situ by CMB-R1 robots. The track infrastructure is built from the Moon itself.
+**Pillar material:** Sintered regolith — produced in situ by CMB8LF-L1 robots. The track infrastructure is built from the Moon itself.
 
 **Track standard:** A single published interface standard for the track geometry, magnetic field configuration, and power supply. Any maglev pod built to this standard can run on any section of the network. This is the open infrastructure principle applied to transport.
 
@@ -125,7 +125,7 @@ The maglev network is built in phases matching the base construction sequence:
 1. What maglev technology variant — electromagnetic suspension (EMS), electrodynamic suspension (EDS), or permanent magnet — is optimal for the lunar environment? The vacuum and temperature range favour superconducting EDS.
 2. What speed limits apply to passenger comfort given the Coriolis effect in the rotating Moon reference frame at high speeds?
 3. How are track sections maintained and repaired when damaged — by micrometeorite impact or thermal stress — in a location that may be far from the base?
-4. What is the realistic track construction rate achievable by CMB-R1 robots, and how does this set the timeline for long-distance network expansion?
+4. What is the realistic track construction rate achievable by CMB8LF-L1 robots, and how does this set the timeline for long-distance network expansion?
 5. What communication and signalling system manages pod traffic across a network spanning thousands of kilometres with a 2.5-second Earth communication delay?
 
 Engineers with maglev, superconductor, or rail infrastructure expertise are specifically invited to engage with these questions.

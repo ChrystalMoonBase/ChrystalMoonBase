@@ -1,17 +1,17 @@
-# CMB-R1 Leg Architecture
+# CMB8LF-L1 Leg Architecture
 ## Chrystal Moon Base — Robot System Concept
 
 **Status:** Concept proposal — not yet prototyped 
 **Author:** Berechja Kerkdijk 
 **Licence:** CC0
 
-> This document describes the founder's vision for the CMB-R1 leg system. Engineering decisions — specific materials, actuator types, exact dimensions — are explicitly left open for expert input. The vision sets the direction. Engineers determine the execution.
+> This document describes the founder's vision for the CMB8LF-L1 leg system. Engineering decisions — specific materials, actuator types, exact dimensions — are explicitly left open for expert input. The vision sets the direction. Engineers determine the execution.
 
 ---
 
 ## Overview
 
-Each CMB-R1 robot has 8 legs. Every leg consists of 3 segments: upper leg, lower leg, and foot. All segments follow identical internal construction principles. All joints aim to be frictionless where technically possible.
+Each CMB8LF-L1 robot has 8 legs. Every leg consists of 3 segments: upper leg, lower leg, and foot. All segments follow identical internal construction principles. All joints aim to be frictionless where technically possible.
 
 The leg system follows the same core philosophy as the entire robot: **everything critical is inside, everything exposed is protected, everything that can fail has a fallback.**
 
@@ -44,13 +44,13 @@ The leg system follows the same core philosophy as the entire robot: **everythin
 Every joint in the leg system — hip, knee, ankle — aims to be frictionless. Two promising approaches are noted for engineering evaluation:
 
 **Flexure bearings (compliant mechanisms):**
-Metal that bends rather than rotates. No hinge pin, no bearing, no lubrication required. The material itself acts as both spring and joint. This technology is already used in spacecraft where vacuum operation and extreme temperatures make conventional bearings problematic. Titanium is an excellent candidate material for flexure joints — strong, flexible enough for the required range of motion, non-magnetic, and eventually sourceable from lunar ilmenite.
+Metal that bends rather than rotates. No hinge pin, no bearing, no lubrication required. The material itself acts as both spring and joint. This technology is already used in spacecraft where vacuum operation and extreme temperatures make conventional bearings problematic. Titanium is an excellent candidate material for flexure joints — strong, flexible, non-magnetic. Note: titanium must be IMPORTED (highland Peary has no ilmenite ore); it is not locally sourceable at this site. Earth-made robots can use it freely; locally-built future robots would need aluminium or a sintered-regolith/ceramic alternative.
 
 **Electromagnetic actuation:**
 Consistent with the frictionless philosophy used throughout the chassis coupling system. Where conventional joints cannot be avoided, the goal is to minimise contact surfaces and eliminate all lubricants that could fail in vacuum or extreme temperatures.
 
 **The engineering question for experts:**
-Which actuation principle — flexure bearing, piezo motor, shape memory alloy, conventional motor with vacuum-rated dry film coating, or another approach entirely — provides the optimal combination of reliability, power consumption, temperature range, and lunar material compatibility? This is one of the most important open engineering questions in the CMB-R1 design.
+Which actuation principle — flexure bearing, piezo motor, shape memory alloy, conventional motor with vacuum-rated dry film coating, or another approach entirely — provides the optimal combination of reliability, power consumption, temperature range, and lunar material compatibility? This is one of the most important open engineering questions in the CMB8LF-L1 design.
 
 ---
 
@@ -121,14 +121,14 @@ All sensor data is processed locally by the segment's own controller. Summary da
 
 ## The Road First — Protecting the Legs
 
-A fundamental operational principle of the CMB-R1 fleet directly affects leg longevity:
+A fundamental operational principle of the CMB8LF-L1 fleet directly affects leg longevity:
 
 **Robots never walk on loose regolith if they can avoid it.**
 
-The bulldozer robots create a prepared path from the Pod to the construction site first. The sintering robots then fuse that path into hard basalt. All subsequent robot movement happens on this hard sintered surface — not on loose, electrostatically charged, abrasive lunar dust.
+The bulldozer robots create a prepared path from the Pod to the construction site first. The sintering robots then fuse that path into hard sintered regolith. All subsequent robot movement happens on this hard sintered surface — not on loose, electrostatically charged, abrasive lunar dust.
 
 This single operational decision dramatically extends leg life:
-- Hard basalt surface = minimal abrasion on foot pads
+- Hard sintered-regolith surface = minimal abrasion on foot pads
 - No loose dust = dramatically reduced dust ingress into joints and coupling points
 - Stable surface = less dynamic load variation = less stress on joints and actuators
 - Predictable terrain = AI locomotion planning is simpler and more reliable

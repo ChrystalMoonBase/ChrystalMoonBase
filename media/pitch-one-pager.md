@@ -26,7 +26,7 @@ Five independent demonstrators, each testable in existing laboratory or field en
 |---|---|---|
 | D1 — Laser Sintering | Whether regolith simulant can be sintered to structural quality at scale | The core construction process — if this fails, the concept fails |
 | D2 — Power Beaming | Whether laser energy can be reliably delivered to a moving robot | The energy distribution method — undemonstrated at this scale |
-| D3 — Robot Locomotion | Whether the CMB-R1 design can operate in simulated lunar conditions | No prototype exists yet |
+| D3 — Robot Locomotion | Whether the CMB8LF-L1 design can operate in simulated lunar conditions | No prototype exists yet |
 | D4 — Swarm Coordination | Whether 4 robots can autonomously coordinate construction | No coordination software exists yet |
 | D5 — Full Integration | Whether all systems work together over 72 hours | The pre-flight proof of concept |
 

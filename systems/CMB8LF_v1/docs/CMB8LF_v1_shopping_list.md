@@ -1,4 +1,4 @@
-# CMB8LF v1 — Boodschappenlijst
+# CMB8LF-S1 — Boodschappenlijst
 ## Gefaseerd per Bouwmaand
 **CC0 · Chrystal Moon Base · 2026**
 

@@ -18,7 +18,7 @@ CMB holds authority over all base-wide infrastructure and safety systems. This a
 - Water distribution network
 - AI monitoring system operation
 - Surface access facilities (arrival and departure pads)
-- All CMB-R1 robots
+- All CMB8LF-L1 robots
 - The mast and laser power system
 
 In these domains, CMB decisions are final. If a safety decision conflicts with a tenant's operational preferences, the safety decision takes precedence. Always.

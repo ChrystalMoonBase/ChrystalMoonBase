@@ -1,31 +1,84 @@
-# Propellant Production (M-FUEL)
-## Chrystal Moon Base — Processing Module Concept
+# M-Fuel — Propellant (Hydrogen & Oxygen)
 
-**Status:** Concept proposal — no hardware exists  
+**Status:** Concept proposal, sourced. Tentative — depends on water (M-Water).
 **Licence:** CC0
+**Role:** Stage 3. Makes H₂/O₂ propellant for landing/launch and surface hoppers, and
+hydrogen as a process reductant.
+**Ground truth:** Peary highland; propellant rides on confirmed water + power.
 
 ---
 
-## Overview
+## What it does
 
-**Input:** Hydrogen from M-Water, Oxygen from M-Oxygen
-
-**Output:** Liquid hydrogen and liquid oxygen (cryogenic rocket propellants)
-
-**Process:** Liquefaction of hydrogen and oxygen from the electrolysis outputs of M-Water and M-Oxygen. Cryogenic storage at very low temperatures (LH₂ at 20 K, LOX at 90 K). The cold temperature environment of the polar cold traps provides natural cryogenic storage potential for some propellants.
-
-**Note:** Lunar-produced propellant changes the economics of deep-space missions fundamentally. A spacecraft that can refuel at the Moon before heading to Mars carries much less propellant from Earth. This is why the Water Treasury (south pole ice) and the eventual spaceport concept are linked.
-
-**Key challenge:** Long-term cryogenic storage of hydrogen on the Moon without unacceptable boil-off losses requires advanced insulation or active refrigeration — both mass-intensive solutions.
+Splits water into hydrogen and oxygen by electrolysis, then liquefies and stores them
+(LH₂ / LOₓ). Oxygen also comes "for free" from M-MRE; hydrogen's main source is water.
 
 ---
 
-## Open Questions
+## Input → Output
 
-1. What is the optimal processing rate for this module given the available power budget?
-2. What is the module mass and volume, and does it fit within the planned delivery vehicle constraints?
-3. What feedstock pre-processing is required before input to this module?
-4. What are the failure modes and how are they detected and managed autonomously?
-5. How does this module connect to the underground utility network for power, feedstock, and product output?
+- **Input:** clean water (M-Water) + electrical energy.
+- **Output:** **H₂ and O₂**, liquefied for storage; H₂ also feeds reduction processes.
 
-*Engineers with relevant process chemistry or ISRU experience are invited to review and improve this document via GitHub Issues.*
+---
+
+## The science (grounded)
+
+**Direct Water Electrolysis (DWE):** water → H₂ + O₂, with **essentially no
+byproducts** — one of the cleanest steps in the chain. The gases are dried, compressed
+and cryogenically liquefied. This is mature electrochemistry; the lunar challenge is
+**cryogenic storage**, not the splitting.
+
+> Why it matters beyond rockets: locally-made propellant is what lets the base **land
+> and launch without Earth fuel** — a major independence lever — and hydrogen is a
+> reusable reductant for several factories.
+
+---
+
+## Conceptual schematic — DWE + storage
+
+```
+   water ──► electrolyser ──► H₂ ──► dry/compress ──► liquefy ──► LH₂ tank
+                          └─► O₂ ──► dry/compress ──► liquefy ──► LOₓ tank
+                                         (O₂ also from M-MRE)
+```
+*Conceptual; cell stack, pressures and tank design are open parameters.*
+
+---
+
+## Lunar-specific factors
+
+- **Cryo-storage is the hard part:** LH₂ especially is hard to keep through the lunar
+  day; boil-off management dominates the engineering.
+- **PSR cold + night** help storage; active cooling likely still needed for LH₂.
+
+---
+
+## Earth-dependence
+
+**None for the process** (electrolysis needs only water + power). The dependence is
+**through water** — i.e. on confirmed ice. No imported consumables.
+
+---
+
+## Maturity (honest)
+
+DWE is mature; lunar propellant production is a flagship ISRU goal. Gating items:
+**water supply** and **cryogenic storage/boil-off**, not the chemistry.
+
+---
+
+## Open questions
+
+1. Split between life-support O₂, process H₂, and stored propellant?
+2. LH₂ boil-off strategy across the lunar day?
+3. Propellant scale — hoppers only, or ascent vehicles too?
+
+---
+
+## References (verify and extend)
+
+- arXiv 2502.13679 — DWE: water → H₂ + O₂, essentially no byproducts.
+- NASA ISRU overview (NTRS 2022) — ISRU propellant for surface mobility / ascent.
+
+*Contingent on water supply. This is a proposal, not a settled design.*

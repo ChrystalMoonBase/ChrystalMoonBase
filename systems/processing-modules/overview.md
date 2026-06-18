@@ -1,67 +1,85 @@
-# Processing Modules — Overview
-## Chrystal Moon Base — Resource Extraction System
+# Processing Modules — Overview & Index
 
-**Status:** Concept proposal  
+**Status:** Index to the factory landscape. All modules are concept proposals with
+sourced grounding; tentative throughout. **Ground truth: Peary is highland / anorthosite**
+(`../../PEARY-MATERIALS-REFERENCE.md`).
 **Licence:** CC0
 
----
-
-## Purpose
-
-The Moon contains every material needed to build a city. The processing modules are the factories that extract these materials from the Moon and convert them into usable forms. Each module is an independent, self-contained processing unit with a defined input, output, and energy requirement.
+> Visual map: **`processing-chain-diagram.svg`** (renders in GitHub).
+> Chain & ordering logic: **`../../roadmap/processing-chain-peary.md`**.
+> Growth/gates: **`../../roadmap/growth-model-gated.md`**.
 
 ---
 
-## Priority Order
+## The chain in one line
 
-**First priority — construction materials (before humans arrive):**
-1. **M-Glass** — domes cannot be built without glass
-2. **M-Titanium** — dome structural reinforcement
-3. **M-Basalt** — structural material (also produced directly by sintering robots)
-4. **M-Aluminium** — secondary structures and connectors
+Energy → **build line** (raw → structure) → **MRE keystone** (raw O₂ + metals + slag) →
+**purification** (per substance) → **near-closed recycling** → store → humans last.
 
-**Second priority — life support preparation (before humans arrive):**
-5. **M-Oxygen** — habitat atmosphere
-6. **M-Water** — life support and dome water layer
-7. **M-Nitrogen** — atmosphere buffer gas
-
-**Third priority — capability expansion:**
-8. **M-Iron** — heavy construction, machinery
-9. **M-Silicon** — electronics, photovoltaics
-10. **M-Fuel** — propellant production
-11. **M-Cement** — alternative structural binder
-
-**Long-term:**
-12. **M-Print** — advanced additive manufacturing
-13. **M-Helium3** — fusion fuel (speculative, very long-term)
+Design rule across all modules: *no shortcuts; minimise Earth dependence.* Each module
+states what is local and what (if anything) must be imported.
 
 ---
 
-## Module Design Principles
+## Stage 1 — Build line (comes first)
 
-- **Mass:** As low as possible — must fit in a Falcon Heavy or equivalent payload
-- **Connections:** Standardised interfaces for power, feedstock, and product output
-- **Autonomy:** All modules operate autonomously after initial setup
-- **Scalability:** Multiple identical modules can be connected in parallel
-- **Failure isolation:** A failed module does not stop the others
+| Module | Makes | Earth-dependence |
+|---|---|---|
+| [`m-build-sintering`](m-build-sintering.md) | floors, walls, halls, silos (sintered/melted regolith) | none |
+| [`m-cement`](m-cement.md) | geopolymer binder (low-energy, castable) | alkali activator (NaOH) |
 
----
+## Stage 2 — Keystone
 
-## Document Index
+| Module | Makes | Earth-dependence |
+|---|---|---|
+| [`m-mre-electrolysis`](m-mre-electrolysis.md) | oxygen + mixed metal alloys + ceramic slag | none |
 
-| Document | Description |
+## Stage 3 — Purification & products
+
+| Module | Makes | Earth-dependence |
+|---|---|---|
+| [`m-oxygen`](m-oxygen.md) | breathing O₂ + LOₓ | none |
+| [`m-aluminium`](m-aluminium.md) | aluminium (structural) + O₂/water/silica | low (HCl loop) |
+| [`m-aluminium-refining`](m-aluminium-refining.md) | ultra-pure Al (99.99%) | medium (fluoride/Cu) |
+| [`m-silicon`](m-silicon.md) | structural & (route to) solar silicon | low |
+| [`m-silicon-purification`](m-silicon-purification.md) | solar/electronic Si (<ppb), 4 sub-factories | low (avoid halide boosters) |
+| [`m-metal-separation`](m-metal-separation.md) | single metals from MRE alloy | medium (electrolyte) |
+| [`m-glass`](m-glass.md) | glass, sealing layer, moonglass, mineral fibre | none |
+| [`m-ceramics`](m-ceramics.md) | alumina (Al₂O₃) ceramic + dome fibre | very low |
+| [`m-iron`](m-iron.md) | ferrosilicon (co-product) | none |
+
+## Polar stream (contingent on confirmed ice)
+
+| Module | Makes | Earth-dependence |
+|---|---|---|
+| [`m-water`](m-water.md) | water + C/N/S volatiles | geological (needs ice) |
+| [`m-fuel`](m-fuel.md) | H₂/O₂ propellant | via water |
+| [`m-nitrogen`](m-nitrogen.md) | buffer gas (N₂/Ar) — **weak link** | medium–high (likely import) |
+
+## Cross-cutting
+
+| Module | Role |
 |---|---|
-| delivery-and-priority.md | Delivery logistics and priority rationale |
-| m-glass.md | Silicon dioxide → glass |
-| m-titanium.md | Ilmenite → titanium metal |
-| m-aluminium.md | Anorthosite → aluminium |
-| m-basalt.md | Regolith → structural basalt fibre |
-| m-iron.md | Iron oxides → iron/steel |
-| m-oxygen.md | Regolith → oxygen (MOE) |
-| m-water.md | Ice extraction and electrolysis |
-| m-nitrogen.md | Solar wind extraction → nitrogen |
-| m-silicon.md | SiO₂ → purified silicon |
-| m-fuel.md | H₂ + O₂ → cryogenic propellants |
-| m-cement.md | Anorthosite → geopolymer cement |
-| m-print.md | Metal/glass additive manufacturing |
-| m-helium3.md | Thermal desorption → He-3 |
+| [`m-waste-and-recycling`](m-waste-and-recycling.md) | the near-closed loop — where every residue goes |
+| [`m-print`](m-print.md) | additive manufacturing from local metals/ceramic/glass |
+| [`m-mineral-fibre`](m-basalt.md) | mineral fibre (formerly "M-Basalt"; drawn from anorthosite) |
+
+## Not viable at Peary (honest)
+
+| Module | Why |
+|---|---|
+| [`m-titanium`](m-titanium.md) | no ilmenite — **imported**, not local |
+| [`m-helium3`](m-helium3.md) | ⛔ mare/ilmenite resource — **parked**, not at highland Peary |
+
+---
+
+## Reading order (suggested)
+
+1. `m-mre-electrolysis` (the keystone — start here)
+2. `m-build-sintering` (what comes first on the surface)
+3. The three heavy purification factories: `m-silicon-purification`,
+   `m-metal-separation`, `m-aluminium-refining`
+4. `m-waste-and-recycling` (how it all closes the loop)
+5. The rest by stream as needed.
+
+*All modules: concept proposals, sourced where possible, lunar performance unproven.*

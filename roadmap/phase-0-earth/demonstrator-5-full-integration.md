@@ -23,7 +23,7 @@ Demonstrator 5 results, along with the full Phase 0 dataset, will form the scien
 ## Test Configuration
 
 - Mast structure: 10–20 metre fixed structure with BSM-equivalent pointing system
-- Robots: 4 CMB-R1 prototypes (or closest available to flight configuration)
+- Robots: 4 CMB8LF-L1 prototypes (or closest available to flight configuration)
 - Sintering laser: 5–15 kW fibre laser on mast
 - Test area: 10 × 10 metre regolith simulant bed
 - Data relay: Watcher data transmitted to a simulated Earth station with realistic communication delay (2.5-second simulated delay)

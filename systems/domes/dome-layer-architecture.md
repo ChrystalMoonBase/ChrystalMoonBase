@@ -12,6 +12,19 @@ Every dome on the Chrystal Moon Base is a multi-layered composite structure. The
 
 The target dome count for a fully operational Phase 2 base is approximately 90–100 domes of varying sizes and functions. All domes share the same layer architecture. Differences between dome types are in size, internal configuration, and secondary support structures — not in the protective layer design.
 
+> **⚠ Unresolved contradiction — transparency vs radiation shielding (flagged for decision).**
+> Several dome documents describe residents *looking up through the dome at the
+> stars, the sun, and Earth*. But Layer 1 below is a **2–5 m opaque sintered-regolith
+> radiation shell**. A dome cannot be both metres-thick-opaque (shielded) and
+> transparent (stargazing) at the same time. These are mutually exclusive. The
+> agreed direction (see project decision, June 2026) is: **permanent living is
+> underground; the glass/transparent domes are dose-budgeted DAY-USE spaces for
+> work and recreation**, not radiation-safe permanent habitats. Each dome type must
+> therefore be classified as **either** a shielded (opaque, regolith-shelled) dome
+> **or** a transparent (thin, limited-exposure) dome — this classification is a
+> design decision still to be made per dome type. Until then, treat any "transparent
+> + fully shielded" dome description as internally inconsistent.
+
 ---
 
 ## The Five-Layer System
@@ -22,11 +35,11 @@ Layers are listed from outside to inside — from the lunar environment toward t
 
 ### Layer 1 — Sintered Regolith Shell (Highland Anorthosite)
 
-**Material:** Sintered lunar basalt  
+**Material:** Sintered highland anorthosite regolith  
 **Thickness:** TBD by structural engineering  
 **Function:** Primary structure, radiation shielding, micrometeorite protection
 
-The outermost layer is sintered directly from the lunar regolith by CMB-R1 robots. It is not a manufactured component delivered from Earth — it is grown in place from the Moon's own material.
+The outermost layer is sintered directly from the lunar regolith by CMB8LF-L1 robots. It is not a manufactured component delivered from Earth — it is grown in place from the Moon's own material.
 
 The sintered highland-anorthosite shell provides:
 - **Mass shielding against radiation** — the primary defence against galactic cosmic rays and solar energetic particles. The required thickness to achieve Mars-equivalent radiation levels inside is a function of sintered-regolith density and composition — this requires calculation with actual Peary regolith composition data, which is not yet available. Estimates suggest 2–5 metres of regolith equivalent for adequate shielding, though thinner layers combined with the water layer (Layer 4) provide substantial additional protection.
@@ -61,7 +74,7 @@ This is flagged as a priority research question. Contributions from materials sc
 
 ### Layer 3 — Gold-Coated Glass
 
-**Material:** High-purity glass with titanium fibre reinforcement and exterior gold coating  
+**Material:** High-purity glass with high-temperature reinforcing fibre (material TBD — see below) and exterior gold coating  
 **Thickness:** TBD  
 **Function:** Thermal/optical control (infrared and partial UV reflection), primary transparent barrier
 
@@ -73,7 +86,21 @@ This layer performs three functions simultaneously:
 
 **Glass structure:** High-purity glass, manufactured from lunar silicon by the M-Glass processing module. The glass is printed in its molten state, inside-out, for maximum homogeneity and minimum defects. This printing method — starting from the inner surface and building outward — ensures that the optical quality of the interior face (which residents will look through) is the highest quality.
 
-**Titanium fibre reinforcement:** As the glass is printed in its molten state, CMB-R1 robots lay continuous titanium fibre into the melt. The fibre is sourced from the M-Ti processing module. The resulting composite — titanium-reinforced glass — is significantly stronger in tension than plain glass, which is critical for a pressure vessel where the interior atmosphere pushes outward. The titanium and glass bond at the molecular level during the printing process. There are no interfaces, no adhesive layers, no weak joints. This is one continuous material.
+**Reinforcing fibre (open materials question — was specified as titanium):**
+As the glass is printed in its molten state, robots lay continuous reinforcing
+fibre into the melt. The composite — fibre-reinforced glass — is much stronger in
+tension than plain glass, which is critical for a pressure vessel where the
+interior atmosphere pushes outward. **Material choice is unresolved and must
+satisfy two constraints at once: survive the glass melt temperature, and be
+sourceable at highland Peary.** Titanium (earlier baseline) survives the melt but
+is **not locally available** at Peary (no ilmenite). Aluminium *metal* fibre is
+locally abundant but **melts at ~660 °C — far below glass working temperature — so
+it cannot be laid into molten glass.** The realistic candidates are therefore
+**high-temperature, locally-sourceable fibres**: alumina (Al₂O₃) ceramic fibre
+(Peary regolith is ~27% Al₂O₃) or anorthosite/mineral fibre (the M-Mineral-Fibre
+line). Both melt-compatible and local; both have lower tensile strength than
+titanium and are **not yet characterised** for this use. This is flagged for
+materials-engineering input, not asserted.
 
 ---
 
@@ -105,7 +132,7 @@ The innermost layer is the surface that residents see and breathe against. It mu
 
 **Transparent:** Residents inside a habitat dome should be able to look up and see the lunar sky — stars during the long lunar night, the sun filtered through the outer layers during the day. This is not a luxury. Long-duration human habitation in enclosed spaces is psychologically demanding. A visible connection to the exterior environment matters.
 
-**Pressure-tight:** The inner glass is the primary pressure boundary. It contains the habitat atmosphere — approximately Earth-normal pressure of nitrogen and oxygen. This means the inner glass is under constant outward pressure load, which the titanium fibre reinforcement in Layer 3 is partially designed to address.
+**Pressure-tight:** The inner glass is the primary pressure boundary. It contains the habitat atmosphere — approximately Earth-normal pressure of nitrogen and oxygen. This means the inner glass is under constant outward pressure load, which the reinforcing fibre in Layer 3 is partially designed to address.
 
 **Chemically stable:** The interior atmosphere contains water vapour, carbon dioxide, trace organics, and other compounds produced by human habitation. Over years and decades, these can attack glass surfaces — fogging, etching, or depositing films that degrade optical quality and structural integrity. The anti-decay coating on the interior surface is a transparent protective layer — similar in concept to the coatings used on optical instruments and aquarium glass — that prevents this degradation. The specific formulation requires materials research for the specific chemical environment of a lunar habitat.
 
@@ -116,8 +143,8 @@ The innermost layer is the surface that residents see and breathe against. It mu
 1. Robots sinter the sintered-regolith foundation ring and floor in the dome location
 2. All underground connections (power, data, water, air) are routed and sealed before dome construction begins
 3. The sintered regolith outer shell (Layer 1) is printed by robots, starting at the foundation ring and building upward
-4. Simultaneously, from inside, the inner glass (Layer 5) is printed molten, inside-out, with titanium fibre being laid in continuously
-5. Layer 3 (gold-coated glass with titanium reinforcement) is printed as a separate shell inside Layer 1
+4. Simultaneously, from inside, the inner glass (Layer 5) is printed molten, inside-out, with reinforcing fibre being laid in continuously
+5. Layer 3 (gold-coated glass with reinforcing fibre) is printed as a separate shell inside Layer 1
 6. The gap between Layer 3 and Layer 5 is sealed to form the water cavity (Layer 4)
 7. Layer 2 (self-sealing gel) is applied between Layer 1 and Layer 3
 8. The water cavity is filled from the underground cistern supply
@@ -148,9 +175,9 @@ The small sleep habitat size — maximum 10 people — is a deliberate safety de
 
 ## Open Questions
 
-1. **Layer 1 thickness** — what thickness of sintered Peary basalt achieves the radiation shielding target? Requires actual regolith composition data and Monte Carlo radiation transport modelling.
+1. **Layer 1 thickness** — what thickness of sintered Peary regolith (anorthosite) achieves the radiation shielding target? Requires actual regolith composition data and Monte Carlo radiation transport modelling.
 2. **Self-sealing gel** — is there a validated material that meets the temperature, vacuum, and activation requirements? This is a research question, not an engineering trade.
 3. **Water layer freeze management** — what heating is required to prevent Layer 4 freezing, and what is the power cost?
-4. **Titanium fibre printing** — what is the minimum radius of curvature that the titanium fibre can follow during molten glass printing without fracture or delamination?
+4. **Reinforcing-fibre printing** — what is the minimum radius of curvature that the reinforcing fibre can follow during molten glass printing without fracture or delamination?
 5. **Inner coating formulation** — what transparent coating is stable against long-term exposure to a human habitat atmosphere in a lunar radiation environment?
 6. **Structural load calculation** — the dome must resist internal pressure, thermal stress, and any surface loading. A full structural analysis is required before any dome geometry is finalised.

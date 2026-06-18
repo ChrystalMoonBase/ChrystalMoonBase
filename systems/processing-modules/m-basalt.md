@@ -1,43 +1,63 @@
-# Structural Basalt Production (M-BASALT)
+# Mineral Fibre Production (M-MINERAL-FIBRE)
 ## Chrystal Moon Base — Processing Module Concept
+### (formerly "M-Basalt" — renamed; see note)
 
-**Status:** Concept proposal — no hardware exists  
+**Status:** Concept proposal — properties uncharacterised
 **Licence:** CC0
+**Ground truth:** `PEARY-MATERIALS-REFERENCE.md`
+
+---
+
+## Why the rename
+
+This module was called "M-Basalt" and described drawing **basalt fibre**. True
+basalt fibre is drawn from *basalt* melt — an iron/magnesium-rich rock of the
+lunar **mare** plains. Peary is **highland** terrain, where the regolith is
+**anorthosite** (calcium/aluminium-rich, feldspar-dominated). You cannot draw
+"basalt fibre" from a feedstock that contains no basalt. The module is therefore
+renamed to **mineral fibre** and re-based on the local anorthosite melt.
 
 ---
 
 ## Overview
 
-**Input:** Bulk regolith — sintered in situ by CMB-R1 robots
+**Input:** Local **anorthosite regolith** melt (not basalt).
 
-**Output:** Sintered basalt panels, rods, and structural shapes
+**Output:** Drawn mineral fibre, fibre-composite panels, and shaped components
+requiring more controlled conditions than direct field sintering.
 
-**Process:** Laser sintering by CMB-R1 robots is the primary production method (covered in 05_SINTERING/). M-Basalt as a dedicated processing module refers to a fixed facility for producing basalt fibre, basalt composite panels, and shaped basalt components that require more controlled conditions than direct field sintering.
+**Process:** The sintered-regolith floor and bulk structure are made by the
+robots sintering regolith directly (see the sintering documents). This module is
+the *fixed facility* for drawing continuous **anorthosite mineral fibre** and
+forming fibre-composite parts — a candidate matrix for outer-shell composites and
+chassis armour.
 
-**Note:** Basalt fibre has excellent mechanical properties and can be woven into composite materials. It is a potential matrix for the outer dome shell composite and for robot chassis armour. The M-Basalt module is not needed for the initial sintered floor construction — that is done by the robots directly. It becomes relevant in Phase 1.2 when precision structural components are needed.
+**Honest caveat on properties:** anorthite (the dominant highland mineral) melts
+hotter than basalt — roughly **~1,550 °C** versus ~1,200 °C — with different
+viscosity and a narrower drawing window. Fibre drawn from anorthosite melt will
+**not** have the same, well-characterised properties as terrestrial basalt fibre.
+Its mechanical properties are **not yet characterised** and must be measured, not
+assumed. Do not quote basalt-fibre datasheet values for this material.
 
-**Key challenge:** Drawing basalt fibre requires precise temperature control of a viscous melt. Maintaining the required temperature stability in a lunar environment without the temperature-buffering effect of Earth's atmosphere is an engineering challenge.
+**Not needed for the first floor.** Initial floor construction is robot sintering,
+not this module. M-Mineral-Fibre becomes relevant only when precision structural
+fibre components are required.
+
+**Key challenge:** Drawing continuous mineral fibre requires precise temperature
+control of a viscous melt. The higher anorthosite melt temperature and unknown
+draw behaviour make this harder than the basalt-referenced literature suggests.
 
 ---
 
 ## Open Questions
 
-1. What is the optimal processing rate for this module given the available power budget?
-2. What is the module mass and volume, and does it fit within the planned delivery vehicle constraints?
-3. What feedstock pre-processing is required before input to this module?
-4. What are the failure modes and how are they detected and managed autonomously?
-5. How does this module connect to the underground utility network for power, feedstock, and product output?
+1. What fibre properties (tensile strength, modulus, thermal limits) does
+   anorthosite mineral fibre actually achieve? (Requires testing.)
+2. What melt temperature, viscosity control, and draw rate are workable for
+   anorthosite at Peary conditions?
+3. What is the module mass and volume, and does it fit the delivery constraints?
+4. What are the failure modes and how are they managed autonomously?
+5. How does this module connect to the underground utility network?
 
-*Engineers with relevant process chemistry or ISRU experience are invited to review and improve this document via GitHub Issues.*
-
----
-
-## Feedstock note (highland site) — flagged for review
-
-**Important:** True basalt fibre is drawn from *basalt* melt — a mafic, iron/magnesium-rich rock found in the lunar **mare** plains. The Peary rim is **highland** terrain, where the regolith is **anorthosite** (calcium/aluminium-rich, feldspar-dominated). Anorthosite melt has different viscosity and a higher melting point (~1,550 °C for anorthite vs ~1,200 °C for basalt), so "basalt fibre" specifically is not directly producible from local Peary feedstock.
-
-Two honest options, to be decided:
-1. **Anorthosite/regolith mineral fibre** — draw mineral fibre from the locally available highland melt, accepting different (and not-yet-characterised) fibre properties. This keeps the no-import, ISRU-first principle.
-2. **Import mare-basalt feedstock or basalt fibre** — only if a specific structural need cannot be met by local anorthosite fibre. This breaks the ISRU principle and should be avoided.
-
-This document currently describes the *terrestrial* basalt-fibre process as a reference. Adapting it to highland anorthosite feedstock is an open engineering question (see project questions list).
+*Engineers with relevant materials-science or fibre-drawing experience are
+invited to review and improve this document via GitHub Issues.*

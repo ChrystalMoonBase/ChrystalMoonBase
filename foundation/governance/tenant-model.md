@@ -27,7 +27,7 @@ A dome cluster lease provides:
 - Power allocation from the base grid
 - Water allocation from the base supply
 - Access to underground transport network
-- Access to CMB-R1 robots for tenant use during non-construction periods (by arrangement)
+- Access to CMB8LF-L1 robots for tenant use during non-construction periods (by arrangement)
 - Communication bandwidth allocation
 - Access to processing module outputs at published rates
 

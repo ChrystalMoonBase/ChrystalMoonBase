@@ -8,7 +8,7 @@
 
 ## Objective
 
-Demonstrate that 2–4 CMB-R1 robots can autonomously coordinate to sinter a defined area in the correct ring pattern without human intervention, using only onboard AI and mast-based coordination.
+Demonstrate that 2–4 CMB8LF-L1 robots can autonomously coordinate to sinter a defined area in the correct ring pattern without human intervention, using only onboard AI and mast-based coordination.
 
 ---
 
@@ -22,7 +22,7 @@ Demonstrator 4 is expected to require multiple iteration cycles before success c
 
 ## Test Protocol (Proposed)
 
-**Setup:** 2–4 CMB-R1 prototype robots in the sintering test area from Demonstrator 1. A fixed mast (scaled) provides simulated laser power beaming and swarm coordinator computing.
+**Setup:** 2–4 CMB8LF-L1 prototype robots in the sintering test area from Demonstrator 1. A fixed mast (scaled) provides simulated laser power beaming and swarm coordinator computing.
 
 **Test series:**
 

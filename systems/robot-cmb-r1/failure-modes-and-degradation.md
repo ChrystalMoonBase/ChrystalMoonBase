@@ -1,5 +1,5 @@
 # Failure Modes and Graceful Degradation
-## Chrystal Moon Base — CMB-R1 Robot Fleet
+## Chrystal Moon Base — CMB8LF-L1 Robot Fleet
 
 **Status:** Concept proposal — failure strategy, not yet validated
 **Licence:** CC0

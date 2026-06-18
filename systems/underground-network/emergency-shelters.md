@@ -136,7 +136,7 @@ Private or semi-private sleeping areas where possible. A small degree of persona
 - Physical exercise space and equipment — people need to move
 - Games — individual and group
 - Creative tools — art, writing, music making
-- Luminescent algae pillars — even in the emergency shelter, living light. Never a dark, clinical space. The algae also contribute to atmospheric processing and provide a psychological connection to the living environment of the base.
+- Luminescent algae pillars for ambience and atmospheric processing — never a dark, clinical space. (Lighting itself is LED; algae are too dim to light the space, but provide a psychological connection to the living environment.)
 
 Mental health support resources are also available — structured programmes for managing stress, anxiety, and group conflict in confined spaces. Based on research from submarine deployments, Antarctic winter-over stations, and ISS long-duration missions.
 

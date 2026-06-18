@@ -24,7 +24,7 @@ Laser power beaming has been demonstrated on Earth. PowerLight Technologies (for
 
 **Transmitter:** Commercial high-power ytterbium fibre laser, 5–15 kW output. Mounted on a fixed tower at 10–20 metres height (scaled model of mast BSM geometry).
 
-**Receiver:** A scaled CMB-R1 chassis or a dedicated test platform carrying the laser power receiver — photovoltaic cells optimised for the laser wavelength, power conditioning electronics, and a load bank.
+**Receiver:** A scaled CMB8LF-L1 chassis or a dedicated test platform carrying the laser power receiver — photovoltaic cells optimised for the laser wavelength, power conditioning electronics, and a load bank.
 
 **Tracking system:** Fast steering mirror with quadrant photodiode feedback — the same pointing architecture proposed for the flight system BSMs.
 

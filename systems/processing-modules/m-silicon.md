@@ -1,31 +1,115 @@
-# Silicon Production (M-SILICON)
-## Chrystal Moon Base — Processing Module Concept
+# M-Silicon — Silicon Extraction & Purification
 
-**Status:** Concept proposal — no hardware exists  
+**Status:** Concept proposal, sourced. Tentative where noted.
 **Licence:** CC0
+**Role:** Stage 3. Two very different products from one element: **structural silicon**
+(easy) and **solar/electronic silicon** (extremely demanding). For glass, ferrosilicon,
+and — the prize — locally made solar cells.
+**Ground truth:** Peary highland / anorthosite (`PEARY-MATERIALS-REFERENCE.md`).
 
 ---
 
-## Overview
+## What it does
 
-**Input:** Silicon dioxide (SiO₂) — same source as M-Glass
-
-**Output:** Purified silicon for photovoltaic cells and electronics
-
-**Process:** Silicon is reduced from SiO₂ by carbothermal or aluminothermal reduction. Further purification by zone refining or Czochralski process produces photovoltaic-grade silicon. This is a well-understood process on Earth. The challenge is producing it at adequate purity without the precursor chemicals used in terrestrial silicon purification.
-
-**Note:** The long-term goal is to manufacture photovoltaic cells on the Moon from locally produced silicon and aluminium. This would allow the power grid to expand without importing cells from Earth. This is a Phase 1.2/1.3 capability — it is not needed in early phases.
-
-**Key challenge:** Achieving photovoltaic-grade purity (99.9999% silicon) from a process designed for the lunar environment, without the full chemical infrastructure of a terrestrial semiconductor facility.
+Reduces SiO₂ (highland regolith is ~45 % SiO₂) to silicon, then purifies it to whatever
+grade the use demands. This is the clearest example of **purity-tier per substance**:
+the same element needs wildly different purity depending on the product.
 
 ---
 
-## Open Questions
+## Input → Output
 
-1. What is the optimal processing rate for this module given the available power budget?
-2. What is the module mass and volume, and does it fit within the planned delivery vehicle constraints?
-3. What feedstock pre-processing is required before input to this module?
-4. What are the failure modes and how are they detected and managed autonomously?
-5. How does this module connect to the underground utility network for power, feedstock, and product output?
+- **Input:** SiO₂ from regolith (via MRE/MSE reduction, or the Si fraction of the alloy).
+- **Output:**
+  - **Structural / metallurgical silicon** — for ferrosilicon, alloys (≈99 %, easy).
+  - **Solar-grade / electronic silicon** — for photovoltaics and electronics
+    (**<ppb impurities, ~6N–9N+**, very hard).
 
-*Engineers with relevant process chemistry or ISRU experience are invited to review and improve this document via GitHub Issues.*
+---
+
+## The science (grounded)
+
+**Reduction:** MRE/MSE reduces SiO₂ to silicon; selective deposition of silicon
+*without* aluminium co-deposition has been demonstrated in low-temperature molten salt
+(FLiNaK). Fluorine-based multi-stage routes also separate and purify silicon (with
+oxygen as a by-product).
+
+**Purification to PV grade is the hard wall.** Photovoltaic silicon needs impurity
+levels **below ppb** — 99 % is uselessly low. The terrestrial route is multi-step:
+- vacuum-melt to drive off **phosphorus**,
+- acidic-gas treatment to remove **boron and carbon**,
+- high-temperature de-oxidation to remove **oxygen**,
+- **zone-melting** to sweep out **Fe, Al, Ti, Ca** (impurities concentrate at the ingot
+  end, which is cut off).
+
+**The clever shortcut.** Because PV-grade silicon is so demanding, some concepts skip it
+entirely: make **"moonglass"** from regolith melt and build **halide-perovskite** cells
+on it, where **magnetic separation** lowers FeO to improve glass transmission toward
+80–90 % — avoiding the <ppb silicon requirement altogether. A hybrid worth keeping open.
+
+---
+
+## Conceptual schematic — two silicon product lines
+
+```
+   SiO₂ (regolith) ──reduce(MRE/MSE/F)──► raw silicon
+                                              │
+                 ┌────────────────────────────┴───────────────┐
+                 ▼                                             ▼
+        structural Si (~99%)                        zone-refining train:
+        → ferrosilicon, alloys                      vacuum-melt (P) → acid gas (B,C)
+                                                     → de-oxidise (O) → zone-melt (Fe/Al/Ti/Ca)
+                                                              ▼
+                                                     solar/electronic Si (<ppb, 6N–9N)
+                                                              ▼
+                                  vacuum deposition of cells onto glass substrate
+   ── OR shortcut: moonglass + perovskite cells (no <ppb Si needed) ──
+```
+*Conceptual; the choice between the silicon route and the perovskite shortcut is open.*
+
+---
+
+## Lunar-specific factors
+
+- **Vacuum is a gift:** the lunar surface (~10⁻¹⁰ torr) is an ideal environment for
+  **direct vacuum deposition** of thin-film solar cells — no vacuum chamber needed.
+- **Concentrated sunlight** can both melt the glass substrate and drive deposition.
+
+---
+
+## Purity (per function)
+
+- Structural/ferrosilicon: **~99 %** or alloy — fine.
+- Solar/electronic: **<ppb (6N–9N+)** — the strictest target in the whole base, or
+  side-stepped via the perovskite/moonglass route.
+
+---
+
+## Maturity (honest)
+
+Structural silicon: feasible with MRE. PV-grade silicon on the Moon: proposed for
+decades, but the multi-step <ppb purification is **the hardest purity task in the
+chain** and unproven in situ. The perovskite-on-moonglass hybrid is newer and may be
+more realisable near-term. Active funded research exists (e.g. TU Berlin SoMo).
+
+---
+
+## Open questions
+
+1. PV silicon route vs perovskite-on-moonglass shortcut — which does CMB pursue?
+2. Can the zone-refining train run on the available power and consumables locally?
+3. Where do dopants come from for whichever cell type is chosen?
+
+---
+
+## References (verify and extend)
+
+- Cell / Device 2025 — moonglass + halide-perovskite cells; magnetic FeO separation;
+  silicon needs ~ppb impurity for PV.
+- US Patent 6,090,361 — solar-silicon purification (vacuum-melt P; acid gas B/C;
+  de-oxidation O; zone-melt Fe/Al/Ti/Ca).
+- NASA NTRS — vacuum evaporation of regolith silicon for thin-film cells (10⁻¹⁰ torr).
+- Landis (NASA GRC) — fluorine multi-stage refining, O₂ by-product.
+- ResearchGate 2025 — low-temperature MSE: selective Si deposition without Al.
+
+*Figures are terrestrial/lab and modelling values; lunar performance unproven.*

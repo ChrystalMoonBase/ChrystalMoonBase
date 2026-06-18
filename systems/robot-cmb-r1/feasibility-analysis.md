@@ -1,4 +1,4 @@
-# CMB-R1 — Design Concept & Feasibility Assessment
+# CMB8LF-L1 — Design Concept & Feasibility Assessment
 ## Chrystal Moon Base · Phase 0.2
 
 **Status:** Concept proposal — no prototype exists  
@@ -6,19 +6,19 @@
 **Licence:** CC0  
 **Last updated:** May 2026
 
-> This document combines the CMB-R1 robot concept with an independent feasibility assessment. Every claim is referenced. Every uncertainty is stated. If you find an error, open a GitHub Issue.
+> This document combines the CMB8LF-L1 robot concept with an independent feasibility assessment. Every claim is referenced. Every uncertainty is stated. If you find an error, open a GitHub Issue.
 
 ---
 
 ## 1. Design Philosophy
 
-The CMB-R1 is designed around three principles:
+The CMB8LF-L1 is designed around three principles:
 
 **No single failure stops the mission.**
 Every critical system has a fallback. Every robot that breaks is compensated by its teammates. The AI continuously recalculates around whatever is still working.
 
 **Everything that can be integrated, should be integrated.**
-A modern car contains hundreds of sensors, cameras, and computers — all invisible, all simultaneous. The CMB-R1 follows the same principle. The robot does not swap modules to see or to measure. It always sees. It always measures.
+A modern car contains hundreds of sensors, cameras, and computers — all invisible, all simultaneous. The CMB8LF-L1 follows the same principle. The robot does not swap modules to see or to measure. It always sees. It always measures.
 
 **The location does the heavy lifting.**
 The choice of Peary Crater rim (88.63°N) is the single most important engineering decision in the entire concept. Near-continuous sunlight (~89% annually). Temperature range of only −50°C to +10°C versus −150°C at the equator. This location makes a thermally passive, non-nuclear robotic system feasible where it would be impossible anywhere else on the Moon.
@@ -27,7 +27,7 @@ The choice of Peary Crater rim (88.63°N) is the single most important engineeri
 
 ## 2. Physical Description
 
-The CMB-R1 is an **octopod** — 8 legs. The front two legs are dual-function limbs capable of operating as arms when the robot lowers its body and transfers weight to the remaining six legs.
+The CMB8LF-L1 is an **octopod** — 8 legs. The front two legs are dual-function limbs capable of operating as arms when the robot lowers its body and transfers weight to the remaining six legs.
 
 | Parameter | Estimate |
 |---|---|
@@ -42,7 +42,7 @@ The CMB-R1 is an **octopod** — 8 legs. The front two legs are dual-function li
 
 ## 3. Always-Integrated Systems
 
-Every CMB-R1 carries the following at all times — no swapping, no configuration changes:
+Every CMB8LF-L1 carries the following at all times — no swapping, no configuration changes:
 
 **Sensing:**
 - Thermal camera (integrated, always active)
@@ -95,7 +95,7 @@ Each robot receives power wirelessly via laser from the mast Beam and Sensor Mod
 **Research basis:**
 NASA's Vertical Solar Array Technology (VSAT) study (2024) demonstrates a complete surface-to-surface laser power beaming system: a 1.07-µm fibre laser on a 10 m mast, beaming 300 W continuously to receivers up to 10 km away, total landed mass under 625 kg. End-to-end efficiency of 11.55% measured at 10 m ground distance, with identified optimisation paths.
 
-The CMB-R1's steerable receiver panels actively optimise angle of incidence as the robot moves — substantially improving practical efficiency beyond the baseline measurement.
+The CMB8LF-L1's steerable receiver panels actively optimise angle of incidence as the robot moves — substantially improving practical efficiency beyond the baseline measurement.
 
 **TRL assessment: 5–6** — demonstrated at sub-scale, not yet at operational scale.
 
@@ -126,7 +126,7 @@ Peary rim maximum dark interval: ~7 days. Comfortable margin.
 
 ---
 
-## 7. Sintered Basalt Armour
+## 7. Sintered Regolith Armour
 
 The robot's outer protective skin is made of sintered regolith — the same material the robots produce — in a combination of large rigid plates on flat surfaces and articulated tiles over joints.
 
@@ -142,7 +142,7 @@ Hawaiian basalt has been sintered at 1,120–1,180°C, producing structural cera
 **Better highland references exist and should be used in Phase 0:** NASA's **NU-LHT** series (Lunar Highlands Type, e.g. NU-LHT-2M / -3M) and the European **EAC-1A** are anorthosite-bearing highland simulants far closer to Peary composition than basalt. Phase 0 sintering tests should use a highland simulant of this class, not a mare basalt simulant, to produce numbers that actually apply to the chosen site.
 
 **What this enables:**
-The robot carries its own repair material. Another CMB-R1 can use its sintering laser to fuse replacement tiles onto a damaged unit from regolith collected at site. This is a self-healing capability no other lunar rover concept has proposed.
+The robot carries its own repair material. Another CMB8LF-L1 can use its sintering laser to fuse replacement tiles onto a damaged unit from regolith collected at site. This is a self-healing capability no other lunar rover concept has proposed.
 
 **Honest caveat:** Spot-sintering of a specific replacement tile onto a moving robot in lunar conditions has never been demonstrated. The material properties are proven. The repair process is aspirational. This requires Phase 0 validation before it can be claimed as operational.
 

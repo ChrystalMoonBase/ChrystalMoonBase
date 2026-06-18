@@ -1,4 +1,4 @@
-# CMB8LF v1 — Spectroscopische Sensor Suite
+# CMB8LF-S1 — Spectroscopische Sensor Suite
 ## Gelaagde Materiaalanalyse voor ISRU Optimalisatie
 **CC0 · Chrystal Moon Base · 2026**
 
@@ -138,4 +138,4 @@ CAN bericht (max 40 bytes):
 
 ---
 
-*SPECTROSCOPY_UPGRADE.md · CMB8LF v1 · CC0 2026*
+*SPECTROSCOPY_UPGRADE.md · CMB8LF-S1 · CC0 2026*

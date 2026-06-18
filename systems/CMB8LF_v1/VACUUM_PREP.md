@@ -1,4 +1,4 @@
-# CMB8LF v1 — Vacuümvoorbereiding v6
+# CMB8LF-S1 — Vacuümvoorbereiding v6
 **Protocollen voor vacuümkamertesting**
 **CC0 · Chrystal Moon Base · 2026**
 

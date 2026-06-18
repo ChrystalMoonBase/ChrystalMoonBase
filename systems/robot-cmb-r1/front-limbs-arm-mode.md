@@ -1,4 +1,4 @@
-# CMB-R1 Front Limbs — Dual Function (Leg and Arm)
+# CMB8LF-L1 Front Limbs — Dual Function (Leg and Arm)
 ## Chrystal Moon Base — Robot System Concept
 
 **Status:** Concept proposal  
@@ -8,7 +8,7 @@
 
 ## Overview
 
-The two front legs of every CMB-R1 robot are designed to function as either legs or arms. This dual capability enables robots to handle tool heads, assist other robots, and carry cargo — without requiring dedicated manipulator arms as separate hardware.
+The two front legs of every CMB8LF-L1 robot are designed to function as either legs or arms. This dual capability enables robots to handle tool heads, assist other robots, and carry cargo — without requiring dedicated manipulator arms as separate hardware.
 
 ---
 

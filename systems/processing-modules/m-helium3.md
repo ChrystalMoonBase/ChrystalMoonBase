@@ -1,7 +1,12 @@
 # Helium-3 Extraction (M-HELIUM3)
 ## Chrystal Moon Base — Processing Module Concept
 
-**Status:** Concept proposal — no hardware exists  
+**Status:** ⛔ **NOT VIABLE AT PEARY — parked.** He-3 is a *mare / ilmenite* resource,
+not a highland one. Sourced: highland regolith holds only ~**3 ppb** He-3 vs ~**6 ppb**
+in the maria, and helium is preferentially **retained in ilmenite** (Ti-rich mare), which
+Peary lacks. So He-3 mining gives roughly half the (already tiny) yield, in minerals that
+release it poorly. **No He-3 factory is planned for the first base.** Kept only as a
+record / possible far-future mare-phase activity (see `roadmap/.../mare-production-base.md`).
 **Licence:** CC0
 
 ---

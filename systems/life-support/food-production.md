@@ -72,8 +72,8 @@ Food on the base is not purely functional. Restaurants and bars are essential so
 - Grain crops for bread, pasta, and brewing
 - Fruit — strawberries, tomatoes, and other crops that grow faster in controlled hydroponic conditions than on Earth
 
-**Why plants grow faster on the Moon:**
-Hydroponic systems on the Moon operate under perfect conditions continuously — no seasons, no weather, no pests, optimised light and nutrient delivery 24 hours a day. Many crops grow significantly faster than on Earth. What takes 45 days on Earth may take 20 days on the Moon. The base produces fresh food in abundance.
+**Why optimised hydroponics is fast (it is the growing system, not the Moon):**
+Controlled-environment hydroponics runs under near-optimal conditions continuously — no seasons, no weather, no pests, with tuned light and nutrient delivery. Crops therefore grow faster than in *seasonal outdoor* farming — but this advantage comes from the growing system and would apply equally on Earth; it is NOT caused by the Moon or by low gravity. (Low gravity's effect on plants is uncertain and is not a known benefit.) The point stands that the base can produce fresh food efficiently — just for the right reason.
 
 **Brewing:**
 Yeast, grain, water — all available locally. Beer, and potentially other fermented beverages, can be produced on the base. This is not trivial — shared social beverages have been part of human community for thousands of years.

@@ -18,7 +18,7 @@ Phase 0 requires approximately **€1.5–3 million** across 3–5 years to fund
 |---|---|
 | Demonstrator 1 | Laser sintering of lunar regolith simulant at construction scale |
 | Demonstrator 2 | Laser power beaming to a moving robot receiver |
-| Demonstrator 3 | CMB-R1 prototype locomotion in simulated lunar conditions |
+| Demonstrator 3 | CMB8LF-L1 prototype locomotion in simulated lunar conditions |
 | Demonstrator 4 | Autonomous swarm coordination — 2–4 robots, no human intervention |
 | Demonstrator 5 | Full system integration test — everything running together |
 

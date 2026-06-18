@@ -24,7 +24,7 @@ If the Pod concept works, three more pods would follow, each building on what th
 
 | Item | Quantity | Notes |
 |---|---|---|
-| CMB-R1 octopod robots | 16 | 2 per garage, fully integrated sensors |
+| CMB8LF-L1 octopod robots | 16 | 2 per garage, fully integrated sensors |
 | Telescoping mast | 1 | Toray M55J CFRP, 5 segments, stowed ~9.7 m, deployed ~35 m |
 | Magnetic rotation bearing | 1 | AMB/PMB — frictionless azimuth tracking |
 | CIGS roll-out solar film | 1 | ~600 m² (2 arms × 9 m × 30 m), vertical, azimuth-tracking |

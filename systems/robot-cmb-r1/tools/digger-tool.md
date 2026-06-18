@@ -1,4 +1,4 @@
-# CMB-R1 — Digger Tool Concept
+# CMB8LF-L1 — Digger Tool Concept
 
 **Chrystal Moon Base · Phase 1.2 (Underground Infrastructure)**
 **Status:** Concept proposal — no prototype exists. This is an open question, not a specification.
@@ -8,13 +8,13 @@
 
 ## Context
 
-The CMB-R1 sintering laser is integrated into the arm-legs. The digger tool is one of only two EPM-swapped tools (the other being the bulldozer blade). It is needed only for underground construction in Phase 1.2+. Until then, all sixteen robots operate with their integrated sintering lasers and W-Re arm-tips as their primary working instruments.
+The CMB8LF-L1 sintering laser is integrated into the arm-legs. The digger tool is one of only two EPM-swapped tools (the other being the bulldozer blade). It is needed only for underground construction in Phase 1.2+. Until then, all sixteen robots operate with their integrated sintering lasers and W-Re arm-tips as their primary working instruments.
 
 ---
 
 ## 1. What this document is
 
-This document describes a possible digging tool for the CMB-R1 octopod robot, intended for constructing underground tunnels in later mission phases. It is not an engineering specification. All numbers are preliminary estimates based on publicly available NASA research. We publish it openly for review and correction.
+This document describes a possible digging tool for the CMB8LF-L1 octopod robot, intended for constructing underground tunnels in later mission phases. It is not an engineering specification. All numbers are preliminary estimates based on publicly available NASA research. We publish it openly for review and correction.
 
 ---
 
@@ -56,7 +56,7 @@ The digger consists of two drum assemblies mounted to a frame. The frame attache
 
 ## 5. Robot stability during digging
 
-The original concern — whether a walking robot can generate enough ground reaction force to operate a digging drum — is substantially addressed by two design features of the CMB-R1 chassis. This section updates the assessment.
+The original concern — whether a walking robot can generate enough ground reaction force to operate a digging drum — is substantially addressed by two design features of the CMB8LF-L1 chassis. This section updates the assessment.
 
 ### Counter-rotating drums cancel horizontal reaction forces internally
 
@@ -64,7 +64,7 @@ The key insight inherited from RASSOR is that the two drums rotate in opposite d
 
 ### Wide-foot snowshoe design provides stable ground contact
 
-The CMB-R1 feet use a broad, flat contact plate analogous to a snowshoe rather than a narrow point or spike. On loose lunar regolith, a narrow foot sinks under the reaction load of the digging operation. The wide foot distributes the load over a larger area, maintaining a stable stance. In 1/6 g, ground pressure is already low; the wide-foot design preserves this advantage.
+The CMB8LF-L1 feet use a broad, flat contact plate analogous to a snowshoe rather than a narrow point or spike. On loose lunar regolith, a narrow foot sinks under the reaction load of the digging operation. The wide foot distributes the load over a larger area, maintaining a stable stance. In 1/6 g, ground pressure is already low; the wide-foot design preserves this advantage.
 
 ### Six remaining legs optimally positioned for maximum stability
 

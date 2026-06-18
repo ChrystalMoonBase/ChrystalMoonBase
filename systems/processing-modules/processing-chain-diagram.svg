@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 920" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#5b6b7a"/>
+    </marker>
+    <style>
+      .title{font-size:26px;font-weight:700;fill:#0e1b2a}
+      .sub{font-size:13px;fill:#5b6b7a}
+      .stage{font-size:13px;font-weight:700;fill:#0e1b2a;letter-spacing:1px}
+      .box{rx:9;ry:9}
+      .lbl{font-size:13px;font-weight:600;fill:#0e1b2a}
+      .lbl2{font-size:10.5px;fill:#42525f}
+      .flow{stroke:#5b6b7a;stroke-width:1.6;fill:none}
+      .note{font-size:11px;fill:#8a3b3b;font-style:italic}
+    </style>
+  </defs>
+
+  <text x="40" y="48" class="title">Chrystal Moon Base — Processing Chain at Peary</text>
+  <text x="40" y="70" class="sub">Highland / anorthosite site. Qualitative flow: raw inputs → construction → keystone separation → purification → products. Conceptual, not to scale.</text>
+
+  <!-- INPUTS -->
+  <text x="40" y="112" class="stage">INPUT STREAMS</text>
+  <g>
+    <rect x="40" y="124" width="200" height="46" class="box" fill="#eef3f8" stroke="#b9c7d6"/>
+    <text x="52" y="148" class="lbl">Anorthosite regolith</text>
+    <text x="52" y="163" class="lbl2">O · Al · Si · Ca · Mg · low Fe · glass</text>
+
+    <rect x="40" y="178" width="200" height="46" class="box" fill="#eef3f8" stroke="#b9c7d6"/>
+    <text x="52" y="202" class="lbl">Polar cold-trap ice *</text>
+    <text x="52" y="217" class="lbl2">H₂O (± CO₂/CH₄/NH₃ → C,N,H)</text>
+
+    <rect x="40" y="232" width="200" height="46" class="box" fill="#eef3f8" stroke="#b9c7d6"/>
+    <text x="52" y="256" class="lbl">Solar-wind volatiles</text>
+    <text x="52" y="271" class="lbl2">H · He-4 · Ar · trace C/N (dilute)</text>
+
+    <rect x="40" y="286" width="200" height="46" class="box" fill="#fff6d9" stroke="#e3c75a"/>
+    <text x="52" y="310" class="lbl">Sunlight (~89%)</text>
+    <text x="52" y="325" class="lbl2">energy — drives everything</text>
+  </g>
+
+  <!-- STAGE 1 BUILD LINE -->
+  <text x="300" y="112" class="stage">STAGE 1 — BUILD LINE (first)</text>
+  <rect x="300" y="124" width="210" height="208" class="box" fill="#e7f3ea" stroke="#9cc7a6"/>
+  <text x="312" y="148" class="lbl">M-Build — sinter / melt</text>
+  <text x="312" y="165" class="lbl2">laser &amp; concentrated solar</text>
+  <text x="312" y="180" class="lbl2">floors · walls · halls · silos ·</text>
+  <text x="312" y="194" class="lbl2">underground rooms</text>
+  <line x1="312" y1="206" x2="498" y2="206" stroke="#9cc7a6"/>
+  <text x="312" y="226" class="lbl">M-Cement / geopolymer</text>
+  <text x="312" y="242" class="lbl2">Ca-Al-Si binder, castable</text>
+  <text x="312" y="262" class="lbl2">→ raw material IS the product</text>
+  <text x="312" y="278" class="lbl2">→ no separation, no purity step</text>
+  <text x="312" y="300" class="note">porous → needs glass sealing</text>
+  <text x="312" y="316" class="note">(from the silica stream, later)</text>
+
+  <!-- STAGE 2 KEYSTONE -->
+  <text x="570" y="112" class="stage">STAGE 2 — KEYSTONE</text>
+  <rect x="570" y="124" width="210" height="208" class="box" fill="#e7eefb" stroke="#94aede"/>
+  <text x="582" y="150" class="lbl">M-MRE</text>
+  <text x="582" y="167" class="lbl2">Molten Regolith Electrolysis</text>
+  <text x="582" y="182" class="lbl2">~1600 °C · Ir / YSZ anode</text>
+  <text x="582" y="197" class="lbl2">self-heated, frozen-wall shell</text>
+  <line x1="582" y1="208" x2="768" y2="208" stroke="#94aede"/>
+  <text x="582" y="228" class="lbl2">RAW outputs:</text>
+  <text x="582" y="245" class="lbl2">• Oxygen (anode)</text>
+  <text x="582" y="261" class="lbl2">• Mixed metal alloys (cathode)</text>
+  <text x="582" y="277" class="lbl2">  Al/Fe · Fe/Si · Ca/Si/Al</text>
+  <text x="582" y="293" class="lbl2">• Ceramic slag</text>
+  <text x="582" y="316" class="note">builds more MRE reactors ↻</text>
+
+  <!-- STAGE 3 PURIFICATION -->
+  <text x="840" y="112" class="stage">STAGE 3 — PURIFICATION (per substance)</text>
+
+  <!-- gases -->
+  <rect x="840" y="124" width="320" height="92" class="box" fill="#eaf6fb" stroke="#8fc6dc"/>
+  <text x="852" y="144" class="lbl">Gases &amp; volatiles</text>
+  <text x="852" y="162" class="lbl2">O₂  → cryo-distillation → 99.5%+ (breathing)</text>
+  <text x="852" y="178" class="lbl2">H₂O → distil/filter → &gt;99%   |   H₂ → 99.9%+</text>
+  <text x="852" y="194" class="lbl2">H₂+O₂ → propellant   |   N₂/Ar → buffer gas</text>
+  <text x="852" y="210" class="lbl2">C, N → from ice/volatiles (dilute, may import)</text>
+
+  <!-- metals -->
+  <rect x="840" y="226" width="320" height="92" class="box" fill="#f3eefb" stroke="#b69cd6"/>
+  <text x="852" y="246" class="lbl">Metals</text>
+  <text x="852" y="264" class="lbl2">Al → electrorefining → up to 99.99%</text>
+  <text x="852" y="280" class="lbl2">Si → zone refining → 6N–9N (solar/electronic)</text>
+  <text x="852" y="296" class="lbl2">Fe / ferrosilicon → alloy IS the product</text>
+  <text x="852" y="312" class="lbl2">Ca, Mg → selective MSE (niche)</text>
+
+  <!-- ceramics/glass -->
+  <rect x="840" y="328" width="320" height="74" class="box" fill="#fbf1ea" stroke="#dcb38f"/>
+  <text x="852" y="348" class="lbl">Glass &amp; ceramics</text>
+  <text x="852" y="366" class="lbl2">Glass → domes, fibre, sealing, optics</text>
+  <text x="852" y="382" class="lbl2">Alumina (Al₂O₃) → high-temp parts, fibre</text>
+  <text x="852" y="397" class="lbl2">Ceramic slag → construction fill</text>
+
+  <!-- flows -->
+  <path class="flow" d="M240,147 H270 Q288,147 288,165 V206 H300" marker-end="url(#arr)"/>
+  <path class="flow" d="M240,201 H260 Q280,201 280,215 V228 H300" marker-end="url(#arr)"/>
+  <path class="flow" d="M240,309 H266 Q286,309 286,290 V250 H300" marker-end="url(#arr)"/>
+  <!-- build to MRE (energy/halls available) -->
+  <path class="flow" d="M510,228 H570" marker-end="url(#arr)"/>
+  <!-- inputs (regolith) also feeds MRE -->
+  <path class="flow" d="M240,147 H258 Q266,147 266,120 V108 Q266,96 540,96 Q558,96 558,150 V228 H570" marker-end="url(#arr)"/>
+  <!-- MRE to purification -->
+  <path class="flow" d="M780,170 H810 Q830,170 830,170 H840" marker-end="url(#arr)"/>
+  <path class="flow" d="M780,272 H840" marker-end="url(#arr)"/>
+  <path class="flow" d="M780,300 H812 Q828,300 828,340 H840" marker-end="url(#arr)"/>
+
+  <!-- NOT AT PEARY -->
+  <text x="40" y="400" class="stage">NOT (well) AVAILABLE AT PEARY — honest</text>
+  <rect x="40" y="412" width="1120" height="58" class="box" fill="#fbecec" stroke="#dca3a3"/>
+  <text x="56" y="434" class="lbl2">✗ Titanium — no ilmenite (imported)    ✗ High-grade iron — low FeO (by-product only)    ✗ Helium-3 — mare/ilmenite resource (~3 ppb highland vs ~6 ppb mare)</text>
+  <text x="56" y="454" class="lbl2">✗ Bulk carbon &amp; nitrogen — dilute (supplement from ice or import)    ✗ Chlorine / salt — scarce</text>
+
+  <!-- ORDER / GATES strip -->
+  <text x="40" y="512" class="stage">ORDERING — proof-driven, rolling build front</text>
+  <rect x="40" y="524" width="1120" height="120" class="box" fill="#f5f7fa" stroke="#c4cfdb"/>
+  <text x="56" y="552" class="lbl2">Energy first (per Pod) → build line (rough shells, no purity) → MRE keystone (raw O₂ + metals + slag) → purification factories (per-substance) → seal &amp; store → humans only when complete.</text>
+  <text x="56" y="574" class="lbl2">Each finished area is used immediately (rolling front). Heavy purification (zone-refined silicon, electrorefining) comes late, once power has grown across multiple Pods.</text>
+  <text x="56" y="600" class="lbl2" font-weight="700">Purity is set PER SUBSTANCE — not one fixed 99%:</text>
+  <text x="56" y="620" class="lbl2">high purity where function demands it (electronic Si, drinking water, breathing O₂) · alloy/mixture spec where a mixture is the product (structural metal, cement, slag).</text>
+
+  <text x="40" y="690" class="sub">* Local cold-trap ice at Peary is not yet confirmed. Items marked tentative throughout. All figures from terrestrial lab/simulant work and modelling — lunar performance unproven.</text>
+  <text x="40" y="710" class="sub">Sources: see processing-chain-peary.md and each M-module document. Licence: CC0.</text>
+</svg>

@@ -1,4 +1,4 @@
-# CMB-R1 Head — Thermal Buddy
+# CMB8LF-L1 Head — Thermal Buddy
 ## Chrystal Moon Base — Robot System Concept
 
 **Status:** Concept proposal  

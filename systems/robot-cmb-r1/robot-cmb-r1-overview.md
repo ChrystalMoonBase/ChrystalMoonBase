@@ -1,4 +1,4 @@
-# CMB-R1 Construction Robot — Overview
+# CMB8LF-L1 Construction Robot — Overview
 ## Chrystal Moon Base — Robot System Concept
 
 **Status:** Concept proposal — not yet prototyped  
@@ -11,17 +11,17 @@
 
 ## Design Philosophy
 
-The CMB-R1 is designed around one principle: **no single failure should stop the mission.**
+The CMB8LF-L1 is designed around one principle: **no single failure should stop the mission.**
 
 Every component that can fail has a fallback. Every robot that breaks can be compensated for by its teammates. Every leg that is damaged can be discarded. The AI continuously recalculates around whatever is still working.
 
-A modern car contains hundreds of sensors, cameras, computers, and actuators — all invisible, all integrated, all working simultaneously. The CMB-R1 follows the same principle: **everything that can be integrated, should be integrated.** The robot does not swap heads to see, to measure, or to think. It always sees. It always measures. It always thinks.
+A modern car contains hundreds of sensors, cameras, computers, and actuators — all invisible, all integrated, all working simultaneously. The CMB8LF-L1 follows the same principle: **everything that can be integrated, should be integrated.** The robot does not swap heads to see, to measure, or to think. It always sees. It always measures. It always thinks.
 
 ---
 
 ## Core Concept: One Chassis, All Capabilities
 
-All CMB-R1 robots share an **identical chassis** with all sensing, communication, and power reception capabilities permanently integrated. The robot is a complete autonomous platform at all times — not a carrier for interchangeable modules.
+All CMB8LF-L1 robots share an **identical chassis** with all sensing, communication, and power reception capabilities permanently integrated. The robot is a complete autonomous platform at all times — not a carrier for interchangeable modules.
 
 **Permanently integrated (always present on every robot):**
 - Full sensor suite — thermal camera, LiDAR, ground-penetrating radar, stereo cameras, dust counter, radiation dosimeter, microseismometer
@@ -58,7 +58,7 @@ This is explicitly left open for engineers to resolve based on prototyping and t
 
 ## Physical Description
 
-The CMB-R1 is an **octopod** — eight legs. The front two legs are dual-function limbs capable of operating as arms when the robot lowers its body and transfers weight to the remaining six legs.
+The CMB8LF-L1 is an **octopod** — eight legs. The front two legs are dual-function limbs capable of operating as arms when the robot lowers its body and transfers weight to the remaining six legs.
 
 | Parameter | Estimate |
 |---|---|
@@ -73,7 +73,7 @@ The CMB-R1 is an **octopod** — eight legs. The front two legs are dual-functio
 
 ## Laser Power Reception
 
-Each robot receives power wirelessly via laser from the mast BSMs. Distributed GaAs receiver panels on the chassis and upper leg segments convert the laser beam to electricity. The AI selects the optimal BSM (at 11 m, 22 m, 33 m, 44 m, or 55 m) for each robot based on its current position. Receiver panels tilt automatically to optimise angle of incidence. Operational range: **2+ km** from mast base in vacuum.
+Each robot receives power wirelessly via laser from the mast BSMs. Distributed GaAs receiver panels on the chassis and upper leg segments convert the laser beam to electricity. The AI selects the optimal BSM (at ~7, 14, 21, 28, or 35 m on the 35 m mast) for each robot based on its current position. Receiver panels tilt automatically to optimise angle of incidence. Operational range: **2+ km** from mast base in vacuum.
 
 ---
 

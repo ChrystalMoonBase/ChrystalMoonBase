@@ -133,7 +133,7 @@ The magnetically levitated bearing at the mast base allows the entire mast to ro
 
 Vertical film surfaces are less prone to dust accumulation than horizontal ones — gravity (1/6 g) acts continuously to pull loose particles downward. Primary risk remains electrostatic adhesion. Mitigation strategies:
 
-1. **Robot cleaning** — CMB-R1 robot with soft brush attachment cleans film surface periodically
+1. **Robot cleaning** — CMB8LF-L1 robot with soft brush attachment cleans film surface periodically
 2. **Electrostatic mitigation** — alternating voltage on transparent electrodes mobilises dust particles
 3. **Gravity assistance** — vertical orientation assists passive dust removal
 

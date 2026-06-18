@@ -1,6 +1,6 @@
 # Changelog — Chrystal Moon Base
 
-## [Unreleased] — CMB8LF v1 Revision 6
+## [Unreleased] — CMB8LF-S1 Revision 6
 
 ### CMB8LF_v1 — Complete Architecture Revision
 

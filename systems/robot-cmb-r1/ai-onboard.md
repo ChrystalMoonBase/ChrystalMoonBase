@@ -1,4 +1,4 @@
-# CMB-R1 Onboard AI
+# CMB8LF-L1 Onboard AI
 ## Chrystal Moon Base — Robot Intelligence Concept
 
 **Status:** Concept proposal — no software implementation exists  
@@ -9,7 +9,7 @@
 
 ## Overview
 
-Each CMB-R1 robot runs its own onboard AI — Level 1 in the three-level AI architecture described in SWARM-LOGIC.md. This AI handles everything that requires real-time response: locomotion, balance, tool head operation, local fault response, and hibernation management.
+Each CMB8LF-L1 robot runs its own onboard AI — Level 1 in the three-level AI architecture described in SWARM-LOGIC.md. This AI handles everything that requires real-time response: locomotion, balance, tool head operation, local fault response, and hibernation management.
 
 The onboard AI is designed around one requirement: **the robot must remain useful even when completely isolated.** If the mast communication link is lost, if the swarm coordinator fails, if Earth cannot be reached — the individual robot continues operating on its last known task assignment until contact is restored or a pre-programmed emergency response triggers.
 

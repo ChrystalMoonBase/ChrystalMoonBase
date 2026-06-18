@@ -1,4 +1,4 @@
-# CMB-R1 Head — Bulldozer
+# CMB8LF-L1 Head — Bulldozer
 ## Chrystal Moon Base — Robot System Concept
 
 **Status:** Concept proposal  

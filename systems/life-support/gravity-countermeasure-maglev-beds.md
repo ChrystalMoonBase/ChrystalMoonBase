@@ -23,9 +23,9 @@ For permanent lunar residents who never return to Earth, the long-term effects o
 
 ## The Concept
 
-A circular maglev track, built underground adjacent to the sleep habitat domes, carries individual sleeping pods rotating continuously at a speed that generates centrifugal acceleration equivalent to 1g at the sleeping position.
+A circular maglev track, built underground adjacent to the sleep habitat domes, carries individual sleeping pods rotating continuously to generate centrifugal "gravity" at the sleeping position. (The achievable g-level depends on radius and rpm — see Physics; the original 1 g claim was a calculation error.)
 
-Residents sleep in their pod every night. Eight hours of 1g-equivalent loading on the skeleton and muscles, automatically, without any effort or time cost beyond normal sleep.
+Residents sleep in their pod every night. Eight hours of partial-gravity loading on the skeleton and muscles (target g to be decided — see Physics), automatically, without any effort or time cost beyond normal sleep.
 
 ---
 
@@ -38,14 +38,33 @@ Where:
 - ω = angular velocity (radians/second)
 - r = radius of the circular track to the sleeping position
 
-| Track radius | Required rotation | Notes |
-|---|---|---|
-| 10 m | 2.97 rpm | Upper limit of comfortable rotation — Coriolis noticeable |
-| 15 m | 2.43 rpm | Comfortable for most people |
-| 20 m | 2.10 rpm | Well within comfort range |
-| 30 m | 1.71 rpm | Very comfortable, larger tunnel |
+**Corrected figures (the earlier table was wrong by ~3× in rpm).**
+For 1 g (9.81 m/s²): rpm = (60 / 2π) × √(a / r).
 
-**Recommended radius: 20 metres** (40 metre diameter circular tunnel). At this radius, 2.1 rpm produces exactly 1g at the outer sleeping surface, and the Coriolis effect is below the threshold that causes dizziness or nausea for most people.
+| Track radius | Rotation for **1 g** | Rotation for **0.5 g** | Comfort note |
+|---|---|---|---|
+| 10 m | **9.5 rpm** | 6.7 rpm | far above the comfort limit |
+| 15 m | **7.7 rpm** | 5.5 rpm | uncomfortable |
+| 20 m | **6.7 rpm** | 4.7 rpm | uncomfortable for most |
+| 30 m | **5.5 rpm** | 3.9 rpm | borderline |
+| ~112 m | 3.0 rpm | 2.1 rpm | approaching comfortable, but huge tunnel |
+| ~224 m | 2.1 rpm | 1.5 rpm | comfortable, but a ~450 m tunnel |
+
+> **The hard trade — stated honestly.** The earlier claim that "20 m at 2.1 rpm
+> produces 1 g" is wrong: 2.1 rpm at 20 m gives only **~0.10 g** — *less than the
+> Moon's own 0.17 g*, i.e. useless as a countermeasure. Rotating-habitat research
+> generally treats **≤ ~2 rpm** as comfortable for sleep and **> ~4–6 rpm** as
+> likely to cause motion sickness. You cannot have all three of: comfortable rpm,
+> a useful g-level, and a buildable radius. A true-1 g ring at comfortable rpm needs
+> a radius around **200 m** (a ~450 m tunnel). A buildable ~20–30 m ring can only
+> reach a useful g by spinning fast enough to make sleep difficult.
+>
+> **This needs a design decision (yours):** pick a realistic *target g* and accept
+> the consequence — e.g. a modest partial-g ring at higher rpm, a large-radius ring,
+> or dropping the sleeping ring in favour of the compression suit + resistance
+> exercise (which carry no radius/rpm problem). Until that decision is made, treat
+> the maglev sleeping ring as an **unproven concept with an unresolved geometry**,
+> not a validated 1 g solution.
 
 **Pod orientation:** The sleeping pod is oriented radially — feet toward the center of the circle, head toward the outside. Centrifugal force pushes the sleeper toward their feet (head end of the bed) — this is the correct orientation for simulating gravity. The sleeper lies on their back as normal, and feels pressed into the mattress at 1g.
 
@@ -90,7 +109,7 @@ The maglev sleeping ring is one element of a complete gravity countermeasure sys
 
 | Period | Countermeasure | G-equivalent |
 |---|---|---|
-| Sleep (8 hrs) | Maglev sleeping ring | 1g passive |
+| Sleep (8 hrs) | Maglev sleeping ring | partial-g (target TBD) |
 | Waking hours | Compression suit | Partial (20–60%) |
 | Exercise (1 hr) | Resistance training | Variable |
 

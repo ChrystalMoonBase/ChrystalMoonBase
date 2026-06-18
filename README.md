@@ -5,7 +5,7 @@
 No flags. No patents. Built for all of humanity.
 
 **Website:** https://chrystalmoonbase.com
-**Licence:** Hardware: CERN-OHL-S-2.0 · Documents: CC0 · Software: GPL-3.0
+**Licence:** Hardware: CERN-OHL-S-2.0 · Documents: CC0 · Software: Proprietary (not published)
 **Status:** Phase 0 — Earth demonstrators (concept and planning stage)
 **ESA OSIP:** Qualified — Open for Discussion · 2026
 
@@ -15,12 +15,14 @@ No flags. No patents. Built for all of humanity.
 
 Chrystal Moon Base is an open-source concept for building a permanent human settlement on the lunar north pole (Peary Crater rim, 88.63°N) using:
 
-- **Autonomous octopod robots** (CMB-R1) — 16 robots powered by laser beamed from a ~35-metre solar mast
+- **Autonomous octopod robots** (CMB8LF-L1) — 16 robots powered by laser beamed from a ~35-metre solar mast
 - **In-situ laser sintering** — fusing Peary highland regolith (anorthosite) into structural sintered glass-ceramic floors, walls, and dome foundations
 - **600 m² roll-out CIGS solar system** — ~104–143 kW continuous power
-- **Local material processing** — 13 processing modules extracting glass, titanium, aluminium, oxygen, water from the Moon
-- **Multi-layer glass domes** — titanium-reinforced, self-sealing habitats for permanent human residents
+- **Local material processing** — 13 processing modules extracting glass, aluminium, oxygen, silicon, and (pending confirmed ice) water from the Moon
+- **Multi-layer glass domes** — aluminium-reinforced, self-sealing habitats for permanent human residents
 - **Maglev transport** — connecting all base facilities
+
+> **Materials note:** Peary is highland / anorthosite terrain — aluminium-, silicon-, calcium- and oxygen-rich, but iron- and titanium-poor. Aluminium (not titanium) is the local structural metal. See `PEARY-MATERIALS-REFERENCE.md`.
 
 ---
 
@@ -33,9 +35,9 @@ Just a man with a dream — researched and grounded in current science and techn
 
 ---
 
-## CMB8LF v1 — Scale Prototype
+## CMB8LF-S1 — Scale Prototype
 
-The **CMB8LF v1** (Chrystal Moon Base 8 Legged Freaks, version 1) is a 1:3.5 scale prototype of the CMB-R1 lunar robot. It is the door that opens all other doors — a fully functional demonstrator that proves the concept physically.
+The **CMB8LF-S1** (Chrystal Moon Base 8 Legged Freaks, version 1) is a 1:3.5 scale prototype of the CMB8LF-L1 lunar robot. It is the door that opens all other doors — a fully functional demonstrator that proves the concept physically.
 
 **Key specifications:**
 - 26× brushless BLDC motors with moteus r4.11 CAN controllers
@@ -73,10 +75,10 @@ roadmap/
 
 systems/
   CMB8LF_v1/          ← Scale prototype robot (BUILD THIS FIRST)
-    software/         All firmware (MicroPython + Python)
-    cad/              All 3D models (OpenSCAD)
+    cad/              All 3D models (OpenSCAD) — open hardware
     docs/             BOM, assembly, shopping list
     diagrams/         Wiring, system overview
+    (software is proprietary and kept in a separate private repository)
   robot-cmb-r1/       Lunar robot concept specification
   sintering/          Laser sintering physics
   pod/                MAST-POD — mast, solar, laser, anchoring
@@ -96,7 +98,7 @@ public/               Website source (chrystalmoonbase.com)
 
 | Phase | Status |
 |---|---|
-| Phase 0 — CMB8LF v1 prototype | **Active development** |
+| Phase 0 — CMB8LF-S1 prototype | **Active development** |
 | Phase 0 — Earth demonstrators | Planning |
 | Phase 0.2 — The Pod | Concept proposal |
 | Phase 1+ | Long-term concept |

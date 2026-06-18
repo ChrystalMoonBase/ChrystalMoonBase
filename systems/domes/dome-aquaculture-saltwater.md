@@ -19,7 +19,7 @@ Two domes rather than one provides redundancy — if one dome has a disease outb
 
 Saltwater fish species available for aquaculture — sea bass, sea bream, turbot, tilapia (technically freshwater but salt-tolerant), and others — provide high-quality complete protein with a different nutritional profile than freshwater species. Dietary diversity is medically important for permanent residents. It is also psychologically important — monotonous food is a significant quality-of-life problem in isolated environments.
 
-The salt itself — sodium chloride — is present in lunar regolith as a minor mineral component and can be extracted and refined. The saltwater ecosystem is therefore sustainable from local resources in the long term.
+**Salt supply (honest caveat — corrected):** earlier text claimed sodium chloride could be extracted locally. This is unsupported: chlorine is scarce on the Moon (highland regolith holds only tens of ppm Cl), so making 3.5%-salinity seawater for whole domes is NOT sustainable from local resources. Salt should be treated as an IMPORT item, or saltwater aquaculture deferred to a later/optional phase. Sodium is locally available (as Na₂O in feldspar) but the chloride is the limiting element.
 
 ---
 
@@ -68,7 +68,7 @@ Estimated diameter: 25–35 metres. The dome must be large enough to contain:
 
 ## Water Source
 
-Saltwater is produced by dissolving extracted lunar salt in base-produced water. The salinity is maintained at approximately 3.5% — Earth ocean equivalent — which suits most marine aquaculture species. Water is recirculated with minimal loss. Salt losses from the system are minimal and replenished from the salt extraction process.
+Saltwater is produced by dissolving imported salt in base-produced water (see salt caveat above — local chlorine is too scarce to supply this). Salinity is maintained at ~3.5% (Earth ocean equivalent). Water is recirculated with minimal loss; the modest salt losses are replenished from the imported reserve.
 
 ---
 

@@ -10,7 +10,7 @@
 
 The Moon has no global magnetic field and no atmosphere. The surface is exposed to:
 
-**Galactic Cosmic Rays (GCR):** High-energy particles from outside the solar system. Continuous flux, difficult to shield against because high-energy particles produce secondary radiation when they interact with shielding material. The dose rate on the lunar surface is approximately 380 mSv/year — about 200× the average dose for a person on Earth.
+**Galactic Cosmic Rays (GCR):** High-energy particles from outside the solar system. Continuous flux, difficult to shield against because high-energy particles produce secondary radiation when they interact with shielding material. The dose rate on the lunar surface is approximately 380 mSv/year (a solar-minimum GCR figure; published estimates range ~200–840 mSv/year by definition and solar phase) — roughly 150× the average Earth background dose and about 19× the annual limit for a radiation worker.
 
 **Solar Energetic Particles (SEP):** Bursts of high-energy particles from solar flares and coronal mass ejections. Sporadic but potentially very high dose rate during events — a major SEP event can deliver a dangerous dose in hours.
 
