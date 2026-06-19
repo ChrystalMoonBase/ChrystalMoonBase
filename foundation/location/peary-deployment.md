@@ -19,14 +19,16 @@ Each pod sits on a PEL, harvesting solar power and relaying communications. Sint
 
 ![Peary Crater Pod Deployment Map](peary-deployment-map.svg)
 
-*Deployment schematic — four peak pods on the crater rim, sintered regolith road network, central ⌀ 505 m convergence zone.*  
+*Deployment schematic — four candidate peaks on the crater rim (pods deployed sequentially, one proven before the next), sintered regolith road network, central ⌀ 505 m convergence zone.*  
 *Hosted interactive version: [chrystalmoonbase.com/peary-deployment](https://chrystalmoonbase.com/peary-deployment)*
 
 ---
 
 ## Pod Positions
 
-All four pods are positioned at candidate high-illumination peaks on the Peary rim, based on Bussey et al. (2005), Noda et al. (2008) and Mazarico et al. (2011) illumination data. The ~89% figure is the best measured peak; the four candidate peaks range roughly 86–94% depending on peak and study.
+Four candidate high-illumination peaks on the Peary rim have been identified, based on Bussey et al. (2005), Noda et al. (2008) and Mazarico et al. (2011) illumination data. The ~89% figure is the best measured peak; the four candidate peaks range roughly 86–94% depending on peak and study.
+
+**Deployment is sequential, not simultaneous.** Pod 1 lands first and must prove autonomous operation before Pod 2 is sent; capability grows pod by pod (see `../../roadmap/growth-model-gated.md`). The table below lists the candidate peaks and the intended deployment *order* — not four pods arriving at once.
 
 | Pod   | Peak (informal)  | Rim azimuth | Illumination |
 |-------|------------------|-------------|--------------|

@@ -43,7 +43,7 @@ titanium at all.
 
 ---
 
-## The transport problem (open — your "4 pods" concern)
+## The transport problem (open — your multiple-pods concern)
 
 Moving material between a mare site and Peary would likely use a maglev line. Maglev
 is near-frictionless (vacuum, levitation), so *holding a load at speed* costs almost
@@ -56,7 +56,7 @@ nothing. The real costs are:
   along the line. (On Earth you regenerate braking energy into the grid; here there
   is no grid to feed.)
 
-So the intuition that "4 pods probably can't all be pulled with energy at once" is
+So the intuition that "several pods probably can't all be pulled with energy at once" is
 **well-founded** — not because of levitation, but because of acceleration peak power
 and the absence of a trackside grid. Likely directions: fewer pods at once, lighter
 loads, or a phased route with solar/charging stations. **This is engineering
