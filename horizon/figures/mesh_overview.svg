@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <radialGradient id="crater" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#15110d"/><stop offset="0.7" stop-color="#2a241d"/><stop offset="1" stop-color="#3c352b"/></radialGradient>
+    <radialGradient id="podg" cx="0.5" cy="0.4" r="0.6"><stop offset="0" stop-color="#ffe9a8"/><stop offset="1" stop-color="#e0a93c"/></radialGradient>
+    <marker id="a2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2c8fb0"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1100" height="640" fill="#f4f1ea"/>
+  <text x="40" y="46" font-size="26" font-weight="700" fill="#222">CMB HORIZON — Four-peak mesh (Peary, 88.6N)</text>
+  <text x="40" y="72" font-size="14" fill="#665e54">4 energetically INDEPENDENT Pods · linked for COMMUNICATION/coordination · not for energy — SPECULATIVE</text>
+  <ellipse cx="540" cy="350" rx="380" ry="250" fill="url(#crater)"/>
+  <ellipse cx="540" cy="350" rx="380" ry="250" fill="none" stroke="#6b5e4a" stroke-width="3" stroke-dasharray="2 6"/>
+  <text x="540" y="356" font-size="15" fill="#7c6f58" text-anchor="middle">Peary crater · &#8960; ~73 km</text>
+  <text x="540" y="378" font-size="12" fill="#5f5544" text-anchor="middle">(floor partly permanently shadowed, ~30-40 K)</text>
+  <g stroke="#2c8fb0" stroke-width="3">
+    <line x1="540" y1="110" x2="900" y2="350"/><line x1="900" y1="350" x2="540" y2="590"/>
+    <line x1="540" y1="590" x2="180" y2="350"/><line x1="180" y1="350" x2="540" y2="110"/></g>
+  <g stroke="#2c8fb0" stroke-width="2" stroke-dasharray="7 6" opacity="0.7">
+    <line x1="540" y1="110" x2="540" y2="590"/><line x1="180" y1="350" x2="900" y2="350"/></g>
+  <g font-size="14" font-weight="700" text-anchor="middle">
+    <circle cx="540" cy="110" r="30" fill="url(#podg)" stroke="#a9791f" stroke-width="2"/><text x="540" y="115" fill="#5a3f10">POD 1</text>
+    <circle cx="900" cy="350" r="30" fill="url(#podg)" stroke="#a9791f" stroke-width="2"/><text x="900" y="355" fill="#5a3f10">POD 2</text>
+    <circle cx="540" cy="590" r="30" fill="url(#podg)" stroke="#a9791f" stroke-width="2"/><text x="540" y="595" fill="#5a3f10">POD 3</text>
+    <circle cx="180" cy="350" r="30" fill="url(#podg)" stroke="#a9791f" stroke-width="2"/><text x="180" y="355" fill="#5a3f10">POD 4</text></g>
+  <g font-size="11" fill="#7c6f58" text-anchor="middle">
+    <text x="540" y="66">peak of (near-)eternal light — narrow ridge</text>
+    <text x="980" y="350">peak 2</text><text x="540" y="636">peak 3</text><text x="100" y="350">peak 4</text></g>
+  <rect x="40" y="92" width="260" height="120" rx="8" fill="#ffffff" stroke="#ddd6cc" opacity="0.96"/>
+  <text x="56" y="114" font-size="13" font-weight="700" fill="#222">Legend</text>
+  <line x1="56" y1="132" x2="96" y2="132" stroke="#2c8fb0" stroke-width="3"/>
+  <text x="104" y="136" font-size="11.5" fill="#333">mesh ring (4 links) — communication</text>
+  <line x1="56" y1="154" x2="96" y2="154" stroke="#2c8fb0" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="104" y="158" font-size="11.5" fill="#333">diagonals (optional, redundancy)</text>
+  <circle cx="66" cy="178" r="8" fill="url(#podg)" stroke="#a9791f"/>
+  <text x="104" y="182" font-size="11.5" fill="#333">independent Pod (sun+storage+robots)</text>
+  <text x="56" y="202" font-size="10.5" fill="#8a3b3b">NO energy across the crater — only knowledge</text>
+  <rect x="812" y="92" width="248" height="160" rx="8" fill="#ffffff" stroke="#ddd6cc" opacity="0.96"/>
+  <text x="828" y="114" font-size="13" font-weight="700" fill="#222">Why this solves the</text>
+  <text x="828" y="132" font-size="13" font-weight="700" fill="#222">shadow problem</text>
+  <text x="828" y="154" font-size="11" fill="#333">Sun circles low around the horizon &#8594;</text>
+  <text x="828" y="169" font-size="11" fill="#333">one peak in shadow, another in light.</text>
+  <text x="828" y="187" font-size="11" fill="#333">4 spread Pods cover each other's</text>
+  <text x="828" y="202" font-size="11" fill="#333">dark moments.</text>
+  <text x="828" y="223" font-size="11" fill="#2c6a85">Combined illumination &gt; any single</text>
+  <text x="828" y="238" font-size="11" fill="#2c6a85">peak — without energy transport.</text>
+  <text x="40" y="628" font-size="11" fill="#665e54">Links laid underground by the melt-mole · Pods = coordination nodes AND navigation beacons for the mole.</text>
+</svg>

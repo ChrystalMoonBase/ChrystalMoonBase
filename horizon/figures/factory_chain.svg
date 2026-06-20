@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 760" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="flow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 Z" fill="#444"/></marker>
+    <linearGradient id="exist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d7cdbb"/><stop offset="1" stop-color="#c3b69d"/></linearGradient>
+    <linearGradient id="newf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe6ef"/><stop offset="1" stop-color="#a9d2e2"/></linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2d9b0"/><stop offset="1" stop-color="#e6bd7e"/></linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1180" height="760" fill="#f4f1ea"/>
+  <text x="40" y="46" font-size="26" font-weight="700" fill="#222">CMB HORIZON — Regolith-to-cable factory chain</text>
+  <text x="40" y="72" font-size="14" fill="#665e54">Existing MRE chain &#8594; 4 new modules (F1-F4) &#8594; field deployment (mole) — one feedstock, three functions — SPECULATIVE</text>
+
+  <!-- legend -->
+  <rect x="40" y="92" width="20" height="14" fill="url(#exist)" stroke="#a89878"/><text x="68" y="104" font-size="12" fill="#333">existing CMB module</text>
+  <rect x="250" y="92" width="20" height="14" fill="url(#newf)" stroke="#7fb4cb"/><text x="278" y="104" font-size="12" fill="#333">NEW module (F1-F4)</text>
+  <rect x="470" y="92" width="20" height="14" fill="url(#field)" stroke="#cda35f"/><text x="498" y="104" font-size="12" fill="#333">field system (no factory)</text>
+
+  <!-- ===== ROW 1: feedstock to aluminium ===== -->
+  <!-- regolith -->
+  <rect x="40" y="140" width="150" height="92" rx="10" fill="url(#exist)" stroke="#a89878" stroke-width="1.5"/>
+  <text x="115" y="170" font-size="14" font-weight="700" fill="#3b3326" text-anchor="middle">Regolith</text>
+  <text x="115" y="190" font-size="11" fill="#5b5142" text-anchor="middle">anorthite (highland,</text>
+  <text x="115" y="205" font-size="11" fill="#5b5142" text-anchor="middle">Peary terrain)</text>
+  <text x="115" y="223" font-size="10.5" fill="#7a6f5c" text-anchor="middle">excavation + beneficiation</text>
+
+  <!-- MRE -->
+  <rect x="240" y="140" width="170" height="92" rx="10" fill="url(#exist)" stroke="#a89878" stroke-width="1.5"/>
+  <text x="325" y="166" font-size="14" font-weight="700" fill="#3b3326" text-anchor="middle">MRE keystone</text>
+  <text x="325" y="184" font-size="11" fill="#5b5142" text-anchor="middle">Molten Regolith</text>
+  <text x="325" y="198" font-size="11" fill="#5b5142" text-anchor="middle">Electrolysis &gt;1600C</text>
+  <text x="325" y="220" font-size="10.5" fill="#7a6f5c" text-anchor="middle">Fe &#8594; Si &#8594; Al  (+ O2)</text>
+
+  <!-- splitter outputs -->
+  <rect x="240" y="260" width="170" height="40" rx="8" fill="#efe7d7" stroke="#c3b69d"/>
+  <text x="325" y="278" font-size="10.5" fill="#5b5142" text-anchor="middle">by-products &#8594; glass/ceramic</text>
+  <text x="325" y="292" font-size="10.5" fill="#5b5142" text-anchor="middle">(anorthite, slag) + O2</text>
+
+  <!-- F1 foundry -->
+  <rect x="460" y="140" width="170" height="92" rx="10" fill="url(#newf)" stroke="#7fb4cb" stroke-width="2"/>
+  <text x="545" y="162" font-size="13" font-weight="700" fill="#1f5066" text-anchor="middle">F1 · Foundry</text>
+  <text x="545" y="180" font-size="11" fill="#2c6a85" text-anchor="middle">continuous casting</text>
+  <text x="545" y="196" font-size="11" fill="#444" text-anchor="middle">pure Al &#8594; wire rod</text>
+  <text x="545" y="216" font-size="10" fill="#2f7a3a" text-anchor="middle">+ vacuum = no oxidation</text>
+  <text x="545" y="228" font-size="10" fill="#9c4416" text-anchor="middle">- cooling: radiation only</text>
+
+  <!-- F2 rolling -->
+  <rect x="680" y="140" width="170" height="92" rx="10" fill="url(#newf)" stroke="#7fb4cb" stroke-width="2"/>
+  <text x="765" y="162" font-size="13" font-weight="700" fill="#1f5066" text-anchor="middle">F2 · Rolling/extrusion</text>
+  <text x="765" y="182" font-size="11" fill="#444" text-anchor="middle">rod &#8594; thin wire rod</text>
+  <text x="765" y="202" font-size="10" fill="#2f7a3a" text-anchor="middle">+ inert vacuum</text>
+  <text x="765" y="216" font-size="10" fill="#9c4416" text-anchor="middle">- heat management</text>
+
+  <!-- F3 wire drawing -->
+  <rect x="900" y="140" width="240" height="92" rx="10" fill="url(#newf)" stroke="#7fb4cb" stroke-width="2"/>
+  <text x="1020" y="162" font-size="13" font-weight="700" fill="#1f5066" text-anchor="middle">F3 · Wire drawing + ANNEALING</text>
+  <text x="1020" y="182" font-size="11" fill="#444" text-anchor="middle">wire rod &#8594; cable (to size)</text>
+  <text x="1020" y="200" font-size="10" fill="#444" text-anchor="middle">annealing = ESSENTIAL (flex, anti-brittle)</text>
+  <text x="1020" y="216" font-size="10" fill="#9c4416" text-anchor="middle">- die wear (abrasion) · MoS2 vacuum lube</text>
+
+  <!-- ===== ROW 2: insulation + field ===== -->
+  <!-- F4 jacket -->
+  <rect x="900" y="300" width="240" height="100" rx="10" fill="url(#newf)" stroke="#7fb4cb" stroke-width="2"/>
+  <text x="1020" y="324" font-size="13" font-weight="700" fill="#1f5066" text-anchor="middle">F4 · Jacket / insulation</text>
+  <text x="1020" y="344" font-size="11" fill="#444" text-anchor="middle">cable + regolith glass/fibre/ceramic</text>
+  <text x="1020" y="360" font-size="11" fill="#444" text-anchor="middle">&#8594; insulated cable</text>
+  <text x="1020" y="380" font-size="10" fill="#2c6a85" text-anchor="middle">enamel glass / glass-fibre wrap / alumina</text>
+  <text x="1020" y="393" font-size="10" fill="#9c4416" text-anchor="middle">brittle glass &#8594; fibre or thin enamel</text>
+
+  <!-- field mole -->
+  <rect x="460" y="430" width="390" height="120" rx="12" fill="url(#field)" stroke="#cda35f" stroke-width="2.5"/>
+  <text x="655" y="456" font-size="15" font-weight="700" fill="#7a4f15" text-anchor="middle">FIELD · CMB8LF-B1 (new BORE/BURROW class)</text>
+  <text x="655" y="478" font-size="11.5" fill="#5b3d12" text-anchor="middle">melt head (reuse sinter laser) + grip (peristaltic / WC spikes)</text>
+  <text x="655" y="494" font-size="11.5" fill="#5b3d12" text-anchor="middle">+ heat shield + IMU + cable feed-through</text>
+  <text x="655" y="514" font-size="11" fill="#7a5a14" text-anchor="middle">lays glass conduit + cable underground, during production</text>
+  <text x="655" y="532" font-size="10.5" fill="#8a6a24" text-anchor="middle">"horizontal cousin of the sinter robot" · slow = feature</text>
+
+  <!-- ===== FLOW ARROWS ===== -->
+  <g stroke="#444" stroke-width="2.5" fill="none">
+    <line x1="190" y1="186" x2="236" y2="186" marker-end="url(#flow)"/>
+    <line x1="410" y1="186" x2="456" y2="186" marker-end="url(#flow)"/>
+    <line x1="630" y1="186" x2="676" y2="186" marker-end="url(#flow)"/>
+    <line x1="850" y1="186" x2="896" y2="186" marker-end="url(#flow)"/>
+    <!-- F3 down to F4 -->
+    <line x1="1020" y1="232" x2="1020" y2="296" marker-end="url(#flow)"/>
+    <!-- by-products to F4 -->
+    <path d="M410,280 C 700,280 760,330 896,340" marker-end="url(#flow)"/>
+    <!-- F4 to mole (field) -->
+    <path d="M900,360 C 760,400 760,420 850,460" marker-end="url(#flow)"/>
+  </g>
+  <text x="560" y="274" font-size="10.5" fill="#2c6a85">by-products &#8594; insulation feedstock (F4)</text>
+  <text x="700" y="430" font-size="10.5" fill="#7a4f15">insulated cable &#8594; field</text>
+
+  <!-- ===== OUTPUT ===== -->
+  <rect x="40" y="430" width="380" height="120" rx="12" fill="#eef4ee" stroke="#9cc6a4" stroke-width="2"/>
+  <text x="230" y="456" font-size="15" font-weight="700" fill="#2f6a3a" text-anchor="middle">OUTPUT · Buried glass conduit + cable</text>
+  <text x="230" y="478" font-size="11.5" fill="#3a5b3f" text-anchor="middle">smooth annealed-glass duct, cable loose inside</text>
+  <text x="230" y="496" font-size="11" fill="#3a5b3f" text-anchor="middle">replaceable/upgradeable (duct principle)</text>
+  <text x="230" y="514" font-size="11" fill="#3a5b3f" text-anchor="middle">thermally stable underground · doesn't stick</text>
+  <text x="230" y="534" font-size="10.5" fill="#5a7a5f" text-anchor="middle">links the 4 Pods into the communication mesh</text>
+  <g stroke="#444" stroke-width="2.5" fill="none"><line x1="460" y1="490" x2="424" y2="490" marker-end="url(#flow)"/></g>
+
+  <!-- ===== ONE FEEDSTOCK THREE FUNCTIONS banner ===== -->
+  <rect x="40" y="590" width="1100" height="150" rx="10" fill="#ffffff" stroke="#ddd6cc"/>
+  <text x="60" y="616" font-size="15" font-weight="700" fill="#222">One feedstock (regolith), three functions:</text>
+  <g font-size="12.5">
+    <rect x="60" y="632" width="340" height="92" rx="8" fill="#fbf3e3" stroke="#e6cfa0"/>
+    <text x="76" y="654" font-weight="700" fill="#7a5a14">1 · CONDUCTOR</text>
+    <text x="76" y="676" fill="#444">Aluminium from anorthite (MRE)</text>
+    <text x="76" y="694" fill="#444">~60% of copper, light, mineable</text>
+    <text x="76" y="712" fill="#9c4416" font-size="11">tension: full metal plant ~311 kW vs CMB 104-143 kW &#8594; phase</text>
+
+    <rect x="420" y="632" width="340" height="92" rx="8" fill="#eaf3f7" stroke="#a9d2e2"/>
+    <text x="436" y="654" font-weight="700" fill="#1f5066">2 · TUNNEL (conduit)</text>
+    <text x="436" y="676" fill="#444">Melted regolith glass</text>
+    <text x="436" y="694" fill="#444">smooth annealed wall, tough</text>
+    <text x="436" y="712" fill="#9c4416" font-size="11">brittle by character &#8594; ok for slow/light load</text>
+
+    <rect x="780" y="632" width="360" height="92" rx="8" fill="#eef4ee" stroke="#9cc6a4"/>
+    <text x="796" y="654" font-weight="700" fill="#2f6a3a">3 · JACKET (insulation)</text>
+    <text x="796" y="676" fill="#444">Regolith glass-fibre / anorthite ceramic</text>
+    <text x="796" y="694" fill="#444">low dielectric const., high strength</text>
+    <text x="796" y="712" fill="#9c4416" font-size="11">often minimal: vacuum conduit = no air/moisture</text>
+  </g>
+</svg>

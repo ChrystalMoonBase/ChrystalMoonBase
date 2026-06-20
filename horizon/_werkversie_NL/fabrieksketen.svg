@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 760" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="flow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8 Z" fill="#444"/></marker>
+    <linearGradient id="exist" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d7cdbb"/><stop offset="1" stop-color="#c3b69d"/></linearGradient>
+    <linearGradient id="newf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe6ef"/><stop offset="1" stop-color="#a9d2e2"/></linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2d9b0"/><stop offset="1" stop-color="#e6bd7e"/></linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1180" height="760" fill="#f4f1ea"/>
+  <text x="40" y="46" font-size="26" font-weight="700" fill="#222">CMB HORIZON — Regoliet-tot-kabel fabrieksketen</text>
+  <text x="40" y="72" font-size="14" fill="#665e54">Bestaande MRE-keten &#8594; 4 nieuwe modules (F1-F4) &#8594; veld-inzet (worm) — &#233;&#233;n grondstof, drie functies — SPECULATIEF</text>
+  <rect x="40" y="92" width="20" height="14" fill="url(#exist)" stroke="#a89878"/><text x="68" y="104" font-size="12" fill="#333">bestaande CMB-module</text>
+  <rect x="250" y="92" width="20" height="14" fill="url(#newf)" stroke="#7fb4cb"/><text x="278" y="104" font-size="12" fill="#333">NIEUWE module (F1-F4)</text>
+  <rect x="470" y="92" width="20" height="14" fill="url(#field)" stroke="#cda35f"/><text x="498" y="104" font-size="12" fill="#333">veld-systeem (geen fabriek)</text>
+  <rect x="40" y="140" width="150" height="92" rx="10" fill="url(#exist)" stroke="#a89878" stroke-width="1.5"/>
+  <text x="115" y="170" font-size="14" font-weight="700" fill="#3b3326" text-anchor="middle">Regoliet</text>
+  <text x="115" y="190" font-size="11" fill="#5b5142" text-anchor="middle">anorthiet (highland,</text>
+  <text x="115" y="205" font-size="11" fill="#5b5142" text-anchor="middle">Peary-terrein)</text>
+  <text x="115" y="223" font-size="10.5" fill="#7a6f5c" text-anchor="middle">afgraven + verrijken</text>
+  <rect x="240" y="140" width="170" height="92" rx="10" fill="url(#exist)" stroke="#a89878" stroke-width="1.5"/>
+  <text x="325" y="166" font-size="14" font-weight="700" fill="#3b3326" text-anchor="middle">MRE keystone</text>
+  <text x="325" y="184" font-size="11" fill="#5b5142" text-anchor="middle">Molten Regolith</text>
+  <text x="325" y="198" font-size="11" fill="#5b5142" text-anchor="middle">Electrolysis &gt;1600C</text>
+  <text x="325" y="220" font-size="10.5" fill="#7a6f5c" text-anchor="middle">Fe &#8594; Si &#8594; Al  (+ O2)</text>
+  <rect x="240" y="260" width="170" height="40" rx="8" fill="#efe7d7" stroke="#c3b69d"/>
+  <text x="325" y="278" font-size="10.5" fill="#5b5142" text-anchor="middle">bijproducten &#8594; glas/keramiek</text>
+  <text x="325" y="292" font-size="10.5" fill="#5b5142" text-anchor="middle">(anorthiet, slak) + O2</text>
+  <rect x="460" y="140" width="170" height="92" rx="10" fill="url(#newf)" stroke="#7fb4cb" stroke-width="2"/>
+  <text x="545" y="162" font-size="13" font-weight="700" fill="#1f5066" text-anchor="middle">F1 · Gieterij</text>
+  <text x="545" y="180" font-size="11" fill="#2c6a85" text-anchor="middle">continugieten</text>
+  <text x="545" y="196" font-size="11" fill="#444" text-anchor="middle">zuiver Al &#8594; draadstaaf</text>
+  <text x="545" y="216" font-size="10" fill="#2f7a3a" text-anchor="middle">+ vacuum = geen oxidatie</text>
+  <text x="545" y="228" font-size="10" fill="#9c4416" text-anchor="middle">- koeling: alleen straling</text>
+  <rect x="680" y="140" width="170" height="92" rx="10" fill="url(#newf)" stroke="#7fb4cb" stroke-width="2"/>
+  <text x="765" y="162" font-size="13" font-weight="700" fill="#1f5066" text-anchor="middle">F2 · Walserij/extrusie</text>
+  <text x="765" y="182" font-size="11" fill="#444" text-anchor="middle">staaf &#8594; dunne draadstaaf</text>
+  <text x="765" y="202" font-size="10" fill="#2f7a3a" text-anchor="middle">+ inert vacuum</text>
+  <text x="765" y="216" font-size="10" fill="#9c4416" text-anchor="middle">- warmte-management</text>
+  <rect x="900" y="140" width="240" height="92" rx="10" fill="url(#newf)" stroke="#7fb4cb" stroke-width="2"/>
+  <text x="1020" y="162" font-size="13" font-weight="700" fill="#1f5066" text-anchor="middle">F3 · Draadtrekkerij + GLOEIEN</text>
+  <text x="1020" y="182" font-size="11" fill="#444" text-anchor="middle">draadstaaf &#8594; kabel (op maat)</text>
+  <text x="1020" y="200" font-size="10" fill="#444" text-anchor="middle">gloeien = ESSENTIEEL (buigzaam, anti-bros)</text>
+  <text x="1020" y="216" font-size="10" fill="#9c4416" text-anchor="middle">- matrijsslijtage (schuren) · MoS2 vacuum-smering</text>
+  <rect x="900" y="300" width="240" height="100" rx="10" fill="url(#newf)" stroke="#7fb4cb" stroke-width="2"/>
+  <text x="1020" y="324" font-size="13" font-weight="700" fill="#1f5066" text-anchor="middle">F4 · Mantel / isolatie</text>
+  <text x="1020" y="344" font-size="11" fill="#444" text-anchor="middle">kabel + regolietglas/vezel/keramiek</text>
+  <text x="1020" y="360" font-size="11" fill="#444" text-anchor="middle">&#8594; geisoleerde kabel</text>
+  <text x="1020" y="380" font-size="10" fill="#2c6a85" text-anchor="middle">email-glas / glasvezel / alumina</text>
+  <text x="1020" y="393" font-size="10" fill="#9c4416" text-anchor="middle">bros glas &#8594; vezel of dunne email</text>
+  <rect x="460" y="430" width="390" height="120" rx="12" fill="url(#field)" stroke="#cda35f" stroke-width="2.5"/>
+  <text x="655" y="456" font-size="15" font-weight="700" fill="#7a4f15" text-anchor="middle">VELD · CMB8LF-B1 (nieuwe BORE/BURROW-klasse)</text>
+  <text x="655" y="478" font-size="11.5" fill="#5b3d12" text-anchor="middle">smeltkop (hergebruik sinter-laser) + grip (peristaltisch / WC-spikes)</text>
+  <text x="655" y="494" font-size="11.5" fill="#5b3d12" text-anchor="middle">+ hitteschild + IMU + kabeldoorvoer</text>
+  <text x="655" y="514" font-size="11" fill="#7a5a14" text-anchor="middle">legt glazen koker + kabel ondergronds, tijdens productie</text>
+  <text x="655" y="532" font-size="10.5" fill="#8a6a24" text-anchor="middle">"horizontaal neefje van de sinter-robot" · traag = feature</text>
+  <g stroke="#444" stroke-width="2.5" fill="none">
+    <line x1="190" y1="186" x2="236" y2="186" marker-end="url(#flow)"/>
+    <line x1="410" y1="186" x2="456" y2="186" marker-end="url(#flow)"/>
+    <line x1="630" y1="186" x2="676" y2="186" marker-end="url(#flow)"/>
+    <line x1="850" y1="186" x2="896" y2="186" marker-end="url(#flow)"/>
+    <line x1="1020" y1="232" x2="1020" y2="296" marker-end="url(#flow)"/>
+    <path d="M410,280 C 700,280 760,330 896,340" marker-end="url(#flow)"/>
+    <path d="M900,360 C 760,400 760,420 850,460" marker-end="url(#flow)"/>
+  </g>
+  <text x="560" y="274" font-size="10.5" fill="#2c6a85">bijproducten &#8594; isolatie-grondstof (F4)</text>
+  <text x="700" y="430" font-size="10.5" fill="#7a4f15">geisoleerde kabel &#8594; veld</text>
+  <rect x="40" y="430" width="380" height="120" rx="12" fill="#eef4ee" stroke="#9cc6a4" stroke-width="2"/>
+  <text x="230" y="456" font-size="15" font-weight="700" fill="#2f6a3a" text-anchor="middle">OUTPUT · Begraven glazen koker + kabel</text>
+  <text x="230" y="478" font-size="11.5" fill="#3a5b3f" text-anchor="middle">gladde gegloeide glaskoker, kabel los erin</text>
+  <text x="230" y="496" font-size="11" fill="#3a5b3f" text-anchor="middle">vervangbaar/upgradebaar (mantelbuis-principe)</text>
+  <text x="230" y="514" font-size="11" fill="#3a5b3f" text-anchor="middle">thermisch stabiel ondergronds · plakt niet vast</text>
+  <text x="230" y="534" font-size="10.5" fill="#5a7a5f" text-anchor="middle">verbindt de 4 Pods tot het communicatie-mesh</text>
+  <g stroke="#444" stroke-width="2.5" fill="none"><line x1="460" y1="490" x2="424" y2="490" marker-end="url(#flow)"/></g>
+  <rect x="40" y="590" width="1100" height="150" rx="10" fill="#ffffff" stroke="#ddd6cc"/>
+  <text x="60" y="616" font-size="15" font-weight="700" fill="#222">E&#233;n grondstof (regoliet), drie functies:</text>
+  <g font-size="12.5">
+    <rect x="60" y="632" width="340" height="92" rx="8" fill="#fbf3e3" stroke="#e6cfa0"/>
+    <text x="76" y="654" font-weight="700" fill="#7a5a14">1 · GELEIDER</text>
+    <text x="76" y="676" fill="#444">Aluminium uit anorthiet (MRE)</text>
+    <text x="76" y="694" fill="#444">~60% van koper, licht, winbaar</text>
+    <text x="76" y="712" fill="#9c4416" font-size="11">spanning: metaalfabriek ~311 kW vs CMB 104-143 kW &#8594; faseren</text>
+    <rect x="420" y="632" width="340" height="92" rx="8" fill="#eaf3f7" stroke="#a9d2e2"/>
+    <text x="436" y="654" font-weight="700" fill="#1f5066">2 · TUNNEL (koker)</text>
+    <text x="436" y="676" fill="#444">Gesmolten regolietglas</text>
+    <text x="436" y="694" fill="#444">gladde gegloeide wand, taai</text>
+    <text x="436" y="712" fill="#9c4416" font-size="11">bros van karakter &#8594; ok voor traag/licht</text>
+    <rect x="780" y="632" width="360" height="92" rx="8" fill="#eef4ee" stroke="#9cc6a4"/>
+    <text x="796" y="654" font-weight="700" fill="#2f6a3a">3 · MANTEL (isolatie)</text>
+    <text x="796" y="676" fill="#444">Regoliet-glasvezel / anorthiet-keramiek</text>
+    <text x="796" y="694" fill="#444">lage dielektr. constante, hoge sterkte</text>
+    <text x="796" y="712" fill="#9c4416" font-size="11">vaak minimaal: vacuum-koker = geen lucht/vocht</text>
+  </g>
+</svg>
