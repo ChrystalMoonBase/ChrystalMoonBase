@@ -10,7 +10,7 @@
 
 SELENE/Kaguya illumination data (Noda et al. 2008) suggests near-continuous sunlight at the best peaks on the Peary rim for approximately 89% of the year. This has not been confirmed at the spatial resolution needed for landing zone selection — published data has 10–50 metre resolution; a usable flat zone may be 20–30 metres wide. A dedicated high-resolution orbital survey would be required before any mission planning.
 
-A vertical azimuth-tracking panel at this latitude would theoretically receive ~1,357 W/m² continuously — significantly more than a horizontal panel at the same location. This calculation is based on published illumination geometry and requires validation against actual site conditions.
+A vertical azimuth-tracking panel at this latitude would theoretically receive on the order of ~1,361 W/m² (the solar constant varies ~1,321–1,413 over the year) continuously — significantly more than a horizontal panel at the same location. This calculation is based on published illumination geometry and requires validation against actual site conditions.
 
 Permanently shadowed regions nearby contain confirmed water ice at some locations (LCROSS 2009, M3/Chandrayaan-1). Concentration and accessibility at Peary-adjacent cold traps specifically have not been measured at the resolution needed for ISRU planning.
 

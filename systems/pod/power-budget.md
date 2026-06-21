@@ -20,7 +20,7 @@
 | Film per arm | ~10 m × 30 m roll-out CIGS thin-film |
 | **Total solar area** | **~600 m²** |
 | Solar cell type | CIGS (Copper Indium Gallium Selenide) — flexible, rollable |
-| Solar constant at Moon | ~1,370 W/m² |
+| Solar constant at Moon | ~1,361 W/m² (varies ~1,321–1,413 over the year) |
 | CIGS efficiency (conservative) | 15.7% |
 | CIGS efficiency (realistic growth) | 21.5% |
 | Peary illumination fraction | ~89% |
@@ -29,10 +29,10 @@
 | **Continuous output (optimistic)** | **~143 kW** |
 
 **Calculation (conservative):**
-600 m² × 1,370 W/m² × 0.157 × 0.89 × 0.90 ≈ **104 kW**
+600 m² × ~1,361 W/m² × 0.157 × 0.89 × 0.90 ≈ **~103–104 kW**
 
 **Calculation (optimistic):**
-600 m² × 1,370 W/m² × 0.215 × 0.89 × 0.90 ≈ **143 kW**
+600 m² × ~1,361 W/m² × 0.215 × 0.89 × 0.90 ≈ **~141–143 kW**
 
 ---
 

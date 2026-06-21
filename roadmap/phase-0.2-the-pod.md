@@ -71,9 +71,9 @@ With the Pod anchored and operational, robots begin sintering the floor outward 
 |---|---|---|
 | Solar film area | ~600 m² | 2 arms × 9 m × 30 m, vertical, azimuth-tracking |
 | Solar cell type | CIGS thin-film (flexible, rollable) | |
-| Solar constant at Moon | ~1,370 W/m² | |
+| Solar constant at Moon | ~1,361 W/m² (varies ~1,321–1,413/yr) | |
 | Sun elevation at Peary | 1.5°–6.5° | Varies over lunar year |
-| Incidence on vertical panel | ~1,365–1,370 W/m² | cos(elevation) ≈ 1 |
+| Incidence on vertical panel | ~1,355–1,361 W/m² | cos(elevation) ≈ 1 |
 | CIGS efficiency (conservative) | 15.7% | |
 | CIGS efficiency (realistic growth) | 21.5% | |
 | Annual availability | ~89% | Based on SELENE illumination data |

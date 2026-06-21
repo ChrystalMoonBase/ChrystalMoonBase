@@ -54,7 +54,7 @@ Two roll-out CIGS thin-film solar arms extend horizontally from the mast, one on
 |---|---|
 | Solar film technology | CIGS thin-film (roll-out) |
 | Total solar area | 2 × 9 m × 30 m = **600 m²** |
-| Solar constant at Moon | ~1,370 W/m² |
+| Solar constant at Moon | ~1,361 W/m² (varies ~1,321–1,413/yr) |
 | Conservative efficiency | 15.7% → **~104 kW** continuous |
 | Optimistic efficiency | 21.5% → **~143 kW** continuous |
 | Illumination availability | ~89% of lunar year at Peary rim |

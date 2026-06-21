@@ -68,7 +68,7 @@ the regolith's (weak) microwave absorption.
 
 ## The engineering — energy delivery
 
-- **Concentrated solar:** raw solar flux at the Moon is ~**1,360 W/m²**; Fresnel
+- **Concentrated solar:** raw solar flux at the Moon is ~**1,361 W/m²** (varies ~1,321–1,413 over the year); Fresnel
   lenses or parabolic mirrors can intensify it up to ~10,000×, giving ~**1–10 MW/m²** —
   well above the ~100–200 kW/m² at which sintering has been demonstrated (900–1200 °C).
   A solar 3D-printed brick has been made from simulant. Limitation: sunlight varies, so

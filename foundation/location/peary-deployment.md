@@ -133,5 +133,5 @@ The central communications and coordination platform is a circular zone of 505 m
 ---
 
 *Chrystal Moon Base · Open Blueprint · CC0 1.0 Universal*  
-*No flags. No patents. Built for all of humanity.*  
+*No flags. No patents. For all of humanity.*  
 *[chrystalmoonbase.com](https://chrystalmoonbase.com) · [github.com/ChrystalMoonBase](https://github.com/ChrystalMoonBase/ChrystalMoonBase)*

@@ -69,7 +69,7 @@ The Pod does not carry humans. It does not need to return. It is intended to lan
 | Solar film area | 600 m² | 600 m² |
 | Cell type | CIGS thin-film | CIGS thin-film |
 | Cell efficiency | 15.7% | 21.5% |
-| Solar constant | 1,370 W/m² | 1,370 W/m² |
+| Solar constant | ~1,361 W/m² | ~1,361 W/m² |
 | Annual availability | ~89% | ~89% |
 | System losses | ~10% | ~10% |
 | **Continuous power** | **~104 kW** | **~143 kW** |

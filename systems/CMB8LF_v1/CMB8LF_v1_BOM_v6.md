@@ -356,4 +356,4 @@ MAAND 11-12   Kalibratie + software
 *Multi-AI: Claude · ChatGPT · Gemini · DeepSeek · Meta*
 *Human decisions: Berechja Kerkdijk*
 *CC0 2026 — Chrystal Moon Base — No rights reserved*
-*No flags. No patents. Built for all humanity. 🌙*
+*No flags. No patents. For all humanity. 🌙*

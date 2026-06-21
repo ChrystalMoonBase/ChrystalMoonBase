@@ -20,11 +20,11 @@ The mast rotates on a **magnetically levitated bearing** (AMB or PMB) — fricti
 
 At 88.63°N, the sun moves around the horizon at an elevation of 1.5°–6.5°. A horizontal panel receives:
 
-**Horizontal panel:** 1,370 W/m² × sin(elevation) ≈ 35–155 W/m²
+**Horizontal panel:** ~1,361 W/m² × sin(elevation) ≈ 35–155 W/m²
 
 A vertical panel facing the sun receives:
 
-**Vertical panel:** 1,370 W/m² × cos(elevation) ≈ 1,365–1,370 W/m²
+**Vertical panel:** ~1,361 W/m² × cos(elevation) ≈ ~1,355–1,361 W/m²
 
 The vertical panel receives **8–40× more power** than a horizontal panel at the same location. This is the fundamental solar advantage of the Peary pole location — and it only works with a vertical, azimuth-tracking panel.
 
@@ -107,7 +107,7 @@ The top segment (segment 5) is reserved exclusively for the Ka-band antenna and 
 | Parameter | Conservative | Optimistic |
 |---|---|---|
 | Total area | 600 m² | 600 m² |
-| Solar constant | 1,370 W/m² | 1,370 W/m² |
+| Solar constant | ~1,361 W/m² | ~1,361 W/m² |
 | CIGS efficiency | 15.7% | 21.5% |
 | System losses | 10% | 10% |
 | Annual availability | 89% | 89% |

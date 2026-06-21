@@ -86,3 +86,34 @@ A second critical read-through to find things that needed better thinking. Findi
   for a later phase. (Previously the number stood with no reasoning.)
 
 ## Status: critical pass COMPLETE.
+
+---
+
+# Deep verification pass (Opus 4.8, same day)
+
+A third, deeper read-through specifically hunting for hidden contradictions, physics
+errors, and unit problems. The repo proved remarkably consistent; only two real items found:
+
+## Fixed
+- **Solar constant inconsistency.** The repo used three different values (1,370 / 1,360 /
+  1,357 W/m²) for the same physical constant. Harmonised to **~1,361 W/m² with the honest
+  annual range (~1,321–1,413)** across all design files, with the note that on-site
+  measurement gives the final figure. Power-budget results updated to ~103–104 / ~141–143 kW
+  (rounded 104–143 kW band unchanged). Source citations that quote a specific value were
+  left as-is.
+- **"Built for all of humanity" → "For all of humanity"** (README, two BOM files,
+  peary-deployment) — removed the past-tense suggestion that something is already built.
+
+## Verified consistent (no change needed)
+- Mast 35 m, 16 robots, 8 garages, power 104–143 kW, BSM heights 7/14/21/28/35 m, 600 m²
+  solar — all consistent across the repo.
+- Physical constants correct: lunar gravity 1.62 m/s², lunar night ~14.5 days, escape
+  velocity ~2.373 km/s.
+- Power outliers (280/200/130/108/103 kW) all legitimate: 280 = explicitly-flagged old
+  value, 200 = flux per m², 130 = Horizon laser target, 108/103 = surplus within budget.
+- Resident counts (500 city / 10 crew or pod / 40 per maglev ring) all in-context distinct.
+- Battery & sintering kWh figures internally consistent and honestly flagged as uncertain.
+- Nuclear power honestly addressed and rejected (no contradiction with solar-only design).
+- All internal .md cross-references resolve; no broken links.
+
+## Status: deep verification COMPLETE.
