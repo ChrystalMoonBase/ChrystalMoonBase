@@ -54,7 +54,9 @@ The telescoping mast extends from the pod base upward. Full deployment to ~35 me
 As soon as the solar film generates sufficient voltage to activate the power bus, the base computer initialises. Robot charging begins. This is the first moment the Pod is operational on the Moon.
 
 ### 6. Leaf Sintering — First Task
-Before any other construction begins, the robots' first task is to sinter the bloom leaves permanently to the lunar regolith. This anchors the Pod structure, levels the working platform if needed, and creates the first sintered surface on the Moon. Estimated time: 48–72 hours for full leaf sintering.
+Before any other construction begins, the robots' first task is to sinter the bloom leaves permanently to the lunar regolith. This anchors the Pod structure, levels the working platform if needed, and creates the first sintered surface on the Moon.
+
+This first job is also the project's first real-world measurement. Until robots actually sinter regolith on the Moon, the true sintering rate — how fast a robot can fuse a given area, how often it must pause to recharge in the laser beam, how the anorthite highland material behaves under the laser — is not known. Every estimate so far comes from Earth simulant work and differs between models. So no fixed duration is claimed here: the leaf-sintering task is where the base first learns its own pace. The time it takes, and every build estimate that follows from it, will be set by how well the system actually performs — not by a number written in advance.
 
 The Pod is a permanent installation. It is never designed to be moved, retracted, or returned to Earth. Once the leaves are sintered to the regolith, the Pod becomes part of the lunar surface — a fixed foundation from which all subsequent construction radiates outward. In later phases, the Pod structure will be enclosed and integrated into the growing base, with the mast remaining as the highest point of the installation.
 

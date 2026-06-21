@@ -57,3 +57,32 @@ substance — it removes inconsistencies and adds verifiable sources.
 - Radiation: added the honest secondary-particle nuance (thin regolith barely helps vs GCR).
 
 ## Status: COMPLETE — ready to push.
+
+---
+
+# Critical review pass (same day, later)
+
+A second critical read-through to find things that needed better thinking. Findings and fixes:
+
+## Removed unfounded figures
+- **Phase 0 cost (€1.5–3M programme + €150–300k Demonstrator 1)** removed from all public
+  texts (SUPPORT.md, roadmap/phase-0-earth/overview.md, media/technical-one-pager.md,
+  media/pitch-one-pager.md). Replaced with honest "not yet fixed — a credible
+  per-demonstrator breakdown still has to be worked out." (The detailed, sourced S1
+  prototype BOMs in systems/CMB8LF_v1/ are real and were left fully intact.)
+
+## Replaced false precision with honest framing
+- **Build time of the first base:** added a "How long will it take? — an honest non-answer"
+  section to roadmap/build-order-first-base.md. No fixed years claimed; the base
+  calibrates its own schedule from real performance, starting with the first leaf sinter.
+- **Leaf-sintering time (was "48–72 hours"):** rewritten in phase-0.2-the-pod.md as the
+  project's first real-world pace measurement; no fixed duration claimed.
+- **Robot battery autonomy (was "2–4 hours"):** softened to "a few hours, concept estimate
+  pending Phase 0 validation" in chassis.md.
+
+## Added missing justification
+- **Why 16 robots:** added a note to systems/pod/overview.md — derived from 8 garages × 2
+  robots, bounded by per-launch mass/volume; final fleet size is an engineering decision
+  for a later phase. (Previously the number stood with no reasoning.)
+
+## Status: critical pass COMPLETE.

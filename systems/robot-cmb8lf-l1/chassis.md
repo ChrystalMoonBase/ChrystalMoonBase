@@ -131,7 +131,7 @@ The mast communicates to Earth via Ka-band radio — laser-to-Earth links are no
 
 **Electronics bay:** Central upper section houses the main compute unit, power conditioning electronics, and communication optics. Thermally coupled to the chassis wall for passive heat management.
 
-**Battery:** Solid-state battery cells distributed through the chassis structure. Total onboard energy storage provides an estimated 2–4 hours of reduced-power autonomous operation during laser power interruptions — sufficient to survive shadow periods and communication outages.
+**Battery:** Solid-state battery cells distributed through the chassis structure. Total onboard energy storage is intended to provide on the order of a few hours of reduced-power autonomous operation during laser power interruptions — enough to survive shadow periods and communication outages. The exact figure is a concept estimate pending Phase 0 validation; real capacity depends on the final cell choice, robot mass, and how power-hungry the as-built systems turn out to be.
 
 **Exterior:** Sintered regolith composite panels — the same material the robot builds with. Non-magnetic, thermally stable, radiation-resistant, and manufacturable from lunar resources in later phases.
 

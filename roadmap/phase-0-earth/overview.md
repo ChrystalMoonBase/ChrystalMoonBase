@@ -28,7 +28,11 @@ Phase 0 is a ground-based validation programme consisting of five demonstrators.
 
 ## Estimated Cost and Timeline
 
-Estimated total cost: €1.5–3 million across 3–5 years for the full five-demonstrator programme.
+Total programme cost is **not yet fixed.** Early estimates varied too widely to publish a
+single honest figure, and a credible per-demonstrator breakdown still has to be worked out
+before any headline number would mean anything. The timeline runs across roughly 3–5 years
+for the full five-demonstrator programme, but — like the build-time of the base itself —
+the real pace will sharpen as each demonstrator returns actual data.
 
 Crowdfunding alone will not cover this. The goal of Phase 0 crowdfunding is to fund Demonstrator 1 and to create a credible public record of serious intent that can open conversations with research institutions and space agencies.
 

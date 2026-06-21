@@ -48,7 +48,7 @@ Technical review of open documents, data sharing where possible, ISRU programme 
 Component testing in representative conditions, subsystem validation, technical advisory with full publication credit. In-kind contributions valued and documented.
 
 **Research funders:**
-Demonstrator 1 alone is estimated at €150,000–300,000. Full Phase 0 programme: €1.5–3 million over 3–5 years. All results published openly. Every euro publicly documented.
+Phase 0 costs are not yet fixed — a credible per-demonstrator breakdown still has to be worked out before figures are published. All results published openly. Every euro publicly documented.
 
 ---
 

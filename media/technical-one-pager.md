@@ -91,7 +91,7 @@ Earth visibility from the near-side rim appears continuous based on published or
 | D4 | 4-robot swarm coordination | Autonomous ring completion, fault recovery without human intervention |
 | D5 | Full integration, 72-hour run | Measurable sintered area produced, no human intervention required |
 
-Estimated Phase 0 cost: €1.5–3 million across 3–5 years. Each demonstrator is independently publishable regardless of overall programme outcome.
+Phase 0 cost is not yet fixed — a credible per-demonstrator breakdown still has to be worked out before any figure is published. Each demonstrator is independently publishable regardless of overall programme outcome.
 
 ---
 

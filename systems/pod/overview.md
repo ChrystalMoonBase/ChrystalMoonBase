@@ -32,6 +32,15 @@ The Pod does not carry humans. It does not need to return. It is intended to lan
 | Base computer and power electronics | 1 | In central base plate |
 | Garages | 8 | 2.0 m × 2.0 m × 1.5 m each, 2 robots per garage |
 
+> **Why 16 robots?** The figure is derived from the Pod's own geometry, not chosen
+> abstractly: the Pod carries **8 garages**, each sized to hold **2 robots**, giving 16.
+> The number of garages, in turn, is bounded by what is plausibly achievable in mass and
+> volume for a single lunar delivery. So 16 is an honest first estimate set by "how many
+> robots fit and can be landed," **not** by a calculation of how many the build needs. The
+> definitive fleet size — and whether early construction is faster with more, smaller
+> robots or fewer, larger ones — is an **engineering decision for a later phase**, to be
+> settled once real on-Moon sintering and digging rates are known.
+
 ---
 
 ## Physical Description

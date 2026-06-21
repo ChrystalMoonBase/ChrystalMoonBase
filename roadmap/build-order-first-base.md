@@ -77,10 +77,42 @@ itself a design decision — listed here as an open question, not yet fixed.)*
 
 ---
 
+## How long will it take? — an honest non-answer
+
+This document deliberately gives **no fixed build-time** for the first base. That is not
+an oversight; it is the honest position.
+
+Early attempts to estimate "how many years from first Pod to finished base" produced
+wildly different answers depending on which assumptions went in — sintering speed,
+recharge cycles, illumination uptime, how often robots need repair, how the real
+anorthite highland material behaves. The spread was large enough that publishing any
+single number would be inventing a certainty that does not exist.
+
+So the sequence is built around **measured pace, not predicted pace**:
+
+- The robots' very first task — sintering the Pod's bloom leaves to the regolith
+  (`phase-0.2-the-pod.md`) — is also the first real measurement of how fast the system
+  actually works on the Moon. Until that happens, every rate is an Earth-simulant guess.
+- Each subsequent step (digging, sintering corridors, building rooms) produces more data.
+  The base effectively **calibrates its own schedule as it builds.** A task that turns out
+  twice as fast halves the estimate that follows it; a task that proves slow, or a robot
+  that fails, stretches it.
+- This fits the gated-growth model and the guiding principle: one step proven before the
+  next, *slow but sure*. The timeline is an output of how well the system performs, not an
+  input fixed in advance.
+
+The honest summary: **the first base will take as long as it takes, and the estimate will
+sharpen with every real task completed — starting with the very first leaf sinter.** A
+firm schedule only becomes meaningful once there is lunar performance data to base it on.
+
+---
+
 ## Open questions
 
 1. What is the minimum "complete and proven" standard before the first crew?
-2. How many build-years does the underground-first sequence realistically take?
+2. The build-time itself is the biggest open question — see "How long will it take?"
+   above. It cannot be answered honestly until early on-Moon tasks return real performance
+   data.
 3. Which subsystems are allowed to scale up after humans arrive, and which must be
    final beforehand?
 
