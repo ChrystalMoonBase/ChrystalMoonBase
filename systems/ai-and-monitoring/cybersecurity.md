@@ -35,7 +35,7 @@ Robots, masts, and Pods accept only commands that are cryptographically **signed
 
 Every component — laser head, power receiver, motor controller, sensor — and every robot carries a unique cryptographic identity. The system verifies these identities; a component or robot it does not recognise is not trusted. Replace a part with an unknown one and the system refuses it, exactly as a phone rejects an unpaired component. This:
 - prevents tampered or counterfeit hardware from being introduced,
-- secures the head-swap system (a robot accepts only a genuine, authenticated CMB head — see `systems/robot-cmb-r1/head-attachment-mechanism.md`),
+- secures the head-swap system (a robot accepts only a genuine, authenticated CMB head — see `systems/robot-cmb8lf-l1/head-attachment-mechanism.md`),
 - prevents a hijacked robot with foreign hardware from being trusted by the swarm.
 
 ### Layer 4 — Closed trust network (whitelist / default-deny)

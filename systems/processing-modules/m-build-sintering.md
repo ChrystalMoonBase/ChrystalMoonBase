@@ -143,7 +143,7 @@ what Gate 1→3 of the growth model must demonstrate.
 - ScienceDirect 2025 (Construction & Building Materials) — microwave sintering of
   highland (HUST-2) anorthosite simulant: ~142 MPa; anorthosite couples less well.
 - ScienceDirect 2023 — spark plasma sintering HUST-1: up to 566 MPa at ~1000 °C.
-- arXiv 2506.06392 — solar flux 1,360 W/m², 10,000× concentration → 1–10 MW/m².
+- arXiv 2506.06392 — https://arxiv.org/abs/2506.06392 — solar flux 1,360 W/m², 10,000× concentration → 1–10 MW/m².
 - ScienceDirect 2025 review — microwave 309 MPa; lunar structures need only ~4 MPa.
 - Indyk & Benaroya 2017 — 85 MPa / 219 MPa by porosity.
 

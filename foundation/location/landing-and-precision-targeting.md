@@ -73,8 +73,8 @@ A reasonable objection: if a sufficiently precise LOLA map already exists, why f
 
 ## Key References
 
-- Bussey et al. (2005) Nature 434:842 — Peary rim illumination peaks
-- Noda et al. (2008) GRL — SELENE/KAGUYA polar illumination (~89% best peak)
-- Smith et al. (2010) Space Science Reviews — Lunar Orbiter Laser Altimeter (LOLA) instrument
-- NASA Mars 2020 / Lander Vision System — Terrain Relative Navigation flight demonstration
+- Bussey et al. (2005) — Peary rim illumination peaks. https://doi.org/10.1029/2005GL023926
+- Noda et al. (2008) — SELENE/KAGUYA polar illumination (~89% best peak), GRL 35, L24203. https://doi.org/10.1029/2008GL035692
+- Smith et al. (2010) — Initial observations from the Lunar Orbiter Laser Altimeter (LOLA), GRL 37, L18204. https://doi.org/10.1029/2010GL043751
+- NASA Mars 2020 / Lander Vision System — Terrain Relative Navigation flight demonstration. https://mars.nasa.gov/mars2020/spacecraft/rover/ai/
 - Johnson et al. — Terrain Relative Navigation for planetary landing (method overview)

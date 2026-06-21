@@ -113,7 +113,7 @@ founding principle of this document.
 
 ## References (verify and extend)
 
-- arXiv 2502.13679 — lunar ISRU byproduct/disposal analysis: slag for structures &
+- arXiv 2502.13679 — https://arxiv.org/abs/2502.13679 — lunar ISRU byproduct/disposal analysis: slag for structures &
   radiation shields; MRE/SWE/DWE byproducts.
 - CEAS Space Journal 2022 — zero-waste regolith processing; slag → 3D printing /
   construction / re-electrolysis; "closing the material circle."

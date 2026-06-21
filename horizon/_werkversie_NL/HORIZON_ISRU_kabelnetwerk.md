@@ -104,7 +104,7 @@ Volledige mesh tussen 4 punten = **6 verbindingen**: 1–2, 1–3, 1–4, 2–3,
   dun — voornamelijk bergkammen en kraterranden." Aan de zuidpool: "eilanden van niet
   meer dan een paar honderd meter breed in een oceaan van eeuwige duisternis."
   (arxiv 1608.01989; en-academic.) → **bevestigt dat spreiding fysiek nodig is.**
-- **Kraterdiameter ~73 km** (Astronomy.com: 45 mijl). → vier punten op die rand liggen
+- **Kraterdiameter ~79 km** (Wikipedia; bronnen variëren 73–79 km — Peary is onregelmatig). → vier punten op die rand liggen
   typisch **tientallen km** uit elkaar; de overkant kan richting ~70–100 km.
 - **Relevante paper voor zonne-onderbouwing:** *"Towers on the Peaks of Eternal Light:
   Quantifying the Available Solar Power"* — Hinshelwood, Peary, Whipple; voor een
@@ -412,7 +412,7 @@ Plus het **veld-systeem** (geen fabriek, maar het inzet-platform):
 - Caltech MAPLE / SSPD-1 — caltech.edu; spaceref.com ("detectable" naar Aarde; 30 cm intern)
 
 **Peary / peaks of eternal light**
-- Wikipedia — *Peary (crater)* (4 peaks, Bussey 2004; ~73 km; geen perpetueel licht)
+- Wikipedia — *Peary (crater)* (4 peaks, Bussey 2004; ~79 km; geen perpetueel licht)
 - Astronomy.com — *Eternal light at a lunar pole* (73 km krater)
 - arxiv 1608.01989 — *The Peaks of Eternal Light* (smalle kammen; 90–99%/100% kaart)
 - ResearchGate 349547324 — *Towers on the Peaks of Eternal Light* (zonne-power, ~88%)

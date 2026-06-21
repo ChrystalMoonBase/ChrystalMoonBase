@@ -222,6 +222,17 @@ The access hatch is designed to be openable from inside at all times — residen
 
 ---
 
+## Sources & verification
+
+The shelter *design* (distribution, 90-day independence, hermetic sealing, atmospheric independence) is this project's concept work. The hazards it protects against are sourced elsewhere in the repo to avoid duplication:
+
+- **Radiation (SEP/GCR) shielding depth** — see `systems/life-support/radiation-protection.md`, which carries the full sourced analysis (lunar surface ~380 mSv/yr; SEP shielding far easier than GCR; secondary-particle nuance; lava-tube and depth targets). Once GCR depth is met, **SEP and micrometeorites are covered "for free"** because both are far less penetrating — confirmed by Matthiä & Berger, *Space Weather* (2024), https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024SW004095
+- **Sintered regolith strongest in compression.** The vaulted geometry deliberately loads the sintered shell in compression, its strongest mode — consistent with the sintering/structural analysis in `systems/sintering/` and `systems/domes/dome-reinforcement-options.md`. Sintered-regolith mechanical properties are an active research area; the figures used in those files are flagged as estimates pending validation.
+
+> Note: the specific shelter count, capacities, depths, and the choice between laser/radio Earth-link remain genuine open questions (above), not settled specifications.
+
+---
+
 ## A Note from the Founder
 
 *"I hope these shelters are never used. But they must exist as if they will be. The people who live on this base deserve to know that if everything goes wrong, there is somewhere to go. That is not a nice-to-have. That is the most basic promise the base makes to its residents."*

@@ -129,7 +129,7 @@ purification is designed *separately* from the separation that produced it.
 
 - Lomax et al.; ScienceDirect 2025 — molten salt electrolysis of highland/anorthosite
   simulants: 97–99 % oxygen extraction, higher current efficiency for anorthosite.
-- arXiv 2408.05823 — review: MRE alloy categories (Al/Fe, Fe/Si, Ca/Si/Al).
+- arXiv 2408.05823 — https://arxiv.org/abs/2408.05823 — review: MRE alloy categories (Al/Fe, Fe/Si, Ca/Si/Al).
 - ScienceDirect 2025 (LISAP-MSE) — aluminium, oxygen, water and silica from highland
   anorthite.
 - ResearchGate 2023 — MRE produces metals + oxygen + ceramic slag; self-replicating

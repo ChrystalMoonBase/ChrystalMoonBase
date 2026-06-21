@@ -16,8 +16,8 @@
 | Mast material | Toray M55J CFRP with cyanate ester resin |
 | Mast base | Magnetically levitated rotation bearing (AMB/PMB) |
 | Number of arms | 2 (segment 1 — lowest, above garages) |
-| Arm length | ~9 m each |
-| Film per arm | ~9 m × 30 m roll-out CIGS thin-film |
+| Arm length | ~10 m each |
+| Film per arm | ~10 m × 30 m roll-out CIGS thin-film |
 | **Total solar area** | **~600 m²** |
 | Solar cell type | CIGS (Copper Indium Gallium Selenide) — flexible, rollable |
 | Solar constant at Moon | ~1,370 W/m² |

@@ -57,7 +57,7 @@ This model ensures:
 
 ## Telemedicine
 
-A permanent high-priority communication channel connects both medical facilities to Earth. Specialists anywhere on Earth can consult on any case in real time — subject to the 1.3–2.6 second one-way communication delay.
+A permanent high-priority communication channel connects both medical facilities to Earth. Specialists anywhere on Earth can consult on any case in real time — subject to the Earth–Moon signal delay (~1.3 s one-way, ~2.6 s round-trip).
 
 For complex cases, Earth-side specialists can:
 - Review all diagnostic data in real time
@@ -116,3 +116,14 @@ Mental health monitoring is as important as physical health monitoring on a base
 3. What is the power requirement of the full medical facility, and how is this allocated in the base power budget?
 4. What pharmaceutical inventory is required for 90-day independence without Earth resupply, and how is it rotated?
 5. What are the specific medical screening requirements for all residents before departure from Earth?
+
+---
+
+## Sources & verification
+
+This document is mostly **design and policy** (facility layout, staffing model, AI's supporting role) — internal architecture choices that do not require external citation. The verifiable physical claim is sourced below.
+
+- **Earth–Moon signal delay (~1.3 s one-way, ~2.6 s round-trip).** At the average Earth–Moon distance of ~384,400 km, radio (light-speed) travel time is **~1.28 s one-way and ~2.56 s round-trip** — confirming the figures used for telemedicine. Wikipedia, *Earth–Moon–Earth communication* — https://en.wikipedia.org/wiki/Earth%E2%80%93Moon%E2%80%93Earth_communication ; NASA/Apollo operational delay (~1.3 s one-way) is well documented from the missions.
+- **Why full on-site capability (no stabilise-and-evacuate).** The ~3-day-each-way evacuation reality and signal delay together are why deep-space/lunar medical concepts stress **autonomous, self-sufficient care** rather than Earth evacuation — consistent with NASA Human Research Program guidance on medical autonomy for missions beyond low-Earth orbit. (NASA HRP — Exploration Medical Capability.)
+
+> Note: the specific surgical, ICU, and pharmacy capabilities listed are **concept targets**, not a validated medical-system specification. The open questions at the end of this file remain genuinely open.

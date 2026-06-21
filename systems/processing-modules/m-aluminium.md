@@ -99,7 +99,7 @@ handling the mixed-alloy feed. TRL moderate.
 
 - ScienceDirect 2025 — LISAP-MSE: aluminium, O₂, water and silica from highland
   anorthite via molten-salt electrolysis.
-- arXiv 2408.05823 — MRE alloy categories (Al/Fe ± Si).
+- arXiv 2408.05823 — https://arxiv.org/abs/2408.05823 — MRE alloy categories (Al/Fe ± Si).
 - Hoopes three-layer electrorefining (terrestrial, ~99.99 %).
 
 *Figures are terrestrial/lab and modelling values; lunar performance unproven.*

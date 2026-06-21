@@ -188,6 +188,6 @@ The freshwater aquaculture domes connect to the farm domes via the underground n
 - Tilapia broodstock and hatchery management — SEAFDEC AEM No. 38; FAO AC182E (spawning depth, mouthbrooding, fry rearing).
 - ESA Second Space Resources Challenge — esa.int (sieve clogging, dust mitigation in regolith processing).
 - Review of lunar regolith excavation prototypes — ResearchGate (abrasiveness, dust, static).
-- Space AI / adaptive autonomy in ISRU — arXiv 2512.22399 ("conservative adaptability").
+- Space AI / adaptive autonomy in ISRU — arXiv 2512.22399 — https://arxiv.org/abs/2512.22399 ("conservative adaptability").
 
 *Engineers and scientists with relevant expertise are invited to review and improve this document via GitHub Issues.*

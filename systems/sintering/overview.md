@@ -25,9 +25,9 @@ For CMB's purposes, the target is dense, crack-free sintered regolith (highland 
 
 ## Published Research Basis
 
-- Fateri et al. (2019) — solar-sintered simulant samples with compressive strengths up to 200 MPa
+- Fateri et al. (2019) — *Solar Sintering for Lunar Additive Manufacturing*, J. Aerospace Eng. 32(6) — solar-sintered simulant samples. https://doi.org/10.1061/(ASCE)AS.1943-5525.0001093
 - Taylor et al. — laser sintering with CO₂ laser at various energy densities
-- Meurisse et al. (2018) — solar 3D printing of lunar simulant patches
+- Meurisse et al. (2018) — *Solar 3D printing of lunar regolith*, Acta Astronautica 152, 800–810 — solar 3D printing of lunar simulant patches. https://doi.org/10.1016/j.actaastro.2018.06.063
 
 The challenge is scaling these results to construction-relevant areas (square metres to hectares) while maintaining consistent quality.
 

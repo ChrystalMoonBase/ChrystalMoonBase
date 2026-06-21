@@ -43,7 +43,7 @@ Connects the underground base network to the arrival pad, departure pad, and any
 
 ### Scale 3 — Inter-Provincial Network (long-distance surface)
 Eventually connects the four provinces of the lunar civilisation:
-- Peary Solar Capital (88.6°N) → Equatorial Gateway Plains (~2,600 km)
+- Peary Solar Capital (88.63°N) → Equatorial Gateway Plains (~2,600 km)
 - Equatorial Gateway Plains → Far-Side Departure Gate
 - Peary Solar Capital → Water Treasury (South Pole, ~5,460 km pole-to-pole via surface — a long-term province, not the base's own water source)
 

@@ -87,7 +87,7 @@ Peary are **power** (it rides on MRE) and **cryogenic storage** through the nigh
 ## References (verify and extend)
 
 - ScienceDirect 2025 — molten-salt electrolysis of anorthosite: 97–99 % O₂.
-- Sibille et al. (KSC) — MRE anode O₂, co-evolved gas analysis.
+- Sibille et al. (KSC) — MRE anode O₂, co-evolved gas analysis (AIAA 2009-659). See `m-mre-electrolysis.md` for full citation/links.
 - Schreiner/MIT — MRE oxygen sizing for highland regolith.
 - Schlüter & Cowley — review of higher-TRL O₂ routes (HRI, MRE, MSE).
 

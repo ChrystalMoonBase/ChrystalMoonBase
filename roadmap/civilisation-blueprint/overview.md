@@ -18,7 +18,7 @@ This section describes the four proposed provinces of a potential lunar civilisa
 
 | Province | Location | Proposed Role |
 |---|---|---|
-| Solar Capital | Peary Crater Rim, 88.6°N | Power generation, first settlement |
+| Solar Capital | Peary Crater Rim, 88.63°N | Power generation, first settlement |
 | Water Treasury | South Polar Cold Traps, ~89.5°S | Ice extraction, propellant production |
 | Gateway Plains | Equatorial Near-Side | Earth-Moon spaceport |
 | Bridge to Mars | Far-Side Mare | Deep-space departure |

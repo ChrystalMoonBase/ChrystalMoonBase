@@ -1,15 +1,24 @@
-# CMB Horizon — ISRU Cable Network & CMB8LF-B1 Tunnel-Mole
+# CMB Horizon — speculative / far-future chapters
 
-**Speculative / far-future chapter of Chrystal Moon Base.**
+**Speculative / far-future chapters of Chrystal Moon Base.**
 Deliberately separated from the hard CMB pillars (CMB8LF-S/L robots, MAST-POD, MRE
 chain, gated-growth). Near-term feasibility is **not** claimed. Where something violates
 a physical law, it is stated explicitly.
+
+This folder collects the most exploratory CMB ideas. They are written to be *questioned
+and corrected*, not believed. Two chapters so far:
+
+1. **ISRU Cable Network & CMB8LF-B1 Tunnel-Mole** — linking the four Peary peaks.
+2. **Hybrid Radiation Shielding (open question)** — could a superconducting magnet +
+   passive layered dome ever help protect a habitat? Written as an honest open question;
+   the most speculative item in the whole repo.
 
 ## Contents
 
 ```
 horizon/
-├── HORIZON_ISRU_cable_network.md   # main chapter (English, repo)
+├── HORIZON_ISRU_cable_network.md          # chapter 1 (English, repo)
+├── HORIZON_magnetic_shield_question.md     # chapter 2 — hybrid shield (THEORETICAL ONLY)
 ├── figures/
 │   ├── mesh_overview.svg           # Fig.1 — 4 Pods + communication mesh
 │   ├── worm_cross_section.svg      # Fig.2 — CMB8LF-B1 tunnel-mole, 2 zones
@@ -18,7 +27,20 @@ horizon/
 └── _werkversie_NL/                 # Dutch working copies (not for publication)
 ```
 
-## One-paragraph summary
+## Chapter 2 in one paragraph — Hybrid Radiation Shielding
+
+Could an active superconducting magnet (bending charged cosmic-ray particles) paired with
+a passive layered dome (catching the secondary neutrons the magnet cannot touch) ever
+help shield a CMB habitat? The chapter establishes that this is a real, CERN/ESA/NASA
+research line — but an **unsolved** one — and then honestly dismantles an earlier
+over-optimistic draft: realistic dose reduction is **factor 2–3, not 99%**; the lunar
+surface dose is ~380 mSv/yr (not 165); thick passive mass has **negative** returns past
+~45 g/cm² due to secondary particles; YBCO (≈77 K) fits Peary's cold floors but MgB₂ does
+not; and the ~20 GJ quench-protection problem is unsolved. The hybrid is the *right shape*
+of an answer, but the specific numbers in the enthusiastic version did not survive
+checking. Written explicitly as a question, inviting correction.
+
+## Chapter 1 in one paragraph — ISRU Cable Network
 
 The four *peaks of (near-)eternal light* on Peary's rim each carry an **energetically
 independent Pod**. They are linked only for **communication/coordination** (not energy),

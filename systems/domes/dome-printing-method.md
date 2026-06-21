@@ -65,3 +65,15 @@ The dome is pressurised to the design habitat pressure using an automated system
 3. **Dome height without support** — as the dome grows taller, the unsintered upper sections must support their own weight until complete. What temporary support structure, if any, is required?
 4. **Inner and outer coordination** — robots working on the inside and outside of the dome simultaneously must not interfere. What coordination protocol prevents collisions through the growing dome wall?
 5. **Quality verification during printing** — how does the Watcher robot verify layer quality at intermediate steps, before subsequent layers are added and make inspection impossible?
+
+---
+
+## Sources & verification
+
+The dome *printing sequence* (inside-out layer order, simultaneous inner/outer robots, fill-and-test) is this project's construction concept. The underlying feasibility — that lunar regolith can be sintered / 3D-printed in place into structural building elements — is established by space-agency research:
+
+- **ESA regolith 3D-printing demonstrator.** ESA and Foster + Partners produced a **1.5-tonne building block** from lunar-soil simulant to demonstrate 3D-printed lunar construction; later work showed printing can work in vacuum (droplets held by capillary forces). ESA, *Building a lunar base with 3D printing* — https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Building_a_lunar_base_with_3D_printing ; ESA ESTEC 3D-printed block — https://99estec-objects.esa.int/object-items/4
+- **Solar sintering of regolith — binder-free.** ESA baked moondust in **0.1 mm layers at ~1000 °C** into bricks using only concentrated sunlight, no Earth binder — directly supporting CMB's laser/solar-sinter approach. ESA, *3D printing of a model building block for a lunar base outer shell* — https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/3D_printing_of_a_model_building_block_for_a_lunar_base_outer_shell
+- **Sintering as an active research field.** Peer-reviewed reviews catalogue multiple regolith-sintering techniques (solar, microwave, laser, powder-bed fusion) and their processing parameters for ISRU construction. *Progress in Additive Manufacturing* (2023), *Regolith sintering and 3D printing for lunar construction: a review* — https://link.springer.com/content/pdf/10.1007/s40964-023-00537-1.pdf ; crater-covering dome concept, *Scientific Reports* (2025) — https://www.nature.com/articles/s41598-025-07901-x
+
+> Note: ESA's demonstrators are **brick/block scale** with simulant; printing a full pressurised multi-layer dome with an optical-quality inner glass surface is far beyond current demonstration. The five Key Engineering Questions above are the real gaps and remain open.

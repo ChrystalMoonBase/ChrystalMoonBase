@@ -162,9 +162,15 @@ The passive mass shielding above does the primary work. The following are review
 
 ## References (for verification and contribution)
 
-- Matthia et al., *Space Weather* (2024) — regolith shielding thicknesses for SEP and GCR.
-- Multi-material / two-layer shielding against secondary neutrons — *ScienceDirect* (FLUKA study).
-- Hydrogen-rich materials with regolith (OLTARIS / MULASSIS studies) — ~6 m regolith near-zero, ~12 m total; lithium hydride best performer.
-- Radiotrophic fungi aboard the ISS — bioRxiv (Cladosporium sphaerospermum, ~2% at 1.7 mm; ~9 cm melanin/regolith composite projection).
-- CREW HaT magnetic shielding concept — arXiv 2209.13624.
-- Transparent radiation shielding limits — USPTO 3,937,970; Frontiers in Materials (2025).
+All links verified against published sources. Figures are from the literature; CMB's own depths are design targets pending Monte-Carlo validation for the specific Peary site.
+
+- **Lunar surface GCR dose ~380 mSv/yr (solar minimum).** Reitz et al. measurements/modelling give an effective dose equivalent of ~380 mSv·yr⁻¹ from GCR at solar minimum (cycles 23–24), dropping to ~110–160 mSv/yr at solar maximum. ScienceDirect, *Regolith-based lunar habitat for astronaut radiation protection* (2025) — https://www.sciencedirect.com/science/article/pii/S0032063325000832 ; IOPscience, *Radiation dose… lunar surface and lava tube* (416 mSv/yr solar min) — https://iopscience.iop.org/article/10.1088/1361-6498/abb120
+- **CRITICAL NUANCE — thin/mid regolith barely helps against GCR, and can be worse.** Matthiä & Berger (2024): for GCR, *adding mass shielding does not reduce the absorbed dose significantly* — even ~180 g/cm² (~1 m) regolith only cuts the dose ~25% below unshielded, because high-energy primaries generate secondary particles. One study finds that **up to ~105 g/cm² of regolith may produce more secondary dose than it stops**; heavy ions attenuate within ~45 g/cm² but secondary neutrons rise. Matthiä & Berger, *Space Weather* (2024) — https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024SW004095 ; ScienceDirect (2025, secondary-particle crossover) — https://www.sciencedirect.com/science/article/pii/S0032063325000832
+  > **What this means for CMB:** the phased depth logic in this document is correct in *direction* (Gen-1 ~5 m, permanent ~10 m+ / lava tube), but the dose reduction at 5 m should be treated as **needing Monte-Carlo confirmation, not assumed** — the secondary-particle build-up makes "a few tens of mSv/year at 5 m" an optimistic estimate until modelled for real Peary regolith. This is exactly why deep/lava-tube shielding is the honest permanent answer.
+- **SEP shielding is far easier than GCR.** >4 g/cm² regolith brings a solar particle event below 30-day limits; >10 g/cm² gives a safety-factor of two — confirming that once GCR depth is met, SEP and micrometeorites are covered "for free." Matthiä & Berger (2024, above).
+- **Lava tubes.** Tens of metres of natural basalt roof provide major protection without excavation. IOPscience (2020, above); ScienceDirect, *Radiation exposure in the moon environment* — https://www.sciencedirect.com/science/article/abs/pii/S0032063312002085
+- **Multi-material / two-layer ordering against secondary neutrons** — heavier outer (regolith) + light hydrogen-rich inner (water). Matthiä et al., *Space Weather* (2024, above); FLUKA multi-material studies.
+- **Hydrogen-rich materials with regolith** (~6 m near-zero, ~12 m total; LiH/PE as literature reference points only — CMB uses **local PSR water/ice**, not imported plastic). OLTARIS / MULASSIS modelling literature.
+- **Radiotrophic fungi aboard the ISS** — *Cladosporium sphaerospermum*, ~2% at 1.7 mm; ~9 cm melanin/regolith composite projection. bioRxiv (Shunk et al.) — complement, not replacement.
+- **CREW HaT magnetic shielding concept** — arXiv 2209.13624 — https://arxiv.org/abs/2209.13624 (active shielding remains heavy, power-hungry, unproven; long-term research only).
+- **Transparent radiation shielding limits** — USPTO 3,937,970; *Frontiers in Materials* (2025) — no universal transparent cosmic-ray shield exists; opaque mass required for GCR.

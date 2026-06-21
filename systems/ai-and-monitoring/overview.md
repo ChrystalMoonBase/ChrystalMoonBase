@@ -19,10 +19,10 @@ The AI does not make governance decisions, does not control residents' behaviour
 ## Three AI Layers
 
 **Layer 1 — Robot AI (distributed, onboard each robot):**
-Real-time control of individual robot locomotion, tool head operation, and local fault response. See `systems/robot-cmb-r1/ai-onboard.md`.
+Real-time control of individual robot locomotion, tool head operation, and local fault response. See `systems/robot-cmb8lf-l1/ai-onboard.md`.
 
 **Layer 2 — Construction AI (mast-based computer):**
-Swarm coordination, construction planning, quality control aggregation, power delivery management. See `systems/robot-cmb-r1/swarm-logic.md`.
+Swarm coordination, construction planning, quality control aggregation, power delivery management. See `systems/robot-cmb8lf-l1/swarm-logic.md`.
 
 **Layer 3 — Base AI (distributed across base network):**
 Overall base monitoring, life support management, safety alert system, data relay to Earth. This document.

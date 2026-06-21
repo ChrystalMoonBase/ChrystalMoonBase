@@ -10,7 +10,7 @@
 
 Two arms extend horizontally from **segment 1 (the lowest mast segment)**, positioned just above the pod garages. From each arm, a 30-metre roll-out CIGS solar film hangs vertically — unrolling upward as the mast extends. The entire mast rotates slowly in azimuth to keep both arms perpendicular to the sun at all times.
 
-**Total solar area: ~600 m²** (2 arms × 9 m wide × 30 m long)
+**Total solar area: ~600 m²** (2 arms × ~10 m wide × 30 m long)
 
 The mast rotates on a **magnetically levitated bearing** (AMB or PMB) — frictionless, maintenance-free, silent. No mechanical contact between the rotating mast and the fixed pod structure.
 
@@ -18,7 +18,7 @@ The mast rotates on a **magnetically levitated bearing** (AMB or PMB) — fricti
 
 ## Why Vertical?
 
-At 88.6°N, the sun moves around the horizon at an elevation of 1.5°–6.5°. A horizontal panel receives:
+At 88.63°N, the sun moves around the horizon at an elevation of 1.5°–6.5°. A horizontal panel receives:
 
 **Horizontal panel:** 1,370 W/m² × sin(elevation) ≈ 35–155 W/m²
 
@@ -90,10 +90,10 @@ The top segment (segment 5) is reserved exclusively for the Ka-band antenna and 
 | Mast rotation | Magnetically levitated bearing (AMB/PMB) |
 | Arm position | Segment 1 — lowest segment, above garages |
 | Number of arms | 2 |
-| Arm length | ~9 m each |
-| Film width | ~9 m (= arm length) |
+| Arm length | ~10 m each |
+| Film width | ~10 m (= arm length) |
 | Film length | ~30 m (hangs vertically, guided by pulley cables) |
-| **Panel area per arm** | **~270 m²** |
+| **Panel area per arm** | **~300 m²** |
 | **Total panel area** | **~600 m²** |
 | Film type | CIGS thin-film on flexible substrate |
 | Cell efficiency (conservative) | 15.7% |
@@ -143,7 +143,7 @@ Actual dust accumulation rate at Peary is not measured. Cleaning frequency must 
 
 ## Key References
 
-- Powalla et al. (2017) — CIGS thin-film photovoltaics review, Advanced Energy Materials
+- Powalla et al. (2017) — *Thin-film solar cells exceeding 22% efficiency* (CIGS review). https://doi.org/10.1002/aenm.201700791
 - ROSA (Roll-Out Solar Array) — NASA ISS deployment, similar roll-out architecture
-- Noda et al. (2008) — SELENE polar illumination data
+- Noda et al. (2008) — SELENE polar illumination data, GRL 35, L24203. https://doi.org/10.1029/2008GL035692
 - Speyerer & Robinson (2005) — Peaks of Eternal Light illumination mapping

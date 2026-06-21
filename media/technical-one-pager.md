@@ -98,7 +98,7 @@ Estimated Phase 0 cost: €1.5–3 million across 3–5 years. Each demonstrator
 ## Key References
 
 - Noda et al. (2008) GRL — SELENE polar illumination data
-- Fateri et al. (2019) Scientific Reports — laser sintering of lunar simulant
+- Fateri et al. (2019), J. Aerospace Eng. 32(6) — solar sintering of lunar simulant. https://doi.org/10.1061/(ASCE)AS.1943-5525.0001093
 - Schwandt et al. (2012) Planetary and Space Science — molten oxide electrolysis
 - Carrier, Olhoeft & Mendell (1991) Lunar Sourcebook — regolith properties
 - PowerLight Technologies (2022) — laser power beaming ground demonstration

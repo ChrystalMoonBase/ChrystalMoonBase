@@ -85,7 +85,7 @@ make-up**, with nitrogen contingent on polar ice.
 
 - Solar-wind volatile studies — implanted H, He, Ar, trace C/N released on heating
   regolith (~1000 K).
-- arXiv 2502.13679 — cold-trap volatiles include ammonia (N source) where ice exists.
+- arXiv 2502.13679 — https://arxiv.org/abs/2502.13679 — cold-trap volatiles include ammonia (N source) where ice exists.
 - ECLSS references — buffer gas role in breathable atmosphere.
 
 *Genuinely uncertain local supply. This is a proposal, not a settled design, and one of

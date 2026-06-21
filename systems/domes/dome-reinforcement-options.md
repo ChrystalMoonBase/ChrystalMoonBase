@@ -56,7 +56,7 @@ protection, not by holding the atmosphere in.
 
 [†] "Mineral fibre" is silicate rock melted and drawn into thread. On Earth it is made from basalt, so the commercial product is called "basalt fibre" — but the SAME fibre can be drawn from **anorthosite**, the rock that is actually at Peary. The values shown are the terrestrial basalt-fibre figures used as the closest available reference; lunar anorthosite fibre is uncharacterised and must be tested. **Nothing in this project requires basalt to be sourced.**
 
-*Sources: 3M Nextel datasheet; peer-reviewed mineral-fibre (terrestrial "basalt fibre") and S-glass
+*Sources: 3M Nextel ceramic-fibre datasheet (https://www.3m.com/3M/en_US/p/d/b40069891/); peer-reviewed mineral-fibre (terrestrial "basalt fibre") and S-glass
 data; titanium is the standard Ti-6Al-4V reference value. All are terrestrial
 datasheet/lab values — lunar-made fibre is uncharacterised.*
 

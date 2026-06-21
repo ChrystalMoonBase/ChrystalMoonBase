@@ -97,3 +97,16 @@ The base sports facilities are designed for 1/6g — not adapted from Earth desi
 
 **The recreational lake:**
 Swimming in 1/6g in the recreational lake is one of the primary physical activity options. The buoyancy experience is unique — the reduced effective weight changes the swimming experience in ways that cannot be replicated on Earth. The lake also provides the psychological benefit of open water — a rare and precious thing in an enclosed habitat.
+
+---
+
+## Sources & verification
+
+The quantitative claims in this document are grounded in published space-agriculture research. Figures are targets/estimates, not validated for a lunar base.
+
+- **Growing area per person (~30–50 m²).** NASA controlled-environment research finds that **~20–25 m² of crops can supply the oxygen for one person, and ~50 m² is required for that person's dietary calories** — so this document's 30–50 m²/person sits within the established range. NASA, *Controlled Environment Agriculture Testing for Space Habitats* — https://ntrs.nasa.gov/api/citations/20140017323/downloads/20140017323.pdf ; NASA TM-2020-5008832, *NASA's Contributions to Vertical Farming* — https://ntrs.nasa.gov/api/citations/20205008832/downloads/NASA%20TM-2020-5008832%20NASA's%20Contributions%20to%20Vertical%20Farming.pdf ; USDA-ARS, *Growing Plants in Space* — https://www.ars.usda.gov/oc/utm/growing-plants-in-space/
+- **Hydroponics + LED for space (crop choice, closed-loop).** NASA patented LED plant lighting (1990) and ran the Kennedy Biomass Production Chamber (vertically stacked hydroponic shelves) — an early vertical farm. Crops tested include wheat, soybean, potato, rice, sweet potato — matching this document's crop list. USDA-ARS (above); NASA Advanced Plant Habitat (ISS).
+- **Food mass per person (~1 t/person/year).** Space-farming reviews estimate roughly **one tonne of food per astronaut per year** (~2.75 kg/day). ScienceDirect, *Space farming: Horticulture systems on spacecraft…* — https://www.sciencedirect.com/science/article/abs/pii/S0981942822005605
+- **Bone-density loss / muscle atrophy in reduced gravity.** Microgravity bone loss is well documented from ISS; lunar 1/6 g countermeasures remain an open research area. (NASA Human Research Program — bone & muscle.) This supports the "mandatory physical activity" requirement; the exact effectiveness of a maglev 1 g sleeping ring is unproven and flagged as such.
+
+> Note: precise crop yields, lighting energy, and the 1/6 g biological effects are all **unvalidated for the lunar case** and should be read as Earth-derived estimates pending real data.

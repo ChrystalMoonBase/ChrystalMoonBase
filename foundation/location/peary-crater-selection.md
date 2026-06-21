@@ -32,12 +32,14 @@ Peary Crater rim satisfies all five better than any other currently identified l
 
 Published illumination data from SELENE (Kaguya) and LRO confirm that specific peaks on the Peary rim receive sunlight for approximately 89% of the lunar year — among the highest values measured anywhere on the Moon.
 
-The physical reason is the polar geometry: at 88.6°N, the sun moves around the horizon rather than rising and setting. A vertical solar panel tracking the sun in azimuth receives near-full solar flux continuously. This is fundamentally different from equatorial sites where day and night alternate on a 29.5-day cycle.
+The physical reason is the polar geometry: at 88.63°N, the sun moves around the horizon rather than rising and setting. A vertical solar panel tracking the sun in azimuth receives near-full solar flux continuously. This is fundamentally different from equatorial sites where day and night alternate on a 29.5-day cycle.
 
 **Key references:**
-- Bussey et al. (2005) Nature 434:842 — Clementine illumination mapping
-- Noda et al. (2008) Geophysical Research Letters — SELENE topographic illumination
-- Mazarico et al. (2011) Icarus — LRO illumination modelling
+- Bussey et al. (2005) "Permanent shadow in simple craters near the lunar poles." *Geophysical Research Letters* 32, L23201 — Clementine illumination mapping. https://doi.org/10.1029/2005GL023926
+- Noda et al. (2008) "Illumination conditions at the lunar polar regions by KAGUYA (SELENE) laser altimeter." *Geophysical Research Letters* 35, L24203 — reports 89% for the best northern peaks. https://doi.org/10.1029/2008GL035692
+- Mazarico et al. (2011) "Illumination conditions of the lunar polar regions using LOLA topography." *Icarus* 211, 1066–1081. https://doi.org/10.1016/j.icarus.2010.10.030
+
+(Full illumination-source summary: `foundation/location/illumination-data.md`.)
 
 **Uncertainty:** Published illumination data has spatial resolution of tens to hundreds of metres. The actual illumination at a specific 10-metre landing zone within the Peary rim has not been measured directly. Fine-scale topographic shadowing from small surface features could affect local illumination. This uncertainty must be resolved by a dedicated orbital survey before any flight mission.
 
@@ -45,7 +47,7 @@ The physical reason is the polar geometry: at 88.6°N, the sun moves around the 
 
 ## Accessible Ice
 
-Peary crater itself — the interior floor — is among the permanently shadowed regions (PSRs) of the Moon, maintaining temperatures of 30–40 K. Water ice has been confirmed in lunar PSRs by LCROSS (2009) and M3 on Chandrayaan-1 (Li et al. 2018).
+Peary crater itself — the interior floor — is among the permanently shadowed regions (PSRs) of the Moon, maintaining temperatures of 30–40 K. Water ice has been confirmed in lunar PSRs by LCROSS (Colaprete et al. 2010, *Science* 330, 463–468, https://doi.org/10.1126/science.1186986) and by M3 on Chandrayaan-1 (Li et al. 2018, *PNAS* 115, 8907–8912, https://doi.org/10.1073/pnas.1802345115 — direct evidence of surface-exposed water ice, including the northern polar region).
 
 The proximity of an illuminated rim to a cold trap floor is a rare and valuable combination. Power is available on the rim; ice is accessible nearby.
 

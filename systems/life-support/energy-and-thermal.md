@@ -17,7 +17,7 @@ Several systems across the base — the habitat domes, the aquaculture domes, th
 
 ## The Peary Energy Picture
 
-The base is sited on the rim peaks of Peary Crater (~88.6°N). These near-polar "peaks of near-eternal light" avoid the standard ~14.5-day lunar night of lower latitudes: illumination data suggests on the order of **80–90% of the year** at the best-measured peaks (the power budget uses ~89%).
+The base is sited on the rim peaks of Peary Crater (~88.63°N). These near-polar "peaks of near-eternal light" avoid the standard ~14.5-day lunar night of lower latitudes: illumination data suggests on the order of **80–90% of the year** at the best-measured peaks (the power budget uses ~89%).
 
 This must be stated honestly: near-eternal is **not** eternal. No single peak has 100% illumination. The remaining darkness is not two weeks but scattered hours-to-days, worst around lunar winter when the sun sits lowest and even a crater-rim ridge can shadow a panel.
 

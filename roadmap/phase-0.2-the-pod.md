@@ -123,10 +123,10 @@ The Pod's single purpose is to prove that a robot system can land autonomously, 
 
 ## Key References
 
-- Bussey et al. (2005) Nature 434:842 — Clementine illumination mapping of Peary rim
-- Noda et al. (2008) Geophysical Research Letters — SELENE topographic illumination data
-- Mazarico et al. (2011) Icarus — LRO/LOLA illumination modelling
-- Fateri et al. (2019) Scientific Reports — Laser sintering of lunar regolith simulant
+- Bussey et al. (2005) — Clementine illumination mapping of Peary rim. https://doi.org/10.1029/2005GL023926
+- Noda et al. (2008) — SELENE topographic illumination data, GRL 35, L24203. https://doi.org/10.1029/2008GL035692
+- Mazarico et al. (2011) — LRO/LOLA illumination modelling, Icarus 211, 1066–1081. https://doi.org/10.1016/j.icarus.2010.10.030
+- Fateri et al. (2019) — Solar Sintering for Lunar Additive Manufacturing, J. Aerospace Eng. 32(6). https://doi.org/10.1061/(ASCE)AS.1943-5525.0001093
 - PowerLight Technologies (2022) — Laser power beaming ground demonstration
 - SpaceX Falcon Heavy — User's Guide, payload specifications
 
@@ -146,7 +146,7 @@ The Peary crater rim has four candidate illumination peaks — locations where h
 - Construction rate scales with every additional Pod
 
 **Pod 2 is also a resupply mission:**
-If and when subsequent Pods fly, each can bring fresh heads, spare components, and potentially new robot chassis. But the fleet is **not designed to depend on this**. Because resupply timing cannot be guaranteed, the fleet must be able to operate independently for the full head-wear lifetime (5–10 years) using only what it already has, with in-field repair and head-swap (see `systems/robot-cmb-r1/failure-modes-and-degradation.md`). Any resupply that does arrive is a bonus, not a requirement.
+If and when subsequent Pods fly, each can bring fresh heads, spare components, and potentially new robot chassis. But the fleet is **not designed to depend on this**. Because resupply timing cannot be guaranteed, the fleet must be able to operate independently for the full head-wear lifetime (5–10 years) using only what it already has, with in-field repair and head-swap (see `systems/robot-cmb8lf-l1/failure-modes-and-degradation.md`). Any resupply that does arrive is a bonus, not a requirement.
 
 **The sequence (expansion scenario — if it works and the project continues):**
 

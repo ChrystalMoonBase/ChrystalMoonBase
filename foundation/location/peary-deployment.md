@@ -9,7 +9,7 @@
 
 ## Overview
 
-Peary Crater (88.6°N, ⌀ ~79 km) is the primary candidate location for the first Chrystal Moon Base infrastructure cluster. Four elevated points on its rim are candidate high-illumination peaks — the best of which receives sunlight for ~89% of the lunar year (Noda et al. 2008), among the highest values measured anywhere on the Moon. These peaks (historically called "peaks of eternal light", though no lunar point is lit 100% of the year) are the anchor positions for the first four infrastructure pods.
+Peary Crater (88.63°N, ⌀ ~79 km) is the primary candidate location for the first Chrystal Moon Base infrastructure cluster. Four elevated points on its rim are candidate high-illumination peaks — the best of which receives sunlight for ~89% of the lunar year (Noda et al. 2008), among the highest values measured anywhere on the Moon. These peaks (historically called "peaks of eternal light", though no lunar point is lit 100% of the year) are the anchor positions for the first four infrastructure pods.
 
 Each pod sits on a PEL, harvesting solar power and relaying communications. Sintered regolith roads (highland anorthosite) lead from each pod down into the crater, converging on a central **⌀ 505 m communications zone** positioned to minimise total path length variance across all four routes.
 
@@ -87,7 +87,7 @@ The central communications and coordination platform is a circular zone of 505 m
 | Parameter        | Value                   |
 |------------------|-------------------------|
 | Crater           | Peary                   |
-| Location         | 88.6°N, lunar north pole |
+| Location         | 88.63°N, lunar north pole |
 | Crater diameter  | ~79 km                  |
 | Rim height       | ~ 2–3 km above floor    |
 | Peak illumination | ~89% of lunar year (best peak; range ~86–94%) |

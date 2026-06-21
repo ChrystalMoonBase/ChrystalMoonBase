@@ -29,7 +29,7 @@ Chrystal Moon Base is an open-source concept for building a permanent human sett
 ## The Founder
 
 **Berechja Kerkdijk**
-Sittard / Hegelsom, Netherlands.
+Hegelsom, Limburg, Netherlands.
 No PhD. No laboratory. No investors.
 Just a man with a dream — researched and grounded in current science and technology.
 
@@ -79,7 +79,7 @@ systems/
     docs/             BOM, assembly, shopping list
     diagrams/         Wiring, system overview
     (software is proprietary and kept in a separate private repository)
-  robot-cmb-r1/       Lunar robot concept specification
+  robot-cmb8lf-l1/       Lunar robot concept specification
   sintering/          Laser sintering physics
   pod/                MAST-POD — mast, solar, laser, anchoring
   processing-modules/ All 13 resource extraction modules

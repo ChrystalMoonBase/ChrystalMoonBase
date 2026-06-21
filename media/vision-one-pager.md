@@ -16,7 +16,7 @@ Chrystal Moon Base asks a different question:
 
 Published mission data suggests the Moon contains many of the raw materials needed for construction. Silicates for potential glass production. Ilmenite bearing titanium. Anorthosite with aluminium compounds. Oxygen locked in most minerals. Water ice confirmed in some polar shadows — though its concentration and accessibility at any specific site remain uncertain.
 
-At the Peary Crater rim, 88.6°N, illumination data from SELENE suggests near-continuous sunlight for approximately 89% of the year at the best-measured peaks. Whether a specific landing zone achieves this has not been directly confirmed at the resolution needed for mission planning.
+At the Peary Crater rim, 88.63°N, illumination data from SELENE suggests near-continuous sunlight for approximately 89% of the year at the best-measured peaks. Whether a specific landing zone achieves this has not been directly confirmed at the resolution needed for mission planning.
 
 The materials and energy may be there. Whether they are accessible, in sufficient quantity, and usable by a robotic system that does not yet exist — that is the question this project is trying to honestly explore.
 

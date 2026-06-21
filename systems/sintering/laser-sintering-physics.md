@@ -80,3 +80,18 @@ These are stated as open facts, not resolved positions. The reader can weigh the
 4. **Forming temperature follows the same logic.** The W-Re/HfC forming tip and the Thermal Buddy cooling strategy were both specified against ~1,200 °C basalt. At ~1,550 °C the melting-point margins still hold, but wear, adhesion, and cooling-rate numbers must be re-derived from real composition data.
 
 **Resolution path:** Phase 0 Demonstrator 1 (sintering) must test with the best available highland-anorthosite simulant, measure the actual power and time required to reach structural sintering, and report whether the current laser specification is adequate or must be revised. Until then, all laser-power and sintering-time figures in this repository are basalt-referenced starting points.
+
+---
+
+## Sources & verification
+
+The sintering physics, the temperature figures, and the basalt-vs-anorthite distinction are all grounded in published lunar-materials research. CMB's specific laser power and scan-speed numbers remain **basalt-referenced estimates pending Phase 0 testing** with a highland simulant.
+
+- **Anorthite melts ~1,550 °C (confirms the Peary figure).** ESA Advanced Concepts Team: in lunar regolith the plagioclase is high-Ca anorthite, "which has a melting temperature around 1550 °C." ESA ACT, *Additive Manufacturing of Functionally Graded Materials from Lunar Regolith* — https://www.esa.int/gsp/ACT/doc/ARI/ARI%20Study%20Report/ACT-RPT-HAB-ARI-19-9401.pdf
+- **Highland = anorthite-rich; mare = pyroxene/basalt — and the simulants differ accordingly.** Highland simulants (LHS-1, NU-LHT-2M, OB-1) are anorthite-rich; mare simulants (JSC-1/1A/2A, LMS-1, BP-1) are basaltic — and most published sintering used the *mare* simulants, exactly the gap this document flags. *Scientific Reports* (2023), *Material aspects of sintering of EAC-1A* — https://www.nature.com/articles/s41598-023-50391-y
+- **Optimal sintering ~1,100–1,120 °C for mare simulant (vacuum).** Meurisse et al. found ~1,100 °C optimal for JSC-1A; EAC-1A ~1,120 °C in vacuum — supporting the ~1,050–1,150 °C sintering-onset range cited above (these are *mare-referenced*). *Scientific Reports* (2023, above).
+- **Component mineral melting points.** Albite ~1,120 °C, anorthite ~1,153–1,550 °C (composition-dependent), diopside ~1,390 °C, ilmenite ~1,667 °C — confirming highland feedstock sinters/melts hotter than mare. ScienceDirect, *Vacuum sintered HUST-1 lunar regolith simulant* — https://www.sciencedirect.com/science/article/pii/S2095268624000764
+- **JSC-1A is mare-type with ~50% glass; no longer commercially available (JSC-2A is the successor).** Confirms the "all published experiments use mare simulants" caveat. ScienceDirect, *Sintering and melting of JSC-2A* — https://www.sciencedirect.com/science/article/abs/pii/S027288422030537X
+- **Vacuum sintering is real and characterised** (densification, evaporation limits above ~1,050 °C). HUST-1 vacuum-sinter study (above); NASA, *Thermal Properties of Lunar Regolith Simulants* — https://ntrs.nasa.gov/api/citations/20100024178/downloads/20100024178.pdf
+
+> Bottom line unchanged: wherever this repo states ~1,200 °C, read it as *mare-basalt-referenced*. The Peary highland target melts hotter (~1,550 °C, ESA-confirmed), which costs more laser energy and tightens forming-tip and cooling margins. Real Peary compositional data does not yet exist; Phase 0 Demonstrator 1 must test with a highland-anorthite simulant (e.g. LHS-1 / NU-LHT-2M).

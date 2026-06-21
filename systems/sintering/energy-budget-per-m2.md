@@ -17,7 +17,7 @@ The energy required to sinter one square metre of regolith to structural depth d
 
 ## Published Estimates
 
-Published laboratory sintering data (primarily Fateri et al. 2019 and Meurisse et al. 2018) suggest energy inputs of approximately **5,000 to 15,000 kWh per cubic metre** of sintered material, depending on target density, laser wavelength, and regolith composition.
+Published laboratory sintering data (primarily Fateri et al. 2019 and Meurisse et al. 2018 — full citations and links in `systems/sintering/overview.md`) suggest energy inputs of approximately **5,000 to 15,000 kWh per cubic metre** of sintered material, depending on target density, laser wavelength, and regolith composition.
 
 For a sintered layer 10 cm deep (0.1 m³ per m² of surface):
 - **Optimistic:** 5,000 kWh/m³ × 0.1 m³ = **500 kWh/m²**
@@ -52,7 +52,7 @@ These timelines assume the current ~600 m² CIGS solar system (~104–143 kW con
 
 ## Critical Caveat
 
-The energy estimates above are derived from laboratory experiments at small scale. They have not been validated at construction-relevant scales. The actual energy requirement at Peary conditions (vacuum, highland regolith, the specific temperature cycling at 88.6°N) is unknown.
+The energy estimates above are derived from laboratory experiments at small scale. They have not been validated at construction-relevant scales. The actual energy requirement at Peary conditions (vacuum, highland regolith, the specific temperature cycling at 88.63°N) is unknown.
 
 **Demonstrator 1** will reduce this uncertainty significantly. Its results — whether positive or negative — will be published openly and will update all estimates in this document.
 

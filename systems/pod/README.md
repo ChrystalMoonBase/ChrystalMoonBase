@@ -26,7 +26,7 @@ Three design principles make it the most defensible choice:
 
 | Question | Status |
 |---|---|
-| Regolith bearing capacity at Peary rim (88.6°N) | Requires Phase 0 ground testing |
+| Regolith bearing capacity at Peary rim (88.63°N) | Requires Phase 0 ground testing |
 | Sintering energy 8000 kWh/m³ — scalability to 0.25 m depth | Needs simulation + physical test |
 | TRN landing precision — 26.5 m target zone on specific ridge | Engineering verification needed |
 | Articulated shell segment reliability after cold soak at −150°C | Material and mechanism testing required |
