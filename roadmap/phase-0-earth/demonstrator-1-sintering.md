@@ -16,7 +16,7 @@ Demonstrate that a lunar regolith simulant can be laser-sintered into structural
 
 Laser sintering of lunar simulant is the core physical process of the entire concept. If it does not produce solid, load-bearing material at the required energy input, no other aspect of the design matters.
 
-Published laboratory results (Fateri et al. 2019, Scientific Reports; Taylor et al. various) demonstrate that laser sintering of lunar simulant is possible. However:
+Published laboratory results (Fateri et al. 2019, J. Aerospace Eng.; Taylor et al. various) demonstrate that laser sintering of lunar simulant is possible. However:
 - Published tests used small samples (typically a few centimetres)
 - Energy densities varied widely between experiments
 - Crack formation in larger samples is an unsolved problem
@@ -57,6 +57,6 @@ Demonstrator 1 scales up from laboratory samples to construction-relevant patche
 
 ## Key References
 
-- Fateri, M. et al. (2019) "Solar sintering for lunar additive manufacturing." Scientific Reports 9, 10451.
+- Fateri, M. et al. (2019) "Solar Sintering for Lunar Additive Manufacturing." *Journal of Aerospace Engineering* 32(6), 04019101. https://doi.org/10.1061/(ASCE)AS.1943-5525.0001093
 - Taylor, S.L. et al. (2018) "Laser sintering of lunar regolith simulant." Rapid Prototyping Journal.
-- Meurisse, A. et al. (2018) "Solar 3D printing of lunar regolith." Acta Astronautica 152, 800–810.
+- Meurisse, A. et al. (2018) "Solar 3D printing of lunar regolith." *Acta Astronautica* 152, 800–810. https://doi.org/10.1016/j.actaastro.2018.06.063

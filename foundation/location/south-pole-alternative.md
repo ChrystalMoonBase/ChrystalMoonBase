@@ -43,7 +43,7 @@ The south pole should not be dismissed. If an institutional partner with south p
 This is an open question. Input from polar lunar geologists and mission planners is specifically requested.
 
 **References:**
-- Bussey et al. (2010) Icarus — south pole illumination mapping
-- Colaprete et al. (2010) Science — LCROSS water detection
-- Speyerer & Robinson (2013) Icarus — LRO polar illumination
-- NASA/KARI/ASU (2023) — ShadowCam Shackleton crater mosaic
+- Bussey et al. (2010) — south pole illumination mapping, Icarus 208, 558–564. https://doi.org/10.1016/j.icarus.2010.03.028
+- Colaprete et al. (2010) — LCROSS water detection, Science 330, 463–468. https://doi.org/10.1126/science.1186986
+- Speyerer & Robinson (2013) — Persistently illuminated regions at the lunar poles, Icarus 222, 122–136. https://doi.org/10.1016/j.icarus.2012.10.010
+- NASA/KARI/ASU (2023) — ShadowCam Shackleton crater mosaic. https://www.nasa.gov/image-article/shadowcam-images-shackleton-crater/

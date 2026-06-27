@@ -26,7 +26,7 @@ More solar capacity deployed along the Peary rim. More robots. A larger sintered
 
 ## Phase 1.2 — Resource Processing
 
-The 13 processing modules are delivered and become operational. The base begins producing glass, titanium, aluminium, and other materials from the Moon's own resources. The underground cisterns begin accumulating water. The base starts to become genuinely self-sufficient in construction materials.
+The ~20 processing modules are delivered and become operational. The base begins producing glass, aluminium, oxygen, silicon, and other materials from the Moon's own resources. (Titanium is *not* among them — its ore, ilmenite, is a mare mineral effectively absent at highland Peary; see `PEARY-MATERIALS-REFERENCE.md`. Aluminium is the local structural metal.) The underground cisterns begin accumulating water. The base starts to become genuinely self-sufficient in construction materials.
 
 **Prerequisite:** Phase 1.1 complete. Processing module engineering complete. Delivery mission funded and launched.
 

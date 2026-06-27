@@ -130,7 +130,7 @@ been demonstrated end to end. Treat as an open research front, not a solved fact
 
 ## References (verify and extend)
 
-- arXiv 2408.05823 — MRE alloy categories (Al/Fe, Fe/Si, Ca/Si/Al); review of refining.
+- arXiv 2408.05823 — https://arxiv.org/abs/2408.05823 — MRE alloy categories (Al/Fe, Fe/Si, Ca/Si/Al); review of refining.
 - Sibille et al. (KSC) — reactor-material contamination (Cr/Mn/Ni/Mo) of MRE product;
   mechanical separation unsuitable.
 - Standard physical metallurgy — metal boiling points / vacuum distillation; molten-salt

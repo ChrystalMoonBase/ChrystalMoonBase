@@ -8,7 +8,7 @@
 
 Chrystal Moon Base is an open-source project with no investors, no government funding, and no corporate backing. Everything built so far — the concept, the documentation, the website, the ESA OSIP submission — was created by one person, working alone.
 
-Phase 0 requires approximately **€1.5–3 million** across 3–5 years to fund the five Earth demonstrators that will prove or disprove whether this concept is physically viable. Crowdfunding is the starting fuel, not the finish line. Every contribution funds the feasibility study, the first demonstrator, and the groundwork needed to approach institutional partners.
+Phase 0 funds the five Earth demonstrators that will prove or disprove whether this concept is physically viable. The full programme cost is **not yet fixed** — a credible per-demonstrator breakdown still has to be worked out, and publishing a single headline figure before that would invent a certainty that does not exist. Crowdfunding is the starting fuel, not the finish line. Every contribution funds the feasibility study, the first demonstrator, and the groundwork needed to approach institutional partners.
 
 ---
 

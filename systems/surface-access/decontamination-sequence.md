@@ -154,3 +154,18 @@ Once the decontamination sequence is established and the base is operational, in
 3. **Cargo container standards** — what exterior cleanliness standard should be required for containers before they land? Can this be specified in delivery contracts?
 4. **Minimum cleanroom class** — what ISO cleanliness class is required for safe long-duration habitation, and is it achievable in the described system?
 5. **Throughput** — the individual-sequential process described here is thorough but slow. For large crew transfers, how long does the full sequence take per person, and what is the maximum throughput of the facility?
+
+---
+
+## Sources & verification
+
+The lunar-dust hazard claims that motivate this entire protocol are strongly supported by ESA, NASA, and peer-reviewed research. (The decontamination *stages* themselves are this project's concept design.)
+
+- **Sharp, abrasive, "like glass" — never weathered.** Lunar regolith is pulverised by billions of years of micrometeorite impacts with no wind or water to smooth it, leaving jagged grains "fine like powder, but sharp like glass" that slice lung tissue. ESA, *The toxic side of the Moon* — https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/The_toxic_side_of_the_Moon
+- **Damages seals and equipment.** The dust "ate away layers of spacesuit boots and destroyed the vacuum seals of Apollo sample containers" — directly confirming the seal/optics/filter damage cited here. ESA (above).
+- **"Lunar hay fever" + gunpowder smell.** All 12 moonwalkers reacted; Apollo 17's Harrison Schmitt is the best-documented case (sneezing, congestion, sore throat, watering eyes). Inside the cabin the dust smelled like spent gunpowder. ESA (above); SpaceDaily, *spent gunpowder* report (2026) — https://spacedaily.com/t-the-apollo-astronauts-who-carried-lunar-dust...
+- **Chemically reactive surfaces.** In vacuum the grains carry "unsatisfied" broken chemical bonds, making them highly reactive with lung surfactant and cells. NASA Human Research Roadmap, *Risk of Adverse Health Effects from Lunar Dust Exposure* — https://humanresearchroadmap.nasa.gov/evidence/reports/lunar%20dust.pdf
+- **Deep-lung penetration + toxicity.** Particles ~50× smaller than a human hair can remain in the lungs for months; lab tests show replica dust can kill up to ~90% of exposed lung/brain cells, and space-weathering increases toxicity. ESA (above); Live Science summary of the 2018 study — https://www.livescience.com/62590-moon-dust-bad-lungs-brain.html ; ocular toxicity (Apollo 14 sample) — https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3484112/
+- **Now a standing engineering requirement.** For Artemis and commercial surface missions, dust handling (cabin filtration, suit design, airlock procedures, medical monitoring) is a standing design line-item — exactly the rationale for a mandatory, multi-stage decontamination barrier.
+
+> Note: the specific stage durations, particle-count thresholds, and verification methods in this document are **concept estimates**, not validated procedures. The hazard they address, however, is well established.

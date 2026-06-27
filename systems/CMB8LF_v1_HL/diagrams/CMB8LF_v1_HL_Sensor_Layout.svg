@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="sans-serif">
+  <style>
+    .title{font-size:22px;font-weight:bold;fill:#1a2233}
+    .sub{font-size:13px;fill:#445}
+    .lbl{font-size:12px;fill:#1a2233}
+    .note{font-size:11px;fill:#667}
+    .body{fill:#dfe6f0;stroke:#46566f;stroke-width:2}
+    .bay{fill:#eef3fa;stroke:#9fb0c8;stroke-width:1;stroke-dasharray:4 3}
+    .leg{stroke:#46566f;stroke-width:6;stroke-linecap:round}
+    .work{fill:#ff7043;stroke:#c63;stroke-width:1.5}
+    .lidar{fill:#42a5f5;stroke:#1565c0;stroke-width:1.5}
+    .tof{fill:#66bb6a;stroke:#2e7d32;stroke-width:1.5}
+    .cam{fill:#ab47bc;stroke:#6a1b9a;stroke-width:1.5}
+    .illum{fill:#ffd54f;stroke:#c8a000;stroke-width:1}
+    .fso{fill:#26c6da;stroke:#00838f;stroke-width:1.5}
+    .lead{stroke:#8895a8;stroke-width:1}
+  </style>
+
+  <text x="30" y="34" class="title">CMB8LF-S1-HL — Sensor Layout (head-less)</text>
+  <text x="30" y="54" class="sub">All sensing integrated in the body. No head, no pan/tilt. Laser stays in the front-leg palm.</text>
+
+  <!-- ============ TOP VIEW ============ -->
+  <text x="70" y="96" class="lbl" font-weight="bold">TOP VIEW</text>
+
+  <!-- legs (8) -->
+  <g class="leg">
+    <line x1="250" y1="180" x2="150" y2="120"/>
+    <line x1="250" y1="210" x2="140" y2="200"/>
+    <line x1="250" y1="250" x2="140" y2="300"/>
+    <line x1="250" y1="280" x2="160" y2="360"/>
+    <line x1="430" y1="180" x2="530" y2="120"/>
+    <line x1="430" y1="210" x2="540" y2="200"/>
+    <line x1="430" y1="250" x2="540" y2="300"/>
+    <line x1="430" y1="280" x2="520" y2="360"/>
+  </g>
+
+  <!-- spider body outline: narrow front (right), wide mid, narrow rear (left) -->
+  <path class="body" d="M 250 150
+       C 360 140, 470 165, 470 230
+       C 470 295, 360 320, 250 310
+       C 180 305, 175 235, 200 230
+       C 175 225, 180 155, 250 150 Z"/>
+  <!-- electronics bay -->
+  <ellipse class="bay" cx="320" cy="230" rx="95" ry="55"/>
+  <text x="320" y="234" class="note" text-anchor="middle">electronics bay</text>
+  <text x="320" y="248" class="note" text-anchor="middle">(Jetson brain · power · comms)</text>
+
+  <!-- front lobe = work sensing (front is to the RIGHT) -->
+  <rect class="work" x="452" y="212" width="20" height="36" rx="3"/>
+  <text x="486" y="226" class="lbl">Work window</text>
+  <text x="486" y="241" class="note">FLIR Lepton 3.5 (thermal)</text>
+  <text x="486" y="254" class="note">Pi Cam 3 NoIR (visual)</text>
+  <text x="486" y="267" class="note">oblique 25°, recessed, sapphire</text>
+
+  <!-- illumination ring -->
+  <circle class="illum" cx="455" cy="200" r="5"/>
+  <circle class="illum" cx="455" cy="260" r="5"/>
+  <text x="486" y="282" class="note">6× IR LED ring + 10 W spotlight</text>
+
+  <!-- LiDAR top centre -->
+  <circle class="lidar" cx="320" cy="190" r="16"/>
+  <text x="320" y="195" class="note" text-anchor="middle" fill="#fff">LiDAR</text>
+  <line class="lead" x1="336" y1="186" x2="410" y2="150"/>
+  <text x="414" y="150" class="lbl">RPLIDAR A1M8</text>
+  <text x="414" y="164" class="note">360° on short fixed riser (top centre)</text>
+
+  <!-- ToF sides -->
+  <circle class="tof" cx="320" cy="158" r="6"/>
+  <circle class="tof" cx="320" cy="302" r="6"/>
+  <text x="150" y="430" class="note">ToF (side proximity) ×2</text>
+  <rect class="tof" x="125" y="420" width="10" height="10"/>
+
+  <!-- surround cams (4) -->
+  <circle class="cam" cx="468" cy="230" r="6"/>
+  <circle class="cam" cx="250" cy="150" r="6"/>
+  <circle class="cam" cx="185" cy="230" r="6"/>
+  <circle class="cam" cx="250" cy="310" r="6"/>
+  <text x="150" y="455" class="note">Surround override cameras ×4 (0/90/180/270°)</text>
+  <rect class="cam" x="125" y="446" width="10" height="10"/>
+
+  <!-- FSO -->
+  <circle class="fso" cx="430" cy="205" r="5"/>
+  <text x="150" y="480" class="note">FSO laser comms (top-front)</text>
+  <rect class="fso" x="125" y="471" width="10" height="10"/>
+
+  <text x="470" y="120" class="note" fill="#c63">◄ FRONT</text>
+
+  <!-- ============ SIDE VIEW ============ -->
+  <text x="600" y="360" class="lbl" font-weight="bold">SIDE VIEW</text>
+  <text x="470" y="520" class="note" fill="#c63">FRONT ►</text>
+
+  <!-- body side silhouette -->
+  <path class="body" d="M 560 470
+       C 560 430, 600 420, 700 420
+       C 780 420, 830 435, 850 455
+       C 855 462, 855 478, 845 488
+       C 800 505, 620 505, 575 495
+       C 562 490, 560 480, 560 470 Z"/>
+  <ellipse class="bay" cx="700" cy="458" rx="80" ry="26"/>
+  <text x="700" y="462" class="note" text-anchor="middle">brain / power in body core</text>
+
+  <!-- LiDAR riser on top -->
+  <rect class="lidar" x="688" y="402" width="34" height="18" rx="3"/>
+  <text x="730" y="412" class="note">LiDAR on short riser</text>
+
+  <!-- work window front + down, oblique -->
+  <g transform="translate(842,460) rotate(25)">
+    <rect class="work" x="-4" y="-16" width="10" height="32" rx="2"/>
+  </g>
+  <text x="800" y="540" class="note" fill="#c63">Work window aims fwd+down at the palm work point ↓</text>
+
+  <!-- front legs reaching down to work -->
+  <g class="leg">
+    <line x1="845" y1="470" x2="880" y2="560"/>
+    <line x1="820" y1="495" x2="845" y2="575"/>
+  </g>
+  <circle class="work" cx="880" cy="565" r="5"/>
+  <text x="700" y="575" class="note">▲ laser-palm in front leg (work point) — UNCHANGED</text>
+
+  <!-- legend -->
+  <text x="30" y="600" class="note">Orange = work-sensing · Blue = LiDAR · Green = ToF · Purple = override cams · Yellow = illumination · Cyan = FSO comms</text>
+</svg>

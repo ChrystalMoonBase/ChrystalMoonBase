@@ -54,7 +54,9 @@ The telescoping mast extends from the pod base upward. Full deployment to ~35 me
 As soon as the solar film generates sufficient voltage to activate the power bus, the base computer initialises. Robot charging begins. This is the first moment the Pod is operational on the Moon.
 
 ### 6. Leaf Sintering — First Task
-Before any other construction begins, the robots' first task is to sinter the bloom leaves permanently to the lunar regolith. This anchors the Pod structure, levels the working platform if needed, and creates the first sintered surface on the Moon. Estimated time: 48–72 hours for full leaf sintering.
+Before any other construction begins, the robots' first task is to sinter the bloom leaves permanently to the lunar regolith. This anchors the Pod structure, levels the working platform if needed, and creates the first sintered surface on the Moon.
+
+This first job is also the project's first real-world measurement. Until robots actually sinter regolith on the Moon, the true sintering rate — how fast a robot can fuse a given area, how often it must pause to recharge in the laser beam, how the anorthite highland material behaves under the laser — is not known. Every estimate so far comes from Earth simulant work and differs between models. So no fixed duration is claimed here: the leaf-sintering task is where the base first learns its own pace. The time it takes, and every build estimate that follows from it, will be set by how well the system actually performs — not by a number written in advance.
 
 The Pod is a permanent installation. It is never designed to be moved, retracted, or returned to Earth. Once the leaves are sintered to the regolith, the Pod becomes part of the lunar surface — a fixed foundation from which all subsequent construction radiates outward. In later phases, the Pod structure will be enclosed and integrated into the growing base, with the mast remaining as the highest point of the installation.
 
@@ -69,9 +71,9 @@ With the Pod anchored and operational, robots begin sintering the floor outward 
 |---|---|---|
 | Solar film area | ~600 m² | 2 arms × 9 m × 30 m, vertical, azimuth-tracking |
 | Solar cell type | CIGS thin-film (flexible, rollable) | |
-| Solar constant at Moon | ~1,370 W/m² | |
+| Solar constant at Moon | ~1,361 W/m² (varies ~1,321–1,413/yr) | |
 | Sun elevation at Peary | 1.5°–6.5° | Varies over lunar year |
-| Incidence on vertical panel | ~1,365–1,370 W/m² | cos(elevation) ≈ 1 |
+| Incidence on vertical panel | ~1,355–1,361 W/m² | cos(elevation) ≈ 1 |
 | CIGS efficiency (conservative) | 15.7% | |
 | CIGS efficiency (realistic growth) | 21.5% | |
 | Annual availability | ~89% | Based on SELENE illumination data |
@@ -123,10 +125,10 @@ The Pod's single purpose is to prove that a robot system can land autonomously, 
 
 ## Key References
 
-- Bussey et al. (2005) Nature 434:842 — Clementine illumination mapping of Peary rim
-- Noda et al. (2008) Geophysical Research Letters — SELENE topographic illumination data
-- Mazarico et al. (2011) Icarus — LRO/LOLA illumination modelling
-- Fateri et al. (2019) Scientific Reports — Laser sintering of lunar regolith simulant
+- Bussey et al. (2005) — Clementine illumination mapping of Peary rim. https://doi.org/10.1029/2005GL023926
+- Noda et al. (2008) — SELENE topographic illumination data, GRL 35, L24203. https://doi.org/10.1029/2008GL035692
+- Mazarico et al. (2011) — LRO/LOLA illumination modelling, Icarus 211, 1066–1081. https://doi.org/10.1016/j.icarus.2010.10.030
+- Fateri et al. (2019) — Solar Sintering for Lunar Additive Manufacturing, J. Aerospace Eng. 32(6). https://doi.org/10.1061/(ASCE)AS.1943-5525.0001093
 - PowerLight Technologies (2022) — Laser power beaming ground demonstration
 - SpaceX Falcon Heavy — User's Guide, payload specifications
 
@@ -146,7 +148,7 @@ The Peary crater rim has four candidate illumination peaks — locations where h
 - Construction rate scales with every additional Pod
 
 **Pod 2 is also a resupply mission:**
-If and when subsequent Pods fly, each can bring fresh heads, spare components, and potentially new robot chassis. But the fleet is **not designed to depend on this**. Because resupply timing cannot be guaranteed, the fleet must be able to operate independently for the full head-wear lifetime (5–10 years) using only what it already has, with in-field repair and head-swap (see `systems/robot-cmb-r1/failure-modes-and-degradation.md`). Any resupply that does arrive is a bonus, not a requirement.
+If and when subsequent Pods fly, each can bring fresh heads, spare components, and potentially new robot chassis. But the fleet is **not designed to depend on this**. Because resupply timing cannot be guaranteed, the fleet must be able to operate independently for the full head-wear lifetime (5–10 years) using only what it already has, with in-field repair and head-swap (see `systems/robot-cmb8lf-l1/failure-modes-and-degradation.md`). Any resupply that does arrive is a bonus, not a requirement.
 
 **The sequence (expansion scenario — if it works and the project continues):**
 

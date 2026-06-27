@@ -27,7 +27,7 @@ This document sketches what a lunar civilisation might eventually look like, org
 
 ## The Four Provinces
 
-### Province 1 — The Solar Capital: Peary Crater Rim (88.6°N)
+### Province 1 — The Solar Capital: Peary Crater Rim (88.63°N)
 
 The north polar rim of Peary Crater receives sunlight approximately 89% of the year — the most reliable solar energy on the Moon. This is where Chrystal Moon Base Phase 0.2 proposes to land first. If that concept ever works and scales, Peary could become the energy hub of a larger lunar network.
 

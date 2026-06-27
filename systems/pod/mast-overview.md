@@ -16,6 +16,12 @@ The mast is the central infrastructure element of the Pod. It serves three simul
 
 Everything else in the Pod concept depends on the mast being operational. If the mast fails to deploy, the mission ends before it begins. Mast deployment reliability is therefore the highest priority single engineering challenge in the Phase 0.2 concept.
 
+**Two hard mission-enders, not one.** The mast shares its make-or-break status with the **bloom deployment** (the unfolding of the Pod's leaves; see `pod-bloom-deployment.md`). These are the two failures with no recovery path:
+- *Mast fails to deploy* → no power beaming → the fleet cannot be sustained.
+- *Pod lands intact but the bloom does not open* → the robots stay enclosed and unpowered, can never be activated, and cannot solve the problem themselves because they are trapped inside. This is at least as critical as the mast, possibly more so.
+
+A **temporary** mast interruption is survivable: every robot carries a charged onboard battery reserve, so a short power-beaming gap does not immediately end operations — the fleet can bridge it on its own cells. What cannot be bridged is a *deployment* failure (mast or bloom) that prevents the system from ever starting. What happens after a total deployment failure — a crewed rescue, or a second Pod funded from revenue by then — is deliberately left open: it depends on data (partner valuation, revenue) that does not yet exist, so it is honestly marked as mission-end rather than given a fictional contingency.
+
 ---
 
 ## Physical Description
@@ -54,7 +60,7 @@ Two roll-out CIGS thin-film solar arms extend horizontally from the mast, one on
 |---|---|
 | Solar film technology | CIGS thin-film (roll-out) |
 | Total solar area | 2 × 9 m × 30 m = **600 m²** |
-| Solar constant at Moon | ~1,370 W/m² |
+| Solar constant at Moon | ~1,361 W/m² (varies ~1,321–1,413/yr) |
 | Conservative efficiency | 15.7% → **~104 kW** continuous |
 | Optimistic efficiency | 21.5% → **~143 kW** continuous |
 | Illumination availability | ~89% of lunar year at Peary rim |

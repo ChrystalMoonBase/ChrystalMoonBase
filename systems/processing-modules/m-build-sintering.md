@@ -68,7 +68,7 @@ the regolith's (weak) microwave absorption.
 
 ## The engineering — energy delivery
 
-- **Concentrated solar:** raw solar flux at the Moon is ~**1,360 W/m²**; Fresnel
+- **Concentrated solar:** raw solar flux at the Moon is ~**1,361 W/m²** (varies ~1,321–1,413 over the year); Fresnel
   lenses or parabolic mirrors can intensify it up to ~10,000×, giving ~**1–10 MW/m²** —
   well above the ~100–200 kW/m² at which sintering has been demonstrated (900–1200 °C).
   A solar 3D-printed brick has been made from simulant. Limitation: sunlight varies, so
@@ -143,7 +143,7 @@ what Gate 1→3 of the growth model must demonstrate.
 - ScienceDirect 2025 (Construction & Building Materials) — microwave sintering of
   highland (HUST-2) anorthosite simulant: ~142 MPa; anorthosite couples less well.
 - ScienceDirect 2023 — spark plasma sintering HUST-1: up to 566 MPa at ~1000 °C.
-- arXiv 2506.06392 — solar flux 1,360 W/m², 10,000× concentration → 1–10 MW/m².
+- arXiv 2506.06392 — https://arxiv.org/abs/2506.06392 — solar flux 1,360 W/m², 10,000× concentration → 1–10 MW/m².
 - ScienceDirect 2025 review — microwave 309 MPa; lunar structures need only ~4 MPa.
 - Indyk & Benaroya 2017 — 85 MPa / 219 MPa by porosity.
 

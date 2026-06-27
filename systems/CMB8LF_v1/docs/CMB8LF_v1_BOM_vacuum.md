@@ -89,6 +89,15 @@ Per maand (1 been)   ~€365-520
 
 ### 3A. Segment Batterijen (25 nodes)
 
+> **Waarom 25 nodes?** Ontwerpprincipe: **elk bewegend segment heeft zijn eigen kleine
+> batterij** in plaats van één centrale accu. Valt één node uit, dan verliest de robot
+> alleen dat segment — de rest blijft werken (fault-tolerance + gewichtsverdeling). Het
+> getal volgt uit de segment-telling (~8 poten met hun been-segmenten + body), niet uit
+> het aantal poten. **25 is een schaalbare werkwaarde**: het definitieve aantal hangt af
+> van het uiteindelijke aantal onafhankelijke segmenten en wordt door engineering/
+> professionals bepaald. Het principe (één node per segment) staat vast; het exacte
+> aantal niet.
+
 | Onderdeel | Aantal | Prijs/st | Totaal | Noot |
 |---|---|---|---|---|
 | 16340 Li-Ion 700mAh (losse cel) | 150 | €2.50 | €375 | 6 per segment × 25 |
@@ -354,4 +363,4 @@ MAAND 11-12   Kalibratie + software
 *Multi-AI: Claude · ChatGPT · Gemini · DeepSeek · Meta*
 *Human decisions: Berechja Kerkdijk*
 *CC0 2026 — Chrystal Moon Base — No rights reserved*
-*No flags. No patents. Built for all humanity. 🌙*
+*No flags. No patents. For all humanity. 🌙*

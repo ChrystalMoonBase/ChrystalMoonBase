@@ -84,7 +84,7 @@ process** — there simply is not much iron at Peary, so plan around aluminium.
 
 ## References (verify and extend)
 
-- arXiv 2408.05823 — MRE alloy families incl. Fe/Si.
+- arXiv 2408.05823 — https://arxiv.org/abs/2408.05823 — MRE alloy families incl. Fe/Si.
 - Highland MRE concepts — ferrosilicon + oxygen co-products from anorthosite.
 - `PEARY-MATERIALS-REFERENCE.md` — ~5 wt% FeO at highland Peary.
 

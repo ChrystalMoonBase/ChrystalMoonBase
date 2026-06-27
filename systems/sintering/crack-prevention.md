@@ -29,8 +29,8 @@ A ~1.3% linear contraction (higher than the basalt-based ~1%) in a constrained m
 
 ## Mitigation Strategies
 
-**1. Controlled cooling rate (Thermal Buddy robot):**
-The primary mitigation is to control the cooling rate so that thermal stress develops slowly enough for the material to relieve it by creep and micro-deformation rather than cracking. The thermal buddy robot applies infrared heating to the freshly sintered surface to slow cooling.
+**1. Controlled cooling rate (integrated annealing + Thermal-Buddy task):**
+The primary mitigation is to control the cooling rate so that thermal stress develops slowly enough for the material to relieve it by creep and micro-deformation rather than cracking. Every robot's integrated infrared lamps apply heating to the freshly sintered surface to slow cooling; a robot assigned the broader-area **Thermal-Buddy task** extends this control behind the build front (the lamps are integrated on every robot, not a swappable head — see `../robot-cmb8lf-l1/head-thermal-buddy.md`).
 
 Target cooling rate: < 50°C/minute (this figure is a rough estimate based on glass annealing literature — actual required rate for the highland anorthosite composition must be determined experimentally, and is likely stricter than basalt data suggests).
 
@@ -38,7 +38,7 @@ Target cooling rate: < 50°C/minute (this figure is a rough estimate based on gl
 
 Crack prevention is built into the robot hardware, not left to a single dedicated machine. Every full CMB8LF-L1 carries **two laser functions**: one melts the regolith (sintering), the second holds the just-formed material at temperature and slows its cooling (in-place annealing). The melting laser forms the floor; the annealing laser trails it, keeping the fresh sintered material above the critical cracking temperature until thermal stress has dissipated. This is the glassworker's annealing principle applied per-robot: melt slowly, cool slowly — *slow but sure*. Because the annealing travels with every sintering robot, no point is sintered without immediate cooling-rate control.
 
-The dedicated **Thermal Buddy** role (`systems/robot-cmb-r1/head-thermal-buddy.md`, infrared area heating) complements this at larger area scale — managing the cooling of a broader freshly-built region rather than just the bead behind one robot. Together: per-robot annealing laser for the immediate weld, Thermal Buddy for the surrounding area.
+The dedicated **Thermal Buddy** role (`systems/robot-cmb8lf-l1/head-thermal-buddy.md`, infrared area heating) complements this at larger area scale — managing the cooling of a broader freshly-built region rather than just the bead behind one robot. Together: per-robot annealing laser for the immediate weld, Thermal Buddy for the surrounding area.
 
 > **Design note / to confirm:** the per-robot dual-laser (melt + anneal) is the current design intent. Its exact relationship to the separate Thermal Buddy robot — whether the Thermal Buddy is a complement at area scale or is partly superseded by per-robot annealing — should be stated consistently across the robot documents in a future pass.
 

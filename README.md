@@ -2,7 +2,7 @@
 ## Official Open-Source Repository
 
 **A concept proposal for a permanent Moon base built from local lunar materials by autonomous robots.**
-No flags. No patents. Built for all of humanity.
+No flags. No patents. For all of humanity.
 
 **Website:** https://chrystalmoonbase.com
 **Licence:** Hardware: CERN-OHL-S-2.0 · Documents: CC0 · Software: Proprietary (not published)
@@ -18,7 +18,7 @@ Chrystal Moon Base is an open-source concept for building a permanent human sett
 - **Autonomous octopod robots** (CMB8LF-L1) — 16 robots powered by laser beamed from a ~35-metre solar mast
 - **In-situ laser sintering** — fusing Peary highland regolith (anorthosite) into structural sintered glass-ceramic floors, walls, and dome foundations
 - **600 m² roll-out CIGS solar system** — ~104–143 kW continuous power
-- **Local material processing** — 13 processing modules extracting glass, aluminium, oxygen, silicon, and (pending confirmed ice) water from the Moon
+- **Local material processing** — ~20 processing modules extracting glass, aluminium, oxygen, silicon, and (pending confirmed ice) water from the Moon
 - **Multi-layer glass domes** — aluminium-reinforced, self-sealing habitats for permanent human residents
 - **Maglev transport** — connecting all base facilities
 
@@ -29,7 +29,7 @@ Chrystal Moon Base is an open-source concept for building a permanent human sett
 ## The Founder
 
 **Berechja Kerkdijk**
-Sittard / Hegelsom, Netherlands.
+Hegelsom, Limburg, Netherlands.
 No PhD. No laboratory. No investors.
 Just a man with a dream — researched and grounded in current science and technology.
 
@@ -79,7 +79,7 @@ systems/
     docs/             BOM, assembly, shopping list
     diagrams/         Wiring, system overview
     (software is proprietary and kept in a separate private repository)
-  robot-cmb-r1/       Lunar robot concept specification
+  robot-cmb8lf-l1/       Lunar robot concept specification
   sintering/          Laser sintering physics
   pod/                MAST-POD — mast, solar, laser, anchoring
   processing-modules/ All 13 resource extraction modules
@@ -111,6 +111,10 @@ public/               Website source (chrystalmoonbase.com)
 **Improve a document:** Fork → edit → pull request.
 **Build the prototype:** Follow `systems/CMB8LF_v1/README.md`
 **You are an engineer:** Review the specifications. Find the problems. Say so clearly.
+
+**Help us validate an open design question:** We are currently weighing an **integrated,
+head-less robot** against the earlier **detachable-head** design, and we want engineering
+input on whether we made the right call. See **`OPEN-DESIGN-INQUIRY-robot-head.md`**.
 
 All contributors credited in `CREDITS.md`.
 

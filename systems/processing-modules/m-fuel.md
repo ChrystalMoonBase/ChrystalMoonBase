@@ -78,7 +78,7 @@ DWE is mature; lunar propellant production is a flagship ISRU goal. Gating items
 
 ## References (verify and extend)
 
-- arXiv 2502.13679 — DWE: water → H₂ + O₂, essentially no byproducts.
+- arXiv 2502.13679 — https://arxiv.org/abs/2502.13679 — DWE: water → H₂ + O₂, essentially no byproducts.
 - NASA ISRU overview (NTRS 2022) — ISRU propellant for surface mobility / ascent.
 
 *Contingent on water supply. This is a proposal, not a settled design.*

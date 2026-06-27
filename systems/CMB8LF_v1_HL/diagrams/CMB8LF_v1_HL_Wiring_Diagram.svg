@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="sans-serif">
+  <style>
+    .title{font-size:22px;font-weight:bold;fill:#1a2233}
+    .sub{font-size:13px;fill:#445}
+    .box{fill:#eef3fa;stroke:#46566f;stroke-width:1.5;rx:6}
+    .jetson{fill:#1b5e20;stroke:#0b3d12;stroke-width:2}
+    .jtxt{fill:#fff;font-size:14px;font-weight:bold}
+    .sensor{fill:#dfe6f0;stroke:#46566f;stroke-width:1.4}
+    .lbl{font-size:12px;fill:#1a2233}
+    .pin{font-size:10px;fill:#667}
+    .bus-csi{stroke:#ab47bc;stroke-width:2.2}
+    .bus-spi{stroke:#ff7043;stroke-width:2.2}
+    .bus-uart{stroke:#42a5f5;stroke-width:2.2}
+    .bus-i2c{stroke:#66bb6a;stroke-width:2.2}
+    .busname{font-size:11px;font-weight:bold}
+  </style>
+
+  <text x="30" y="34" class="title">CMB8LF-S1-HL — Sensor Wiring (head-less)</text>
+  <text x="30" y="54" class="sub">Only the sensing layer. Motion/CAN/moteus/power wiring is shared — see ../CMB8LF_v1 master schematic.</text>
+
+  <!-- Jetson -->
+  <rect class="jetson" x="360" y="280" width="180" height="90" rx="8"/>
+  <text x="450" y="318" class="jtxt" text-anchor="middle">NVIDIA Jetson</text>
+  <text x="450" y="338" class="jtxt" text-anchor="middle">Orin Nano</text>
+  <text x="450" y="356" class="pin" fill="#cfe" text-anchor="middle">(brain — in body core)</text>
+
+  <!-- CSI multiplexer -->
+  <rect class="box" x="120" y="120" width="150" height="60" rx="6"/>
+  <text x="195" y="146" class="lbl" text-anchor="middle" font-weight="bold">CSI 4-ch MUX</text>
+  <text x="195" y="164" class="pin" text-anchor="middle">Arducam</text>
+
+  <!-- surround cams -->
+  <g class="sensor">
+    <rect x="30" y="40" width="70" height="34" rx="4"/>
+    <rect x="30" y="84" width="70" height="34" rx="4"/>
+    <rect x="30" y="128" width="70" height="34" rx="4"/>
+    <rect x="30" y="172" width="70" height="34" rx="4"/>
+  </g>
+  <text x="65" y="61" class="pin" text-anchor="middle">cam 0°</text>
+  <text x="65" y="105" class="pin" text-anchor="middle">cam 90°</text>
+  <text x="65" y="149" class="pin" text-anchor="middle">cam 180°</text>
+  <text x="65" y="193" class="pin" text-anchor="middle">cam 270°</text>
+  <g class="bus-csi" fill="none">
+    <line x1="100" y1="57" x2="120" y2="135"/>
+    <line x1="100" y1="101" x2="120" y2="142"/>
+    <line x1="100" y1="145" x2="120" y2="150"/>
+    <line x1="100" y1="189" x2="120" y2="158"/>
+  </g>
+  <line class="bus-csi" x1="270" y1="150" x2="360" y2="300"/>
+  <text x="300" y="225" class="busname" fill="#6a1b9a">CSI (override feed)</text>
+
+  <!-- work window: thermal (SPI) + visual (CSI) -->
+  <rect class="sensor" x="120" y="230" width="160" height="40" rx="4"/>
+  <text x="200" y="250" class="lbl" text-anchor="middle">FLIR Lepton 3.5</text>
+  <text x="200" y="264" class="pin" text-anchor="middle">work thermal · front lobe</text>
+  <line class="bus-spi" x1="280" y1="250" x2="360" y2="300"/>
+  <text x="290" y="278" class="busname" fill="#c63">SPI</text>
+
+  <rect class="sensor" x="120" y="285" width="160" height="40" rx="4"/>
+  <text x="200" y="305" class="lbl" text-anchor="middle">Pi Cam 3 NoIR</text>
+  <text x="200" y="319" class="pin" text-anchor="middle">work visual · front lobe</text>
+  <line class="bus-csi" x1="280" y1="305" x2="360" y2="312"/>
+
+  <!-- LiDAR UART -->
+  <rect class="sensor" x="120" y="345" width="160" height="40" rx="4"/>
+  <text x="200" y="365" class="lbl" text-anchor="middle">RPLIDAR A1M8</text>
+  <text x="200" y="379" class="pin" text-anchor="middle">360° · top riser</text>
+  <line class="bus-uart" x1="280" y1="365" x2="360" y2="330"/>
+  <text x="292" y="352" class="busname" fill="#1565c0">UART</text>
+
+  <!-- I2C chain: ToF x2 + IMU -->
+  <rect class="sensor" x="120" y="410" width="160" height="34" rx="4"/>
+  <text x="200" y="431" class="lbl" text-anchor="middle">VL53L1X ToF L (0x29)</text>
+  <rect class="sensor" x="120" y="450" width="160" height="34" rx="4"/>
+  <text x="200" y="471" class="lbl" text-anchor="middle">VL53L1X ToF R (0x2A)</text>
+  <rect class="sensor" x="120" y="490" width="160" height="34" rx="4"/>
+  <text x="200" y="511" class="lbl" text-anchor="middle">BNO055 IMU (0x28)</text>
+  <g class="bus-i2c" fill="none">
+    <line x1="280" y1="427" x2="360" y2="345"/>
+    <line x1="280" y1="467" x2="360" y2="350"/>
+    <line x1="280" y1="507" x2="360" y2="355"/>
+  </g>
+  <text x="296" y="430" class="busname" fill="#2e7d32">I²C</text>
+
+  <!-- illumination (GPIO/driver) -->
+  <rect class="sensor" x="600" y="250" width="200" height="40" rx="4"/>
+  <text x="700" y="270" class="lbl" text-anchor="middle">6× IR LED ring + 10 W spot</text>
+  <text x="700" y="284" class="pin" text-anchor="middle">around work window</text>
+  <line x1="540" y1="300" x2="600" y2="272" stroke="#c8a000" stroke-width="2.2"/>
+  <text x="548" y="285" class="busname" fill="#c8a000">PWM</text>
+
+  <!-- FSO comms -->
+  <rect class="sensor" x="600" y="310" width="200" height="40" rx="4"/>
+  <text x="700" y="330" class="lbl" text-anchor="middle">FSO laser comms</text>
+  <text x="700" y="344" class="pin" text-anchor="middle">top-front port</text>
+  <line x1="540" y1="330" x2="600" y2="330" stroke="#00838f" stroke-width="2.2"/>
+
+  <!-- shared note -->
+  <rect x="600" y="400" width="270" height="150" rx="6" fill="#fff7ed" stroke="#e0b070" stroke-width="1.4"/>
+  <text x="615" y="424" class="lbl" font-weight="bold">Shared (not shown here)</text>
+  <text x="615" y="446" class="pin">• Laser-palm in front leg — UNCHANGED</text>
+  <text x="615" y="464" class="pin">• Palm spectroscopy — in the leg</text>
+  <text x="615" y="482" class="pin">• CAN bus · 26× moteus · RP2350 ×26</text>
+  <text x="615" y="500" class="pin">• Pico W ×2 (CAN master + safety)</text>
+  <text x="615" y="518" class="pin">• Power rail · battery</text>
+  <text x="615" y="536" class="pin">→ see ../CMB8LF_v1 master schematic</text>
+
+  <!-- removed note -->
+  <text x="30" y="560" class="pin" fill="#b00">Removed vs standard: pan/tilt servos (head_pan 91, head_tilt 92), WS2812B "eyes".</text>
+  <text x="30" y="578" class="pin" fill="#b00">No head module. Aiming replaced by leg positioning + fixed 360° cameras.</text>
+
+  <!-- bus legend -->
+  <text x="30" y="612" class="pin">Bus: ■ CSI (purple) ■ SPI (orange) ■ UART (blue) ■ I²C (green) ■ PWM (gold)</text>
+</svg>

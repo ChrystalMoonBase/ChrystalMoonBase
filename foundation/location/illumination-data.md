@@ -51,7 +51,11 @@ At these resolutions, individual flat zones of 20–30 metres may not be fully r
 
 ## Key References
 
-- Bussey, D.B.J. et al. (2005) "Permanent shadow in simple craters near the lunar poles." Geophysical Research Letters 32, L23201.
-- Bussey, D.B.J. et al. (2010) "Illumination conditions of the south pole of the Moon derived using Kaguya topography." Icarus 208, 558–564.
-- Noda, H. et al. (2008) "Illumination conditions at the lunar polar regions by KAGUYA (SELENE) laser altimeter." Geophysical Research Letters 35, L24203.
-- Mazarico, E. et al. (2011) "Illumination conditions of the lunar polar regions using LOLA topography." Icarus 211, 1066–1081.
+All four are peer-reviewed; DOIs link to the original papers. The ~89% Peary figure traces directly to Noda et al. (2008), which reports the most continuously lit northern surfaces at **89%** (and 86% for the south).
+
+- Bussey, D.B.J. et al. (2005) "Permanent shadow in simple craters near the lunar poles." *Geophysical Research Letters* 32, L23201. https://doi.org/10.1029/2005GL023926
+- Bussey, D.B.J. et al. (2010) "Illumination conditions of the south pole of the Moon derived using Kaguya topography." *Icarus* 208, 558–564. https://doi.org/10.1016/j.icarus.2010.03.028
+- Noda, H. et al. (2008) "Illumination conditions at the lunar polar regions by KAGUYA (SELENE) laser altimeter." *Geophysical Research Letters* 35, L24203. https://doi.org/10.1029/2008GL035692
+- Mazarico, E. et al. (2011) "Illumination conditions of the lunar polar regions using LOLA topography." *Icarus* 211, 1066–1081. https://doi.org/10.1016/j.icarus.2010.10.030
+
+> Cross-check: NASA's Planetary Geodynamics Data Archive (PGDA) Lunar Polar Illumination product lists the same Noda/Bussey/Mazarico references — https://pgda.gsfc.nasa.gov/products/69

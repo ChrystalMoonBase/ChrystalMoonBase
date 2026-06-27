@@ -27,27 +27,42 @@ MODULE               KOSTEN      PRIORITEIT
 1 standaard been     ~€365       Eerst bouwen
 1 grijper been       ~€520       Tweede been
 Hoofd                ~€310       Derde
-Body + compute       ~€480       Laatste
+Body + compute       ~€640       Laatste (incl. Jetson)
 Printer (éénmalig)   ~€700-4500  Zie sectie 10
 ─────────────────────────────────────────────
-TOTAAL ROBOT         ~€3.800     excl. printer
+INDICATIE per bouwblok — zie BUDGET TOTAALOVERZICHT
+onderaan voor de volledige optelling (~€6.815 excl. printer).
 Per maand (1 been)   ~€365-520
 ```
 
+> **Let op:** dit blokje is een *indicatieve* kostenstructuur per bouwblok (handig voor
+> "wat kost de volgende stap"). Het is bewust grof en telt **niet** op tot het robot­totaal —
+> de volledige, post-voor-post optelling staat in **BUDGET TOTAALOVERZICHT** onderaan
+> (~€6.815 robot, ~€7.497 incl. 10% buffer, excl. printer).
+
 ---
 
-## 1. COMPUTE & AI — €285
+## 1. COMPUTE & AI — €453
 
 | Onderdeel | Aantal | Prijs/st | Totaal | Functie |
 |---|---|---|---|---|
-| Raspberry Pi 5 8GB | 1 | €90 | €90 | Hoofd AI · navigatie |
+| NVIDIA Jetson Orin Nano Super 8GB | 1 | €249 | €249 | Hoofd AI · navigatie (67 TOPS, 7–25 W) |
 | Raspberry Pi Pico W | 2 | €10 | €20 | CAN master · safety |
 | RP2350 module | 26 | €4 | €104 | Mini AI per segment + hoofd |
-| MicroSD 64GB | 1 | €10 | €10 | Pi5 opslag |
-| USB-CAN adapter (Canable) | 1 | €25 | €25 | Pi5 → CAN bus |
-| USB hub 4-poort (Pi5) | 1 | €15 | €15 | USB devices Pi5 |
+| NVMe M.2 SSD 256GB | 1 | €20 | €20 | Jetson opslag (boot) |
+| USB-CAN adapter (Canable) | 1 | €25 | €25 | Jetson → CAN bus |
+| USB hub 4-poort | 1 | €15 | €15 | USB devices Jetson |
 | Kleine breadboard PCB's | 10 | €2 | €20 | Verbindingen compute bay |
-| **Subtotaal** | | | **€284** | |
+| **Subtotaal** | | | **€453** | |
+
+> **Waarom Jetson i.p.v. Raspberry Pi 5 (gewijzigd):** het hoofdbrein draait de zware AI
+> (visie, SLAM, gait-planning, real-time sensorfusie). De Jetson Orin Nano Super levert
+> ~67 TOPS GPU-versnelde inferentie — ordes meer dan de Pi 5 — wat nodig is voor de
+> spectroscopie-/visie-pipeline en on-board modellen. De gelaagde architectuur blijft
+> ongewijzigd: **Jetson** (strategisch brein) · **Pico W ×2** (CAN-master + safety) ·
+> **RP2350 ×26** (per-segment reflexen). Alleen de bovenste laag is vervangen; de CAN-bus,
+> moteus-controllers en per-segment-AI blijven exact gelijk. Stroom (7–25 W) wordt geleverd
+> door de bestaande Buck 5V/10A rail. Voor het prototype wordt **één** Jetson aangeschaft.
 
 ---
 
@@ -89,6 +104,15 @@ Per maand (1 been)   ~€365-520
 
 ### 3A. Segment Batterijen (25 nodes)
 
+> **Waarom 25 nodes?** Ontwerpprincipe: **elk bewegend segment heeft zijn eigen kleine
+> batterij** in plaats van één centrale accu. Valt één node uit, dan verliest de robot
+> alleen dat segment — de rest blijft werken (fault-tolerance + gewichtsverdeling). Het
+> getal volgt uit de segment-telling (~8 poten met hun been-segmenten + body), niet uit
+> het aantal poten. **25 is een schaalbare werkwaarde**: het definitieve aantal hangt af
+> van het uiteindelijke aantal onafhankelijke segmenten en wordt door engineering/
+> professionals bepaald. Het principe (één node per segment) staat vast; het exacte
+> aantal niet.
+
 | Onderdeel | Aantal | Prijs/st | Totaal | Noot |
 |---|---|---|---|---|
 | 16340 Li-Ion 700mAh (losse cel) | 150 | €2.50 | €375 | 6 per segment × 25 |
@@ -102,7 +126,7 @@ Per maand (1 been)   ~€365-520
 |---|---|---|---|---|
 | LiPo 4S 5000mAh XT60 | 1 | €45 | €45 | Body electronics |
 | 4S 30A BMS | 1 | €10 | €10 | Body batterij |
-| Buck 5V/10A | 2 | €10 | €20 | Pi5 + Pico W power |
+| Buck 5V/10A | 2 | €10 | €20 | Jetson + Pico W power |
 | Buck 3.3V/3A | 6 | €5 | €30 | RP2350 per segment |
 | E-stop knop NC 22mm rood | 1 | €5 | €5 | Hardware noodstop |
 | Relaismodule 30A | 1 | €8 | €8 | E-stop schakeling |
@@ -147,11 +171,11 @@ Per maand (1 been)   ~€365-520
 
 | Onderdeel | Aantal | Prijs/st | Totaal | Bus | Positie |
 |---|---|---|---|---|---|
-| RPLIDAR A1M8 | 1 | €90 | €90 | UART → Pi5 | Hoofd |
-| Pi Camera 3 NoIR | 1 | €28 | €28 | CSI → Pi5 | Hoofd |
-| FLIR Lepton 3.5 | 1 | €180 | €180 | SPI → Pi5 | Hoofd |
-| BNO055 IMU | 1 | €8 | €8 | I2C → Pi5 | Hoofd |
-| VL53L1X ToF | 2 | €5 | €10 | I2C → Pi5 | Hoofd links+rechts |
+| RPLIDAR A1M8 | 1 | €90 | €90 | UART → Jetson | Hoofd |
+| Pi Camera 3 NoIR | 1 | €28 | €28 | CSI → Jetson | Hoofd |
+| FLIR Lepton 3.5 | 1 | €180 | €180 | SPI → Jetson | Hoofd |
+| BNO055 IMU | 1 | €8 | €8 | I2C → Jetson | Hoofd |
+| VL53L1X ToF | 2 | €5 | €10 | I2C → Jetson | Hoofd links+rechts |
 | MLX90614ESF | 2 | €8 | €16 | I2C → RP2350 | Palm ×2 |
 | TMP117 precisie temp | 26 | €4 | €104 | I2C → RP2350 | Per segment |
 | INA226 stroom monitor | 10 | €4 | €40 | I2C → Pico W | Power rails |
@@ -277,7 +301,7 @@ Per maand (1 been)   ~€365-520
 
 | Module | Kosten |
 |---|---|
-| Compute & AI | €285 |
+| Compute & AI | €453 |
 | Motoren + controllers | €2.842 |
 | Batterijen + power | €801 |
 | CAN bus + bedrading | €96 |
@@ -289,9 +313,9 @@ Per maand (1 been)   ~€365-520
 | Verlichting | €65 |
 | Gereedschap (éénmalig) | €185 |
 | Filament | €595 |
-| **ROBOT TOTAAL** | **~€6.647** |
-| Buffer 10% | €665 |
-| **EINDTOTAAL excl. printer** | **~€7.312** |
+| **ROBOT TOTAAL** | **~€6.815** |
+| Buffer 10% | €682 |
+| **EINDTOTAAL excl. printer** | **~€7.497** |
 
 ---
 
@@ -299,7 +323,7 @@ Per maand (1 been)   ~€365-520
 
 ```
 MAAND 1       Gereedschap + printer
-              Compute (Pi5 + Pico W + RP2350)
+              Compute (Jetson + Pico W + RP2350)
               CAN adapter + test setup
               Kosten: ~€500-1.000
 
@@ -356,4 +380,4 @@ MAAND 11-12   Kalibratie + software
 *Multi-AI: Claude · ChatGPT · Gemini · DeepSeek · Meta*
 *Human decisions: Berechja Kerkdijk*
 *CC0 2026 — Chrystal Moon Base — No rights reserved*
-*No flags. No patents. Built for all humanity. 🌙*
+*No flags. No patents. For all humanity. 🌙*

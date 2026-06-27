@@ -1,0 +1,304 @@
+# CMB8LF-L1 Chassis
+## Chrystal Moon Base — Robot System Concept
+
+**Status:** Concept proposal — not yet prototyped  
+**Author:** Berechja Kerkdijk  
+**Licence:** CC0
+
+> This document describes the founder's vision for the CMB8LF-L1 chassis in detail. Engineering decisions — materials, exact dimensions, specific mechanisms — remain open for expert input. The vision sets the direction. Engineers determine the execution.
+
+---
+
+## Design Philosophy
+
+The chassis is the structural and computational core of the CMB8LF-L1. Every design decision follows three principles:
+
+1. **Materials from the Moon** — no material may be used in the chassis that cannot eventually be sourced from lunar resources. This means no carbon-fibre reinforced polymer (CFRP), no exotic Earth-only composites. Aluminium, mineral-fibre composite, and glass are the leading *locally-sourceable* candidates at highland Peary. Titanium is excellent but is NOT locally available here (no ilmenite) — so imported robots may use it, but the "from the Moon" goal points to aluminium/regolith composites for any locally-built robots. The specific selection is an engineering decision.
+
+**Feedstock note (stated as fact, not resolved):** The mineral-fibre composite is referred to elsewhere in this project as "basalt composite," because basalt fibre is the well-characterised terrestrial reference material. The actual Peary feedstock is highland **anorthosite**, not basalt — so the real armour would be an anorthosite/regolith-derived mineral fibre, whose properties differ from terrestrial basalt fibre and are not yet characterised. Both terms describe the same intent (a locally-sourced mineral-fibre composite skin); the reader should read "basalt composite" in the robot documents as feedstock-referenced shorthand. See `systems/sintering/laser-sintering-physics.md` for the basalt-vs-anorthosite distinction and `systems/processing-modules/m-basalt.md` for the fibre-production feedstock question.
+
+2. **No ferromagnetic materials on exterior surfaces** — lunar dust is electrostatically charged and behaves like fine magnetic particles in the presence of ferromagnetic materials. Iron and steel are therefore excluded from all exterior-facing components. Titanium and aluminium are non-magnetic and preferred.
+
+3. **Everything protected when not in use** — every interface, every connector, every sensor is shielded from the lunar environment when not actively engaged. Nothing is left exposed unnecessarily.
+
+---
+
+## Shape and Dimensions (Estimated)
+
+The chassis is a compact, enclosed body — smooth exterior, no protruding elements except the tool head and leg attachment interfaces. All sensitive systems are internal. The shape is approximately elliptical when viewed from above, widest at the midpoint, tapering toward front and rear.
+
+Estimated dimensions:
+- Length: 1.2–1.5 m
+- Width: 0.8–1.0 m
+- Height (body only, excluding head): 0.3–0.4 m
+
+These are starting estimates. Final dimensions depend on the mass budget, leg geometry, and internal component layout — all of which require engineering analysis that does not yet exist.
+
+---
+
+## The Nine Universal Coupling Points
+
+The chassis has **nine identical universal coupling interfaces**:
+
+- **Eight leg coupling points** — distributed symmetrically around the chassis perimeter, four per side
+- **(Under review) one front coupling point** — in the detachable-head design, a ninth universal coupling at the **front** (spider position) carries a removable head. In the integrated head-less direction now being evaluated, this point may be dropped in favour of body-integrated sensing. See the "Sensing & Head" section below and `OPEN-DESIGN-INQUIRY-robot-head.md`.
+
+All eight leg interfaces are identical in mechanical design, electrical connection, and optical connection. Any leg can attach to any leg coupling point. **In the detachable-head design**, the front coupling is universal too, so the head is removable just like a leg (swap for repair or harvest from a dead unit) — keeping a nine-identical-interface scheme (8 legs + 1 head). **In the integrated direction**, sensing is built into body and legs and there is no separate head to attach; the brain stays in the body in either case.
+
+This universality is fundamental to the design philosophy:
+- Any leg can function as an arm — the AI decides which legs to reassign based on current task and terrain
+- A damaged leg is decoupled and discarded — the AI immediately recalculates the optimal configuration for the remaining legs
+- A leg stuck in terrain can be deliberately decoupled to free the robot — no mechanical lockup propagates to the rest of the chassis
+- Future leg or head types can be introduced without redesigning the chassis
+
+The AI continuously monitors which coupling points are occupied, what type of component is attached, and what configuration is optimal for the current task. When a reconfiguration occurs — planned or due to failure — the AI updates its model within seconds and resumes operation.
+
+**Eight legs plus one head is considered the optimal baseline.** More coupling points would add mass and complexity without proportional benefit. Fewer would reduce redundancy. This number is a founder's recommendation, not a fixed constraint — engineers may reach a different conclusion.
+
+---
+
+## Sensing & "Head" — Active Design Direction (Integrated, Head-less)
+
+> **This section is under active review and we are seeking engineering validation.**
+> We are taking the lead with an **integrated, head-less** concept and treating the earlier
+> **detachable-head** design as what it may supersede. We are explicitly asking engineers:
+> did we make the right call, or should we step back? The full trade-off and the validation
+> questions are in **`OPEN-DESIGN-INQUIRY-robot-head.md`** at the repo root.
+
+**The direction we are now taking (head-less, integrated):**
+
+We questioned a basic assumption — *does a machine need a "head" at all, or is that a human/
+animal image projected onto a robot?* A spider's head is fused with its body; a self-driving
+car has no head, only distributed sensors. So the current direction removes the separate head
+and integrates sensing into the **body and legs**:
+
+- **No separate head.** Body + legs as one unit (true to the *8 Legged Freaks* spider form).
+  This removes a coupling that can fail, a moving part, a dust-entry point, and a losable
+  component.
+- **Brain deep in the body.** The strategic compute (Jetson-class) sits in the protected
+  three-layer body core — never in an exposed, moving part. *Measuring is not seeing:* the
+  robot knows its limb positions from **joint encoders**, judges a sinter/melt from **thermal +
+  spectroscopic measurement**, and maps space from **LiDAR/ranging** — none of which needs a
+  human-style "eye."
+- **Targeted work-sensing between the front legs** — measurement sensors look directly at the
+  sinter/melt work zone where the arm-legs operate.
+- **360° awareness around the body** — distributed fixed sensors give all-round situational
+  coverage; better than any single moving head, which can never see 360° at once.
+- **A live camera feed for the human, not the robot.** Every robot must support **override by a
+  CMB engineer**, who needs a human-interpretable image. Each robot therefore carries work-zone
+  camera(s) **plus** surrounding cameras, so an engineer can assess the whole situation. Given
+  the ~2.6 s round-trip delay this is for **situation assessment and re-tasking, not real-time
+  control**.
+
+**Open sub-question (deliberately unsolved):** the work-zone sensor faces intense heat, laser
+glare, and spatter from the melt — how best to protect it (closable/replaceable window, oblique
+off-axis mounting, time-sharing while the laser is hot)? See the inquiry document.
+
+---
+
+### Previous concept (under review) — detachable front head
+
+> The earlier design gave each robot a **detachable head** at the **front** (spider position),
+> carrying the sensors and working-laser optics, attached through the **same universal EPM
+> coupling as the legs** — so it could be swapped or harvested from a dead unit like a leg, and
+> the nine-identical-interface idea (8 legs + 1 head) stayed intact. The brain stayed in the
+> body even in that version. We have **not deleted** this concept: it is the fallback if engineers
+> judge that an articulated/detachable sensor platform is genuinely needed for precise close-up
+> work. The `head-*.md` files describe this earlier model (each carries a superseded banner). The
+> validation question — *integrated vs. detachable head* — is open in
+> `OPEN-DESIGN-INQUIRY-robot-head.md`.
+
+Note: whichever way this resolves, the **tool head / front coupling point** (if used) shares the
+same electromagnetic locking mechanism as all other coupling points (see below), and the brain
+remains in the body in both designs.
+
+---
+
+## Coupling Interface — Electromagnetic Lock with Regolith-Composite Protective Cover
+
+Every coupling point — for legs and for the tool head — uses the same interface mechanism:
+
+**Electromagnetic locking:**
+The coupling is held by an electromagnet that requires current to release. When current is present and the release command is given, the magnet releases and the component can be decoupled. When current is absent or no release command is given, the component is locked in place. This is a fail-safe design: power loss means the leg or head stays attached, not that it falls off.
+
+**Regolith-composite protective cover:**
+Every unused or active coupling point is protected by a small sintered-regolith composite cover plate. When a leg or head is attached, the cover plate moves aside to expose the interface. When the leg or head is removed, the cover plate returns to protect the exposed interface from dust, temperature extremes, and micrometeorite impact.
+
+The cover plate movement is frictionless where possible — the same electromagnetic principle used in the maglev transport system, applied at small scale. The cover requires power only to move, not to stay in position (held by mechanical detent when closed, held by the attached component when open).
+
+This means that at no point is any electrical or optical connector exposed to the lunar environment for longer than the brief moment of coupling or decoupling.
+
+---
+
+## Laser Power Receivers — Distributed Across Entire Body
+
+Rather than a single central laser power receiver that must track the mast BSM, the CMB8LF-L1 uses **distributed receivers across the entire upper chassis surface and potentially the upper leg segments**.
+
+Many small GaAs photovoltaic cells — optimised for the laser wavelength — are distributed across all upper-facing surfaces. Each receiver has a small independent pointing adjustment, driven by voice coil actuators, allowing the AI to optimise the angle of each cell individually for maximum power capture.
+
+**Why distributed receivers:**
+- The robot never needs to orient itself toward the mast — it can work in any direction
+- If one receiver is dusty, damaged, or shadowed, others continue operating
+- The AI selects the optimal active subset at any moment and fine-tunes each cell angle
+- Receivers on the upper leg segments extend the total collection area and provide coverage when the chassis is tilted on uneven terrain
+
+The communication laser uses the same receiver network — the same cells that receive power also receive data signals, with the AI distinguishing power and communication wavelengths. This reduces the total number of components required.
+
+All receiver adjustments are small — a few degrees at most. The cells do not track the mast continuously like a solar panel. They are pre-positioned by the AI at the start of each work period and adjusted only when efficiency drops below a threshold.
+
+---
+
+## All-Laser Communication
+
+The CMB8LF-L1 communicates exclusively by laser — no radio systems are used.
+
+**Robot to mast:** Laser link to the nearest BSM on the mast. Power delivery and data communication share the same optical path — different wavelengths, separated by the onboard optics.
+
+**Robot to robot:** Direct laser links between chassis receiver surfaces. Robots working in proximity can communicate directly without routing through the mast.
+
+**Why laser only:**
+- The Moon has no atmosphere to scatter or absorb laser signals — zero propagation loss
+- No radio frequency interference between robots working in close proximity
+- Extremely high data bandwidth at negligible power compared to the sintering laser
+- No heavy radio antenna hardware required
+- Consistent with the laser-based architecture of the entire system
+
+The mast communicates to Earth via Ka-band radio — laser-to-Earth links are not yet mature enough for operational use at this distance.
+
+---
+
+## Internal Structure
+
+**Structural frame:** Non-ferromagnetic metal alloy — titanium or aluminium, or a combination. The specific alloy is an engineering decision based on mass budget, thermal properties, and manufacturability from lunar resources. No iron-containing alloys on exterior-facing or dust-exposed surfaces.
+
+**Electronics bay:** The central section of the **body** houses the main compute unit (the Jetson-class strategic AI on the prototype), power conditioning electronics, and communication optics — this is the robot's **brain**. It sits inside the body, distinct from the front-mounted head, which carries the senses (the AI does the thinking in the body; the head does the sensing at the front). Thermally coupled to the chassis wall for passive heat management.
+
+**Battery:** Solid-state battery cells distributed through the chassis structure. Total onboard energy storage is intended to provide on the order of a few hours of reduced-power autonomous operation during laser power interruptions — enough to survive shadow periods and communication outages. The exact figure is a concept estimate pending Phase 0 validation; real capacity depends on the final cell choice, robot mass, and how power-hungry the as-built systems turn out to be.
+
+**Exterior:** Sintered regolith composite panels — the same material the robot builds with. Non-magnetic, thermally stable, radiation-resistant, and manufacturable from lunar resources in later phases.
+
+---
+
+## Thermal Management
+
+Peary rim surface temperatures range from approximately −50°C to +10°C — mild compared to equatorial sites but still requiring active thermal management for electronics.
+
+- Multi-layer insulation on all exterior surfaces reduces heat loss during cold periods
+- Embedded heaters maintain minimum operating temperatures during shadow periods
+- Passive thermal coupling between electronics and chassis wall manages heat during high-power operations
+- The regolith-composite exterior acts as a thermal buffer
+
+---
+
+## Mass Estimate
+
+| Configuration | Estimated mass |
+|---|---|
+| Chassis body only (no legs, no head) | 80–130 kg |
+| Full robot with 8 legs, no head | 260–380 kg |
+| Full robot with 8 legs and heaviest head | 290–430 kg |
+
+All figures are rough estimates. A real mass budget requires component-level engineering design that does not yet exist. These numbers are starting points for feasibility assessment only.
+
+---
+
+## What Engineers Decide
+
+The following are explicitly left open for engineering expertise:
+
+- Specific alloy composition for structural frame
+- Exact number and placement of laser receiver cells
+- Detailed coupling interface mechanism design
+- Cover plate actuation method (electromagnetic, spring-loaded, or other)
+- Exact chassis dimensions and mass budget
+- Number of coupling points if 9 proves non-optimal
+- Thermal control system specifics
+
+The founder's position: whatever works, works. The constraints are the principles — non-ferromagnetic exteriors, lunar-sourceable materials, universal coupling interfaces, distributed laser receivers, protected connections. How those principles are implemented is engineering.
+
+---
+
+## Open Questions
+
+1. What non-ferromagnetic alloy provides the optimal combination of structural performance, mass, thermal stability, and eventual lunar manufacturability?
+2. How many distributed receiver cells are needed for reliable power reception across all expected robot orientations and distances from the mast?
+3. What is the minimum cover plate actuation time for the coupling interfaces — and does this create operational delays during head swapping?
+4. Can the same optical surface serve both power reception and data communication simultaneously, or does this require optical separation?
+5. What is the actual mass of a flight-quality chassis at these specifications?
+
+---
+
+## Power Architecture — Distributed Solid-State Energy Storage
+
+The CMB8LF-L1 uses a fully distributed solid-state battery system. There is no single central battery. Instead, energy storage is distributed across every structural segment of the robot — chassis and all eight legs.
+
+**Why solid-state:**
+- No liquid electrolyte — no freezing risk at −150°C, no boiling risk at +130°C
+- No leakage or outgassing in vacuum
+- Operates across the full lunar surface temperature range without thermal management of the cells themselves
+- Mechanically robust — solid-state cells tolerate vibration and impact better than liquid electrolyte cells
+- Can be encapsulated completely inside structural components
+
+**Distribution — 25 units total:**
+
+| Location | Units | Primary function |
+|---|---|---|
+| Foot segment × 8 | 8 | Local sensor power, foot pad force sensing |
+| Lower leg segment × 8 | 8 | Knee actuator power, local electronics |
+| Upper leg segment × 8 | 8 | Hip actuator power, primary leg energy storage |
+| Chassis central | 1 | Main computer, AI, communication optics, head interface |
+| **Total** | **25** | Fully distributed across entire robot |
+
+**Why distributed:**
+
+Weight is spread evenly across the entire robot rather than concentrated in one location. This lowers the centre of mass, improves stability on uneven terrain, and means no single point concentrates significant mass.
+
+Redundancy is built in automatically — if a leg segment is damaged and discarded, only the energy stored in that segment is lost. The remaining 24 units continue operating without interruption. The AI adjusts power routing instantly.
+
+Each solid-state unit is sized to contribute a proportional share of the total energy budget. The chassis unit is the largest — it powers the most critical systems. The foot units are the smallest — they power only local sensors.
+
+---
+
+## Hibernation System
+
+During shadow periods — when the Peary rim site loses solar illumination — the laser power system shuts down and the robots enter hibernation. The distributed solid-state energy system sustains the robot through these periods on minimal power draw.
+
+**Hibernation sequence:**
+1. Laser power drops below operational threshold
+2. AI detects power loss and initiates hibernation protocol
+3. All non-essential systems shut down immediately — sintering, locomotion, active sensors
+4. Robot halts at current position and locks all leg joints in place
+5. Low-power heating activates across all 25 solid-state units and critical electronics — just enough to prevent temperature dropping below minimum operating threshold
+6. AI enters minimal monitoring mode — checking power levels and temperature only
+7. Communication laser remains active at minimal power for contact with mast
+
+**On power restoration:**
+1. Solar curtain generates first power as illumination returns
+2. Mast detects power and sends wake signal via communication laser
+3. AI exits hibernation — systems initialise sequentially
+4. Temperature check across all segments before locomotion resumes
+5. Robot resumes task from exact position where it halted
+
+The hibernation heating draw is a small fraction of operational power — the distributed solid-state units across 25 locations provide enough reserve for the longest expected shadow periods at Peary, estimated at a few days based on published illumination data.
+
+---
+
+## Full Layer Architecture — "Everything Inside the Bone"
+
+Every structural segment of the CMB8LF-L1 — all eight leg segments (foot, lower leg, upper leg) and the chassis body — follows identical layered construction from inside out:
+
+**Layer 1 — The Bone (structural core):**
+Non-ferromagnetic structural alloy — titanium, aluminium, or combination. Hollow tube or shell. Houses all electronics, solid-state battery cell, actuator controller, heater, and sensors for that segment. Everything electronic lives inside the structural material, protected from the outside by the structure itself.
+
+**Layer 2 — The Gel (protective surround):**
+Thermally conductive, mechanically damping gel completely surrounding the bone. Absorbs shock and vibration. Conducts heat from electronics to the outer shell for passive radiation. Must remain stable across the full lunar temperature range in vacuum — specific formulation is an open engineering question.
+
+**Layer 3 — The Armour (sintered-regolith composite exterior):**
+Sintered regolith composite outer shell. Non-magnetic. Thermally stable. Radiation resistant. Manufacturable from lunar resources in later phases. This is the surface that contacts the lunar environment — dust, temperature extremes, micrometeorite flux, radiation.
+
+**The principle:** nothing electronic or sensitive is ever exposed to the lunar environment. The bone protects the electronics. The gel protects the bone. The regolith composite protects the gel. Three layers between the electronics and the Moon.
+
+**Frictionless where possible:**
+All moving interfaces — leg joints, cover plates, coupling mechanisms — use electromagnetic principles to eliminate or minimise mechanical friction. No lubricants that could fail in vacuum or temperature extremes. No mechanical wear surfaces exposed to lunar dust. Where friction cannot be avoided, dry film coatings rated for vacuum and the full temperature range are used.
+
+---

@@ -138,17 +138,13 @@ product (Cr, Mn, Ni, Mo). So the metal output feeds dedicated refining factories
 
 ## References (verify and extend)
 
-- Sibille et al. / Kennedy Space Center — MRE scale-up, iridium anodes, 1600 °C,
-  iron parasitic effect, ~94 % current efficiency (AIAA 2009).
-- Schreiner / Sirk et al., MIT — MRE parametric sizing; highland regolith oxygen
-  estimates; robustness to regolith type (Acta Astronautica 2016; MIT thesis 2015).
-- Lomax et al. — Metalysis-FFC, SnO₂ anode, 96 % oxygen extraction, mixed alloy
-  (proof of concept).
-- NASA NTRS 2025 — YSZ hollow-anode MRE, 12 h operation, O₂ via solid electrolyte.
-- arXiv 2408.05823 — review: alloy categories (Al/Fe, Fe/Si, Ca/Si/Al).
-- ScienceDirect 2025 — molten-salt electrolysis of anorthosite: 97–99 % O₂, higher
-  efficiency on highland feedstock.
-- Joule-heated / self-heating reactor concepts — NASA NTRS 20120003037.
+- Sibille et al. / Kennedy Space Center — MRE scale-up, iridium anodes, 1600 °C, iron parasitic effect, ~94 % current efficiency. *Recent Advances in Scale-up Development of Molten Regolith Electrolysis…*, AIAA 2009-659 (47th AIAA Aerospace Sciences Meeting, 2009).
+- Schreiner, Sibille, Dominguez & Hoffman (MIT/KSC) — MRE parametric sizing; highland regolith oxygen estimates; robustness to regolith type. *Advances in Space Research* 57(7), 1585–1603 (2016) — https://doi.org/10.1016/j.asr.2016.01.006 ; MIT thesis (2015) — https://dspace.mit.edu/handle/1721.1/98589
+- Lomax et al. — Metalysis-FFC, SnO₂ anode, 96 % oxygen extraction, mixed alloy (proof of concept). *Planetary and Space Science* (2020).
+- Blue Origin "Blue Alchemist" — MRE producing iron, silicon, aluminium + oxygen from regolith simulant (>1600 °C) — https://www.blueorigin.com/news/blue-alchemist-powers-our-lunar-future
+- NASA NTRS — YSZ hollow-anode MRE, 12 h operation, O₂ via solid electrolyte (2025); Joule-heated / self-heating reactor concepts — https://ntrs.nasa.gov/citations/20120003037
+- arXiv 2408.05823 — review: alloy categories (Al/Fe, Fe/Si, Ca/Si/Al) — https://arxiv.org/abs/2408.05823
+- ScienceDirect (2025) — molten-salt electrolysis of anorthosite: 97–99 % O₂, higher efficiency on highland feedstock — https://www.sciencedirect.com/science/article/pii/S0094576525002747
 
 *Technical values here are from terrestrial lab work and modelling on simulants;
 lunar performance is unproven. This is a proposal, not a settled design.*

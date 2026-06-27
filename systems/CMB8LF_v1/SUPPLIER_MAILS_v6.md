@@ -103,10 +103,10 @@ of Peary Crater highland regolith.
 I am interested in the xiSpec USB3 camera with
 Imec snapshot mosaic sensor (~470-900nm range).
 The camera will be mounted on the robot head,
-interfaced directly to a Raspberry Pi 5.
+interfaced directly to an NVIDIA Jetson Orin Nano.
 
 Project: Chrystal Moon Base (github.com/ChrystalMoonBase)
-ESA OSIP qualified — fully open source (CC0/GPL)
+ESA OSIP qualified — open hardware (CERN-OHL-S) & open docs (CC0)
 
 Please advise on the most suitable model for this application,
 pricing, and whether academic/research pricing applies.

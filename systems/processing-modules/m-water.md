@@ -87,7 +87,7 @@ have accessible ice?)** and PSR thermal-mining engineering.
 
 ## References (verify and extend)
 
-- arXiv 2502.13679 — SWE/DWE byproduct analysis: dried regolith + volatiles (NH₃, H₂S, CO₂).
+- arXiv 2502.13679 — https://arxiv.org/abs/2502.13679 — SWE/DWE byproduct analysis: dried regolith + volatiles (NH₃, H₂S, CO₂).
 - NASA ISRU overview (NTRS 2022) — water as the first/easiest resource; demos planned.
 - LCROSS-class results — water + volatiles in a polar cold trap (south pole; Peary north
   unconfirmed).

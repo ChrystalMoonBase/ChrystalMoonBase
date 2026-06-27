@@ -87,7 +87,7 @@ the final form is what it is.
 ## 1. The network concept (top level)
 
 **Four energetically independent Pods** on the four peaks of (near-)eternal light on the
-rim of Peary crater (88.6°N), linked into a **meshed communication network**. The Pods
+rim of Peary crater (88.63°N), linked into a **meshed communication network**. The Pods
 are the **nodes** (coordination) and the **beacons** (navigation for the CMB8LF-B1s that lay
 the network).
 
@@ -140,7 +140,7 @@ Full mesh between 4 points = **6 links**: 1–2, 1–3, 1–4, 2–3, 2–4, 3�
   thin — primarily mountain ridges and crater rims." At the south pole: "islands no more
   than a few hundred metres across in an ocean of eternal darkness."
   (arxiv 1608.01989; en-academic.) → **confirms spreading is physically necessary.**
-- **Crater diameter ~73 km** (Astronomy.com: 45 mi). → four points on that rim typically
+- **Crater diameter ~79 km** (Wikipedia; sources vary 73–79 km — Peary is irregularly shaped). → four points on that rim typically
   lie **tens of km** apart; the far side may approach ~70–100 km.
 - **Relevant paper for the solar case:** *"Towers on the Peaks of Eternal Light:
   Quantifying the Available Solar Power"* — Hinshelwood, Peary, Whipple; for a 2 m tall
@@ -391,7 +391,7 @@ On the Moon the easy methods fall away: **no GPS** (no lunar nav-sats), **no com
 
 ## 8. Required factories (factory-landscape extension: 22 → 26)
 
-> Existing chain: 22 modules, MRE keystone ~1600 °C. The modules below connect directly
+> Existing chain: ~20 modules, MRE keystone ~1600 °C. The modules below connect directly
 > to it (sharing heat/feed/feedstock). All processes are centuries-old, proven technology
 > on Earth — **none** of them hits a physical law (other than §3).
 
@@ -447,8 +447,8 @@ Plus the **field system** (not a factory, but the deployment platform):
 - Caltech MAPLE / SSPD-1 — caltech.edu; spaceref.com ("detectable" to Earth; 30 cm internal)
 
 **Peary / peaks of eternal light**
-- Wikipedia — *Peary (crater)* (4 peaks, Bussey 2004; ~73 km; no perpetual light)
-- Astronomy.com — *Eternal light at a lunar pole* (73 km crater)
+- Wikipedia — *Peary (crater)* (4 peaks, Bussey 2004; ~79 km; no perpetual light)
+- Astronomy.com / Space.com — *Eternal light at a lunar pole* (cite 73 km / 45 mi; sources vary)
 - arxiv 1608.01989 — *The Peaks of Eternal Light* (narrow ridges; 90–99%/100% map)
 - ResearchGate 349547324 — *Towers on the Peaks of Eternal Light* (solar power, ~88%)
 

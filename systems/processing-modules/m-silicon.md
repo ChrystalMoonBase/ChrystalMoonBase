@@ -106,10 +106,9 @@ more realisable near-term. Active funded research exists (e.g. TU Berlin SoMo).
 
 - Cell / Device 2025 — moonglass + halide-perovskite cells; magnetic FeO separation;
   silicon needs ~ppb impurity for PV.
-- US Patent 6,090,361 — solar-silicon purification (vacuum-melt P; acid gas B/C;
-  de-oxidation O; zone-melt Fe/Al/Ti/Ca).
-- NASA NTRS — vacuum evaporation of regolith silicon for thin-film cells (10⁻¹⁰ torr).
-- Landis (NASA GRC) — fluorine multi-stage refining, O₂ by-product.
+- US Patent 6,090,361 — solar-silicon purification (vacuum-melt P; acid gas B/C; de-oxidation O; zone-melt Fe/Al/Ti/Ca). https://patents.google.com/patent/US6090361A/en
+- NASA NTRS — vacuum evaporation of regolith silicon for thin-film cells (10⁻¹⁰ torr). https://ntrs.nasa.gov/search?q=lunar%20silicon%20thin%20film%20solar%20cell
+- Landis, G.A. (NASA GRC) — *Materials refining on the Moon* (fluorine multi-stage refining, O₂ by-product), Acta Astronautica 60 (2007) 906–915. https://doi.org/10.1016/j.actaastro.2006.09.043
 - ResearchGate 2025 — low-temperature MSE: selective Si deposition without Al.
 
 *Figures are terrestrial/lab and modelling values; lunar performance unproven.*

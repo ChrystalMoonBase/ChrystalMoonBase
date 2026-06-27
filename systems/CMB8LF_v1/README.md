@@ -3,10 +3,16 @@
 
 **Status:** Active development — build one leg at a time
 **Author:** Berechja Kerkdijk
-**Licence:** Hardware: CERN-OHL-S-2.0 · Software: GPL-3.0 · Docs: CC0
+**Licence:** Hardware: CERN-OHL-S-2.0 · Software: Proprietary (separate private repo) · Docs: CC0
 
 > **The prototype is the door.** Without a working robot, no door opens.
 > Build it one leg per month. Two years if needed. But build it.
+
+> **Parallel variant available.** A fully worked-out **head-less** version of this prototype
+> exists at `../CMB8LF_v1_HL/` — same legs, same laser-palm, same brain, but with all sensing
+> integrated into the body instead of a detachable head. It is kept build-ready so that if the
+> open design question (`../../OPEN-DESIGN-INQUIRY-robot-head.md`) favours the head-less
+> direction, no redesign is needed. This `CMB8LF_v1` folder remains the standard (with-head) build.
 
 ---
 
@@ -18,7 +24,7 @@
 - Operates in vacuum (MoS₂ dry film · ceramic bearings · no lubricants)
 - Swaps its own legs with help from a second robot
 - Communicates via laser (FSO) externally · CAN bus internally
-- Runs 3-layer AI: Pi5 strategic · Pico W coordination · RP2350 reflexes
+- Runs 3-layer AI: Jetson Orin Nano strategic · Pico W coordination · RP2350 reflexes
 
 ---
 
@@ -86,7 +92,7 @@ CMB8LF_v1/
 │   ├── moteus_ctrl.py      ← moteus r4.11 controller interface
 │   ├── rp2350_segment.py   ← Per-segment mini AI (runs on RP2350)
 │   ├── laser_palm_v6.py    ← Laser palm driver (runs on palm RP2350)
-│   ├── pi5_main.py         ← Pi5 — strategic AI + navigation
+│   ├── jetson_main.py      ← Jetson Orin Nano — strategic AI + navigation
 │   └── web_v6.py           ← Web dashboard (runs on Pico W #2)
 │
 ├── cad/
@@ -115,13 +121,13 @@ CMB8LF_v1/
 
 | Bus | Device | Address / Node ID | Notes |
 |---|---|---|---|
-| Pi5 I2C1 | BNO055 IMU | 0x28 | Head |
-| Pi5 I2C1 | VL53L1X left | 0x29 | Head |
-| Pi5 I2C1 | VL53L1X right | 0x2A | Head |
-| Pi5 SPI | FLIR Lepton 3.5 | SPI0 | Head |
-| Pi5 UART | RPLIDAR A1M8 | UART | Head |
-| Pi5 CSI | Pi Camera 3 NoIR | CSI | Head |
-| Pi5 USB | USB-CAN (Canable) | — | CAN master |
+| Jetson I2C | BNO055 IMU | 0x28 | Head |
+| Jetson I2C | VL53L1X left | 0x29 | Head |
+| Jetson I2C | VL53L1X right | 0x2A | Head |
+| Jetson SPI | FLIR Lepton 3.5 | SPI0 | Head |
+| Jetson UART | RPLIDAR A1M8 | UART | Head |
+| Jetson CSI | Pi Camera 3 NoIR | CSI | Head |
+| Jetson USB | USB-CAN (Canable) | — | CAN master |
 | CAN | Leg 1 coxa moteus | Node 11 | Gripper leg L |
 | CAN | Leg 1 femur moteus | Node 12 | Gripper leg L |
 | CAN | Leg 1 tibia moteus | Node 13 | Gripper leg L |
@@ -148,7 +154,7 @@ CMB8LF_v1/
 ## License
 
 - Hardware designs: CERN-OHL-S-2.0
-- Software: GPL-3.0
+- Software: Proprietary — kept in a separate private repository (see `LEGAL-STRUCTURE.md` and `software/README.md`)
 - Documentation: CC0
 
 *CMB8LF-S1 · CC0 2026 · Chrystal Moon Base · No rights reserved*
