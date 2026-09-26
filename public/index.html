@@ -8,7 +8,7 @@
   <title>Chrystal Moon Base — Build the Moon from the Moon</title>
 
   <!-- ── SEO ───────────────────────────────────────────────────────────── -->
-  <meta name="description" content="Chrystal Moon Base is an open-source framework for building a permanent lunar base using only what the Moon already contains — metals, ceramics, gases and solar energy. No imports. No patents. Built for all of humanity."/>
+  <meta name="description" content="Chrystal Moon Base: an open-source plan to build a permanent lunar base from what the Moon already contains — no imports, no patents, open to all."/>
   <meta name="keywords" content="lunar base, moon base, ISRU, in-situ resource utilisation, lunar construction, autonomous robots, sintered regolith, Peary crater, peaks of eternal light, open source space, ESA OSIP, helium-3, lunar regolith, space architecture"/>
   <meta name="author" content="Chrystal Moon Base"/>
   <meta name="robots" content="index, follow"/>
@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="Chrystal Moon Base"/>
   <meta property="og:title" content="Chrystal Moon Base — Build the Moon from the Moon"/>
   <meta property="og:description" content="An open-source framework for building a permanent lunar base from what the Moon already contains — metals, ceramics, gases and solar energy. Submitted to ESA OSIP, reached &quot;Open for Discussion&quot; status, later archived. No patents. Built for all of humanity."/>
-  <meta property="og:image" content="https://chrystalmoonbase.com/assets/images/mastpod-render.png"/>
+  <meta property="og:image" content="https://chrystalmoonbase.com/assets/images/og-image.jpg"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
   <meta property="og:locale" content="en_US"/>
@@ -30,7 +30,7 @@
   <meta name="twitter:site" content="@chrystalbase"/>
   <meta name="twitter:title" content="Chrystal Moon Base — Build the Moon from the Moon"/>
   <meta name="twitter:description" content="Open-source lunar base construction using only what the Moon already contains. Submitted to ESA OSIP, reached &quot;Open for Discussion&quot; status, later archived. No patents. Built for all of humanity."/>
-  <meta name="twitter:image" content="https://chrystalmoonbase.com/assets/images/mastpod-render.png"/>
+  <meta name="twitter:image" content="https://chrystalmoonbase.com/assets/images/og-image.jpg"/>
 
   <!-- ── Structured data (Google rich results) ─────────────────────────── -->
   <script type="application/ld+json">
@@ -163,7 +163,8 @@
     section{padding:7rem 2.5rem;border-top:1px solid var(--border)}
     section.page{display:none;border-top:none}
     section.page.active{display:block;animation:pageIn .35s ease both}
-    #hero.page{padding:0}
+    #hero.page{padding:0;display:none}
+    #hero.page.active{display:flex}
     @keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
     .nav-links a.active{color:var(--white)}
     .nav-links a.active::after{content:'';display:block;height:1px;background:var(--cyan);margin-top:4px}
@@ -1171,9 +1172,6 @@
 
 <section id="hero" class="page active" style="border-top:none;padding:0">
   <div class="hero-bg">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="assets/videos/video-launch.mp4" type="video/mp4">
-    </video>
     <div class="hero-video-overlay"></div>
     <div class="hero-blob hero-blob-1"></div>
     <div class="hero-blob hero-blob-2"></div>
@@ -1230,10 +1228,7 @@
   </div>
 </section>
 <section id="vision" class="page" style="position:relative">
-  <video style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.25;z-index:0" autoplay muted loop playsinline style="pointer-events:none">
-    <source src="assets/videos/video-moonfly.mp4" type="video/mp4">
-  </video>
-  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom,rgba(8,10,14,0.6),rgba(8,10,14,0.85));z-index:1;pointer-events:none"></div>
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse 70% 60% at 75% 10%,rgba(var(--accent-rgb),0.06) 0%,transparent 60%);z-index:1;pointer-events:none"></div>
   <div class="wrap" style="position:relative;z-index:2">
     <div class="sr">
       <div class="sec-label"><span class="c">// Founding Vision</span> &middot; <span data-i18n="vis.sub">The Man Behind the Mission</span></div>
@@ -1607,10 +1602,7 @@
 </section>
 
 <section id="phases" class="page" style="position:relative">
-  <video style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.25;z-index:0" autoplay muted loop playsinline>
-    <source src="assets/videos/video-landing.mp4" type="video/mp4">
-  </video>
-  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to bottom,rgba(8,10,14,0.6),rgba(8,10,14,0.85));z-index:1;pointer-events:none"></div>
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse 70% 60% at 25% 90%,rgba(var(--accent-rgb),0.05) 0%,transparent 60%);z-index:1;pointer-events:none"></div>
   <div class="wrap" style="position:relative;z-index:2">
     <div class="sr">
       <div class="sec-label"><span class="c">// Mission Architecture</span> &middot; <span data-i18n="ph.sub">A Concept in Progress</span></div>
