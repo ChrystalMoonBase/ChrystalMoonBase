@@ -161,6 +161,12 @@
     .status-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--cyan);margin-right:0.35rem;animation:blink 2s ease-in-out infinite}
     @keyframes blink{0%,100%{opacity:1}50%{opacity:0.15}}
     section{padding:7rem 2.5rem;border-top:1px solid var(--border)}
+    section.page{display:none;border-top:none}
+    section.page.active{display:block;animation:pageIn .35s ease both}
+    #hero.page{padding:0}
+    @keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    .nav-links a.active{color:var(--white)}
+    .nav-links a.active::after{content:'';display:block;height:1px;background:var(--cyan);margin-top:4px}
     .wrap{max-width:1100px;margin:0 auto;padding:0 1.5rem}
     .sec-label{font-family:'JetBrains Mono',monospace;font-size:0.56rem;color:var(--muted);letter-spacing:0.22em;text-transform:uppercase;margin-bottom:1.5rem}
     .sec-label .c{color:var(--cyan)}
@@ -1142,18 +1148,19 @@
 </head>
 <body>
 <nav>
-  <a href="#hero" class="nav-logo">
+  <a onclick="goTo('hero')" class="nav-logo" style="cursor:pointer">
     <svg class="nav-logo-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" style="stroke:var(--cyan)" stroke-width="1.3"/><path d="M12 3a9 9 0 0 1 0 18" style="fill:var(--cyan);opacity:0.28" stroke="none"/></svg>
     <span class="nav-logo-text">Chrystal Moon Base</span>
   </a>
   <ul class="nav-links">
-    <li><a onclick="goTo('vision')" data-i18n="nav.vision">Vision</a></li>
-    <li><a onclick="goTo('location')" data-i18n="nav.location">Location</a></li>
-    <li><a onclick="goTo('blueprint')">Blueprint</a></li>
-    <li><a onclick="goTo('phases')" data-i18n="nav.phases">Phases</a></li>
-    <li><a onclick="goTo('codex')" data-i18n="nav.codex">Codex</a></li>
-    <li><a onclick="goTo('support')" data-i18n="nav.support">Support Us</a></li>
-    <li><a onclick="goTo('contact')">Contact</a></li>
+    <li><a data-page="vision" onclick="goTo('vision')" data-i18n="nav.vision">Vision</a></li>
+    <li><a data-page="location" onclick="goTo('location')" data-i18n="nav.location">Location</a></li>
+    <li><a data-page="blueprint" onclick="goTo('blueprint')">Blueprint</a></li>
+    <li><a data-page="phases" onclick="goTo('phases')" data-i18n="nav.phases">Phases</a></li>
+    <li><a data-page="worlds" onclick="goTo('worlds')">Worlds</a></li>
+    <li><a data-page="codex" onclick="goTo('codex')" data-i18n="nav.codex">Codex</a></li>
+    <li><a data-page="support" onclick="goTo('support')" data-i18n="nav.support">Support Us</a></li>
+    <li><a data-page="contact" onclick="goTo('contact')">Contact</a></li>
   </ul>
   <div class="nav-right">
     <button class="theme-toggle" id="theme-toggle" onclick="toggleCmbTheme()" aria-label="Toggle light/dark" title="Toggle light/dark"><span id="theme-toggle-icon">&#9728;</span></button>
@@ -1162,7 +1169,7 @@
   </div>
 </nav>
 
-<section id="hero" style="border-top:none;padding:0">
+<section id="hero" class="page active" style="border-top:none;padding:0">
   <div class="hero-bg">
     <video class="hero-video" autoplay muted loop playsinline>
       <source src="assets/videos/video-launch.mp4" type="video/mp4">
@@ -1222,7 +1229,7 @@
     <div class="hero-status-text">UTC <span id="utctime">--:--:--</span><br>MISSION ACTIVE<br><span class="status-dot"></span>UPLINK ACTIVE</div>
   </div>
 </section>
-<section id="vision" style="position:relative">
+<section id="vision" class="page" style="position:relative">
   <video style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.25;z-index:0" autoplay muted loop playsinline style="pointer-events:none">
     <source src="assets/videos/video-moonfly.mp4" type="video/mp4">
   </video>
@@ -1269,7 +1276,7 @@
   </div>
 </section>
 
-<section id="location">
+<section id="location" class="page">
   <div class="wrap">
     <div class="sr">
       <div class="sec-label"><span class="c">// Site Selection &middot; Scientific Basis</span> &middot; <span data-i18n="loc.sub">Why Peary Crater</span></div>
@@ -1487,7 +1494,7 @@
 <!-- ═══════════════════════════════════════════════════════════
      BLUEPRINT — The Moon, Whole: A Civilisation Blueprint
 ════════════════════════════════════════════════════════════ -->
-<section id="blueprint">
+<section id="blueprint" class="page">
   <div class="wrap">
     <div class="sr">
       <div class="sec-label"><span class="c">// Civilisation Blueprint</span> &middot; <span data-i18n="bp.sub">The Moon, Whole</span></div>
@@ -1599,7 +1606,7 @@
   </div>
 </section>
 
-<section id="phases" style="position:relative">
+<section id="phases" class="page" style="position:relative">
   <video style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.25;z-index:0" autoplay muted loop playsinline>
     <source src="assets/videos/video-landing.mp4" type="video/mp4">
   </video>
@@ -1889,7 +1896,7 @@
 
 
 
-<section id="worlds">
+<section id="worlds" class="page">
   <div class="wrap">
     <div class="sr">
       <div class="sec-label"><span class="c">// Phase 4 &middot; The Chrystal Method</span></div>
@@ -1950,7 +1957,7 @@
   </div>
 </section>
 
-<section id="codex">
+<section id="codex" class="page">
   <div class="wrap">
     <div class="codex-top sr">
       <div>
@@ -1967,7 +1974,7 @@
     <div class="codex-grid" id="cx-grid"></div>
   </div>
 </section>
-<section id="support" style="background:rgba(var(--accent-rgb),0.012)">
+<section id="support" class="page" style="background:rgba(var(--accent-rgb),0.012)">
   <div class="wrap">
     <div class="sr">
       <div class="sec-label"><span class="c" data-i18n="sec.sup">// Support the Mission</span></div>
@@ -2108,7 +2115,7 @@
   </div>
 </section>
 
-<section id="account">
+<section id="account" class="page">
   <div class="wrap">
     <div class="sr">
       <div class="sec-label"><span class="c">// <span data-i18n="acc.label">Pioneer Registry</span></span></div>
@@ -2164,7 +2171,7 @@
 </section>
 
 
-<section id="github">
+<section id="github" class="page">
   <div class="wrap">
     <div class="sr">
       <div class="sec-label"><span class="c">// Open Source</span> &middot; <span data-i18n="gh.label">GitHub &middot; No flags. No patents. Built for all humanity.</span></div>
@@ -2242,7 +2249,7 @@
 </section>
 
 
-<section id="contact">
+<section id="contact" class="page">
   <div class="wrap">
     <div class="sr">
       <div class="sec-label" data-i18n="con.sub"><span class="c">// Contact</span> &middot; One person. Open door. No filters.</div>
@@ -2353,7 +2360,7 @@
 </section>
 
 
-<section id="license">
+<section id="license" class="page">
   <div class="wrap">
     <div class="sr">
       <div class="sec-label"><span class="c">// Legal</span> &middot; Licences &middot; What is open and what is not</div>
@@ -2421,10 +2428,7 @@
       </div>
     </div>
 
-  </div>
-</section>
-
-    <div class="license-grid sr sd1">
+    <div class="license-grid sr sd1" style="margin-top:1px">
 
       <div class="license-card">
         <div class="license-card-icon">
@@ -2451,11 +2455,16 @@
   </div>
   <div class="foot-links">
     <a onclick="goTo('vision')">Vision</a>
+    <a onclick="goTo('location')">Location</a>
     <a onclick="goTo('blueprint')">Blueprint</a>
     <a onclick="goTo('phases')">Phases</a>
+    <a onclick="goTo('worlds')">Worlds</a>
     <a onclick="goTo('codex')">Codex</a>
+    <a onclick="goTo('support')">Support</a>
+    <a onclick="goTo('account')">Account</a>
+    <a onclick="goTo('github')">GitHub Repo</a>
+    <a onclick="goTo('license')">License</a>
     <a onclick="goTo('contact')">Contact</a>
-    <a href="https://www.chrystalmoonbase.com">chrystalmoonbase.com</a>
     <a href="mailto:info@chrystalmoonbase.com">info@chrystalmoonbase.com</a>
     <a href="https://x.com/chrystalbase" target="_blank" rel="noopener">@chrystalbase</a>
   </div>
@@ -2476,7 +2485,23 @@
 </div>
 <script src="codex-data.js"></script>
 <div class="toast" id="toast"><div class="t-dot"></div><span id="t-msg"></span></div><script>
-function goTo(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+function goTo(id){
+  var target=document.getElementById(id);
+  if(!target)return;
+  document.querySelectorAll('section.page.active').forEach(function(p){p.classList.remove('active')});
+  target.classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.classList.toggle('active', a.getAttribute('data-page')===id);
+  });
+  window.scrollTo({top:0,left:0,behavior:'instant' in window ? 'instant':'auto'});
+  if(history.replaceState) history.replaceState(null,'','#'+id);
+  target.querySelectorAll('.sr').forEach(function(el){el.classList.add('in')});
+}
+window.addEventListener('DOMContentLoaded',function(){
+  var initial=(location.hash||'').replace('#','')||'hero';
+  if(!document.getElementById(initial))initial='hero';
+  goTo(initial);
+});
 function tick(){var n=new Date();document.getElementById('utctime').textContent=String(n.getUTCHours()).padStart(2,'0')+':'+String(n.getUTCMinutes()).padStart(2,'0')+':'+String(n.getUTCSeconds()).padStart(2,'0')}
 tick();setInterval(tick,1000);
 function toast(msg){var t=document.getElementById('toast');document.getElementById('t-msg').textContent=msg;t.classList.add('on');setTimeout(function(){t.classList.remove('on')},3200)}
@@ -19087,12 +19112,7 @@ function openModal(id){
   document.body.style.overflow='hidden';
 }
 
-var sections=['vision','location','blueprint','phases','codex','support','account'];
-var navAs=document.querySelectorAll('.nav-links a');
-sections.forEach(function(id,i){
-  var el=document.getElementById(id);if(!el)return;
-  new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)navAs.forEach(function(a,j){a.classList.toggle('active',j===i)})})},{threshold:0.3}).observe(el);
-});
+/* Legacy scroll-spy removed — nav-link active state is now set by goTo() for the page-based navigation. */
 document.querySelectorAll('.sr').forEach(function(el){
   new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:0.07,rootMargin:'0px 0px -30px 0px'}).observe(el);
 });
